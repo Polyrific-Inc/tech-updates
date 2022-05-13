@@ -1,0 +1,31 @@
+---
+layout: post
+title:  "Week #10 2022"
+date:   2022-03-11 20:00:00 +0700
+---
+
+## Application Monitoring
+
+In DevOps, the application monitoring strategy is equally important as the development and delivery strategy. It closes the application lifecycle loop and is one of the primary inputs for the subsequent development iteration. Unfortunately, it is an area that usually doesn't get enough love from the developers because it is not directly related to the application's main functionality.
+
+In Polyrific, it's been a standard to include the monitoring strategy in the initial skeleton of an application setup. The monitoring infrastructure should be ready to use in every environment, not only in the production but also in the DEV, QA, or UAT. This setup is essential because it is almost impossible to produce a bug-free and more stable application without a proper monitoring setup.
+
+Application logs are the primary monitoring type that should always be functional since day-1 of the development. It is a series of data containing information about events within the application. We can generally identify the severity levels to one of these categories: Critical, Error, Warning, Information, and Verbose. The ops team usually filters the logs by the severity levels to eliminate the noise in the logging system.
+
+The other monitoring type is the application metrics. It contains measurable values that describe the condition of an application in a specific time range. In application metrics, we can find the items like average response time, request rate, error rate, application availability, server's CPU and memory percentage, etc. Application metrics are usually easier to monitor by using a graphical dashboard. The ops team can view the different values of the monitored metrics on one page.
+
+Automatic alerts are also essential to set up in the monitoring system. It helps the team be aware of certain events in the application as soon as it happens to react with necessary actions as early as possible.
+
+So, what about the application that you are currently working on? Has it equipped with a proper monitoring system? Please discuss it with your team to get the best implementation strategy if it hasn't. Or if you need some ideas or advice, please don't hesitate to contact us in the Department of Technology.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Stop aggregating away the signal in your data* (read [the article from StackOverflow blog](https://stackoverflow.blog/2022/03/03/stop-aggregating-away-the-signal-in-your-data))
+
+![memo](/assets/images/memo16.png) *How everything we're told about website identity assurance is wrong* (read [Troy Hunt's post](https://www.troyhunt.com/how-everything-were-told-about-website-identity-assurance-is-wrong))
+
+![memo](/assets/images/memo16.png) *Supporting multi-tenant in SQL Server databases* (read from [the Microsoft docs](https://docs.microsoft.com/en-us/ef/core/miscellaneous/multitenancy))
+
+![memo](/assets/images/memo16.png) *Shaping the culture of learning in Gojek Design* (read [the article from Gojek's blog](https://www.gojek.io/blog/design-mentorship-program))
+
+![memo](/assets/images/memo16.png) *What are reactive systems?* (watch [Dave Farley's talk in the GOTO 2021](https://youtu.be/Ysn6eInApYM))

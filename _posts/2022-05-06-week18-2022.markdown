@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Week #18 2022"
+date:   2022-05-06 20:00:00 +0700
+---
+
+## World Password Day
+
+Did you know that we had World Password Day this week? It is celebrated every first Thursday in May and was started in 2013 to raise awareness of having strong passwords.
+
+Interestingly, while the name of the celebration contains the word "password," the trend shows that the future is moving to the "passwordless" world. The reasoning is simple; if a weak password is considered a vulnerability in security, we should not use it at all, right?
+
+We are progressing into the trend. And while we are transitioning there, we should keep following best practices in setting up good passwords.
+
+If there is one piece of advice that I could give regarding passwords these days, it should be the usage of a password manager. I think it is impossible to follow the best practice of having a solid password without using one.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *BBC Online — A year with serverless* (Read [how one of the biggest news outlets utilize serverless technology to reduce operation costs and carbon footprint](https://medium.com/bbc-design-engineering/bbc-online-a-year-with-serverless-ffc2ae474277))
+
+Brain: "The engineers in BBC detailed their process on migrating their codebase and infrastructure to use serverless patterns. Not only can they keep down the cost of server due to the nature of serverless that only up when there's a request to the server, but they managed to keep the performance of their site by utilizing the serverless caching".
+
+![memo](/assets/images/memo16.png) *Working From Orbit* (Read [the blogpost from a VR enthusiast tells about his setup for an immersive VR experience](https://blog.immersed.team/working-from-orbit-39bf95a6d385))
+
+Brain: "I think this is a cool blog post. The author is showing how it feels like he’s working in outer space using the VR technology. He spends 40-50 hours during the week in his VR environment. I guess it just shows the possibility we can have with this technology, and how it’ll look like in the future".
+
+![memo](/assets/images/memo16.png) *What is Dynamic Application Security Testing (DAST)?* (Read [the intro to this topic here](https://www.microfocus.com/en-us/what-is/dast))
+
+Brain: "While the article can be treated as advertisement, I think it brings up an important topic about security, and how it can be automated into our devops. Though most of the software tools to do this are not free, I think we can consider it when we’re building the application for clients that have more attention to the security aspect of the app".
+
+![memo](/assets/images/memo16.png) *GIST researchers teach robots to identify partially hidden objects* (Read [how once again AI improve the robotics field](https://www.therobotreport.com/gist-researchers-teach-robots-to-identify-partially-hidden-objects/))
+
+Brain: "An advancement is made yet again in the field of AI vision systems. The researcher at GIST in Korea created a system to better identify objects that are partially hidden by using a novel approach of predicting the geometry of the object, which is similar to the way humans perceive a partially hidden object. I think this can improve the robotics fields to especially one related to rescue robots".
+
+![memo](/assets/images/memo16.png) *The first “Meta Store” is opening in California in May* (Read [the good news for our friends in California](https://arstechnica.com/information-technology/2022/04/the-first-meta-store-is-opening-in-california-in-may/))
+
+Brain: "For our US based employees that want to have a feel on what Metaverse is all about, they soon can go to the “Meta Store” to experience it first hand. Let us know how it goes if one of you ever stumbled upon it".

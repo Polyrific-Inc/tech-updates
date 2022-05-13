@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "Week #13 2022"
+date:   2022-04-01 20:00:00 +0700
+---
+
+## Time Series Database
+
+Last week, we learned that it is best to store logging data for modern applications in external storage. When you look at some logging implementations, you will find that they usually utilize a special-purpose database called Time Series Database (TSDB).
+
+TSDB is designed to store and retrieve data records associated with timestamps. The timestamps provide a critical context for each of the data points in how they are related to others. The order of the data points is vital and is a native characteristic of the data.
+
+Unlike the other general-purpose databases, which usually support the CRUD (create, read, update, delete) functionality very well, TSDB only focuses on the insert and read operations. While some TSDB providers still include the data modification functionality, doing such actions is usually considered harmful to the data integrity.
+
+In real-world projects, TSDB is not only used as the storage for application logging. It's also usually found in any system that continuously captures the flow of data, like the Internet of Things (IoT) environment and intraday stock prices.
+
+The following providers are the example of the well-known TSDB solutions in the market:
+- [InfluxDB](https://www.influxdata.com/): it's available open-source via the Cloud as a DBaaS option or through an Enterprise subscription
+- [Prometheus](https://prometheus.io/): it's an open-source service monitoring and alerting toolkit
+- [TimescaleDB](https://www.timescale.com/): it's an open-source relational database built on top of PostgreSQL that makes SQL scalable for time-series data
+- [Graphite](https://graphiteapp.org/): it's an all-in-one solution for storing and efficiently visualizing real-time time-series data
+- [QuestDB](https://questdb.io/): it's a relational column-oriented database that can perform real-time analytics on time-series data.
+- [OpenTSDB](http://opentsdb.net/): it's a scalable time-series database that is written on top of HBase
+
+By having a bit of knowledge of this time-series database, now we have one more tool in our toolbox that might be useful to solve some problems in the projects. While it is a safe option to utilize the general-purpose database when starting a new project, we always need to think critically if some cases can be handled more efficiently by using a different kind of database.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *The Art of Automating Automation* (Read [how PayPal treat their automation here](https://medium.com/paypal-tech/the-art-of-automating-automation-17b32594a41f))
+
+Brain: "It’s a bit refreshing to hear that a big company like Paypal is also doing what we are trying to do. They are utilizing code automation to achieve efficiency and high-quality products, which is similar to what we are trying to achieve with Open Catapult. I wonder how many companies are trying to have the same approach, and how catapult can help them have an established framework, instead of having to build it all from scratch."
+
+![memo](/assets/images/memo16.png) *Why is Distributed Tracing in Microservices needed?* (Read [the interesting blog post here](https://signoz.io/blog/distributed-tracing-in-microservices/))
+
+Brain: "We’ve been discussing application monitoring, and I think this article brings up some new perspectives on how to implement tracing and monitoring. It’s also good news that Microsoft Azure has also been supporting the open telemetry that enables this distributed tracing"
+
+![memo](/assets/images/memo16.png) *Online criminals stole nearly $7 billion from people in 2021* (Read [the reports here](https://www.digitaltrends.com/computing/online-criminals-stole-nearly-7-billion-from-users-in-2021/))
+
+Brain: "Several cautionary tales that can help us be more careful in our online interactions. It's particularly interesting technology such as deep fake video/audio is utilized to trick unsuspecting victims"
+
+![memo](/assets/images/memo16.png) *Microsoft DDoS protection response guide* (Read [the guide provided by microsoft to protect from the rise of DDoS lately](https://azure.microsoft.com/en-ca/blog/microsoft-ddos-protection-response-guide/))
+
+Brain: "Microsoft provided some guidelines and best practices to protect our Azure resources against the DDoS attacks. It gives pointers on how we can do the monitoring and alerts, as well as how to simulate the DDoS attack to see how our app would respond to such an attack."
+
+![memo](/assets/images/memo16.png) *How Implementation Intentions Help My Sprints* (Read [the blog post from one of the founders of Scrum Alliance](https://www.mountaingoatsoftware.com/blog/how-implementation-intentions-help-my-sprints))
+
+Brain: "Mike Cohn shares his tips on how to help complete important backlog items that often get buried on a super busy sprint, where everything that comes to us seems to be all urgent."

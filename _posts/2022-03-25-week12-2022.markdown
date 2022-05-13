@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "Week #12 2022"
+date:   2022-03-25 20:00:00 +0700
+---
+
+## Application Logging
+
+A couple of weeks ago, we featured the importance of Application Monitoring, which should be a default setup in every project. The most basic type of monitoring is the logging system.
+
+In this week's issue, we will take you to look at some items considered best practices in modern applications logging systems.
+
+**Store data in external storage**
+
+Storing logging data in the external storage will give the following advantages:
+
+- we can host the application in a read-only environment, which is good for scalability and security
+- we can analyze the data independently without burdening the primary application resources
+- we can preserve the data as long as we want, without depending on the availability of the application host
+
+**Use proper severity level**
+
+It is essential to use the proper severity levels to distinguish between signals and noises. The following (simplify) guidance will help you to decide which level to be used for specific logging data:
+
+- Critical (5): use this if the application fails to run at all
+- Error (4): use this to log errors that prevent functionalities to work as expected
+- Warning (3): use this to log any issues that don't need immediate correction but potentially cause problems in the future
+- Information (2): use this to log application events that can be used for analytical insights to understand how the application operates
+- Debug (1): use this to log temporary data to be used for debugging activity
+- Trace (0): use this only in a library package. It will help external users to resolve integration issues.
+
+**Strip out sensitive information**
+
+By nature, we rarely look at the logging storage until there's an issue in the application, which makes us not know if the logging data contain information that shouldn't be there.
+
+These are the example of sensitive information that is commonly found in the logging data:
+
+- username and password
+- credit card information
+- personal data
+- private keys
+- access token
+
+**Be familiar with the analysis tool**
+
+Without a proper analysis tool, logging data is just a collection of useless noises. We need a tool to help us dig the insights from the application logs, especially in critical moments that require immediate actions.
+
+Azure Monitoring is a powerful tool and a bit complex at the same time because it has advanced features to analyze the logging data. All Engineers need to have the basic skill to use the tool to read and study the logging data.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Updated Okta Statement on Lapsus$* (Read [the company’s statement](https://www.okta.com/blog/2022/03/updated-okta-statement-on-lapsus/))
+
+Brain: "The link is a live report on the situation regarding the Lapsus$ breach to Okta, an identity platform company. It is interesting to see the investigation process, how they identify the root cause and how they mitigate the breach that’s already happened."
+
+![memo](/assets/images/memo16.png) *The 5 Biggest Cybersecurity Threats of 2022* (Check out [the list](https://www.goanywhere.com/blog/the-5-biggest-cybersecurity-threats-of-2022-how-to-avoid-cybersecurity-attacks))
+
+Brain: "As new technology such as cloud services or IoT emerges, new vulnerabilities that can be exploited by cyber attackers have also been discovered. Read on the threats that are listed in this article, to help you prepare and be aware of this security issue."
+
+![memo](/assets/images/memo16.png) *AI and nanotechnology are working together to solve real-world problems* (Read [how the future is already here](https://stackoverflow.blog/2022/03/21/ai-and-nanotechnology-are-working-together-to-solve-real-world-problems/))
+
+Brain: "The article shows the real-world scenario where AI and nanotechnology are combined, to solve problems like how to pass/maintain Moore’s law, or how to do chemical modeling for bioscience and drug development. High tech stuff!"
+
+![memo](/assets/images/memo16.png) *Detecting Fraudsters In Near Real-Time With ClickHouse* (Read [the story here from Gojek](https://www.gojek.io/blog/detecting-fraudsters-in-near-real-time-with-clickhouse))
+
+Brain: "An in-depth look at one of the big tech startups implementing their real-time data analysis for fraud detection. It shows what technology they use, the infrastructure they are using, and the tradeoff they are facing when deploying the solution to production."
+
+![memo](/assets/images/memo16.png) *Internet Explorer has come an end of life* (Read [the good news](https://betanews.com/2022/03/20/get-ready-for-the-death-of-internet-explorer-11))
+
+Brain: "It seems the day we no longer have to add some “special” code in our HTML/CSS has come. Microsoft has announced that they will be retiring the Internet Explorer. Pass this news along to your fellow UI developers."

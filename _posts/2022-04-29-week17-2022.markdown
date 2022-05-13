@@ -1,0 +1,50 @@
+---
+layout: post
+title:  "Week #17 2022"
+date:   2022-04-29 20:00:00 +0700
+---
+
+## Leaked password
+
+Have you ever received an email with the above subject? For me, almost every day. But they were usually phishing emails that were mostly caught automatically by Gmail filter as spam.
+
+But on some occasions (read: today), I received a valid email notification from Google with the above subject alerting me that there was a potential password leak from one of our employees with his Polyrific account.
+
+While we need to act seriously on any alert like this, it doesn't directly mean that the respective user was in danger because someone has stolen his password and been able to take over the account. There are many factors that make Google proactively send this type of alert.
+
+One of the factors is when the email address was found on a publicly posted list of compromised credentials. Why is it considered a security danger? Because people tend to repeat the same password for different services. So if someone has had the combination of his email (username) and password on a service leaked, they are highly likely to be used in different services as well.
+
+The following procedure is the precautionary steps that we will take when detecting the potentially compromised account for our employees:
+
+- we will reset the password and invalidate all OAuth sessions
+- we will do further investigation on the audit logs
+- if we find any suspicious activity, we will temporarily suspend the user
+- if we don't see any suspicious activity, we will get in touch with the user via the alternative contact information (email or mobile) and share the temporary password via LastPass
+
+Therefore we need your cooperation to:
+
+- read and follow [the Gmail security tips](https://support.google.com/mail/answer/7036019)
+- keep your LastPass account healthy (do not lose your master password and activate the MFA)
+- make sure your [contact information](https://myaccount.google.com/personal-info) is up to date on your Google account
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Andrew Ng: Unbiggen AI - The AI pioneer says it’s time for smart-sized, “data-centric” solutions to big issues* (Read [the transcript of the interview here](https://spectrum.ieee.org/andrew-ng-data-centric-ai))
+
+Brain: "Andrew Ng is one of the big names in the AI space. In the interview, he talks about data-centric AI, where we don’t only focus on big data, but also how to organize the data to be good data so even a small amount of data can produce a good AI model."
+
+![memo](/assets/images/memo16.png) *Reducing Slack’s memory footprint* (Read [the company story on how they optimize the app we use in our team](https://slack.engineering/reducing-slacks-memory-footprint/))
+
+Brain: "The article explains in detail how Slack's engineers optimize the DOM’s memory usage. As most web developers have experienced, complicated apps can have a large amount of DOMs which can hugely burden the computer’s memory. The strategy by moving the load of the client to the server is particularly interesting, because that’s basically what’s been done in the past before the hell broke loose with all the heavyweight JavaScript client frameworks. I guess we can  always learn from the past."
+
+![memo](/assets/images/memo16.png) *Use Git tactically* (Read [the blogpost about how to use micro-commits in your projects](https://stackoverflow.blog/2022/04/06/use-git-tactically/))
+
+Brain: "An interesting blogpost on how we can approach our git commit when coding. It suggests to commit as often as you can so you can have as many safe step stored in the commit, instead of having to navigate through a “broken” state for a long time. I think I’ll try to implement it in my daily work, as I see how it can be beneficial to think about the code in chunks, and ease the burden on our mind from having to carefully think about all aspects of the code without breaking things as we move."
+
+![memo](/assets/images/memo16.png) *Concurrency Unit Testing with Coyote* (Read [the documentation for the .NET advanced unit testing tool](https://microsoft.github.io/coyote/))
+
+Brain: "If you ever have some concurrency issue when building an application, I think you’ll appreciate this unit testing tool. It’ll guard you by default from common pitfalls on concurrency issues. I think this type of issue can be hard to detect because it usually occurs intermittently, and only with a specific rare case."
+
+![memo](/assets/images/memo16.png) *How to Freaking Find Great Developers By Having Them Read Code* (Read [the novel way in interviewing engineer candidate](https://freakingrectangle.com/2022/04/15/how-to-freaking-hire-great-developers/))
+
+Brain: "The blog post offers an alternative way of doing the interview for engineering candidates. Instead of asking them to solve some coding problem, which can be time consuming to prepare, and can inaccurately measure candidate talent, the author proposes to have the candidate read an actual code and share their insights, which can probe the most fundamental skills in programming."

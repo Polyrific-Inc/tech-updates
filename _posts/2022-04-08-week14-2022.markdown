@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "Week #14 2022"
+date:   2022-04-08 20:00:00 +0700
+---
+
+## Monitoring & Observability Service
+
+From the previous discussion, we know that Application Monitoring System is equally important as the application itself. We have also discussed some best practices in setting up a logging system and examples of the Time Series Database used by modern applications.
+
+In practice, setting up a powerful yet easy-to-use application monitoring system is not an easy task. The tight timeline and the limited resources force the company to focus only on their business and feature development and delegate the application monitoring needs to third parties.
+
+Many application monitoring services are ready to serve the requirements. Following is the list of critical indicators when considering the service:
+
+- Collect monitoring data in real-time
+- Able to handle and process vast amounts of monitoring data
+- Scalable
+- Highly available
+- Have an excellent user-friendly interface
+- Support metric visualization tools
+- Good traceability
+- Support all modern cloud and containerized applications
+
+These are the example of the monitoring & observability services:
+
+- [Azure Monitor](https://azure.microsoft.com/en-au/services/monitor/): it's a native monitoring tool in the Microsoft Azure environment. It collects, analyses, and acts on telemetry data from the Azure resources and on-premises environments.
+- [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/): it is a native AWS monitoring tool for AWS programs. It provides data collection and resource monitoring capabilities.
+- [Google Cloud Monitoring](https://cloud.google.com/monitoring/): it's a native monitoring tool for GCP infrastructure to gain visibility into the applications and infrastructure's performance, availability, and health.
+- [Grafana Cloud](https://grafana.com/products/cloud/): it's the cloud service for platform observability, metrics integration, traces, and logs with Grafana.
+- [Datadog](https://www.datadoghq.com/): it's a monitoring service for IT, Dev, and Ops teams who write and run applications at scale and want to turn massive amounts of data into actionable insight.
+- [New Relic](https://newrelic.com/): it's a SaaS-based web and mobile application performance management provider for the cloud and the data center. They provide code-level diagnostics for dedicated infrastructures, the cloud, hybrid environments, and real-time monitoring.
+- [Dynatrace](https://www.dynatrace.com/): it's an APM scaled for enterprises with cloud, on-premise, hybrid application, and SaaS monitoring. Dynatrace uses AI-supported algorithms to provide continual APM self-learning and predictive alerts for proactive issue resolution.
+- [Elastic Stack](https://www.elastic.co/what-is/elk-stack): or ELK stack, is a monitoring tool that combines three open source projects: Elasticsearch, Logstash, and Kibana.
+- [LogicMonitor](https://www.logicmonitor.com/): it provides an agentless SaaS-based monitoring platform. LogicMonitor provides prebuilt integrations and an open API and monitoring across networks, servers, applications, websites, and containers, including insights and reporting capabilities.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Acing Google's PageSpeed Insights Assessment* (Read [these tips if you often face this task in your work](https://www.toptal.com/site-speed-optimization/pagespeed-insights-best-practices))
+
+Brain: "The article explains in detail the reports you see in the PageSpeed Insights assessment, and offers some tips and how to do the optimization. I think it’s a good read if you often have to optimize the page speed on the website you build."
+
+![memo](/assets/images/memo16.png) *Webinar recording: The Importance of humor in Cyber Security* (Watch [the webinar here](https://lp.goto.com/lastpass-webinar-Importance-of-humour-in-Cyber-Security_TYP.html))
+
+Brain: "The presenter gives some insight as a founder of a Cyber Security company on how communicating the security awareness or guidance through humor can be more effective in nudging people to be more aware of cyber security in their daily work activities, since they are more engaged when presented with such info that is also making them laugh. I have a few good chuckles when listening to some anecdotes that the presenter shared."
+
+![memo](/assets/images/memo16.png) *GitHub Copilot Labs, an ML-powered editor features for developers* (Read [the advanced VS code extension features here](https://next.github.com/projects/copilot-labs/))
+
+Brain: "GitHub shares a new VS Code extension that has experimental features that utilize machine learning, such as allowing it to explain the code you select into a natural language, and translate the code to other programming languages. It’s still available as a technical preview, so you might need to register first before trying it out."
+
+![memo](/assets/images/memo16.png) *Want to Be More Productive? Think about Sustainability* (Read [Microsoft’s interesting take about management & productivity](https://www.microsoft.com/en-us/worklab/want-to-be-more-productive-think-about-sustainability))
+
+Brain: "Please don’t take offense at how the article suggests that managers should think of their workers as crops. But I think the analogy between environmental sustainability and workplace productivity has quite a good point."
+
+![memo](/assets/images/memo16.png) *How to use Props in React* (it's good to read [this if you are starting on learning React](https://www.robinwieruch.de/react-pass-props-to-component/))
+
+Brain: "Sorry if it's a bit too technical for the wide audience. I just started learning React when working on recent projects, and I found this article to be quite enlightening on the concept I was struggling with before."

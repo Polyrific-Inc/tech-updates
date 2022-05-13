@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "Week #16 2022"
+date:   2022-04-22 20:00:00 +0700
+---
+
+## Microservice Challenges
+
+Microservice architecture is gaining momentum in the IT industry for the many advantages over traditional architectural approaches. It promises faster innovations because it allows the team to go forward with what is best for their owned product without being held by the limitations of other products.
+
+However, some challenges must be considered before deciding to implement the microservice architectural approach. Because if you fail to recognize them during your planning, not only that you will not get the promised benefits, you will use most of your time fixing new issues every day.
+
+The following considerations will help position our organization for success while implementing the microservice architecture.
+
+**Service discovery**
+
+In the microservice architecture, while the development of the services is done independently, they must communicate well with each other to support the broader business goals. With the rapid changes of each service, it is crucial to have a proper service discovery mechanism that keeps the whole system working as expected.
+
+**Inter-service communication**
+
+Microservices communicate either synchronously or asynchronously. An inter-service communication mechanism orchestrates this communication by employing the proven industry standard, like:
+
+- Saga pattern
+- API gateways
+- CQRS
+- Event sourcing
+- Service mesh
+
+**Data integrity**
+
+Because each microservice usually has its own data storage, it can be challenging to ensure data consistency across transactions that span multiple services. The usage of proper integration patterns, as mentioned above, helps achieve data consistency.
+
+**Security**
+
+Managing security in a monolith service is challenging; moreover, on the multiple independent services that need to talk to each other. Many aspects need attention, like encryption mechanism, authentication, authorization, access management, etc.
+Instead of developing all of them by themselves, some organizations prefer to delegate the security aspect to third-party SaaS so they can focus on their core business only.
+
+**Monitoring**
+
+As the number of services grows, identifying and troubleshooting issues becomes more challenging. A proper monitoring system covering the distributed transactions ensures the applications are running efficiently.
+
+**Quality assurance**
+
+As the number of services increases, automated testing is essential to ensure all the interactions and communications are thoroughly tested, including unit tests, integration tests, contract tests, and performance tests.
+Thorough testing at each level confirms that services can run independently, in conjunction with other services, to support distributed transactions.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Pathways Language Model (PaLM): Scaling to 540 Billion Parameters for Breakthrough Performance* (Read [the new AI breakthrough from Google](https://ai.googleblog.com/2022/04/pathways-language-model-palm-scaling-to.html))
+
+Brain: "OpenAI’s GPT3 has new competition. Google just released PaLM, an AI model that has been trained using 540 billion parameters. The demo seems quite impressive, showing how it can answer complex questions, connect cause & effect, and even explain a joke. As with GPT3, it can also be used to generate some code based on a prompt."
+
+![memo](/assets/images/memo16.png) *Why Reliability Engineering Matters: an Analysis of Amazon's Dec 2021 US-East-1 Region Outage* (Read [the analysis related to the Amazon’s recent outage](https://www.gremlin.com/blog/analysis-amazon-dec-2021-us-east-1-region-outage/))
+
+Brain: "The article discusses what we can learn from the AWS 7-hour-long incident that happened in December last year. It talks about the importance of software monitoring, having a reliable and failsafe CI/CD pipeline, and implementing redundancies."
+
+![memo](/assets/images/memo16.png) *That Time Sony Secretly Installed Rootkit Software on Hundreds of Thousands of Computers* (Watch [the video here](https://www.youtube.com/watch?v=imMRzBzQm1U))
+
+Brain: "It turns out reading the whole license agreement does not guarantee you from being safe from company malicious intend. The video tells the story of how Sony installed dangerous malware without even stating it anywhere in the documentation. It teaches us to be cautious when installing any software, even if it’s from a well-known company."
+
+![memo](/assets/images/memo16.png) *What I Learned From a Decade of Product Management Experience* (Read [the blog post from an experienced product manager](https://medium.com/serious-scrum/what-i-learned-from-a-decade-of-product-management-experience-c5b6415f9c5))
+
+Brain: "The author share 5 key lessons learned from his Product management experience. This one is personally useful for my previous role as Director of Products. Product management is a whole different discipline from software development, and there’s so much more thought to learn on this."
+
+![memo](/assets/images/memo16.png) *.NET MAUI Release Candidate – Ready for cross-platform app development* (Read [the announcement for what might replace Xamarin in the future](https://devblogs.microsoft.com/dotnet/dotnet-maui-rc-1/))
+
+Brain: "Exciting news for cross-platform app developers. .NET MAUI finally has a release candidate, which means the stable version is near the horizon. .NET MAUI will provide all of the controls available in Xamarin, with additional controls such as BlazorWebView, Border, GraphicsView, MenuBar, Shadow, and Window. It can be considered for your next cross-platform apps."

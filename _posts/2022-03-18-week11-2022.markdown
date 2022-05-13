@@ -1,0 +1,33 @@
+---
+layout: post
+title:  "Week #11 2022"
+date:   2022-03-18 20:00:00 +0700
+---
+
+## Tech Support
+
+Department of Technology has played a vital role as a point of contact to support employees' needs regarding technological requirements, like infrastructure setup and account management for cloud services.
+
+For any project-related requests, it's been a good practice to record the requests in Jira tickets. But if they were not project-related, the requests usually came from the usual communication channels like emails and Slacks. It worked relatively well without significant issues because we were a small team, and the requirements were generally not too complex.
+
+However, with the increase of the project scale, the number of team members, and the complexity variation, we slowly need to have a more solid system to manage them all. It becomes more challenging to manage the pile of requests in the traditional communication channels that were not intended as task tracking tools.
+
+We want to try a new support system using the Jira Service Management as the ITSM platform starting this week. We have used Jira as the project tracking tool for quite some time now, so we think it would be good to use the other service from the same platform so the users can reuse their existing accounts.
+
+You can access and bookmark the support page at https://tech-support.polyrific.com. The URL will redirect you to the original location of the service management page (unfortunately, Jira hasn't supported a custom domain configuration, so redirecting you to the support page from the shorter Polyrific URL is the best thing we can do now).
+
+Requesting your needs via the support page will ensure they are always visible and trackable. The archived tickets can also be used for future reference if needed.
+
+We are yet to create the "how-to" document about this new system, but I think you will not find a big problem if you want to use it now because the form is pretty straightforward. We'd also appreciate it if you could share any feedback on your experience using the support page so we can always make improvements in the future.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Netflix: A culture of learning* (read [the article from Netflix Technology Blog](https://netflixtechblog.com/netflix-a-culture-of-learning-394bc7d0f94c))
+
+![memo](/assets/images/memo16.png) *Project RADAR: Intelligent early fraud detection system with humans in the loop* (read [the post from Uber Engineering Blog](https://eng.uber.com/project-radar-intelligent-early-fraud-detection/))
+
+![memo](/assets/images/memo16.png) *Rebuilding payment orchestration at Airbnb* (read [the post from The Airbnb Tech Blog](https://medium.com/airbnb-engineering/rebuilding-payment-orchestration-at-airbnb-341d194a781b))
+
+![memo](/assets/images/memo16.png) *Next generation data insights using natural language queries* (read [the post from Twitter Engineering Blog](https://blog.twitter.com/engineering/en_us/topics/insights/2022/next-generation-data-insights-using-natural-language-queries))
+
+![memo](/assets/images/memo16.png) *Leveraging machine learning to find security vulnerabilities* (read [the post from GitHub Engineering Blog](https://github.blog/2022-02-17-leveraging-machine-learning-find-security-vulnerabilities/))
