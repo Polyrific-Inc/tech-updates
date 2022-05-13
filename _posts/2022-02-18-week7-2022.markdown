@@ -1,0 +1,42 @@
+---
+layout: post
+title:  "Week #7 2022"
+date:   2022-02-18 20:00:00 +0700
+---
+
+## Security Protocols
+
+We had fun in Bali during the Indonesian team outing last week. While this island was still warm and exotic, as we remembered, we also noticed something different at the same time. The visit rate was drastically low due to the pandemic. The tourism and hospitality business has been suffering for more than two years.
+
+Health protocols were strictly enforced everywhere. The airplane mandates the full dose of vaccine and PCR/Antigen test for the passengers. After landing at Bali's airport, we needed to fulfill the Health Alert Card (eHAC) form. We needed to check-in via the "Peduli Lindungi" apps and had the body temperature checked at every place we visited. And, of course, we were always required to wear face masks everywhere.
+
+If we think about it, no one did the health protocols because they enjoyed the routines. But yet, they were still enforced and followed with discipline. Why? Because everyone understood that they were done for our own security and health benefits. We didn't mind giving up a little of our comforts to keep everyone feeling secure and stay healthy.
+
+The security protocol is also not new in the digital information world. We know about Zero Trust, a proactive and integrated approach to secure all layers of the digital estate. It presumes that no entity is intrinsically trusted by default to access specific resources. 
+
+Identify, then verify, always. The method of authorization and authentication is continuously evolving. Password is not enough; you often need to satisfy the following requirements as well:
+- two-factor authentication
+- geo-location (IP address) restriction
+- firmware version
+- operating system patches
+- security and suspicious activity detection
+
+Sometimes they are not often in rhyme with the comforts of user experience. But yet, it doesn't stop us from implementing them to secure our resources. We understand that sacrificing security protocol for user comforts is like activating a time bomb in our backpack.
+
+Sharing passwords via Slack or email is easy, but of course, we understand that it is not a secure way to do it. We have LastPass that we specifically use for that purpose.
+
+Enabling screen lock when our computer is idle might not be great for the user experience because we need to re-type the password every time we're back to the computer. But do you know that many security breach cases on a company started from the unlocked employee's computer?
+
+Security protocols exist for reasons. So let's make it our culture to create a secure work environment together.
+
+## Tech News
+
+![memo](/assets/images/memo.png) *Moving Beyond Monoliths and Microservices* (check [the talks from the GOTO book club](https://gotopia.tech/bookclub/episodes/moving-beyond-monoliths-microservices))
+
+![memo](/assets/images/memo.png) *Adobe XD 2022 Crash Course* (watch [the Youtube video](https://youtu.be/oo5EoelQ_DQ))
+
+![memo](/assets/images/memo.png) *The three top-paying tech roles in 2022 and the skills you need to land them* (read [the article](https://stackoverflow.blog/2022/02/09/the-three-top-paying-tech-roles-in-2022-and-the-skills-you-need-to-land-them/))
+
+![memo](/assets/images/memo.png) *OpenTelemetry in .NET* (read [the blog post](https://rafaelldi.blog/posts/open-telemetry-in-dotnet/))
+
+![memo](/assets/images/memo.png) *Modernize ASP.NET Framework to ASP.NET Core with the .NET Upgrade Assistant* (check [the learn module](https://docs.microsoft.com/en-us/learn/modules/modernize-aspnet-framework-to-core/))

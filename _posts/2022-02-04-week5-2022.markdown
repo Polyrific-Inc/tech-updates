@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Week #5 2022"
+date:   2022-02-04 20:00:00 +0700
+---
+
+## Tech News
+
+![memo](/assets/images/memo.png) *How do I choose the right technology stack for my app?* (watch [Tim Corey's video talking about this](https://youtu.be/VpdHElXBXGQ))
+
+![memo](/assets/images/memo.png) *The leader's complete guide to cloud migration* (open and download [the report from Pluralsight](https://www.pluralsight.com/blog/leaders-complete-guide-cloud-migration))
+
+![memo](/assets/images/memo.png) *How we ship GitHub Mobile every week* (read from [GitHub engineering blog](https://github.blog/2022-01-12-how-we-ship-github-mobile-every-week/))
+
+![memo](/assets/images/memo.png) *LastPass is the standard password manager in Polyrific. How often should you change your master password?* (read [the LastPass article](https://blog.lastpass.com/2022/01/how-often-should-you-change-your-master-password/))
+
+![memo](/assets/images/memo.png) *Efficiency vs Effectiveness in Agile* (check [the talk from the GOTO Copenhagen 2021](https://gotopia.tech/articles/efficiency-vs-effectiveness-in-agile))

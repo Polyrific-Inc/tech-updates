@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Week #3 2022"
+date:   2022-01-21 20:00:00 +0700
+---
+
+## Tech News
+
+![memo](/assets/images/memo.png) *Activision Blizzard is joining Microsoft Gaming and Xbox Team* (read [the blog post](https://news.xbox.com/en-us/2022/01/18/welcoming-activision-blizzard-to-microsoft-gaming/))
+
+![memo](/assets/images/memo.png) *2FA compromise led to crypto.com hack* (read [the security report](https://crypto.com/product-news/crypto-com-security-report-next-steps))
+
+![memo](/assets/images/memo.png) *With the hype of NFT these days, let's try to understand it one more time* (read [this fun article](https://www.theverge.com/22310188/nft-explainer-what-is-blockchain-crypto-art-faq))
+
+![memo](/assets/images/memo.png) *Good insight on how Gojek reduced the build time of their iOS app by 50%* (read [the article](https://www.gojek.io/blog/reducing-our-build-time-by-50))
+
+![memo](/assets/images/memo.png) *Again about DevOps? Do you really understand it?* (watch [the video](https://youtu.be/0yWAtQ6wYNM))

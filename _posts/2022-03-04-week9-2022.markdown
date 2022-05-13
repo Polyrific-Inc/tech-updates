@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Week #9 2022"
+date:   2022-03-04 20:00:00 +0700
+---
+
+## IaC Web Interface
+
+If you've worked on some of Polyrific's projects, you might notice that the involvement of the Department of Technology there mainly was on the infrastructure setup and maintenance. However, that's not the only type of work the Department of Technology has on its program this year. The other exciting program is researching and developing technologies that might be adopted in other projects or promoted into Polyrific's product.
+
+One project currently in progress is the "IaC Web Interface" project. This project is a proof of concept to create a web interface to abstract the complexity of working with Infrastructure as Code to be utilized by a non-technical person. We plan to make it a feature in the Polyrific's Catapult when complete.
+
+This project raises some challenges. We need to provide a friendly user interface to capture business needs and translate them into technical IaC definitions. The correctness of the generated code is essential because we will not create a custom IaC runner. We will still utilize the existing industry-standard runner to execute the code, so the erroneous on the generated code would be a severe problem. We also need to make sure it can still be maintained directly without the web interface in the future to prevent vendor locking issues.
+
+The other exciting part of this POC project is, of course, the technology stack. We are building it with the "Software as a Service" offers in mind, which allows us to be flexible on the chosen technology. You will find exciting technology like Event Hubs, SignalR, CosmosDB, Azure Functions, etc., involved in this project. So not only the final product itself, but this project is also interesting to be considered as learning materials on its chosen technology stack.
+
+## Tech News
+
+![memo](/assets/images/memo.png) *Sustainable architectures in a world of Agile, DevOps, and cloud* (read [the article from StackOverflow blog](https://stackoverflow.blog/2022/02/24/sustainable-architectures-in-a-world-of-agile-devops-and-cloud/))
+
+![memo](/assets/images/memo.png) *Build a greener web* (watch [the insightful talk video](https://youtu.be/OdiSM9wLPAM))
+
+![memo](/assets/images/memo.png) *Monorepo explained* (apparently there's a dedicated website that explained this - check [the website](https://monorepo.tools/))
+
+![memo](/assets/images/memo.png) *Key criteria for evaluating DevSecOps tools* (watch [the Pluralsight webinar](https://youtu.be/2gGbJa_pGbM))
+
+![memo](/assets/images/memo.png) *How to safely share business passwords* (read [the article from LastPass blog](https://blog.lastpass.com/2022/02/how-to-safely-share-business-passwords/))

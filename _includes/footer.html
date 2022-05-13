@@ -1,0 +1,23 @@
+<footer class="site-footer h-card">
+    <div class="wrapper">
+      <div class="footer-col-wrapper">
+        <div class="footer-col footer-col-1">
+          <ul class="contact-list">
+            <li><a class="u-website" href="https://polyrific.com">www.polyrific.com</a></li>
+            <li><p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p></li>
+          </ul>
+        </div>
+  
+        <div class="footer-col footer-col-2">
+          {%- include social.html -%}
+        </div>
+  
+        <div class="footer-col footer-col-3">
+          <p>{{- site.description | escape -}}</p>
+        </div>
+      </div>
+  
+    </div>
+  
+  </footer>
+  
