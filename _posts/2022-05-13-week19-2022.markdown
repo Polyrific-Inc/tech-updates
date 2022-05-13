@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Week #19 2022"
+date:   2022-05-13 20:00:00 +0700
+---
+
+## Dangling Domains
+
+One item that we always have on our checklist when doing the regular infrastructure maintenance is to check for the "dangling domains." Dangling domains are items in the DNS records that the target resources don't exist anymore.
+
+For example, we have a subdomain "admin.company.com" in the DNS manager with the CNAME record pointing to "myadmin.azurewebsites.net." We need to ensure that the resource in the "myadmin.azurewebsites.net" does exist and is fully under our control. If the resource doesn't exist while the DNS record is still there, it will be a dangling domain, and it's vulnerable to the subdomain takeover threat.
+
+Subdomain takeover is a typical security threat on a company that frequently creates and deletes many resources. It is easy for the infrastructure admin to forget to update the DNS records because it doesn't give active alerts or visible errors. Subdomain takeovers enable malicious actors to redirect traffic intended for a domain to a site performing malicious activity.
+
+The following steps are the common scenario for a subdomain takeover:
+
+1. we set up a resource in Azure with a built-in domain of "myadmin.azurewebsites.net"
+2. we assign a CNAME record in the DNS manager, so the Azure resource is accessible via a custom domain "admin.company.com"
+3. one day, we remove the Azure resource as we don't need it anymore - at this point, if the DNS record is not removed as well, it becomes a dangling domain
+4. a threat actor somehow discovers this vulnerability, so he provisions a new resource in Azure that the built-in domain exactly matches our previously controlled resource, "myadmin.azurewebsites.net" - at this point, the traffic to "admin.company.com" is routed to this malicious actor's resource.
+
+The subdomain takeover might result in:
+
+- **loss of control over the content**: negative press about your organization's inability to secure its content, as well as the brand damage and loss of trust
+- **cookie harvesting from unsuspecting visitors**: threat actors can use subdomain takeover to build an authentic-looking page, trick unsuspecting users into visiting it, and harvest their cookies
+- **phishing campaigns**: this is true for malicious sites and MX records that would allow the threat actor to receive emails addressed to a legitimate subdomain of a known-safe brand
+- **other risks**: malicious sites might be used to escalate into other classic attacks such as XSS, CSRF, CORS bypass, and more.
+
+We usually sweep out for the dangling domains by regularly checking directly on the DNS records. We also utilize a PowerShell tool called [Get-DanglingDnsRecords](https://github.com/Azure/Azure-Network-Security/tree/master/Cross%20Product/DNS%20-%20Find%20Dangling%20DNS%20Records) for Azure resources to ease the identification process.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *5 Reasons Unreal Engine 5 is a BIG DEAL* (Watch [the video explaining the “unreal” new feature of the game engine](https://www.youtube.com/watch?v=cRLnR4Kot2M))
+
+Brain: "The video explains the cool features of Unreal Engine 5. I think the breakthrough of this new engine can really enable the Metaverse so developers can create a high-quality virtual environment more easily."
+
+![memo](/assets/images/memo16.png) *You Don’t Need A UI Framework* (Read [the article that argues against your favorite UI framework](https://www.smashingmagazine.com/2022/05/you-dont-need-ui-framework/))
+
+Brain: "The author discusses his opinion that oftentimes it is best to build our styling code from scratch. This is quite similar to our new approach of creating our own design system, rather than being fully dependent on some UI framework such as bootstrap or material design. The author is one of the highly regarded UI developers and I think his argument is worth reading here."
+
+![memo](/assets/images/memo16.png) *Apple, Google, Microsoft Back 'FIDO' Tech to Dump Passwords on Websites and Apps* (Read [the story on how big companies plan to remove passwords for their authentication](https://www.cnet.com/tech/services-and-software/apple-google-microsoft-back-fido-tech-to-dump-passwords-on-websites-and-apps/))
+
+Brain: "The FIDO Alliance -- FIDO is short for "fast identity online", announced that they are working to create a passwordless technology for websites and apps. So instead of using passwords, users will be using other methods such as fingerprint readers, face scanners, or even your phone. While I think it’ll be convenient to not have to remember passwords, I still think it’s the safest way if done properly, since the passwords can reside only in your mind, while your fingerprint or phone can sometimes be stolen."
+
+![memo](/assets/images/memo16.png) *Continuous Delivery at Airbnb* (Read [the story on how Airbnb implements microservice, and the DevOps to support it within the company](https://medium.com/airbnb-engineering/continuous-delivery-at-airbnb-6ac042bc7876))
+
+Brain: "Airbnb shares their experience with migrating their monolithic codebase into a service-oriented architecture, particularly in relation to migrating their DevOps into one that supports microservice architecture. It tells their strategy on how to engage engineers to adopt the new process and the challenge to make all 100% of their process migrated."
+
+![memo](/assets/images/memo16.png) *Google I/O 2022 keynote in 18 minutes* (Watch [the shortened version of keynotes on Google's biggest annual events](https://www.youtube.com/watch?v=U82aw8WEYAM))
+
+Brain: "Google has some exciting announcements in this year's event. They are announcing a bunch of new hardware, including one I find most exciting: google glass. I’m quite blown away by their demo for using google glass as a live translator, and showing the translation like a subtitle in a movie. It’s emerging tech being combined in action: AI & AR."
