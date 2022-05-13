@@ -16,12 +16,12 @@ The other exciting part of this POC project is, of course, the technology stack.
 
 ## Tech News
 
-![memo](/assets/images/memo.png) *Sustainable architectures in a world of Agile, DevOps, and cloud* (read [the article from StackOverflow blog](https://stackoverflow.blog/2022/02/24/sustainable-architectures-in-a-world-of-agile-devops-and-cloud/))
+![memo](/assets/images/memo16.png) *Sustainable architectures in a world of Agile, DevOps, and cloud* (read [the article from StackOverflow blog](https://stackoverflow.blog/2022/02/24/sustainable-architectures-in-a-world-of-agile-devops-and-cloud/))
 
-![memo](/assets/images/memo.png) *Build a greener web* (watch [the insightful talk video](https://youtu.be/OdiSM9wLPAM))
+![memo](/assets/images/memo16.png) *Build a greener web* (watch [the insightful talk video](https://youtu.be/OdiSM9wLPAM))
 
-![memo](/assets/images/memo.png) *Monorepo explained* (apparently there's a dedicated website that explained this - check [the website](https://monorepo.tools/))
+![memo](/assets/images/memo16.png) *Monorepo explained* (apparently there's a dedicated website that explained this - check [the website](https://monorepo.tools/))
 
-![memo](/assets/images/memo.png) *Key criteria for evaluating DevSecOps tools* (watch [the Pluralsight webinar](https://youtu.be/2gGbJa_pGbM))
+![memo](/assets/images/memo16.png) *Key criteria for evaluating DevSecOps tools* (watch [the Pluralsight webinar](https://youtu.be/2gGbJa_pGbM))
 
-![memo](/assets/images/memo.png) *How to safely share business passwords* (read [the article from LastPass blog](https://blog.lastpass.com/2022/02/how-to-safely-share-business-passwords/))
+![memo](/assets/images/memo16.png) *How to safely share business passwords* (read [the article from LastPass blog](https://blog.lastpass.com/2022/02/how-to-safely-share-business-passwords/))

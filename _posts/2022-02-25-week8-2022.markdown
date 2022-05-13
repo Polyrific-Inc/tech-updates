@@ -16,12 +16,12 @@ None of the items in the onboarding list are only for the sake of formality on t
 
 ## Tech News
 
-![memo](/assets/images/memo.png) *NET 20th Anniversary* (watch [the live event](https://youtu.be/67tCWKnweso))
+![memo](/assets/images/memo16.png) *NET 20th Anniversary* (watch [the live event](https://youtu.be/67tCWKnweso))
 
-![memo](/assets/images/memo.png) *Why shouldn't I choose the best language for the job?* (watch [what Tim Corey say about this](https://youtu.be/IeN4mrGBNQU))
+![memo](/assets/images/memo16.png) *Why shouldn't I choose the best language for the job?* (watch [what Tim Corey say about this](https://youtu.be/IeN4mrGBNQU))
 
-![memo](/assets/images/memo.png) *Design an office that people want to come back to* (read [the article from Harvard Business Review](https://hbr.org/2022/01/design-an-office-that-people-want-to-come-back-to))
+![memo](/assets/images/memo16.png) *Design an office that people want to come back to* (read [the article from Harvard Business Review](https://hbr.org/2022/01/design-an-office-that-people-want-to-come-back-to))
 
-![memo](/assets/images/memo.png) *The Harsh Reality for JS Developers: If You Don't Study The Fundamentals You Will Be Just Another “Coder”* (read [the interesting article](https://dev.to/dragosnedelcu/the-harsh-reality-for-js-developers-master-the-fundamentals-or-you-will-be-just-a-coder-21ke))
+![memo](/assets/images/memo16.png) *The Harsh Reality for JS Developers: If You Don't Study The Fundamentals You Will Be Just Another “Coder”* (read [the interesting article](https://dev.to/dragosnedelcu/the-harsh-reality-for-js-developers-master-the-fundamentals-or-you-will-be-just-a-coder-21ke))
 
-![memo](/assets/images/memo.png) *A printable, PDF - Git cheatsheet* (get [the cheatsheet](https://dev.to/tqbit/a-printable-pdf-git-cheatsheet-33bd))
+![memo](/assets/images/memo16.png) *A printable, PDF - Git cheatsheet* (get [the cheatsheet](https://dev.to/tqbit/a-printable-pdf-git-cheatsheet-33bd))

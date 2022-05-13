@@ -6,12 +6,12 @@ date:   2022-01-28 20:00:00 +0700
 
 ## Tech News
 
-![memo](/assets/images/memo.png) *Laparoscopic surgery performed by a robot without human assistance* (read [the report](https://hub.jhu.edu/2022/01/26/star-robot-performs-intestinal-surgery/))
+![memo](/assets/images/memo16.png) *Laparoscopic surgery performed by a robot without human assistance* (read [the report](https://hub.jhu.edu/2022/01/26/star-robot-performs-intestinal-surgery/))
 
-![memo](/assets/images/memo.png) *The first way of DevOps: emphasize the efficiency of the entire system* (read [the blog post](https://wehackpurple.com/security-is-everybodys-job-part-5-the-first-way/))
+![memo](/assets/images/memo16.png) *The first way of DevOps: emphasize the efficiency of the entire system* (read [the blog post](https://wehackpurple.com/security-is-everybodys-job-part-5-the-first-way/))
 
-![memo](/assets/images/memo.png) *A detailed guide of Microsoft Feature Management* (read [the article](https://procodeguide.com/programming/feature-flags-in-aspnet-core))
+![memo](/assets/images/memo16.png) *A detailed guide of Microsoft Feature Management* (read [the article](https://procodeguide.com/programming/feature-flags-in-aspnet-core))
 
-![memo](/assets/images/memo.png) *2021 DDoS attack trends* (read [the Microsoft Azure report](https://azure.microsoft.com/en-us/blog/azure-ddos-protection-2021-q3-and-q4-ddos-attack-trends/))
+![memo](/assets/images/memo16.png) *2021 DDoS attack trends* (read [the Microsoft Azure report](https://azure.microsoft.com/en-us/blog/azure-ddos-protection-2021-q3-and-q4-ddos-attack-trends/))
 
-![memo](/assets/images/memo.png) *2021 Landscape of API Traffic* (read0 [Cloudflare report](https://blog.cloudflare.com/landscape-of-api-traffic/))
+![memo](/assets/images/memo16.png) *2021 Landscape of API Traffic* (read0 [Cloudflare report](https://blog.cloudflare.com/landscape-of-api-traffic/))
