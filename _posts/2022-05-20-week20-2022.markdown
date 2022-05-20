@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Week #20 2022"
+date:   2022-05-20 20:00:00 +0700
+---
+
+## Pub/Sub
+
+Pub/Sub is a shorthand for publish/subscribe, the communication model where applications exchange messages asynchronously. It decouples between the applications that send the messages (called publishers or producers) and those that receive them (called subscribers or consumers).
+
+This type of communication is commonly found in modern applications, in oppose to the more traditional ones, like the remote procedural calls (RPC) or the direct API calls, because it provides better scalability and stability.
+
+![book](/assets/images/books16.png) __Queue vs. Topic__
+
+There are two models of how a message broker collects and delivers the messages: queue and topic.
+
+Queue offers a First In First Out (FIFO) message delivery model. In this model, the order of the messages matter. A message is usually processed once by a consumer to maintain its integrity. While the producers are generally independent of the consumers, they usually expect that the messages will be processed at some point.
+
+In contrast, a Topic is usually delivered immediately to the subscribers without really considering the order of the incoming messages. The publishers usually don't care who will process the message or if the message will not be processed at all. It is mainly in the interest of the consumer to subscribe to a topic.
+
+![book](/assets/images/books16.png) __Service to Client__
+
+When talking about the Pub/Sub system, we usually think it is a "service to service" communication. It happens behind the curtain without us, as the end-users know the message flows.
+
+However, don't forget that Pub/Sub mechanism can also happen to the "service to client" communication in the modern application, especially with the rise of web socket. It is possible now for a client (usually an opened web browser) to subscribe for events that happened on the server.
+
+For example, in the e-commerce application, instead of blocking the users from doing the other activities while waiting for their order to be processed, the application can just subscribe to be notified when the process is complete.
+
+The tools like [SignalR](https://dotnet.microsoft.com/en-us/apps/aspnet/signalr) and [Azure Web PubSub](https://azure.microsoft.com/en-us/pricing/details/web-pubsub/) service were created for this purpose.
+
+![book](/assets/images/books16.png) __Azure Event Hub vs. Azure Service Bus__
+
+It's also a topic that always comes up when designing event-based architecture, which one to choose: the Azure Event Hub or Service Bus. They're both excellent Azure services that serve a similar purpose when seen from the surface.
+
+The dev team needs to learn about the exact requirements of the applications (check the [docs](https://docs.microsoft.com/en-us/azure/event-grid/compare-messaging-services)). But, the following points should be a good start to help to decide which service is best for them:
+- use Azure Event Hub if you need to stream the application events for analytical or audit purposes in the future. Other services can subscribe to the broadcasted events and do specific actions, but it shouldn't be a problem if no one processes them anyway.
+- use Azure Service Bus if the published messages need to be processed at least once. The consumer needs to report back if the messages have been successfully processed or failed to maintain the integrity of the data flows.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Software Engineering at Google* (Download [the ebook here](https://abseil.io/resources/swe-book))
+
+Brain: "This free e-book contains engineering practices utilized at Google to make their codebase sustainable and healthy. This could be a good read for aspiring software architects and tech leads. I haven’t got the chance to read it myself, but I’m definitely putting it on my reading list."
+
+![memo](/assets/images/memo16.png) *Serilog Tutorial* (Read [the tutorial to help you master app monitoring](https://blog.datalust.co/serilog-tutorial/))
+
+Brain: "We already use Serilog in our apps like Catapult, Go Wandering, and other apps we built for our client. If you want to dig deeper into the world of application logging, this tutorial will cover the most basic and advanced cases."
+
+![memo](/assets/images/memo16.png) *Cyberthreat Warnings Are on the Rise: What You Can Do Now* (Read [the tips on how you can be more secure in this era of rising cyber threats](https://blog.lastpass.com/2022/03/cyberthreat-warnings-are-on-the-rise-what-you-can-do-now/))
+
+Brain: "The article lists out several best practices you can follow to better protect yourself from cyber threats. I think it’s good news that we’ve applied most of the best practices in our company policies, such as enabling MFA and using password managers."
+
+![memo](/assets/images/memo16.png) *The Azure Cosmos DB Journey to .NET 6* (Read [the improvement that has been made for Azure Cosmos DB SDK](https://devblogs.microsoft.com/dotnet/the-azure-cosmos-db-journey-to-net-6/))
+
+Brain: "The article detailed the improvement that has been made over the year in each new dotnet version, in regards to the Azure Cosmos DB SDK. The performance improvements are quite exciting. For example, one of the improvements allows for lower CPU utilization and improves latency requests by up to 1500%. It’s nice that we already use this Azure Cosmos DB in our project, some of which are already in .NET 6 (i.e. our new Friday update application)"
+
+![memo](/assets/images/memo16.png) *Crypto crash: Stablecoin collapse sends tokens tumbling* (Read [the story for just another crash for crypto](https://www.bbc.com/news/technology-61425209))
+
+Brain: "If you happened to have US$1 Million in $Luna tokens last month, today it may go down to a mere US$10k. The token just plummeted 99% in value, making it one of the huge crypto crashes in recent memory. Although the underlying technology of crypto is still a promising feat, it’s still good to be wary since the area is still heavily unregulated, inviting many fraudsters & scammers to the field."
