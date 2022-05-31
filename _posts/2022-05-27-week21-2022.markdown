@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Week #21 2022"
+date:   2022-05-27 20:00:00 +0700
+---
+
+## IE 11 End of Support
+
+Last year, Microsoft officially [announced](https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/) the end of support of the Desktop Internet Explorer 11, which will be on June 15, 2022. You can read the full explanation on the announcement. But, what does it mean for us?
+
+1. You should not use IE 11 anymore in your daily work activities; use the modern browsers instead (Firefox, Google Chrome, or Microsoft Edge) for better features and security support. If, for any reason, you still need to use IE 11, please consult with the TECH team to find better solutions.
+2. All internal tools and services used in Polyrific don't have a specific requirement for the IE 11, so there shouldn't be any concern if we should restrict the usage of this browser now in the company.
+3. You will not be able to use LastPass as IE 11 extension as [they are stopping their support for this browser](https://support.lastpass.com/help/lastpass-for-internet-explorer-11-no-longer-supported). If you've installed the extension in any other modern browsers, you should be good to go.
+4. If there's a left-over requirement in any project to support IE 11, please educate the clients regarding this sunset announcement and explain why they need to consider dropping the requirement.
+5. No more extra work is needed for the developers and testers to make their apps play nice with this old browser. Everybody can smile now :)
+
+RIP IE11! Oh btw, someone has creatively created a countdown for this event [https://death-to-ie11.com/](https://death-to-ie11.com/).
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Microsoft Build 2022* (Watch [the keynotes or browse through the talk on this Microsoft’s developer annual event page](https://news.microsoft.com/build2022/))
+
+Brain: "This year’s Microsoft event announces several new products and services. My favorite is how they are planning to bring GitHub co-pilot to a wide audience this summer. There are also other exciting things, such as Cloud PC - which enables you to switch your work from PC to iPad seamlessly, Express design - which allows you to create a web form by capturing the design you draw on a paper, and Mesh - the Microsoft’s own metaverse. See it for yourself, I promise it’s worth your time."
+
+![memo](/assets/images/memo16.png) *IBM unveils its roadmap for the era of quantum-centric supercomputing* (Read [the latest news about quantum computing](https://thenextweb.com/news/ibm-unveils-its-roadmap-era-quantum-centric-supercomputing))
+
+Brain: "During their annual “Think” conference, IBM announced they have unflinchingly decided it’s going all-in on quantum computing. You can view the roadmap yourself in the article, but what’s fascinating is that they are planning to have a 4,000-qubit quantum computer by the end of 2025. The quantum computer is getting more powerful!"
+
+![memo](/assets/images/memo16.png) *The Surprising Truth About Pixels and Accessibility* (Read [the detailed article about which to use between em, rem, or px in CSS](https://www.joshwcomeau.com/css/surprising-truth-about-pixels-and-accessibility/))
+
+Brain: "This in-depth article shows various insightful knowledge about the CSS units. It shows many use case scenarios to build high-quality UI that take into account accessibility and responsiveness."
+
+![memo](/assets/images/memo16.png) *The Modern JavaScript Tutorial* (Read [the complete tutorial](https://javascript.info/))
+
+Brain: "For our Junior Engineer, this might be a good starting point to learn the Javascript. It comprehensively covers basic and advanced subjects. It also allows you to edit and re-run the code samples provided in the tutorial, so you can experiment and gain a better understanding of the language."
+
+![memo](/assets/images/memo16.png) *Polymorphic Serialization with .NET System.Text.Json* (Read [the short yet pretty useful tutorial](https://khalidabuhakmeh.com/polymorphic-serialization-with-dotnet-system-text-json))
+
+Brain: "Since .NET 6 is using the native System.Text.Json for serialization instead of Newtonsoft.Json, we often run into some serialization issues due to some differences in the libraries. You can refer to this article if you run into some problem related to serializing arrays with different child types."
