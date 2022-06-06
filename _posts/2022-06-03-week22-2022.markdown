@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Week #22 2022"
+date:   2022-06-03 20:00:00 +0700
+---
+
+## .NET Family
+
+In Polyrific, we have been using .NET as the leading technology for a long time. Most of the projects, including the products like [Catapult](https://opencatapult.net/) and [Go Wandering](https://gowandering.com/), are built on top of this technology. Considering how much time and effort we've invested in this technology, it doesn't hurt to remind us again that .NET isn't only about web applications. A wide variety of applications can be built on top of this technology.
+
+📗 __Desktop apps__
+
+[Windows Presentation Foundation (WPF)](https://docs.microsoft.com/en-us/dotnet/desktop/wpf/) and [Universal Windows Platform (UWP)](https://docs.microsoft.com/en-us/windows/uwp/) have existed for a long time to build Windows applications. And they are still a valid option today for enterprise to support their business through desktop apps.
+
+📗 __Mobile apps__
+
+[Xamarin](https://docs.microsoft.com/en-us/xamarin/) was the platform that could be used to build native mobile apps for both iOS and Android. But Recently, Microsoft also released [.NET Multi-platform App UI (MAUI)](https://docs.microsoft.com/en-us/dotnet/maui/), which seems to be the successor of Xamarin. It's a native and cross-platform framework that can be used to build mobile apps (iOS and Android) and desktops (Mac and Windows).
+
+📗 __Web Client UI__
+
+[Blazor](https://docs.microsoft.com/en-us/aspnet/core/blazor) lets you build interactive web UIs using C# instead of JavaScript. It utilizes the feature in modern web browsers called web assembly. It allows components that usually run in the webserver to be run right in the browser.
+
+📗 __Real-Time Web__
+
+[SignalR](https://docs.microsoft.com/en-us/aspnet/core/signalr) can be the best option today if you want to embed real-time functionality behavior in your website. It allows server-side code pushes content to the connected clients as it happens.
+
+📗 __Game Development__
+
+.NET has been part of [Microsoft Game Dev](https://developer.microsoft.com/en-us/games/), which allows you to use the technology you've been familiar with to develop games. There are many options of game engines that you can choose based on your requirements: [Unity](https://unity.com/), [MonoGame](https://www.monogame.net/), [Godot](https://godotengine.org/), [Stride](https://www.stride3d.net/), etc.
+
+📗 __Machine Learning__
+
+[ML.NET](https://dotnet.microsoft.com/en-us/learn/ml-dotnet) is a free, open-source, and cross-platform framework that allows you to develop an integrate custom machine learning models into your application without a prior machine learning experience
+
+📗 __Internet of Things__
+
+[.NET IoT Libraries](https://docs.microsoft.com/en-us/dotnet/iot/) is a collection of useful libraries to quickly build apps that run on IoT devices and work with hundreds of sensors, displays, and input devices that use GPIO, SPI, I2C, PWM, and serial port interfaces. You can also check the [nanoFramework](https://nanoframework.net/) or [Meadow](https://www.wildernesslabs.co/) if you need another option.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Your eyes can control your smartphone via a new gaze-tracking tool* (Read [the cool new feature your smartphone soon can have](https://techxplore.com/news/2022-04-eyes-smartphone-gaze-tracking-tool.html))
+
+Brain: "The researcher at Carnegie Mellon University tries to improve how we interact with our smartphones. They want to utilize our gaze and simple hand gesture to make our interaction with the phone more natural. I hope this technology can also be adopted in the PC though, so I can code and move between tabs and windows without having to use the mouse and move my hand from my keyboard."
+
+![memo](/assets/images/memo16.png) *One of the Most Powerful DDoS Attacks Ever Hits a Crypto Platform* (Read [the report about the attack](https://www.wired.com/story/ddos-attack-botnet-crypto-platform/))
+
+Brain: "Cloudflare recently reported a record number of 15.3 million requests per second DDOS attack, delivered through HTTPS requests, which had the potential to put much more strain on the target. The attackers are getting stronger which means we also need to tighten our defense in terms of cyber security."
+
+![memo](/assets/images/memo16.png) *Bringing page transitions to the web* (Watch [the new feature of web UX brought by Google](https://www.youtube.com/watch?v=JCJUPJ_zDQ4))
+
+Brain: "UI developers might just have additional work to do. Google just announced a new API to allow page transition in web applications. It’s interesting how little improvement like this is continuously made to the Web even today. I wonder how the Web will look 10 years from now."
+
+![memo](/assets/images/memo16.png) *Commands & Events: What’s the difference?* (Read [the insightful article about async messaging](https://codeopinion.com/commands-events-whats-the-difference/))
+
+Brain: "Having the same understanding of a term is important within a development team. The article explained in a simple and visually clear way the difference between Commands and Events in async messaging. TLDR: commands are for invoking behavior, and events are for telling other parts of the application that something has happened."
+
+![memo](/assets/images/memo16.png) *Unity and .NET, what’s next?* (Read [the company's plan for improving developer experience](https://blog.unity.com/technology/unity-and-net-whats-next))
+
+Brain: "It’s good to hear when a company commits to improving the developer experience. The article drill through the roadmap of a more modern C# adoption. If you have tried coding with Unity before, you’ll notice that the source code was using quite an old C# version, making us unable to use some great features such as async/await."
