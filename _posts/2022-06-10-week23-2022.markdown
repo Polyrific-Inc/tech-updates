@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Week #23 2022"
+date:   2022-06-10 20:00:00 +0700
+---
+
+## WAI-ARIA
+
+[WAI-ARIA](https://www.w3.org/TR/wai-aria-1.2/) (Web Accessibility Initiative – Accessible Rich Internet Applications) is a set of HTML attributes to improve the accessibility of a website. It complements the semantic elements in HTML5 by giving further meaning to them so browsers and assistive technologies can recognize and maximize its accessibility features.
+
+There are three key components listed in the WAI-ARIA specifications: roles, properties, and states.
+
+📗 __Roles__
+
+Roles define what an element is or does. They are categorized as:
+
+- Document structure: most of the roles in this category are duplicates of the HTML semantic elements. However, there are roles without the HTML equivalent, like presentation, toolbar, or tooltip.
+- Widget: similar to the document structure roles, some widget roles duplicate the native HTML elements. Generally, widget roles require Javascript interaction to support the functionality, like scrollbar, searchbox, or slider.
+- Landmark: these roles provide a way to identify the organization and structure of a web page, like banner, contentinfo, or complementary.
+- Live region: the roles define elements with content that will dynamically change, like alert, log, or status.
+- Window: the roles define sub-windows to the main document window, like alertdialog or dialog.
+- Abstract: these roles are only intended to be used by browsers, not by developers writing HTML markup.
+
+📗 __Properties__
+
+Properties provide additional context or semantics to an element. For example, `aria-required="true"` or `aria-labelledby="label"`. Properties are static and do not commonly change once defined.
+
+📗 __States__
+
+States define the current status of an element. States are special properties of an element that the value can change as a result of certain events. For example, `aria-disabled="true"`.
+
+While WAI-ARIA seems to be an important thing in a website, there are some things that are worth noting:
+
+- These attributes are not a replacement for semantic HTML. The correct HTML semantic is preferable to WAI-ARIA in most situations.
+- Instead of giving advantages, poor WAI-ARIA implementation could introduce barriers that affect people with disabilities. Always test and validate appropriately before delivering the website with WAI-ARIA enabled.
+- WAI-ARIA is not only for screen readers. Web browsers, JavaScript toolkits, screen magnifiers, and other tools may utilize these attributes to improve the accessibility of the websites.
+- Implementing WAI-ARIA attributes extensively may lead to complex HTML structure and unexpected behavior. It is a good idea to define the exact need and the level of accessibility before going in with full implementation.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *The journey of moving from C++/WinRT to C# in the Microsoft Store* (Read [the story of yet another rewrite project](https://devblogs.microsoft.com/ifdef-windows/the-journey-of-moving-from-cpp-winrt-to-csharp-in-the-microsoft-store/))
+
+Brain: "One of the announcements in this year’s Microsoft build is this new version of the Microsoft Store. This article deep-dived into the process of rewriting the application to use C# with the UWP framework. It’s particularly challenging because the app needs to access some low-level features while C# on its own is a high-level language. The article demonstrates the usage of some advanced features in C# like .NET interop, .NET Native, COM, etc."
+
+![memo](/assets/images/memo16.png) *Bringing WebAssembly to the .NET Mainstream* (Watch [the progress on web assembly adoption in Microsoft products](https://www.youtube.com/watch?v=PIeYw7kJUIg))
+
+Brain: "WebAssembly, which allows you to run various languages like C# in the web browser, it turns out already has a rising adoption in mainstream work. With the release of Blazor as part of the ASP NET Core, the toolset, community, and developer experience has never been better. The talk shows the demo of an application built with Blazor. It’s awesome to see full stack C# applications in action."
+
+![memo](/assets/images/memo16.png) *Using Deep Learning to Annotate the Protein Universe* (Read [the AI application in biology](https://ai.googleblog.com/2022/03/using-deep-learning-to-annotate-protein.html))
+
+Brain: "This might be a bit of a heavy read. Google has successfully added about 6.8 million entries to Pfam’s well-known and trusted set of protein function annotations, about equivalent to the sum of progress over the last decade. While I kind of struggle to understand the ML technique described in the article, it’s still fascinating to me how AI is implemented in other fields such as Biology."
+
+![memo](/assets/images/memo16.png) *Introducing .NET MAUI – One Codebase, Many Platforms* (Read [the release news of the new Microsoft UI framework](https://devblogs.microsoft.com/dotnet/introducing-dotnet-maui-one-codebase-many-platforms/))
+
+Brain: "Remember a few weeks ago we shared the news about .NET MAUI in release candidates? Well, now it’s been released for good. Read into the features that this platform offers, and see if you are interested to try this one out. I’m particularly excited by the Hot Reload feature, which I found really helpful in UI development."
+
+![memo](/assets/images/memo16.png) *The balance has shifted away from SPAs* (Read [this author’s opinion about how Multi-Page Application might be making a comeback](https://nolanlawson.com/2022/05/21/the-balance-has-shifted-away-from-spas/))
+
+Brain: "The author argues that with the improvement of several UX improvements in the browser such as paint holding and Service Workers, the advantage of building a Single page application might not be worth the trouble of loading the bloated JS scripts at the initial load. I think it is sometimes good to read such articles that act as devil’s advocate to the current industry standard."
