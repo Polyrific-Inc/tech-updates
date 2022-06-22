@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Week #24 2022"
+date:   2022-06-17 20:00:00 +0700
+---
+
+## WebSocket
+
+WebSocket is a technology that makes it possible to open a bidirectional communication between the client and server, also known as full-duplex.
+
+Contrary to the traditional HTTP, the WebSocket allows the connection between client and server to be maintained until one party closes the connection. It enhances user experience because it will enable faster and real-time conversation.
+
+WebSocket is ideal for applications that require the frequent exchange of information—for example, real-time stock prices update, chatting applications, and multiplayer online games.
+
+📗 __What's wrong with HTTP?__
+
+Hypertext Transfer Protocol (HTTP) has been the go-to protocol when working with web applications. It had existed for a long time since websites were still relatively simple and mostly just static pages. It follows the classical client-server model, with the client opening a connection by making a request and waiting for the server to send the response.
+
+The first problem with HTTP is that it operates unidirectionally, a one-way communication. If the client doesn't make a request, it will not be able to get updated information from the server. If the server does a long-running process, the client can either do the HTTP polling (repeatedly send the requests at a specific interval - waste of traffic) or do the long-polling (the connection is kept open until the server responds or time out - blocking process). Either way, it isn't the ideal solution to handle the scenario.
+
+The second problem is that HTTP protocols send extra bytes of data when making requests. The extra bytes are used for the handshaking process with the server. It has become an overhead because they are sent repeatedly, although the data's content is actually the same.
+
+📗 __SignalR__
+
+SignalR is an [ASP.NET](http://asp.net/) library that simplifies the process of adding real-time web functionality to an application. Real-time web functionality is the ability to have server code push content to connected clients instantly as it becomes available, rather than having the server wait for a client to request new data.
+
+SignalR uses WebSocket transport where available and falls back to older transports where necessary, i.e., forever frame and long polling.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Migrating millions of lines of code to TypeScript* (Read [how Stripe migrates their code from Flow to TypeScript](https://stripe.com/blog/migrating-to-typescript))
+
+Brain: "The engineers at Stripe share their experience in migrating their frontend codebase to use TypeScript. I think it’s interesting that the migration is done by running an automation tool, and all 3.7 million code changes are made into a single pull request. I guess this is one of the advantages of monorepo".
+
+![memo](/assets/images/memo16.png) *Render mathematical expressions in Markdown* (Read [the short tutorial for improving your readme file](https://github.blog/changelog/2022-05-19-render-mathematical-expressions-in-markdown/))
+
+Brain: "A new feature is brought by GitHub. You can now render mathematical expressions in your readme Markdown. Just in case we run into projects that require some mathematical application, this might be a good feature to remember."
+
+![memo](/assets/images/memo16.png) *Machine Learning University* (Explore [the education initiative from Amazon to teach machine learning theory and practical applications](https://mlu-explain.github.io/))
+
+Brain: "Amazon created interactive learning materials to teach data science to a wider audience. Reading some of the articles feels fun with the cats & dogs animations. Everything is always better with cats & dogs animations :)"
+
+![memo](/assets/images/memo16.png) *Foundational Algorithms, Where They Came From, Where They're Going* (Read [the fundamental concepts in machine learning](https://read.deeplearning.ai/the-batch/issue-146/))
+
+Brain: "In this blog post, Andrew NG explains several important algorithms in the field of machine learning. The author presented the surprising origin of the algorithms and explained the algorithm structure and usage in simple and easy-to-understand anecdotes. I particularly find the fact that Logistic Regression was being used to identify how much poison will kill you quite amusing."
+
+![memo](/assets/images/memo16.png) *Laws of UX* (Explore [this comprehensive website to learn about UX](https://lawsofux.com/))
+
+Brain: "Interested in expanding your knowledge on UX? This site hosts a variety of UX best practices. We’ve known that clients often care about UI/UX a lot. Perhaps learning a bit more about these laws can benefit us in our day-to-day development."
