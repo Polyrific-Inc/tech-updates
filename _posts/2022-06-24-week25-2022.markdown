@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Week #25 2022"
+date:   2022-06-24 20:00:00 +0700
+---
+
+## WebAssembly
+
+WebAssembly is a technology that makes it possible to run code in a modern web browser. Think of it as a small virtual machine in your browser that executes portable bytecode at near-native speed.
+
+Many languages can be used to write codes that run on WebAssembly, like C++, C#, Rust, Python, Ruby, and more. Those languages have been used to write code for the server-side application before, but now they can also be used to write client-side applications.
+
+__But Why?__
+
+JavaScript has been the de-facto primary language that has run on the client-side for a long time and has worked well for the purpose. However, JavaScript often performs poorly in serving modern use-case computations, like 3D rendering, virtual reality, video editing, and other resource-intensive needs.
+
+WebAssembly is a low-level, assembly-like language with a compact binary format that makes it possible to deliver near-native performance. It is capable of executing complex operations because it takes advantage of common hardware capabilities available on a wide range of platforms.
+
+While WebAsembly seems like a good alternative to JavaScript, it is designed to complement and run alongside JavaScript. You can take advantage of WebAssembly's performance and JavaScript's flexibility by combining both in the same application.
+
+__Blazor WebAssembly__
+
+Blazor is a framework for building an interactive client-side web interface with .NET. There are many types of Blazor:
+
+- Blazor Server, which hosts the components on the server and makes use of SignalR to send the UI updates
+- Blazor WebAssembly, which makes use of the WebAssembly technology to run .NET inside web browsers
+- Blazor Hybrid, which blends the web and native technologies
+
+.NET code executed via WebAssembly in the browser runs in the browser's JavaScript sandbox with the protections that the sandbox provides against malicious actions on the client machine.
+
+Blazor WebAssembly is a perfect alternative to JavaScript-based Single Page Application frameworks like Angular, React, or Vue.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Machine Learning for Beginners - A Curriculum* (Take up [the free course provided by Microsoft](https://github.com/microsoft/ML-For-Beginners))
+
+Brain: "Microsoft created a complete curriculum for data science with Python. In case you want to do some career switching, the material provided here is a pretty good start since it covers basic and advanced material, along with real-world implementation."
+
+![memo](/assets/images/memo16.png) *Rust Is Hard, Or: The Misery of Mainstream Programming* (Read [this interesting piece on the young and increasingly popular programming language](https://hirrolot.github.io/posts/rust-is-hard-or-the-misery-of-mainstream-programming.html))
+
+Brain: "I’ve been trying to learn Rust recently because my Twitter timeline keeps telling me how awesome it is, and this article kind of opened my eyes to how low-level programming can bring up certain complexity that rarely happens in a high-level programming language. I guess even with the huge advancement in computer science, there are still many fundamental problems such as concurrency handling in programming languages yet to be solved for future generations to tinker with."
+
+![memo](/assets/images/memo16.png) *Over 3.6 million MySQL servers were found exposed on the Internet* (Read [the report by a cybersecurity research group that discovered this vulnerability](https://www.bleepingcomputer.com/news/security/over-36-million-mysql-servers-found-exposed-on-the-internet/))
+
+Brain: "It’s good that most of our projects are using a cloud provider like Azure, which provides firewall security by default. In the case that your project is using some on-premise server, make sure that you have the firewall turned on. As the report shows, there’re many servers that are still at risk of attacks due to being exposed on the internet"
+
+![memo](/assets/images/memo16.png) *HTTP/3 From A To Z: Core Concepts* (Read [the core concept of the newly introduced version of the HTTP protocol](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/))
+
+Brain: "This long article, the first part of a 3 parts series, tries to give a nuanced explanation of the new HTTP/3 protocol, by explaining the core concept behind it. It can get too low level even for us programmers, but if you are interested in how each of your HTTP requests is conducted, this article will give you a complete picture."
+
+![memo](/assets/images/memo16.png) *GitHub Copilot is generally available to all developers* (Read [the good news here](https://github.blog/2022-06-21-github-copilot-is-generally-available-to-all-developers/))
+
+Brain: "The wait is over, you can now try to install GitHub Copilot for trial in your local dev environment. Go ahead and try it, and share your experience with your friends."
