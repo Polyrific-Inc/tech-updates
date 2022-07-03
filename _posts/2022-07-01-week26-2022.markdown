@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "Week #26 2022"
+date:   2022-07-01 20:00:00 +0700
+---
+
+## Containerization
+
+Containerization is a technology to package an application and its dependencies in a standard way so that it will always behave similarly in different environments. After building the package into a read-only container image, we can create multiple instances from it that are entirely isolated from each other.
+
+__vs. Virtual Machine__
+
+At a high level, VMs virtualize the underlying hardware so that multiple operating system (OS) instances can run on the hardware. Each VM runs an OS and has access to virtualized resources representing the underlying hardware.
+
+A container virtualizes the underlying OS and causes the containerized app to perceive that it has the OS and hardware all to itself. Because the underlying OS and infrastructure differences are abstracted, as long as the base image is consistent, the container can be deployed and run anywhere.
+
+Since containers share the host OS, they don’t need to boot an OS or load libraries. It enables containers to be much more efficient and lightweight.
+
+__Microservice__
+
+With microservices, a complex application is broken up into a series of smaller, more specialized services, each with its own database and its own business logic.
+
+The concepts behind microservices and containerization are similar as both are software development practices that transform applications into collections of smaller services or components that are portable, scalable, efficient, and easier to manage.
+
+A microservice developed within a container gains all of the inherent benefits of containerization: portability in terms of the development process and vendor compatibility (no vendor lock-in), as well as developer agility, fault isolation, server efficiencies, automation of installation, scaling and management, and layers of security, among others.
+
+__Security__
+
+Containerization has taken a “secure-by-default” approach, believing that security should be inherent in the platform and not a separately deployed and configured solution. Containerized applications inherently have a level of protection since they can run as isolated processes and operate independently of other containers. It could prevent malicious code from affecting other containers or invading the host system.
+
+__Docker__
+
+Docker is an open-source platform that enables developers to build, deploy, run, update, and manage containers. While it is possible to create containers without Docker by working directly with the built-in OS capabilities, Docker makes containerization faster, easier, and safer. It is currently used by [over 13 million developers](https://www.docker.com/) to work with containerization.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Cloudflare outage on June 21, 2022* (Read [the company’s statement on the recent outage](https://blog.cloudflare.com/cloudflare-outage-on-june-21-2022/))
+
+Brain: "Despite the outage, it’s admirable that Cloudflare can create a detailed post-incident report 6 hours after the outage. For comparison, Atlassian had an outage in early April, and it took weeks to release the report. Cloudflare's report concisely explains the cause and the motivation behind the deployment that causes the outage, laid out the timeline from the time outage happened to when it was resolved, while also giving a detailed technical explanation of the error and the remediation plan. There are many things we can learn from this report."
+
+![memo](/assets/images/memo16.png) *Understanding PathBase in ASP.NET Core* (Read [how to use this lesser know property in the ASPNet HttpRequest class](https://andrewlock.net/understanding-pathbase-in-aspnetcore/))
+
+Brain: "This article shares some useful use cases when using the ASP feature of PathBase. It demonstrates how we can dynamically ignore a certain prefix in the URL to your routing path, for example when we are using some proxy in our server. I think it’s useful to keep this feature in mind."
+
+![memo](/assets/images/memo16.png) *CQRS Repository with EF Core* (Read [this interesting article on how to design your base repository in EF Core](https://thirty25.com/posts/2020/08/cqrs-ef-core-repository-pattern))
+
+Brain: "Command and Query Responsibility Segregation (CQRS for short), is a design pattern that can help organize your code by separating between queries and commands. The article shows how it’s done in EF Core. Might be a good reference if we want to use it as the base repository design for our projects."
+
+![memo](/assets/images/memo16.png) *Capturing A Billion Emo(j)i-ons* (Read [how the engineers in Disney+ Hotstar architect their system to handle this many requests](https://blog.hotstar.com/capturing-a-billion-emojis-62114cc0b440))
+
+Brain: "Providing a server that can take up billions of requests used to need a very expensive infrastructure. With recent advances in cloud technology and messaging service, we can now provide a cost-effective solution with an intuitive architecture. In this article, the author shares the high-level design to achieve such challenging non-functional requirements."
+
+![memo](/assets/images/memo16.png) *How developers can benefit from the new 5G paradigm* (Read [Microsoft’s vision on the 5G revolution](https://azure.microsoft.com/en-gb/blog/how-developers-can-benefit-from-the-new-5g-paradigm/))
+
+Brain: "This article gives a pretty good insight on 5G capabilities while introducing Microsoft’s plan to help enable developers to use those capabilities by introducing a carrier-agnostic platform. This article is good for developers to read, to learn about exciting new technologies. For business people, this article might give you insight or ideas on the opportunities for business applications that require 5G. As mentioned in the article, companies are projected to spend $20 billion USD over the next 5 years for these applications."
