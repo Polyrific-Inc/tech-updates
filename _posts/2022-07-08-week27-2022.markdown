@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Week #27 2022"
+date:   2022-07-08 20:00:00 +0700
+---
+
+## Kubernetes
+
+Last week, we discussed containerization as a way to host an application ecosystem. It has opened opportunities to set up a replicable, scalable, and secure infrastructure environment. As applications grow to span multiple containers deployed across multiple servers, operating them becomes more complex. Kubernetes came to solve this issue by providing a set of tools to control how and where those containers will run.
+
+In the simplest definition, Kubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications. Kubernetes is capable of orchestrating almost every component required to run a containerized system, from the service discovery, load balancing, resource allocation tracking, scales based on compute utilization, health check, and self-healing mechanism.
+
+__Components__
+
+When you deploy Kubernetes, you get a cluster. A **cluster** is a set of machines that works together and are viewed as a single system.
+
+At the high level, there are two types of machines in a cluster: node and control plane. **Nodes** are machines that run containerized applications. **Control Planes** are machines that run the scheduling software to manage the nodes.
+
+In Kubernetes, you cannot run containers directly in a node. You need to package the containers into a Kubernetes object called a **pod**. A single pod can hold a group of one or more containers that will closely interact as a unit. For example, if you want to run a website, you can put the website in the main container and the database in the supporting container. You can put these containers in a pod so they can communicate effectively in a private, secure connection.
+
+If you want to learn in detail about the Kubernetes components, you can go to the [Kubernetes documentation](https://kubernetes.io/docs/concepts/overview/components/).
+
+__vs. Docker__
+
+Last week, we also mentioned Docker as a tool to manage containers. Is Kubernetes replacing Docker?
+
+The answer is no; Kubernetes and Docker work together.
+
+Docker provides an open standard for packaging and distributing containerized applications. Using Docker, you can build and run containers and store and share container images.
+
+Kubernetes orchestrates and manages the distributed, containerized applications that Docker creates. It also provides the infrastructure needed to deploy and run those applications on a cluster of machines.
+
+__Managed Kubernetes Service__
+
+Technically, you can either set up and manage Kubernetes by yourself or go for a managed solution. Doing everything in-house may be expensive and challenging. When you go for a managed solution, you don't need to handle everything by yourself. Depending on the vendor, "managed" can refer to anything from dedicated support to hosting with pre-configured environments, to complete hosting and operation.
+
+There is an expanding number of platforms available depending on your needs. Some of them are:
+
+- Google Kubernetes Engine (GKE)
+- Amazon Elastic Kubernetes Service (EKS)
+- Azure Kubernetes Service (AKS)
+- Red Hat OpenShift
+- DigitalOcean Kubernetes
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Exchange Online Journey to .NET Core* (Read [the story of the Exchange Online rewrite](https://devblogs.microsoft.com/dotnet/exchange-online-journey-to-net-core/))
+
+Brain: "This article shares the journey of the team in Microsoft converting the Microsoft Exchange application to .NET Core. It shows how all of the conversion results in performance improvements to as high as a 90% increase. This proves Microsoft’s direction to move on from enterprise .NET Framework to open source .NET core to be a really good idea."
+
+![memo](/assets/images/memo16.png) *How to use Twilio SMS and Voice with a .NET 6 Minimal API* (Read [the tutorial for sending SMS and Voice with dotnet 6](https://www.twilio.com/blog/sms-voice-dotnet-6-minimal-api))
+
+Brain: "Minimal API seems very interesting. Instead of having a bloated boilerplate code to set up the controllers and routing, we can instead have all of the endpoints set up in a single file. If you are interested in learning more about this, you can try this tutorial, while also learning about the Twilio API."
+
+![memo](/assets/images/memo16.png) *Coding and ADHD - ADHD Brains* (Read [this interesting series from a developer that deals with ADHD](https://dev.to/abbeyperini/coding-and-adhd-adhd-brains-im1))
+
+Brain: "This developer shares her story and strategy for dealing with ADHD. Whether you have it or not, I think some of us have dealt with procrastination or difficulty focusing on certain tasks. The strategies laid out in this article might be useful for the general audience."
+
+![memo](/assets/images/memo16.png) *Anatomy of a DDoS amplification attack* (Read [the explanation about one of the most common DDoS techniques](https://www.microsoft.com/security/blog/2022/05/23/anatomy-of-ddos-amplification-attacks/))
+
+Brain: "The article explains the detail of a DDoS attack, and the strategy typically used to mitigate it. It shows how different attack vectors require different treatments, and how it’s important to also maintain a highly scalable mitigation pipeline to be able to cope with the largest attacks. Thankfully all of these protections can easily be enabled in our azure resources."
+
+![memo](/assets/images/memo16.png) *The Ultimate List of Developer Newsletters* (Read [the comprehensive list of developer newsletters](https://draft.dev/learn/the-ultimate-list-of-developer-newsletters))
+
+Brain: "Do you find yourself in need of more tech news than what we offer here weekly? You can subscribe to other newsletters that are listed here. It listed several categories such as Tech leadership, web development, C#, and many more."
