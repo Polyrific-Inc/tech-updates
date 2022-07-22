@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "Week #28 2022"
+date:   2022-07-15 20:00:00 +0700
+---
+
+## ITSM
+
+IT Service Management (ITSM) refers to all processes and activities in managing the delivery of IT services to customers. It is essential to understand that the main focus of ITSM is the delivery of values to customers instead of just the tools or the framework.
+
+ITSM is essential for a variety of reasons. Implementing ITSM can help regularize processes through structured delivery and documentation. ITSM implementation also helps in saving costs by building a predictable IT org and implementing ITSM for business benefits by bringing actionable IT insights to the business that help in decision making.
+
+__ITSM Efficiencies__
+
+A significant benefit of ITSM is its ability to improve IT efficiency. ITSM does this in the following ways:
+
+- **Efficient use of scarce IT resources**: The ITSM umbrella encompasses the entire range of IT services for a more efficient approach.
+- **Process workflow**: Automated process workflow improves collaboration and eliminates many manual tasks, giving more time to focus on strategy and customers.
+- **Save time and money**: ITSM identifies and eliminates recurring problems and promotes faster issue resolution, which will reduce costs in terms of time and money investments.
+- **Reduce downtime**: Faster IT response and improved availability management mean that your resources will always be working to improve your business.
+- **Prevent issues before they occur**: Create compelling, customized responses to specific IT issues.
+- **Insightful reports**: Reporting automation makes the reporting process more cost-effective and accurate.
+- **Service-based incident management**: ITSM allows you to identify potential issues and respond to them before they cause serious problems.
+- **Quickly bounce back from critical IT issues**: ITSM provides the strategies and resources to weather even the most challenging IT storms and then bounce back quickly.
+
+__ITSM Processes__
+
+To reach the expected efficiencies, ITSM is usually done with certain processes. A few of the core ITSM processes include:
+
+- **Incident management**: it handles the entire incident-management process (a disruption to regular operations) to restore the services to customers as quickly as possible
+- **Problem management**: it removes defects from the IT infrastructure, eliminates recurring incidents, and stabilizes the environment
+- **Change management**: it tracks scheduled and planned infrastructure changes, including the approval and rollback scenario.
+- **Request management**: it manages and follows up on service requests by setting up priorities and progress updates
+- **Knowledge management**: it is the process of creating, sharing, using, and managing the knowledge and information of an organization
+- **IT Asset management**: it makes sure that the valuable items, tangible and intangible, in your organization are tracked and used efficiently
+
+__vs. ITIL__
+
+Information Technology Infrastructure Library (ITIL) is the most commonly used framework for ITSM. It provides detailed best practices for IT functions to align with an organization's business outcomes. The ITIL framework has been through several iterations, with the latest referred to as ITIL 4
+
+However, ITIL is not the only framework for doing ITSM. Other widely used frameworks include Capability Maturity Model Integration (CMMI), Control Objectives for Information Related Technologies (COBIT), ISO 20000, Six Sigma, and others.
+
+__ITSM in Polyrific__
+
+In Polyrific, we always look for ways to improve our ITSM process. As the first principle of ITSM says, delivering values to customers should always be the top priority over the tooling and frameworks.
+
+We have been using the Jira Service Management app to manage all IT requests (if you've missed the announcement, please find it [here](https://tech-updates.polyrific.com/2022/03/18/week11-2022.html)). It has helped us track and set priorities on common IT-related requests, like adding new user accounts, resetting passwords, VPN access, etc.
+
+Please let us know if you have ideas or feedback about the things we should improve on the ITSM process. We will very much appreciate it.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Google Cloud extends Document AI with new parsers for identity* (Read [the new feature from google cloud](https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-extends-document-ai-with-new-parsers-for-identity))
+
+Brain: "Google announced a new service to help companies extract info from identity documents by utilizing some pre-trained AI models. Currently, it only supports the US and French IDs, but more support is being added. Interestingly, it can also detect some identity fraud in the document submission process."
+
+![memo](/assets/images/memo16.png) *Firefox rolls out Total Cookie Protection by default to all users worldwide* (Read [the new feature from the browser](https://blog.mozilla.org/en/products/firefox/firefox-rolls-out-total-cookie-protection-by-default-to-all-users-worldwide/))
+
+Brain: "Firefox just released a feature that by default prevents websites from tracking your behavior using cookies. It’s done by separating the cookies in an isolated “cookie jar” so that the cookies would not be able to be accessed by other websites. Might be interesting to switch to Firefox for this feature alone."
+
+![memo](/assets/images/memo16.png) *Don’t Sink Your Website With Third Parties* (Read [the tips on how to avoid performance issues from third-party libraries](https://www.smashingmagazine.com/2022/06/dont-sink-website-third-parties/))
+
+Brain: "The author comprehensively explains the types of third-party libraries, how they can impact your sites, how to measure them, and how to optimize against them. It offers solutions like loading the third-party scripts using the async / defer attribute, loading them using web workers, or ensuring the third-party requests are close to your user’s location by utilizing CDN. It’s worth reading if you care about your website performance."
+
+![memo](/assets/images/memo16.png) *Ongoing phishing campaigns can hack you even when you’re protected with MFA* (Read [the explanation about the technique used by the attacker to launch their attack](https://arstechnica.com/information-technology/2022/07/microsoft-details-phishing-campaign-that-can-hijack-mfa-protected-accounts/))
+
+Yoga: "This article reminds us that improving our security awareness is always important. Even after the activation of MFA, we’re still vulnerable to cyber attacks as attackers always find a way to get what they want. But, it doesn’t mean MFA is useless because it will protect us from even the bigger catastrophe."
+
+![memo](/assets/images/memo16.png) *Write Better Commits, Build Better Projects* (Read [the tips on how to write a better commit, which would surely make you a better teammate](https://github.blog/2022-06-30-write-better-commits-build-better-projects/))
+
+Brain: "This article from GitHub suggests we write better commits by making the order and messages of the commits follow an easy-to-follow structure and narrative. It would be like writing a novel to your reviewer, teammates, or your future self so that it can help us better understand the history of the project’s code. While it might be tedious to do exactly what the article suggests, I think it would be more beneficial to improve our commit messages or have a clear outline when starting a branch."
