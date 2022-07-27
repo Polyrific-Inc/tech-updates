@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "Week #29 2022 - HTTP/2"
+date:   2022-07-22 20:00:00 +0700
+---
+
+## HTTP/2
+
+Hypertext Transfer Protocol (HTTP) is a protocol commonly found on the web, facilitating the communication between servers and clients. The first documented HTTP version was released in 1991 as HTTP 0.9 and received no significant updates for years afterward. Some minor updates, HTTP 1.0 and HTTP 1.1, were also released in the 90s and haven't got major updates until HTTP/2 was finally released on 2015.
+
+HTTP/2 comes as an extension to its predecessor and is not expected to replace HTTP 1.1 anytime soon. HTTP/2 changes are designed to maintain interoperability and compatibility with HTTP 1.1.
+
+__What's wrong with HTTP 1.1?__
+
+HTTP 1.1 was limited to processing only one outstanding request per TCP connection, forcing browsers to use multiple TCP connections to process multiple requests simultaneously.
+
+However, using too many TCP connections in parallel leads to TCP congestion that causes unfair monopolization of network resources. Web browsers using multiple connections to process additional requests occupy a greater share of the available network resources, hence downgrading network performance for other users.
+
+Issuing multiple requests from the browser also causes data duplication on data transmission wires, which in turn requires additional protocols to extract the desired information free of errors at the end nodes.
+
+The web has evolved well beyond the capacity of legacy HTTP-based networking technologies. The core qualities of HTTP 1.1 developed over a decade ago have opened the doors to several embarrassing performance and security loopholes.
+
+__HTTP/2 Feature Upgrades__
+
+The following features are the upgrades that come with HTTP/2:
+
+<ul>
+<li>
+<strong>Multiplexed stream</strong>: Earlier iterations of the HTTP protocol could transmit only one stream at a time, along with some time delay between each stream transmission. Receiving tons of media content via individual streams sent one by one is inefficient and resource-consuming.
+
+<p>HTTP/2 changes have helped establish a new binary framing layer to address these concerns. This layer allows the client and server to disintegrate the HTTP payload into a small, independent, and manageable interleaved sequence of frames. This information is then reassembled at the other end.</p>
+</li>
+<li>
+<strong>Server Push</strong>: This capability allows the server to send additional cacheable information to the client that isn't requested but is anticipated in future requests. For example, if the client requests resource X and it is understood that resource Y is referenced with the requested file, the server can push Y along with X instead of waiting for an appropriate client request.
+
+<p>The client places the pushed resource Y into its cache for future use. This mechanism saves a request-respond round trip and reduces network latency.</p>
+
+<p>Other HTTP/2 changes such as Server Push proactively update or invalidate the client's cache, also known as "Cache Push." Long-term consequences center around the ability of servers to identify possible push-able resources that the client actually does not want.</p>
+</li>
+<li>
+<strong>Binary Protocols</strong>: HTTP 1.x used to process text commands to complete request-response cycles. HTTP/2 will use binary commands (in 1s and 0s) to execute the same tasks. Although it will probably take more effort to read binary than text commands, it is easier for the network to generate and parse frames available in binary. The actual semantics remain unchanged.
+
+<p>Using binary protocol will give the following benefits:</p>
+
+- low overhead in parsing data
+- lighter network footprint
+- reduce network latency and improve throughput
+- less prone to errors
+</li>
+<li>
+<strong>Stream prioritization</strong>: HTTP/2 implementation allows the client to provide preference to particular data streams. Although the server is not bound to follow these instructions from the client, the mechanism allows the server to optimize network resource allocation based on end-user requirements.
+</li>
+<li>
+<strong>Stateful Header Compression</strong>: Delivering a high-end web user experience requires websites rich in content and graphics. The HTTP application protocol is stateless, which means each client request must include as much information as the server needs to perform the desired operation. This mechanism causes the data streams to carry multiple repetitive frames of information so that the server does not have to store information from previous client requests.
+
+<p>HTTP/2 implementation addresses these concerns with the ability to compress a large number of redundant header frames. Both client and server maintain a list of headers used in previous client-server requests.</p>
+</li>
+</ul>
+
+__gRPC__
+
+gRPC is a modern, high-performance RPC framework for building large-scale, distributed applications over RPC (remote procedure call) protocols. It uses HTTP/2 protocol for transport and Protocol Buffers as its interface description language and underlying message format.
+
+HTTP/2 is one of the big reasons why gRPC can perform so well. It reduces latency by enabling full request and response multiplexing using the binary framing layer for data transport. It also allows prioritization of requests, letting more important requests complete more quickly.
+
+__HTTP/2 in ASP.NET__
+
+HTTP/2 has been supported since the release of [ASP.NET Core 2.2](https://docs.microsoft.com/en-us/aspnet/core/release-notes/aspnetcore-2.2?view=aspnetcore-6.0#http2-in-kestrel). To get the benefit of HTTP/2, both the client and server need to agree on the protocol to use. If one of the parties cannot work with HTTP/2, it will fall back to HTTP 1.x. You can find the list of HTTP/2 support on some servers [here](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/servers/?view=aspnetcore-6.0&tabs=windows#http2-support).
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *REST vs GraphQL vs gRPC* (Read [the comparison to help you decide which to use in your project](https://medium.com/bitsrc/rest-vs-graphql-vs-grpc-684edfacf810))
+
+Brain: "This article outlines each of the advantages, drawbacks, and when to choose between REST, GraphQL, and gRPC. It might be a good read if you want to switch from REST, consider GraphQL to have a dynamic API that the UI, or use gRPC to optimize performance".
+
+![memo](/assets/images/memo16.png) *Dynamic Kubernetes Cluster Scaling at Airbnb* (Read [the company journey on migrating their container orchestration to Kubernetes](https://medium.com/airbnb-engineering/dynamic-kubernetes-cluster-scaling-at-airbnb-d79ae3afa132))
+
+Brain: "The article lists out the phases of implementing autoscaling in their Kubernetes clusters. From manually scaling a physical instance to providing a customized auto-scaling mechanism that fits into Airbnb’s own use case. It’s interesting how they create a customized solution and give out the solution to the open source platform they are using".
+
+![memo](/assets/images/memo16.png) *Service Monitoring Patterns* (Read [the types of monitoring patterns written by the engineers in the Hotstar streaming service](https://blog.hotstar.com/monitoring-at-scale-2021-d508cf0c4da8))
+
+Brain: "It's always useful to learn something from the real-world application. Especially in the case of service monitoring, which I think the learning material is still limited on usually really dependent on the platform that is used. In this article, the engineers in Hotstar streaming service share their decision to use a 3rd party reliability platform called Last9 to aggregate all of their monitoring data into a centralized platform. The features outlined are quite interesting, such as allowing us to view all of the systems in graphs, so we can visualize where the issue lies within our system".
+
+![memo](/assets/images/memo16.png) *Attackers scan 1.6 million WordPress sites for vulnerable plugins* (Read [the explanation to learn how to secure your WordPress](https://www.bleepingcomputer.com/news/security/attackers-scan-16-million-wordpress-sites-for-vulnerable-plugin/))
+
+Yoga: "The author reports that hackers find a vulnerable plugin that allows them to upload files without authentication to inject malicious script. It's worth reading if you have any WordPress projects".
+
+![memo](/assets/images/memo16.png) *Canidev.tools, a tool that shows what your browser’s dev tools can do* (Browse [the feature available here](https://www.canidev.tools/))
+
+Brain: "Browsing through the feature list on this site introduces me to several useful features I didn’t know existed. This site lists all of the features of several browser’s dev tools and details how to access them. For example, I learned that you can simply emulate your website's light/dark color scheme by toggling one button in the dev tools without changing your computer’s color scheme".
