@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Week #11 2022"
+title:  "Week #11 2022 - Tech Support"
 date:   2022-03-18 20:00:00 +0700
 ---
 
@@ -14,7 +14,7 @@ However, with the increase of the project scale, the number of team members, and
 
 We want to try a new support system using the Jira Service Management as the ITSM platform starting this week. We have used Jira as the project tracking tool for quite some time now, so we think it would be good to use the other service from the same platform so the users can reuse their existing accounts.
 
-You can access and bookmark the support page at https://tech-support.polyrific.com. The URL will redirect you to the original location of the service management page (unfortunately, Jira hasn't supported a custom domain configuration, so redirecting you to the support page from the shorter Polyrific URL is the best thing we can do now).
+You can access and bookmark the support page at [https://tech-support.polyrific.com](https://tech-support.polyrific.com). The URL will redirect you to the original location of the service management page (unfortunately, Jira hasn't supported a custom domain configuration, so redirecting you to the support page from the shorter Polyrific URL is the best thing we can do now).
 
 Requesting your needs via the support page will ensure they are always visible and trackable. The archived tickets can also be used for future reference if needed.
 

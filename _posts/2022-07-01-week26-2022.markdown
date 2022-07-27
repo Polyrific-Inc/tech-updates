@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Week #26 2022"
+title:  "Week #26 2022 - Containerization"
 date:   2022-07-01 20:00:00 +0700
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Week #7 2022"
+title:  "Week #7 2022 - Security Protocols"
 date:   2022-02-18 20:00:00 +0700
 ---
 
