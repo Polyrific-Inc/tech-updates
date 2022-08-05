@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Week #30 2022 - GitOps"
+date:   2022-07-29 20:00:00 +0700
+---
+
+## GitOps
+
+GitOps, in short, is the Infrastructure as Code done right. It is a way of implementing Continous Deployment for cloud-native applications. It focuses on a developer-centric experience when operating infrastructure by using tools developers are already familiar with, including Git and the CI/CD tools.
+
+When talking about developer-centric experience, it isn't only about writing and storing code in version control. It also involves everything considered best practice in the code writing procedure, i.e., no-direct commit to the main branch, code review requirement, continuous test, etc.
+
+__The Benefits__
+
+Applying GitOps will give you the following benefits:
+
+- **Transparency**: The Pull Request and Code Review practice offers transparency over any changes that will be done to the infrastructure via the codes
+- **Security**: Access to the deployment environment can only be limited to the tool. Although everyone can make changes to the code, it is only the deployment tool responsible for connecting to the target environment.
+- **Quality**: All changes should pass the code review and automated tests. It will ensure the high quality of the code.
+- **Consistency**: GitOps ensure consistency over deployment to multiple environments and minimize human error.
+
+
+__Push vs. Pull Models__
+
+There are two ways of implementing the GitOps deployment strategy: the Push and Pull models.
+
+In the Push model, the deployment is done by the external party to the deployment environment, e.g., CI/CD tool. It is the tool that we have already familiar with, like Jenkins, Azure DevOps, GitHub Actions, etc.
+
+In the Pull model, the deployment is initiated from inside the deployment environment, e.g., by an installed agent. The agent monitors and compares the desired state described in the code with the actual state in the deployment environment. The agent will apply the changes as necessary if the state changes are found.
+
+Whenever possible, the Pull model is preferred over the Push model. It is considered more secure because any secrets will not leave the deployment environment.
+
+__vs. DevOps__
+
+DevOps is all about the cultural change in an organization to remove silos between the Dev team and the Ops team. GitOps, on the other side, is a technique for implementing Continuous Deployment. Although DevOps and GitOps share principles like automation and self-serviced infrastructure, comparing them don't really make sense. That being said, those shared principles certainly make it easier to adopt a GitOps workflow when you are already actively employing DevOps techniques.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Supercharging GitHub Actions with Job Summaries* (Read [this awesome new feature from GitHub action](https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/))
+
+Brain: "GitHub released a new feature called GitHub Actions Job Summaries, which allows us to use custom markdown when displaying GitHub Action Job results in our README file, or other docs in GitHub. It’s an interesting feature if you are currently using GitHub action in your project".
+
+![memo](/assets/images/memo16.png) *Greater creative control for AI image generation* (Read [Meta’s new product to compete with Dall-E for AI image generation](https://ai.facebook.com/blog/greater-creative-control-for-ai-image-generation/))
+
+Brain: "Remember DALL-E, OpenAI’s product that lets you generate images from a text description? Meta is coming to the party with extra features. In addition to entering a text description, It lets you shape the image to be generated using a simple sketch. The idea is cool since relying on text alone can give us random results".
+
+![memo](/assets/images/memo16.png) *Include diagrams in your Markdown files with Mermaid* (Read [how to create diagrams using markdown in GitHub ReadMe](https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/))
+
+Brain: "This tool from GitHub lets you draw diagrams using markdown. Writing documentation in GitHub ReadMe is quite useful because it’s located close to the code it documents. This feature could certainly enrich the content of your documentation".
+
+![memo](/assets/images/memo16.png) *Windows 11 now blocks RDP brute-force attacks by default* (Read [Windows's effort to secure their users](https://www.bleepingcomputer.com/news/microsoft/windows-11-now-blocks-rdp-brute-force-attacks-by-default/))
+
+Yoga: "This article reports that Windows11 now automatically blocks brute-force attacks from Remote Desktop Protocol. This comes with the Account Lockout Policy enabled by default. And this is part of Windows's efforts to secure its users from attacks by slowly closing all entry vectors of the most popular attack. Truly great news from Windows!"
+
+![memo](/assets/images/memo16.png) *Learn about CSS grids with this web game* ([Play while learning about CSS grids here](http://cssgridgarden.com/))
+
+Brain: "I’ve been meaning to learn about CSS grid since I heard it’s even more powerful than CSS flexbox. This site sure makes it easier. In the game, you are positioning your water with where the crops are using the CSS grid feature. Quite fun actually".
