@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "Week #31 2022 - OIDC"
+date:   2022-08-05 20:00:00 +0700
+---
+
+## OIDC
+
+OpenID Connect (OIDC) is a kind of authentication protocol commonly used to protect a resource, like websites or API endpoints. But, before getting further into the OIDC discussion, let's focus first on the difference between authentication and authorization.
+
+Authentication is the act of validating that users are who they claim to be. It could be done by requiring users to provide a password, one-time token, authentication app, biometrics, etc. In some instances, the processes are combined to form a multi-factor authentication that is used to increase security before granting the access.
+
+Authorization is the process of giving the user permission to access a specific resource. It often comes after the authentication process. Users who are both authenticated could have different kinds of permissions to access a resource in this authorization process.
+
+OIDC is an authentication layer built on top of OAuth, which is an authorization protocol. It means that OIDC uses the same component and architecture as OAuth, but specifically for the authentication job.
+
+OAuth (or OAuth 2.0) was originally created to do something known as "delegated access" - allowing applications to talk to one another and share information on the user's behalf. This protocol enables separation between the application that provides the protected resources and the application that hosts the user accounts.
+
+As an authorization protocol, OAuth relies on the application that hosts the user accounts to do the authentication. In OAuth, the definition of permission to do something is called Scope. Scopes are not standardized in any way. It is left up to the resource applications (e.g., Microsoft, Google, GitHub) to define which scopes a third-party application can request. Practically, this means building an application that collects basic user data from three different social media platforms requires reading documentation and defining three different scopes.
+
+It is where OIDC comes to the rescue. It defines something called the UserInfo endpoint that contains common information about the user that can be requested through the use of standardized scopes. The only mandatory scope when using OIDC is the "openid". The other optional scopes are email, phone, profile, and address. All identity providers implementing OIDC should behave the same regarding these standardized scopes.
+
+__OIDC Flows__
+
+OIDC has discontinued the use of grants, and the OAuth Implicit Flow is deprecated as it's insecure. OIDC uses the Proof Key for Code Exchange (PKCE) OAuth extension to prevent CSRF and authorization code injection attacks.
+
+You can use one of the following flows when working with OIDC:
+
+- **Implicit Flow**: use this for non-sensitive data and browser-based applications. It works by allowing authorization endpoints to request identity tokens directly.
+- **Authentication Flow**: it is useful for web-based apps that require backend communication with identity providers. It is a three-legged flow, which works by returning OAuth access tokens to the web app through backend calls.
+- **Authorization Code Flow**: it is mostly used for server-side apps. It works by allowing apps to request authorization codes from an authorization endpoint. These codes can be exchanged for identity tokens or OAuth access tokens as needed.
+- **Hybrid Flow**: You can use this flow for clients that must process authorization code before exchanging it for tokens or non-sensitive information. It works by letting authorization endpoints return authorization codes and tokens. Endpoints can perform code hash checks and nonce validation in advance, and client apps can use PKCE to prevent malicious injections of authorization code. 
+
+__vs. SAML__
+
+OIDC and Security Assertion Markup Language (SAML) are both identity protocols for authenticating users and providing identity data for access control. One substantial difference between OIDC and SAML is the amount of communication between the application and the identity provider.
+ 
+SAML uses SAML tokens written in XML. The application validates the signature itself and the certificate it presents. While SAML relies on heavier XML payloads, OIDC is REST/JSON based. OIDC providers issue both an access token and an ID token. OIDC enables an application to obtain the identity without requiring a call from the application to the identity provider.
+
+__OIDC Providers__
+
+If you are developing a custom application, implementing user authentication with an OIDC provider is a valid choice these days. There are many providers that you can choose, like [Microsoft](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-protocols-oidc), [Google](https://developers.google.com/identity/protocols/oauth2/openid-connect), [Facebook](https://developers.facebook.com/docs/facebook-login/guides/access-tokens/get-oidc), [Auth0](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol), [Okta](https://developer.okta.com/docs/reference/api/oidc/), etc.
+
+Whatever the identity provider of your choice, you should always be aware of these OIDC best practices:
+
+- Ensure protection against Cross-Site Scripting (XSS) and Cross-Site Request Forgery (XSRF) attacks at all times
+- Use an existing OIDC library. Don’t try to implement the OpenID Protocol from scratch
+- Ensure that any authentication session you create doesn’t last longer than the original authentication session of your users’ OpenID provider
+- Implement Relying Party Discovery by publishing a discovery document listing your OpenID endpoints and ensuring it is discoverable
+- Communicate with the OpenID provider via the PAPE extension to provide the security policies for user authentication
+- Avoid using OpenID assertions to authorize monetary transactions when users have authenticated with a NIST assurance level of 0
+- Always authenticate the user when connecting an existing OpenID-enabled account
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Engineering Stack Overflow* (Listen to [the podcast from the director of Engineering in Stack overflow](https://hanselminutes.com/847/engineering-stack-overflow-with-roberta-arcoverde))
+
+Brain: "Stack overflow is a site we all love. It receives 2 billion page views per month. You would think it uses some advanced cloud hosting with auto-scaling and consists of many microservices. It turns out it was built using a monolithic architecture, and the app is still hosted on-premises. In this podcast, the director of engineering in Stack overflow shares their view on their pragmatic approach to building a software architecture".
+
+![memo](/assets/images/memo16.png) *How facial recognition technology keeps you safe* (Read [the argument for facial recognition here](https://engineering.grab.com/facial-recognition))
+
+Brain: "In this article, Grab’s engineers share how they use facial recognition to protect their customer as well as their partner. They also go into detail about how to implement a facial recognition AI model and share the hurdles they face while building their own internal face recognition platform".
+
+![memo](/assets/images/memo16.png) *Deconstructing the Monolith: Designing Software that Maximizes Developer Productivity* (Read [how Shopify modularize their application without going extreme with the micro-service](https://shopify.engineering/deconstructing-monolith-designing-software-maximizes-developer-productivity))
+
+Brain: "In this article, the Shopify engineers share their thought process of migrating their Monolithic architecture into Modular monolith. The article nicely explains their pain point with Monolithic architecture while also comparing the solution of using the trendy microservice architecture. They conclude that the problems that come with microservice architecture related to latency and operations overhead make them choose to modularize their monolithic code base instead. It’s interesting how they organize the module separately within the same code base, and how they plan to make it so incorrect dependency calls can trigger runtime error/failed unit tests".
+
+![memo](/assets/images/memo16.png) *35,000 code repos not hacked—but clones flood GitHub to serve malware* (Read [the Malware attacks on Github repositories](https://www.bleepingcomputer.com/news/security/35-000-code-repos-not-hacked-but-clones-flood-github-to-serve-malware/))
+
+Yoga: "This article reports that a software engineer discovered thousands of GitHub repositories were forked (copied) with their clones altered to include malware. The attackers plant remote access as a backdoor to gain access. This attacks open source projects and targets unaware developers with their malicious clones".
+
+![memo](/assets/images/memo16.png) *Winamp releases new version after four years in development* (Read [the Winamp comeback with its new release](https://www.bleepingcomputer.com/news/software/winamp-releases-new-version-after-four-years-in-development/))
+
+Yoga: "Winamp, one of the most beloved media players, has released a new version. With cloud streaming support and more modern features, the actual main goal of this release was to upgrade their code base. We can expect more features in the future now that they're done with the upgrade".
