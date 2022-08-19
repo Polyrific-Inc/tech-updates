@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "Week #32 2022 - gRPC"
+date:   2022-08-12 20:00:00 +0700
+---
+
+## gRPC
+
+Remote Procedure Call (RPC) is not new in distributed computing or the client-server architecture. It allows the client to invoke functionalities in the remote servers as if it's just invoking local functions. The primary use of RPC is to hide the existence of the network.
+
+gRPC is a modern, open-source, high-performance RPC framework that can run in any environment. It originated from Google and is now maintained as part of the [Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/) ecosystem.
+
+__vs. REST__
+
+Representational State Transfer (REST) is an architectural style that leverages HTTP as the standard communication protocol for dealing with resources defined in an API.
+
+gRPC is actually built on top of HTTP/2 protocol. However, HTTP is not visible to the API developers or the servers. So, a high level of abstraction prevents the user from worrying about mapping the RPC concepts to HTTP.
+
+Below are the main differences between them:
+
+- **Payload**: While REST can work with any message format, it typically accepts and returns JSON or XML in practice. gRPC accepts and returns Protobuf messages.
+- **Protocol**: REST uses HTTP (usually HTTP/1.1) protocol. gRPC uses the newer HTTP/2 protocol.
+- **Browser Support**: Since the REST incorporates HTTP/1.1, it receives broader browser support. The support for gRPC is more limited because it requires a proxy layer to convert it into HTTP/2.
+- **Streaming**: gRPC support bidirectional streaming, which is made possible by the use of HTTP/2. REST doesn't have this capability.
+
+__Protocol Buffer__
+
+[Protocol Buffer](https://developers.google.com/protocol-buffers/) (or Protobuf) is the message standard used by gRPC as a contract between the client and remote service. The [Protobuf compiler](https://github.com/protocolbuffers/protobuf) generates both client and service code for the target platform. The code contains the following components:
+
+- **Strongly typed objects** shared by the client and service represent a message's service operations and data elements.
+- **A strongly typed base class** with the required network plumbing that the remote gRPC service can inherit and extend.
+- **A client stub** contains the required plumbing to invoke the remote gRPC service.
+
+__When to use gRPC?__
+
+You might want to consider implementing the gRPC model in the following use cases:
+
+- **Lightweight microservice connections**: gRPC provides a unique combination of low latency and high throughput communication. Thus it is the ideal choice for connecting lightweight microservice architectures where efficient message delivery is essential.
+- **Real-time streaming**: Real-time communications use gRPC's ability to handle bidirectional streaming that enables you to send and receive messages in real-time.
+- **Low power, low bandwidth network**: gRPC uses serialized Protocol Buffer messages to provide lightweight messaging and increased efficiency. These features are suitable for IoT networks.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *The History of the Web* (Browse [the web’s timeline on this website](https://thehistoryoftheweb.com/timeline/))
+
+Brain: "This little site lets you browse through the history of the web, from when HTML was invented in CERN, right until Adobe announced the end of Flash. Looking through the items of the historical invention listed here makes me wonder whether we can also put our names in this history of the web :)".
+
+![memo](/assets/images/memo16.png) *Modeling your SaaS business with Products and Prices* (Read [this Stripe integration for SaaS business modeling](https://dev.to/stripe/modeling-your-saas-business-with-products-and-prices-59e0))
+
+Yoga: "This article shows us how to model SaaS business, take advantage of the customer portal by providing how to create and manage products and price using Stripe. Worth reading to add references if you want to build a SaaS business".
+
+![memo](/assets/images/memo16.png) *The Visual Studio Code Server* (Read [how you can host your own remote VS Code](https://code.visualstudio.com/blogs/2022/07/07/vscode-server))
+
+Rizqun: "This article introduces us to VS Code Server and shows us how to get started with it. After installing VS Code Server, we can access it securely through the browser using VS Code for the Web (also known as vscode.dev) without worrying about setting up SSH or HTTPS. It allows us to develop on a machine that doesn't support the installation of VS Code desktops, such as iPad / tablet or Chromebook."
+
+![memo](/assets/images/memo16.png) *Slack resets passwords after exposing hashes in invitation links* (Read [a bug causing Slack to have reset several users' passwords](https://www.bleepingcomputer.com/news/security/slack-resets-passwords-after-exposing-hashes-in-invitation-links/))
+
+Yoga: "This article tells us some of Slack's users are having their password reset due to a bug. The bug is causing users to send their hashed passwords when creating or revoking shared invitation links for workspaces. Although it's in hashed form, it could still be potentially reversed with brute force. Fortunately, Slack has already taken action for that."
+
+![memo](/assets/images/memo16.png) *Introducing the new ramp-up guide for developers, Azure Skills Navigator* (Read [this new Azure guide to help you master azure services](https://techcommunity.microsoft.com/t5/azure-developer-community-blog/introducing-the-new-ramp-up-guide-for-developers-azure-skills/ba-p/3431731))
+
+Rizqun: "Azure Skills Navigator comes to help developers strengthen their knowledge of Azure. The guide in Azure Skills Navigator is divided into 3 phases: Ramp up to discover core skills and language fundamentals, App development to learn how to build cloud-native apps, and In Production to explore monitoring and logging services instrumentation and authorization".
