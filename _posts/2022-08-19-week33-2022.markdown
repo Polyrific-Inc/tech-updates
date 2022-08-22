@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "Week #33 2022 - OWASP"
+date:   2022-08-19 20:00:00 +0700
+---
+
+## OWASP
+
+The [Open Web Application Security Project](https://owasp.org/) (OWASP) is an international non-profit organization dedicated to improving web application security. The core principle of OWASP is to make all their materials freely available and easily accessible on their website. Anyone from website owners to security experts can use the published materials to protect their web applications from the ever-growing cyber attacks.
+
+OWASP Top 10
+
+OWASP Top 10 is a research project that offers rankings of and remediation advice for the top 10 most serious web application security dangers. The report is formed on consensus from security experts all over the world and getting updates every 2-4 years to keep up with the changes and developments in the AppSec market.
+
+OWASP refers to the Top 10 as an 'awareness document,' They recommend that all companies incorporate the report into their processes to minimize and mitigate security risks.
+
+The most recent update to the Top 10 list was done on 2021 and contained the following items:
+
+1. [Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/) - This vulnerability allows attackers to gain access to user accounts and act as the users or administrators, allowing them to gain unintended privileged functions.
+
+2. [Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/) (also known as Sensitive Data Exposure) - It covers the failure to protect data in transit and at rest. For example, passwords, credit card numbers, health records, and personal information, mainly if the data falls under privacy laws, like [GDPR](https://gdpr.eu/) and [PCI DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard).
+
+3. [Injection](https://owasp.org/Top10/A03_2021-Injection/) - This vulnerability allows attackers to send hostile data to an interpreter, causing the data to be compiled and executed on the server. A common form of injection is [SQL injection](https://owasp.org/www-community/attacks/SQL_Injection).
+
+4. [Insecure Design](https://owasp.org/Top10/A04_2021-Insecure_Design/) - This is a weakness originating from missing or ineffective security controls. By definition, an insecure design cannot be fixed by proper implementation or configuration. This is because it lacks basic security controls that can effectively protect against important threats.
+
+5. [Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/) - This is a lack of security hardening across the application stack. It includes improper configuration of cloud service permissions, enabling or installing features that are not required, and default admin accounts or passwords
+
+6. [Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/) - It includes vulnerabilities as a result of unsupported or outdated software. Anyone who builds or uses an application without knowing its internal components, their versions, and whether they are updated or not is exposed to this category of vulnerabilities.
+
+7. [Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/) - It includes vulnerabilities related to user identities. Confirming and verifying user identities, and establishing secure session management, is critical to protect against many types of exploits and attacks.
+
+8. [Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/) - It involves code and infrastructure that are vulnerable to integrity violations. This includes software updates, modification of sensitive data, and CI/CD pipeline changes performed without validation. An insecure CI/CD pipeline can lead to unauthorized access, the introduction of malware, and other severe vulnerabilities.
+
+9. [Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/) - It involves weaknesses in an application's ability to detect security risks and respond to them. Failures in this category affect visibility, alerting, and forensics.
+
+10. [Server-Side Request Forgery](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/) - It occurs when a web application pulls data from a remote resource based on a user-specified URL without validating the URL. Even servers protected by a firewall, VPN, or network access control list (ACL) can be vulnerable to this attack if they accept unvalidated URLs as user inputs.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Carbon, a new programming language from Google* (Read about [the language aimed by Google to be the successor of C++](https://9to5google.com/2022/07/19/carbon-programming-language-google-cpp/))
+
+Brain: "Most of us likely have a tiny experience coding with C++, probably during our college years. We shiver from the memory of having to garbage collect the memory or trying to grasp the concept of pointer(*) or even pointer of pointer (**). Well, Google tries to improve the developer experience by bringing modern programming features into C++ and creating a new language called Carbon. It is not the first time Google introduced a new programming language. Google previously released Go into the world and got quite a number of adoption. Probably the same will happen to Carbon, so it’s interesting to keep an eye on".
+
+![memo](/assets/images/memo16.png) *New Linux malware brute-forces SSH servers to breach networks* (Read [New botnet attack threatens Linux users](https://www.bleepingcomputer.com/news/security/new-linux-malware-brute-forces-ssh-servers-to-breach-networks/))
+
+Yoga: "A new botnet, based on Mirai trojan has arisen, threatening Linux users by brute-forcing SSH servers to gain access. This botnet is likely to be used as a stepping stone for further, more dangerous attacks. Even so, awareness of this botnet must not be underestimated as it still performing DDoS attacks that could destabilize the server's performance".
+
+![memo](/assets/images/memo16.png) *Graph concepts and applications* (Read [this good introduction for Graph](https://engineering.grab.com/graph-concepts))
+
+Rizqun: "A graph is a structure that consists of vertices and edges. Vertices, or nodes, are the objects in a problem, while edges are the links that connect vertices in a graph. Graphs are a great way to represent complex systems visually and can be used to detect patterns or relationships between entities easily".
+
+![memo](/assets/images/memo16.png) *Windows 10 22H2 is coming, here's everything we know* (Read [this Next version of Windows comes with a handy feature](https://www.bleepingcomputer.com/news/microsoft/windows-10-22h2-is-coming-heres-everything-we-know/))
+
+Yoga: "Windows is about to release updates that come with a great feature that will surely come in handy for most of us, that is an option to receive important notifications when focus assist is on. A problem that may occur to some of us when we turn on focus assist might be resolved. Great news for those whose still using Windows 10!"
+
+![memo](/assets/images/memo16.png) *Windows Sandbox: How to safely test software without ruining your computer* (Read [Using Windows Sandbox to Test Software](https://www.pcmag.com/how-to/windows-sandbox-how-to-safely-test-software-without-ruining-your-computer))
+
+Rizqun: "Windows Sandbox is a temporary virtual machine built into Windows 10 and Windows 11 that allows us to run software without affecting our system. If any malware or other dangerous content rears its head, it's restricted to the Sandbox. After we are done with the application and close the Sandbox, everything is gone and forgotten with no lasting residue".
