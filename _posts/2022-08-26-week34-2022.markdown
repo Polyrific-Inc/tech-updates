@@ -1,0 +1,69 @@
+---
+layout: post
+title:  "Week #34 2022 - Redis Architecture"
+date:   2022-08-26 20:00:00 +0700
+---
+
+## Redis Architecture
+
+Redis is not a new thing for us. We know it as an in-memory database used as a cache in front of other "main" databases like SQL Server or MySQL. It helps to improve the overall application performance and offloads the work of the primary data source.
+
+While this is true in most cases, Redis has evolved to be a more powerful tool capable of serving more jobs than just cache tooling. Redis is not only an in-memory database now because it is equipped with the ability to persist data permanently. Also, with various plug-ins and architectural setups, Redis has become incredibly useful for different scenarios and workloads.
+
+We can set up Redis with different architecture and configurations depending on the requirements. We will discuss some of the common setups here.
+
+__Single instance__
+
+Single Redis instance is the most straightforward deployment of Redis. The typical usage of this setup is when you want to utilize Redis for simple tasks in a small-scale application system. For example, to cache frequently accessed data without having them be accessed directly from the primary data source. In this scenario, the speed to access data is more important than the integrity of the data itself.
+
+Having only a single Redis instance is vulnerable to data loss because of hardware failure or any other issues. But it's okay. It will not cause total failure in the overall system as long as the primary data source is still active to serve the required data.
+
+__High availability__
+
+A highly available system allows businesses to work continuously without downtime for a certain period. Redis High Availability architecture must ensure that it can keep serving its service, even when failures happen in a particular part of the system.
+
+The standard solution for the high availability setup is through replication. Every node of the Redis instance needs to have one or more secondary nodes that act as replicas or backups. The two nodes should always be identical to maintain data integrity.
+
+There are two configurations in this high availability scenario:
+
+- **Active-passive**: It comprises at least two nodes where only one node is active (read & write), and the other nodes are on standby (read-only). If the active node fails, the second node will automatically switch to serve as the active node.
+- **Active-active**: it is also made up of at least two nodes that execute the same service simultaneously. All nodes act as primary nodes that can accept read or write operations. A load balancer is required to split the traffic.
+
+__Redis Cluster__
+
+Redis Cluster is usually used for horizontal scaling. In this setup, the data is sharded across multiple Redis nodes. These Redis nodes still have the same capabilities as a normal Redis node and can have their own replica sets. The only difference is that each node will only hold the subset of your data, which will depend on the shape of the data and Redis' key distribution model.
+
+Let's say we have two nodes in a cluster. Redis assigns slot ranges for each; for example, Node 1 has a slot for keys between 0 and 1000, and Node 2 has a slot for keys between 1001 and 2000. The system knows to which node it needs to read or write certain records based on the given keys. Adding or removing nodes in a cluster will involve recalculating the assigned slots and moving data between the nodes.
+
+__Sentinel__
+
+Redis with Sentinel is the setup to support high availability scenario by adding more nodes to support the primary Redis service.
+
+The following list is some of the Sentinel capabilities in the big picture:
+
+- **Monitoring**: Sentinel constantly checks if your primary and replica instances are working as expected
+- **Notification**: Sentinel can send notifications to various recipients if it detects anomalies during the monitoring
+- **Automatic failover**: If a master is not working as expected, Sentinel can start a failover process where a replica is promoted to master and informs all connected applications about this new status
+- **Configuration provider**: Sentinel acts as a source of authority for clients' service discovery and other configurations
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *Notice of Recent Security Incident* (Read [the announcement from the LastPass blog](https://blog.lastpass.com/2022/08/notice-of-recent-security-incident/))
+
+Frandi: "LastPass users received this announcement via email on Aug 25, 2022. LastPass detected unusual activity in their development environments. They suspect that an unauthorized party gained access to the environment and took portions of source code and some proprietary information. But they assured us that their product and services are operating normally despite this incident."
+
+![memo](/assets/images/memo16.png) *Wolf in sheep’s clothing: how malware tricks users and antivirus* (Read [this Malware tricks and how to stay safe](https://www.bleepingcomputer.com/news/security/wolf-in-sheep-s-clothing-how-malware-tricks-users-and-antivirus/))
+
+Yoga: "This article shows us how malware tricks users and antivirus. Deceiving people into downloading and running malicious files is one of the most popular methods used to distribute malware. Also, it shows us how to avoid the kind of attacks."
+
+![memo](/assets/images/memo16.png) *New JavaScript runtime Bun challenges Deno, Node.js* (Read about [the Fast all-in-one JavaScript runtime, Bun](https://www.techtarget.com/searchsoftwarequality/news/252522622/New-JavaScript-runtime-Bun-challenges-Deno-Nodejs))
+
+Rizqun: "Bun is about three times faster than Node and Deno when server-rendering React or running database queries. Bun's speed stems from the fact that it is built around Webkit's JavaScriptCore framework, which tends to be faster than the more traditional V8 JavaScript engine used for Chrome, Deno, and Node.js. Another factor leading to increased speed is that the Bun JavaScript is written in Zig, a low-level programming language that can be read by system hardware."
+
+![memo](/assets/images/memo16.png) *Consider Gold, Silver, and Bronze for your Data, not just the Olympics* (Read [the good article about leveraging data quality](https://www.linkedin.com/pulse/consider-gold-silver-bronze-your-data-just-olympics-ruaidhri-hallinan))
+
+Juniada: "In the embracement of business intelligence, artificial intelligence, and machine learning, data value transitions are a great way to leverage data quality. This will make the data processing easier and give the fullest context for the data usage."
+
+![memo](/assets/images/memo16.png) *Shifting Left with Postman* (Read [Shift-Left testing using Postman](https://dev.to/postman/shifting-left-with-postman-2a25))
+
+Yoga: "Postman has been helping a lot of developers with their API lifecycle needs by providing a number of features and functions that can assist the development and quality team for early testing. This article shows us how Postman helps the development and quality practices."

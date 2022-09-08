@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "Week #35 2022 - Azure Cost Management"
+date:   2022-09-02 20:00:00 +0700
+---
+
+## Azure Cost Management
+
+Everyone has their own reason for putting their infrastructure in the cloud. Maybe it's because of the promise of flexibility, scalability, performance, security, etc. Whatever the reasons behind the decision, it is better that we also understand that managing costs are a critical skill that we need to possess from day 1.
+
+Of course, we don't want to find ourselves having to pay more than we can imagine because we are following every "best practice" from the internet to set up a highly available and high-performance system with an enterprise-grade security setup.
+
+We’ll see how we can make the cost spending transparent when designing the system and continuously monitor the usage from time to time.
+
+__Pricing Calculator__
+
+Azure has provided a pricing table for each Azure service on the documentation page. However, with the variety of pricing components and tiers, calculating the estimation cost that matches our exact needs would become more complicated for average users.
+
+[Azure pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/) might be more straightforward for everyone to get the estimated expense if they want to provision Azure resources. Users can easily mix and match the resource specs and directly observe the estimated cost for a specific period.
+
+We can save and share the cost estimates if we log in to the pricing calculator. It will allow us to create multiple scenarios of infrastructure setup so we can have enough data to support our decision-making process.
+
+__Retail Prices API__
+
+Azure also provides [Retail Prices API](https://docs.microsoft.com/en-us/rest/api/cost-management/retail-prices/azure-retail-prices) to retrieve prices for all Azure services. We can use the programmatic API to create our own tools for internal analysis and price comparison across SKUs and regions.
+
+The API is accessible from this base endpoint: [https://prices.azure.com/api/retail/prices](https://prices.azure.com/api/retail/prices). We can pass various filters to the request URL, which will return a JSON object on the response body.
+
+For example, you can use this payload to get the retail pricing for Virtual Machine: [https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20%27Virtual%20Machines%27](https://prices.azure.com/api/retail/prices?$filter=serviceName%20eq%20%27Virtual%20Machines%27).
+
+__Cost Analysis__
+
+For every resource we create in Azure, we can view and analyze the cost usage from the Cost Management service. We can configure the scope and the time range to get meaningful data for our analysis.
+
+It has some built-in cost views, optimized for the most common objectives:
+
+- **Accumulated cost** view can answer questions like "How much have I spent so far this month? Will I stay within my budget?"
+- **Daily cost** view can answer questions like "Have there been any increases in the costs per day for the last 30 days?"
+- **Cost by resource/service** view can answer questions like "Which resources cost the most so far this month?"
+- **Invoice details** view can answer questions like "What charges did I have on my last invoice?"
+
+Besides the actual cost, Cost Analysis also provides forecast costs that will predict the future charge for a certain period based on the trend of current usage. This feature allows us to prepare for the total expense we need to pay by the end of the period. We can also take the necessary action as early as possible if we think that we don't want to spend that much cost for our infrastructure setup.
+
+__Budgets and Alerts__
+
+Budgets are commonly used as part of cost control. It ensures that the spending is within our organizational spending limit.
+
+Budgets can be scoped in Azure. For instance, we could narrow the budget view based on subscriptions, resource groups, or a collection of resources.
+
+Budgets reset automatically at the end of a period (monthly, quarterly, or annually) for the same budget amount when we select an expiration date in the future. Because they reset with the same budget amount, we need to create separate budgets when budgeted currency amounts differ for future periods. When a budget expires, it's automatically deleted.
+
+Budgets require at least one cost threshold (% of budget) and a corresponding email address. We can optionally include up to five thresholds and five email addresses in a single budget. When a budget threshold is met, email notifications are typically sent within an hour of the evaluation.
+
+__Advisor/Recommendation__
+
+Cost Management works with Azure Advisor to provide cost optimization recommendations. Azure Advisor helps us optimize and improve efficiency by identifying idle and underutilized resources.
+
+The list of recommendations identifies usage inefficiencies or shows purchase recommendations that can help us save additional money. The **Impact** category, along with the **Potential yearly savings**, is designed to help identify recommendations that have the potential to save as much as possible.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Why AI and machine learning are drifting away from the cloud](https://www.protocol.com/enterprise/ai-machine-learning-cloud-data)*
+
+Frandi: “It sounded like a controversial statement at first, moving away from the cloud? Is this just clickbait? Apparently, after you read the whole arguments in the article, you will get this new perspective that not everything can be blindly pushed into the cloud and hoping everything just magically works as in a dream. For me, it’s a reminder that we need to always think critically about every decision we make. What seems to be “normal” isn’t always the best option for our unique requirements.”
+
+![memo](/assets/images/memo16.png) *[Microsoft Azure outage knocks Ubuntu VMs offline after buggy update](https://www.bleepingcomputer.com/news/microsoft/microsoft-azure-outage-knocks-ubuntu-vms-offline-after-buggy-update/)*
+
+Yoga: “This article reports a recent outage caused by a faulty systemd update in Microsoft Azure and only affected VMs running on Ubuntu 18.04. This impacted several Azure services across multiple regions. Microsoft has already worked on this issue by switching to a fallback DNS server and rebooting the VM instances to get fresh DHCP lease and new DNS resolvers.”
+
+![memo](/assets/images/memo16.png) *[A look at running Python in a web browser with PyScript](https://www.hashbangcode.com/article/look-running-python-web-browser-pyscript)*
+
+Rizqun: “PyScript is a new framework that allows users to use python inside HTML code. It’s also very easy to use. Users just need to include the CSS and JavaScript files in the header of the HTML document. Users can either include remote files or use them locally by downloading the file. PyScript will be interesting for web developers, especially those who use Python and HTML.”
+
+![memo](/assets/images/memo16.png) *[The Spotify model for scaling Agile](https://www.atlassian.com/agile/agile-at-scale/spotify)*
+
+Juniada: “The Spotify model focuses on how businesses can structure an organization to enable agility. Each team within the organization selects their own agile framework while keeping people aligned and cross-pollinate knowledge.”
+
+![memo](/assets/images/memo16.png) *[Difference between malware, virus & computer worm](https://dev.to/techbmc/difference-between-malware-virus-computer-worm-587m)*
+
+Yoga: “The majority of us might not know the differences between Malware, Virus, and Worm. We all are at risk of security threats because of them as long as we are connected to the Internet. This article explains what they are and how they work.”
