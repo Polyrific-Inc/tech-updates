@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Week #36 2022 - CI/CD Best Practices"
+date:   2022-09-09 20:00:00 +0700
+---
+
+## CI/CD Best Practices
+
+Continuous integration, delivery, and deployment have been Polyrific’s standard as part of its commitment to deliver high-quality service and applications. You can find the following best practices that we find useful based on our experience so far.
+
+__Pick a branching strategy__
+
+The code repository has played a vital role in the CI/CD implementation. It becomes the starting point for the overall CI/CD journey. That’s why implementing best practices on the code repository is a prerequisite to implementing best practices in the CI/CD environment.
+
+Depending on the requirements of the development workflow, your team might implement different branching strategies in the code repository. Maybe you utilize [GitFlow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow), [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow), [GitLab Flow](https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/), or [Trunk-based development](https://trunkbaseddevelopment.com/). Whatever strategy you use, you need to make sure that everyone in your team follows the consensus. Along the walk, you might find that some modifications are required to make it fit with your development workflow, which is completely fine.
+
+__Don’t ignore feedback__
+
+Improving the quality of your service and applications is one of the main goals of CI/CD implementation. During the process, it will return various feedback, whether in the form of warnings, build errors, test failures, and so on. Please don’t ignore them. Even small feedback from your CI/CD system could positively impact your application in the future. Once you ignore them, it will be easy for them to be bigger and be in technical debt in the future. Some of them might not be as urgent as the others. But at least create a ticket in your project backlog so you can allocate time in the next sprint to fix them.
+
+__Keep the pipeline secure__
+
+The CI/CD pipelines hold various sensitive information, like the code repository credential, host deployment profile, and database connection string. That’s why securing CI/CD pipelines is as important as keeping your running application secure. All DevOps tools have provided secure mechanisms to store and read the secrets. Always follow the provided guidance to utilize the features.
+
+Logging is also the part that needs to be reviewed regularly. Make sure no sensitive information shows up in the logs without encryption. And make sure only trusted people have access to them.
+
+__Monitor and improve the performance__
+
+Keeping the CI/CD pipeline always healthy and performing in good shape is important because it will affect the overall development workflow. You might find that there was no issue when you initially set up the CI/CD pipelines. But when the application grows, and changes are pushed more frequently, the performance of the pipelines starts degrading. When it happens, you need to think through what might improve the performance again, i.e., adding more parallel jobs, adding private agents to the pool, or implementing cache between builds.
+
+__Make it the only way to deploy__
+
+Promoting code through your CI/CD pipelines requires each change to demonstrate that it adheres to your organization’s codified standards and procedures. The CI/CD pipeline should be the only mechanism by which code enters the production environment. However, there might be a time when you are tempted to bypass the process because you think it’s just too slow to deliver a hotfix to production or any other justification that sounds reasonable. But if you think it through again, this practice will give more harm than benefits. It will skip the standard procedures, security validation, automated testing, and other important things in the pipeline. It will also eliminate accountability because the deployment is not recorded in the system and whether the standard rollback mechanism is still valid should there be any issue after the deployment.
+
+__Make it a team effort__
+
+Building an effective CI/CD pipeline is as much about the team and organizational culture as it is about the processes and tools that you use. By creating a sense of shared responsibility for delivering your software, you can empower everyone on the team to contribute – whether that’s jumping in to fix the build, taking the time to containerize environments, or automating a manual task that doesn’t get done as often as it should.
+
+Promoting a culture of trust, where team members are able to experiment and share ideas, benefits not just the people but also the organization and the software you deliver. If something goes wrong, instead of focusing on assigning the blame for it to a member of your team, the aim should be to learn from the failure; understand the underlying cause and how it can be avoided in the future.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[GitHub Universe 2022](https://githubuniverse.com/)*
+
+Frandi: “GitHub has announced their global developer event for this year on November 9 - 10. You could register for the virtual experience pass or get the admission pass to attend the live event from San Fransisco. It will cover four main topics: Cloud, AI, Security, and community.”
+
+![memo](/assets/images/memo16.png) *[How to break the cycle of tech debt](https://leaddev.com/legacy-technical-debt-migrations/how-break-cycle-tech-debt)*
+
+Brain: “Tech debt can be an inevitable part of a big software project, especially one where deadlines are tight. This article talks about strategies you can employ to minimize them, how to get buy-in from your stakeholders to sometimes slow down from the feature development, and spend time to break the snowball effect of tech debts in your project.”
+
+![memo](/assets/images/memo16.png) *[Understanding your middleware pipeline in .NET6 with the Middleware Analysis package](https://andrewlock.net/understanding-your-middleware-pipeline-in-dotnet-6-with-the-middleware-analysis-package/)*
+
+Rizqun: “This article shows us how to visualize all the middleware that takes part in a request using Microsoft.AspNetCore.MiddlewareAnalysis NuGet package. This can be useful for debugging exactly what's happening in our middleware pipeline, especially in .NET 6 where some middleware is added transparently without user input.”
+
+![memo](/assets/images/memo16.png) *[Malware devs already bypassed Android 13's new security feature](https://www.bleepingcomputer.com/news/security/malware-devs-already-bypassed-android-13s-new-security-feature/)*
+
+Yoga: “The just-released Android 13 comes with a new security feature that protects users by blocking applications from requesting Accessibility Service privilege. Attackers abused a privilege in the previous Android version to gain control without the user's knowledge and permission. This article reports that this new feature is already bypassed using a newly-developed Trojan called BugDrop.”
+
+![memo](/assets/images/memo16.png) *[How To Best Implement Minify In CSS?](https://www.edureka.co/blog/minify-in-css/)*
+
+Rizqun: “Minification allows us to strip down our code to a minimal file size which doesn’t affect the code and yet reduces the file size. Minification is needed to reduce website loading time. To minify, there are several tools available online which help us reduce the code base.”
