@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "Week #37 2022 - OpenTelemetry"
+date:   2022-09-16 20:00:00 +0700
+---
+
+## OpenTelemetry
+
+In the previous TECH Updates, we discussed the types of [application monitoring](https://tech-updates.polyrific.com/2022/03/11/week10-2022.html) and some knowledge about [application logging](https://tech-updates.polyrific.com/2022/03/25/week12-2022.html). We also discussed the example of [monitoring and observability services](https://tech-updates.polyrific.com/2022/04/08/week14-2022.html) and the [time series databases](https://tech-updates.polyrific.com/2022/04/01/week13-2022.html) we can use to store telemetry data. In this edition, we will discuss the standard that is widely used when implementing application observability, which is OpenTelemetry.
+
+[OpenTelemetry](https://opentelemetry.io/) is an open-source observability framework for instrumenting, generating, collecting, and exporting telemetry data, such as traces, metrics, and logs. It offers vendor-agnostic APIs, SDKs, and other tools to work with the data. Any service provider can implement a backend system for the collected data based on the standard.
+
+Before OpenTelemetry, all backend platforms have their own definition and implementation regarding telemetry data processing. Each application must instrument the code in a specific format depending on the backend platform. We must re-instrument the code if the application needs to change the backend or broadcast telemetry data to multiple platforms. With OpenTelemetry, we don’t need to make radical changes because everything has been standardized.
+
+__Telemetry Data__
+
+Telemetry data, or signal, is the output collected from system sources. There are three primary data that are usually observed:
+
+- **Log**: a text record of an event that occurred at a specific point in time.
+- **Metric**: a numerical number that is calculated over a period of time.
+- **Trace**: represents a complete end-to-end journey of a request through a distributed system.
+
+Individually logs, metrics, and traces serve different purposes. But together, they provide the comprehensive and detailed insights needed to understand and troubleshoot distributed systems.
+
+__Components__
+
+OpenTelemetry is made up of several components:
+
+- **Specification**: it describes the requirements and expectations for all implementations. It consists of the definitions of API, SDK, and data.
+- **Collector**: it is a vendor-agnostic proxy that can receive, process, and export telemetry data in various formats and sends it to one or more backends.
+- **SDK**: it is a set of language-specific libraries that consumes the OpenTelemetry API to do various tasks.
+- **Automatic Instrumentation**: OpenTelemetry supports many components that generate relevant telemetry data from popular libraries and frameworks for supported languages. Using automatic instrumentation may differ from language to language.
+
+__Benefits__
+
+OpenTelemetry offers several benefits:
+
+- **Easy to use**: It is business-friendly and helps achieve objectives. It provides developers and engineers with a complete manual that helps them discover bugs faster, reports them, and repair them immediately, saving time and resulting in positive results.
+- **Consistency**: OpenTelemetry provides a consistent path for capturing telemetry data and transmitting it to a backend without changing instrumentation, offering a de facto standard for adding observability to cloud-native apps. Developers and IT can now devote more time to creating new app features rather than wrestling with their instrumentation.
+- **Simpler choice**: Organizations had to select between OpenTracing or OpenCensus before OpenTelemetry, each of which took a different strategy to obtain observability. OpenTelemetry is the combination of the two frameworks which will give you the best of both in a single solution.
+- **Streamlined observability**: Developers can monitor application usage and performance metrics with OpenTelemetry from any device or web browser. This user-friendly interface makes tracking and analyzing observability data in real-time a breeze.
+
+__Vendor supports__
+
+Many vendors support OpenTelemetry. The following are well-known vendors that you might know:
+
+- [Azure Monitor](https://docs.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-overview)
+- [AWS Distro for OpenTelemetry](https://aws-otel.github.io/)
+- [Datadog](https://docs.datadoghq.com/tracing/trace_collection/open_standards/)
+- [Elastic APM](https://www.elastic.co/guide/en/apm/guide/current/open-telemetry.html)
+- [GrafanaLabs](https://grafana.com/oss/opentelemetry/)
+- [NewRelic](https://newrelic.com/solutions/opentelemetry)
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Adobe to Acquire Figma](https://news.adobe.com/news/news-details/2022/Adobe-to-Acquire-Figma/default.aspx)*
+
+Brain: “If you are currently enjoying free usage of Figma, you might not like the news so much. Adobe has just acquired its competitor in design tools for approximately $20 billion in cash and stock. Unfortunately, this would mean It’ll be a possibility that you would need Adobe subscription in order to use your favorite design tool”.
+
+![memo](/assets/images/memo16.png) *[Difference Between Digital Signature and Electronic Signature](http://www.differencebetween.net/technology/difference-between-digital-signature-and-electronic-signature/)*
+
+Aris: “Signature nowadays is not only used on paper, but also used in digital documents. You might have heard about eSignature (Electronic Signature) and also Digital Signature. Both terms are different; please don't be confused. The electronic signature is used to verify the document and digital signature is used to secure the document.”
+
+![memo](/assets/images/memo16.png) *[The end is near - Thanos.js Tutorial (Not a parody)](https://thewebtech.hashnode.dev/the-end-is-near-thanosjs-tutorial-not-a-parody)*
+
+Yoga: “Thanos.js is a Node.js app that actually lets you disintegrate your project. This interesting article shows us how this app works, deleting half of your files randomly in the current directory by using the "snap" command.”
+
+![memo](/assets/images/memo16.png) *[Researchers Warn of a Dangerous Raspberry Robin Worm Targeting Windows Users](https://www.makeuseof.com/dangerous-raspberry-robin-worm-targeting-windows-users/)*
+
+Rizqun: “New kind of Windows worm, known as Raspberry Robin has been spreading from victim to victim mainly via USB devices. An infected device will show the victim a .LNK file upon insertion, which infects the device through the command prompt. Windows users must be aware about USB drives that they choose to insert into any of their devices.”
+
+![memo](/assets/images/memo16.png) *[Vulnerability Management for Go](https://go.dev/blog/vuln)*
+
+Frandi: “Go Security team announced the release of the vulnerability management. It provides tooling to analyze your codebase from known vulnerabilities. I think it is a good move to show that security awareness should start from the beginning. I can’t wait to see the similar support is given by the other code frameworks too.”
