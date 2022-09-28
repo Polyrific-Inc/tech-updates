@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Week #38 2022 - DAPR"
+date:   2022-09-23 20:00:00 +0700
+---
+
+## DAPR
+
+Microservice architecture is believed to solve many problems that monolithic architecture faces. But it comes with a price - complexity. Suddenly, everything that seems straightforward in the monolithic now needs special handling in microservice, like service integration, monitoring, data migrations, and so on.
+
+In 2019, Microsoft [announced an open-source project called Distributed Application Runtime (DAPR)](https://cloudblogs.microsoft.com/opensource/2019/10/16/announcing-dapr-open-source-project-build-microservice-applications/) that the main goal was to make it easier for developers to build microservice applications. And in 2021, the Technical Oversight Committee of the Cloud Native Computing Foundation (CNCF) [accepted DAPR as one of its incubating projects](https://www.cncf.io/blog/2021/11/03/dapr-distributed-application-runtime-joins-cncf-incubator/).
+
+[DAPR](https://dapr.io/) provides a set of APIs that leverages industry best practices in building microservice applications. Developers can now focus on the application’s business logic instead of having to deal with the complexity of service discovery, messaging, encryption, observability, and others.
+
+DAPR can act as a proxy or abstraction for the building blocks it provides. This way, your services will be platform-agnostic, which means you can switch between any language, framework, or external service provider without worrying about breaking the integration with other services in the application.
+
+__Sidecar__
+
+DAPR works by using the sidecar pattern. A sidecar is a secondary piece of software that is deployed alongside the primary application, typically in a separate process. It provides supporting functionality so the primary application can focus on serving the main business functionality only.
+
+Every service in the application is accompanied by a single DAPR sidecar. So you would deploy two containers for every service in the application. They typically share the same lifecycle that will scale in or scale out together.
+
+__Building Blocks__
+
+DAPR provides some building blocks that are typically required if you build a microservice application. Each of these building blocks is independent, which means you can use one, some, or all of them in your application.
+
+- **Service-to-service invocation**: perform direct, secure, service-to-service calls
+- **State management**: create long-running, stateless, and stateful services
+- **Publish and subscribe**: secure and scalable messaging between services
+- **Resource bindings**: trigger applications through events from and to external sources
+- **Actors**: encapsulate code and data in reusable actor objects as a common microservices design pattern
+- **Observability**: see and measure the message calls across components and networked services
+- **Secrets**: securely access secrets from your application
+- **Configuration**: access application configuration and be notified of updates
+- **Distributed lock**: acquire a lock for any resource that gives it exclusive access until it is released or timeout
+
+__Running DAPR__
+
+DAPR can be run either locally for development or in a remote environment to work in a team and for Production usage.
+
+In the local environment, you need the DAPR CLI to access the DAPR APIs. It can work with or without dependency on Docker.
+
+In the remote deployment, DAPR is typically hosted in a containerized environment. It can be the self-hosted Kubernetes setup on a VM, the Kubernetes as a Service like Azure Kubernetes Service or Google Kubernetes Engine, or serverless platforms like Azure Container Apps.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Update on Recent Security Incident in LastPass](https://blog.lastpass.com/2022/08/notice-of-recent-security-incident/)*
+
+Frandi: “After the first announcement on August 25 regarding the security incident, LastPass released a new investigation update on September 15. They said the threat actor had access to the Development environment for four days but assured that no Production data are compromised.”
+
+![memo](/assets/images/memo16.png) *[Hackers gained access to Samsung customer data](https://www.zdnet.com/article/hackers-gained-access-to-samsung-customer-data/)*
+
+Rizqun: “Last month, Samsung discovered that customer information was taken. The hackers didn’t gain access to Social Security numbers, credit cards, or debit card numbers. Samsung said the affected information included names, contact and demographic information, date of birth, and product registration information. Samsung also noted that consumer devices were not affected in this incident, and customers can continue to use Samsung products and services as usual.”
+
+![memo](/assets/images/memo16.png) *[AI wins state fair art contest, annoys humans](https://arstechnica.com/information-technology/2022/08/ai-wins-state-fair-art-contest-annoys-humans/)*
+
+Yoga: “AI has rapidly developed nowadays, and thanks to that, it can help our work in various ways, no exception for creating art. This article shows us that a synthetic media artist recently won first place in a Digital Arts competition using the Image Synthesis Model, an AI-assisted image generator tool. The result was good enough to fool human artists and give rise to various debates.”
+
+![memo](/assets/images/memo16.png) *[The Site is HTTPS, so I’m Safe, Right?](https://betterprogramming.pub/the-site-is-https-so-im-safe-right-fc452ce79da7)*
+
+Rizqun: “This article provides information about the man-in-the-middle attack (MITM), explains how MITM works, as well as provides tips for readers to avoid it. Good reading to increase our knowledge and awareness of something.”
+
+![memo](/assets/images/memo16.png) *[How to interrogate unfamiliar code](https://stackoverflow.blog/2022/08/15/how-to-interrogate-unfamiliar-code/)*
+
+Yoga: “This article tells us that time spent by new developers is mostly for reading the code, holding them back by being not as productive as they should be. Reading and understanding codes require skill and the right method and tools to be effective. There are several tips and also suggestions to make it more effective in the future.”
