@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Week #39 2022 - Status Page"
+date:   2022-09-30 20:00:00 +0700
+---
+
+## Status Page
+
+Having a Software as a Service (SaaS) product means we must consider the whole experience users will get when interacting with the product. Not only on the main application itself but also on the other supporting ecosystem, like the status page.
+
+Status page is a central place for users to get information about the health status of the offered service. This is the first place users will go when they sense a problem with your service.
+
+Your SaaS product is meant to be running 24×7, but things can go wrong like data center failure, hacking incidents, DDoS attacks, bugs, etc. In this situation, you don't want to hang your users in the dark without the proper information. You need to explain what has happened transparently and that you have full control of the incident by providing regular updates and estimated resolution times.
+
+Let's see some examples...
+
+[Azure Status](https://azure.status.microsoft/en-us/status) - the page contains the information of all Azure services in each region. There is also information about the current impact of an active event and the history of past events.
+
+[GitHub Status](https://www.githubstatus.com/) - the page contains the current status of all services, incident history, and scheduled maintenance. Users can subscribe for the status update via email, text message, Slack, webhook URL, or RSS feed.
+
+[Atlassian Status](https://status.atlassian.com/) - the page contains the summary of the operational status for all Atlassian services, like Jira, Trello, BitBucket, and others. Users can drill down to the detail of each service, along with the list of past incidents. Users can also report a problem or subscribe to this page's status update.
+
+[Google Workspace Status Dashboard](https://www.google.com/appsstatus/dashboard/) - in this page, users can check the current and past status of core Google Workspace applications like Gmail, Google Calendar, Google Meet, and others. Users can subscribe with RSS or JSON feed to get the latest update.
+
+As you can see from the samples above, a status page usually consists of some components:
+
+- **Current status**: it shows the current condition of the service, whether it is fully operational, partially functional, or completely out of service.
+- **Past events**: it consists of the history of past events or incidents
+- **Scheduled maintenance**: it is used to inform users in advance about the planned maintenance and the time windows so users can anticipate it with the necessary preparation
+- **Subscription**: it allows users to get the updated status of a particular service without having to visit the page
+- **Report a problem**: not necessarily implemented on the same page; at least a link is provided on the page to help users report their problems easily
+
+I'm sure by now you have ideas about the status page that can be added to your application ecosystem. But how? It will be too much work, right? Luckily, there are actually some ready-to-use tools that you can use to set up one for your product. These are some examples of the tools:
+
+- [Atlassian Status Page](https://www.atlassian.com/software/statuspage)
+- [Cachet](https://cachethq.io/)
+- [Freshstatus](https://www.freshworks.com/status-page/)
+- [Uptime Kuma](https://github.com/louislam/uptime-kuma)
+- [Statuspal](https://statuspal.io/)
+- [StatusCast](https://statuscast.com/)
+- [Hyperping](https://hyperping.io/status-page)
+
+Some tools will just work by checking your application's root URL. But to get more advanced reports, some tools require your system to provide custom data or health check endpoints. But at least now you have a starting point to increase the credibility of your service in front of your loyal customers.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft: Now your apps can update even when your PC is locked](https://techcommunity.microsoft.com/t5/microsoft-365-blog/update-under-lock-improved-update-experience-for-microsoft-365/ba-p/3618901)*
+
+Rizqun: “Microsoft has rolled out a new method called “update under lock” to revise Office apps while the PC is in idle, locked mode or if the apps are running. “Update under lock” tries to shut down Office apps when it’s safe to do so and then apply a pending update. It then restores closed apps to their previous state.”
+
+![memo](/assets/images/memo16.png) *[How Google Cloud blocked the largest Layer 7 DDoS attack at 46 million rps](https://cloud.google.com/blog/products/identity-security/how-google-cloud-blocked-largest-layer-7-ddos-attack-at-46-million-rps)*
+
+Yoga: “Google has provided protection for their customers against DDoS attacks, one of the cyberattacks that are increasing and growing exponentially. The attack was identified from more than five thousand source IPs in 132 countries, a portion coming from Tor exit nodes. Thankfully, Google's protection feature called Cloud Armor can mitigate this kind of attack by detecting it early and alerting their customers.”
+
+![memo](/assets/images/memo16.png) *[Microsoft Defender is getting an AI upgrade](https://www.makeuseof.com/microsoft-defender-riskai-upgrade/)*
+
+Rizqun: “Microsoft is bringing the RiskIQ technology into its free antivirus, Microsoft Defender. It is said that the AI can harvest data about the attacks currently circulating around the internet and present it to a human so that they can better decide the best course of action for defending users. With Microsoft now showing off the fruit of its RiskIQ purchase, Microsoft Defender is about to get a lot better. And given the threats going around online, it's probably exactly what the company needed.”
+
+![memo](/assets/images/memo16.png) *[Dotless domains: Home to the Internet’s shortest URLs](https://www.bleepingcomputer.com/news/technology/dotless-domains-home-to-the-internet-s-shortest-urls/)*
+
+Yoga: “Majority of internet domains contain top-level domains (TLD) like com to be valid DNS records resolving to a server. But this article shows us that is not always the case. Domains can be as short as possible, even without the dot. Unfortunately, it's not always working too because it needs to be recorded in some DNS, and depends on ISP, device and the browser to be accessed.”
+
+![memo](/assets/images/memo16.png) *[Remix VS Next.js](https://techblog.geekyants.com/remix-vs-nextjs)*
+
+Rizqun: “This article provides an explanation of server-side rendering (SSR) and compares Remix with Next.js. This article provides a fairly complete comparison ranging from routing, styling, data handling, error handling, and so on.”
