@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Week #40 2022 - Retiring Azure Services"
+date:   2022-10-07 20:00:00 +0700
+---
+
+## Retiring Azure Services
+
+Having your infrastructure on the clouds mean that you don’t have to worry about managing physical hardware. However, you still need to be aware of the specification because it will affect the effectiveness of serving your needs.
+
+Overtime, the cloud providers always offer changes to improve the services, like the general availability of new services, the release of new versions, the addition of new SKUs, or the retiring of old services.
+
+If you are an Azure customer, you will usually get email notifications when there’s any update on the services, especially the ones you are currently using. You can also monitor the [update page](https://azure.microsoft.com/en-us/updates) to see all of the information.
+
+Since Polyrific mostly host its infrastructure in Azure, it is important to always up to date with the latest updates. I have gathered some informations regarding the retirement of some services that will happen in the near future that will likely affect some of our projects.
+
+__Azure Functions v2.x and v3.x - retiring on December 3, 2022__
+
+Azure Functions v4.x is the recommended runtime version in all languages. Function apps running on v2.x and 3.x will no longer be supported on the mentioned date. After the deadline, the existing apps will continue to run, but they won’t be eligible for new features, security patches, performance optimizations, and support.
+
+Before that time, please test, verify, and migrate your function apps to version 4.x by following the migration steps explained [here](https://learn.microsoft.com/en-us/azure/azure-functions/functions-versions?tabs=azure-cli%2Cwindows%2Cin-process%2Cv4&pivots=programming-language-csharp#migrating-from-3x-to-4x).
+
+__Azure Cache for Redis v4 - retiring on June 30, 2023__
+
+The open-source Redis version 4 was released several years ago and is now retired. The recommendation is to upgrade the existing Redis instance to version 6. After the deadline, all cache instances running version 4 will be upgraded automatically. The instances with geo-replication enabled will be upgraded automatically after **August 30, 2023**.
+
+The steps to do the upgrade can be found [here](https://learn.microsoft.com/en-us/azure/azure-cache-for-redis/cache-how-to-upgrade). Depending on the requirement of your application, specific handling might be required when doing the upgrade. For example, the cached data in your existing Redis instance is so precious that you don’t want to lose them during the upgrade process. So please plan ahead accordingly.
+
+__Classic Application Insights - retiring on February 29, 2024__
+
+Because the workspace-based Application Insights enhances your monitoring experience, Azure will retire the classic Application Insights on the mentioned date. To minimize disruption to your existing application monitoring scenarios, you are encouraged to transition to the workspace-based Application Insights as explained [here](https://learn.microsoft.com/en-us/azure/azure-monitor/app/convert-classic-resource). 
+
+__Classic Storage Accounts - retiring on August 31, 2024__
+
+The retirement of the classic storage account is actually part of the retirement of the classic deployment model of Azure Cloud Services. Before that mentioned date, you'll need to migrate them to the recommended Azure Resource Manager deployment model, which provides the same capabilities as well as many new features.
+
+You can follow the migration steps explained [here](https://learn.microsoft.com/en-us/azure/virtual-machines/migration-classic-resource-manager-overview#migration-of-storage-accounts).
+
+__Unmanaged disks - retiring on September 30, 2025__
+
+Azure will begin deprecating unmanaged disks on the mentioned date in favor of the new enhanced Azure Managed Disks. You can follow the migration steps for your [Windows](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/convert-unmanaged-to-managed-disks) or [Linux](https://learn.microsoft.com/en-us/azure/virtual-machines/linux/convert-unmanaged-to-managed-disks) machines.
+
+__Basic SKU Public IP addresses - retiring on September 30, 2025__
+
+Basic SKU for the Public IP address will be deprecated on the mentioned date. You can still continue to use your existing Basic SKU until then, but, you will no longer be able to create new ones after **March 31, 2025**.
+
+To avoid any potential service disruptions, it is recommended that you upgrade them to the Standard SKU by following the steps [here](https://learn.microsoft.com/en-us/azure/virtual-network/ip-services/public-ip-upgrade-portal).
+
+__Language Understanding (LUIS) - retiring on October 1, 2025__
+
+The Language Understanding (LUIS) service will be retired on the mentioned date. You can migrate the service to conversational language understanding, a capability of Azure Cognitive Services for Language. Conversational language understanding provides many of the capabilities of LUIS, plus enhancements. To avoid disruptions to your applications, you can follow the migration steps as explained [here](https://learn.microsoft.com/en-us/azure/cognitive-services/language-service/conversational-language-understanding/how-to/migrate-from-luis?tabs=luis-portal). 
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft investigates Windows 11 22H2 Remote Desktop issues](https://www.bleepingcomputer.com/news/microsoft/microsoft-investigates-windows-11-22h2-remote-desktop-issues/)*
+
+Yoga: “The latest Windows Update, 22H2 is already available for users to download and use since 20 September 2022 with a number of great features coming with it. But recently there are several reports from users that this update has an issue with Remote Desktop on Windows 11 systems, including clients not being able to connect, randomly disconnecting, and freezing unexpectedly. So far, they already found the bug that caused the problem but the investigation still goes on until official mitigation measures are provided.”
+
+![memo](/assets/images/memo16.png) *[Google Hangouts on the Web to Be Upgraded to Google Chat from November 1](https://gadgets360.com/apps/news/hangouts-web-upgrade-google-chat-from-november-1-transfer-conversations-3310655)*
+
+Rizqun: “Google Hangouts has already been discontinued and is being replaced by Google Chat. The Hangouts on the web and conversations on the platform will remain accessible in Hangouts until November 1, 2022. If we delete conversations from Google Hangouts, the corresponding content in Google Chat may also get deleted. Google says that Google Chat offers closer integration with other Google Workspace products as well as modern features.”
+
+![memo](/assets/images/memo16.png) *[Makers of ad blockers and browser privacy extensions fear the end is near](https://www.theregister.com/2022/06/08/google_blocking_privacy_manifest/)*
+
+Yoga: “This article tells us that Google will stop supporting its legacy extension platform, known as Manifest v2. It gives a huge impact on extensions that are designed to block adverts and privacy protection as they are still running on Manifest v2. Even if they can change it to Manifest v3, they will be less effective despite Google's claims that it will meet developers' needs.”
+
+![memo](/assets/images/memo16.png) *[Speech-to-Text With OpenAI’s Whisper](https://towardsdatascience.com/speech-to-text-with-openais-whisper-53d5cea9005e)*
+
+Rizqun: “OpenAI has recently released a new speech recognition model called Whisper. It is a free and open source model. It is said that Whisper is robust to accents, background noise, and technical language. In addition, it supports 99 different languages’ transcription and translation from those languages into English. In this article, the writer explains how to convert speech into text using the Whisper model and Python.”
+
+![memo](/assets/images/memo16.png) *[Google appears to have disabled Google Translate in parts of China](https://techcrunch.com/2022/09/30/google-appears-to-have-disabled-google-translate-in-parts-of-china/)*
+
+Frandi: “The majority of Google services are not available to users in China, with Translate just being the latest to disappear. The Google spokesperson explained it was due to "low usage". But analysts believe it has something to do with the government censorship rules”.
