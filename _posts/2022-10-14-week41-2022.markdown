@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "Week #41 2022 - Zero Trust"
+date:   2022-10-14 20:00:00 +0700
+---
+
+## Zero Trust
+
+Zero trust is an approach that assumes a complex network’s security is always at risk of external and internal threats. It is a concept that is based on the thought of “never trust - always verify.” It has been around for a decade, actually, but then got the spotlight again in the last couple of years because organizations have been facing more and more security threats when moving their resources into the cloud and hybrid environments.
+
+Traditionally, the IT industry has relied on a perimeter security strategy to protect important resources. It worked because, most of the time, the resources sit in an isolated environment where all interaction between components happens in a clear boundary. It was quite safe to assume that the system could trust everything in the local environment because security threats will always come from the outside. The mitigation strategy usually involved the usage of firewalls and other network-based tools to screen the inbound and outbound traffic.
+
+With the rise of cloud computing and hybrid architectures, application components are not always located in an isolated environment anymore. They are often distributed in different locations and communicate via the internet. With this condition, trusted entities cannot be based on their location only. This is where Zero Trust principles come into play.
+
+__Principles__
+
+**Verify explicitly**: Always make security decisions using all available data points, including identity, location, device health, resource, data classification, and anomalies.
+
+**Use least privilege access**: Limit access with just-in-time (JIT) and just-enough-access (JEA) and risk-based adaptive policies.
+
+**Assume breach**: Minimize blast radius with micro-segmentation, end-to-end encryption, continuous monitoring, and automated threat detection and response.
+
+__Foundational Elements__
+
+The Zero Trust model requires that the security decisions have to be based on multiple factors. The following are the key pillars that you need to put your attention to:
+
+**Identity**: When an identity attempts to access a resource, verify that identity with strong authentication, and ensure access is compliant and typical for that identity.
+
+**Endpoints**: Data can flow to various endpoints, creating a massive attack surface area. Monitor and enforce device health and compliance for secure access.
+
+**Data**: Ultimately, security teams are protecting data. Where possible, data should remain safe even if it leaves the devices, apps, infrastructure, and networks. Classify, label, encrypt data, and restrict access based on those attributes.
+
+**Infrastructure**: It represents a critical threat vector. Assess for version, configuration, and JIT access to harden defense. Use telemetry to detect attacks and anomalies, automatically block and flag risky behavior and take protective actions.
+
+**Network**: All data is ultimately accessed over network infrastructure. Networking controls can provide critical controls to enhance visibility and help prevent attackers from moving laterally across the network. Segment networks (and do deeper in-network micro-segmentation) and deploy real-time threat protection, end-to-end encryption, monitoring, and analytics.
+
+**Applications**: Applications and APIs provide the interface by which data is consumed. Apply controls and technologies to discover shadow IT, ensure appropriate in-app permissions, gate access based on real-time analytics, monitor for abnormal behavior, control user actions, and validate secure configuration options.
+
+__Implementation stages__
+
+The following stages will help you to plan the implementation of the Zero Trust model:
+
+1. **Visualize**: you need to understand the resources you want to protect, the access points, and all of the risks involved.
+2. **Mitigate**: you need to be able to detect, stop, and mitigate the impact of the security threats
+3. **Optimize**: you need to extend protection to every aspect of the IT infrastructure regardless of the location
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft’s Arm-based Azure VMs are ready to roll](https://www.zdnet.com/article/microsofts-arm-based-azure-vms-are-ready-to-roll/)*
+
+Rizqun: “In April, Microsoft announced a preview of Arm support on Azure VMs, and this week, officials said these Arm-based VMs would be generally available starting September 1. Microsoft brought Arm to Azure VMs via its work with Ampere Computing, a startup that makes server chips. The Azure VMs on Arm are meant to run Windows 11 Professional and Enterprise on Arm. They also support a variety of Linux OS distributions.”
+
+![memo](/assets/images/memo16.png) *[Hackers steal Steam accounts in new Browser-in-the-Browser attacks](https://www.bleepingcomputer.com/news/security/hackers-steal-steam-accounts-in-new-browser-in-the-browser-attacks/)*
+
+Yoga: “This article reports that a new attack is launched targetting Steam users using a Browser-in-the-Browser attack. That attack is a phishing technique to acquire Steam user's credentials by baiting them with online tournament registration, and that's where the victim is required to log in with their Steam including entering the 2FA code provided by Steam Guard.”
+
+![memo](/assets/images/memo16.png) *[Announcing Turnstile, a user-friendly, privacy-preserving alternative to CAPTCHA](https://blog.cloudflare.com/turnstile-private-captcha-alternative/)*
+
+Rizqun: “Cloudflare is testing a new kind of CAPTCHA called Turnstile that tests our browser instead of ourselves. According to a press release, it will get rid of the interactive challenges used to verify people. Instead of presenting a visual puzzle to a user, Turnstile applies one of many browser challenges that it rotates through to look for human behavior, amping up the difficulty if a visitor exhibits non-human behaviors.”
+
+![memo](/assets/images/memo16.png) *[Linux 6.0 arrives with support for newer chips, core fixes, and oddities](https://arstechnica.com/gadgets/2022/10/linux-6-0-arrives-with-support-for-newer-chips-core-fixes-and-oddities/)*
+
+Yoga: “This article reports that a new and stable Linux version is out. This version has several compatibilities with hardware drivers, including a patch that may prevent slowdown for AMD chips for more use of CPU core counts. With that said, more exciting patches will be expected along with Linux supports on other hardware like Intel chips, AMD GPU, and even their Audio drivers.”
+
+![memo](/assets/images/memo16.png) *[Keynote: Why web tech is like it is](https://youtu.be/3QEoJRjxnxQ)*
+
+Frandi: “The majority of Google services are not available to users in China, with Translate just being the latest to disappear. The Google spokesperson explained it was due to "low usage". But analysts believe it has something to do with the government censorship rules”.
