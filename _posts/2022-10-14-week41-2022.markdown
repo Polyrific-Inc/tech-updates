@@ -64,4 +64,4 @@ Yoga: “This article reports that a new and stable Linux version is out. This v
 
 ![memo](/assets/images/memo16.png) *[Keynote: Why web tech is like it is](https://youtu.be/3QEoJRjxnxQ)*
 
-Frandi: “The majority of Google services are not available to users in China, with Translate just being the latest to disappear. The Google spokesperson explained it was due to "low usage". But analysts believe it has something to do with the government censorship rules”.
+Frandi: “This is a good presentation by Steve Sanderson in this year’s NDC Sydney. He presented a summary of the web history, from the first time it was born until recent years, and what to expect in the future. He even showed the original code of web server implementation that Tim Berners-Lee wrote back then in 1990. It’s so interesting.”
