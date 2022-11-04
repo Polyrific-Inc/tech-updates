@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "Week #43 2022 - Platform Engineering"
+date:   2022-10-28 20:00:00 +0700
+---
+
+## Platform Engineering
+
+Platform engineering is a discipline to lay out the foundation of infrastructure that enables self-service capabilities for software engineering in an organization. The platform could be anything from the underlying hardware setup, tooling, standard workflow, or services.
+
+A dedicated team usually handles the process of engineering the platform. The platform's specific capabilities depend entirely on its end users' needs. While it is evident that the platform's audience is the Software Engineering team, other parties, like leadership & governance, data analyst & scientists, will also benefit from the platform product.
+
+__Benefits__
+
+These are some benefits that you will achieve by implementing good Platform Engineering practices:
+
+- **Tame complexity**: Platform engineering is a response to cloud-native solutions, which opens new possibilities and adds complexities at the same time. The platform team is responsible for designing and creating an easy-to-use tooling and workflow that hides the underlying complexity.
+- **Achieve business goals effectively**: Software is created to reach specific business goals. But if it isn't done right, it will just cause more headaches than delivering real value to the customer. Platform engineering allows Software Engineers to focus only on functional business features, not on managing dependencies, pipelines, and tools.
+- **Improve productivity**: Providing standard workflow and the proper tooling will make the software engineers' lives easier, increasing their productivity.
+- **Provide consistency and confidence**: The platform will make everything in order and predictable. Users are encouraged to be creative and not afraid of mistakes because they can be easily reverted if anything goes wrong.
+- **Help scale teams**: As the business grows, the platform will be helpful guidance to expand the team and replicate the process on a bigger scale.
+
+__Principles__
+
+Below are some helpful principles commonly found among successful platform teams and self-service organizations:
+
+- **Clear mission and role**: The platform needs a clear mission that makes sense for the users. It needs to be clearly defined and well communicated, so everyone understands why and how the platform should be utilized in the first place.
+- **Treat the platform as a product**: The platform team needs to be driven by a product mindset. They need to focus on what matters to the users and always listen to feedback.
+- **Focus on common problems**: Figuring out the common problems will prevent the other teams from reinventing the wheel. Unique requirements can always be added later in the subsequent iterations.
+- **Glue is valuable**: Platform teams are often seen as a pure cost center because they don't ship any product features for the end user. They are only gluing together our systems, after all. This is a very dangerous perspective, and, of course, that glue is extremely valuable.
+- **Don't reinvent the wheel**: Platform team needs to carefully identify if a problem can be solved by creating a new creative solution or just by utilizing an existing one. Creating your own tool might look cool, but is it really necessary? The decisions must include many factors, like budget, time, future maintenance, etc.
+
+__Success Characteristics__
+
+How do we know that the implementation of Platform Engineering is a success? These are the characteristics:
+
+- **Clear boundaries and responsibilities**: Good platform should be able to set clear boundaries between what the platform does and what the team using it does. It will minimize frustration and promote better collaboration and flow.
+- **Self-service and automation**: Users should be able to use the platform with minimum dependency on the platform team. It will empower independent teams and promote innovation and experimentation.
+- **Flexible and evolvable**: While the platform is usually an opinionated product, it needs to adapt to the requirement and dynamics of the users. What works in an organization doesn't guarantee it will also work in other organizations.
+- **Reliable**: The platform has to be reliable to gain the Engineer's and Management's confidence.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Next.js 13 is out](https://nextjs.org/blog/next-13)*
+
+Brain: “The React world is quite impressed by the new Next.js version. Two of the most talked about features are: Server components, and the introduction of Turbopack, a Webpack successor that’s 700x faster. The server component is a rather new architecture introduced by the react team at the end of 2020, and we can see that this approach might be the direction that the React community is trending into.”
+
+![memo](/assets/images/memo16.png) *[Now, SSH File Transfer Protocol (SFTP) support for Azure Blob Storage](https://azure.microsoft.com/en-us/blog/leverage-sftp-support-for-azure-blob-storage-to-build-a-unified-data-lake/)*
+
+Dika: “Azure Blob Storage now supports SSH File Transfer Protocol (SFTP). SFTP is a common protocol that helps us to transfer and receive data in a scalable and secure manner. However, it requires constant maintenance on our own SFTP VM Server. With SFTP support for Azure Blob Storage, we can easily enable an SFTP endpoint to exchange data without compromising security and zero maintenance of our SFTP servers.”
+
+![memo](/assets/images/memo16.png) *[Passkeys—Microsoft, Apple, and Google’s password killer—are finally here](https://arstechnica.com/information-technology/2022/10/passkeys-microsoft-apple-and-googles-password-killer-are-finally-here/)*
+
+Yoga: “Password is one of the most important things that we have to secure our accounts, and we have been using this for years. But, a new era is coming where we do not necessarily need to use passwords anymore and just use authenticating information instead. Recently, there was a report that large companies like Google, Microsoft, and Apple have agreed to use a single standard for password alternative, and that is called Passkeys. Passkeys are provided by FIDO Alliance, experts in MFA provision that has been years providing security for Big Tech companies.”
+
+![memo](/assets/images/memo16.png) *[Introducing Shoelace, a Framework-Independent Component-Based UX Library](https://css-tricks.com/shoelace-component-frameowrk-introduction/)*
+
+Rizqun: “Shoelace is a component library that defines all standard UX components such as tabs, modals, accordions, auto-completes, and much more. rather than creating these components in React, Solid, or Svelte, etc., it creates them with Web Components, which means we can use them with any framework.”
+
+![memo](/assets/images/memo16.png) *[Types of Barcodes and their usage](https://scanbot.io/blog/types-of-barcodes/)*
+
+Frandi: “I’m sure we’ve been familiar with barcodes. But do you know the types of barcodes and how they are usually used in the products? You might want to bookmark this article for future reference if you want to develop a product with barcodes.”

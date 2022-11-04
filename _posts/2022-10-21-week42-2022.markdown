@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "Week #42 2022 - Deployment Strategies"
+date:   2022-10-21 20:00:00 +0700
+---
+
+## Deployment Strategies
+
+One notable practice that contrasts modern and legacy applications are the frequency of deployments. Before the cloud, it was common to see months or years of release cycles for software products. But today, doing deployment every day or multiple times a day is not weird at all.
+
+However, this change also creates new challenges at the same time. If not done carefully, frequent deployments will negatively impact the application's reliability and customer experience. That's why it is crucial to have a proper deployment strategy plan that minimizes risks for both the application and its customers.
+
+We will discuss a few popular deployment strategies usually used to deliver modern applications, like **Rolling deployment**, **Blue/Green deployment**, and **Canary deployment**.
+
+__Rolling Deployment__
+
+Modern cloud applications usually include distributed components hosted in multiple cloud services, servers, or containers. In a Rolling deployment, the changes are released gradually to some instances before others.
+
+During the process, some instances run the new version of the application, while others continue to run the old one. As long as no issues appear with the new version, the deployment continues across all instances until all of them get the updated application.
+
+This strategy might perfectly fit large applications where downtime during deployment is not an option. And because it is usually only small changes delivered at a time, it should be easier to detect any issues and roll back to the previous version if needed.
+
+However, this deployment strategy will also potentially produce unexpected behavior because of the version inconsistency between instances. Your application might also become more complex as it must carefully handle edge cases caused by version inconsistency.
+
+__Canary Deployment__
+
+In some ways, the Canary deployment strategy is similar to the Rolling deployment, where the new release is made available only to a subset of users simultaneously. However, Canary deployment targets specific users to receive the update instead of rolling it to particular application servers or instances.
+
+The condition to apply the update to specific users highly depends on the business requirements, for example, their locations, demographic data, subscription types, etc. It gives a chance to the team to get early feedback and identify any issues before rolling the update out to all users.
+
+This deployment strategy makes sense for applications with an identifiable group of users. In some cases, the Canary deployment is also done by allowing users to opt-in for preview features. Of course, the volunteered users must be well-informed about the benefits and risks when they roll in.
+
+__Blue/Green deployment__
+
+In the Blue/Green deployment, the team maintains two identical environments. The "blue" environment holds the old version of the application, while the "green" environment holds the new one.
+
+Before the deployment, only the Blue environment receives the user traffic. During the deployment, the Green environment is created and gets all updates in the new version. At this point, the Blue environment is still working as usual without interruptions.
+
+When the deployment completes, the team can once again validate if the Green environment is working as expected. When everything is good, it is time to switch all user traffics to the Green environment. After the switching, the Blue environment is kept online as a backup. If ever there is a need to roll back, we can switch back the traffic again to get the old version of the application.
+
+The Blue/Green deployment is a costly strategy because it doubles the number of resources needed to be maintained. Hence, it might be a good fit for a simple infrastructure setup or if the system requires a major overhaul of the overall components rather than incremental changes.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[New npm timing attack could lead to supply chain attacks](https://www.bleepingcomputer.com/news/security/new-npm-timing-attack-could-lead-to-supply-chain-attacks/)*
+
+Yoga: “This article reports that there is a new npm timing attack that reveals the names of private packages. This attack allows actors to release malicious clones to trick developers into using them instead of using the npm registry API. Unfortunately, GitHub stated that they will not fix this issue due to architectural limitations.”
+
+![memo](/assets/images/memo16.png) *[Google DreamFusion uses AI to generate 3D models from text](https://aibusiness.com/document.asp?doc_id=780874)*
+
+Rizqun: “DreamFusion is an AI-powered tool that can generate 3D models from text inputs. It's an expanded version of DreamFields; a generative 3D system google unveiled back in 2021. DreamFusion requires no prior training, which means DreamFusion can generate 3D representations of objects without 3D data. Instead, the system uses 2D images of an object generated by the 'Imagen' text-to-image diffusion model to understand different perspectives of the model it is trying to generate.”
+
+![memo](/assets/images/memo16.png) *[How we built Pingora, the proxy that connects Cloudflare to the Internet](https://blog.cloudflare.com/how-we-built-pingora-the-proxy-that-connects-cloudflare-to-the-internet/)*
+
+Frandi: “Cloudflare is moving away from Nginx. Not that Nginx is bad, it’s just over the years, their usage of Nginx has run up against limitations. Hence, they’ve been building their own homegrown reverse proxy called Pingora. They claim that Pingora is faster, more efficient, safer, and has more features than other tools to serve Cloudflare’s unique needs.”
+
+![memo](/assets/images/memo16.png) *[Google’s newest AI generator creates HD video from text prompts](https://arstechnica.com/information-technology/2022/10/googles-newest-ai-generator-creates-hd-video-from-text-prompts/)*
+
+Yoga: “AI nowadays has been highly developed in various ways to assist human productivity. Recently, Google announced the development of Imagen Video, a text-to-video AI mode capable of producing HD video from a written prompt. Although it is still in the research phase, this AI supports a lot of stylistic abilities, generating 3D rotating objects, for example. However, Google stated that they will not release its model or source code any time soon due to the data they used still containing sexually explicit and violent content.”
+
+![memo](/assets/images/memo16.png) *[SASS vs. LESS: What to Choose?](https://cynoteck.com/blog-post/sass-vs-less-what-to-choose/)*
+
+Rizqun: “Both SASS and LESS are popular CSS Pre-processors. This article will compare SASS and LESS to analyze their respective advantages and disadvantages. The things that are compared include functions, features, syntax, and even the documentation.”
