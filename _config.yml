@@ -25,6 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 domain: tech-updates.polyrific.com
 url: https://tech-updates.polyrific.com # the base hostname & protocol for your site, e.g. http://example.com
+google_analytics: G-4FKKZG2NZ1
 
 # Build settings
 theme: minima
