@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "Week #44 2022 - Internal Developer Platform"
+date:   2022-11-04 20:00:00 +0700
+---
+
+## Internal Developer Platform
+
+The Internal Developer Platform (IDP) is a self-service layer on top of tools or services used by the Engineering team to support their daily needs. IDP is the product of the Platform Engineering practice discussed in [last week's edition of Tech Update](https://tech-updates.polyrific.com/2022/10/28/week43-2022.html).
+
+The well-designed IDP should allow developers to deal with infrastructure needs without depending on the Ops team. It can help the organization streamline project execution and increase productivity if appropriately implemented.
+
+The Ops team can contribute to the IDP by registering the tools or services that users can use, along with their usage policies. Of course, giving developers more power to manage their infrastructure needs will raise more risks to the overall setup. This is why IDP should be continuously maintained and evolved to keep everything on the right track and secure.
+
+The following tasks are the example of things that can be done through IDP:
+
+- doing infrastructure orchestration
+- managing user access and permissions
+- updating application configuration
+- deploying application
+- monitoring application metrics
+- etc.
+
+You can see that the items above are traditionally done by the Ops team. However, in modern software engineering practice, they can also be done easily by the other teams through IDP.
+
+These are the pain points that IDP is designed to solve:
+
+__For organization:__
+
+- Lack of standardization will lead to configuration drift and hard-to-maintain resources
+- No unified developer experience will make it hard for people and teams to switch from one assignment to another
+- Classic engineering issues: cost, schedule, and quality
+
+__For the Ops team:__
+
+- Doing repetitive and manual work over and over again
+- Never-ending supporting tickets
+- The overall setup is hard to maintain and scale
+
+__For the Developer team:__
+
+- Being too dependent on the Ops team will lead to a bottleneck
+- Having to learn other knowledge that is not their main competency
+- Poor developer experience: lack of documentation and context switching
+
+While we can take inspiration from the IDP implementation used in a well-established organization, we shouldn't copy it as is. Every organization is unique, and not all have the luxury of having a dedicated Platform team to create and maintain IDP. A senior developer fills the role in a smaller organization and lays out a standard that other developers will follow. If you think adopting a ready-to-use Platform as a Service (PaaS) from a specific cloud provider is enough for your small team's requirements, then go for it. You will know that you need a more established platform implementation as your team grows.
+
+According to Gartner, "platforms don't enforce a specific toolset or approach – it is about making it easy for developers to build and deliver software while not abstracting away useful and differentiated capabilities of the underlying core services."
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[New Linux malware evades detection using multi-stage deployment](https://www.bleepingcomputer.com/news/security/new-linux-malware-evades-detection-using-multi-stage-deployment/)*
+
+Yoga: “This article reports that researchers have discovered a new Linux malware infecting computers and IoT devices using a multi-step infection chain where each layer delivers only a few hundred bytes, activating a simple module and then moving to the next one. Attackers use legitimate cloud hosting services to host their command and control infrastructure, avoiding alarm to rise by risking themselves being easily traced and identified.”
+
+![memo](/assets/images/memo16.png) *[Lapce is a Fast, Lightweight Open-Source Code Editor in Making](https://news.itsfoss.com/lapce-code-editor/)*
+
+Rizqun: “Lapce is an open-source code editor built in Rust. Although still in development, Lapce looks promising with the features already in the pre-alpha build. These features include a command palette, customizable UI, built-in terminal, remote computer connection, plugin system, and so on.”
+
+![memo](/assets/images/memo16.png) *[CNCF Survey Predicts Growing Wasm Momentum](https://www.cncf.io/blog/2022/10/24/cncf-wasm-microsurvey-a-transformative-technology-yes-but-time-to-get-serious/)*
+
+Brain: “While Next.js tries to move your Front-end code to the backend using Server Components, WebAssembly(Wasm) tries to do the opposite by allowing you to execute backend code in the browser. A recent survey by CNCF found more than a quarter (28%) are using Wasm in their cloud-native development projects. It seems the technology is gaining momentum. Microsoft has released its own Web framework called Blazor, which utilizes this Wasm technology, and some of us here in Polyrific have used it in real projects.”
+
+![memo](/assets/images/memo16.png) *[SonarQube 9.7 is now available with so many additional features](https://www.sonarqube.org/sonarqube-9-7/)*
+
+Dika: “SonarQube is a static code analysis tool that provides a detailed report of bugs, code smells, vulnerabilities, and code duplications. It supports 25+ major programming languages. In this latest version, they have some improvements on Javascript/Typescript performance analysis speed, Github security vulnerabilities and OWAPS report, some new test rules for Python to help more Python bugs analysis from a static code perspective, User experience improvement, etc.”
+
+![memo](/assets/images/memo16.png) *[The Product-Minded Software Engineer](https://blog.pragmaticengineer.com/the-product-minded-engineer/)*
+
+Frandi: “I found this article interesting because it resonates with my experience that being a Software Engineer shouldn’t be just about coding and programming. We need to understand why decisions are made, how users will actually use the product, or how to improve this feature.”
