@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "Week #45 2022 - Platform Team"
+date:   2022-11-11 20:00:00 +0700
+---
+
+## Platform Team
+
+After discussing [Platform Engineering](https://tech-updates.polyrific.com/2022/10/28/week43-2022.html) (the discipline) and [Internal Developer Platform](https://tech-updates.polyrific.com/2022/11/04/week44-2022.html) (the product) in the previous weeks, let's move on to discuss the Platform Team (the people) this week.
+
+Platform Team is a dedicated group in an organization responsible for creating a self-service layer on top of the scattered tools and technology stack used by the other teams. A successful Platform Team maintains solid guardrails and standards for its customers without compromising their autonomy.
+
+__Laying the foundation__
+
+Designing and implementing a good foundation is crucial in supporting an organization to grow and run faster toward its goals. The Platform Team must be able to initiate the attempt to lay this foundation that the other teams will follow.
+
+But of course, it is not a one-time job. Although the foundation needs to be stable enough to be usable, it should be able to adapt dynamically to the needs of the other teams.
+
+__Simplify complexity__
+
+The Platform Team should build tooling that makes things easier and simpler for users. They need to understand the overall setup of the system, so they know what's essential to be kept visible to the users and what's safe to be hidden away.
+
+__Solve common problems__
+
+A good Platform team prevents other teams from repeatedly reinventing the wheel by solving common problems. It's key to figure out what these common problems are: start by understanding developer pain points and friction areas that cause slowdowns in development.
+
+__Advocate best practices__
+
+The Platform Team collaborates with other teams to build applications that make the best use of technology. The bigger the organization, the higher the need to spread knowledge systematically regarding best practices across the teams. The platform team will need to stay in the loop regarding team discussions related to tools, tasks, what works, and, perhaps more importantly, what doesn't.
+
+__Modernize old systems__
+
+The Platform Team must drive the other teams to modernize the unstable legacy system. They must detect which component is outdated and when the replacement is ready and ensure a smooth transition.
+
+Sometimes, not all stakeholders think that replacing the old system is a good idea because everything looks normal. However, what looks normal on the surface doesn't always be like that underneath. Maintaining an old system is problematic because it has security, stability, reliability, and scalability risks. So the Platform Team must be able to make valid points if they believe the system is worth to be modernized.
+
+__Being ahead of the curve__
+
+The Platform Team must be able to empower the other teams by balancing between giving them what they want and educating them about where they need to go. It forces the Platform Team to stay ahead of the curve so they are always ready when demands come from the other teams.
+
+Suppose the Platform Team doesn't catch up with the rising demands. In that case, the other teams will build a workaround solution that fits their own needs without considering many aspects like security, stability, maintainability, etc. It is not what an organization wants to have in the long run.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[.NET 7 is Available](https://devblogs.microsoft.com/dotnet/announcing-dotnet-7/)*
+
+Brain: “The anticipated new version of .NET has been released and is officially supported by Microsoft. A ton of new features and improvements are really tempting for us working on an ongoing project to upgrade immediately. The performance improvement seems promising where the JIT compiler is said to be only 10% slower than C++.”
+
+![memo](/assets/images/memo16.png) *[Welcome to C# 11](https://devblogs.microsoft.com/dotnet/welcome-to-csharp-11/)*
+
+Dika: “Mads Torgersen, The C# Lead Designer, announced the new C# programming language version. There are so many additional features worth trying, like the new raw string literals, required members, newlines in string interpolations, and list patterns. I believe the changes will improve the developer experience during coding.”
+
+![memo](/assets/images/memo16.png) *[Detect vulnerable libraries within your GitHub environments for free](https://dev.to/codesec/detect-vulnerable-libraries-within-your-github-environments-for-free-2mg0)*
+
+Yoga: “GitHub Actions are a powerful tool that can automate projects in CI/CD pipelines and provides security on top of it. This article shows us how to detect libraries' vulnerabilities in various projects, including .NET projects. Using and configuring CodeSec in our project allows us to detect any vulnerabilities within, along with advice on how to fix them.”
+
+![memo](/assets/images/memo16.png) *[AI Image editing from Text! Imagic explained](https://www.louisbouchard.ai/imagic/)*
+
+Rizqun: “Imagic takes such a diffusion-based model able to take text and generate images out of it and adapts the model to edit the images. The model not only understands what you want to show, but it’s also able to stay realistic as well as keeping the properties of the initial images. This is all done from a single input image and a short sentence.”
+
+![memo](/assets/images/memo16.png) *[Everything new from GitHub Universe 2022](https://github.blog/2022-11-09-everything-new-from-github-universe-2022/)*
+
+Frandi: “GitHub Universe 2022 was conducted this week on November 9-10. There were many announcements during the event ranging from different topics. GitHub seems to move its focus away from the social coding platform it is predominantly today and towards an all-included developer and organization environment in the cloud.”

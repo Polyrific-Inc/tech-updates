@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "Week #46 2022 - Similar Services on Azure"
+date:   2022-11-18 20:00:00 +0700
+---
+
+## Similar Services on Azure
+
+__Azure App Service vs. App Service Environment__
+
+[Azure App Service](https://learn.microsoft.com/en-us/azure/app-service/) is an HTTP-based service for hosting web applications, REST APIs, and mobile backends. The application runs on top of computing resources determined by the App Service Plan. You can write the apps in your favorite languages supported by the App Service, like .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python.
+
+An [App Service Environment (ASE)](https://learn.microsoft.com/en-us/azure/app-service/environment/) is an App Service feature that provides a fully isolated and dedicated environment for running applications securely at a large scale. The apps are default deployed into a network-isolated environment already on a virtual network, so it doesn't need an additional network configuration. You can even host the apps on dedicated hardware if you need a completely isolated environment.
+
+Most of the time, App Service should be enough for your general need. You might want to consider using App Service Environment for the following use cases:
+- Internal line-of-business applications
+- Applications with more than 30 App Service plan instances
+- Single-tenant systems to satisfy internal compliance or security requirements
+- Network-isolated application hosting
+- Multi-tier applications
+
+__Azure SQL Database vs. Azure SQL Managed Instance vs. SQL Server on Azure VM__
+
+Azure SQL is a family of managed and secure data platforms that use the SQL Server database engine in the Azure cloud infrastructure.
+
+[Azure SQL Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/sql-database-paas-overview?view=azuresql) is a managed database service that supports modern cloud applications. It is based on the latest and stable Enterprise Edition of SQL Server, with some additional features like built-in high availability, intelligence, and management. You pay-as-you-go with options to scale up or out for greater power without interruption.
+
+[SQL Server on Azure VM](https://learn.microsoft.com/en-us/azure/azure-sql/virtual-machines/windows/sql-server-on-azure-vm-iaas-what-is-overview?view=azuresql) falls into Infrastructure-as-a-Service (IaaS) industry category. It allows you to run SQL Server inside Azure's fully managed virtual machine (VM). The SQL virtual machines are a good option for migrating on-premises SQL Server databases and applications with minimal or no changes (lift and shift).
+
+[Azure SQL Managed Instance](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/sql-managed-instance-paas-overview?view=azuresql) falls into the Platform-as-a-Service (PaaS) industry category and is best for most migrations to the cloud. This option provides all of the PaaS benefits of Azure SQL Database but adds capabilities previously only available in SQL Server VMs. It includes a native virtual network and nearly 100% compatibility with on-premises SQL Server.
+
+__Event Grid vs. Event Hub vs. Service Bus__
+
+Azure offers three services that assist with delivering events or messages throughout a solution, i.e., Event Grid, Event Hub, and Service Bus. Although they have some similarities, each service is designed for particular scenarios. In some cases, using all of them in a solution could give you the full power of the messaging system in your application.
+
+[Event Grid](https://learn.microsoft.com/en-us/azure/event-grid/overview) is an eventing backplane that enables event-driven, reactive programming. It uses the publish-subscribe model. Publishers emit events but have no expectations about how the events are handled. Subscribers decide on which events they want to handle.
+
+[Event Hubs](https://learn.microsoft.com/en-us/azure/event-hubs/event-hubs-about) is a big data streaming platform and event ingestion service. It can receive and process millions of events per second. It facilitates telemetry and event stream data capture, retention, and replay. The data can come from many concurrent sources.
+
+[Service Bus](https://learn.microsoft.com/en-us/azure/service-bus-messaging/service-bus-messaging-overview) is a fully managed enterprise message broker with message queues and publish-subscribe topics. The service is intended for enterprise applications that require transactions, ordering, duplicate detection, and instantaneous consistency. If you have the requirement to handle high-value messages that can't be lost or duplicated, you don't want to miss Service Bus on your list of technology.
+
+__ACA vs. ACI vs. AKS__
+
+There are many options for teams to build and deploy cloud-native and containerized applications on Azure.
+
+[Azure Container Apps (ACA)](https://learn.microsoft.com/en-us/azure/container-apps/overview) enables you to build serverless microservices based on containers. While Kubernetes power it, it doesn't provide direct access to the underlying Kubernetes APIs. It is optimized for running general-purpose containers and provides a fully managed experience based on best practices. For these reasons, many teams may prefer to start building container microservices with Azure Container Apps.
+
+[Azure Container Instances (ACI)](https://learn.microsoft.com/en-us/azure/container-instances/) provides a single pod of Hyper-V isolated containers on demand. It can be considered a lower-level "building block" option than Container Apps. Azure Container Apps provide many application-specific concepts on top of containers, including certificates, revisions, scale, and environments. If you need a less "opinionated" building block that doesn't align with the scenarios Azure Container Apps is optimizing for, Azure Container Instances is an ideal option.
+
+[Azure Kubernetes Service (AKS)](https://learn.microsoft.com/en-us/azure/aks/intro-kubernetes) provides a fully managed Kubernetes option in Azure. It supports direct access to the Kubernetes API and runs any Kubernetes workload. The entire cluster resides in your subscription, with the cluster configurations and operations within your control and responsibility.
+
+Except with the above options, you can also use Azure App Service to host a container application. In fact, if you want to build a web app, Azure App Service should be an ideal option. However, if your goal is to build a microservice-style system based on container technology, you should give ACA, ACI, or AKS good attention.
+
+__Front Door vs. Traffic Manager vs. Application Gateway vs. Azure Load Balancer__
+
+Azure provides various load-balancing services that you can use to distribute your workloads across multiple computing resources - Front Door, Traffic Manager, Application Gateway, and Load Balancer.
+
+[Front Door](https://learn.microsoft.com/en-us/azure/frontdoor/front-door-overview) is an application delivery network that provides global load balancing and site acceleration service for web applications. It offers Layer 7 capabilities for your application, like SSL offload, path-based routing, fast failover, caching, etc., to improve your application's performance and high availability.
+
+[Traffic Manager](https://learn.microsoft.com/en-us/azure/traffic-manager/traffic-manager-overview) is a DNS-based traffic load balancer that enables you to distribute traffic optimally to services across global Azure regions while providing high availability and responsiveness. Because Traffic Manager is a DNS-based load-balancing service, it loads balances only at the domain level. For that reason, it can't fail over as quickly as Front Door because of common challenges around DNS caching and systems not honoring DNS TTLs.
+
+[Application Gateway](https://learn.microsoft.com/en-us/azure/application-gateway/overview) provides an application delivery controller (ADC) as a service, offering various Layer 7 load-balancing capabilities. Use it to optimize web farm productivity by offloading CPU-intensive SSL termination to the gateway.
+
+[Azure Load Balancer](https://learn.microsoft.com/en-us/azure/load-balancer/load-balancer-overview) is a high-performance, ultra-low-latency Layer 4 load-balancing service (inbound and outbound) for all UDP and TCP protocols. It is built to handle millions of requests per second while ensuring your solution is highly available. Azure Load Balancer is zone-redundant, ensuring high availability across Availability Zones.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Angular 15 is now available](https://blog.angular.io/angular-v15-is-now-available-df7be7f2f4c8)*
+
+Dika: “The new version of Angular was announced on Nov 17 this year. There are some improvements that lead to better developer experience and performance, like stable standalone APIs, stable Image Directive, Better stack trace, Automatic imports in language service and etc. The announcement also stated some deprecation patterns that are rarely used based on analyzing thousands of projects within Google.”
+
+![memo](/assets/images/memo16.png) *[Thousands of GitHub repositories deliver fake PoC exploits with malware](https://www.bleepingcomputer.com/news/security/thousands-of-github-repositories-deliver-fake-poc-exploits-with-malware/)*
+
+Yoga: “This article reports that there is a finding about another malicious exploitation in GitHub, which is from exploiting POC repositories. The repositories were meant for researchers to publish PoC exploits to help the community verify vulnerabilities or to determine the impact and scope. But, lately, they found that many of them contain malware and harmful scripts, even an info-stealer. We are advised to carefully check before downloading and executing PoC provided by an unverified source.”
+
+![memo](/assets/images/memo16.png) *[Exploring Ghostwriter, a GitHub Copilot alternative](https://blog.logrocket.com/ghostwriter-github-copilot-alternative/)*
+
+Rizqun: “Ghostwriter is an AI engine that helps with code autocompletion and development by recommending code based on our operations. Ghostwriter suggests our subsequent lines and statements of code by analyzing previous lines we've written in the language, the packages we installed, and other interactions. It's actually similar to many other programming AI applications, but Ghostwriter includes some improvements and features that we won't find in other AI tools like code suggestion and autocompletion, code generation, code explanations, and semantic search.”
+
+![memo](/assets/images/memo16.png) *[The Distributed Computing Manifesto](https://www.allthingsdistributed.com/2022/11/amazon-1998-distributed-computing-manifesto.html)*
+
+Frandi: “Werner Vogels, the CTO of Amazon, shared an interesting document from the early days of Amazon that transformed the architecture of Amazon’s e-commerce platform. I found it interesting because I can learn the thoughts behind the architecture that might be seen as ‘normal’ nowadays.”
+
+![memo](/assets/images/memo16.png) *[Astro is the new interesting UI Framework](https://docs.astro.build/en/concepts/why-astro/)*
+
+Brain: “It’s interesting how technology can rotate like fashion. At first, Multi Page Apps (MPA) was the standard. Then SPA came, and every UI framework is a SPA framework. Now the trend might shift again as we found it’s more efficient to render javascript in the server like what the Next.js server component has done. Astro is the new UI framework that tries to make MPA cool again. Though it also tries to bring the best of both worlds by introducing a concept called Astro island, which enables interactivity without sacrificing too much performance. I think this UI framework is worth looking into.”
