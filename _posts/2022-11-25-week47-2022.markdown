@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "Week #47 2022 - Site Reliability Engineering"
+date:   2022-11-25 20:00:00 +0700
+---
+
+## Site Reliability Engineering
+
+Site Reliability Engineering (SRE) is a discipline to help organizations sustainably achieve an appropriate level of reliability in their systems, services, and products. The SRE team uses the software engineering approach to automate IT operation tasks.
+
+SRE arises as a solution to bridge the needs of Developers who want to deliver software updates as soon and frequently as possible while maintaining the reliability of the application in the production environment.
+
+__vs. DevOps__
+
+DevOps is a culture that breaks the traditional boundary between the Developer and the Operation team. SRE can be seen as the practical implementation of DevOps.
+
+DevOps provides the philosophical foundation of what must be done to maintain software quality amidst the increasingly shortened development timeline. SRE offers the answers to achieving DevOps success by ensuring that the DevOps team strikes the right balance between speed and stability.
+
+__SLI, SLO, and SLA__
+
+The SRE teams measure the quality of service delivery and reliability by monitoring some metrics.
+
+The **Service Level Indicators (SLI)** are measurable aspects of the provided service levels, which include critical indicators like request latency, availability, error rate, and system throughput.
+
+The **Service Level Objectives (SLO)** are specific goals that are considered acceptable based on the observed SLI. When defining SLO, you will also define Error Budgets as the noncompliance tolerance for the SLO. For example, if your SLO includes an uptime of 99.95%, you allow downtime of 0.05% as the error budget.
+
+The **Service Level Agreements (SLA)** are legal documents that state what would happen when one or more SLOs are not met. For example, if you cannot fulfill the 99.95% uptime commitment, you might be obligated to refund the customers.
+
+__Operational Balance__
+
+Maintaining the balance between operations and development work is a critical component of SRE. The SRE team split their time between operations tasks and project work.
+
+According to SRE best practices from Google, site reliability engineers can only spend 50% of their time on operations at maximum—and they should be monitored to ensure they don’t go over. They must spend the rest of their time on development tasks like creating new features, scaling the system, and implementing automation.
+
+Automation is an essential part of the SRE team’s role. They will likely automate a solution if they repeatedly deal with a problem.
+
+__Benefits__
+
+Let's see again how SRE benefits your organization:
+
+- **Gain greater visibility into service health** by tracking metrics, logs, and traces across all services in the organization and providing context for identifying root causes in the event of an incident.
+- **Quantify the cost of downtime** by helping development and operations teams understand the cost of SLA violations and helping management quantify the impact of system reliability on production, sales, marketing, customer service, and other business functions.
+- **Optimize incident response** by building efficient on-call processes and streamlining alerting workflows.
+- **Build a modern network operations center** by combining an in-depth understanding of IT operations with machine learning and automation to send alerts directly to the person responsible for addressing the issue.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[API Authentication - JWT vs. OAuth](https://dev.to/angha_ramdohokar_0b6505c2/api-authentication-jwt-vs-oauth-802)*
+
+Yoga: “API authentication is important to keep our system safe by proving or verifying the user's identity. This article explains API authentication methods, especially JSON Web Token and OAuth Authentication. Both methods have their ups and downs regarding securing and authentication levels, so developers must know what's best to use depending on their system's requirement, using all of them or each independently of the others.”
+
+![memo](/assets/images/memo16.png) *[Difference between var, let, and const keywords in JavaScript](https://www.geeksforgeeks.org/difference-between-var-let-and-const-keywords-in-javascript/)*
+
+Rizqun: “In JavaScript, users can declare a variable using three keywords that are var, let, and const. The author explains the differences between using var, let, and const in JavaScript in this article. The author provides an explanation accompanied by real examples of its application in the program, then shows the output of each condition to help us understand the difference between using var, let, and const.”
+
+![memo](/assets/images/memo16.png) *[Any developer can be a space developer](https://azure.microsoft.com/en-us/blog/any-developer-can-be-a-space-developer-with-the-new-azure-orbital-space-sdk/)*
+
+Dika: “It’s always awesome to be a space developer. That’s cool, but not everyone can do that since it requires mastery in several disciplines like physics, math, etc. But now Microsoft claims that any developer can be a space developer with the new Azure Orbital Space SDK. It seems promising since they claimed that the SDK could run on any spacecraft and provide a secure hosting platform and application kit to create, deploy, and operate applications in orbit. They also have partnerships with some big companies like Airbus, SpaceX, Thales Alenia Space, and many more.”
+
+![memo](/assets/images/memo16.png) *[CICERO: The first AI to play Diplomacy at a human level](https://www.youtube.com/watch?v=lNtBiZaLA0k)*
+
+Brain: “Diplomacy is a game where you negotiate between several parties to achieve a certain goal. It requires you to communicate effectively and sometimes do some strategic lying. AI can do this at the human level using strategic reasoning and natural language processing. The application of this can be huge, such as enabling AI to walk you through a long conversation to teach you some complicated subject.”
+
+![memo](/assets/images/memo16.png) *[What are SIM swap attacks, and how can you prevent them?](https://blog.1password.com/what-is-sim-swapping/)*
+
+Frandi: “SIM swapping, also known as SIM jacking, is a technique used by attackers to gain access to a person’s phone number. This is very concerning because if an attacker has access to your phone number, they also have access to any codes you receive via SMS or automated phone call. This negates the extra security they’re meant to provide and puts any account tied to or protected by your phone number at risk.”
