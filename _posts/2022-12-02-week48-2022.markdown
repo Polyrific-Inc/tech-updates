@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Week #48 2022 - Lift and Shift"
+date:   2022-12-02 20:00:00 +0700
+---
+
+## Lift and Shift
+
+"Lift and Shift" is the process of migrating an application from one host environment to another - usually from on-premise to the cloud. It involves little or no change to the application code and architecture. Hence, the "Lift and Shift" strategy is considered the fastest and less-costly option to migrate workload to the cloud.
+
+The "Lift and Shift" migration usually falls into the Infrastructure as a Service (IaaS) category. For example, if you want to move an application hosted in an on-premise Windows Server, you usually want to move the host to an equivalent virtual machine in the cloud.
+
+However, something to remember is that moving a workload to the cloud is not directly equal to lower infrastructure cost and better performance. If you experience terrible performance in the on-premise environment, blindly doing the "lift and shift" migration to the cloud won't magically give you any better performance. Yes, you might easily scale up your machine to provide more power or to set up disaster recovery for business continuity in the cloud. Still, then it means you will pay higher costs as compensation.
+
+Before undertaking any lift and shift migration, carefully assess and prepare for factors impacting the undertaking's difficulty, cost, and ultimate value. These can include, but are not limited to, the following:
+
+- **Application lifespan**: How much longer will you continue to use this application or run this workload? In most cases, it doesn't make sense to migrate an application you'll be retiring within the next 12 months.
+- **API access restrictions**: Make sure your move to the cloud won't result in bottlenecks for your current API tools.
+- **Migration automation tools**: Identify whether your cloud hosting provider offers any automated tools for migrations and plan to use them whenever possible.
+- **Migration priority**: If you're planning to migrate multiple applications, create a runbook to ensure that mission-critical applications are migrated first.
+- **Compliance**: Before migrating from your private, on-premises environment to a private or public cloud, evaluate your migration plan and the cloud provider's infrastructure to ensure all compliance requirements will be met during and after the migration.
+- **Feature and scope creep**: Feature-rich cloud environments can easily tempt you to integrate capabilities on the fly, leading to delays and resource drains. Have a clearly defined project and stick to it throughout the migration.
+
+
+The "Lift and Shift" migration should come with longer planning for your application in the cloud. It should be seen as the first step, and more iterations will subsequently follow in the future.
+
+These are the options that you want to consider when moving your applications to the cloud:
+
+- **Rehost**: this is the Lift and Shift strategy. Migration is fast and relatively inexpensive, but the ongoing operation can be costly because you're not leveraging cloud efficiencies.
+- **Refactor**: this is when you try to fit your application into the cloud infrastructure known as Platform as a Service (PaaS). You don't radically change the existing architecture or framework because the main goal is to get rid of the IaaS host so you can focus more on managing the application instead of maintaining the infrastructure. You will find compatibility challenges and the need to find workarounds during the process.
+- **Rearchitect**: moving to the cloud allows you to adopt modern architecture like microservices, containers, or serverless architecture. If it benefits your application, give it a go. Please be careful, though, because it will be more costly, labor-intensive, and time-consuming upfront.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Lastpass says hackers accessed customer data in a new breach](https://blog.lastpass.com/2022/11/notice-of-recent-security-incident/)*
+
+Yoga: “Another news comes from Lastpass about security breaches that happened in the past months. This time concerns third-party cloud storage service breaches and the aftermath of the previous accident. Though the customer's passwords have not been compromised, unusual activities have been detected within cloud storage, which is shared by both Lastpass and its affiliate, GoTo. This is the second security incident that happened to Lastpass this year after they confirmed in August that they have been breached via a compromised developer account.”
+
+![memo](/assets/images/memo16.png) *[Heroku sunsets their free product plans this week](https://blog.heroku.com/next-chapter)*
+
+Brain: “Many developers use Heroku to host their projects since they are user-friendly and developer-friendly. However, as announced three months ago, they are discontinuing the free product plans. So if you depend on their free tier on your projects, it’s time to think about alternatives.”
+
+![memo](/assets/images/memo16.png) *[Introducing the Microsoft Graph Developer Proxy community preview](https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-graph-developer-proxy-community-preview/)*
+
+Dika: “Microsoft launched the Microsoft Graph Developer proxy today as the answer to many issues that developers faced last year related to the intermittent issue that happens only in specific circumstances, often when the application is under heavy load. Some useful features like simulating different errors, mock response for testing purposes, etc., seem interesting to try.”
+
+![memo](/assets/images/memo16.png) *[Music Tech Aside - LALAL.AI Is Still The AI Vocal Split King](https://dev.to/elliotmangini/music-tech-aside-lalalai-is-still-the-ai-vocal-split-king-2e2)*
+
+Rizqun: “LALAL.AI is a web app that allows us to split a recording of music into its comprising parts. I've tried it by myself, and the result was pretty good. It's free to use and has a paid option to provide a larger upload size limit and a longer duration. Not only being able to separate vocals and instruments, but LALAL.AI also has a feature to separate instruments specifically such as drums, piano, and so on.”
+
+![memo](/assets/images/memo16.png) *[C# for Babies](https://leanpub.com/csharp-for-babies)*
+
+Frandi: “C# for Babies is a fun and easy way to introduce your family to the world of programming. You might find it useful to understand C# too, even if you're grown-up. With simple illustrations and easy-to-understand explanations, anyone can learn the .NET C# programming language from A to Z. The ebook is free to download from Leanpub.”
