@@ -1,0 +1,84 @@
+---
+layout: post
+title:  "Week #49 2022 - Chaos Engineering"
+date:   2022-12-09 20:00:00 +0700
+---
+
+## Chaos Engineering
+
+Chaos engineering is a methodology that helps developers attain consistent reliability by hardening services against failures in production. Chaos Engineering lets you compare what you think will happen to what actually happens in your systems. You literally "break things on purpose" to learn how to build more resilient systems.
+
+A common way to introduce chaos is to inject faults that cause system components to fail deliberately. The goal is to observe, monitor, respond to, and improve your system's reliability under adverse circumstances. For example, take dependencies offline (stopping API apps, shutting down VMs, etc.), restrict access (enabling firewall rules, changing connection strings, etc.), or force failover (database level, Front Door, etc.).
+
+Architecting your service to expect failure is a core approach to creating a modern service. Chaos engineering embraces the uncertainty of the production environment and strives to anticipate rare, unpredictable, and disruptive outcomes so that you can minimize any potential impact on your customers.
+
+__How it works__
+
+All testing in chaos engineering happens through so-called chaos experiments. In general, these are how it's done:
+
+- **Start with a hypothesis** - Engineers analyze the system and choose what failure to cause. The core step of chaos engineering is to predict how the system will behave once it encounters a particular bug.
+- **Define metrics to measure the impact** - To understand how your system behaves under inevitable failures, you need to know where to look precisely to observe the effect. It could be availability metrics, latency metrics, logs details, etc.
+- **Have a rollback plan** - Always have a backup plan if things go wrong, but accept that sometimes even the backup plan can fail. Talk through how you're going to revert the impact.
+- **Inject the faults** - Start injecting the failures into your system when ready. You know the drill. You know what to do if something goes wrong.
+- **Identify and act based on the result** - After running your first experiment, there will be two possible outcomes: either you've verified that your system is resilient to the failure you introduced, or you've found a problem you need to fix. Both of these are good outcomes. On the one hand, you've increased your confidence in the system and its behavior; on the other, you've found a problem before it caused an outage.
+- **Document the process and observations** - it is crucial that you always have everything documented for future reference. It will be helpful for many things, like when you want to apply a similar process on different systems or if you want to understand some anomalies resulting from the tests.
+
+__The principles__
+
+Using the following principles, you can adopt chaos engineering in many challenging environments and organizations.
+
+- **Strengthen reliability disciplines** - Chaos engineering builds on established reliability engineering practices. It's essential to use mature business continuity processes and system reliability patterns.
+- **Understand the system** - As a precursor to planning a viable chaos engineering experiment, ensure that the system and its business outcomes are well understood.
+- **Experiment with every component** - Treat all components, layers, services, and dependencies as subjects for potential experiments whenever possible. These experiments uncover any gaps between expected and actual behavior and validate fallbacks.
+- **Strive for production** - Experiment first upstream in non-production environments. Build confidence by learning about the system's behavior during different scenarios. And as you gain confidence, you can transition toward production.
+- **Contain the impact** - Avoid cascading failures by containing the test scope and detaching dependencies.
+- **Measure, learn, and improve** - Infuse observability into all system components. Measure an experiment's results to understand the business impact.
+- **Increase complexity gradually** - Increase complexity gradually while you adjust the granularity of the experiments. Expanding the scope and combining tests can reveal previously unknown weaknesses.
+- **Socialize continuously** - Effective and transparent communication is critical to the success of any chaos engineering program. It creates a culture that recognizes the benefits of introducing rigorously controlled risks to drive increased resilience.
+
+__Best Practices__
+
+These are the best practices that you can follow when conducting chaos tests:
+
+- **Shift left** - It means experiment early; experiment often. Incorporate fault-injection configurations and create resiliency-validation gates during the development stages and in the deployment pipeline.
+- **Shift right** - It means that you verify that the service is resilient where it counts in a pre-production or production environment with actual customer load. Adopt a proactive approach as opposed to reacting to failures. Be a part of determining and controlling requirements for the blast radius.
+- **Blast radius** - Stop the experiment when it goes beyond scope. Unknown results are an expected outcome of chaos experiments. Strive to balance collecting the actual result data and affecting as few production users as possible.
+- **Error budget testing** - Establish an error budget as an investment in chaos and fault injection. Your error budget is the difference between achieving 100% of the service-level objective (SLO) and achieving the agreed-upon SLO.
+
+__Tools__
+
+These are some tools that are commonly used for chaos engineering:
+
+- [Chaos monkey](https://github.com/Netflix/chaosmonkey) - This tool was initially created at Netflix. It randomly terminates virtual machine instances and containers inside your production environment. Exposing engineers to failures more frequently incentivizes them to build resilient services.
+- [Gremlin](https://www.gremlin.com/) - This tool helps clients set up and control chaos testing. The free version of the tool offers basic tests, such as turning off machines and simulating high CPU load.
+- [Chaos Toolkit](https://chaostoolkit.org/) - This open-source initiative makes tests easier with an open API and a standard JSON format.
+- [Chaos Mesh](https://chaos-mesh.org/) - This is an open-source Chaos Engineering Platform for Kubernetes.
+- [Litmus](https://litmuschaos.io/) - It is easy to use, based on modern chaos engineering practices & community collaboration. Litmus is 100% open source & CNCF-hosted.
+
+__Reference:__
+
+- [https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/chaos-engineering](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/chaos-engineering)
+- [https://www.ibm.com/cloud/architecture/architecture/practices/chaos-engineering-principles/](https://www.ibm.com/cloud/architecture/architecture/practices/chaos-engineering-principles/)
+- [https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/](https://www.gremlin.com/community/tutorials/chaos-engineering-the-history-principles-and-practice/)
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[ChatGPT: Optimizing Language Models for Dialogue](https://openai.com/blog/chatgpt/)*
+
+Brain: “Open AI releases a new language model that can answer complex questions, like “why is the following code not working?”. It can even answer your questions in limerick if you request it. Perhaps we don’t need to use Google now to search for answers on the internet.”
+
+![memo](/assets/images/memo16.png) *[OpenSSL fixes two high-severity vulnerabilities, what you need to know](https://www.bleepingcomputer.com/news/security/openssl-fixes-two-high-severity-vulnerabilities-what-you-need-to-know/)*
+
+Yoga: “OpenSSL is a widely used application that secures communications over computer networks. Recently, they have had two high-severity security flaws patched following their latest version. Those two vulnerabilities allow attackers to trigger crashes or lead to remote code execution and trigger a denial of service. Although these flaws have been early mitigated, there are instances that have already been impacted by these flaws across major cloud environments, including Azure and AWS.”
+
+![memo](/assets/images/memo16.png) *[10 games to learn JavaScript](https://dev.to/dailydevtips1/10-games-to-learn-javascript-155j)*
+
+Rizqun: “Learning programming might be more fun if we can learn it through a game. This article tells us some games that can be played by taking advantage of our programming skills. I have briefly tried some of these games. This game asks us to write a few lines of a program to provide action so we can pass the game's levels.”
+
+![memo](/assets/images/memo16.png) *[AWS re:Invent 2022 - Keynote with Dr. Werner Vogels](https://youtu.be/RfvL_423a-I)*
+
+Frandi: “Dr. Werner Vogels, Amazon.com VP and CTO, talks about the benefits of building asynchronous, loosely coupled systems and how event-driven architecture enables global scale. He then explains how the cloud is enabling customers to build more immersive experiences using 3D and how simulation is empowering customers to experiment and innovate in new ways.”
+
+![memo](/assets/images/memo16.png) *[GitHub Codespaces Security Best Practices](https://www.legitsecurity.com/blog/github-codespaces-security-best-practices)*
+
+Dika: “Codespace is a very interesting tool now since it offers flexibility during coding. As a remote development environment platform, we can just move to another computer and be ready to code without any effort to re-set up our new environment. However, as the code is hosted in a remote environment, the security risk will be big if handled or set up incorrectly. This article explained the security best practices for Github Codespace.”
