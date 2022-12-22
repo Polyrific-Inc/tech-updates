@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Week #50 2022 - Database DevOps"
+date:   2022-12-16 20:00:00 +0700
+---
+
+## Database DevOps
+
+DevOps has been a standard practice in modern software development lately. By definition, DevOps is a set of practices that breaks the silos between the Dev and Ops team, intending to deliver features and updates faster.
+
+While the application DevOps has been a considerable success, database implementation/deployment is often seen as a big hurdle. It is because the DBA team traditionally handles database implementation either partially or entirely manually. This practice will also be prone to mistakes or inconsistencies and time-consuming.
+
+The concept of database DevOps has been around for years. However, the ability to automate tasks has been more complex for the database than for application development.
+
+These are some steps that will be commonly found when moving ahead with Database DevOps:
+
+- **Store SQL code in source control** - as for the application DevOps, storing database code in the source control is the foundation on which all other operations are based.
+- **Launch CI and unit testing** - the deployment operations can be incorporated into the same CI pipelines used for application deployment.
+- **Generate SQL deployment script (artifact)** - the CI pipeline produces an artifact that includes the deployment script necessary to update the applicable database objects and static data. 
+- **Apply deployment script to staging** - at this point, the artifact is deployed against a staging database that is ideally an exact copy of the production database. Here DBAs can verify and confirm the changes to ensure the staging database is production-ready. If necessary, they can also make additional changes.
+- **Apply the final artifact to the production database**
+
+These are the top challenges for Database DevOps:
+
+- **Data persistence** - Continuous deployment is more complex for databases. For a data store to be considered persistent, it must write to non-volatile storage. If the new feature in your application requires a schema change, for example, you've got to migrate the data to a new structure. It can only be done quickly if you have the right tools and processes in place.
+- **Testing Data** - Using production data ensures that your code and data work together as intended. But most developers can't (and shouldn't) use production data. At least, not before it's encrypted or masked.
+- **Tools** - There are excellent tools available to help make the integration of a DevOps process easier. Unfortunately, it's gotten to the point where there are so many tools that it gets challenging to keep them straight and ensure that they play well with each other and are future-proof. Adding a new tool over here can break something else over there.
+- **People** - People are arguably the most significant challenge here. Requiring the DBAs to follow a new deployment process is easier said than done. After all, DevOps is about changing the culture. Everybody needs to understand the main goals and put up their ego to make them a reality.
+
+How can we overcome the challenges so we can get the benefit of Database DevOps?
+
+- **Think big, but start small** - It's best to start small to overcome the fear factor of change. Find or create small multi-functional teams and put them in charge of a small release. Have the team do it the old way, then refine it for improvement.
+- **Intelligent and self-serve data provisioning** - The self-service data provisioning tools can help IT admins avoid data breaches and noncompliance issues. It's because it prevents developers from accessing systems they shouldn't or taking data somewhere that isn't permitted.
+- **Intelligent database automation** - It is possible to put the database into source control and treat database changes similarly to application changes. There are a few additional considerations, like adding a migration script to enable existing data to fit in any changed schema. When continuous integration of database changes happens along with the application code, you speed up your application delivery by orders of magnitude. 
+- **New roles in supporting the process** - Implementing an entirely new way of approaching application releases requires a new way of defining roles, but many teams overlook this step. There is no one-size-fits-all in figuring out which roles are needed for your specific application and industry. It requires a lot of trial and error to figure out what works and what doesn't.
+- **Practice empathy** - Change isn't easy. It may seem counterintuitive when trying to deliver results faster, but it's essential to take time to listen and empathize with everyone on the team.
+
+One thing to remember is that DevOps is not a one-size-fits-all solution to application delivery, nor is it meant to be a developer-first strategy that leaves DBAs and IT administrators behind. All roles need to work together to implement an application delivery strategy that considers all participants' needs, with the goal of delivering the best applications possible as efficiently as possible in the shortest amount of time. Anything less and your database DevOps efforts are destined to fail.
+
+__References:__
+
+- [https://www.liquibase.com/resources/guides/database-devops](https://www.liquibase.com/resources/guides/database-devops)
+- [https://www.red-gate.com/simple-talk/devops/database-devops/introduction-to-devops-database-devops/](https://www.red-gate.com/simple-talk/devops/database-devops/introduction-to-devops-database-devops/)
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Platform Engineering in 2023: Dev First, Collaboration and APIs](https://thenewstack.io/platform-engineering-in-2023-dev-first-collaboration-and-apis/)*
+
+Brain: “The article shares several predictions for 2023 in the Platform Engineering space. One of the interesting predictions is how there will be more commercial developer platforms being introduced, showing that widespread adoption of this technology might happen sooner than later.”
+
+![memo](/assets/images/memo16.png) *[Postman v10 is available](https://blog.postman.com/announcing-postman-v10/)*
+
+Dika: “In middle of september 2022, the Postman Team have announced that the version 10 is released. Some new features that are interesting to try is native support with Git, gRPC support, and also another new interesting feature in Postman version 10 is Partner Workspace which provides a shared, secure, access-controlled space where organizations can invite partners to collaborate and build APIs.”
+
+![memo](/assets/images/memo16.png) *[Generate SQL queries instantly with AI bot](https://aihelperbot.com/)*
+
+Rizqun: “AIHelperBot is a bot that can help us generate an SQL query by providing input using natural language. In some of the tests I did, AIHelperBot was able to provide sql query results related to joins, finding data based on value, date, or text. AIHelperBot can generate sql queries for mysql, postgreSQL, and recently provided an update to be able to generate results for MsSQL.”
+
+![memo](/assets/images/memo16.png) *[Syntax errors are the doom of us all, including botnet authors](https://arstechnica.com/information-technology/2022/12/advanced-botnet-taken-down-by-an-all-too-human-flaw-syntax-error/)*
+
+Yoga: “A complex malware called KmsdBot, which was used for crypto-mining and DDOS suddenly stopped sending attack commands on targets they were infected with. Researchers said that this was caused by a typo on a command sent by whoever was controlling the botnet. With no error-checking built in and persistence, the bot stays down by only missing one space between an IP address and a port in that command and it needs to reinfect its target to be able to rebuild the bot's function. This error leads to almost all the bot's activity being ceased and may be trying to reinfect their targets again.”
+
+![memo](/assets/images/memo16.png) *[For your eyes only: improving Netflix video quality with neural networks](https://netflixtechblog.com/for-your-eyes-only-improving-netflix-video-quality-with-neural-networks-5b8d032da09c)*
+
+Frandi: “This interesting article describes how Netflix improves video quality with neural networks, the challenges they faced and what lies ahead.”
