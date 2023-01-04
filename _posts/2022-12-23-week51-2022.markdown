@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Week #51 2022 - Data Mesh"
+date:   2022-12-23 20:00:00 +0700
+---
+
+## Data Mesh
+
+Data Mesh architecture is a decentralized approach that enables teams to perform cross-domain data analysis independently. It involves a cultural shift in how companies think about their data. Instead of data acting as a by-product of a process, it becomes the product, where data producers act as data product owners.
+
+Data Mesh is like microservices but for analytical data. And as the microservices, there is no single solution for Data Mesh architecture. Different organizations will have various Data Mesh implementations supported by multiple architectures.
+
+It's worth noting that data mesh promotes the adoption of cloud-native and cloud platform technologies to scale and achieve data management goals. As this distributed architecture is beneficial in scaling data needs across an organization, it is understood that a data mesh may not be for all types of businesses. Smaller companies may not reap the benefits of a data mesh as their enterprise data may not be as complex as a larger organization.
+
+To come up with the best implementation, you need to understand the core principle of Data Mesh from a technology perspective:
+
+- **Domain ownership** requires an organization to divide data products according to clear value streams rather than technical boundaries. It's also essential that every data product team is responsible for looking after their own pipelines and policies, as well as the data storage and output ports (such as APIs).
+- **Data as a product** principle requires an ecosystem that is flexible enough to fulfill the demands of its consumers. The domain team is responsible for the operations of the data product during its entire lifecycle. Remember, as a product, the data should always be well-maintained, well-versioned, and well-documented.
+- **Self-serve data platform** empowers and supports developers to focus on building great data products without wasting their time and energy on manual configurations, infrastructure maintenance, or any unnecessary repetitive tasks.
+- **Federated computational governance** ensures that distributed ownership is balanced with standardization. Two critical reasons for this are making data products more discoverable inside an organization and guaranteeing and maintaining certain quality, interoperability, and security standards.
+
+__vs. Data Lake__
+
+Data Lake is a low-cost storage environment aggregating data from various sources. It is typically used as a dumping ground for data as it frequently ingests data that still needs to have a defined purpose. On the other hand, a Data Mesh is an architectural approach to data, which a data lake can be a part of. Data Mesh is a distributed data architecture where data is organized by its domain to make it more accessible to users across an organization.
+
+__vs. Data Fabric__
+
+Data Fabric is an architectural concept that focuses on automating data integration, data engineering, and governance in a data value chain between data providers and consumers.
+
+A data fabric is complementary to a data mesh instead of mutually exclusive. In fact, the data fabric makes the data mesh better because it can automate key parts of the data mesh, such as creating data products faster, enforcing global governance, and making it easier to orchestrate the combination of multiple data products.
+
+__Data Mesh Technology__
+
+Data Mesh implementation can be done using off-the-shelf cloud and data platform solutions. If you're interested in using them, please check this [overview](https://github.com/ryandawsonuk/data-platforms-tools). However, it's important to remember that they are not Data Mesh platforms; none (at the time of writing) are a silver bullet for a successful Data Mesh implementation.
+
+These are some caveats that you need to be aware of when considering using the off-the-shelf approach:
+
+- They are based on services/features, not data products.
+- They don't have a concept of custom APIs for data. There may be generic data APIs, but if developers want to write code to expose a custom API for data or a machine learning model, that may require going outside the data platform.
+- Their ETL philosophy isn't polyglot — they are typically opinionated.
+- They offer a generic experience without any option to curate what tools developers can choose.
+- The account-based tenancy model can be very restrictive. You'll likely hit limits if you try to do many things in a single cloud account.
+
+In summary, if you are on a journey to find the best technology for Data Mesh implementation in your organization, you need to identify the critical use cases early on and what you want to achieve. Every tool has its own character and features that best suit a specific scenario. You want to avoid getting trapped by the means other organizations say are best for data mesh architecture and later find that they pursue different things like yours.
+
+__References__
+
+- [https://www.datamesh-architecture.com](https://www.datamesh-architecture.com)
+- [https://martinfowler.com/articles/data-mesh-principles.html](https://martinfowler.com/articles/data-mesh-principles.html)
+- [https://www.thoughtworks.com/insights/blog/data-strategy/how-to-select-technology-data-mesh](https://www.thoughtworks.com/insights/blog/data-strategy/how-to-select-technology-data-mesh)
+- [https://www.ibm.com/topics/data-mesh](https://www.ibm.com/topics/data-mesh)
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Announcing OSV-Scanner: Vulnerability Scanner for Open Source](https://security.googleblog.com/2022/12/announcing-osv-scanner-vulnerability.html)*
+
+Yoga: “A new tool has been launched by Google that helps developers to scan their project that uses open-source software as their dependencies for vulnerabilities. It's kind of a difficult and tiring task to track and evaluate the impact on each build if the program uses a lot of dependencies. This is where the new tool, called OSV-Scanner, comes into play by automatically matching code in all dependencies used in their project with OSV's data and notifying them when a security update is required.”
+
+![memo](/assets/images/memo16.png) *[JavaScript Debounce vs. Throttle](https://www.syncfusion.com/blogs/post/javascript-debounce-vs-throttle.aspx)*
+
+Rizqun: “This article provides us with knowledge about the concepts of debounce and throttles in Javascript. Simply put, debounce will delay the function invocation by a defined period of time to avoid unnecessary invocations, whereas throttle, instead of delaying, invokes the callback function at regular intervals as long as the event trigger is active.”
+
+![memo](/assets/images/memo16.png) *[Docker new Resource Usage Extension](https://hub.docker.com/extensions/docker/resource-usage-extension)*
+
+Dika: “A couple of weeks ago, docker introduced a new extension to monitor resources called Resource Usage Extension. It will be useful to monitor containers that consume most resources like CPU, Memory, Network, and Disk space.”
+
+![memo](/assets/images/memo16.png) *[Linux Foundation Announces Overture Maps Foundation to Build Interoperable Open Map Data](https://www.linuxfoundation.org/press/linux-foundation-announces-overture-maps-foundation-to-build-interoperable-open-map-data)*
+
+Brain: “Amazon Web Services Inc., Microsoft Corp., Meta Platforms Inc., and GPS navigator maker TomTom NV today launched a new industry group focused on making map data more accessible. Hopefully, this collaboration will create a product that can rival Google’s map services. Our experience so far is Google Maps service tends to be expensive, and a notable competitor is certainly required in this market.”
+
+![memo](/assets/images/memo16.png) *[Google can now read your doctor’s bad handwriting](https://techcrunch.com/2022/12/18/google-can-now-decode-doctors-bad-handwriting/)*
+
+Frandi: “A large number of doctors write medicine prescriptions in haste, making it nearly impossible for their patients to understand what they scribbled. Now Google is having a go at translating those unfathomable texts”
