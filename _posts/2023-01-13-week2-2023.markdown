@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "Week #2 2023 - Minimum Viable Architecture"
+date:   2023-01-13 20:00:00 +0700
+---
+
+## Minimum Viable Architecture
+
+The minimum viable architecture (MVA), also known as "just enough architecture," is an approach to start software development with the bare minimum architecture that is good enough for a release. From there, improvements will be continuously introduced alongside the software product during its lifetime.
+
+The idea of MVA is related to the concept of agile methodology. One main component in agile is the minimum viable product (MVP), which refers to a product with just enough features to be usable by early customers who can then provide feedback for future product development. MVA carries the same idea but is applied to the software architecture instead of a product.
+
+There is a misconception that with MVA, a team can skip the planning of a good software architecture design at the beginning of the software development process. It is not a correct way of thinking because to move fast and quickly adapt to changes, you need a good foundation, which you can only get through good architectural design. And MVA should be an appropriate starting point for the software development journey.
+
+It is crucial to distinguish between the must-have features and the good-to-have features.
+
+These are some principles of MVA:
+
+- Build for the most likely scenario
+- Keep the design flexible enough to adapt to changes in the future
+- Small incremental improvements over time
+- Based on concrete and factual requirements instead of assumptions
+
+These are a few things that you need to consider when thinking through the best shape of your MVA:
+
+- **Identify the business goals** - the target users, customer needs, scope, and financial goals. Architects should have good communication with the stakeholders to understand the business.
+- **Choose the appropriate development methodology** - It is of utmost importance that the development strategies entail best practices of the code review process, repository management, a persistence strategy, and a quality assurance or QA strategy.
+- **Define the technology stack** - programming language, toolkit, cloud environments
+- **Recognize the culture** - The organization should have a cultural shift, and architecture should stand the test of time for years to come. Make it clear to the architect that he will be given time to address issues in the future.
+
+These are the example of questions that might help you to identify the requirements of creating an MVA:
+
+- How many users will interact with your apps in the initial launch?
+- Who is the target users? Internal users, external users, or both?
+- Will the app run 24/7?
+- How will the users be able to join the apps at launch? Open registration or by invitation only?
+
+Providing a flexible framework that can help achieve target business objectives, MVA responds to evolving customer requirements and technologies and can go a long way in promoting agility. We need to leverage MVA to support the continual delivery of those products in a sustainable way. It’s about avoiding overengineering and getting straight to the core of your software and your business.
+
+__References__
+
+- [https://continuousarchitecture.com/2021/12/21/minimum-viable-architecture-how-to-continuously-evolve-an-architectural-design-over-time/](https://continuousarchitecture.com/2021/12/21/minimum-viable-architecture-how-to-continuously-evolve-an-architectural-design-over-time/)
+- [https://dzone.com/articles/minimum-viable-architecture](https://dzone.com/articles/minimum-viable-architecture)
+- [https://www.protecto.ai/blog/what-is-minimum-viable-architecture-why-is-it-important](https://www.protecto.ai/blog/what-is-minimum-viable-architecture-why-is-it-important)
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Generate CSS with Code Magic](https://code-magic.vercel.app/)*
+
+Rizqun: "We've heard a lot about generators that help us write code in certain programming languages, but it seems generators for CSS are rarely discussed at this time. Code Magic is a CSS generator that provides various kinds of generators, such as for creating animations, creating text or objects with adjustable gradients, converting images into a set of text that forms an image, and so on."
+
+![memo](/assets/images/memo16.png) *[A chain of security breaches happened and will likely go on](https://arstechnica.com/information-technology/2023/01/first-lastpass-now-slack-and-circleci-the-hacks-go-on-and-will-likely-worsen/)*
+
+Yoga: "Security issue and incident has become a serious concern recently following the latest security breaches in big companies. After LastPass's incident, now Slack and CircleCI reported that a security incident happened, prompting their users to rotate all of the secrets they store on their service. However, they similarly express that no customer data was accessed, either stolen or misused. The reporter said that these breaches are possibly related, similar to the last August attack that compromised more than 130 companies."
+
+![memo](/assets/images/memo16.png) *[The Difference between HTTP PUT AND PATCH in REST API](https://medium.com/@niteshsinghal85/httpput-or-httppatch-in-asp-net-core-ceaae99e320b)*
+
+Dika: "What is the difference between HTTP PUT and PATCH requests? Maybe some developers still search for the answer since the use of both methods is similar, which is to update the value. In the article, we can see that the author tries to explain the difference between both. He also attached some code snippets and request-response examples to help us understand this topic."
+
+![memo](/assets/images/memo16.png) *[Microsoft and OpenAI Working on ChatGPT-Powered Bing in Challenge to Google](https://www.theverge.com/2023/1/4/23538552/microsoft-bing-chatgpt-search-google-competition)*
+
+Brain: "Many have predicted that ChatGPT would be a threat to Google and might replace the search giant as the Internet's "front gate." ChatGPT's ability to generate impressive contextual answers from a simple query might be a tough feature to beat. Microsoft has invested heavily in AI for the past years, including being the official partner of OpenAI, and it seems to be ready to reap the rewards."
+
+![memo](/assets/images/memo16.png) *[Computer Scientist Explains One Concept in 5 Levels of Difficulty](https://www.youtube.com/watch?v=fOGdb1CTu5c)*
+
+Frandi: “I find it hard to explain the zero-knowledge proof concept to non-technical people. That’s why I was amazed at this video where a Computer Science professor explained about the concept to five different people: a child, a teen, a college student, a grad student, and an expert. Go watch it yourself, and see if you understand the concept now.”
