@@ -1,0 +1,80 @@
+---
+layout: post
+title:  "Week #1 2023 - Cloud FinOps"
+date:   2023-01-06 20:00:00 +0700
+---
+
+## Cloud FinOps
+
+Based on the [FinOps foundation](https://www.finops.org/introduction/what-is-finops/), FinOps is an evolving cloud financial management discipline and cultural practice that enables organizations to get maximum business value by helping engineering, finance, technology, and business teams to collaborate on data-driven spending decisions.
+
+At its core, FinOps is a cultural practice. It's how teams manage their cloud costs, where everyone takes ownership of their cloud usage supported by a central best-practices group. Cross-functional teams in Engineering, Finance, Product, etc., work together to enable faster product delivery while at the same time gaining more financial control and predictability.
+
+There's a misconception that FinOps means becoming cheap with cloud spend. Actually, FinOps is about removing blockers, empowering engineering teams to deliver better features, apps, and migrations faster, and enabling a cross-functional conversation about where to invest and when. Sometimes a business will decide to tighten its belt. Sometimes it'll choose to invest more. But with FinOps, teams know why they're making those spending decisions.
+
+__General Principles__
+
+FinOps principles are a set of guidance that is encouraged to be taken when implementing this practice. The FinOps foundation lays out six principles, which are:
+
+- All teams need to collaborate
+- Everyone takes ownership of their cloud usage
+- A centralized team drives FinOps
+- Reports should be accessible and timely
+- The business value of the cloud drives all decisions
+- Take advantage of the variable cost model of the cloud
+
+__Cultural Principles__
+
+The Google Cloud team also stated that the successful implementation of FinOps will be able to achieve if it is developed under the following cultural principles:
+
+- **Accountability** - every team is responsible for the realization of the defined KPIs.
+- **Agility** - drive the agile process by promoting iterative budget allocation, IT spending, and forecasting.
+- **Blamelessness** - treat mistakes as opportunities to learn and improve the processes.
+- **Business value realization** - FinOps is successful when decisions are made from a business value perspective.
+- **Collaboration** - all teams need to work together to get a broader vision and minimize blind spots.
+- **Cost transparency** - access to real-time billing/cost data at all layers of the organization.
+- **Variable nature of the cloud** - embrace the pay-as-you-go nature of the cloud and benefit by serving your customers dynamically during their constantly changing needs.
+
+__Phases__
+
+The FinOps Foundation has defined the FinOps journey in three phases — Inform, Optimize and Operate — and a company may find itself in multiple phases at once depending on where each team or unit is in its FinOps maturity.
+1. **Inform**: this is the first phase of the FinOps framework. It's about empowering all stakeholders with the information and understanding they need to make informed decisions around cloud usage.
+2. **Optimize**: this is the next phase of the FinOps framework, focusing on discovering savings opportunities.
+3. **Operate**: this is the final phase of the FinOps framework, where organizations continuously evaluate their performance against business objectives and look for ways to improve their FinOps practice. Once optimization efforts are in place, automation empowers organizations to implement policies that continuously adjust cloud resources to control cost without impacting performance.
+
+__Stakeholders__
+
+Generally, five key FinOps stakeholders will collaborate during the process. However, it should vary by organization because of the difference in role titles.
+- **Executives**: the people who have the authority to create and change operational policies
+- **Business/product owner**: the people who are responsible for bringing new products and features to market and accelerating product growth year over year
+- **Engineering and operations**: the people who help speed the delivery of high-quality services while keeping business operations flowing
+- **Finance/procurement**: the people who are responsible for negotiating the most favorable contracts, exercising discount and volume commitment programs, and creating cloud budgets, forecasts, and cost reports
+- **FinOps practitioner**: this team leads the cultural shift required for FinOps success, uniting business, IT, and finance teams to optimize cloud usage and increase business value
+
+__References__
+
+- [https://www.finops.org](https://www.finops.org)
+- [https://cloud.google.com/learn/what-is-finops](https://cloud.google.com/learn/what-is-finops)
+- [https://www.ibm.com/tw-en/topics/finops](https://www.ibm.com/tw-en/topics/finops)
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Github force to enable 2FA for all of their users](https://www.bleepingcomputer.com/news/security/github-to-require-all-users-to-enable-2fa-by-the-end-of-2023/)*
+
+Yoga: "GitHub has announced that by the end of 2023, their users need to enable two-factor authentication (2FA) as additional protection on their accounts. This announcement has made earlier this year, but it will come with a more detailed implementation. This will begin in March 2023 by rolling out the 2FA on selected groups of contributors and then scaling to larger groups based on their criteria. GitHub will give 45 days period to enable 2FA for those who receive advance notice from them."
+
+![memo](/assets/images/memo16.png) *[The End of Programming](https://cacm.acm.org/magazines/2023/1/267976-the-end-of-programming/fulltext)*
+
+Brain: "The article title might be slightly extravagant. And the author might be a little biased, given he is the CEO and founder of an AI startup. But it is indeed interesting to imagine how programming will change in the next 30 years. The article claimed that the programming paradigm would shift from an engineering endeavor to an educational one, as in how to train the machine (AI) best to generate the software for us. Given the pace of AI development as of late, it might not just be an imagination anymore."
+
+![memo](/assets/images/memo16.png) *[ChatGPT inside VSCode with official OpenAI API](https://dev.to/dani_avila7/chatgpt-inside-vscode-with-official-openai-api-10n8)*
+
+Rizqun: "On December 25th, a new extension was released in Visual Studio Code with the name CodeGPT. CodeGPT uses the official OpenAI API to be able to use ChatGPT, which is currently being widely discussed directly within VSCode. This extension has several features, such as asking and getting code, explaining code, refactoring code, documenting code, and finding a problem in the code."
+
+![memo](/assets/images/memo16.png) *[Why remote development is the future?](https://medium.com/@elliotgraebert/laptop-development-is-dead-why-remote-development-is-the-future-f92ce103fd13)*
+
+Dika: "In this article, we can see so many reasons that remote development is the future of development. The writer found that most developer struggle with the performance of local machine development. He also explained the benefit of using remote development and what cases can be solved best by remote development."
+
+![memo](/assets/images/memo16.png) *[Exclusive: Joe Letteri Discusses Wētā FX’s new Facial Pipeline on Avatar 2](https://www.fxguide.com/fxfeatured/exclusive-joe-letteri-discusses-weta-fxs-new-facial-pipeline-on-avatar-2/)*
+
+Frandi: “Have you ever heard of Anatomically Plausible Facial System (APFS)? Well, don’t be sad if you haven’t. But if you have watched Avatar 2 film, you have seen an example of how the APFS is implemented. This article explains some technical things on how the VFX animation is created.”
