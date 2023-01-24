@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "Week #3 2023 - Cybersecurity Mesh Architecture"
+date:   2023-01-20 20:00:00 +0700
+---
+
+## Cybersecurity Mesh Architecture
+
+Cybersecurity Mesh Architecture (CSMA) is a modern architecture of your security posture. It helps to provide a standard and integrated security structure to secure all assets, whether on-premises, in data centers, or in the cloud.
+
+CSMA follows the concept of a distributed approach to network and infrastructure security. It changes the understanding of the security perimeter in your company. As you know, traditional security approaches usually rely upon fragmented network perimeters as the mechanism for controlling access. CSMA lowers the granularity of the scope by creating individual perimeters around every person or machine on your network. 
+
+But this isn’t about decentralization. Control and authority are still managed from a centralized point. It’s more about deconcentration, where each management and policy is distributed across the entire network and closer to each identity evolving.
+
+Rather than every security tool running in a silo, CSMA enables tools to interoperate through several layers. Its flexibility is especially suitable for increasingly modular approaches consistent with hybrid multi-cloud architectures. It allows a more composable, flexible, and resilient security ecosystem.
+
+With so many advantages to the CSMA, it is clear why more organizations are adopting this strategy. So why should you consider this approach for your organization? First, consider the following statistics:
+
+1. **Vulnerability**. There has been a [600% increase in phishing schemes](https://www.infosecurity-magazine.com/news/covid19-drive-phishing-emails-667/) over the past couple of years, and ransomware attacks occur [every 11 seconds](https://www.varonis.com/blog/ransomware-statistics). It exposes the reality that current IT systems are vulnerable. The CSMA helps to reduce these vulnerabilities significantly and prepare an organization’s security infrastructure for zero-day attacks. 
+2. **Cost**. The cost of ransomware attacks is about [$6 trillion annually](https://cisomag.com/), and the cost of cybercrime attacks is rising at about [15% per year](https://www.sumologic.com/blog/cost-of-cyber-attacks-vs-cost-of-cyber-security-in-2021/). Digital transformation incurs its own expense, too, especially if an organization’s infrastructure or architecture has to be redesigned. But the reduction in costly attacks and company downtime realized by leveraging cybersecurity mesh far outweighs any initial cost.
+3. **Migration**. Meeting the needs of clients and consumers has caused an accelerated shift to cloud computing platforms. However, it can also result in breaches. Cybersecurity mesh enables migration by providing flexible and scalable protection for cloud computing environments.
+
+The following factors also highlight what makes CSMA an attractive option to be implemented in your organization:
+
+1. **Ease of implementation**. Digitalization has accelerated exponentially in recent years. This rate of growth can render traditional security models top-heavy and cumbersome. Cybersecurity mesh is uniquely suited to make design, deployment, and maintenance simple and efficient.
+2. **Practicality**. Cloud-based applications, distributed data, and uncontrolled devices complicate traditional security policies and techniques. Therefore, a cybersecurity mesh strategy is a more practical model for dealing with components of an organization’s digital assets outside the traditional network perimeter.
+3. **Agility**. The nature of CSMA is that it makes an organization’s response to security and expansion more agile. Nodes can be added or removed relatively easily, new locations can be monitored and controlled from a central control point, and threat response and mitigation can more easily mitigate attacks.
+
+According to Gartner, CSMA provides four foundational layers that allow for an agile and adaptable response to modern integration and security challenges:
+
+- **Security Analytics and Intelligence** - combines the data and lessons from other security tools and provides analyses of threats and triggers appropriate responses.
+- **Distributed Identity Fabric** - provides capabilities such as directory services, adaptive access, decentralized identity management, identity proofing, and entitlement management.
+- **Consolidated Policy and Posture Management** - translate [a central policy](https://www.fortinet.com/resources/cyberglossary/it-security-policy) into the native configuration constructs of individual security tools or, as a more advanced alternative, provide dynamic runtime authorization services, ensuring IT teams can more effectively identify compliance risks and misconfiguration issues.
+- **Consolidated Dashboards** - a composite view into the security ecosystem, enabling security teams to respond more quickly and effectively to security events to deploy the appropriate responses.
+
+Gartner makes some additional recommendations to integrate security frameworks better:
+
+- Select security tools based on interoperability, and invest in developing a common framework.
+- Select vendors with open policy frameworks so policy decisions can be delegated from outside the tool.
+- Select aggressive, forward-thinking vendors.
+- Adopt multi-factor authentication and [zero-trust architecture](https://tech-updates.polyrific.com/2022/10/14/week41-2022.html).
+- Transition away from VPNs and adopt zero-trust, cloud-based access management. 
+
+__References__
+
+- [https://www.fortinet.com/resources/cyberglossary/what-is-cybersecurity-mesh](https://www.fortinet.com/resources/cyberglossary/what-is-cybersecurity-mesh)
+- [https://www.itbusinessedge.com/security/cybersecurity-mesh](https://www.itbusinessedge.com/security/cybersecurity-mesh)
+- [https://mindflow.io/cybersecurity-mesh-architecture](https://mindflow.io/cybersecurity-mesh-architecture)
+
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[C# IEnumerable vs. List and Array](https://medium.com/@ben.k.muller/c-ienumerable-vs-list-and-array-9f099f157f4f)*
+
+Dika: "Sometimes, we are confused about when we need to use IEnumerable and when we need to use List when we need to process some data collections. In this article, the author explained the difference between them and the best use case that fits both of them. And also, of course, the most important thing is that he gave us some code snippet that proves his explanation."
+
+![memo](/assets/images/memo16.png) *[Easy refactoring using ReSharper](https://www.jetbrains.com/resharper/)*
+
+Rizqun: "ReSharper is a Visual Studio extension that can help users in programming activities. ReSharper can assist users in conducting code analysis, assisting users in refactoring, navigation, and search, generating code, and performing clean-ups. When using ReSharper, users can customize the code formatting so that ReSharper can detect any discrepancies by referring to the format created by the user."
+
+![memo](/assets/images/memo16.png) *[New: Better search in Visual Studio](https://devblogs.microsoft.com/visualstudio/new-better-search-in-visual-studio/)*
+
+Brain: "As a programmer, we often need to jump into several intertwined code bases, and doing this fast and accurately is crucial to be an effective programmer. Visual Studio understands this and develops a better search method through our code. The ability to view & edit a specific part of the code without opening the file fascinates me. I certainly look forward to trying this new feature."
+
+![memo](/assets/images/memo16.png) *[Nvidia and Microsoft team up to build massive AI cloud computer](https://arstechnica.com/information-technology/2022/11/nvidia-and-microsoft-team-up-to-build-massive-ai-cloud-computer/)*
+
+Yoga: "Two big tech companies are collaborating to make one of the most powerful AI supercomputers, focused on deep learning and language models. They are Nvidia, which will provide its high-end GPU and networking platform to create a powerful cluster. While the other is Microsoft, which will contribute its Azure cloud infrastructure and virtual machines. They aim to improve generative AI, an unsupervised and self-learning algorithm to create new text, code, and digital images." 
+
+![memo](/assets/images/memo16.png) *[Information About a Recent Mailchimp Security Incident](https://mailchimp.com/en-gb/january-2023-security-incident/)*
+
+Frandi: “On January 11, the Mailchimp Security team identified an unauthorized actor accessing one of their tools used by Mailchimp customer-facing teams for customer support and account administration. If you are MailChimp’s customer, it is recommended to watch the latest update from the blog post.”
