@@ -1,0 +1,101 @@
+---
+layout: post
+title:  "Week #4 2023 - Observability-Driven Development"
+date:   2023-01-27 20:00:00 +0700
+---
+
+## Observability-Driven Development
+
+Observability-driven development (ODD) is a software development approach in which observability is built into the design and development of software systems. It means that developers focus on making systems easily observable and understandable, rather than just functional, to make it easier to detect and diagnose issues in production.
+
+ODD is a shift left of everything related to observability to the earliest stages of development. Much like test-driven development emphasizes writing test cases before writing code to improve quality and design, ODD does the same for building observable systems: developers write code intending to declare the outputs and specification limits required to infer the internal state of the system and process, both at a component level and as a whole system.
+
+Gartner suggests that "observability is the evolution of monitoring into a process that offers insight into digital business applications, speeds innovation, and enhances customer experience." Observability has evolved from monitoring but has taken a big step forward. Based on the telemetry data, monitoring tells you what's wrong, whereas observability tells you why something is wrong. 
+
+Observability-driven development (ODD) has become increasingly popular for several reasons.
+
+- **The rise of microservices architecture**: As organizations have moved towards a microservices architecture, the need for visibility into the interactions between different services has become more critical.
+- **The shift towards cloud and DevOps**: With the change towards cloud-native infrastructure and DevOps practices, teams are moving towards faster release cycles and more frequent deployments.
+- **The growing complexity of systems**: As systems have become more complex, traditional monitoring and logging techniques have become less effective.
+- **The importance of observability**: As organizations increasingly rely on software to drive their businesses, observability has become a critical requirement.
+- **Open-source tools availability**: Many open-source tools can be used to implement ODD, which helps to lower the barrier to entry for ODD. 
+
+__Benefits__
+
+There are several benefits of using an observability-driven development approach:
+
+- **Improved reliability**: By making systems more observable, it's easier to detect and diagnose issues in production, which can lead to fewer outages and downtime.
+- **Faster problem resolution**: When issues occur, it's easier to find and fix the problem when the system is observable.
+- **A better understanding of the system**: Observability provides insight into the state of the system and its interactions with other systems, which can help developers better understand how their code is behaving in production.
+- **Easier to maintain**: Observable systems are easier to understand and modify, which can make adding new features or making updates easier.
+- **Better collaboration**: Observability can make it easier for developers, operations teams, and other stakeholders to work together to identify and resolve issues, improving communication and coordination across teams. 
+
+__ODD in practice__
+
+Currently, there is no widely adopted standard or framework for implementing observability-driven development (ODD). However, several best practices and guidelines can be used when implementing ODD. These include:
+
+- **Start by defining the desired observability outcomes**: Before beginning development, specify the required key metrics, traces, and logs to understand the system's behavior and diagnose issues.
+- **Build observability into the design**: Incorporate observability into the system's design by including features such as logging, monitoring, and tracing from the beginning.
+- **Use centralized logging and monitoring**: Centralize logs and metrics to make it easier to search, aggregate, and analyze data.
+- **Use standard instrumentation**: Use standard libraries and tools for logging and monitoring to make integrating with existing systems and tools easier.
+- **Use correlation IDs**: Use correlation IDs to trace a request as it flows through different parts of the system, making it easier to understand the interactions between various components.
+- **Use automated alerting**: Use automated alerting to notify teams of potential issues so that they can be addressed quickly.
+- **Test in production**: Test the system's observability in a production-like environment to ensure that the desired outcomes are met.
+- **Continuously improve**: Continuously evaluate and improve the system's observability over time. It's important to remember that ODD is an ongoing process that should be integrated into your development workflow rather than a one-time task.
+
+Each step above requires effort and resources. For example, you may need to invest in additional hardware and software to support centralized logging and monitoring, or you may need to hire additional staff with expertise in observability.
+
+However, it's important to remember that the benefits of observability can far outweigh the costs. Improved reliability, faster problem resolution, a better understanding of the system, better decision-making, and increased trust in the system can lead to improved performance, adoption, and, ultimately, a better return on investment. 
+
+__Tools__
+
+Several tools are commonly used for observability-driven development (ODD), including:
+
+- **Logging**: Elasticsearch, Logstash, Kibana (ELK stack), and Fluentd provide a centralized location to collect, store, and analyze logs.
+- **Monitoring**: Tools such as Prometheus and Grafana are used to collect and visualize metrics and to set up alerts based on some conditions.
+- **Tracing**: Tools such as Zipkin, Jaeger, and OpenTracing provide the ability to trace requests as they flow through the system, making it easier to understand the interactions between different components.
+- **Distributed tracing**: Tools such as Zipkin, Jaeger, Lightstep, and Honeycomb allow you to trace a request as it flows through different parts of the system, making it easier to understand the interactions between various components.
+- **Error tracking**: Tools such as Sentry, Bugsnag, and Rollbar allow you to track and diagnose errors in your application.
+- **APM**: Application Performance Management Tools like New Relic, AppDynamics, and Datadog provides a comprehensive view of the performance of an application and allow you to detect and diagnose issues.
+
+These are just a few examples of the commonly used tools for ODD. The other more appropriate tools may exist depending on your organization's specific needs. Remember that these tools are not mutually exclusive and can be used together to provide a complete observability solution.
+
+It's also worth noting that, as observability is a relatively new field, many organizations are still figuring out what works best for them, and it's not a one-size-fits-all solution. Consider starting small and gradually increasing your observability efforts over time. 
+
+__vs. Test-Driven Development__
+
+Test-driven development (TDD) and observability-driven development (ODD) are both development methodologies, but they focus on different aspects of the software development process.
+
+TDD is a software development approach in which tests are written before the actual code is written. The tests define the desired behavior of the code, and the code is then written to pass those tests. This approach helps ensure that the code works as intended and that any changes made to the code in the future do not break existing functionality.
+
+On the other hand, ODD focuses on making the system observable and understandable rather than just functional. The goal of ODD is to make it easy to detect and diagnose issues in production by providing visibility into the system's state and its interactions with other systems. It often includes techniques such as logging, monitoring, and tracing to provide insight into the system's behavior.
+
+In summary, TDD focuses on ensuring the code works as intended and ODD focuses on making the system observable and understandable to diagnose issues and improve reliability. Both TDD and ODD can be used together as they complement each other. They can help to improve the overall quality of the software and can also help to ensure that the system is both functional and observable.
+
+__References__
+
+- [https://learn.microsoft.com/en-us/shows/the-open-source-show/intro-to-observability-driven-development](https://learn.microsoft.com/en-us/shows/the-open-source-show/intro-to-observability-driven-development)
+- [https://developer.ibm.com/articles/observability-driven-development](https://developer.ibm.com/articles/observability-driven-development)
+- [https://stackoverflow.blog/2022/10/12/how-observability-driven-development-creates-elite-performers](https://stackoverflow.blog/2022/10/12/how-observability-driven-development-creates-elite-performers)
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Easy malware tracker using VirusTotal recent cheat sheet](https://www.bleepingcomputer.com/news/security/virustotal-cheat-sheet-makes-it-easy-to-search-for-specific-results/)*
+
+Yoga: "Nowadays, it is difficult to identify and track malware that is already widespread and numerous. But thanks to VirusTotal, this issue has been made easier. Recently, they published a cheat sheet to help researchers create queries leading to more specific results like finding files connected to certain groups, documents, or networks. This also allows tracking related threats by combining or narrowing the queries down. This tool will be updated to be easier, quicker, and more targeted in the future."
+
+![memo](/assets/images/memo16.png) *[Google introduces new google meet emoji](https://www.techradar.com/news/new-google-meet-emoji-reactions-will-let-your-co-workers-know-exactly-how-you-feel)*
+
+Dika: "Now, the Google Meet video conferencing tools are adding in-meeting reactions using emojis. Of course, this feature is very useful for participating in meeting to express their feeling in terms of participating in meetings without interrupting the speaker. The emojis contain heart, thumbs up, party, clap, joy, open mouth, cry, think, and thumbs down. Can’t wait to try it."
+
+![memo](/assets/images/memo16.png) *[Reveal technologies behind websites](https://ray.st/)*
+
+Rizqun: "Rayst is a chrome extension that can be used to dig up company information (location, year founded, etc.), statistical data (monthly visit, average visit duration), and technology used on a website such as programming languages, frameworks, databases, hosting providers, and so on. If we hover over the displayed technology, Rayst will give a brief explanation about the technology, and we will be redirected to the website of the technology when we click on it."
+
+![memo](/assets/images/memo16.png) *[Astro 2.0 released](https://astro.build/blog/astro-2/)*
+
+Brain: "The rather new UI framework just announced they are releasing a new version this week. One of the highlights is the introduction of Hybrid rendering, where the app can both support static and server-side rendering. If you have been thinking about trying out this new framework, now might be a good time to do it."
+
+![memo](/assets/images/memo16.png) *[Cloud Resource Explorer using simple ChatOps](https://blog.hotstar.com/chatops-cloud-resource-explorer-739363c93856)*
+
+Frandi: "What do you usually use Slack for? It is obvious as a communication tool, right? What if I say that you can explore your cloud resources right from a Slack channel now? Well, apparently, the engineering team at Disney+ Hotstar has made it into reality. Cool!"
