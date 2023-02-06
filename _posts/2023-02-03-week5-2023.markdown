@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "Week #5 2023 - ChatGPT"
+date:   2023-02-03 20:00:00 +0700
+---
+
+## ChatGPT
+
+ChatGPT is a language model that is optimized for conversational dialogue. I have been researching what it is and why it is becoming so popular lately. Many experts have given their opinion, but then I thought it would be fun to let the ChatGPT itself tell the story. So I went to ChatGPT and started to ask questions.
+
+__Overview__
+
+![1](/images/chatgpt/1.png)
+
+Pretty slick, right? It can provide alternative answers based on our follow-up request.
+
+__The knowledge__
+
+![2](/images/chatgpt/2.png)
+
+Just like any other machine learning model, ChatGPT can only be as good as the data it learned from.
+
+__Wide adoption__
+
+![3](/images/chatgpt/3.png)
+
+Ok, it is interesting to see how it is used widely in many applications.
+
+__About Open-Source__
+
+![4](/images/chatgpt/4.png)
+
+It is not open-source software at the moment, but who knows :)
+
+__GPT Technology__
+
+![5](/images/chatgpt/5.png)
+
+Yes, it is interesting to see how GPT-3 is implemented beyond chat windows.
+
+__Training Data__
+
+![6](/images/chatgpt/6.png)
+
+Not too recent, apparently. So I guess it is not aware if Argentina has won World Cup 2022 :)
+
+__Current Data__
+
+![7](/images/chatgpt/7.png)
+
+Fair enough, as a language model, it cannot access real-time data or alike.
+
+__Similar services__
+
+![8](/images/chatgpt/8.png)
+
+Nice!
+
+__Question with different context__
+
+![9](/images/chatgpt/9.png)
+
+Wot wot..thanks for the suggestion, I will surely try them. But, I'm a little bit worried about the "Internal server error" at the end of the conversation. Be safe, ChatGPT! I hope you're okay!
+
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Turn design into production-ready frontend code with Locofy.ai](https://www.locofy.ai/)*
+
+Rizqun: "Locofy.ai is a plugin for Figma and Adobe XD that can convert designs into code. For now, Locofy.ai can convert Figma and Adobe XD designs into React, HTML/CSS, Next.js, and also Gatsby code. It is currently in free beta right now, and the free trial can be extended every 3 weeks by giving feedback to Locofy.ai."
+
+![memo](/assets/images/memo16.png) *[Glass AI: AI medical diagnosis that utilizes GPT3](https://glass.health/ai)*
+
+Brain: "Last week, there’s news that ChatGPT Passed the US Medical Licensing Exam. So someone created a smooth UI that utilizes the GPT3 model to generate differential diagnoses and clinical plans based on a problem representation. It’s interesting how the technology is applicable to many industries, including medicine."
+
+![memo](/assets/images/memo16.png) *[Massive Microsoft 365 outage caused by WAN router IP change](https://www.bleepingcomputer.com/news/microsoft/massive-microsoft-365-outage-caused-by-wan-router-ip-change/)*
+
+Yoga: "A router IP address change led to a packet forwarding issue impacting one of the Microsoft services, Microsoft 365, causing a worldwide outage for five hours. Microsoft stated that the IP address change was planned, but the one which caused the issue was the command given to the router, causing it to send messages to all other routers resulting in all of them recomputing adjacency and forwarding tables. Microsoft is now blocking highly impactful commands from being executed and needs to follow guidelines for safe configuration changes to avoid the same issue from occurring in the future."
+
+![memo](/assets/images/memo16.png) *[Understanding CVEs and CVSS Scores](https://www.openlogic.com/blog/understanding-cves-cvss-scores)*
+
+Frandi: “Many security breaches occur from known vulnerabilities being left unmitigated. CVSS scores are a shorthand way to communicate the severity of known vulnerabilities (CVEs) so that users can take steps to protect and secure their systems. Understanding how the scoring works will help you to set priorities in maintaining dependencies of your applications.”
+
+![memo](/assets/images/memo16.png) *[Performance Improvements in .NET 7](https://medium.com/@tobias.streng/net-performance-series-1-performance-improvements-in-net-7-fb793f8f5f71)*
+
+Dika: "Microsoft provides some big performance improvements in .NET 7, one of the biggest improvements is in LINQ, which is we can see in this article the performance improvements are quite drastic in Min Max methods, Average, Sum, and Order. The other improvements is in System.IO, Guid Equality Check, and some parsing methods. Also, the System.Diagnostic have interesting performance improvements in some methods."
