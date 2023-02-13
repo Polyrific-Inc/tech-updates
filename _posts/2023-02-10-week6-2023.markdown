@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "Week #6 2023 - Prompt Engineering"
+date:   2023-02-10 20:00:00 +0700
+---
+
+## Prompt Engineering
+
+Prompt Engineering is the practice of using prompts to get the output you want in Natural Language Processing (NLP) and Artificial Intelligence (AI) models. A prompt is a sequence of text, like a sentence or a block of code, that could be interpreted as instructions, questions, examples, or input data.
+
+Prompt engineering is essential to designing conversational AI systems because it can significantly impact the overall user experience. The process of prompt engineering typically involves several steps, including defining the conversational goal, identifying the user's likely responses, and creating optimized prompts. The prompts are tested and refined through iteration and experimentation to ensure that they effectively guide the conversation toward the desired outcome.
+
+__Examples__
+
+Prompts can be initiated by the system to help users start the conversation. These are some examples:
+
+1. Virtual assistants: For example, the prompt "What can I help you with today?" is used to initiate a conversation with a virtual assistant like Siri or Alexa.
+2. Chatbots: In a customer service chatbot, the prompt "How can I assist you?" is used to start a conversation and help the customer resolve their issue.
+3. Surveys: In a survey, prompts are used to ask questions and gather information from the respondents. For example, "What was the main reason for your visit today?"
+4. Educational AI: In an educational AI system, prompts are used to ask questions and assess a student's knowledge. For example, "What is the capital of France?"
+5. Healthcare AI: In a healthcare AI system, prompts are used to gather information about a patient's symptoms or medical history. For example, "What symptoms are you experiencing?"
+
+Prompts can also be initiated by the users to get what they want from the system. These are some examples:
+
+1. Image generation AI models, like DALLE-2 or Stable Diffusion: the prompt is mainly a description of the image you want to generate
+2. Large language models, like GPT-3 or ChatGPT: the prompt can contain anything from a simple question to a complicated problem with all kinds of data inserted in the prompt
+3. Code assistance tools, like GitHub Copilot: the prompt can be the code comments or code examples.
+
+__Characteristics of good prompts__
+
+A good prompt should have several key characteristics that effectively guide the conversation toward the desired outcome. These characteristics help create clear, engaging, and effective prompts. They include:
+
+- Clarity: The prompt should be clear and easy to understand, avoiding technical jargon or overly complex language.
+- Conciseness: The prompt should be concise and to the point, without extraneous information. It helps to keep the conversation focused and efficient.
+- Relevance: The prompt should be relevant to the conversational goal and the user's needs and interests to increase engagement and satisfaction.
+- Personalization: Personalizing the prompts to some context, preferences, and previous interactions can improve the experience and make the conversation more natural.
+- Flexibility: The prompt should be flexible enough to accommodate different responses, including unexpected or out-of-scope answers, to avoid breaking the conversation flow.
+- Proactivity: The prompt should be proactive in guiding the conversation toward the desired outcome rather than waiting for the user to initiate the next step.
+- Adaptability: The prompt should be adaptable based on the context and previous interactions to maintain the relevance and effectiveness of the conversation.
+
+__Why is Prompt Engineering important?__
+
+Prompt engineering is important for several reasons:
+
+1. Ensures a practical and engaging conversational experience: A well-designed prompt can help guide the conversation toward the desired outcome, making it more effective and engaging for the user. Poorly designed prompts can lead to confusion, frustration, and a negative user experience.
+2. Facilitates natural and seamless conversations: Good prompts should feel natural and seamless as if the user is having a conversation with a human. It can help increase user engagement and satisfaction, as well as improve the overall success of the conversational AI system.
+3. Supports the conversational goal: The prompts are a crucial component of the conversational AI system and play a key role in achieving the desired conversational goal. A well-designed prompt should be relevant, proactive, and flexible to support the conversational goal effectively.
+4. Drives user adoption and trust: A positive, conversational experience with well-designed prompts can help drive user adoption and build trust in the conversational AI system. It is crucial for AI systems designed for high-stakes applications, such as healthcare or financial services.
+5. Improves system performance: Good prompts can help improve the performance of the conversational AI system by reducing the number of errors, increasing the accuracy of the system's responses, and improving the overall efficiency of the conversation.
+
+In short, prompt engineering is necessary because it is critical to delivering an effective, engaging, and natural conversational experience. It can significantly impact the success of the conversational AI system.
+
+__The Development Team__
+
+The implementation of Prompt Engineering is usually included in the larger conversational AI project. The team can vary in size and composition depending on the scale and complexity of the project. However, in a typical team, you might see the following roles:
+1. Prompt Engineer: This role is responsible for designing and developing the prompts that guide the conversation. They should have a strong understanding of NLP, conversational design, and UX principles, as well as technical programming and data analysis skills.
+2. Conversational Designer: This role is responsible for creating the overall design and structure of the conversation, including the dialogue flow, turn-taking, and context management. They should have a good understanding of NLP and conversational design and strong interpersonal skills for collaboration and communication.
+3. NLP Engineer: This role is responsible for implementing the NLP components of the conversational AI system, such as text classification and generation models. They should have strong technical skills in NLP and AI development and a good understanding of NLP concepts and techniques.
+4. Data Scientist: This role is responsible for analyzing data from the conversational AI system, such as user logs and analytics, which are then used as feedback for the development process and identifying areas for improvement. They should have strong data analysis skills and experience with machine learning and AI techniques.
+5. Project Manager: This role is responsible for managing the development project, including coordinating the work of the different roles and ensuring that the project is delivered on time and within budget. They should have strong project management skills and good communication and interpersonal skills.
+
+In some cases, a single person may take on multiple roles, while in others, a larger team may be required to handle the project's different components. The most crucial factor is to have a team with the right mix of skills and expertise to deliver an effective and engaging conversational AI experience.
+
+__References__
+
+- https://learnprompting.org
+- https://www.linkedin.com/pulse/prompt-engineering-101-introduction-resources-amatriain/
+- https://approachableai.com/ai-prompt-engineering/
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[The latest Google Maps AR update should help you avoid getting lost while traveling](https://www.techradar.com/news/the-latest-google-maps-ar-update-should-help-you-avoid-getting-lost-while-traveling)*
+
+Dika: "Recently, Google Maps added new Augmented Reality (AR) technology to their application. This feature is allowed people to virtually tour hundreds of landmarks, from Tokyo Tower to the Acropolis of Athens. It is very useful to people who want to explore a strange place to get a detailed overview of the place before going there. However, it was admittedly limited in scope. This feature is only available in London, Los Angeles, New York City, San Francisco, and Tokyo. So since the world reportedly has 10.000 cities, so this feature currently has 0.05% of them."
+
+![memo](/assets/images/memo16.png) *[WordPress.com Is Testing AI-Generated Images and Content](https://wptavern.com/wordpress-com-is-testing-ai-generated-images-and-content)*
+
+Rizqun: "It's not surprising that lately, we've heard much about AI developments, even on WordPress. Wordpress.com is reportedly currently testing two new blocks for generating images and paragraph content using AI. WordPress.com developed the blocks through a partnership with OpenAI and DALL·E. Reportedly, the AI-generated paragraphs will be automatically generated by looking at existing and previously created content."
+
+![memo](/assets/images/memo16.png) *[Atlassian warns of critical Jira Service Management auth flaw](https://www.bleepingcomputer.com/news/security/atlassian-warns-of-critical-jira-service-management-auth-flaw/)*
+
+Yoga: "Atlassian has released updates due to their security issues affecting previous versions that allow hackers to access the Jira Service Management instance. This issue was caused by a critical vulnerability found in Atlassian's Jira Service Management Server and Data Center, allowing hackers to impersonate other users and gain remote access. Atlassian warns and recommends users and administrators to upgrade and force a password reset on all potentially breached users."
+
+![memo](/assets/images/memo16.png) *[Reinventing search with a new AI-powered Microsoft Bing and Edge, your copilot for the web](https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/)*
+
+Frandi: “Many security breaches occur from known vulnerabilities being left unmitigated. CVSS scores are a shorthand way to communicate the severity of known vulnerabilities (CVEs) so that users can take steps to protect and secure their systems. Understanding how the scoring works will help you to set priorities in maintaining dependencies of your applications.”
+
+![memo](/assets/images/memo16.png) *[OpenAI released a paid version of ChatGPT](https://openai.com/blog/chatgpt-plus/)*
+
+Rizqun: "OpenAI has finally officially released the paid version of ChatGPT. This paid ChatGPT is called ChatGPT Plus and will be available for $20/month. ChatGPT Plus offers a faster response, general access even during peak times, and priority access to new features and improvements."
