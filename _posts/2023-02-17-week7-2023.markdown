@@ -1,0 +1,79 @@
+---
+layout: post
+title:  "Week #7 2023 - Serverless Functions"
+date:   2023-02-17 20:00:00 +0700
+---
+
+## Serverless Functions
+
+In recent years, the trend toward cloud computing has led to the development of a new paradigm known as "serverless computing." At the core of this paradigm are serverless functions, also known as Function-as-a-Service (FaaS).
+
+Serverless functions allow developers to build and deploy applications without worrying about the underlying infrastructure. Instead of managing servers, developers can simply write code that responds to specific events, such as user requests, database updates, or file uploads. When these events occur, the serverless Platform automatically executes the corresponding function, scales it up or down as needed, and charges only for the resources used during the execution.
+
+__It emerges as a solution to some real challenges__
+
+To understand the background story of serverless functions, we need to look back at the evolution of cloud computing. Initially, cloud computing required users to rent virtual machines or containers, configure them with software stacks, and manage them manually. This approach provided flexibility and scalability, but it also required a significant amount of time and expertise, as well as a constant commitment to maintenance and updates.
+
+Serverless functions emerged as a response to the limitations of the traditional cloud computing model. They aimed to provide a more efficient and cost-effective way of building and running applications that could scale automatically and respond quickly to changing demand.
+
+One of the primary challenges that serverless functions aim to resolve is the need for a more granular and event-driven approach to application development. Traditional cloud computing models require developers to think in terms of servers, operating systems, and applications, which can be limiting and time-consuming. On the other hand, serverless functions allow developers to focus solely on the code that responds to specific events, such as HTTP requests, database updates, or messages from other services.
+
+Another challenge that serverless functions address is the need for high availability and fault tolerance. In traditional cloud computing models, developers had to design and manage complex architectures to ensure that their applications could handle failures and recover quickly. With serverless functions, the cloud provider takes care of the scaling, redundancy, and fault tolerance, freeing developers from the burden of designing and maintaining these features themselves.
+
+Finally, serverless functions aim to provide a more cost-efficient approach to cloud computing. Traditional cloud computing models require users to pay for the entire virtual machine or container, even if they use only a fraction of its resources. On the other hand, serverless functions charge users only for the exact amount of resources used during the execution of each function, making it a more cost-effective solution for applications with sporadic or unpredictable traffic.
+
+__But, of course, it doesn't come to solve every problem in the world__
+
+While serverless functions provide many benefits, they are not a one-size-fits-all solution for all use cases. There are certain scenarios where the use of serverless functions may not be the best fit.
+
+The first apparent reason is that you cannot choose the specific infrastructure specs because the cloud provider has provided everything for you. It may not be suitable for applications requiring particular hardware or software configurations or if you are migrating (shift and lift) an application from on-premise environments.
+
+For the same reasons, applications with specific needs like high computing or memory requirements, long-running processes, or more complex workflows may find it more cost-effective to run on a traditional cloud computing model.
+
+Although some cloud providers have been progressing well in equipping their serverless service with advanced capabilities to serve those requirements, many people still argue that they still don't get the sense of complete control over their system.
+
+__And the other pitfalls that need to be aware of__
+
+Except for the limited hardware choice, you also need to consider the possibility of vendor lock-in after deciding to use the serverless service from a cloud provider, which can make it difficult to switch to a different provider or move to an on-premises environment. Developers should ensure that they have an exit strategy in place in case they need to move their application to a different platform.
+
+Serverless functions also introduce new security concerns that need to be addressed. Developers need to ensure that their functions are properly secured, that access controls are in place, and that sensitive data is encrypted.
+
+Debugging and testing serverless functions can be challenging, too, as developers have limited visibility into the underlying infrastructure. Developers need to adopt best practices for testing and debugging, including using local development environments and adopting testing frameworks that support serverless functions.
+
+__Is it the same as Platform as a Service (PaaS)?__
+
+While Serverless Functions and Platform as a Service (PaaS) share some similarities, they are not the same thing.
+
+PaaS is a cloud computing model that provides a complete platform for developers to build, test, and deploy applications. It provides a framework for developers to build and run their applications without worrying about the underlying infrastructure. PaaS solutions typically include various services, such as databases, messaging, and development tools, all delivered as a single platform.
+
+On the other hand, serverless computing is a subset of PaaS that allows developers to run code without managing the underlying infrastructure. Instead of focusing on building and deploying complete applications, serverless computing provides a way to run code snippets or functions in response to events. This event-driven model allows developers to focus on building and deploying individual functions rather than entire applications.
+
+So, while they share some similarities, the main difference is the level of abstraction they provide. PaaS is a complete application platform, while serverless computing is a more granular approach to running code in the cloud. Serverless computing offers a more straightforward, more focused way to build and deploy code, while PaaS solutions provide a more comprehensive platform for building and deploying entire applications.
+
+__The Providers__
+
+The big three cloud providers offer serverless functions as part of their leading cloud platforms. Azure comes with [Azure Functions](https://azure.microsoft.com/en-au/products/functions/), GCP offers  [Cloud Functions](https://cloud.google.com/functions/), and AWS with [AWS Lambda](https://aws.amazon.com/lambda/).
+
+Some other cloud providers also join the competition: [IBM Cloud Functions](https://cloud.ibm.com/functions), [Alibaba Function Compute](https://www.alibabacloud.com/product/function-compute), [Cloudflare Workers](https://www.cloudflare.com/products/workers/), [Digital Ocean Functions](https://www.digitalocean.com/products/functions), [Netlify Functions](https://functions.netlify.com/), [Vercel Functions](https://vercel.com/docs/concepts/functions/serverless-functions), and more.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Malicious Dota 2 game mods infected players with malware](https://decoded.avast.io/janvojtesek/dota-2-under-attack-how-a-v8-bug-was-exploited-in-the-game/)*
+
+Yoga: "Cyber-threat using malicious software can affect anyone and from anywhere, and games are no exception. Recently, researchers have found malicious attacks spread through game mods for one of the biggest online competitive video games, Dota 2. Threat actors included a new file to provide them with a backdoor to permit them to install further malware on the infected users. It happened because Dota 2 used an outdated build of v8.dll that was compiled four years ago and is vulnerable to a wide range of exploits. The game has already updated the V8 version, took down the malicious game mods, and alerted all players impacted by the attack."
+
+![memo](/assets/images/memo16.png) *[GitHub Copilot for Business is now available](https://github.blog/2023-02-14-github-copilot-for-business-is-now-available/)*
+
+Brain: "GitHub announced a new GitHub Copilot offering that targets the enterprise. The price is almost twice the individual plan. Still, it offers more exciting features, such as a more powerful AI model, AI-based security vulnerability filtering, and organization-wide policy management."
+
+![memo](/assets/images/memo16.png) *[GitHub built a new search engine for code from scratch in Rust](https://www.zdnet.com/article/github-builds-a-search-engine-for-code-from-scratch-in-rust/)*
+
+Rizqun: "The Rust programming language continues to grow in popularity, and now developer platform GitHub has used it to build its new code-focused search engine, Blackbird. Instead of perusing forums for answers, GitHub wants users to use its search engine, which is currently in beta. GitHub's Blackbird now supports searching across about 45 million repositories, providing only partial coverage. However, it still enables code searching across 15 terabytes of code and 15.5 billion documents for programs written in Python, Java, and JavaScript."
+
+![memo](/assets/images/memo16.png) *[Google AI updates: Bard and new AI features in Search](https://blog.google/technology/ai/bard-google-ai-search-updates/)*
+
+Frandi: "It's been interesting to see how big companies are competing in AI development lately. After Microsoft announced the integration of ChatGPT with Bing last week, there was this announcement from Google regarding their newest conversational AI service, Bard."
+
+![memo](/assets/images/memo16.png) *[Upgrading your .NET projects with Visual Studio](https://devblogs.microsoft.com/dotnet/upgrade-assistant-now-in-visual-studio/)*
+
+Dika: "This week, Microsoft introduced the visual studio extension that has the functionality to Upgrade .NET Framework or .NET Core web and desktop applications. This tool will make developers easier to upgrade their applications to a newer framework since the newer version like .NET 6 (Long Term Support version), and .NET 7 (Standard Term Support version) have better performance and give access to the latest feature and capabilities. For now, it supports ASP.NET, Class Libraries, Console, WPF, and WinForm. For the next, it will support porting from Xamarin to .NET MAUI, UWP to WINUI, and WCF to WCF Core."
