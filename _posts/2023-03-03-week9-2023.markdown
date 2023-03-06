@@ -1,0 +1,71 @@
+---
+layout: post
+title:  "Week #9 2023 - Modular Monolith Architecture"
+date:   2023-03-03 20:00:00 +0700
+---
+
+## Modular Monolith Architecture
+
+Modular monolith architecture is a software design pattern gaining popularity lately as an alternative to traditional monolithic and microservices architectures. It combines the benefits of both patterns while avoiding their respective drawbacks. 
+
+We will explore the concept of modular monolith architecture in detail, discussing its advantages and disadvantages and providing a real-world example of a company that successfully implements modular monolith for its applications.
+
+__Why is it gaining popularity lately?__
+
+Modular monolith architecture has been gaining popularity due to its ability to address some of the challenges and drawbacks of traditional monolithic and microservices architectures.
+
+One of the main advantages of a modular monolith architecture is that it allows for a more flexible and maintainable codebase. Unlike traditional monolithic architectures, which can become challenging to maintain and scale as the application grows, modular monoliths can be divided into smaller, more manageable modules that can be developed and maintained independently. This approach allows developers to add new features or make changes to the system without affecting the entire codebase, reducing the risk of introducing bugs or unexpected behavior.
+
+Furthermore, modular monoliths also benefit from the simplicity of deployment, which is often associated with traditional monoliths. Unlike microservices architectures, which require complex infrastructure and deployment processes, modular monoliths can be deployed and scaled as a single unit, making it easier to manage and monitor.
+
+Overall, modular monolith architecture balances the advantages of traditional monolithic and microservices architectures, providing developers with a more flexible and maintainable codebase while simplifying the deployment and scaling process.
+
+__But microservice should be the go-to choice for the modern application, right?__
+
+Microservices architecture has become increasingly popular in recent years due to its ability to provide scalability, resilience, and flexibility to large-scale software systems. However, some challenges associated with microservices architecture have led some organizations to look for alternative design patterns like the modular monolith.
+
+One of the primary challenges with a microservices architecture is the complexity of developing and managing a large number of services. Each service must be developed, tested, deployed, and monitored independently, which can lead to significant overhead in terms of development and operations. This complexity can be particularly challenging for smaller development teams or organizations with limited resources.
+
+Another challenge with a microservices architecture is the increased network latency and communication overhead that comes with a distributed architecture. In a microservices architecture, services communicate with each other over a network, which can introduce delays and performance issues. It can be especially problematic in applications that require low latency and high throughput, such as real-time data processing or transaction processing systems.
+
+__What is modularity in this context, by the way?__
+
+Modularity refers to the practice of designing and building software applications as a collection of independent, self-contained modules that can be developed, tested, and deployed separately. Each module is designed to perform a specific function or provide a particular service and has well-defined interfaces that allow it to communicate with other modules.
+
+Modularity is essential because it can help reduce software applications' complexity and make them easier to develop, test, and maintain. By breaking an application down into smaller, more manageable modules, developers can focus on developing and testing individual components without needing to understand the entire system.
+
+Implementing modularity on an application may require serious planning and may seem too complex for some organizations, but it is actually a best practice that many developers and development teams already use. Many programming languages and frameworks provide tools and features that make designing and building modular applications, such as interfaces, modules, and libraries, easier.
+
+For an example of modularity, let's say we have an e-commerce platform that allows users to search for and purchase products. The system could be broken down into the following modules: Product Catalogue, Search Engine, Order Processing, User Management, and others. Each of these modules can be owned by different teams that can work independently from each other. However, to allow each module to communicate with each other, a robust design of interfaces needs to be laid out prior to the implementation of the modules.
+
+__The Shopify story__
+
+One example of a successful implementation of modular monolith architecture is the e-commerce platform: Shopify (you can read the more complete stories on their [engineering blog](https://shopify.engineering/shopify-monolith)). 
+
+In the early days of Shopify, the application was built using a monolithic architecture. However, as the platform grew in popularity and the codebase became more complex, the development team began to experience some of the challenges associated with a monolithic architecture, such as long release cycles and difficulty in scaling individual components.
+
+To address these challenges, the team began to transition towards a more modular architecture. They introduced a layered architecture with well-defined interfaces between components, which allowed different teams to develop and test their components independently. They also introduced automated testing and continuous integration and deployment, which helped to reduce the time required to release new features.
+
+As a result of these changes, Shopify was able to scale their application and add new features more quickly and with less risk. The development team was also able to work more efficiently, as they could focus on their specific areas of expertise without needing to understand the entire application.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Introducing ChatGPT and Whisper APIs](https://openai.com/blog/introducing-chatgpt-and-whisper-apis)*
+
+Brain: "Open AI just launched two new APIs. ChatGPT API provides the same functionality as the ChatGPT app, with a 10x lower price than the original subscription. Whisper is OpenAI's state-of-the-art speech-to-text model. With these two new APIs, we expect tons of innovative apps to come out using it."
+
+![memo](/assets/images/memo16.png) *[Meta is building AI-powered tools for WhatsApp, Messenger, and Instagram](https://www.theverge.com/2023/2/27/23617477/mark-zuckerberg-meta-ai-tools-personas)*
+
+Rizqun: "As OpenAI's ChatGPT surges in popularity, more companies, including Meta, are exploring opportunities in the generative AI space. Meta now has a team dedicated to building tools powered by artificial intelligence. More specifically, Zuckerberg says the company is working on AI experiences with text, such as chat with Messenger and WhatsApp, experiences with images for things like creative Instagram filters and ad formats, as well as video and multi-modal experiences."
+
+![memo](/assets/images/memo16.png) *[Visual Studio 2022 - 17.5 Released](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-17-5-released/)*
+
+Dika: "Visual Studio 2022 version 17.5 is now generally available. So many updates are available in this release that contains some feature that makes it easier for us to do daily workflow with Visual Studio, one of the interesting features is the Debugger test visualizer that has the functionality to manipulate text, for example, when we want to encode or decode base64 string during debugging, and another interesting new feature that worth to try."
+
+![memo](/assets/images/memo16.png) *[Hackers use fake ChatGPT apps to push Windows, Android malware](https://www.bleepingcomputer.com/news/security/hackers-use-fake-chatgpt-apps-to-push-windows-android-malware/)*
+
+Yoga: "ChatGPT gains immense traction quickly, becoming the growing consumer application reaching more than 100 million users by January 2023. This growth surely attracts attackers to manipulate users into exploitation now that OpenAI launched ChatGPT Plus at $20/month. The attackers offer a false promise of uninterrupted and free access to the premium ChatGPT. By creating apps that run on websites and android phones, attackers trick users into installing malware on their devices and providing account credentials."
+
+![memo](/assets/images/memo16.png) *[Introducing Service Weaver: A Framework for Writing Distributed Applications](https://opensource.googleblog.com/2023/03/introducing-service-weaver-framework-for-writing-distributed-applications.html)*
+
+Frandi: "This week, Google announced the release of Service Weaver, their latest open-source framework for building and deploying distributed applications. This framework is interesting because it puts the deployer tools right next to the application modules. It is said that this framework has the best of two worlds: the development velocity of a monolith, with the scalability, security, and fault-tolerance of microservices."
