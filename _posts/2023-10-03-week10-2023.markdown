@@ -1,0 +1,87 @@
+---
+layout: post
+title:  "Week #10 2023 - Low-Code Platform"
+date:   2023-03-10 20:00:00 +0700
+---
+
+## Low-Code Platform
+
+Low-code platform is an emerging trend in software development that allows users to create applications with little to no coding experience. It offers a powerful way to streamline application development and deployment and is gaining traction across industries and organizations of all sizes.
+
+These platforms usually offer a visual and intuitive interface that allows developers to design and build applications quickly and easily, with the ability to customize them to meet specific business needs. It also opens opportunities for non-technical people to develop an application without prior software development knowledge. Low-code platforms will surely change the software development industry landscape that moves towards efficiency in today's economic uncertainty.
+
+The simplicity the low-code platform offers is believed to increase productivity because the platform has automatically done much of the coding work. It allows the developers to focus on the application's business logic and user experience. It also triggers more collaboration between different roles in the project because the platforms are usually equipped with end-to-end features for everyone to do their jobs, like version control, automation pipelines, feedback submission, asset storage, and so on.
+
+__It's well-suited to Agile__
+
+You can use the Agile methodology when utilizing low-code platforms for software development. In fact, the low-code approach can be particularly well-suited to Agile because it allows for rapid prototyping and iteration.
+
+Agile is an iterative and collaborative software development approach emphasizing flexibility and adaptability. Agile methodology is based on the principles of delivering software in short iterations, continuous feedback, and collaboration between team members and stakeholders. The low-code platform approach can enable Agile methodology by providing a visual and collaborative interface for rapid prototyping and development.
+
+In an Agile development process with low-code platforms, teams can work on smaller, manageable tasks and deliver functional software in short iterations. The low-code platform can provide continuous feedback and collaboration tools among team members and stakeholders, allowing real-time updates and changes. However, it is essential to note that the specific Agile methodology used may vary depending on the needs and requirements of the project.
+
+__The challenges__
+
+While low-code platforms offer many benefits, there are also some challenges to consider:
+
+1. Limited customization: Low-code platforms are designed to make development faster and easier, but this can come at the cost of flexibility and customization. Developers may be limited in modifying or integrating the platform with other systems.
+2. Complexity: While low-code platforms can make development easier for non-technical users, they can also be complex and require significant training to fully understand their use.
+3. Technical debt: Low-code platforms may generate code that is difficult to maintain or modify in the future, leading to technical debt and increased development costs down the line.
+4. Vendor lock-in: Some low-code platforms are proprietary and may lock users into a particular vendor or technology stack, limiting their ability to switch to other platforms in the future.
+5. Security and compliance: Low-code platforms may require additional security and compliance measures to protect data and ensure compliance with regulations.
+6. Limited functionality: Low-code platforms may not have all the functionality needed to build complex applications, and developers may need to use traditional coding methods to supplement the platform.
+7. Scalability: Some low-code/no-code platforms may not be able to handle large-scale or mission-critical applications, which may require more traditional software development methods. 
+
+__A success story__
+
+One example of a company that has successfully utilized low-code/no-code for its app development is Siemens Energy. Siemens Energy is a global energy company that provides sustainable energy solutions to customers worldwide.
+
+In 2020, Siemens Energy began using a low-code platform called Mendix to develop an application for their service technicians. The "Smart Maintenance Assistant" application allows service technicians to access information about the equipment they are working on and track maintenance tasks in real time.
+
+Using Mendix, Siemens Energy was able to develop the Smart Maintenance Assistant app in just 12 weeks, significantly faster than traditional development methods would have allowed. The app has been well-received by service technicians, who report that it has improved efficiency and reduced the time needed to complete maintenance tasks.
+
+Siemens Energy has also used Mendix to develop other applications for their business, including an application for tracking employee training and managing supplier contracts.
+
+__And a not-so-success story__
+
+There have been cases where companies have started with low-code platforms but eventually switched to custom development. In 2019, the tech startup LinkSquares began using a low-code platform to build its contract management application. However, as their business evolved and they added more features to their application, they found that the limitations of the low-code platform hindered their ability to customize the application to their needs.
+
+As a result, LinkSquares decided to switch to custom development using traditional coding methods. It allowed them to have more control over the development process and create an application tailored specifically to their business needs.
+
+While low-code platforms can be a great way to develop and deploy applications rapidly, they may not always be the best solution for more complex or highly customized applications. In some cases, switching to custom development may be necessary to realize a company's vision for their application fully.
+
+__The landscape__
+
+The low-code platform market is growing rapidly, and several key players dominate the market. Here are some of them:
+
+1. Microsoft Power Platform: Microsoft Power Platform is a suite of low-code development tools that includes Power Apps, Power Automate, Power BI, and Power Virtual Agents.
+2. Salesforce Lightning Platform: Salesforce Lightning Platform enables IT and businesses to create apps using no-code builders, pro-code tools, and built-in enterprise services.
+3. OutSystems: OutSystems is a Low-code development platform that provides tools for companies to develop, deploy and manage omnichannel enterprise applications.
+4. Mendix: All apps developed with Mendix are cloud-native, containerized, and portable by default. Developers have the freedom and flexibility to deploy and scale anywhere — public, private, hybrid clouds, or on-premises.
+5. Appian: The Appian Platform helps organizations unleash digital innovation, drive efficiency, and connect customers, employees, and systems in end-to-end processes.
+6. Google AppSheet: Google AppSheet is a low-code platform for building mobile and web applications.
+7. Zoho Creator: Zoho Creator is a low-code application development platform that allows users to create custom applications on their own, with minimal coding experience.
+
+These platforms' market share constantly evolves and may vary based on the source and methodology used for analysis. However, they provide a general overview of the low-code platform landscape you can find in the market. 
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[GitHub makes 2FA mandatory next week for active developers](https://www.bleepingcomputer.com/news/security/github-makes-2fa-mandatory-next-week-for-active-developers/)*
+
+Yoga: "As previously announced, GitHub will begin enforcing 2FA (two-factor authentication) on developer accounts starting March 13th. To minimize interruptions to productivity and prevent account lockouts, GitHub will be rolling out the 2FA process in several phases. It is a critical security effort by GitHub to enhance the security of the software supply chain and move away from basic password authentication."
+
+![memo](/assets/images/memo16.png) *[Introducing the ChatGPT App for Slack](https://www.salesforce.com/news/stories/chatgpt-app-for-slack/)*
+
+Rizqun: "Salesforce and OpenAI introduced the ChatGPT app for Slack earlier this week. Having ChatGPT on Slack will help users to deliver instant conversation summaries, research tools, and writing assistance directly. This new app combines knowledge found in Slack with the intelligence of ChatGPT, which can help users move faster. Because it is still in the beta stage, we need to register to access it for now."
+
+![memo](/assets/images/memo16.png) *[Android 14 is on the way](https://www.techradar.com/news/android-14)*
+
+Dika: "Google announced the Android 14 on February 8th, and the first Developer Preview launched on the same day, with the second Developer Preview also now here. It brings features like satellite communication that make it possible for users to utilize emergency satellite communication when there is no signal. Another interesting feature is app cloning for apps that don't natively support multiple accounts."
+
+![memo](/assets/images/memo16.png) *[Microsoft Designer: a new designer tool from Microsoft](https://designer.microsoft.com/)*
+
+Brain: "We already have GitHub co-pilot for developers. Now Microsoft is trying to create a similar tool, but for designers. Microsoft designer is a new tool announced by Microsoft that utilizes AI for a design workflow. It combines several emerging technologies in AI, like image and text generation, to make it very easy to create a design from scratch by using a few text prompts. To try it, you can join the waitlist by registering your email on the website."
+
+![memo](/assets/images/memo16.png) *[The future of touch: Researchers uncover physical limitation in haptic holography](https://techxplore.com/news/2023-03-future-uncover-physical-limitation-haptic.html)*
+
+Frandi: "Haptic holography is a technology that combines haptic feedback and holographic imagery to create a realistic sense of touch in virtual environments. It is a type of augmented reality that allows users to feel and interact with digital objects in a physical way. But, a new study reveals a surprising physical obstacle that will need to be overcome."
