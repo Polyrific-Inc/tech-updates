@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "Week #11 2023 - Business Continuity and Disaster Recovery"
+date:   2023-03-17 20:00:00 +0700
+---
+
+## Business Continuity and Disaster Recovery
+
+Business Continuity and Disaster Recovery refer to an organization's processes and procedures to ensure that essential business functions can continue during an unexpected disruption. They are critical for minimizing downtime, reducing financial losses, and ensuring that customers continue to receive products or services.
+
+Business Continuity (BC) and Disaster Recovery (DR) differ in their focus, with BC typically centering on the organization as a whole, while DR focuses on the technology infrastructure. Business Continuity (BC) is a **proactive** approach that involves implementing processes and procedures to ensure critical functions can continue to work in every situation. Disaster Recovery (DR) is a **reactive** approach that involves specific steps an organization must take to resume operations after an incident.
+
+Both BC and DR consider various unplanned events and aim to restore normal operations, particularly with regard to mission-critical applications. 
+
+__Why is BCDR important?__
+
+Business continuity and disaster recovery planning are critical for any organization to survive a catastrophic event. Disruption can cause significant downtime, resulting in revenue, customers, and productivity loss. A well-designed disaster recovery plan can help restore critical IT systems and data quickly, minimizing downtime and financial losses.
+
+In addition to minimizing downtime, a disruption can damage an organization's reputation if customers and stakeholders perceive that the organization cannot handle the situation. A comprehensive business continuity plan can mitigate the impact of a disruption on an organization's reputation.
+
+Furthermore, many industries have regulations and compliance requirements that mandate the need for disaster recovery and business continuity planning. Failure to comply with these regulations can result in fines, legal liabilities, and reputational damage.
+
+In the event of a disruption, maintaining customer service is essential to minimize financial losses and protect the organization's reputation. A business continuity plan can ensure that crucial business functions, including customer service, continue uninterrupted.
+
+Data is often an organization's most valuable asset, and losing it can have severe consequences. A disaster recovery plan can ensure that critical data is backed up and can be quickly restored in the event of a disaster.
+
+__Risk Assessment__
+
+Risk assessment is a critical component of business continuity and disaster recovery planning. It involves identifying potential risks and threats impacting an organization's operations and developing mitigation strategies. A robust risk assessment process can help an organization effectively prepare for and respond to unexpected disruptions.
+
+The risk assessment process typically includes the following steps:
+
+1. **Identify Risks**: This step involves identifying potential risks and threats that could impact an organization's operations, such as natural disasters, cyber-attacks, power outages, equipment failures, or supply chain disruptions.
+2. **Assess Risks**: This step involves assessing each identified risk's likelihood and potential impact. The assessment should consider the frequency and severity of the risk, the organization's exposure to the risk, and the potential consequences of the risk.
+3. **Prioritize Risks**: This step involves prioritizing risks based on their potential impact on the organization. The prioritization should consider the business function's criticality, the risk's likelihood, and the potential consequences of the risk.
+4. **Develop Strategies**: This step involves developing strategies to mitigate the identified risks. Strategies should be specific, measurable, achievable, relevant, and time-bound (SMART). They can include implementing redundant systems, creating backups, or developing contingency plans.
+5. **Implement Strategies**: This step involves implementing the strategies developed in the previous step. Implementation can include investing in technology solutions, training employees, or partnering with vendors.
+6. **Review and Update**: This step involves regularly reviewing and updating the risk assessment and mitigation strategies. The review should consider changes in the organization's environment, emerging risks, and changes in regulations. 
+
+__Best Practices__
+
+Following best practices for BCDR is essential for ensuring that an organization can respond effectively to unexpected disruptions. Some of the best practices are:
+
+1. **Establish Clear Roles and Responsibilities**: Assigning clear roles and responsibilities to team members involved in the planning process is essential to ensure that everyone understands their duties during disruption and can act quickly to implement the plan.
+2. **Conduct Regular Training and Testing**: Regular training ensures everyone understands their roles and responsibilities. Testing can reveal weaknesses in the plan and provide an opportunity to improve it.
+3. **Maintain Up-to-Date Documentation**: Documentation should be accurate and up-to-date, including contact information, procedures, and recovery plans. This documentation should be stored securely, with backups in case of data loss.
+4. **Build Redundancy into IT Systems**: The redundancy includes backup servers, storage devices, and communication systems.
+5. **Establish Communication Protocols**: Communication protocol should be established to ensure that all team members, stakeholders, and customers are well informed of the current situation.
+6. **Leverage Cloud Computing and Virtualization Technologies**: Cloud computing and virtualization technologies provide flexibility, scalability, and redundancy. These technologies can help organizations minimize downtime and data loss during an unexpected disruption.
+7. **Follow Industry Standards and Regulations**: Compliance with regulations and industry standards ensures recovery plans align with relevant rules and standards to avoid penalties and legal issues. 
+
+__Tools and Technology__
+
+Several tools and technologies are available to organizations to support their business continuity and disaster recovery planning efforts. These tools can range from simple backup and recovery solutions to sophisticated cloud-based disaster recovery solutions. Here are some of them:
+
+1. **Backup and Recovery Solutions**: Backup and recovery solutions are among the most straightforward and critical tools in BCDR planning. These tools allow organizations to create copies of their data and applications, which can be restored in the event of a disruption. Standard backup and recovery solutions include tape drives, disk-based storage, and cloud-based backup solutions.
+2. **Virtualization and Cloud Computing Technologies**: Virtualization and cloud computing technologies provide organizations with flexibility and scalability, allowing them to deploy resources as needed quickly. Virtualization will enable organizations to run multiple virtual machines on a single physical server, while cloud computing store data and applications in remote data centers.
+3. **Disaster Recovery as a Service (DRaaS) Solutions**: DRaaS solutions provide organizations with a fully managed disaster recovery solution that typically includes all essential features like backup and recovery, virtualization, and cloud computing technologies, as well as a team of experts to manage the disaster recovery process. Some examples are Microsoft Azure Site Recovery, Zerto, CrashPlan, etc.
+4. **Business Continuity Planning Software**: These tools can help organizations create and maintain a comprehensive BCDR plan, manage and track recovery efforts, and provide real-time status updates during a disruption. Some examples of the tools are Agility Recovery Planner, Archer Business Resiliency, Fusion Framework System, etc. 
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[GPT-4 is here](https://openai.com/product/gpt-4)*
+
+Brain: "OpenAI just released their most capable model, and they are starting to roll it out to the API users. GPT-4 can solve difficult problems more accurately, thanks to its broader general knowledge and advanced reasoning capabilities. The most exciting feature, I think, is image comprehension. We can feed a web design image and have it generate the HTML and CSS for us."
+
+![memo](/assets/images/memo16.png) *[Microsoft announces Copilot for office documents](https://youtu.be/Bf-dbS9CcRU)*
+
+Rizqun: "Microsoft just held a big AI event and announced a new AI-powered Copilot for its Microsoft 365 apps and services. Copilot will appear as an assistant that can be summoned to generate text in documents, create PowerPoint presentations from Word documents, and help with certain Excel functions. In addition, users can also summon Copilot to provide information regarding upcoming meetings and prepare people with updates on related projects."
+
+![memo](/assets/images/memo16.png) *[DuckDuckGo launches AI-powered search query answering tool](https://www.bleepingcomputer.com/news/security/duckduckgo-launches-ai-powered-search-query-answering-tool/)*
+
+Yoga: "DuckDuckGo has launched its first beta version of DuckAssist, a privacy-focused search engine that uses OpenAI's natural language technology. Unlike other language models, DuckAssist only sources information from Wikipedia and Britannica to prioritize accuracy over the breadth of information. The company expects mistakes in the beta version and encourages anonymous user feedback to improve the model."
+
+![memo](/assets/images/memo16.png) *[AWS Application Composer Now Generally Available](https://aws.amazon.com/blogs/aws/aws-application-composer-now-generally-available-visually-build-serverless-applications-quickly/)*
+
+Frandi: "AWS Application Composer is a visual designer that you can use to build serverless applications from multiple AWS services. You are presented with a canvas that allows you to drag and drop available resources and define their interactions. As you design, Application Composer automatically generates a ready-to-deploy IaC template that follows AWS best practices. It is now generally available in most AWS regions."
+
+![memo](/assets/images/memo16.png) *[.NET 8 is on the way](https://medium.com/bytehide/net-8-is-on-the-way-discover-its-new-features-ecadc5590daf)*
+
+Dika: ".NET 8 is the successor to .NET 7, with three years of long-term support. The version has some improvements like in System.Test.Json serialization, performance Improvements, Native AOT, Code generation, and .NET Container Image. There are also several new features like GetItems and Shuffle."
