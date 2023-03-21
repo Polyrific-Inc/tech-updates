@@ -1,8 +1,9 @@
----
+<!-- ---
 layout: page
 title: Search
 permalink: /search/
----
+buttonHighlighted: false
+--- -->
 
 <!-- HTML elements for search -->
 <div id="search-container">

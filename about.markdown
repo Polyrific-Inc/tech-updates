@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+buttonHighlighted: false
 ---
 
 Tech Updates are the weekly updates managed by Polyrific's Department of Technology sent initially via emails to the internal Polyrific employees.
