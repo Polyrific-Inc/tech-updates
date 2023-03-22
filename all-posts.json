@@ -1,0 +1,35 @@
+---
+layout: none
+---
+{
+  "url" : [
+    {% for post in site.posts %}
+      "{{ post.url }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "title" : [
+    {% for post in site.posts %}
+      "{{ post.title }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "date" : [
+    {% for post in site.posts %}
+      "{{ post.date }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "week" : [
+    {% for post in site.posts %}
+      "{{ post.week }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "bannerUrl" : [
+    {% for post in site.posts %}
+      "{{ post.bannerUrl }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "briefDescription" : [
+    {% for post in site.posts %}
+      "{{ post.briefDescription }}"{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
