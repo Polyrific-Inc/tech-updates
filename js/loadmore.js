@@ -1,23 +1,28 @@
-$(function () {
+document.addEventListener('DOMContentLoaded', function() {
   var allPosts;
   var lastPage = 6;
   var totalPosts = 0;
   var loadMoreActive = false;
 
   // Load the JSON file containing all URLs
-  $.getJSON('/all-posts.json', function (data) {
-    allPosts = data;
-    totalPosts = allPosts.url.length;
-    loadMoreActive = lastPage < totalPosts;
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', '/all-posts.json');
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      allPosts = JSON.parse(xhr.responseText);
+      totalPosts = allPosts.url.length;
+      loadMoreActive = lastPage < totalPosts;
 
-    if (loadMoreActive) {
-      $(".home-load-more").show();
-    } else {
-      $(".home-load-more").hide();
+      if (loadMoreActive) {
+        document.querySelector(".home-load-more").style.display = "block";
+      } else {
+        document.querySelector(".home-load-more").style.display = "none";
+      }
     }
-  });
+  };
+  xhr.send();
 
-  $(".home-load-more").click(function () {
+  document.querySelector(".home-load-more").addEventListener("click", function() {
     var untilPageIndex = lastPage + 5;
     if (untilPageIndex > totalPosts) {
       untilPageIndex = totalPosts;
@@ -50,16 +55,16 @@ $(function () {
                         </div> \
                       </div> \
                     </a>";
-      $(newDiv).appendTo('.home-posts')
+      document.querySelector('.home-posts').insertAdjacentHTML('beforeend', newDiv);
     }
 
     lastPage = lastPage + 5;
     loadMoreActive = lastPage < totalPosts;
 
     if (loadMoreActive) {
-      $(".home-load-more").show();
+      document.querySelector(".home-load-more").style.display = "block";
     } else {
-      $(".home-load-more").hide();
+      document.querySelector(".home-load-more").style.display = "none";
     }
   });
 });
