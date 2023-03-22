@@ -10,42 +10,46 @@ layout: default
     {% assign topSite = site.posts[0] %}
     {% assign bannerUrl = "/assets/images/" | append: topSite.bannerUrl %}
     <div class="home-banner">
-      <div class="home-banner-image">
-        <img src={{ bannerUrl }} +  alt="banner">
-      </div>
-      <div class="home-banner-detail">
-        {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
-        {% assign topSiteDate = topSite.date | date: date_format %}
-        <div class="home-banner-detail-header">{{ topSite.week | append: ' · ' | append: topSiteDate }}</div>
-        <div class="home-banner-detail-title">{{ topSite.title }}</div>
-        <div class="home-banner-detail-description">{{ topSite.briefDescription }}</div>
-      </div>
+      <a href="{{ topSite.url | relative_url }}">
+        <div class="home-banner-image">
+          <img src={{ bannerUrl }} +  alt="banner">
+        </div>
+        <div class="home-banner-detail">
+          {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
+          {% assign topSiteDate = topSite.date | date: date_format %}
+          <div class="home-banner-detail-header">{{ topSite.week | append: ' · ' | append: topSiteDate }}</div>
+          <div class="home-banner-detail-title">{{ topSite.title }}</div>
+          <div class="home-banner-detail-description">{{ topSite.briefDescription }}</div>
+        </div>
+      </a>
     </div>
 
     <div class="home-posts">
       {% for post in site.posts limit:6 %}
         {% if forloop.first == false %}
-          <div class="home-post">
-            <div class="home-post-image">
-              {% if post.bannerUrl %}
-                {% assign imgUrl = "/assets/images/" | append: post.bannerUrl %}
-              {% else %}
-                {% assign imgUrl = "/assets/images/banner_default.png" %}
-              {% endif %}
-              <img src={{ imgUrl }} +  alt="banner">
+          <a href="{{ post.url | relative_url }}">
+            <div class="home-post">
+              <div class="home-post-image">
+                {% if post.bannerUrl %}
+                  {% assign imgUrl = "/assets/images/" | append: post.bannerUrl %}
+                {% else %}
+                  {% assign imgUrl = "/assets/images/banner_default.png" %}
+                {% endif %}
+                <img src={{ imgUrl }} +  alt="banner">
+              </div>
+              <div class="home-post-detail">
+                {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
+                {% assign postDate = post.date | date: date_format %}
+                <div class="home-post-detail-header">{{ post.week | append: ' · ' | append: postDate }}</div>
+                <div class="home-post-detail-title">{{ post.title }}</div>
+                <div class="home-post-detail-description">{{ post.briefDescription }}</div>
+              </div>
             </div>
-            <div class="home-post-detail">
-              {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
-              {% assign postDate = post.date | date: date_format %}
-              <div class="home-post-detail-header">{{ post.week | append: ' · ' | append: postDate }}</div>
-              <div class="home-post-detail-title">{{ post.title }}</div>
-              <div class="home-post-detail-description">{{ post.briefDescription }}</div>
-            </div>
-          </div>
+          </a>
         {% endif %}
       {% endfor %}
-      <button class="home-load-more">LOAD MORE ARTICLES</button>
     </div>
+    <button class="home-load-more">LOAD MORE ARTICLES</button>
   {% endif %}
 
 </div>
