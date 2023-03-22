@@ -3,5 +3,6 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-list_title: Updates
+page_title: Tech Updates
+page_description: Latest technology trends and insights, curated by Polyrific’s tech experts
 ---
