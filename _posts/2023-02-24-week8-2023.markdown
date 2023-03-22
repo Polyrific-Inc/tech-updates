@@ -1,7 +1,10 @@
 ---
 layout: post
-title:  "Week #8 2023 - Edge Computing"
+week: "Week #8"
+title:  "ChatGPT"
 date:   2023-02-24 20:00:00 +0700
+bannerUrl: "chat_gpt.png"
+briefDescription: "A popular language model that has been receiving massive spotlight lately."
 ---
 
 ## Edge Computing

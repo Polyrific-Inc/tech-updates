@@ -2,7 +2,7 @@
 
 --- 
 
-@import "minima";
+@import "{{ site.theme }}";
 
 @font-face {
   font-family:"OpenSansRegular";
@@ -248,4 +248,129 @@
 .site-footer-url:hover,
 .site-footer-twitter:hover {
   text-decoration: none;
+}
+
+/** HOME PAGE **/
+
+.home {
+  padding-top: 71px;
+}
+
+.home-heading {
+  color: #FF7C0A;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: 'WorkSansMedium';
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.home-description {
+  color: #020B13;
+  font-size: 48px;
+  line-height: 56px;
+  font-family: 'WorkSansMedium';
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.home-banner {
+  position: relative;
+  margin-bottom: 44px;
+}
+
+.home-banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+.home-banner-detail {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  top: 90px;
+}
+
+.home-banner-detail-header {
+  color: #FFFFFF80;
+  font-family: 'OpenSansRegular';
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.home-banner-detail-title {
+  color: #FFFFFF;
+  font-family: 'WorkSansMedium';
+  font-size: 34px;
+  line-height: 46px;
+  margin-bottom: 12px;
+}
+
+.home-banner-detail-description {
+  color: #FFFFFF;
+  font-family: 'OpenSansRegular';
+  font-size: 16px;
+  line-height: 28px;
+  padding-right: 85px;
+}
+
+.home-posts {
+  text-align: left;
+}
+
+.home-post {
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.home-post-image {
+  text-align: left;
+}
+
+.home-post-image img {
+  max-width: unset;
+  height: auto;
+}
+
+.home-post-detail {
+  text-align: left;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+.home-post-detail-header {
+  color: #020B13;
+  font-family: 'OpenSansRegular';
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 12px;
+}
+
+.home-post-detail-title {
+  color: #020B13;
+  font-family: 'WorkSansMedium';
+  font-size: 34px;
+  line-height: 46px;
+  margin-bottom: 12px;
+}
+
+.home-post-detail-description {
+  color: #020B13;
+  font-family: 'OpenSansRegular';
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.home-load-more {
+  border: none;
+  border-radius: 24px;
+  background: #002966;
+  padding: 12px 26px; 
+  color: #FFFFFF;
+  font-family: 'OpenSansRegular';
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
 }
