@@ -1,0 +1,93 @@
+---
+layout: post
+title:  "Week #14 2023 - Code Documentation"
+date:   2023-04-07 20:00:00 +0700
+---
+
+## Code Documentation
+
+In the world of software development, code documentation is often considered a crucial aspect of creating and maintaining high-quality code. Well-documented code saves time, reduces technical debt, and eases the onboarding process for new team members. It enables developers to understand the purpose and functionality of the code more efficiently, leading to fewer errors and smoother collaboration.
+
+However, not all developers prioritize code documentation, and there are several reasons for this.
+
+One common reason developers might not prioritize documentation is the perceived lack of time. With tight deadlines and the pressure to deliver features quickly, developers may feel that spending time on documentation is a luxury they can't afford.
+
+Another argument against code documentation is the belief that the code should be "self-documenting." Developers who hold this view argue that well-written code with clear, descriptive variable and function names should be sufficient to understand its purpose and functionality.
+
+Additionally, some developers may have had negative experiences with outdated or misleading documentation, leading them to question its value. 
+
+__"Lack of time"__
+
+While it's true that documenting code can consume time and effort, the long-term benefits far outweigh the initial investment. Proper documentation helps developers understand the code faster, reducing the time spent debugging and making modifications.
+
+It also helps new team members get up to speed quickly, which can be especially important in larger or rapidly evolving projects. In the long run, well-documented code can save time and resources, ultimately leading to more efficient development cycles and higher-quality software.
+
+__"Code should be self-documenting"__
+
+Although striving for self-documenting code is a worthy goal, relying solely on it can be insufficient. Self-documenting code typically only addresses the "how" of the code but may not provide insights into the "why" behind specific design decisions or the intended behavior of a complex system.
+
+Code documentation complements self-documenting code by providing context and rationale, making it easier for developers to understand the bigger picture and maintain the code effectively.
+
+__"Outdated or misleading documentation"__
+
+The problem of outdated or misleading documentation highlights the need for a disciplined approach to maintaining and updating documentation as the code evolves. By adopting best practices like treating documentation as an integral part of the development process and using tools like version control and automated documentation generators, developers can ensure that their documentation remains accurate and up-to-date.
+
+Establishing a culture of documentation within a development team can also encourage individual developers to take ownership of documentation and actively update it alongside their code changes.
+
+__The balance between "too much" and "too little"__
+
+Striking the right balance between too much and too little documentation is essential for maintaining code readability and effectiveness. Here's a brief guide on how to achieve that balance:
+
+1. **Focus on clarity and conciseness**: When writing documentation, aim to be clear and concise. Please provide enough information to explain the purpose and functionality of the code, but avoid lengthy explanations that might obscure the code itself. Use simple language and avoid jargon whenever possible.
+2. **Document the "why," not just the "how"**: Instead of reiterating what the code is doing, focus on explaining why it's doing it. It includes discussing the rationale behind design decisions, assumptions, and potential caveats or limitations. By focusing on the "why," you'll provide valuable context that helps developers understand the code's purpose and intent.
+3. **Use meaningful names for variables and functions**: Well-chosen names for variables, functions, and classes can often convey much information about their purpose and behavior. By using descriptive and consistent naming conventions, you can reduce the need for extensive documentation and improve the readability of your code.
+4. **Document at the right level**: While inline comments can help clarify complex or unintuitive parts of the code, overusing them can clutter the code and reduce readability. Focus on documenting at the function or module level, where you can provide a broader overview of the code's purpose and behavior. Reserve inline comments for cases where the code's intent might not be immediately apparent.
+5. **Keep documentation up to date**: As your code evolves, ensure that your documentation remains accurate and current. Regularly review and update your documentation to reflect any changes or new features. It will help prevent outdated or misleading documentation from burdening your project.
+6. **Embrace a culture of documentation**: Encourage everyone on your team to take responsibility for creating and maintaining documentation. By fostering a collective mindset around the importance of documentation, you'll help ensure that your team finds the right balance between too much and too little documentation. 
+
+__The components__
+
+While the components for code documentation may vary depending on the project requirements or the organization's culture, these are some ideas that you can include to create clear and efficient documentation:
+
+1. **Overview**: Provide a high-level summary of the purpose and functionality of the software, library, or module being documented. This overview should give readers a clear understanding of what the code does and how it fits into the larger system.
+2. **Requirements and dependencies**: List any external dependencies, such as libraries, frameworks, or services that the code relies on. Include information on the required versions and how to install or set up these dependencies.
+3. **Installation and setup instructions**: Provide clear, step-by-step instructions for installing and setting up the software or library. It might include information on downloading the source code, installing dependencies, and configuring any necessary settings.
+4. **API documentation**: For libraries or APIs, thoroughly document each function, class, or method with descriptions, input parameters, return values, and possible exceptions or errors. This documentation should be organized in a clear, easy-to-navigate manner, ideally with examples to help users understand how to use the API effectively.
+5. **Code examples and tutorials**: Include examples of how to use the software or library, showcasing different features and functionality. Tutorials or step-by-step guides can help users get started and better understand how to work with the code.
+6. **Design decisions and architectural explanations**: Document the rationale behind critical design decisions, such as algorithms, data structures, or architectural patterns. This information can be invaluable for developers who need to maintain or extend the code in the future.
+7. **Testing and debugging information**: Explain how to test the software or library, including any available test suites or tools. Guide how to troubleshoot common issues or errors that users might encounter.
+8. **Versioning and change history**: Maintain a record of the changes made to the code over time, including the release of new versions, bug fixes, and feature additions. This information helps users understand the evolution of the code and can help track down issues or understand new features.
+9. **Contribution guidelines**: If your project is open-source or accepting contributions from external developers, provide clear instructions on how to contribute, including coding standards, testing requirements, and the process for submitting changes or reporting issues.
+10. **License and copyright information**: Include information about the license under which the code is distributed, as well as any copyright or attribution requirements. 
+
+__Where should I put the docs?__
+
+One of the best practices for code documentation is to keep it as close to the code as possible. It makes it easier for developers to find the necessary information when working with the code. For example, inline comments and function or module-level documentation should be placed directly within the source code files.
+
+In addition to inline and module-level documentation, it's essential to create external documentation that provides an overview of the project, installation instructions, and other key information. This external documentation can be stored in a central location, such as a README file or a wiki, easily accessible and discoverable by developers and other stakeholders. Placing this information in a central location ensures that everyone involved in the project has a single source of truth for understanding the code and its associated processes.
+
+For more extensive documentation, such as API documentation or user guides, create separate documentation files or even a dedicated documentation website. These resources can be stored alongside the code in the same version control repository or hosted separately using documentation hosting platforms like Read the Docs or GitHub Pages.
+
+It's also crucial to make documentation accessible to all stakeholders involved in the project, including developers, project managers, testers, and end-users. It means ensuring that the documentation is written in clear, concise language that is easy to understand, even for non-technical stakeholders.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[NVIDIA Picasso: Generative AI Visual Applications](https://www.nvidia.com/en-us/gpu-cloud/picasso/)*
+
+Aris: "NVIDIA Picasso is a cloud service for building generative AI-powered visual applications. It opens new worlds of possibilities. Differentiate your application with custom generative AI models. Three main features are currently available: Text-to-Image, Text-to-Video, and Text-to-3D."
+
+![memo](/assets/images/memo16.png) *[Microsoft brings GPT-4-powered Security Copilot to incident response](https://www.bleepingcomputer.com/news/microsoft/microsoft-brings-gpt-4-powered-security-copilot-to-incident-response/)*
+
+Yoga: "Microsoft has announced a new AI-powered security analysis tool called Security Copilot, which uses a ChatGPT-like interface to assist security analysts in making faster decisions during incident response and threat hunting. It also integrates data and insights from other Microsoft security tools to provide custom guidance for each organization. While the tool is currently in private preview, Microsoft has not yet announced details regarding its public rollout."
+
+![memo](/assets/images/memo16.png) *[Twitter's Recommendation Algorithm](https://blog.twitter.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm)*
+
+Brain: "Twitter's recent decision to open source the algorithm for curating the "For you" feed has sparked intriguing discussions regarding the platform's use of hard-coded elements, such as Elon Musk's name. However, this move exemplifies the potential of open source technology, enabling technical scrutiny and ethical review from a vast network of software developers."
+
+![memo](/assets/images/memo16.png) *[Build a .NET API in 3 Minutes with ChatGPT](https://medium.com/bytehide/dotnet-api-with-chat-gpt-98593f87028a)*
+
+Dika: "In this interesting article, the author tried to utilize ChatGPT to create Rest API in C# in less than 3 minutes. The subject is managing a workout routine. In the first step, he asks it to create a Rest API related to his topic, and then in the second step, he asks it to add related properties and then database schema. In the last step, he asks it to create an example code to call the API. That inspires other people to create useful things using ChatGPT relatively quickly."
+
+![memo](/assets/images/memo16.png) *[Microsoft Edge launches Workspaces test that lets us share browser tabs](https://www.theverge.com/2023/4/5/23671661/microsoft-edge-workspaces-test-browser-tabs-share)*
+
+Rizqun: "Microsoft's Edge browser has launched a limited public preview of its Workspaces feature, allowing users to save and share browser tabs using a single link. The feature enables users to group tabs on a specific topic into neatly labeled sets within the browser and share them with colleagues in real-time. The new feature does not share private information with others, including passwords, downloads, collections, extensions, or cookies."
