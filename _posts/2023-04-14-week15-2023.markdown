@@ -1,0 +1,95 @@
+---
+layout: post
+title:  "Week #15 2023 - Software Quality Assurance"
+date:   2023-04-14 20:00:00 +0700
+---
+
+## Software Quality Assurance
+
+In today's fast-paced and competitive technology landscape, software quality assurance (SQA) plays a pivotal role in the success of any software development project. Ensuring the final product meets customer expectations and is free of defects leads to increased customer satisfaction, reduces costs, and improves your team's reputation.
+
+Software Quality Assurance (SQA) is a systematic process that involves planning, implementing, and monitoring various activities throughout the software development life cycle (SDLC) to ensure that the software product meets the desired quality standards. The main objective of SQA is to provide a framework for delivering high-quality software by identifying potential defects and flaws and addressing them during the development process before releasing them to users.
+
+SQA encompasses a wide range of activities, including the following:
+
+1. **Process Definition**: Defining standardized processes and best practices for software development, such as coding standards, design principles, and project management methodologies.
+2. **Process Implementation**: Ensuring that the defined processes are adequately adopted and followed by the development team by providing training, documentation, and tools to support their execution.
+3. **Process Monitoring**: Regularly reviewing and analyzing the effectiveness of the established processes to identify areas for improvement and ensure they continue to align with the project goals and requirements.
+4. **Verification and Validation**: Performing activities to verify and validate that the software product meets the specified requirements and quality standards. Verification involves checking that the product is built according to the design, while validation ensures that it fulfills its intended purpose and meets the needs of its users.
+5. **Reviews and Inspections**: Regularly assess the software artifacts (such as requirements, design documents, code, and test cases) to identify defects and discrepancies early in the development process.
+6. **Testing**: Executing various tests (such as unit, integration, system, and acceptance tests) to identify and fix defects in the software product.
+7. **Risk Management**: Identifying, assessing, and mitigating potential risks that may impact the quality of the software product, such as schedule overruns, resource constraints, or changing requirements.
+8. **Documentation**: Creating and maintaining comprehensive documentation of the software product, processes, and test results to provide a clear understanding of the system, facilitate communication among team members, and enable future maintenance and enhancements.
+9. **Quality Audits**: Conduct internal or external audits to ensure the software development process meets the defined quality standards and practices.
+
+__vs. Quality Control__
+
+Quality Assurance (QA) and Quality Control (QC) are two closely related yet distinct concepts in the realm of software development. Both play a crucial role in ensuring the delivery of high-quality software products, but their main focus and the activities they involve differ.
+
+**Quality Assurance (QA) - Process-Oriented**: QA is a proactive, process-oriented approach that prevents defects and ensures software quality throughout the development life cycle. It involves establishing and maintaining a set of standardized processes, methodologies, and best practices to be followed by the development team. An organization can develop the software systematically and adhere to established quality standards by implementing QA practices.
+
+**Quality Control (QC) - Product-Oriented**: On the other hand, QC is a reactive, product-oriented approach that focuses on detecting and fixing defects in the software product before its release. It involves conducting various testing and inspection activities to validate that the developed software meets the defined requirements and quality standards. The primary goal of QC is to identify and rectify defects and discrepancies in the software, ensuring that the final product is of the highest quality. Some key QC activities include:
+
+- Test planning and designing test cases
+- Executing tests (manual, automated, or exploratory)
+- Reviewing and inspecting software artifacts (code, design documents, requirements, etc.)
+- Reporting and tracking defects
+- Verifying defect fixes and performing regression testing
+
+__SMART criteria__
+
+Setting clear quality goals is crucial as it helps align the entire team and stakeholders on the expected level of software quality. It provides a benchmark against which the final product can be evaluated and ensures everyone is working towards the same objectives.
+
+Utilizing the SMART criteria for setting quality goals can further enhance their effectiveness, making them more actionable and measurable.
+SMART is an acronym for **Specific**, **Measurable**, **Achievable**, **Relevant**, and **Time-bound**. Here's how the SMART criteria can be applied to setting quality goals:
+
+1. **Specific**: Clearly define the quality goals to ensure they are easy to understand and unambiguous. It eliminates any confusion among team members and stakeholders about what needs to be achieved. For example, instead of a vague goal like "Improve application performance," use a specific goal such as "Reduce application load time by 25%."
+2. **Measurable**: Make the quality goals quantifiable to track and evaluate progress and success easily. Establish clear metrics and key performance indicators (KPIs) that will be used to measure the achievement of these goals. For instance, use metrics like defect density, test coverage, or mean time to detection to gauge the effectiveness of your QA efforts.
+3. **Achievable**: Set realistic and attainable quality goals that consider the resources, expertise, and time available to the team. Unrealistic goals may lead to frustration, demotivation, and failure to meet expectations. Ensure that the goals are challenging yet achievable, given the project constraints and capabilities of the team.
+4. **Relevant**: Align the quality goals with the project's and the organization's overall objectives. The goals should relate to the software's intended purpose, target users, and market requirements. It ensures that the focus remains on delivering a high-quality product that meets the needs of the end users and adds value to the organization.
+5. **Time-bound**: Establish a clear timeline for achieving the quality goals. It helps create a sense of urgency and encourages the team to prioritize their efforts effectively. Setting deadlines for specific milestones, such as the completion of testing phases or the resolution of critical defects, can help keep the project on track and ensure that quality objectives are met within the stipulated time.
+
+__Testing Techniques__
+
+Several testing techniques can be employed in a software development project, and selecting the right combination of these techniques is crucial to achieving comprehensive coverage and high-quality software:
+
+1. **Manual Testing**: Manual testing involves human testers checking the application's functionality against the specified requirements. This type of testing is particularly valuable for uncovering usability issues, visual inconsistencies, and exploring complex scenarios that may not be easily automated.
+2. **Automated Testing**: Automated testing uses scripts and tools to execute predefined test cases, allowing for quick and efficient testing of large application parts. Automation can be beneficial for repetitive tasks, regression testing, and validating specific functionality that may be time-consuming or tedious to test manually.
+3. **Exploratory Testing**: Exploratory testing is a less structured approach where testers actively explore the application to identify defects without relying on predefined test cases. This type of testing helps uncover issues that may not have been anticipated during the test planning phase and encourages testers to think critically and creatively.
+4. **Performance Testing**: Performance testing focuses on evaluating the responsiveness, reliability, and scalability of the application under various conditions, such as high user load or constrained system resources. It ensures that the software meets the performance goals defined in the SMART criteria.
+5. **Security Testing**: Security testing involves assessing the application's ability to protect sensitive information and withstand malicious attacks. This type of testing helps identify vulnerabilities and risks, ensuring that the software is secure and adheres to the relevant security standards.
+6. **Usability Testing**: Usability testing focuses on evaluating the application's user interface and overall user experience to ensure that it is intuitive, easy to use, and meets the needs of its target audience.
+
+Using a mix of testing techniques allows teams to maximize test coverage, uncover various types of defects, and ensure that the software meets the defined quality standards.
+
+__Quality-Oriented Mindset__
+
+The importance of a quality-oriented mindset within a software development team cannot be overstated. When team members focus on delivering high-quality software, they take ownership of their work, resulting in more thorough testing, cleaner code, and better-designed software products. A shared commitment to quality ensures everyone is accountable for the final product, ultimately leading to more reliable, efficient, and user-friendly software that meets the defined quality goals.
+
+A quality-oriented mindset also contributes to early defect detection, as team members are more likely to identify and address issues at the beginning of the development process. It reduces the costs of fixing problems later in the project or after the software release.
+
+Furthermore, a culture of continuous improvement encourages open communication and collaboration between team members. This collaborative environment helps break down silos and fosters a more efficient and effective development process, where every member contributes their expertise towards enhancing the software's quality.
+
+Teams that embrace a quality-oriented mindset and continuous improvement culture are better equipped to adapt to project changes. This adaptability ensures their software products remain relevant and competitive, providing a solid foundation for success in the technology-driven market.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Adobe Firefly: Generative AI made for creators](https://firefly.adobe.com/)*
+
+Aris: "Adobe Firefly is a new tool that lets creators generate high-quality content quickly and easily using natural language input. It supports various types of content and makes it simple to make changes and produce limitless variations on-brand. Firefly will be integrated into Adobe's leading tools and services, allowing users to effortlessly incorporate generative AI into their workflows."
+
+![memo](/assets/images/memo16.png) *[Introducing Segment Anything: Working toward the first foundation model for image segmentation](https://ai.facebook.com/blog/segment-anything-foundation-model-image-segmentation/)*
+
+Brain: "Meta is joining the race in AI by introducing their new technology called Segment anything model (SAM). It can accurately identify which image pixels belong to an object, which has many applications, from analyzing scientific imagery to editing photos. It would also improve AR/VR by performing gaze-based object detection."
+
+![memo](/assets/images/memo16.png) *[Hackers target .NET developers with malicious NuGet packages](https://www.bleepingcomputer.com/news/security/hackers-target-net-developers-with-malicious-nuget-packages/)*
+
+Yoga: "Attackers are targeting .NET developers by delivering cryptocurrency stealers through the NuGet repository and impersonating legitimate packages via typosquatting. Three malicious packages were downloaded over 150,000 times within a month, but the number of compromised systems is unknown. This attack is part of a larger campaign, with over 144,000 phishing-related packages uploaded on multiple open-source package repositories in 2022."
+
+![memo](/assets/images/memo16.png) *[MERCURY and DEV-1084: Destructive attack on hybrid environment](https://www.microsoft.com/en-us/security/blog/2023/04/07/mercury-and-dev-1084-destructive-attack-on-hybrid-environment/)*
+
+Frandi: "The Microsoft Threat Intelligence team reported a new destructive operation (code name: MERCURY), a nation-state actor that attacked both on-premises and cloud environments. The article provides indicators of compromise (IOCs) and advanced hunting queries that can be used to identify and remediate devices that are vulnerable to the attack."
+
+![memo](/assets/images/memo16.png) *[Amazon announced Bedrock AI platform](https://aws.amazon.com/bedrock/)*
+
+Rizqun: "Amazon has introduced Amazon Bedrock, a suite of generative AI tools that allows Amazon Web Service customers to build chatbots, create and summarize text, and generate and classify images based on prompts. With the release of Bedrock, Amazon is set to compete with enterprise offerings from OpenAI and other tech giants in the generative AI space, as the company continues to invest heavily in large language models and generative AI."
