@@ -1,0 +1,104 @@
+---
+layout: post
+title:  "Week #16 2023 - Image Optimization"
+date:   2023-04-21 20:00:00 +0700
+---
+
+## Image Optimization
+
+In the digital age, images are crucial in shaping user experiences and capturing attention. Slow-loading pages can lead to user dissatisfaction, increased bounce rates, and decreased search engine rankings.
+
+As web applications evolve, the need for effective image optimization remains as relevant as ever. While the concept of image optimization is not new, staying up-to-date with the latest techniques and best practices is essential for web developers and designers in this fast-paced, ever-changing industry.
+
+Image optimization is the process of adjusting and fine-tuning images to reduce their file size while maintaining an acceptable level of visual quality. It can be achieved through various techniques such as compression, format selection, and resizing.
+
+Image optimization's primary purpose is to enhance web applications' overall performance by decreasing page load times, improving user experience, and reducing bandwidth consumption.
+
+__Common Image formats__
+
+Several common image formats are widely used in web applications, each with unique strengths and weaknesses. Let's take a look at these formats:
+
+1. **JPEG (Joint Photographic Experts Group)**: JPEG is a lossy compression format that works well for photographs and images with a wide range of colors. It allows for adjustable compression levels, trading between file size and image quality.
+2. **PNG (Portable Network Graphics)**: PNG is a lossless compression format suitable for images with sharp edges, text, and transparency. It offers better image quality than JPEG, but often at the expense of larger file sizes.
+3. **GIF (Graphics Interchange Format)**: GIF is an older lossless format primarily used for simple animations and images with limited colors. Due to its limited color palette and less efficient compression, it is less suitable for complex images or photographs.
+4. **SVG (Scalable Vector Graphics)**: SVG is a vector-based format that uses mathematical formulas to define shapes, lines, and colors. It is ideal for icons, logos, and illustrations, as it maintains image quality at any scale without increasing file size.
+5. **WebP**: Developed by Google, WebP is a modern image format that provides both lossless and lossy compression options. It typically achieves smaller file sizes than JPEG and PNG while maintaining comparable image quality, making it an attractive choice for web applications.
+
+__Lossless vs. Lossy Compression__
+
+Compression techniques play a vital role in image optimization, significantly impacting file size and image quality. There are two primary types of compression: lossless and lossy.
+
+**Lossless compression** reduces the file size of an image without any loss of quality. This method can perfectly reconstruct the original image data from the compressed data. This compression type works well for images with sharp edges, text, and transparency, making it a popular choice for formats like PNG and GIF. Common lossless compression tools and algorithms include PNGCrush, OptiPNG, and Zlib.
+
+On the other hand, **Lossy compression** reduces the file size by discarding some of the image data, which may result in a slight loss of visual quality. However, this loss is often negligible, and the reduction in file size can be significant, making it a suitable choice for images with a wide range of colors and intricate details, such as photographs. Formats like JPEG and WebP utilize lossy compression techniques. Examples of lossy compression tools and algorithms include JPEGmini, MozJPEG, and Google's Guetzli.
+
+Balancing file size and image quality is the primary trade-off between lossless and lossy compression. Lossless compression maintains image quality at the expense of larger file sizes, while lossy compression can achieve smaller file sizes but may result in slightly degrading image quality.
+
+__Simple guidelines for choosing an image format__
+
+For images with a wide range of colors, gradients, and intricate details, such as photographs, use the JPEG or WebP format. These formats offer efficient lossy compression, resulting in smaller file sizes without significantly losing visual quality. WebP is a more modern format and generally yields better compression, but keep in mind that all browsers may not support it.
+
+Use the PNG format for images that require sharp lines, crisp text, or transparent backgrounds, such as logos, graphics, and UI elements. PNG offers lossless compression and preserves image quality but may result in larger file sizes than lossy formats.
+
+Use the GIF format for simple animations or images with a limited number of colors (up to 256). However, be cautious about using GIFs for complex images, as they may not provide the best visual quality or compression efficiency.
+
+Use the SVG format for scalable graphics, such as icons, logos, and illustrations. Since SVG is a vector-based format, it maintains image quality at any scale and has relatively small file sizes. Additionally, SVG images can be easily manipulated with CSS and JavaScript, offering greater flexibility in web design.
+
+While selecting an image format, it's essential to consider browser compatibility. For example, WebP offers excellent compression and quality but may not be supported by all browsers. In such cases, you may need to provide fallback options, such as using the **picture** element or **srcset** attribute to serve different formats based on browser capabilities.
+
+__Responsive Images__
+
+Responsive images refer to the practice of serving different versions of an image to users based on factors like device screen size, resolution, and viewport dimensions. The goal is to ensure images look good and load efficiently on various devices, from high-resolution desktop monitors to smaller mobile screens.
+
+The importance of responsive images in modern web design can be attributed to the following factors:
+
+- **Device Diversity**: With the proliferation of various devices such as smartphones, tablets, and desktop computers, each with different screen sizes and resolutions, it's crucial to ensure that images look sharp and well-proportioned across all devices. Responsive images ensure users receive an image optimized for their specific device, providing the best possible user experience.
+- **Network Efficiency**: By serving smaller, lower-resolution images to devices with smaller screens or slower internet connections, responsive images can reduce the amount of data needed to load a page. This results in faster page load times and more efficient use of network resources, which is especially important for users with limited data plans or slow internet connections.
+- **Improved SEO**: Faster-loading websites with optimized images are generally ranked higher by search engines, as page load speed is an important factor in rankings. Implementing responsive images can help improve your website's SEO and increase its visibility in search results.
+
+Several techniques for implementing responsive images in web applications, like **srcset** attribute, **sizes** attribute, and **picture** element.
+
+__Lazy loading__
+
+Lazy loading is a web optimization technique that delays loading non-critical or off-screen content until the user scrolls near or interacts with the content. This technique is commonly applied to images, videos, and other media, but it can also be used for other content types, such as scripts or iframes.
+
+Lazy loading offers several benefits for web performance:
+
+1. **Faster initial page load times**: By deferring the loading of off-screen content, lazy loading reduces the initial amount of data required to render a page. This results in faster page load times, as the browser can focus on loading only the immediately visible content to the user.
+2. **Reduced bandwidth consumption**: Lazy loading minimizes the amount of data that needs to be transferred, especially on pages with a large number of images or media files. It is particularly beneficial for users with limited data plans or slow internet connections, as it ensures that they only download the content they actually view.
+3. **Improved user experience**: Faster page load times and smoother scrolling can significantly enhance the user experience, as users do not need to wait for the entire page content to load before interacting with it.
+4. **Resource prioritization**: Lazy loading allows browsers to prioritize critical content, such as text and visible images, before loading non-critical or off-screen content. It ensures that important content is available to users as quickly as possible.
+
+__Content Delivery Network (CDN)__
+
+A Content Delivery Network (CDN) is a geographically distributed network of servers designed to serve content to users with high availability, high performance, and reduced latency. CDNs store and cache copies of website assets, such as images, stylesheets, and scripts, on multiple servers spread across different locations. When a user requests a web page or asset, the CDN delivers the content from the server nearest to the user, significantly reducing the time it takes to transfer data over the internet.
+
+CDNs help the implementation of image optimization in several ways:
+
+1. **Reduced latency**: By serving images from a server geographically closer to the user, CDNs minimize the round-trip time between the user's device and the server, resulting in faster image loading times and a more responsive user experience.
+2. **Load balancing**: CDNs distribute the traffic load across multiple servers, preventing any single server from becoming a bottleneck due to high traffic volumes. It ensures that images and other assets are served efficiently, even during traffic spikes or high-demand periods.
+3. **Caching and compression**: Many CDNs offer built-in caching and compression features that can further optimize image delivery. For example, some CDNs can automatically compress images in real-time using advanced algorithms or serving different versions of image cache based on device type or network conditions, enabling the delivery of responsive images with minimal effort from the developer.
+4. **Enhanced reliability and availability**: CDNs provide redundancy and fault tolerance by storing multiple copies of content on different servers. If one server becomes unavailable or experiences an issue, the CDN can seamlessly route requests to another server, ensuring that images and other content remain accessible.
+5. **Security**: CDNs often include features such as DDoS protection and secure content delivery, helping to safeguard your website and its assets from malicious attacks and unauthorized access.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Canva reveals 'magic' new AI apps for marketers](https://www.techradar.com/news/canva-reveals-magic-new-ai-apps-for-marketers)*
+
+Dika: "Canva has launched new AI-powered tools for marketers to create high-quality content easily. The tools include Smart Resize, Smart Distribute, and Background Remover, aimed at automating the image resizing, image layout adjustment, and background removal process. Canva aims to reduce the time and effort required to create high-quality designs, making it easier for marketers to create engaging content."
+
+![memo](/assets/images/memo16.png) *[Microsoft Edge tests a sidebar that we can pin to our desktop](https://www.theverge.com/2023/4/14/23683479/microsoft-edge-detachable-sidebar-windows-11)*
+
+Rizqun: "Microsoft Edge is testing a new feature in its Canary version that allows users to detach and mount the browser's sidebar to their desktop. This feature allows users to access the sidebar tools, such as Bing's AI chatbot and email, even when Edge is minimized, making it a convenient way to access tools without interrupting workflow."
+
+![memo](/assets/images/memo16.png) *[Elon Musk reportedly purchases thousands of GPUs for generative AI project at Twitter](https://arstechnica.com/information-technology/2023/04/elon-musk-reportedly-purchases-thousands-of-gpus-for-generative-ai-project-at-twitter/)*
+
+Yoga: "Elon Musk, CEO of Twitter, recently bought around 10,000 GPUs for a generative AI project within Twitter. The project is reportedly a large language model (LLM) similar to ChatGPT. The GPUs will likely be housed in Twitter's Atlanta data center, and the project's exact nature is unknown. Musk's purchase of GPUs is estimated to be worth tens of millions of dollars and may be seen as undermining his calls for caution on the subject of AI development."
+
+![memo](/assets/images/memo16.png) *[Check out the new C# 12 preview features!](https://devblogs.microsoft.com/dotnet/check-out-csharp-12-preview/)*
+
+Brain: "Microsoft dev team announced C# 12 and introduced several new features, such as Primary Constructors, Using directives for additional types, and Default values for lambda expressions. I like the direction and improvement the dev team made to reduce boilerplate code, and I look forward to using them in future projects."
+
+![memo](/assets/images/memo16.png) *[DDoS attacks shifting to VPS infrastructure for increased power](https://www.bleepingcomputer.com/news/security/ddos-attacks-shifting-to-vps-infrastructure-for-increased-power/)*
+
+Yoga: "DDoS attacks in Q1 2023 have shifted from using compromised IoT devices to exploiting breached VPS servers, making botnets up to 5,000 times stronger. It happens due to the newer generation of botnets using leaked API credentials or known exploits to enslave vulnerable and misconfigured VPS servers. Attacks are increasing in size and duration, targeting various industries, and require automated defense strategies."

@@ -1,0 +1,103 @@
+---
+layout: post
+title:  "Week #17 2023 - Social Engineering"
+date:   2023-04-28 20:00:00 +0700
+---
+
+## Social Engineering
+
+__The Sony Pictures Hack__
+
+One morning in late 2014, Sony Pictures employees were shocked to discover that their corporate network had been hacked. They saw some cryptic messages on their screens that were believed to be put by the attacker, identified as the "Guardian of Peace." 
+
+The attacker infiltrated Sony's computer network and wreaked havoc on the company, all because of a cleverly crafted spear-phishing email. They began by sending a seemingly innocent email to a Sony executive disguised as a message from a trusted partner. The email contained a link to a "confidential document" that, when clicked, unleashed malware into Sony's system.
+
+This malicious software quickly spread throughout the organization, granting the hackers unprecedented access to confidential company data. In the days and weeks that followed, the attackers released a massive amount of sensitive information, including personal emails, employee data, and even unreleased movies.
+
+This high-profile incident at Sony Pictures Entertainment demonstrates the potential impact of social engineering attacks on even the most prominent organizations. By understanding social engineering techniques, individuals and businesses alike can take the necessary steps to recognize and combat these threats, preventing similar cyber catastrophes from happening to them.
+
+References:
+- [Sony Pictures hack - Wikipedia](https://en.wikipedia.org/wiki/Sony_Pictures_hack)
+- [The 2014 Sony hacks, explained - Vox](https://www.vox.com/2015/1/20/18089084/sony-hack-north-korea)
+- [Sony Hackers Used Phishing Emails to Breach Company Networks | Tripwire](https://www.tripwire.com/state-of-security/sony-hackers-used-phishing-emails-to-breach-company-networks)
+- [Awareness Lessons from the Sony Hack | CSO Online](https://www.csoonline.com/article/2919050/awareness-lessons-from-the-sony-hack.html)
+
+__Social Engineering__
+
+Social engineering is a term used to describe the manipulation of individuals into divulging sensitive information or performing actions that can compromise their or an organization's security. It is a non-technical method of cyber-attack that relies on exploiting human psychology and trust rather than exploiting technical vulnerabilities in computer systems.
+
+Social engineering attacks work by taking advantage of human emotions, cognitive biases, and the natural tendency to trust and help others. Attackers often conduct extensive research on their targets, gather information through social media or other public sources, and use them to make their deceptive tactics more convincing. By posing as a trusted individual, organization, or authority figure, the attacker can persuade the target to reveal sensitive information, download malware, or even transfer funds directly to the attacker.
+
+Understanding social engineering is essential for several reasons:
+
+1. **Prevalence**: Social engineering attacks are increasingly common in the digital world, as they often yield significant financial gains for attackers and require little technical expertise to execute.
+2. **Impact**: These attacks can have severe consequences for individuals and organizations, including financial loss, reputational damage, and unauthorized access to sensitive information or systems.
+3. **Human Factor**: Social engineering attacks target the weakest link in any security system - the human element. By understanding how social engineering works, individuals can be better prepared to identify and resist these attempts at manipulation.
+4. **Prevention**: A comprehensive understanding of social engineering techniques enables organizations to develop more effective security policies, implement employee training programs, and create a security-aware culture to help prevent these attacks.
+
+__Phishing: The Art of Digital Deception__
+
+Phishing is a type of social engineering attack that aims to deceive individuals into providing sensitive information, such as usernames, passwords, credit card numbers, or personally identifiable information, by posing as a trustworthy entity. Phishing attacks often occur through email but can also be carried out via text messages, phone calls, or social media platforms.
+
+Phishing works by exploiting human psychology and trust. Attackers create fraudulent communications that look like legitimate messages from trusted sources, such as banks, online retailers, or popular websites. These messages often contain a sense of urgency, prompting the recipient to take immediate action, such as clicking a link or downloading an attachment. The link may lead to a fake website that mimics a genuine one, where the victim is asked to enter sensitive information, which the attacker then captures. Alternatively, the attachment may contain malware that infects the victim's device once opened.
+
+__Baiting: Luring Victims with Irresistible Offers__
+
+Baiting is a type of social engineering attack that lures victims into a trap by offering them something enticing, such as free software, exclusive content, or valuable information. The attacker aims to deceive the victim into taking action that will compromise their security, such as clicking a malicious link, downloading infected files, or revealing sensitive information.
+
+**Example**: An attacker might create a fake social media post offering free gift cards to a popular store or a limited-time discount on a highly sought-after product. The post includes a link, which supposedly leads to the offer. However, when the victim clicks on the link, they are directed to a malicious website that infects their device with malware or prompts them to provide personal information to claim the offer.
+
+__Pretexting: The Master of Disguise__
+
+Pretexting is a form of social engineering in which an attacker fabricates a scenario or creates a false identity to deceive their target and manipulate them into providing sensitive information or granting access to restricted areas or systems. The attacker typically conducts extensive research on their target, gathering information to make their pretext more convincing and believable. 
+
+Pretexting attacks can be challenging to recognize, as they often involve skilled manipulators adept at exploiting human psychology and trust.
+
+**Example**: An attacker may pose as a representative from the target's bank, claiming they must verify some account details due to suspected fraudulent activity. The attacker might use publicly available information about the target, such as their address or family member's name, to establish credibility and build trust. Once the target believes the caller is genuinely from the bank, they may provide sensitive information, such as account numbers, passwords, or other personal details, which the attacker can use for fraud or to gain unauthorized access to the target's accounts.
+
+__Quid Pro Quo: A Favor for a Favor__
+
+Quid pro quo is a type of social engineering attack where an attacker offers a service or favor in exchange for sensitive information or access to a target's system. The term "quid pro quo" translates to "something for something." In the context of social engineering, it involves the attacker providing something of perceived value to the victim in return for the desired information or access.
+
+Quid pro quo attacks can be challenging to detect, as they exploit human nature and the desire to reciprocate kindness or assistance.
+
+**Example**: An attacker may call employees within a company, posing as an IT support technician, and claim they are helping to resolve a common software issue. The attacker offers to fix the problem for the employee and asks for the employee's login credentials to access their computer remotely. The employee, believing the caller is genuinely providing assistance, provides their credentials. The attacker can then use this information to gain unauthorized access to the employee's computer and potentially compromise the company's network.
+
+__Protection Strategies__
+
+Implementing practical strategies and guidelines can help organizations protect employees from social engineering threats. Here are some key steps to consider:
+
+1. **Security awareness training**: Regularly educate employees about various social engineering techniques, including phishing, baiting, pretexting, and quid pro quo. Teach them how to recognize these attacks and provide guidelines on the appropriate response.
+2. **Establish clear policies**: Develop and enforce clear organizational policies for handling sensitive information, granting access to systems, and communicating with external parties. Ensure employees understand and follow these protocols.
+3. **Verify identities**: Encourage employees to verify the identity of unknown individuals before sharing sensitive information or granting access to systems. It can include checking email addresses and phone numbers or verifying the request through a separate communication channel.
+4. **Two-factor authentication (2FA)**: Implement two-factor authentication for accessing sensitive systems and data. It adds an additional layer of security, making it more difficult for attackers to gain unauthorized access using stolen credentials.
+5. **Regular updates and patches**: Keep software and operating systems up to date with the latest security patches to reduce the risk of malware infections or system vulnerabilities.
+6. **Encourage reporting**: Foster a culture where employees feel comfortable reporting suspicious activity, emails, or requests without fear of repercussions. It can help the organization identify and respond to threats more effectively.
+7. **Secure email practices**: Implement email security measures, such as spam filters, email authentication, and anti-phishing tools, to help protect employees from phishing attacks and other malicious emails.
+8. **Monitor and restrict access**: Limit access to sensitive information and systems based on employees' roles and responsibilities. Regularly monitor and audit access logs to identify unusual activity or potential security breaches.
+9. **Incident response plan**: Develop a comprehensive incident response plan that outlines the steps to be taken in the event of a social engineering attack or security breach. Train employees on their responsibilities and ensure they know how to respond effectively.
+10. **Continual improvement**: Regularly review and update security policies, procedures, and training programs to stay current with evolving threats and best practices. Encourage employee feedback to identify potential areas for improvement.
+
+By adopting these strategies and fostering a security-conscious culture, organizations can significantly reduce the risk of social engineering attacks and better protect their employees, data, and systems.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft Edge can now generate images with AI](https://www.bleepingcomputer.com/news/microsoft/microsoft-edge-can-now-generate-images-with-ai/)*
+
+Yoga: "Microsoft Edge is now the first and only browser with an integrated AI image generator called Image Creator, powered by the latest DALL∙E models from OpenAI. Additionally, the browser is also getting Drop, which allows users to share files and notes across devices, and Efficiency Mode, which optimizes the browser's performance and reduces energy consumption."
+
+![memo](/assets/images/memo16.png) *[Amazon offers free access to its AI coding assistant to undercut Microsoft](https://www.theverge.com/2023/4/13/23681796/amazon-ai-coding-assistant-codewhisperer-microsoft)*
+
+Rizqun: "Amazon has made its AI-powered coding assistant, CodeWhisperer, free for individual developers, undercutting the pricing of its rival, Microsoft's Copilot. Originally available only to Amazon Web Services customers, CodeWhisperer generates code based on text prompts, automatically filters out biased suggestions, and comes with security scanning features."
+
+![memo](/assets/images/memo16.png) *[Boston Dynamics robot dog can answer your questions now, thanks to ChatGPT](https://www.zdnet.com/article/boston-dynamics-robot-dog-can-answer-your-questions-now-thanks-to-chatgpt/)*
+
+Frandi: "A YouTube video showcased how ChatGPT was injected into a robot dog to respond to natural language instructions. The robots' advanced abilities, paired with AI, caused some people to worry about the end of civilization, but the AI expert Santiago Valderrama put those worries to rest with his tweet."
+
+![memo](/assets/images/memo16.png) *[LinkedIn gets a free verified badge that let us prove where we work](https://www.theverge.com/2023/4/12/23679998/linkedin-verification-badge-system-clear-microsoft-entra)*
+
+Rizqun: "LinkedIn is introducing a free verification system that enables users to confirm their identity and workplace. Verification can be done through an email address, Microsoft's Entra verified ID platform, or CLEAR, which allows users to display that their identity is verified on their LinkedIn profile. LinkedIn's verification will be free, unlike other social media platforms, and highlighted profiles will feature a green and blue check."
+
+![memo](/assets/images/memo16.png) *[Bye Bye Swagger and Postman — Built-in Rest Client of VS 2022](https://medium.com/@atakankorez/bye-bye-swagger-and-postman-built-in-rest-client-for-vs-2022-9be7df9322e9)*
+
+Dika: "The article discusses the new built-in REST client feature in Visual Studio 2022, which eliminates the need for developers to use external tools like Swagger or Postman for testing APIs. The author explains how to use the REST client in Visual Studio 2022 and highlights its key features, such as the ability to save requests, import/export collections, and automatically generate code snippets. The author also notes the built-in REST client's benefits, including increased productivity and reduced dependency on third-party tools."
