@@ -1,0 +1,96 @@
+---
+layout: post
+title:  "Week #18 2023 - Interpretable Machine Learning"
+date:   2023-05-05 20:00:00 +0700
+---
+
+## Interpretable Machine Learning
+
+As machine learning continues to revolutionize various industries, its integration into critical decision-making processes is rapidly becoming the norm. From diagnosing diseases to approving loans and even influencing judicial outcomes, AI-driven systems hold immense power in shaping our lives. However, with great power comes great responsibility, and as these algorithms grow more complex, the need for transparency and interpretability becomes increasingly crucial.
+
+Interpretable machine learning (IML) seeks to unveil the inner workings of these complex models, transforming them from inscrutable black boxes into transparent systems that can be understood, trusted and improved. By diving into the rationale behind AI-generated decisions, IML aims to make machine learning more accessible and accountable, mitigating potential biases and errors in the process.
+
+__A Deeper Look__
+
+Interpretable machine learning (IML) is a subfield of AI that focuses on developing techniques and methods to understand and explain the decision-making processes of machine learning models. The primary goal of IML is to create transparent and understandable models that allow stakeholders, including developers, end-users, and regulators, to gain insights into how and why the AI system generates specific outputs or predictions.
+
+Interpretability is important for some reasons, which include:
+
+1. **Trust and accountability**: As machine learning models become increasingly integrated into critical applications, ensuring they are transparent is crucial for building trust among users. Interpretability fosters accountability by allowing individuals to validate the model's decision-making process and identify potential errors or biases.
+2. **Ethical considerations**: Interpretability is essential for ensuring fairness and ethical AI development. By understanding how a model makes decisions, developers can identify and address unintended biases, ensuring that the AI system does not perpetuate existing inequalities or inadvertently discriminate against certain groups.
+3. **Debugging and model improvement**: Interpretable machine learning models are easier to debug and refine, as their inner workings can be examined and understood. It allows developers to identify issues, optimize performance, and enhance the model's effectiveness.
+4. **Regulatory compliance**: In some sectors, such as finance and healthcare, interpretability may be required for regulatory compliance. As AI systems become more prevalent, regulators will increasingly demand transparency and accountability to ensure that AI-powered decisions are ethical, unbiased, and reliable.
+
+In some cases, though, interpretability may not be a top priority. For example, when a model's predictions have low stakes or minor consequences, the need for transparency might be less critical. In domains such as image recognition, recommendation systems, or natural language processing, where the consequences of errors are relatively minor, interpretability may be less essential than achieving high accuracy or efficiency. In these scenarios, a complex but highly accurate model might be preferred over a simpler, more interpretable one.
+
+__Intrinsically interpretable models__
+
+Intrinsically interpretable models are machine learning models designed to be easily understood and explained from the beginning without additional post-hoc interpretability techniques. These models prioritize transparency and simplicity, allowing humans to gain insights into the decision-making process directly from the model's structure.
+
+Some common examples of these models include:
+
+1. **Linear regression**: A simple statistical model that represents the relationship between input features and the target variable as a linear equation. The coefficients of the equation indicate the importance and direction (positive or negative) of each feature in predicting the outcome.
+2. **Logistic regression**: Similar to linear regression, logistic regression models the probability of a binary outcome (e.g., success or failure) based on input features. The coefficients, in this case, also provide insights into the relationship between the features and the likelihood of the outcome.
+3. **Decision trees**: Decision trees can be easily visualized as flowcharts, where each node represents a decision based on an input feature's value. This structure allows for a clear understanding of the decision-making process and the conditions that lead to specific predictions.
+4. **Rule-based systems**: These models generate a set of human-readable rules that describe the conditions under which a specific outcome is predicted. Users can easily understand and validate the rules, providing transparency into the model's reasoning.
+
+While intrinsically interpretable models offer transparency and ease of understanding, they may not always perform best when dealing with complex, high-dimensional data or non-linear relationships. More sophisticated models may be required in such cases, but these often come with the trade-off of reduced interpretability. It is where **model-agnostic methods** come into play, providing a flexible and versatile approach to making even the most complex models more transparent and understandable.
+
+__Model-agnostic methods__
+
+Model-agnostic interpretability techniques can be applied to any machine learning model, regardless of its underlying structure or complexity. These techniques aim to extract insights and explanations from a wide variety of models, from simple linear regressions to complex deep learning networks, without requiring modifications to the model itself.
+
+Some widely-used model-agnostic interpretability techniques include:
+
+1. **Local Interpretable Model-agnostic Explanations (LIME)**: LIME explains individual predictions by approximating the complex model with a simpler, interpretable model (such as linear regression) within a local region around the data point of interest. The simplified model can then provide insights into the most influential features in making that specific prediction.
+2. **Permutation Importance**: This technique measures the importance of each feature by calculating the change in the model's performance when the feature values are randomly shuffled. A significant drop in performance indicates that the feature is important for the model's predictions.
+3. **Shapley Values**: Based on cooperative game theory, Shapley values attribute the contribution of each feature to the prediction for a specific instance by considering all possible feature combinations. This method provides a suitable measure of feature importance that can be used across various types of models.
+4. **Counterfactual Explanations**: Counterfactual explanations provide insights by presenting alternative scenarios where the model's prediction would have been different. For example, a counterfactual explanation in a loan approval model might reveal that if an applicant had a slightly higher income, their loan application would have been approved.
+
+__Case Studies__
+
+<u>*Diagnosing Medical Conditions*</u>
+
+In the healthcare industry, interpretable machine-learning models have been instrumental in identifying patterns and predicting diseases from medical images or patient data. For instance, researchers have used interpretable deep-learning models to diagnose diabetic retinopathy from retinal images. By employing techniques like LIME or Extreme Gradient Boosting (XGBoost), they could identify the specific regions within the images the model used to diagnose. This transparency helped doctors validate the model's predictions and allowed them to explain the AI-driven diagnosis to patients, fostering trust in the system.
+
+<u>*Approving Loans*</u>
+
+Financial institutions use AI-powered models to assess the creditworthiness of loan applicants. In one case, a bank implemented an interpretable gradient boosting model to predict the likelihood of loan default. The model provided feature importance rankings, allowing the bank to understand which factors were most critical in the decision-making process, such as credit score, income, and employment history. This interpretability enabled the bank to justify its lending decisions to customers and regulators, ensuring fairness and compliance with financial regulations.
+
+<u>*Predicting Recidivism Rates*</u>
+
+AI systems have been employed in the criminal justice system to predict the risk of reoffending for individuals released from incarceration. Researchers at Stanford developed an interpretable and fair machine-learning model for recidivism prediction. For example, the paper "Delayed Impact of Fair Machine Learning" by B. Ustun, A. Spangher, and Y. Liu, utilized interpretable techniques to provide insights into the most influential factors in predicting reoffending, such as age, criminal history, and social connections.
+
+__Challenges and Future Directions__
+
+Interpretable machine learning is an active area of research driven by the growing need for transparency, accountability, and trust in AI systems. Despite the progress made in developing interpretable models and techniques, there remain several challenges and limitations that researchers are working to address.
+
+One of the fundamental challenges in interpretable machine learning is finding the <u>right balance between model performance and interpretability</u>. Future research aims to develop new methods and techniques to maintain high performance while offering improved interpretability.
+
+Many interpretable machine learning techniques, especially model-agnostic methods, can be computationally expensive, limiting their applicability to large-scale problems or real-time applications. Developing <u>scalable interpretability techniques</u> that can handle large datasets and complex models is a crucial area of ongoing research.
+
+Future research must also explore more ways to <u>integrate fairness constraints</u> into interpretable models and techniques and develop methods to detect and <u>mitigate biases</u> in model predictions.
+
+As the end-users of interpretable machine learning models are often non-experts, developing techniques that cater to human cognition and intuition is vital. Future research will incorporate cognitive science, psychology, and human-computer interaction insights to develop interpretable models that <u>align with human understanding</u>.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft's new open-source project makes it easy to build generative AI into your applications](https://github.com/microsoft/semantic-kernel)*
+
+Brain: "The current trend in building an LLMs-powered application is to use LangChain, an SDK that allows several features such as prompt management, long-term memory, embeddings, and chaining. However, the library currently only supports Python and NodeJS. Microsoft releases this new open-source project to make it easy to build generative AI into applications and supports C#. Good news if you currently can't afford to learn Python from scratch."
+
+![memo](/assets/images/memo16.png) *[Failure Mitigation for Microservices: An Intro to Aperture](https://doordash.engineering/2023/03/14/failure-mitigation-for-microservices-an-intro-to-aperture/)*
+
+Frandi: "Interesting article from the DoorDash engineers explaining the importance of the globalized approach in mitigating microservice failures instead of just the localized mechanism. Although they specifically introduced Apperture in the use case, an open-source flow control tool for cloud-native apps, we can also learn the common failures found in the distributed system and how to mitigate them."
+
+![memo](/assets/images/memo16.png) *[Google's New Passkey Login Helps You Break Free of Passwords](https://www.cnet.com/tech/services-and-software/googles-new-passkey-login-helps-you-break-free-of-passwords/)*
+
+Dika: "The article discusses Google's new Passkey feature, which aims to make logging in easier and more secure by eliminating the need for passwords. Passkey allows users to authenticate themselves using a physical security key, such as a USB or NFC device, or their Android phone as a security key. It eliminates the need to remember complex passwords or worry about them being stolen or hacked. The Passkey feature is currently available on Google's Chrome browser, and while it's a promising technology, it may take time for it to become widely adopted."
+
+![memo](/assets/images/memo16.png) *[The Potentially Dangerous Non-Accessibility Of Cookie Notices](https://www.smashingmagazine.com/2023/04/potentially-dangerous-non-accessibility-cookie-notices/)*
+
+Frandi: "Almost every website today includes the cookie consent widget in their pages. The article's author takes us to learn the accessibility aspect of the component. He listed some problems like contrast errors, pseudo buttons, unlabeled form fields, broken dialog semantics, and the solutions to fix them."
+
+![memo](/assets/images/memo16.png) *[File-sharing site Zippyshare shutting down after 17 years](https://www.bleepingcomputer.com/news/technology/file-sharing-site-zippyshare-shutting-down-after-17-years/)*
+
+Yoga: "File-sharing website Zippyshare is shutting down by the end of March 2023 due to rising costs and diminishing revenue. The site, which generates revenue through advertisements, is one of the largest on the web, receiving over 43 million monthly visits. However, the operators state that traffic to the site is steadily dropping, and an increasing number of visitors use ad blockers, reducing advertising revenue. Additionally, the sharp rise in electricity prices has made running the site's server infrastructure much costlier, further diminishing profits. Users have until the end of the month to back up important files."
