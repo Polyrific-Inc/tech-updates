@@ -1,0 +1,98 @@
+---
+layout: post
+title:  "Week #19 2023 - DevSecOps"
+date:   2023-05-12 20:00:00 +0700
+---
+
+## DevSecOps
+
+As cyber threats become increasingly sophisticated and prevalent, organizations must adapt their security strategies to keep up with the ever-evolving landscape. DevSecOps emerges as a powerful solution that addresses these concerns and ensures that security is no longer treated as a second-class citizen in software development. By seamlessly integrating security practices within the DevOps process, DevSecOps creates a more secure, efficient, and dependable software development pipeline, on par with the importance of application security itself.
+
+__Core Principles__
+
+DevSecOps, a portmanteau of Development, Security, and Operations, is an approach to software development that integrates security practices within the DevOps process. It aims to make security an intrinsic part of the entire software development lifecycle (SDLC) instead of being a separate, isolated phase. The core principles of DevSecOps include the following:
+
+- **Shifting security left**: Integrating security measures early in the development process rather than adding them at later stages or after deployment.
+- **Collaboration**: Encouraging close cooperation between development, operations, and security teams to create a shared responsibility for security.
+- **Automation**: Leveraging automation tools and technologies to continuously monitor, test, and improve security across the SDLC.
+- **Continuous learning**: Adopting a culture of continuous learning, improvement, and adaptability to stay ahead of emerging threats and vulnerabilities.
+
+The core principles above contrast the DevSecOps approach with the more traditional one. Traditional security approaches often involve a separate security team working in isolation from the development and operations teams. Security measures are typically added towards the end of the development cycle or after deployment, sometimes leading to delays and conflicts. This "bolt-on" approach to security can create gaps and inefficiencies, leaving software vulnerable to attacks.
+
+__The Significance of Shifting Left__
+
+The significance of integrating security measures early in the development process cannot be overstated. It plays a crucial role in enhancing the overall security posture of software applications.
+
+By shifting security left, potential vulnerabilities and issues can be identified and addressed much earlier. It enables developers to resolve security concerns before they become more significant problems, reducing the likelihood of security breaches and decreasing the overall risk.
+
+As vulnerabilities are identified and resolved early, the need for extensive and expensive rework or patching is minimized, saving both time and resources. It is generally more cost-effective than fixing them after deployment.
+
+When security measures are integrated from the outset, development and deployment cycles can be significantly faster. Security concerns are addressed in tandem with other development tasks, reducing delays and allowing for a more agile development process. And it, of course, leads to improving the overall quality of the software application.
+
+__Key Components of Success Implementation__
+
+To successfully implement DevSecOps, organizations need to incorporate several key components into their software development processes. These components contribute to a more secure, efficient, and collaborative environment.
+
+<u>*Code Analysis*</u>
+
+Code analysis refers to the process of examining source code to identify potential security vulnerabilities, coding errors, and other issues that may impact the security or functionality of a software application. Code analysis includes both static and dynamic analysis methods.
+
+The **Static Application Security Testing (SAST)** can be done with tools like SonarQube, Checkmarx, or Veracode. While the **Dynamic Application Security Testing (DAST)** can be done with tools like AppScan, Acunetix, or Rapid7 InsightAppSec.
+
+<u>*Change Management*</u>
+
+Change management in DevSecOps involves tracking, reviewing, and controlling changes to software code, infrastructure, and configurations. This process ensures that changes are assessed for potential security risks and vulnerabilities.
+
+Change management can be implemented through version control (Git, Mercurial, Subversion), issue-tracking (Jira, GitHub Issues), and code review practices.
+
+<u>*Compliance Management*</u>
+
+Compliance management ensures software development processes and applications adhere to relevant industry regulations, standards, and organizational policies. It includes monitoring and auditing for compliance and maintaining documentation to demonstrate adherence to requirements.
+
+Compliance management can be implemented by incorporating compliance scanning tools (OpenSCAP, Chef InSpec, Prisma Cloud) and configuration management tools (Ansible, Puppet, Chef) into the CI/CD pipelines.
+
+<u>*Threat Modeling*</u>
+
+Threat modeling is the process of identifying, prioritizing, and addressing potential threats and vulnerabilities in software applications. This process involves assessing the potential attack surface, understanding the potential attackers, and evaluating the impact of potential threats.
+
+Threats modeling can be done with several methods, like [STRIDE](https://en.wikipedia.org/wiki/STRIDE_%28security%29), [PASTA](http://securesoftware.blogspot.com/2012/09/rebooting-software-security.html), [LINDDUN](https://linddun.org/), [CVSS](https://www.first.org/cvss/specification-document), etc. And to simplify the process, several tools can be used for threat modeling, like [Microsoft Threat Modeling Tool](https://learn.microsoft.com/en-us/azure/security/develop/threat-modeling-tool), [IriusRisk](https://www.iriusrisk.com/), and [ThreatModeler](https://threatmodeler.com/).
+
+<u>*Security Training*</u>
+
+Security training ensures that developers, operations staff, and security teams have the necessary skills and knowledge to incorporate security practices into their work effectively. This way, they are expected to be able to make independent security decisions when building and deploying the application.
+
+Many only courses are available as a preparation to pursue security-focused certifications, like Certified Ethical Hacker (CEH), CompTIA Security+, and CISSP.
+
+__Overcoming Challenges__
+
+One of the most significant challenges in adopting DevSecOps is creating a culture where development, operations, and security teams effectively <u>collaborate and share responsibility</u> for application security. To overcome this, encourage open communication and cross-functional training and establish a blameless culture focused on learning and improvement. It can help break down silos and create a more unified approach to security.
+
+As organizations transition to DevSecOps, <u>integrating security practices into existing development and operations processes</u> can be a complex endeavor. To address this, start by pinpointing areas where security practices can be conveniently integrated, such as adding security checks to the CI/CD pipeline or using IAC for consistent security configurations. Expanding the scope of integration as the organization becomes more comfortable with the new approach will lead to a smoother transition.
+
+With a wide array of tools and technologies available for implementing DevSecOps, <u>choosing the right ones for your organization's needs</u> can be challenging. To tackle this, first thoroughly assess your organization's requirements and existing infrastructure. Prioritize tools that integrate well with your current systems and provide the necessary functionality, starting with open-source solutions and gradually moving to commercial tools as needed.
+
+DevSecOps demands <u>team members possess diverse skills</u>, including expertise in development, operations, and security. Invest in continuous learning and training programs to address the potential skills gap, encouraging team members to obtain relevant certifications and attend industry events. Partnering with external experts or consultants can also supplement your team's skills as needed.
+
+<u>Measuring the success of a DevSecOps implementation</u> can be challenging due to the various influencing factors, such as reduced vulnerabilities, increased deployment frequency, and improved team collaboration. To overcome this, establish clear, measurable objectives and key performance indicators (KPIs) for your DevSecOps initiative. Regularly tracking and reporting on these metrics allows the organization to gauge progress toward its goals and adjust strategies accordingly.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft Announcing a new version of the .NET Upgrade Assistant](https://devblogs.microsoft.com/dotnet/upgrade-assistant-general-availability/)*
+
+Brain: "If you have considered upgrading your current .NET project, now might be a good time. Microsoft just announced a new version of their .NET Upgrade assistant, with support to converting your Xamarin projects into .NET MAUI, as well as for upgrading Azure Functions version."
+
+![memo](/assets/images/memo16.png) *[Google launches an AI coding bot for Android developers](https://www.theverge.com/2023/5/10/23717328/google-ai-coding-studio-bot-android-developers-io)*
+
+Rizqun: "Google has launched Studio Bot, an AI coding tool that helps Android developers by generating code, fixing errors, and providing answers about Android. It supports Kotlin and Java programming languages and is accessible within the Android Studio toolbar. Although it is only available to US developers and in the early stages, Studio Bot positions Google as a competitor to Microsoft's GitHub Copilot and Amazon's CodeWhisperer in the AI coding tool market."
+
+![memo](/assets/images/memo16.png) *[Apple and Google team up to fight Bluetooth tracker stalking](https://www.bleepingcomputer.com/news/technology/apple-and-google-team-up-to-fight-bluetooth-tracker-stalking/)*
+
+Yoga: "Apple and Google have proposed a new industry standard to combat stalking via Bluetooth-enabled location-tracking devices. The draft specification suggests that vendors making such devices should make it easier to alert targeted individuals when unwanted tracking occurs. The proposed standard covers various tracking methods and is compatible with Android and iOS devices, simplifying the detection of unwanted tracking via location-tracking accessories."
+
+![memo](/assets/images/memo16.png) *[Introducing Duet AI for Google Cloud – an AI-powered collaborator](https://cloud.google.com/blog/products/application-modernization/introducing-duet-ai-for-google-cloud)*
+
+Rizqun: "Google has introduced Duet AI for Google Cloud, an AI-powered assistant that simplifies cloud development. It offers code assistance, real-time recommendations, error detection, chat assistance for guidance, and the ability to create business applications without coding. These features aim to enhance accessibility, efficiency, and personalization in cloud development."
+
+![memo](/assets/images/memo16.png) *[The Chaos of Maintaining Software Dependencies and How to Tame Them](https://medium.com/inside-bukalapak/the-chaos-of-maintaining-software-dependencies-and-how-to-tame-them-413cc233d800)*
+
+Frandi: "We know developers have love and hate-relationships with dependencies. In a way, we don't want to reinvent the wheels, so dependencies are the savior to get things done quickly. But, if we don't carefully maintain dependencies, they easily become nightmares. This article will take you to dive deeper into the world of dependencies."
