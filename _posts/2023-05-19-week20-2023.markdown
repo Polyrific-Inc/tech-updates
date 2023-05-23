@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "Week #20 2023 - Cloud-Ready Applications"
+date:   2023-05-19 20:00:00 +0700
+---
+
+## Cloud-Ready Applications
+
+As the name implies, cloud-ready applications are designed and optimized to run in cloud environments. These applications can fully leverage the benefits of cloud computing, including increased efficiency and improved flexibility. The applications are built with scalability in mind, capable of expanding or contracting their resources on demand. They are developed to be resilient and distributed, often spread across multiple servers or locations to ensure optimal performance and reliability.
+
+On the other hand, traditional applications, often called legacy applications, were created before the advent of cloud computing. These applications are typically designed to run on a specific hardware environment and may have limitations in terms of scalability and resilience. The transition to the cloud is not always straightforward for these applications; they might need to be significantly modified or entirely rewritten to fully take advantage of cloud capabilities.
+
+The shift from traditional to cloud-ready applications is like moving from a single-family home to a high-rise apartment building. In a single-family home, everything—from utilities to repairs—is your responsibility. But in an apartment building, while you still have your own private space, many responsibilities are shared or managed at the building level, such as utilities, security, and maintenance. Similarly, cloud-ready applications allow businesses to offload some responsibilities to the cloud provider, enabling them to focus on their core competencies.
+
+__But my app is already hosted in the cloud. It's already a cloud app, isn't it?__
+
+Simply hosting an application in the cloud does not necessarily make it a cloud-ready application. The fundamental difference lies in the design philosophy and architectural approaches adopted during the application's creation.
+
+An application can be hosted in the cloud without being cloud-ready, much like you can drive a city car off-road. It may work to some degree, but it won't be as effective, efficient, or beneficial as a vehicle designed specifically for that environment, like a 4x4. In this context, the city car is akin to a traditional application moved to the cloud, and the 4x4 represents a cloud-ready application.
+
+When an application is merely hosted in the cloud, it is often lifted and shifted from a traditional on-premises setup. The application might still follow the old architecture, design, and patterns, where the ability to effectively utilize the benefits of the cloud, such as scalability, elasticity, distributed processing, and high availability, may not be fully realized.
+
+In contrast, a cloud-ready application is designed from the ground up to leverage the capabilities of the cloud. It follows the principles of cloud-native architecture, including microservices, containers, and serverless functions. These design aspects allow the application to fully use cloud computing's benefits, such as easy scalability, resilience, and resource optimization. Moreover, cloud-ready applications are designed with the understanding that failure can occur, so they incorporate strategies for rapid recovery and continuation of service without human intervention.
+
+__Key Principles and Characteristics__
+
+Defining a precise formula for what makes an application "cloud-ready" can be complex due to the variety of potential cloud architectures and application designs. However, there are several fundamental principles and characteristics that such applications commonly embody:
+
+1. **Interoperability**: Interoperability is the ability of different systems and services to operate together. It allows a cloud-ready application to seamlessly integrate with other services, enhancing functionality and facilitating collaboration.
+2. **Platform Agnostic**: By being platform-agnostic, applications can run on different cloud platforms without significant modifications. It allows businesses to choose the best platform for their needs or use multiple platforms simultaneously.
+3. **Continuous Delivery**: The principle of continuous delivery involves frequently and reliably releasing new features, improvements, or bug fixes, enabling organizations to respond quickly to changes in requirements or market conditions.
+4. **Statelessness**: Cloud-ready applications need to be stateless whenever possible. It means that any session state data is stored either client-side or in a service designed for this purpose, improving reliability and scalability.
+5. **Immutability**: Immutability is the concept where servers, once launched, are never updated but instead replaced with new ones when updates are needed. This practice increases consistency and reliability, simplifies rollbacks, and helps in troubleshooting.
+6. **Loose Coupling**: Developing loosely coupled systems, where each component is independent and interacts with others through APIs, is encouraged. This separation allows components to be updated independently, increases scalability, and reduces the impact of system failures.
+
+__The Challenges__
+
+Building a cloud-ready application comes with its own set of challenges. It's important to remember that each cloud migration journey is unique. Challenges will differ based on factors like the existing technology stack, team skill set, and the application's specific requirements. But with the right approach, these obstacles can be turned into opportunities for learning and growth. 
+
+Here are some common challenges encountered during the development and deployment of cloud-ready applications, along with suggested strategies and best practices to navigate these issues effectively.
+
+1. **Managing Complexity**: Cloud applications can often be more complex than traditional applications, especially when adopting architectures like microservices. Managing numerous loosely coupled services can be challenging. <u>*Comprehensive monitoring and observability tools*</u> can help manage this complexity. Adopting standard conventions, automated deployments, and maintaining thorough documentation can also be beneficial.
+2. **Security and Compliance**: Data security is a paramount concern in the cloud. Ensuring data is secure in transit and at rest, managing user identities and access, and complying with regulations can be challenging. Aware of this risk, almost all cloud providers have equipped their services with a set of tools to mitigate the security and compliance issue. These could include <u>*encryption tools, identity and access management services, and compliance monitoring tools*</u>. It is also crucial to stay updated with the latest security best practices and ensure that all team members are aware of their roles in maintaining security.
+3. **Performance**: Ensuring consistent performance across various geographical locations can be challenging in cloud applications due to latency and other network-related issues. <u>*Use Content Delivery Networks (CDNs), caching, and other techniques*</u> to reduce latency. Consider designing your application to be geographically distributed to ensure it is close to end users.
+4. **Cost Management**: Without careful management, cloud costs can quickly escalate due to the pay-as-you-go nature of cloud services. <u>*Implement strong governance and make use of cost monitoring and management tools*</u> provided by cloud platforms. Carefully architect your application to make efficient use of resources.
+5. **Skills Gap**: Cloud technologies are evolving rapidly, and there can often be a skills gap within organizations that are new to these technologies. <u>*Investing in training and education is key*</u>. Consider partnerships with consulting firms and seek assistance from your cloud provider. In some cases, hiring new talent with experience in your cloud technologies may also be necessary.
+
+__Do I need to migrate my legacy app to the cloud?__
+
+Transitioning legacy applications to the cloud is not always a straightforward process and is not always necessary. The decision to migrate a legacy application should be driven by business needs and the potential benefits of such a move. For instance, a business might choose to migrate to the cloud to reduce operating costs, increase scalability, improve resilience, or take advantage of other cloud capabilities.
+
+Here are several strategies to consider when planning the migration of legacy applications:
+
+1. **Rehosting (Lift-and-Shift)**: This is the most straightforward approach, involving moving the application to the cloud without making any changes. It is often a first step and is typically quick to implement, but it may not take full advantage of the cloud's features.
+2. **Replatforming**: This involves making minor optimizations to the application to take advantage of cloud capabilities. It might include changes like moving to a managed database service or adopting a cloud-based load balancer.
+3. **Refactoring (Re-architecting)**: This involves significant changes to the application's architecture to fully leverage the benefits of the cloud. It could include moving to a microservices architecture, adopting serverless computing, or other substantial changes. It is often the most complex and time-consuming approach, but it also offers the most benefits in terms of cloud optimization.
+4. **Repurchasing**: This involves moving to a different product that's already cloud-based. For example, moving from a self-hosted CRM to a SaaS solution like Salesforce.
+5. **Retiring**: Some parts of the application might no longer be needed and can be retired, reducing the complexity of the migration.
+6. **Retain**: In some cases, keeping the application in its current environment may make sense. Not all applications will benefit from a move to the cloud.
+
+When migrating a legacy application, it's important to thoroughly analyze the application and its dependencies. This analysis should inform the migration strategy and help identify potential challenges. Often, organizations will adopt a hybrid approach, migrating different parts of the application using different strategies.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft 365's AI-powered Copilot is getting more features and paid access](https://www.theverge.com/2023/5/9/23716591/microsoft-365-copilot-preview-expansion-ai-features-paid-access)*
+
+Rizqun: "Microsoft is expanding access to its AI-powered Microsoft 365 Copilot, bringing AI capabilities to Microsoft 365 apps and services. The Copilot offers features like semantic indexing, integration with apps such as Microsoft Whiteboard and PowerPoint, and coaching in Outlook. It will be available through an invitation-only paid preview for 600 customers to enhance productivity and workflow optimization."
+
+![memo](/assets/images/memo16.png) *[WordPress Elementor plugin bug let attackers hijack accounts on 1M sites](https://www.bleepingcomputer.com/news/security/wordpress-elementor-plugin-bug-let-attackers-hijack-accounts-on-1m-sites/)*
+
+Yoga: "A vulnerability was discovered in the "Essential Addons for Elementor" WordPress plugin that could allow remote attackers to gain administrator access to a site. The flaw, as discovered on May 8, 2023, affects versions 5.4.0 to 5.7.1 of the plugin and is an unauthenticated privilege escalation vulnerability in the password reset functionality. The issue was fixed in version 5.7.2 of the plugin, released on the same day, and all users are recommended to update to the latest version as soon as possible."
+
+![memo](/assets/images/memo16.png) *[ChatGPT vs. Bing vs. Google Bard: Which AI Is the Most Helpful?](https://www.cnet.com/tech/services-and-software/chatgpt-vs-bing-vs-google-bard-which-ai-is-the-most-helpful/)*
+
+Dika: "The article compares three AI language models: ChatGPT, Bing, and BARD, to determine the most helpful in answering questions. ChatGPT provided the most informative responses, followed by BARD and Bing. The author concludes that ChatGPT is the most helpful AI language model for answering questions because it provides detailed and contextually relevant information. However, the choice of AI to use ultimately depends on the user's needs and preferences."
+
+![memo](/assets/images/memo16.png) *[Google I/O '23 in under 10 minutes](https://www.youtube.com/watch?v=QpBTM0GO6xI&list=TLGGCy91ScdjTPYxNzA1MjAyMw)*
+
+Brain: "In case you missed last week's event, you can find the recap in this video. There are a lot of AI announcements since the market is currently trending toward this new exciting technology. [Project Tailwind](https://thoughtful.withgoogle.com/about) seems exciting to me since we can interact with notebooks with chat interaction, and I think it could revolutionize education."
+
+![memo](/assets/images/memo16.png) *[Addressing GitHub's recent availability issues](https://github.blog/2023-05-16-addressing-githubs-recent-availability-issues/)*
+
+Frandi: "If you are a GitHub user, you probably knew there were a series of incidents in the GitHub services last week. Users were reported to experience various impacts from the incidents, ranging from degraded performance to the complete out-of-service of some features. The GitHub team wrote the necessary explanation in the article and what they are doing to prevent them from reoccurring."
