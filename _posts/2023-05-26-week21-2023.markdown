@@ -1,0 +1,91 @@
+---
+layout: post
+title:  "Week #21 2023 - Circuit Breaker Pattern"
+date:   2023-05-26 20:00:00 +0700
+---
+
+## Circuit Breaker Pattern
+
+Imagine you're on a ship, and a small leak occurs. Wouldn't it be better if this leak could be isolated to prevent the entire ship from sinking? Similarly, in the vast seas of software development, the Circuit Breaker Pattern is a vital mechanism for preventing a small problem from escalating into a full-blown catastrophe.
+
+The Circuit Breaker Pattern is a design pattern widely used in modern distributed systems. It acts as a safeguard against catastrophic cascading failures that could emanate from a single point of failure. The name "Circuit Breaker" is a metaphor borrowed from electrical engineering. Just as a physical circuit breaker cuts off an electrical circuit to prevent an overload, the Circuit Breaker Pattern in software development prevents an application from repeatedly trying to execute an operation likely to fail, thereby preventing system overload.
+
+The Circuit Breaker Pattern intercepts failures, encapsulating the logic of preventing a failure from constantly recurring during maintenance, temporary external system failure, or unexpected system difficulties. When an anomaly is detected, the circuit breaker trips, and all attempts to invoke the system will return an error immediately for a timeout period. After the timeout, the circuit breaker allows a limited number of test requests to pass through. If those requests succeed, the circuit breaker resumes normal operation; otherwise, it re-trips.
+
+Understanding and implementing the Circuit Breaker Pattern is crucial in developing resilient applications that can withstand the demands of real-world usage and unexpected failure scenarios. It promotes fault tolerance, helps to maintain system stability, and significantly improves user experience.
+
+__vs. Retry Pattern__
+
+The Retry pattern is all about perseverance. This pattern encourages the procedure to try again when an operation fails instead of giving up. It can be incredibly effective when dealing with temporary glitches that might resolve themselves within a short period. But what if the issue is more tenacious, like a network outage, a server going down, or a database failure? That's when repeated retries might aggravate the situation, consuming valuable resources and potentially exacerbating system failures.
+
+Circuit Breaker pattern, on the other hand, pays full attention to the battle between an operation and a potential failure. When it sees that failure is winning—meaning an operation fails repeatedly—it steps in and 'trips' or 'opens' the circuit breaker, preventing further attempts and allowing the system some breathing room to recover. When the timeout period is over, it cautiously allows some operations to try again—if they succeed, the circuit closes, and normal operation resumes. If they fail, the circuit remains open.
+
+__The Tale of three states__
+
+To fully appreciate the Circuit Breaker Pattern, let's dive into its inner workings by exploring its three primary states: 'Closed,' 'Open,' and 'Half-Open.'
+
+Starting with the 'Closed' state, this is the normal state of operation. When the circuit breaker is closed, all is well; requests to the system go through, and operations proceed as planned. However, when too many failures occur (exceeding a specified threshold), the circuit breaker trips and transitions to the 'Open' state.
+
+In the 'Open' state, the system takes a breather. The circuit breaker blocks all operations to the troubled system, swiftly returning error responses instead of allowing the system to continue its futile attempts to succeed. This state allows the system to recover and limits the impact of a failure on other parts of the system. After a predetermined timeout period, the circuit breaker moves into the 'Half-Open' state.
+
+The 'Half-Open' state is the cautious optimist of the trio. Here, the circuit breaker allows a limited number of requests to pass through to the system. This state is a test to see if the underlying problem has been resolved. If these trial requests are successful, the circuit breaker assumes that the system is back to its normal state and goes back to the 'Closed' state. However, if the test requests fail, it's back to the 'Open' state for another timeout period.
+
+Understanding these states and their transitions is critical to effectively implementing and managing the Circuit Breaker Pattern in your application.
+
+__The implementation toolbox__
+
+Now that we have a firm understanding of the Circuit Breaker Pattern and its operation let's explore the diverse areas where it can be implemented effectively to bolster system resilience.
+
+**In Code**: A primary application of the Circuit Breaker Pattern is directly within your application code, particularly around areas that make remote calls. These can be requests to a web service, database queries, or any operation that depends on a system outside the boundaries of your application. By placing a circuit breaker around these operations, you can prevent a single failing component from causing cascading failures throughout your system.
+
+**In Cloud Services**: Many cloud platforms provide built-in support for the Circuit Breaker Pattern. For example, AWS has a feature called AWS Fault Injection Simulator that allows you to simulate faults and monitor your systems' behavior, making it easier to apply resilience patterns like circuit breakers. Similarly, Azure and Google Cloud Platform have their own sets of tools and services that allow implementation of the pattern.
+
+**Using Middleware or Proxy Services**: Middleware or proxy services can also help you implement the Circuit Breaker Pattern. For instance, you can use a service mesh like Istio or Linkerd in a microservices architecture to provide circuit-breaking capabilities.
+
+**Third-Party Libraries**: Various open-source libraries can also help implement the Circuit Breaker Pattern. For example, Hystrix and Resilience4j are popular choices in the Java ecosystem, and Polly is widely used in .NET applications. These libraries not only provide circuit breaker functionality but also offer additional features like fallback methods and request caching, enhancing your application's resilience.
+
+__Common Pitfalls and Best Practices__
+
+Implementing the Circuit Breaker Pattern can be a game-changer for your application's resilience. However, it's crucial to be mindful of potential pitfalls it may cause.
+
+One of the main challenges is setting the right thresholds for failure count and timeout duration. Too aggressive, and you may end up blocking requests unnecessarily; too lax, and you might allow too many failures. Also, keep in mind that the Circuit Breaker Pattern does not fix the problems but rather gives your application a chance to operate normally while the issue is being resolved.
+
+These are some best practices that you can do when implementing the circuit breaker pattern on your applications:
+
+1. **Set appropriate thresholds**: Consider the nature of your operations, their usual response times, and the acceptable downtime when setting failure thresholds and timeouts.
+2. **Monitor and adjust**: Implement comprehensive monitoring and logging. It will allow you to see how often your circuit breakers are opening and why, and adjust your parameters as needed.
+3. **Ensure idempotency**: As circuit breakers can lead to operation retries, it's important to ensure operations are idempotent to avoid unwanted side effects.
+4. **Provide useful responses**: When a circuit breaker opens, provide useful feedback to the client so they know that their request failed but that it's being handled.
+5. **Implement fallbacks**: Where possible, provide a fallback action when a circuit breaker trips. It could be serving cached data or a default response.
+
+__Chaos Engineering__
+
+Chaos Engineering can be a potent tool in your arsenal to ensure the effective implementation of the Circuit Breaker Pattern and to enhance the overall resilience of your system. Coined by Netflix to describe their approach to improving system resilience, Chaos Engineering involves intentionally injecting failures into your system to test its ability to withstand unexpected disruptions.
+
+You can verify the Circuit Breaker Pattern's functionality by leveraging Chaos Engineering under real-world failure scenarios. Essentially, you can simulate faults that could occur in your production environments, such as network latency, server crashes, or database outages, and observe how your circuit breaker responds.
+
+Chaos Engineering helps you to discover potential weak spots in your system. It provides valuable insights into how your application behaves under different failure conditions, and these insights can be used to fine-tune your circuit breaker settings or identify areas of your application that need to be more resilient.
+
+Remember, the goal is not to break your system but to learn from controlled experiments that improve your understanding of the system and enhance its resilience.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft Build 2023](https://news.microsoft.com/build-2023/)*
+
+Brain: "After Google's event in recent weeks, Microsoft also has their own this week. As expected, it is also filled with many AI features and product announcements. One of the highlights is the introduction of Windows Copilot, which utilizes the latest GPT technology into the Windows OS."
+
+![memo](/assets/images/memo16.png) *[Google's AI-powered Magic Editor tool promises to 'make complex edits without pro-level editing tools'](https://www.theverge.com/23721763/google-magic-editor-ai-photos-pixel-fakery)*
+
+Rizqun: "Google showcased a new AI-powered image editing tool called the Magic Editor at Google I/O. The tool allows users to make complex edits to photos with just a few taps, including moving and scaling subjects, enhancing the sky, and removing objects. The Magic Editor is expected to be available on select Pixel phones later this year and could be integrated into smartphone camera software."
+
+![memo](/assets/images/memo16.png) *[Hackers use Azure Serial Console for stealthy access to VMs](https://www.bleepingcomputer.com/news/security/hackers-use-azure-serial-console-for-stealthy-access-to-vms/)*
+
+Yoga: "The financially motivated cybergang UNC3944 is using phishing and SIM swapping to hijack Microsoft Azure admin accounts, gain access to virtual machines, and steal data. They exploit Azure's Serial Console and Extensions for persistence and surveillance while evading detection. UNC3944 also utilizes stolen Microsoft developer accounts and deploys remote administration tools for control. Their actions highlight the risks posed by their technical knowledge, social engineering skills, and organizations' insufficient security measures."
+
+![memo](/assets/images/memo16.png) *[Flutter Flame Engine](https://docs.flame-engine.org/latest/index.html)*
+
+Dika: "Flutter Flame is an open-source game development framework designed for building games using the Flutter SDK. It provides a set of utilities, components, and tools to simplify creating 2D games. Key features of Flutter Flame include 2D Rendering, Input Handling, Animation Support, Physics Engine, Audio Support, Game Loop, and Cross-platform Support."
+
+![memo](/assets/images/memo16.png) *[Migrating Critical Traffic At Scale with No Downtime](https://netflixtechblog.com/migrating-critical-traffic-at-scale-with-no-downtime-part-1-ba1c7a1c7835)*
+
+Frandi: "The article provides a detailed explanation of how Netflix migrated their infrastructure to different environments when applying changes, like upgrading architecture, with no downtime. The process involved two stages: migrating the control plane and then migrating the data plane."
