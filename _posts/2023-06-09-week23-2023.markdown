@@ -76,7 +76,7 @@ Lastly, implementing Azure Landing Zones is not a one-time event but an ongoing 
 
 __Learn More__
 
-To learn more about Azure Landing Zone, you can go to the <u>[Microsoft Learn](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/)</u> website. The documentation is comprehensive, explaining each component in detail, how to get started, and how to move forward depending on your business requirements. You could also follow the <u>[learning path](https://learn.microsoft.com/en-us/training/paths/enterprise-scale-architecture/)</u> to create a scalable and modular architecture with Azure Landing Zone. 
+To learn more about Azure Landing Zone, you can go to the [Microsoft Learn](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/) website. The documentation is comprehensive, explaining each component in detail, how to get started, and how to move forward depending on your business requirements. You could also follow the [learning path](https://learn.microsoft.com/en-us/training/paths/enterprise-scale-architecture/) to create a scalable and modular architecture with Azure Landing Zone. 
 
 ## Tech News
 
