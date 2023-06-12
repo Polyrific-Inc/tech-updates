@@ -1,0 +1,101 @@
+---
+layout: post
+title:  "Week #23 2023 - Azure Landing Zone"
+date:   2023-06-09 20:00:00 +0700
+---
+
+## Azure Landing Zone
+
+One of the primary difficulties in managing cloud infrastructure is the sheer complexity of the numerous services, resources, and configurations to work. Without a structured approach to cloud deployments, businesses may face increased costs, security vulnerabilities, compliance issues, and operational inefficiencies. It is where the concept of guidelines and best practices becomes crucial.
+
+Developed by Microsoft, Azure Landing Zone provides a blueprint for setting up a well-structured, secure, and scalable Azure environment. They encapsulate industry best practices and Microsoft's learnings from numerous cloud deployments, offering organizations a reliable path toward a successful cloud journey.
+
+In essence, Azure Landing Zone transforms the cloud from a daunting frontier into a well-mapped territory, paving the way for businesses to harness the full potential of Azure with confidence and ease.
+
+__What is Azure Landing Zone?__
+
+Azure Landing Zone is a set of guidelines, practices, and architectures designed by Microsoft to help organizations create a robust, scalable, and secure Azure environment. 
+
+The primary purpose of Azure Landing Zone is to remove ambiguity and provide clarity to businesses as they migrate to the cloud or establish new cloud environments. They aim to help businesses avoid common pitfalls, streamline operations, and build an Azure environment that aligns with their specific business objectives.
+
+In its fundamental, Azure Landing Zone aligns closely with two important frameworks provided by Microsoft: the __Azure Well-Architected Framework__ and the __Cloud Adoption Framework__.
+
+The [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/) provides guiding tenets for building effective solutions on Azure. It focuses on five pillars: cost optimization, operational excellence, performance efficiency, reliability, and security. Azure Landing Zone incorporates these principles, ensuring that your cloud environment is not only robust and secure, but also efficient and cost-effective.
+
+Meanwhile, the [Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/overview) is a comprehensive guide for successful cloud adoption, providing best practices, documentation, and tools for each stage of the cloud journey. Azure Landing Zone serves as a practical implementation of the Cloud Adoption Framework, providing concrete guidelines and architectures that align with the framework's recommendations. 
+
+__What Azure Landing Zone is not__
+
+Azure Landing Zone provides guidance and a blueprint for creating robust, secure, and efficient cloud environments. However, it's equally important to understand what Azure Landing Zone is not.
+
+__Not a One-Size-Fits-All Solution:__ Azure Landing Zone provides a framework and best practices but is not a one-size-fits-all solution. Every organization has unique needs and requirements, and Azure Landing Zone should be customized to best suit these individual needs.
+
+__Not a Set of Hard Rules:__ Azure Landing Zone provides guidelines and recommendations, but they are not strict rules that must be followed exactly. They are designed to be flexible and adaptable to accommodate different business goals and regulatory requirements.
+
+__Not a Substitute for Planning:__ While Azure Landing Zone provides a structured approach to setting up Azure environments, they are not a substitute for careful planning and consideration of business needs, security requirements, and regulatory compliance.
+
+__Not a Product or Service:__ Azure Landing Zone is not a specific product or service offered by Microsoft. Instead, they are a set of practices and architectures to guide the implementation of Azure resources.
+
+__Not Static:__ Azure Landing Zone is not a static blueprint. As your organization grows and changes, your Azure environment should evolve too. Azure Landing Zone should be continuously refined and updated to accommodate new applications, technologies, and business requirements.
+
+In short, while Azure Landing Zone provides a valuable roadmap for successful cloud adoption, it should be viewed as a starting point that can and should be customized to meet your organization's unique needs.
+
+__Design Areas__
+
+Azure Landing Zone is broken down into various design areas. Each design area plays a vital role in the success of your cloud environment and impacts the platform foundation on which each landing zone depends. They are split into two categories: Environment design areas and Compliance design areas.
+
+Environment Design Areas: Here, we focus on the structural and organizational aspects of the cloud environment. It includes the following design areas:
+
+1. __Azure Billing and Active Directory Tenant:__ It refers to the proper creation, enrollment, and setup of billing, which is an essential initial step in establishing your landing zone​.
+2. __Identity and Access Management:__ This is a primary security boundary in the public cloud, forming the foundation for a secure and fully compliant architecture. It's all about ensuring the right individuals have access to the right resources​.
+3. __Network Topology and Connectivity:__ Decisions related to networking and connectivity form an equally important foundational aspect of any cloud architecture. It includes designing and managing virtual networks, subnets, VPN connections, and more.
+4. __Resource Organization:__ As cloud adoption scales, considerations for subscription design and management group hierarchy become more critical. These considerations can impact governance, operations management, and adoption patterns within the organization. 
+
+__Compliance Design Areas:__  It focuses on key cloud environment security, governance, and compliance aspects. It is where the foundation for solid ongoing processes and controls are established to ensure proper management of your Azure environment. These areas are:
+1. __Security:__ This involves the implementation of controls and processes to protect your cloud environments.
+2. __Management:__ This covers the establishment of a management baseline necessary for stable, ongoing operations in the cloud. It provides visibility, operations compliance, and capabilities for protection and recovery.
+3. __Governance:__ This area focuses on automating auditing and enforcing governance policies.
+4. __Platform automation and DevOps:__ This area aims to align the best tools and templates with deploying your landing zones and supporting resources.
+
+These design areas are meant to be addressed sequentially, providing a process that simplifies the design of complex environments. If you've already addressed one or more design areas to your satisfaction, you can move on to the next area. This process provides a list of roles or functions typically required to make design decisions, along with a series of considerations, recommendations, and scope boundaries to help shape the discussion and decision-making process. 
+
+__Implementation Approach__
+
+Implementing Azure Landing Zone depends mainly on your organization's unique needs and the maturity of your cloud journey. Microsoft provides different Azure Landing Zone options, each with a unique scope and level of complexity.
+1. __Start Small and Expand:__ This approach is perfect for those starting their cloud journey. The landing zone is built with minimum viable product (MVP) architecture and focuses on critical design areas such as identity, security, governance, and basic networking. As the organization grows and becomes more comfortable with Azure, additional capabilities and resources can be added.
+2. __Enterprise-Scale Landing Zone:__ Microsoft provides an enterprise-scale landing zone built on the Cloud Adoption Framework and Azure Well-Architected Framework principles for large organizations with complex needs. This approach includes everything from the start small and expand option but also includes additional components such as expanded network topology, more sophisticated management and governance structures, and comprehensive operational capabilities.
+3. __Partner Landing Zones:__ Microsoft partners offer a variety of solutions and services that can help to implement and customize Azure landing zones. This approach is helpful for organizations that need additional expertise or resources to create an effective Azure environment.
+
+Regardless of the approach, it's recommended to iterate on the landing zone implementation, continually refining and expanding capabilities as your organization's needs evolve. Azure Landing Zones should align with your organizational structure and meet your operational, security, and compliance requirements.
+
+Also, note that people, including architects and engineers, should implement Azure Landing Zones with adequate knowledge and experience in Azure. The implementation process requires strategic decisions regarding architecture, security, compliance, and operations, which should be made in collaboration with stakeholders from across the organization.
+
+Azure provides several tools to aid the implementation process, including Azure Blueprints, Azure Policy, and Azure Management Groups. These tools can help to automate and streamline the implementation process, ensuring that best practices are consistently applied across the organization.
+
+Lastly, implementing Azure Landing Zones is not a one-time event but an ongoing process. The landing zone should be continually monitored, managed, and updated to remain effective and align with changing business needs and technologies.
+
+__Learn More__
+
+To learn more about Azure Landing Zone, you can go to the <u>[Microsoft Learn](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/)</u> website. The documentation is comprehensive, explaining each component in detail, how to get started, and how to move forward depending on your business requirements. You could also follow the <u>[learning path](https://learn.microsoft.com/en-us/training/paths/enterprise-scale-architecture/)</u> to create a scalable and modular architecture with Azure Landing Zone. 
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Google Improving Accessibility on Chrome Browser](https://blog.google/outreach-initiatives/accessibility/global-accessibility-awareness-day-google-product-update/)*
+
+__Rizqun__: "Google Chrome has introduced a feature that detects URL typos and suggests corrections when entering website addresses. The feature is available on Chrome desktop and will soon be extended to mobile. Chrome on Android has also enhanced tab management for TalkBack users, offering advanced features like tab groups and bulk actions."
+
+![memo](/assets/images/memo16.png) *[Adobe Photoshop's new "Generative Fill" AI tool lets you manipulate photos with text.](https://arstechnica.com/information-technology/2023/05/adobe-photoshops-new-generative-fill-ai-tool-lets-you-manipulate-photos-with-text/)*
+
+__Yoga__: "Adobe has added "Generative Fill" to the Photoshop beta, a tool that uses AI and cloud-based image synthesis to fill selected areas of an image based on a text description. Powered by Adobe Firefly, it generates options for users to choose from by associating text descriptions with images. Generative Fill employs inpainting to blend synthesized content into an existing image seamlessly. The tool is available to Creative Cloud members and will be released for commercial use later this year. A free trial is also available on the Adobe Firefly website."
+
+![memo](/assets/images/memo16.png) *[Apple introduced Vision Pro.](https://www.apple.com/apple-vision-pro/)*
+
+__Brain__: "With current trends in AI on image manipulation & segmentation, it's only right that a new era for AR also begins. Apple is leading this race by introducing its new flagship AR product, Vision Pro. Apple has never been disappointed in product usability, so this announcement excited me. Though my excitement subsides when considering how much this device will cost."
+
+![memo](/assets/images/memo16.png) *[Using HTTP3 in Asp.net core](https://cv.bajonczak.com/using-http3-in-asp-net-core-5c125c281e81)*
+
+__Dika__: "The article explains how to use HTTP/3 with ASP.NET Core. It mentions using a server like Kestrel that supports HTTP/3 and provides code examples for setting up HTTP/3 connections in the server and client applications. Pros of HTTP/3 mentioned in the article include faster connections, improved reliability with features like automatic retransmission and error correction, and reduced latency by eliminating the need for header compression. However, there are also cons highlighted, such as limited server support compared to previous versions of the protocol, increased complexity in implementation and troubleshooting, and potential compatibility issues with older clients or firewalls."
+
+![memo](/assets/images/memo16.png) *[The growing pains of database architecture](https://www.figma.com/blog/how-figma-scaled-to-multiple-databases/)*
+
+__Frandi__: "It is interesting to know that until 2020, when their traffic grew approximately 3x annually, Figma was still using a single relational database. Of course, they started to worry because their operation could stop working at any time if they did nothing to overcome the situation. The article takes us to follow their journey in finding a new solution for the database setup."
