@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "Week #24 2023 - Data Warehouse"
+date:   2023-06-16 20:00:00 +0700
+---
+
+## TL;DR
+
+At its core, a data warehouse is a structured repository of historical data from various sources, making it a treasure trove for valuable business insights. It's designed to support data analysis and reporting rather than day-to-day transactions. The key components of a data warehouse include the data sources, data storage, and the analytics layer. Moreover, a data warehouse doesn't stand alone but interacts with other elements in the data ecosystem, such as data lakes, data marts, and Data Mesh.
+
+Recognizing when your business might need a data warehouse can be crucial. If you're struggling to consolidate data from various sources, finding it hard to perform complex queries on your operational database, or if your decision-making processes require historical, cross-departmental data, it's time to consider a data warehouse.
+
+Modern implementation of data warehousing addresses the traditional challenges of scalability, flexibility, real-time data processing, and maintenance complexity. It can be achieved through cloud-based platforms, hybrid models with data lakes, real-time processing, automation, AI, and decentralized data ownership with Data Mesh. By understanding these aspects, businesses can effectively navigate the complex data landscape and make the most of their data.
+
+__"Data Warehouse" Decoded__
+
+In today's business landscape, data is the new oil, and learning how to refine it into meaningful insights is the game-changer. Think of your business as a bustling metropolis and data as its lifeblood. A data warehouse is a sophisticated pipeline system that channels this lifeblood to the right places at the right time.
+
+A data warehouse is like a large, organized storage unit for all your data collected from various corners of your business. Unlike your day-to-day operational systems that focus on individual transactions, a data warehouse takes these pieces and fits them together to form a complete, multidimensional picture. It allows for an advanced level of analysis and insights that would be impossible with the scattered pieces alone.
+
+The data warehouse is more like the backstage of a theater show, where directors (business analysts and decision-makers) and scriptwriters (AI algorithms) use the data to orchestrate a compelling performance, i.e., drive the company's strategic decisions. It differs from the transactional database that is usually utilized by the frontline operations teams like sales clerks, warehouse managers, or customer service representatives.
+
+The setup and structure of transactional databases and data warehouses are designed differently to serve their respective purposes. The transactional database, designed for speed and precision, handles myriad transactions rapidly and concurrently. Its normalized structure aims to minimize data redundancy and maintain data integrity, keeping every piece of data interconnected and unique. Contrastingly, a data warehouse is structured for complex querying and reporting. It follows a denormalized structure, allowing data to be repeated for faster retrieval and simpler relationships between data points, facilitating the efficient extraction of meaningful insights.
+
+__The Nuts and Bolts of a Data Warehouse__
+
+Now that we've got the big picture let's peek under the hood of a data warehouse and understand its key components.
+1. Source Systems: They represent where your company's data originates - your sales databases, customer relationship management systems, online customer feedback, and more.
+2. Data Staging Area: Here, data from source systems is cleaned (removing any errors or inconsistencies), transformed (into a consistent format), and loaded for storage. It is often referred to as the ETL (Extract, Transform, Load) process.
+3. Data Storage: This is where the magic happens! All the prepped data comes together and is stored in a way that makes it easy to analyze later.
+4. Presentation Area: The presentation area of a data warehouse is where data is organized, summarized, and delivered to users (business analysts, decision-makers) in an easily digestible format. It might be through dashboards, reports, or other data visualization tools.
+
+In essence, a data warehouse is a lot like preparing a grand feast. It collects ingredients from various sources, preps them for cooking, combines them in the right way, and finally presents them in a form that's appealing and easy to understand. 
+
+__Signs That Your Business is Screaming for a Data Warehouse__
+
+Identifying when your business needs a data warehouse can be a bit like diagnosing a complex condition. There are several tell-tale signs that your business might be crying out for a data warehouse:
+1. **Data Sprawl (When Your Data Feels Like a Wild Garden):** As your business grows, your data does, too, often end up scattered across various systems and departments. If you're spending more time trying to locate and make sense of data than actually using it, it's a clear sign you need a data warehouse to organize and centralize your data.
+2. **Slow and Painful Reporting (When Waiting for Data Becomes a Pastime):** A data warehouse could be the answer if generating reports is a slow, laborious task that hampers decision-making speed. It can streamline your reporting and make it more efficient.
+3. **Inability to Answer Complex Business Questions (When Your Data Can't Keep Up with Your Questions):** If you're struggling to get answers to multidimensional business questions (like understanding the sales trend of a particular product among a specific demographic in a certain region), it's probably time for a data warehouse. A well-implemented data warehouse can offer this depth of insight.
+4. **Growing Need for Advanced Analytics (When Spreadsheets Just Don't Cut It Anymore):** If your business is ready to dive into predictive analytics, data mining, or machine learning, a data warehouse is an important stepping stone. These advanced analytical practices require the clean, integrated data that a data warehouse provides.
+
+If these signs seem familiar, it might be time to consider implementing a data warehouse. Remember, the goal is to make your data work for you, not the other way around! 
+
+__Modern Data Warehouse__
+
+Data warehouses have been the cornerstone of business intelligence for many years. However, these stalwarts face several challenges as businesses navigate an ocean of rapidly expanding and diversifying data. One of the foremost concerns is scalability. It often struggles to keep pace and becomes slower and more costly to maintain.
+
+Moreover, traditional data warehouses have often been built for structured data, exhibiting rigidity less suited to handling the variety of today's data landscape. Businesses now deal with diverse data types, from social media feeds to IoT sensor data. And with the latency from batch processing and the maintenance complexity of coordinating various components, these challenges necessitate a modern approach to data warehousing.
+
+Modern data warehousing techniques are stepping up to meet these challenges. Cloud-based data warehouses, like Amazon Redshift, Google BigQuery, and Azure Synapse Analytics, bring scalability and flexibility to the forefront. They can handle vast amounts of varied data and dynamically adjust capacity, seamlessly accommodating the growing data needs of businesses. Additionally, data lakes and hybrid models offer viable solutions for handling unstructured or semi-structured data, storing it in its raw format before structuring and analyzing it in a data warehouse.
+
+Furthermore, real-time data processing features in modern data warehouses ensure businesses can gain timely insights, avoiding the latency of traditional batch processing. Automation and AI components simplify maintenance, freeing up valuable IT resources. Meanwhile, the Data Mesh approach decentralizes data ownership to better manage complexity and align with the trend toward microservices in software development.
+
+By leveraging these modern techniques, businesses can navigate through the challenges posed by traditional data warehousing and fully harness their data's potential.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Windows 11 gets some useful widgets for CPU, memory, and GPU monitoring](https://www.theverge.com/2023/5/31/23743549/microsoft-windows-11-widgets-cpu-gpu-memory-dev-home)*
+
+**Rizqun**: "Windows widgets feature getting useful additions that let us monitor CPU, memory, and GPU usage. We can use the new widgets to monitor processor utilization and speed, memory usage, GPU temperatures and usage, and Wi-Fi or Ethernet speeds. We can get similar information from the Windows task manager or other apps, but it's neat to bring this up as a widget with the Windows key + W shortcut."
+
+![memo](/assets/images/memo16.png) *[Open AI announces new features and other API updates on ChatGPT API](https://openai.com/blog/function-calling-and-other-api-updates)*
+
+**Brain**: "OpenAI has introduced exciting updates to their language models, including a new "Function Calling" capability, updated versions of GPT-4 and GPT-3.5-turbo, and a 16k context version of GPT-3.5-turbo. They have also reduced the cost of their models, with a 75% cost reduction on their embedding model and a 25% cost reduction on input tokens for GPT-3.5-turbo. OpenAI has announced the deprecation timeline for older model versions and highlights the importance of developer feedback in improving their platform. These updates offer developers enhanced capabilities and affordability, encouraging them to explore new possibilities with the models."
+
+![memo](/assets/images/memo16.png) *[Google Docs is finally fixing one of its most annoying pain points](https://www.techradar.com/news/google-docs-is-finally-fixing-one-of-its-most-annoying-pain-points)*
+
+**Dika**: "Google is introducing an update to Google Docs to make working with tables easier and more intuitive. The update includes improved table positioning options, allowing users to drag and place tables precisely where desired. The document's contents will automatically wrap around the table, with customizable wrap directions and margins. Users can also set a fixed position for tables on a page and utilize quick layouts for instant table placement. "
+
+![memo](/assets/images/memo16.png) *[Microsoft Defender Antivirus gets 'performance mode' for Dev Drives](https://www.bleepingcomputer.com/news/microsoft/microsoft-defender-antivirus-gets-performance-mode-for-dev-drives/)*
+
+**Yoga**: "Microsoft Defender now has a "performance mode" for developers on Windows 11. This mode reduces the impact of antivirus scans on Dev Drives, a new type of storage volume offering enhanced performance and resiliency. It can lead to a build speed boost of up to 30%. Currently, it is only available for Insiders in the Windows 11 Dev Channel."
+
+![memo](/assets/images/memo16.png) *[Stack Overflow Developer Survey 2023](https://survey.stackoverflow.co/2023/)*
+
+**Frandi**: "The Stack Overflow Developer Survey result for this year is out again. These are some key takeaways: Rust is the most admired language, Phoenix is the most admired web framework and technology, Jira and Confluence are the top two async tools amongst all developers, Docker is the top-used other tools, almost all respondents are planning to use AI tools in their development process this year, more developers are working in-person this year than last year. Check out the result and see if you can find insights that interest you."
