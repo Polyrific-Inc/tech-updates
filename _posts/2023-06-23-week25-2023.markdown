@@ -1,0 +1,84 @@
+---
+layout: post
+title:  "Week #25 2023 - Vector Warehouse"
+date:   2023-06-23 20:00:00 +0700
+---
+
+## TL;DR
+
+As machine learning and AI continue to evolve, the need for efficient management of high-dimensional data becomes increasingly vital. This article explores vector databases, a new solution that efficiently handles such data, overcoming the limitations of traditional databases, which aren't designed for high-dimensional vectors and other complex data.
+
+Unlike conventional databases, Vector databases store, index, and retrieve these vectors, performing 'nearest neighbor' queries to find vectors most similar to a given one. They are essential in various fields, from recommendation systems and image recognition to natural language processing and anomaly detection.
+
+Despite these advantages, challenges exist in handling large, high-dimensional datasets, balancing search speed and accuracy, choosing suitable vector representations, and ensuring data security. By the end of this article, you'll have a thorough understanding of vector databases, their importance in today's data-intensive applications, and their challenges.
+
+__What are Vectors?__
+
+Before diving deeper into the vector database discussion, let's examine what "vector" actually is. In the realm of machine learning and artificial intelligence, a vector is a one-dimensional array of numbers where each number represents a specific feature or attribute.
+
+Think of a vector as a numerical summary of an object's characteristics. For instance, if we are dealing with images, an image can be converted into a vector where each number in the vector could represent a specific color value at a particular location in the image. Similarly, in the context of natural language processing, a piece of text or a word can be represented as a vector where each number could signify a particular semantic or syntactic feature of the word.
+
+High-dimensional vectors are used when we have objects with a large number of features. The term "high-dimensional" refers to vectors that have many numbers or dimensions. These high-dimensional vectors capture the complex, multi-faceted nature of the objects they represent.
+
+It's important to note that the specific meanings of the numbers in these vectors often depend on the machine learning model that generates them. For example, two different image recognition models might generate completely different vectors for the same image.
+
+__What is a vector database?__
+
+A vector database is a specialized type of database designed to handle high-dimensional vectors efficiently. It differs significantly from traditional relational databases, which organize data into tables of rows and columns. Instead of dealing with individual data fields, a vector database works with entire vectors as its basic unit of data.
+
+In a vector database, each vector corresponds to an object or item, and the dimensions of the vector capture various features of the item. For example, in a vector database used for an image search engine, each vector might represent an image, with the dimensions of the vector capturing the visual features of the image.
+
+Vector databases encapsulate the vector indexing functionality and combine it with traditional database management features, enabling data insertion, deletion, updating, and querying, often in a distributed and highly available environment.
+
+It's important to distinguish vector databases from vector indexing libraries, such as FAISS or Annoy. While these libraries provide the core technology for efficient vector search, they don't handle other aspects like data persistence, concurrency, distribution, or failover. Vector databases, on the other hand, offer a more comprehensive solution that addresses these aspects, making them a more viable choice for production systems that handle high-dimensional vector data. 
+
+__How Vector Databases Work__
+
+To understand how vector databases work, we need to delve into several core aspects: data representation, indexing, querying, search algorithms, and post-processing.
+1. Data Representation: In a vector database, data are represented as vectors in a high-dimensional space. Each vector in the database corresponds to an object or item, with the dimensions of the vector capturing various features of the item.
+2. Indexing: Vector databases employ specialized indexing structures designed for high-dimensional data. These structures, such as k-d trees, ball trees, or Hierarchical Navigable Small World (HNSW) graphs, allow the efficient storage and retrieval of vectors. The specific index used often depends on the data's nature and the task's requirements.
+3. Querying: Instead of retrieving data based on a specific key, a vector database performs a "nearest neighbors" query where a query vector is provided, and the database returns the vectors most similar to this query vector. The similarity is measured using various distance metrics, such as Euclidean distance or cosine similarity.
+4. Search Algorithms: Various algorithms can be used for nearest-neighbor searches in vector databases. Brute force search, while simple, can be computationally expensive as it involves comparing the query vector with every vector in the database. More efficient methods like tree-based or hashing-based search aim to prune the search space, reducing the number of comparisons needed.
+5. Post-Processing: Once the nearest neighbors have been identified, the database might perform additional post-processing steps. These could include re-ranking the results based on additional criteria, calculating similarity scores, or mapping the returned vectors back to their original items. 
+
+__Use Cases__
+
+Vector databases have a wide range of applications across various fields. Their ability to handle high-dimensional vectors efficiently suits them for tasks involving complex data types like images, videos, text, and more. Here are a few examples of where vector databases come into play:
+1. Recommendation Systems: These systems often rely on finding items similar to those a user has shown interest in. For example, an online shopping platform might use a vector database to quickly find products similar to those a customer has previously purchased or viewed, providing personalized recommendations.
+2. Image and Video Recognition: In these tasks, images or video frames can be represented as high-dimensional vectors, capturing features like color, texture, shape, and more. A vector database can then efficiently search for images or videos similar to a given one, enabling tasks like reverse image search, duplicate detection, or content-based video retrieval.
+3. Natural Language Processing (NLP): In NLP, pieces of text (like words, sentences, or documents) are often represented as high-dimensional vectors that capture semantic and syntactic features. A vector database can help perform tasks like semantic search, where the goal is to find texts that are semantically similar to a given query, even if they don't contain the exact same words.
+4. Anomaly Detection: In anomaly detection, normal behavior is often modeled using high-dimensional vectors, and anomalies are detected as vectors that are significantly dissimilar from normal ones. A vector database can efficiently compare a new vector with the existing ones and detect anomalies.
+5. Bioinformatics and Gene Sequencing: Genomic data can also be represented as high-dimensional vectors, with each dimension corresponding to a specific gene or sequence feature. Vector databases can help identify similar gene sequences or enable more efficient analysis of genomic data. 
+
+__Popular Vector Databases__
+
+As the utility of vector databases becomes increasingly evident in diverse applications, several offerings have emerged, each with its unique capabilities. Here are some popular vector databases that are making strides in this space:
+1. __[Pinecone](https://www.pinecone.io/)__: Pinecone is a fully managed vector database service that focuses on delivering simplicity without sacrificing performance. Designed specifically for machine learning applications, Pinecone supports high-dimensional vectors and provides efficient nearest-neighbor search capabilities.
+2. __[Qdrant](https://qdrant.tech/)__: Qdrant is an open-source vector similarity search engine focusing on flexibility and performance. It supports customizable distance metrics, making it adaptable to various use cases. Additionally, it offers features like vector payload, filters, and a high degree of control over the indexing process, enabling users to fine-tune the balance between search accuracy and performance.
+3. __[Chroma](https://www.trychroma.com/)__: Chroma is a high-performance vector search engine built for scalability. Designed with production workloads in mind, Chroma offers an architecture that can handle large-scale, high-throughput search requests while maintaining low latency. It supports multiple indexing strategies and distance metrics, catering to diverse application requirements.
+4. __[Weaviate](https://weaviate.io/)__: Weaviate is an open-source, GraphQL, and RESTful API-based vector search engine. It leverages machine learning models for data ingestion, transforming raw data into vectors. Weaviate stands out with its semantic search capabilities, allowing users to search their data using natural language queries and achieving more context-aware search results.
+5. __[Vespa](https://vespa.ai/)__: Developed by Yahoo, Vespa is a comprehensive big data processing and serving engine. While it caters to a broad range of data types, it has robust support for vector search. Vespa enables the serving of search and recommendation results at scale, and its versatility makes it suitable for a wide array of applications.
+
+Each of these vector databases brings its unique strengths to the table. The choice between them would depend on specific use cases, data characteristics, and operational requirements. As the field continues to evolve, we can expect these platforms to expand their capabilities further and new players to emerge.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Google Home's script editor is now live.](https://www.theverge.com/2023/6/13/23759187/google-home-script-editor-tool-automations)*
+
+**Rizqun**: "Google has launched a script editor tool for its Google Home-powered smart homes, offering more advanced automation than those available in the Google Home app. With access to over 100 starters and actions, the script editor allows users to create complex automation with advanced conditions. It does require some basic coding knowledge."
+
+![memo](/assets/images/memo16.png) *[How to use GitHub Copilot: Prompts, tips, and use cases](https://github.blog/2023-06-20-how-to-write-better-prompts-for-github-copilot/)*
+
+**Brain**: "Since generative AI tools are still a pretty novel concept, many still struggle to fully grasp how to utilize them effectively. I think this article can provide valuable insights on the best practice of crafting prompts, as well as some tips and tricks to optimize the AI's performance in your favor."
+
+![memo](/assets/images/memo16.png) *[Google Domains is another valuable service to get the ax in favor of "focus."](https://arstechnica.com/information-technology/2023/06/google-is-winding-down-google-domains-by-selling-it-to-squarespace/)*
+
+**Yoga**: "Google is shutting down its Google Domains service and selling it to Squarespace. Squarespace will take over the business, including the 10 million domains and customers. The transition is expected to be completed in Q3 2023."
+
+![memo](/assets/images/memo16.png) *[The Principles of Green Software](https://www.youtube.com/watch?v=_lYT-knNMTI&ab_channel=NDCConferences)*
+
+**Frandi**: "Green software, also referred to as sustainable software, is designed and developed to have a minimal environmental impact. The goal is to ensure the software operates efficiently, thus minimizing the energy and resources consumed during its lifecycle. It pays much attention to carbon efficiency, including energy efficiency, hardware efficiency, and carbon awareness."
+
+![memo](/assets/images/memo16.png) *[Mercedes-Benz is bringing ChatGPT into cars for the first time.](https://www.techradar.com/news/mercedes-benz-is-bringing-chatgpt-into-cars-for-the-first-time)*
+
+**Dika**: "Mercedes-Benz is launching a beta program in the US to enhance its MBUX Voice Assistant with OpenAI's ChatGPT. Drivers will have more dynamic conversations with the AI, expanding their natural language understanding. Microsoft's Azure OpenAI Service ensures security and privacy. The beta program will collect and analyze conversation data to improve AI. Availability in other regions and languages is unknown."
