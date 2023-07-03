@@ -1,0 +1,99 @@
+---
+layout: post
+title:  "Week #26 2023 - Machine Learnings Embeddings"
+date:   2023-06-30 20:00:00 +0700
+---
+
+## TL;DR
+
+Embeddings in machine learning are a transformative technique used to convert categorical variables or text into continuous vectors, enabling machine learning algorithms to process and understand them more effectively. They capture the semantic relationships between different categories, which is critical in fields like Natural Language Processing (NLP) and recommendation systems.
+
+The process of learning and updating embeddings occurs during a model's training. It usually starts with random values and is then adjusted over time to encapsulate the inherent relationships between categories as the model becomes better at performing its task. Importantly, through a technique known as transfer learning, we can leverage pre-trained embeddings learned from large datasets to improve the performance of a new task, particularly when the available data is limited.
+
+A key aspect of embedding is its dimensionality, which refers to the length of the vector representing each category. Selecting the appropriate dimensionality is a delicate balance between capturing enough information and avoiding overfitting - higher dimensionality allows for more nuanced relationships but increases the risk of overfitting, particularly for smaller datasets. Understanding and leveraging embeddings is vital for handling categorical and text data, driving advancements in various machine learning applications.
+
+__Categorical data__
+
+One of the core components of Machine Learning algorithms that are particularly used in handling categorical or textual data is a concept known as embeddings.
+
+Categorical data pose unique challenges to traditional machine learning algorithms due to their discrete and often high-dimensional nature. Herein lies the beauty and importance of embeddings - they provide a powerful tool to transform and represent categorical data in a form that machine learning algorithms can process more effectively.
+
+By converting categorical data into a form where 'similar' categories are close to each other in the vector space and 'dissimilar' categories are farther apart, embeddings significantly enhance the performance of machine learning models. This process provides a robust solution for managing the so-called "curse of dimensionality," a common challenge in machine learning where the dimensionality of the data is so high that the data becomes sparse and machine learning algorithms struggle to find patterns.
+
+__The basic of Embeddings__
+
+So, what exactly are embeddings in machine learning?
+
+At their core, embeddings are mathematical tools that translate high-dimensional categorical data into a lower-dimensional space, transforming complex, discrete entities into continuous vectors that preserve the semantic relationships of the original data.
+
+Consider the example of words in a text document. Each word is a discrete entity with no inherent numerical representation that a computer can understand. One could assign a unique ID to each word, but this approach doesn't capture any semantic meaning or relationship between the words. Here is where embeddings come in.
+
+Embeddings provide a continuous and compact vector representation of each word such that the spatial relations in the embedding space capture the semantic relations in the original space. For example, synonyms are mapped to nearby points; the same goes for other types of semantically related words. The fascinating part is that these vectors can even capture more complex relationships; for instance, the difference between the vectors for 'king' and 'queen' is similar to the difference between 'man' and 'woman.'
+
+Each element of these vectors can be considered a feature representing the word. The entire set of vectors for all words forms a 'vector space,' and the 'distance' between two vectors in this space is a measure of the difference or similarity between the corresponding words.
+
+One popular measure of distance is cosine similarity, which considers the cosine of the angle between two vectors. If the vectors point in the same direction, they are considered similar, regardless of their magnitudes. It allows us to measure similarity in terms of 'direction' in the embedding space, which is often more meaningful than 'distance' when dealing with high-dimensional data. 
+
+__Learning and Updating Embeddings__
+
+How do machine learning models actually learn these embeddings?
+
+The embeddings are typically initialized with small random numbers at the start of the learning process. The magic happens during the training of the model. As the model learns from the input data to make accurate predictions or reduce the loss for its prediction task, it adjusts the embeddings to better capture the semantic relationships between the categories.
+
+These adjustments are made through a process called backpropagation, a core algorithm in deep learning. Backpropagation efficiently computes the gradient, or the partial derivative of the loss function, with respect to the weights of the model, including the embeddings. The embeddings are then updated in a direction that minimizes the loss.
+
+The embeddings are updated iteratively over multiple epochs or complete passes through the training dataset. Each update nudges the embeddings slightly in a direction that makes the model's predictions more accurate.
+
+From here, you can see that the embeddings are not explicitly programmed to understand the semantics of the categories. Instead, they learn to capture these semantics as a byproduct of the model learning to perform its task.
+
+Understanding this process is essential because it means that the quality of the embeddings heavily depends on the quality of the training data and the appropriateness of the task the model is trained on. If the data is biased or the task does not capture the semantics we are interested in, the embeddings will reflect these limitations. 
+
+__Transfer Learning__
+
+A powerful concept that has emerged in machine learning is the ability to use learned knowledge for one task to help solve a different but related task. This concept is known as transfer learning.
+
+We don't always have much-labeled data for training our models in many real-world scenarios. It is where transfer learning becomes especially useful. It allows us to take a model or embeddings trained on a large dataset and use it as a starting point for our specific task, which might have significantly less data.
+
+The logic behind this approach is that the model has likely learned some general features from the large dataset that are also useful for the new task. Starting with these pre-trained embeddings can significantly speed up the training process and often leads to better performance than training a model from scratch on a small dataset.
+
+During transfer learning, the pre-trained embeddings can either be kept static or fine-tuned during training on the new task. Keeping them static means that the embeddings do not change during the training on the new task, while fine-tuning updates the embeddings along with the rest of the model parameters. The choice between these two options depends on factors like the size of the new dataset and the similarity between the new task and the task the embeddings were originally trained on. 
+
+__Dimensionality of Embeddings__
+
+Now, let's delve into a fundamental characteristic that plays a crucial role in determining the effectiveness of embeddings - their dimensionality.
+
+The dimensionality of an embedding refers to the length of the vector used to represent each category, which is a hyperparameter that needs to be set before training the model. It determines the amount of information the embedding can capture about each category.
+
+A higher-dimensional embedding can capture more nuanced relationships between categories, but it also requires more data to learn effectively, increasing the model's computational requirements. On the other hand, a lower-dimensional embedding is computationally more efficient. It can avoid overfitting when data is limited, but it might not effectively capture the relationships between categories.
+
+So, how do you choose the right dimensionality for your embeddings? The answer largely depends on the specific problem and the amount of data you have.
+
+Generally, when dealing with a large and complex dataset, a higher-dimensional embedding might be more appropriate to capture the complex relationships in the data. However, a lower-dimensional embedding could suffice when data is limited, or the relationships between categories are relatively simple.
+
+It's also worth mentioning that different types of embeddings might require different dimensionalities. For instance, word embeddings often have dimensionality in the hundreds because they must capture the semantic relationships between thousands of words. On the other hand, embedding a feature with fewer unique categories, such as user IDs or product IDs, might require a lower dimensionality.
+
+Understanding the trade-off between the dimensionality of your embeddings and the risk of overfitting is crucial. Overfitting occurs when a model learns the training data too well, to the extent that it performs poorly on unseen data. The higher the dimensionality of your embeddings, the more risk there is of overfitting, especially when your amount of data is limited.
+
+In conclusion, selecting the appropriate dimensionality for your embeddings is a balancing act between capturing enough information and avoiding overfitting. It is one of the many decisions that need careful consideration when working with embeddings in machine learning.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft's new AI shopping tools will create a buying guide just for you.](https://www.techradar.com/computing/artificial-intelligence/microsofts-new-ai-shopping-tools-will-create-a-buying-guide-just-for-you)*
+
+**Dika**: "Microsoft is introducing AI-powered shopping tools to Bing and Edge. The tools include Buying Guides for comparing and suggesting products, Review Summaries for summarizing online opinions, and Price Match for monitoring and requesting price matches. Buying Guides is available on Bing Chat in the US and will expand internationally. Edge's version is rolling out worldwide. Review Summaries is rolling out globally, and Price Match is initially launching in the US with potential expansion. Users should exercise caution as chatbots can occasionally provide misinformation."
+
+![memo](/assets/images/memo16.png) *[Google Authenticator now backs up your 2FA codes to the cloud.](https://www.bleepingcomputer.com/news/google/google-authenticator-now-backs-up-your-2fa-codes-to-the-cloud/)*
+
+**Yoga**: "Google Authenticator has received an update that allows users to back up their two-factor authentication (2FA) codes to the cloud. It means that if you lose your phone or it is stolen, you can still access your 2FA-protected accounts. The update also adds multi-device support to use the same 2FA codes on multiple devices."
+
+![memo](/assets/images/memo16.png) *[Nvidia's new monster CPU+GPU chip may power the next gen of AI chatbots."](https://arstechnica.com/information-technology/2023/06/nvidias-new-ai-superchip-combines-cpu-and-gpu-to-train-monster-ai-systems/)*
+
+**Yoga**: "Nvidia has announced the full production of its GH200 Grace Hopper "Superchip," combining CPU and GPU for large-scale AI applications. The chip offers high-performance features and aims to accelerate AI and machine learning. Nvidia also plans to build the DGX GH200 supercomputer using these chips, providing massive computing power and memory. Pricing details are not yet available."
+
+![memo](/assets/images/memo16.png) *[Apple releases VisionOS SDK, developers can apply for Vision Pro hardware kit.](https://www.zdnet.com/article/apple-releases-visionos-sdk-developers-can-apply-for-vision-pro-hardware-kit/)*
+
+**Brain**: "Currently, the Apple Vision Pro only contains stock apps. It will soon change as Apple releases the VisionOS SDK, allowing developers to start making their Vision Pro apps. Apple also announced that they will provide an Apple Vision Pro developer kit that developers can apply to get the device to start building and testing apps for their new VR device."
+
+![memo](/assets/images/memo16.png) *[Opera launches revamped browser equipped with an AI sidekick](https://www.theverge.com/2023/6/21/23768888/opera-one-browser-aria-ai-assistant-chatbot)*
+
+**Rizqun**: "Opera has launched Opera One, a new browser version with an AI-powered chatbot called Aria. Similar to Bing chatbot on Microsoft Edge, Opera's AI assistant lives within the browser's sidebar, where we can have it answer questions using real-time information, generate text or code, brainstorm ideas, and more. The nicest part of Aria is that we don't have to open up the sidebar to use it. We can open up a command-like overlay where we can type in question or prompt and highlight text directly on a webpage that will open Aria to translate what we've highlighted."
