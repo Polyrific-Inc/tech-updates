@@ -4,7 +4,7 @@ title:  "Week #26 2023 - Machine Learnings Embeddings"
 date:   2023-06-30 20:00:00 +0700
 ---
 
-## TL;DR
+## Machine Learnings Embeddings
 
 Embeddings in machine learning are a transformative technique used to convert categorical variables or text into continuous vectors, enabling machine learning algorithms to process and understand them more effectively. They capture the semantic relationships between different categories, which is critical in fields like Natural Language Processing (NLP) and recommendation systems.
 

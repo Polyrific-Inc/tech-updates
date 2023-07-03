@@ -4,7 +4,7 @@ title:  "Week #24 2023 - Data Warehouse"
 date:   2023-06-16 20:00:00 +0700
 ---
 
-## TL;DR
+## Data Warehouse
 
 At its core, a data warehouse is a structured repository of historical data from various sources, making it a treasure trove for valuable business insights. It's designed to support data analysis and reporting rather than day-to-day transactions. The key components of a data warehouse include the data sources, data storage, and the analytics layer. Moreover, a data warehouse doesn't stand alone but interacts with other elements in the data ecosystem, such as data lakes, data marts, and Data Mesh.
 
