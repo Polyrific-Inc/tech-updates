@@ -1,0 +1,92 @@
+---
+layout: post
+title:  "Week #27 2023 - Machine Learning Bias"
+date:   2023-07-07 20:00:00 +0700
+---
+
+## Machine Learning Bias
+
+Bias in machine learning refers to the tendency of a model to make decisions based on skewed or incomplete information, leading to potentially unfair or inaccurate outcomes. Bias can stem from various sources like biased data, the data collection process, or bias in interpretation. Some common types of bias include selection, confirmation, overfitting, and bias from imbalanced data.
+
+The bias in ML models can be significant and potentially harmful, affecting sectors such as healthcare, recruitment, finance, and criminal justice. To mitigate bias, we can collect diverse data, handle imbalanced data, use bias-aware algorithms, regularly test and audit our models, and assemble interdisciplinary teams.
+
+Addressing bias is an ongoing commitment to ensure fairness, transparency, and ethics in machine learning. It is crucial as these technologies become more ingrained in our everyday lives.
+
+__What is Bias in Machine Learning?__
+
+Bias, in the context of machine learning, refers to the tendency of an algorithm to consistently learn the wrong thing by not considering all the information in the data. In simpler terms, imagine if you were trying to learn a new recipe but only focused on one or two ingredients, ignoring the rest. The dish you make might not taste as expected because you've biased your learning towards those one or two ingredients, neglecting the others.
+
+Similarly, when a machine learning model is biased, it gives too much preference to certain types of information, and as a result, its predictions could be skewed or unfair. It is especially problematic when machine learning models make decisions that can impact lives, such as who gets approved for a loan or how a self-driving car reacts to an obstacle. Bias in these situations can lead to unfair or potentially dangerous outcomes.
+
+__The impact of Bias__
+
+The effects of bias in machine learning models can be far-reaching and potentially harmful. Let's explore some areas where bias can have significant consequences:
+
+**Healthcare**: Machine learning is increasingly used in healthcare, from predicting disease outcomes to aiding in diagnoses. If a model is biased, it could lead to misdiagnoses or incorrect treatments. For example, if a model trained predominantly on data from one ethnic group is used to diagnose patients from a different ethnic group, its predictions may be less accurate.
+
+**Recruitment**: Companies increasingly use AI tools to screen resumes and predict job performance. A biased model could unfairly disadvantage certain candidates based on factors like gender, age, or ethnicity rather than their actual qualifications or potential.
+
+**Finance**: ML models are used to determine credit scores and loan eligibility. Bias in these models can lead to unfair financial practices, such as denying loans to qualified individuals based on demographic characteristics rather than financial history.
+
+**Criminal Justice**: Machine learning models can be used to predict the likelihood of re-offending, impacting decisions about bail, sentencing, and parole. Biased predictions can disproportionately affect certain demographic groups, leading to unfair outcomes.
+
+It's clear that bias in machine learning models can have serious real-world consequences. The good news is that we can work towards more fair, equitable, and accurate AI systems by recognizing and addressing bias. 
+
+__Sources of Bias__
+
+Bias can sneak into machine learning models from various sources, often without us realizing it. Here are the most common ones:
+1. **Biased Data**: If the data used to train a machine learning model doesn't represent the real-world scenario it's meant to address, the model may learn to make biased predictions. For example, suppose a company used its past recruitment data to build a hiring model but has historically hired fewer women. In that case, the model may also develop a bias against women.
+2. **Data Collection Process**: Sometimes, how data is collected can introduce bias. For instance, if a survey is conducted in an affluent neighborhood to understand people's shopping habits, applying the findings to a wider population could lead to biased results because the survey doesn't represent different income levels.
+3. **Bias in Interpretation**: Bias can also arise from the way the results of a machine learning model are interpreted. For example, if a model predicts that someone will not repay a loan based on their zip code, interpreting this as a reflection of their personal characteristics rather than considering socioeconomic factors could lead to biased decisions.
+
+Understanding these sources of bias is the first step toward preventing them. 
+
+__Types of Bias__
+
+Now that we know where bias comes from, let's explore the different types of bias that can appear in machine learning models:
+1. **Selection Bias**: This happens when the data used to train the model doesn't represent the entire population it's supposed to represent. For example, a fitness tracker may only have data from customers interested in tracking their health, which wouldn't represent the overall population's fitness levels.
+2. **Confirmation Bias**: This type of bias occurs when a model is trained on data that pre-existing beliefs have influenced. For instance, if a company believes that candidates from top universities perform better and only hires from these universities, their hiring model will reinforce this belief, regardless of its truth.
+3. **Overfitting (Algorithmic Bias)**: Overfitting happens when a model learns too much from the training data, including noise and outliers, and performs poorly on new, unseen data. In other words, it's like memorizing the answers to an exam instead of understanding the underlying concepts.
+4. **Bias from Imbalanced Data**: When the data used to train a model disproportionately represents certain classes, the model can develop a bias towards those classes. For example, if 95% of the emails are non-spam and only 5% are spam in a dataset for email spam detection, the model might become biased towards identifying emails as non-spam.
+
+Understanding these types of bias helps us recognize when our models might be going astray.  
+
+__Detecting and Mitigating Bias__
+
+Identifying bias in machine learning models can be challenging, but there are methods and tools available that can help. Here are some ways we can detect bias:
+1. **Outlier Detection**: This method involves looking for data points that behave very differently than the rest. If a model is consistently inaccurate for these outliers, it could be a sign of bias.
+2. **Disparity in Error Rates**: If a model's predictions are less accurate for certain groups compared to others, there may be bias at play. For example, a facial recognition system with higher error rates for women than men might be biased.
+3. **Bias Metrics**: Several statistical measures can help quantify bias in a model's predictions. These include measures like disparate impact, which compares the probability of positive outcomes for different groups.
+
+Detecting bias isn't always straightforward. But by being vigilant and using a combination of methods, we can uncover and address its existence in our models.
+
+Once we've identified bias in our machine-learning models, how do we address it? Here are some strategies:
+1. **Collect Diverse Data**: Ensure the data used to train the model represents the diverse scenarios and populations the model will encounter in real-world situations. The more representative the training data, the less likely the model is to develop bias.
+2. **Handle Imbalanced Data**: In cases where the data is imbalanced (one class is disproportionately represented), techniques like oversampling the minority class, undersampling the majority class, or using synthetic data can help balance it.
+3. **Bias-Aware Algorithms**: Some machine learning algorithms have been specifically designed to be aware of and counteract bias. These algorithms can provide more fair and balanced predictions.
+4. **Regular Testing and Auditing**: Regularly test the model's performance on diverse datasets and audit its predictions for any signs of bias. If bias is detected, adjusting or retraining the model may be necessary.
+5. **Interdisciplinary Teams**: Including team members with diverse backgrounds and perspectives can help detect and mitigate bias. They can provide different viewpoints and raise awareness of potential biases others might overlook.
+
+Remember, mitigating bias is an ongoing process. It requires vigilance and a commitment to fairness and equity.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Introducing 22 system cards that explain how AI powers experience on Facebook and Instagram.](https://ai.facebook.com/blog/how-ai-powers-experiences-facebook-instagram-system-cards/)*
+
+**Rizqun**: "In this article, Meta shares 22 system cards that provide information about the AI-powered recommender systems used on Facebook and Instagram. These cards explain how the AI systems work, how users can customize their content, and how the AI delivers content. The goal is to provide transparency and empower users to understand and control their experiences on Facebook and Instagram."
+
+![memo](/assets/images/memo16.png) *[Microsoft rolls out early Windows Copilot preview to Insiders.](https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-early-windows-copilot-preview-to-insiders/)*
+
+**Yoga**: "Microsoft has released an early preview of its AI-powered personal assistant, Windows Copilot, for Windows 11 Insiders. It provides centralized AI assistance through a pinned panel on the screen, accessible via a taskbar button or keyboard shortcut. Users can issue commands to modify settings or perform actions in the operating system. Windows Copilot currently has limited plugins and no support for third-party plugins. Microsoft plans to enhance the experience based on user feedback, while Cortana's standalone app support will end in late 2023."
+
+![memo](/assets/images/memo16.png) *[GPT Engineer: Specify what you want it to build; the AI asks for clarification and then builds it.](https://github.com/AntonOsika/gpt-engineer)*
+
+**Brain**: "Another library that utilizes generative AI technology was just released a couple of weeks ago. This one is fascinating because it lets us generate a full source code based on several prompts. You can look at the demo at the end of the GitHub page. Perhaps it can be something interesting to try out for your development workflow."
+
+![memo](/assets/images/memo16.png) *[Introducing Threads: A New Way to Share With Text](https://about.fb.com/news/2023/07/introducing-threads-new-app-text-sharing/)*
+
+**Rizqun**: "Mark Zuckerberg just announced the initial version of Threads, an app built by the Instagram team for sharing text. The vision with Threads is to take what Instagram does best and expand that to text, creating a positive and creative space to express our ideas. It's easy to get started with Threads; we can use our Instagram account to log in. Our Instagram username and verification will carry over, with the option to customize your profile specifically for Threads."
+
+![memo](/assets/images/memo16.png) *[Metis: Building Airbnb's Next-Generation Data Management Platform](https://medium.com/airbnb-engineering/metis-building-airbnbs-next-generation-data-management-platform-d2c5219edf19)*
+
+**Frandi**: "Learn from the Airbnb engineers how they built their in-house data platform that enables anyone at Airbnb to search, discover, consume, and manage all the data and metadata in their offline warehouse. It might not 100% fit with other companies' use cases, but surely we can learn tons of useful knowledge from this article."
