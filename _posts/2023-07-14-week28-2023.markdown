@@ -1,0 +1,93 @@
+---
+layout: post
+title:  "Week #28 2023 - AI Model Fine-Tuning"
+date:   2023-07-14 20:00:00 +0700
+---
+
+## AI Model Fine-Tuning
+
+Fine-tuning is a powerful technique that allows Large Language Models (LLMs) to leverage their vast general knowledge while adapting to more specific tasks. In an age where LLMs are becoming commonplace, fine-tuning helps to tailor these models to particular tasks and domains, providing more accurate and contextually aware responses. The decision to fine-tune involves weighing factors such as task similarity, data availability, computational resources, and the model's baseline performance.
+
+However, implementing fine-tuning presents challenges, including data requirements, overfitting, catastrophic forgetting, and computational resource constraints. Addressing these requires careful planning, strategic selection of a pre-trained model, and thoughtful preparation of the task-specific dataset. Successful fine-tuning also involves tactics like adjusting the learning rate, gradual unfreezing of layers, and using regularization techniques. After fine-tuning, evaluating the model using appropriate metrics and real-world testing is essential to ensure it generalizes well to new data.
+
+__What is Fine-Tuning?__
+
+Large Language Models (LLMs), such as OpenAI's GPT-3 or Google's BERT, have become central to various applications. These models have become significant assets in numerous industries, from generating human-like text to powering chatbots, translation services, and supporting content creation. Their power comes from their ability to process and generate language in a way that mimics human understanding, learned from vast amounts of data they were originally trained on.
+
+However, while these models are compelling, they have their limitations. One key challenge is their inability to adapt to very specific tasks or contexts out of the box. They have been trained on general language data, and hence, when presented with niche tasks or industries, they often lack the ability to deliver the high-quality, context-specific results we need. Here is where the concept of fine-tuning comes in.
+
+Fine-tuning is a process through which we can adapt these LLMs to perform specific tasks effectively. It is done by further training the model on a smaller, task-specific dataset, allowing it to adjust its learned features and specialize in the new context. It's like taking a generalist doctor and giving them additional training in a specific medical field—they're starting with a solid foundation and then developing deep expertise in a particular area.
+
+__The Decision to Fine-tune__
+
+In deciding whether or not to fine-tune an existing large language model, several factors need to be taken into account:
+1. **Task Similarity:** Fine-tuning tends to be more effective when the original task the model was trained on is similar to the new task. The model may struggle to adapt if the tasks are too dissimilar, leading to subpar performance.
+2. **Data Availability:** Fine-tuning requires a task-specific dataset. If there is limited or no data available for the task, fine-tuning might not be feasible.
+3. **Computational Resources:** While generally less resource-intensive than training a model from scratch, fine-tuning still requires computational resources. These requirements could be substantial depending on the model and dataset size.
+4. **Baseline Performance:** If a pre-trained model is already performing well on the specific task without fine-tuning, fine-tuning may not be needed. On the other hand, fine-tuning can effectively boost the model's performance on the task if the performance is lacking.
+5. **The user's expertise:** Fine-tuning can be a complex process, so it is important to have some expertise in natural language processing before fine-tuning an LLM.
+
+Carefully weighing these factors will guide the decision to fine-tune or not. It's about finding the balance between the potential improvement in performance and the resources required to achieve it.  
+
+__Selecting an Appropriate Pre-trained Model__
+
+Choosing the right pre-trained model as a starting point for fine-tuning can greatly influence the success of your project. Here are some factors to consider:
+1. **Model Performance:** Start by considering models that have shown strong performance on tasks similar to your own. Their architecture and learned features might be particularly suited to your needs.
+2. **Model Size:** Larger models can capture more complex patterns but require more computational resources to fine-tune and use. It's essential to strike a balance between model performance and practical considerations.
+3. **Data the Model was Trained on:** Ideally, the model's pre-training data should be somewhat similar to your task-specific data. The more similar the data, the more likely the model is to transfer its learned patterns effectively.
+4. **Community Support and Documentation:** Models with strong community support and extensive documentation can make the fine-tuning process much smoother. Examples include well-known models like BERT for natural language processing or ResNet for image recognition.
+
+Making an informed decision when selecting a pre-trained model sets the stage for effective fine-tuning and helps to mitigate some of the challenges discussed in the previous section. 
+
+__Gathering and Preparing the Training Dataset__
+
+Once the right pre-trained model has been selected, the next step is to collect and prepare the task-specific dataset for fine-tuning:
+1. **Data Collection:** Depending on your specific task, you might need to collect data from various sources. It could involve scraping websites, gathering data through surveys, or using APIs to access databases. Ensure that your data collection methods respect privacy laws and intellectual property rights.
+2. **Data Diversity:** For the model to perform well across different scenarios, it's crucial to have a diverse and representative dataset. Ensure your data covers various aspects of the task and includes edge cases to help the model generalize better.
+3. **Data Labeling:** In supervised learning scenarios, you'll need labeled data for fine-tuning. It involves assigning the correct answer or class to each data point. Depending on your task, you may require manual annotators for this process.
+4. **Data Preprocessing:** This step involves cleaning the data and transforming it into a format the model can understand. Depending on your pre-trained model, this might include tokenization (breaking the text down into words or subwords), normalization (like converting all text to lowercase), or other specific transformations.
+
+Collecting and preparing the training data is a critical step in the fine-tuning process. The quality of your data can directly impact how much your model can improve through fine-tuning.   
+
+__Strategies for Successful Fine-Tuning__
+
+Once your pre-trained model and task-specific dataset are ready, it's time to dive into the fine-tuning process. Here are some strategies to consider:
+1. **Learning Rate Adjustment:** The learning rate controls how much the model changes in response to the error it sees on the new data. Too large a learning rate may cause the model to 'overshoot' the optimal solution, while too small a rate may take an excessively long to train or get stuck in a suboptimal solution. It's often a good idea to start with a lower learning rate during fine-tuning to avoid drastic changes that might make the model forget its pre-training knowledge.
+2. **Gradual Unfreezing:** Instead of fine-tuning all model layers at once, you might achieve better results by gradually 'unfreezing' the model's layers. It typically starts with the final layers, which most likely need task-specific adjustments, while the earlier layers contain more general features.
+3. **Regularization Techniques:** These techniques prevent overfitting by adding a cost to the loss function for complex models. L1 and L2 regularization are common methods, adding a term proportional to the absolute value or the square of the weights, respectively.
+4. **Early Stopping:** This involves ending the training process before the model starts to overfit. You can monitor the model's performance on a validation set during training and stop the process when the performance begins to degrade.
+5. **Use of a Validation Set:** Apart from its use in early stopping, a validation set can help tune hyperparameters and give an unbiased estimate of the model's performance on new data.
+
+These strategies are not mutually exclusive and can be combined to optimize the fine-tuning process.
+
+__Evaluating the Fine-tuned Model__
+
+After fine-tuning the model, evaluating its performance on a separate test set is crucial. This set should differ from the data used for training and validation, providing a final, unbiased measure of the model's ability to generalize to new data. Here are a few key aspects to consider:
+1. **Appropriate Metrics:** Different evaluation metrics may be more relevant depending on your task. You might consider accuracy, precision, recall, or the F1 score for classification tasks. For regression tasks, mean squared or absolute errors might be more suitable.
+2. **Confidence Intervals:** Given the randomness in most machine learning processes, reporting confidence intervals or standard errors for your main metrics are often beneficial, providing a range where the true performance metric will likely fall.
+3. **Error Analysis:** Beyond aggregate metrics, investigate specific instances where the model made mistakes. It can offer insights into potential improvements, whether these are areas where the model needs more training data or particular scenarios that weren't considered during training.
+4. **Real-world Testing:** If feasible, consider testing the model in the real world with live data. It can often uncover challenges and issues not visible during the training process.
+
+Remember that machine learning is an iterative process. The evaluation stage can provide critical insights that guide further fine-tuning or data collection, creating a continuous improvement cycle.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[China's Baidu AI is Better than ChatGPT - here's why](https://www.techradar.com/computing/artificial-intelligence/chinas-baidu-ai-is-better-than-chatgpt-heres-why)*
+
+**Dika**: "Chinese tech giant Baidu has claimed that its latest AI model, Ernie 3.5, outperforms OpenAI's ChatGPT regarding comprehensive ability scores and general performance in Chinese language tasks. Baidu cited a test conducted by China Science Daily using AGIEval and C-Eval datasets as evidence. Baidu's potential entry into the Western market could create competition, not only against OpenAI's ChatGPT, but also against Google, given Baidu's position as China's equivalent to Google."
+
+![memo](/assets/images/memo16.png) *[Azure Logic Apps to support running custom .NET Framework code](https://techcommunity.microsoft.com/t5/azure-integration-services-blog/announcement-introducing-net-framework-custom-code-for-azure/ba-p/3847711)*
+
+**Brain**: "Some of us have used Azure Logic Apps to integrate our apps with some simple logic easily and affordably. The current downside of Azure Logic Apps is we can't put custom logic in it. It will soon change as Microsoft announces developers will soon be able to run custom code with the ability to debug the code locally. It might be an alternative to hosting a separate Azure Function instance when you just want to run some simple workflow in your application."
+
+![memo](/assets/images/memo16.png) *[Azure AD is Becoming Microsoft Entra ID](https://techcommunity.microsoft.com/t5/microsoft-entra-azure-ad-blog/azure-ad-is-becoming-microsoft-entra-id/ba-p/2520436)*
+
+**Frandi**: "Microsoft recently announced the rebranding of their Azure Active Directory product into Microsoft Entra ID. No action is needed from the existing customer side because the change is only on the name. All features are still the same, and the free tier still exists. This rebranding is expected to be complete by the end of 2023."
+
+![memo](/assets/images/memo16.png) *[New Python tool checks NPM packages for manifest confusion issues](https://www.bleepingcomputer.com/news/security/new-python-tool-checks-npm-packages-for-manifest-confusion-issues/)*
+
+**Yoga**: "A tool has been developed to check for manifest mismatches in NPM packages, addressing the "manifest confusion" issue. Created by sysadmin Felix Pankratz, the Python-based tool helps developers identify inconsistencies between package manifest data and 'package.json' files. It allows the inspection of single or multiple packages using a wrapper script and a 'packages.list' file. Manifest confusion is a potential security risk in the NPM community that could be exploited for supply-chain attacks."
+
+![memo](/assets/images/memo16.png) *[Elon Musk sets new daily Twitter limits for users](https://www.washingtonpost.com/technology/2023/07/01/elon-musk-new-twitter-user-limits/)*
+
+**Rizqun**: "Elon Musk announced that Twitter would temporarily limit the number of tweets users can read daily to combat computer programs that comb through posts to extract useful data from the platform. How long the limits will last and what lifting them will depend on is unclear. Previously, a verified account could read 6000 tweets daily, an unverified account could read 600 tweets daily, and a new unverified account could read 300 tweets daily. But after a significant backslash to these tweet limits, Elon changed it so the verified account can read 10,000 tweets daily, unverified accounts can read 1,000 tweets daily, and new unverified accounts can read  500 tweets daily."
