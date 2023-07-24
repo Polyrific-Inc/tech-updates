@@ -32,19 +32,19 @@ __The Hugging Face Hub__
 
 In the heart of Hugging Face's mission to democratize AI lies the Hugging Face Hub—an innovative platform that acts as a central repository for models, datasets, and spaces. Serving as a shared storage system, it plays a significant role in the AI community by providing easy access to a wealth of AI resources.
 
-**Repositories**
+***Repositories***
 
 The Hub is built around the concept of repositories, akin to GitHub for code. These repositories store models and datasets and provide version control, allowing developers to iterate on models effectively and efficiently. Every item hosted in a repository comes with its own webpage that details its use, provides code examples, and offers valuable insights on implementation.
 
-**Models**
+***Models***
 
 The models hosted on the Hub are its most famous feature. The platform provides a wealth of pre-trained models, encompassing a broad range of NLP tasks in various languages. These models, many of which users contribute, range from the BERT and GPT families to many other transformer architectures. Anyone can freely use these models, fine-tune them, or contribute their own, fostering a culture of collaborative learning and development.
 
-**Datasets**
+***Datasets***
 
 Datasets are another critical component of the Hugging Face Hub. These are used to train and fine-tune the models. The Hub hosts a plethora of datasets spanning multiple languages and addressing diverse tasks. Users can explore datasets, understand their structure, and directly use them for training models. This access to quality data significantly simplifies the process of training AI models.
 
-**Spaces**
+***Spaces***
 
 One of the more recent additions to the Hugging Face Hub is Spaces, an environment allowing developers to create, host, and share machine-learning projects. In Spaces, users can build web-based, end-to-end machine learning applications, often leveraging the models and datasets available on the Hub. Spaces opens up a world of possibilities for developers to experiment, learn, and share their work with the broader AI community.  
 
@@ -66,23 +66,23 @@ __Common NLP Tasks__
 
 Let's explore some NLP tasks commonly found in the transformer's utilization.
 
-__*Text Classification*__
+* __*Text Classification*__
 
 Text classification involves assigning predefined categories to a given text. It's often used in sentiment analysis, where text is classified as positive, negative, or neutral. For example, a business can analyze customer reviews to understand their sentiment toward their products or services.
 
-__*Named Entity Recognition (NER)*__
+* __*Named Entity Recognition (NER)*__
 
 NER involves identifying and classifying named entities in text into predefined categories such as person names, organizations, locations, date expressions, percentages, etc. For instance, in the sentence, "Apple was founded by Steve Jobs in Cupertino," NER would identify "Apple" as an organization, "Steve Jobs" as a person, and "Cupertino" as a location.
 
-__*Text Generation*__
+* __*Text Generation*__
 
 Text generation models are capable of generating human-like text given some input. These models are used in various applications, from writing assistance tools to chatbots. For instance, given the prompt "Once upon a time," a text generation model could generate a complete story.
 
-__*Translation*__
+* __*Translation*__
 
 Translation models are designed to translate text from one language to another. For example, a model could translate a paragraph written in English into French, German, Spanish, or any other supported language.
 
-__*Summarization*__
+* __*Summarization*__
 
 Summarization models are tasked with creating a concise summary of a longer text. For example, a news organization might use a summarization model to generate summaries of lengthy articles for readers who are short on time.
 
