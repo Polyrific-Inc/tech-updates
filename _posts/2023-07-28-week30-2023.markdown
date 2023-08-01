@@ -1,0 +1,106 @@
+---
+layout: post
+title:  "Week #30 2023 - Responsible Artifical Intelligence"
+date:   2023-07-28 20:00:00 +0700
+---
+
+## Responsible Artifical Intelligence
+
+Responsible AI encompasses six fundamental principles: fairness, reliability, privacy, inclusiveness, transparency, and accountability.
+1. **Fairness** implies designing AI systems to make unbiased decisions, achieved by ensuring diversity in training data and regularly checking for and addressing biases.
+2. **Reliability** means AI should function consistently across different conditions and contexts. It involves rigorous testing, updates, and creating systems interpretable to humans.
+3. **Privacy** refers to individuals' rights to control their personal data. AI systems should collect only necessary data, implement privacy-preserving techniques, and maintain strict access controls.
+4. **Inclusiveness** demands AI systems be designed for all people, regardless of their abilities, age, gender, or culture. It involves using diverse datasets, involving varied stakeholders, and constant bias checks.
+5. **Transparency** focuses on making AI operations and decision-making processes understandable to users. It can be enhanced by providing model explanations, comprehensive documentation, open-source tools, and clear communication of AI capabilities and limitations.
+6. **Accountability** ensures humans remain responsible for AI decisions. Mechanisms include audit trails, AI system explanations, human review and approval of AI decisions, legal frameworks, and ethical standards.
+
+Each principle is integral to shaping a responsible and ethical AI landscape, enabling trust in AI systems while harnessing their benefits responsibly. 
+
+__Why it is important__
+
+Artificial Intelligence (AI) is no longer a concept confined to the realms of science fiction; it is increasingly embedded in our everyday lives. It powers our digital assistants, recommends movies, drives cars, diagnoses diseases, and even shapes political campaigns. Given this broad influence, these systems must be developed and deployed responsibly.
+
+Responsible AI refers to the practice of designing, building, and deploying AI in a manner that is ethical, transparent, accountable, and beneficial for all stakeholders involved. It goes beyond the simple functionality of AI systems to consider how they affect individuals and society as a whole.
+
+The importance of responsible AI cannot be overstated. Unfair algorithms could perpetuate societal biases, lack of privacy can lead to misuse of personal data, and opaque AI systems can make it difficult for humans to understand and control them. Therefore, it is crucial to ensure that AI systems are not just technologically sound, but also ethically robust.
+
+This article delves into the six pillars of responsible AI - fairness, reliability, privacy, inclusiveness, transparency, and accountability. Each of these dimensions presents its own challenges and opportunities, which we will explore in depth.
+
+__Fairness__
+
+Fairness in AI refers to its ability to make unbiased decisions. It's about ensuring AI provides equal opportunities, distributes resources fairly, and imparts information without discrimination. However, AI learns from data, and AI may unintentionally perpetuate biases if the data holds biases. For example, an AI trained on biased hiring data might unfairly favor certain groups.
+
+To promote fairness, one can exclude protected characteristics from decision-making. But this doesn't account for indirect biases. Another approach is designing AI to identify and adjust for biases in data.
+
+Ensuring fairness also involves algorithmic transparency, careful training data selection, continuous bias monitoring, and acceptance that cultural, societal, and individual fairness perceptions can vary. Though challenging, fairness is a crucial principle for responsible AI.
+
+__Reliability__
+
+Reliability in AI implies consistent, accurate functioning across various conditions and contexts. AI systems can face reliability issues due to factors like poor quality data or software bugs, which could have profound consequences given AI's autonomous nature and users' trust.
+
+Reliability also entails robustness against unforeseen situations. For instance, an AI trained for disease detection should reliably work despite variations in image quality or patient demographics.
+
+Strategies for ensuring reliability include thorough testing and validation with diverse, real-world reflecting datasets, mechanisms to handle unanticipated data or conditions, and regular system monitoring and updates.
+
+Interpretability is another facet of reliability. If an AI system's reasoning is understandable to humans, we can have more confidence in its reliability. Hence, reliability is a cornerstone of responsible AI, fostering consistent performance and trust in AI systems.
+
+__Privacy__
+
+Privacy in AI is about ensuring individuals' control over their personal data. With AI often needing vast amounts of data, safeguarding privacy becomes paramount. AI can both threaten and enhance privacy. For instance, machine learning algorithms can infer sensitive information from seemingly innocuous data.
+
+Conversely, AI can bolster privacy. Differential privacy introduces statistical noise to protect individual data during learning. Homomorphic encryption allows learning from encrypted data without decryption. Federated learning enables learning from data on local devices, reducing data transmission and privacy risks.
+
+AI systems should collect minimal necessary data, store it securely, and implement privacy-preserving techniques to support privacy. Strict controls and logging of data access can prevent unauthorized usage and ensure accountability. Regular privacy testing of AI models and conducting privacy impact assessments are also crucial.
+
+__Inclusiveness__
+
+Inclusiveness in AI implies designing systems accessible and valuable to all, regardless of abilities, age, gender, culture, or socioeconomic status. However, AI systems trained predominantly on specific demographic data might not perform well for others, inadvertently marginalizing certain groups.
+
+On the flip side, AI can enhance inclusivity. It can make digital interfaces more accessible for individuals with disabilities via technologies like text-to-speech or natural language processing.
+
+To design inclusive AI systems, diverse, representative datasets are essential for training. Involving various stakeholders in the design and testing phases ensures different perspectives and needs are considered. Regular bias auditing and testing can help detect and correct exclusivity issues.
+
+__Transparency__
+
+Transparency in AI involves making AI operations and decision-making processes understandable to users. Lack of clarity can lead to misunderstandings, misuse, or overestimating AI capabilities, possibly causing erroneous outcomes.
+
+AI systems, especially complex ones, are often seen as 'black boxes' due to their hard-to-understand decision-making. Several strategies can be implemented to enhance transparency:
+1. **Explainability**: Design models to provide understandable explanations for their decisions.
+2. **Documentation**: Provide precise details about an AI system's design, capabilities, and limitations.
+3. **Openness**: Use open-source models and tools for inspecting an AI system's workings, where possible.
+4. **Communication**: Convey an AI system's capabilities and limitations to users in understandable language.
+
+__Accountability__
+
+Accountability in AI involves mechanisms to hold humans, particularly creators, users, and operators of AI systems, responsible for their outcomes. This principle emphasizes that while AI systems may autonomously make decisions, humans must control and be accountable for these decisions.
+
+Creating oversight for accountability involves:
+1. **Audit Trails:** Maintain logs of all AI system decisions, including data used, models employed, and individuals involved, for responsibility tracing.
+2. **Explanation:** AI systems should provide decision explanations, enhancing understanding of outcomes. It ties back to transparency.
+3. **Human-in-the-loop:** AI decisions should be human-reviewed and approved, keeping humans in control.
+4. **Legal and Regulatory Frameworks:** Laws and regulations should define AI decision responsibility and set operation standards. They should address situations where AI decisions cause negative impacts.
+5. **Ethics and Standards:** Organizations should have ethics committees overseeing AI development and use, setting and ensuring adherence to responsible AI standards.
+
+Accountability in AI ensures humans' control over and responsibility for AI decisions. It enhances trust in AI systems and is vital to ethical AI use.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[AWS Expands Amazon Bedrock With Additional Foundation Models, New Model Provider, and Advanced Capabilities to Help Customers Build Generative AI Applications](https://press.aboutamazon.com/2023/7/aws-expands-amazon-bedrock-with-additional-foundation-models-new-model-provider-and-advanced-capability-to-help-customers-build-generative-ai-applications)*
+
+**Rizqun**: "Amazon announced the expansion of Amazon Bedrock to include the addition of Cohere as an FM provider and the latest FMs from Anthropic and Stability AI, as well as a new capability for creating fully managed agents in just a few clicks. Customers can use Amazon Bedrock to build and scale generative AI applications with a selection of industry-leading FMs by accessing a simple API, all in a secure environment and without managing any infrastructure."
+
+![memo](/assets/images/memo16.png) *[Now Google's Bard AI chatbot can talk and respond to visual prompts.](https://www.theverge.com/2023/7/13/23793014/google-bard-ai-chatbot-talk-spoken-responses-respond-visual-prompts-eu)*
+
+**Brain**: "Google's Bard now supports users to enter visual prompts and respond with an image, which ChatGPT currently cannot do out of the box. It would open new possibilities for automating some tasks, such as creating HTML and CSS code based on an image of a website wireframe."
+
+![memo](/assets/images/memo16.png) *[Difference between AI and Expert System](https://www.geeksforgeeks.org/difference-between-ai-and-expert-system/)*
+
+**Dika**:  "The article highlights the differences between Artificial Intelligence (AI) and Expert Systems. AI enables machines to think and perform tasks like humans using machine learning and natural language processing. Expert Systems use stored knowledge to solve complex problems requiring human expertise and are highly efficient and accurate. AI identifies trends, patterns, and inefficiencies, and makes informed decisions, while Expert Systems excel in classification, diagnosis, monitoring, prediction, and system configuration."
+
+![memo](/assets/images/memo16.png) *[Microsoft expands access to cloud logging data for free after Exchange hacks.](https://www.bleepingcomputer.com/news/microsoft/microsoft-expands-access-to-cloud-logging-data-for-free-after-exchange-hacks/)*
+
+**Yoga**: "Microsoft provides free access to additional cloud logging data for all customers worldwide after recent cyberattacks. Advanced logging capabilities previously limited to licensed users are now available to everyone, thanks to the collaboration with CISA. Using Microsoft Purview Audit (Standard), customers can access detailed logs, including email data. CISA and the FBI have also released a guide on monitoring and detecting APT activity targeting Outlook Online."
+
+![memo](/assets/images/memo16.png) *[Pocket assistant: ChatGPT comes to Android](https://arstechnica.com/information-technology/2023/07/pocket-assistant-chatgpt-comes-to-android/)*
+
+**Yoga**: "OpenAI has launched the official ChatGPT app for Android in the US, India, Bangladesh, and Brazil, using GPT-3.5 and GPT-4 models on the cloud for language processing. The app integrates Whisper for speech recognition and offers a text-messaging interface. It has garnered over 500,000 downloads and will expand to more countries soon. However, users should be aware of occasional confabulation and use it as a supplementary tool for analysis and composition."
