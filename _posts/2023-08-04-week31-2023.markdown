@@ -1,0 +1,99 @@
+---
+layout: post
+title:  "Week #31 2023 - Decoding AI, ML, DL, NN, NLP, and LLM"
+date:   2023-08-04 20:00:00 +0700
+---
+
+**Artificial Intelligence (AI)** is the broad discipline focused on building smart machines capable of performing tasks that typically require human intelligence. It includes learning, reasoning, problem-solving, perception, and language understanding.
+
+**Machine Learning (ML)** is a subset of AI that teaches machines to learn from data and improve their performance without being explicitly programmed. It includes several techniques, of which Deep Learning is one.
+
+**Deep Learning (DL)** is a subset of ML that structures algorithms in layers to create an artificial neural network to learn and make decisions independently. It's exceptionally effective with large and complex datasets.
+
+**Neural Networks (NN)** are algorithms inspired by the human brain that underpin Deep Learning. They involve layers of nodes (or "neurons") that process information in a structure resembling the human brain's neural pathways.
+
+**Natural Language Processing (NLP)** is a field in AI that focuses on the interaction between computers and humans in natural language. It uses AI, ML, DL, and NN to process, understand, interpret, and generate human language in a valuable way.
+
+**Large Language Models (LLM)**, like GPT-3 or GPT-4, are advanced AI models trained on vast amounts of text data. They can generate human-like text and have content generation, question-answering, and translation applications.
+
+__Decoding AI, ML, DL, NN, NLP, and LLM__
+
+Unless you've lived under a rock for the last couple of months, you can't have missed the surge in discussions, debates, and revelations surrounding generative AI technologies. Terms such as Artificial Intelligence (AI), Machine Learning (ML), Deep Learning (DL), Neural Networks (NN), Natural Language Processing (NLP), and Large Language Models (LLM) have almost become commonplace. But while these buzzwords may have entered our collective consciousness, the precise meanings and intricate relationships among these terms remain elusive for many.
+
+It is hardly surprising given the complexity of these concepts, yet understanding them is increasingly important. So what does each term mean? How are they interconnected, and why does it matter? This short article will help you decode the mysteries of AI, ML, DL, NN, NLP, and LLM.
+
+__Artificial Intelligence (AI)__
+
+Artificial Intelligence, or AI, has been the centerpiece of countless science fiction fantasies. But what was once a far-off dream is now a present reality. In its simplest form, AI refers to machines or software that mimic human intelligence—learning, problem-solving, pattern recognition, and decision-making—to achieve specific tasks.
+
+AI is a broad field that encompasses other areas of study, such as Machine Learning, Deep Learning, Neural Networks, and Natural Language Processing. These are all subfields or techniques within the domain of AI that contribute to its overall goal of creating intelligent machines. We'll explore these interconnected areas in the following sections.
+
+__Machine Learning (ML)__
+
+Machine Learning (ML) is a subset of AI that allows systems to learn and improve from experience without being explicitly programmed. In other words, ML focuses on developing computer programs that can access data and learn from it autonomously. While AI is the broad philosophy of automating cognitive tasks, ML provides the technical methods, algorithms, and statistical tools to realize this philosophy.
+
+There are primarily three types of machine learning: Supervised Learning, Unsupervised Learning, and Reinforcement Learning.
+* In Supervised Learning, the model is trained on a labeled dataset. Data is annotated with information that the machine tries to learn. For example, a spam filtering model might be trained on emails marked as "spam" or "not spam."
+* Unsupervised Learning, in contrast, doesn't rely on a labeled dataset. Instead, it identifies patterns and relationships in the data on its own. An example might be a recommendation system that groups customers with similar purchasing behaviors.
+* Reinforcement Learning is a bit different. Here, an agent learns how to behave in an environment by performing actions and receiving rewards or penalties. It's like training a dog – good behavior is rewarded, encouraging the dog to repeat that behavior in the future. 
+
+__Deep Learning (DL)__
+
+Deep Learning is a subset of Machine Learning that imitates the workings of the human brain in processing data for decision-making. Deep Learning models are built using neural networks with many layers—hence the term 'deep' in the name. These layers of artificial neurons sift through data, weighing and evaluating different features to come to a conclusion.
+
+While all DL is ML, not all ML is DL. Deep Learning uses more data and complex models than other ML approaches and has been responsible for significant image and speech recognition breakthroughs.
+
+Deep Learning is a powerful tool in the Machine Learning arsenal, but it's not always the best approach for every problem. DL models are known as computationally expensive. Using it to work with smaller datasets and to resolve more straightforward tasks might be overkill. So it's crucial to consider the specific requirements and constraints of each task before choosing the best ML approach.
+
+__Neural Network (NN)__
+
+Neural Networks are the backbone of Deep Learning and, by extension, a critical component of modern AI. Neural networks are algorithms inspired by the human brain to recognize patterns. They interpret sensory data through a kind of machine perception, labeling, or clustering of raw input.
+
+The basic unit of a neural network is the neuron, or node, inspired by the neurons in the human brain. A neural network is structured in layers of these artificial neurons:
+* The input layer is where the network receives information to process, much like our sensory organs perceive external stimuli.
+* The output layer is where the network produces its conclusion.
+* Between them are what we call hidden layers. These layers transform the input into something the output layer can use.
+
+Each neuron in a layer is connected to every neuron in the next layer, with each connection assigned a weight. The weights adjust as the network learns, determining how important the input is to the final output. 
+
+__Natural Language Processing (NLP)__
+
+Natural Language Processing, or NLP, is a branch of AI focusing on the interaction between computers and humans using natural language. The ultimate objective of NLP is to read, decipher, understand, and make sense of human language in a valuable way. It's the driving force behind things like voice-operated personal assistants, chatbots, and real-time translation apps.
+
+NLP is a complex field because human language is inherently complex. It's filled with nuances, context, idioms, abbreviations, and other challenges that confuse algorithms. For example, the same word can have different meanings depending on the context, and sentences can carry different sentiments based on subtle cues.
+
+NLP involves several key tasks, including:
+* Natural Language Understanding (NLU): This involves machine reading comprehension, sentiment analysis, and other tasks related to understanding human language.
+* Natural Language Generation (NLG): This involves automatic summarization, machine translation, and other tasks related to generating human-like text.
+
+These tasks require complex processing and transformation of text data, and they leverage techniques from many areas of AI, including both Machine Learning and Deep Learning. 
+
+__Large Language Models (LLM)__
+
+Large Language Models are models trained on a vast amount of text data. These models, such as GPT-3 and GPT-4 by OpenAI, can generate human-like text, like writing essays, summarizing texts, translating languages, and even answering trivia questions.
+
+These models are based on a type of neural network architecture called a Transformer, specifically designed to handle sequential data. They are trained in "language modeling," which involves predicting the next word in a sentence.
+
+LLM sits at the intersection of all the fields we've discussed. They are a product of AI and represent one of its most advanced developments. They are built using techniques from ML and DL, specifically neural networks, and they are a powerful tool in the field of NLP. They exemplify how all these technologies can create systems that interact with humans in remarkably sophisticated ways.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Google Tests A.I. Tool That Is Able to Write News Articles](https://www.nytimes.com/2023/07/19/business/google-artificial-intelligence-news-articles.html)*
+
+**Rizqun**: "Google is testing a product called Genesis that uses artificial intelligence technology to generate news articles from current events. The tool is being pitched to news organizations, offering potential benefits as a personal assistant for journalists. Still, some executives have concerns about its impact on news accuracy and the publishing industry."
+
+![memo](/assets/images/memo16.png) *[Google Chrome to offer 'Link Previews' when hovering over links.](https://www.bleepingcomputer.com/news/google/google-chrome-to-offer-link-previews-when-hovering-over-links/)*
+
+**Yoga**: "Google is developing a new "Link Preview" feature for Chrome, allowing users to view a small popup web page preview by clicking or hovering over a hyperlink. This preview lets users decide whether to fully open the page or continue browsing, saving time and optimizing data usage. The feature may offer options to open previews in a new tab or side panel, enhancing browsing flexibility. The rollout date is yet to be announced as the feature is still under development."
+
+![memo](/assets/images/memo16.png) *[Chat with Open Large Language Models](https://chat.lmsys.org/)*
+
+**Brain**: "I found this interesting site that lets you chat with several open-source LLMs. I tried to chat with LLAMA 2 (13b ver), and the eye test seems comparable with ChatGPT 3.5. It gives us some picture of the progress of open source LLMs and their potential."
+
+![memo](/assets/images/memo16.png) *[ChatGPT and other AI chatbots will never stop making stuff up, experts warn](https://www.techradar.com/computing/artificial-intelligence/chatgpt-and-other-ai-chatbots-will-never-stop-making-stuff-up-experts-warn)*
+
+**Dika**: "The article warns that AI chatbots like ChatGPT, Google Bard, and Microsoft Bing AI are prone to "hallucination," generating false information. Experts, including UW professor Emily Bender, believe this issue is inherent and not easily fixable. While some find hallucinations beneficial, they pose problems, especially in news reporting. Using large language models for important tasks like news reporting can lead to misinformation and errors."
+
+![memo](/assets/images/memo16.png) *[YouTube uses AI to summarize videos in the latest test.](https://www.theverge.com/2023/8/1/23815321/youtube-ai-video-summaries)*
+
+**Rizqun**: "Google is experimenting with using AI to generate YouTube video summaries automatically. The goal is to give users a quick overview of a video, allowing them to determine if it suits their needs. Even so, they said that it would not replace the description created by the content creator. This experiment runs only with a limited number of English videos and some users before they are officially launched."
