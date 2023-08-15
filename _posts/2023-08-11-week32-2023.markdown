@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "Week #32 2023 - Understanding AI: INFERENCE"
+date:   2023-08-11 20:00:00 +0700
+---
+
+## Understanding AI: INFERENCE
+
+Training and inference are two fundamental phases in the lifecycle of a machine learning model. Training is the process where a model learns from labeled data, optimizing its parameters will make predictions more accurate, a task usually handled by specialized professionals using robust computing resources. It is often performed offline and focuses on achieving the highest accuracy, even if it leads to complex models.
+
+Inference, on the other hand, is where the trained model is applied to new, unseen data to generate predictions or decisions. This stage is usually executed in real-time or near-real-time, emphasizing speed and efficiency. It involves a broader range of actors, including end-users and developers, and can be performed on various devices, reflecting its practical and widespread application in real-world scenarios.
+
+__AI Inference in Context__
+
+Machine learning is a complex process that can be broken down into three essential stages:
+1. Data Collection and Preprocessing: Gathering the right data is the foundation of any machine learning model. The data must be cleaned, normalized, and transformed into a usable format.
+2. Model Training: In this phase, a model is taught to make predictions based on the known data. Algorithms adjust the model's parameters to minimize the error between the predicted and actual results, essentially "learning" from the data.
+3. Inference and Predictions: Once trained, the model is ready for inference. It is where it makes predictions on new data, applying the knowledge gained during training to real-world scenarios.
+
+__Training vs. Inference__
+
+Training and inference are complementary yet distinct phases in the lifecycle of a machine learning model. These are the differences between them.
+
+**Purpose**
+
+Machine learning training aims to teach the model to make accurate predictions. The model learns from known data through repetitive adjustments of its internal parameters. In contrast, inference seeks to apply the trained model to new, unseen data to make predictions or decisions. While training is about learning from past information, inference focuses on applying this knowledge to future scenarios.
+
+**Process**
+
+Training involves iterative optimization, utilizing algorithms to minimize the error between predicted and actual outcomes. This phase is computationally intensive and often time-consuming. Inference, however, is more straightforward, requiring less computational power. It applies the trained model to new data, usually executed more quickly than the extensive training phase.
+
+**Usage**
+
+Training is typically performed offline, often in specialized development environments, away from real-time applications. The inference is generally executed in real-time or near-real-time within production environments. While training sets the groundwork, inference brings the model into practical, everyday use.
+
+**Actor**
+
+Training is conducted by specialized professionals like data scientists and machine learning engineers who design and tune the models. Inference involves a broader range of stakeholders, including end-users, application developers, and business analysts who utilize the model's predictions. The actors involved in each phase reflect the shift from development to deployment.
+
+**Infrastructure**
+
+Training's robust computing demands call for powerful GPUs or TPUs and specialized hardware. It is often carried out in data centers equipped to handle heavy computations. Inference, conversely, can be conducted on various devices, from data center servers to edge devices like smartphones. The difference in infrastructure reflects the differing computational needs of learning versus applying.
+
+**Optimization Considerations**
+
+In training, the focus often leans toward achieving high accuracy, which might result in complex models. Inference emphasizes speed and efficiency, employing techniques to reduce computational demands. The distinct optimization considerations reveal the balance between learning perfection and application practicality.  
+
+__Optimization Techniques__
+
+Though less computationally intensive than training, AI inference still requires significant resources, particularly in real-time applications. This necessity has given rise to various optimization techniques aimed at enhancing speed and efficiency:
+
+**Quantization** involves reducing the numerical precision of the model's parameters. By using fewer bits to represent numbers, computations can be made faster and more memory-efficient, with minimal loss in accuracy.
+
+**Pruning** removes certain connections or "neurons" within a neural network that have minimal effect on the predictions. It streamlines the model, making it more lightweight without sacrificing significant predictive power.
+
+**Model** distillation is an approach where a smaller model is trained to replicate the behavior of a more complex one. This "distilled" model retains most of the larger model's effectiveness but is quicker and requires fewer resources to run.   
+
+Optimization is not only about algorithms but also the hardware used:
+* **Graphics Processing Units (GPUs):** GPUs are designed to handle parallel computations, making them well-suited for the matrix operations found in neural networks.
+* **Tensor Processing Units (TPUs):** TPUs are specialized chips designed specifically for machine learning tasks, offering high performance for both training and inference.
+* **Field Programmable Gate Arrays (FPGAs):** FPGAs can be configured to perform specific tasks, allowing for highly efficient processing tailored to a particular inference workload.
+
+
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[New Microsoft Azure AD CTS feature can be abused for lateral movement.](https://www.bleepingcomputer.com/news/security/new-microsoft-azure-ad-cts-feature-can-be-abused-for-lateral-movement/)*
+
+**Yoga**: "Microsoft's new Azure Active Directory Cross-Tenant Synchronization (CTS) feature, introduced in June 2023, could create a potential attack surface for threat actors to spread laterally to other Azure tenants. Improperly configured CTS settings could allow attackers to move between connected tenants and establish persistence on their networks. Cybersecurity firm Vectra details techniques threat actors could use to abuse the feature, highlighting the need to harden configurations and monitor privileged users for suspicious activity. Microsoft has not commented on the report."
+
+![memo](/assets/images/memo16.png) *[MetaGPT: Assign different roles to GPTs to form a collaborative software entity for complex tasks](https://github.com/geekan/MetaGPT)*
+
+**Brain**: "This GitHub repo has been trending in the past week. It utilizes GPT-4 to run several AI agents that emulate a collaborative software entity. It takes one line requirement as input and outputs user stories/competitive analysis/requirements/data structures/APIs/documents, etc."
+
+![memo](/assets/images/memo16.png) *[Google Docs and Drive are getting support for eSignatures](https://www.theverge.com/2023/8/10/23826970/google-docs-drive-esignature-support-beta)*
+
+**Rizqun**: "Google is adding native support for eSignatures to Docs and Drive to make it easier for users to request signatures and sign documents from within its cloud-based productivity software. This feature is still in beta, and Google's eSignature feature won't be widely available to all Workspace users. Workspace Business or Enterprise will only get access if admins request a form. There's still no information related to this feature for Google's free personal accounts."
+
+![memo](/assets/images/memo16.png) *[AI development could lead to another GPU shortage.](https://www.techradar.com/computing/artificial-intelligence/gamers-brace-yourselves-ai-development-could-lead-to-another-gpu-shortage)*
+
+**Dika**: "The rise of AI tools and chatbots has led to concerns about a repeat of the GPU shortages seen during the crypto-mining craze. Businesses buying consumer GPUs for AI applications have caused resource shortages and cloud-based GPU bookings. It worries gamers who remember past shortages. Nvidia's AI dominance using tensor core technology amplifies concerns. Entrepreneur George Holtz's tweet reveals AMD gaming GPUs being purchased for non-gaming use. The demand for AI products strains compute-focused GPUs, potentially causing shortages, price hikes, and gamers' difficulties in buying GPUs."
+
+![memo](/assets/images/memo16.png) *[Microsoft kills Cortana in Windows 11 preview, long live AI!](https://www.bleepingcomputer.com/news/microsoft/microsoft-kills-cortana-in-windows-11-preview-long-live-ai/)*
+
+**Yoga**: "Microsoft has started phasing out Cortana in favor of integrating ChatGPT and AI into Windows 11. Cortana's support will end in August 2023, with new AI productivity features planned for Windows and Edge. This transition has begun in Windows 11 Canary preview builds, deactivating Cortana through a Microsoft Store update. The focus is now on enhancing digital assistant and productivity functions using AI in Microsoft Edge and Windows 11, with the preview of the AI-powered Windows Copilot feature. This evolving digital assistant is set to handle tasks like app launching, information retrieval, event scheduling, and daily management, expected to fully arrive with Windows 11 23H2 in the upcoming fall release."
