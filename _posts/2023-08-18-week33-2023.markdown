@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "Week #33 2023 - Zero-shot Learning"
+date:   2023-08-18 20:00:00 +0700
+---
+
+## Zero-shot Learning
+
+Zero-shot Learning (ZSL) stands at the cutting edge of AI, allowing models to make predictions on never-before-seen data by harnessing indirect knowledge. This paradigm not only broadens the AI recognition landscape but also underpins the rise of Generative AI, a field focused on creating novel content. ZSL's principle of understanding and extrapolating from known information aligns perfectly with the essence of generative models, fostering a profound synergy between recognizing the unfamiliar and creating the new.
+
+However, the journey of ZSL isn't without challenges. From addressing domain shifts and inherent biases towards known data to the complexities of cross-domain knowledge transfer and the intricacies of semantic space, the road to perfecting ZSL is laden with intricate problems. Yet, as AI continues to push boundaries, the principles and challenges of ZSL play a pivotal role in shaping its future trajectory.
+
+__Zero-Shot Learning__
+
+In the rapidly evolving world of artificial intelligence, the pursuit has always been to develop systems that emulate human-like cognition. As we navigated the initial challenges of pattern recognition and decision-making, a new frontier emerged: the capability of AI to understand and act on information it has never explicitly seen before.
+
+Enter Zero-shot Learning (ZSL) – a paradigm shift that redefines the boundaries of machine learning. By enabling models to handle tasks without direct prior experience, ZSL mirrors our human ability to generalize from known to unknown and lays a robust foundation for the rising marvel of Generative AI.
+
+__Principle of ZSL__
+
+The bedrock of traditional machine learning rests on the idea that to recognize or process something, a model needs to have seen countless examples of it. However, ZSL challenges this notion head-on. At its core, Zero-shot Learning operates on the principle of *inference from indirect knowledge*.
+
+Imagine teaching a child about animals. They know what a cat looks like and what a dog looks like. Now, if you describe a fox as being similar to a dog but with certain feline features, the child might be able to identify a fox when they see one, even if they've never encountered a fox before. ZSL functions on a similar principle within the realm of AI.
+
+What empowers this ability is the reliance on auxiliary or semantic information. In the context of machine learning, this could mean leveraging descriptions, attributes, or relationships between classes. Using such data, a ZSL model can bridge the gap between what it has seen during training and what it encounters post-training, allowing it to make educated guesses or predictions about the unknown.   
+
+__Motivation Behind ZSL__
+
+As remarkable as traditional machine learning models are, they come with a significant constraint: the insatiable hunger for labeled data. This necessity has, more often than not, become a bottleneck for several applications, especially in niches where obtaining labeled examples is cumbersome or downright impossible. It's in these challenges that the motivation for ZSL was born.
+
+**Adaptability in Dynamic Environments** - New data, categories, or concepts constantly emerge in our ever-changing world. Waiting to gather ample labeled data for every new phenomenon is impractical. ZSL provides a pathway for AI to adapt swiftly, mirroring the agility of human cognition.
+
+**Resource Conservation** - Labeling data is not just time-consuming but also expensive. The costs add up, whether manual annotation of images or text categorization. ZSL offers a way to reduce the reliance on exhaustive labeled datasets, making AI more accessible and economical.
+
+**Mimicking Human Generalization** - Humans have an innate ability to generalize from a few examples. If someone knows about apples and is then told about a specific rare apple variety, they don't need to see thousands of instances to recognize it. ZSL was inspired, in part, by this human-like capacity to generalize from limited information.
+
+**Bridging the Knowledge Gap** - There are realms of knowledge where labeled data might forever remain scarce, such as rare animal species or infrequent astronomical events. ZSL provides a method to traverse these knowledge gaps, enabling AI to venture into areas previously considered off-limits. 
+
+__Challenges of ZSL__
+As promising as Zero-shot Learning (ZSL) appears in its capability to predict unseen categories, it's not without its hurdles. These challenges, often profoundly intertwined, shape the landscape of ZSL research and applications:
+
+1. **Domain Shift:** ZSL assumes that the unseen (or target) data distribution relates somewhat to the seen (or source) data distribution. However, this isn't always the case in real-world scenarios, leading to a domain shift. When the model tries to infer the unseen data from the source, inaccuracies can arise due to these distributional discrepancies.
+   
+2. **Bias Towards Seen Classes:** Since models are trained primarily on seen classes, they tend to be biased towards them. When faced with an ambiguous instance, they are more likely to associate it with a seen class rather than a genuinely unseen one. This bias can lead to inaccurate predictions, especially in scenarios with closely related categories.
+
+3. **Cross-domain Knowledge Transfer:** In certain applications, the goal isn't just to understand unseen classes within a domain but to transfer knowledge across entirely different domains. While ZSL is potent, cross-domain knowledge transfer amplifies the complexity, demanding models to bridge significant semantic and distributional gaps.
+
+4. **Semantic Loss:** ZSL heavily depends on semantic embeddings to bridge the gap between seen and unseen classes. However, in some cases, converting raw data into these embeddings can lead to semantic loss. Vital nuances or details might be overlooked, reducing the richness of information the model uses for predictions.
+
+5. **Hubness Phenomenon:** This is a peculiar issue observed in high-dimensional spaces (like those of semantic embeddings in ZSL). Some points (or hubs) in these spaces tend to be neighbors to unusually many points. In ZSL, this can lead to certain classes (hubs) being predicted more frequently than they should be, skewing results. 
+
+__ZSL as a Precursor to Generative AI__
+
+The world of artificial intelligence is not just about recognition and decision-making; it's also about creation. Generative AI, a subset of AI focused on generating new content, has seen a meteoric rise in recent years. It encompasses everything from creating realistic images and music to drafting textual content. At the heart of this generative capacity is an underlying ability to understand and extrapolate from existing information, much like ZSL.
+
+Zero-shot learning, with its principle of making educated inferences about the unknown, naturally aligns with the core objectives of generative models. These models, in essence, are delving into the 'unknown' every time they generate novel content. They're not merely regurgitating what they've seen but synthesizing new combinations and producing unique outputs.
+
+The most iconic example is perhaps the Generative Adversarial Network (GAN), a class of AI models designed to produce new data similar to some existing data. GANs consist of two networks – a generator and a discriminator – that work in tandem. While the generator produces data, the discriminator evaluates it. Over time, the generator gets better, producing more realistic outputs. The nuances of GANs, from their architecture to their training, mirror the principles of ZSL. By understanding the attributes and characteristics of the training data, GANs can generate entirely new instances that still feel authentic.
+
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Google Chrome is making big moves to help protect the web from quantum computers.](https://www.techradar.com/pro/google-chromeis-making-big-moves-to-help-protect-quantum-computers)*
+
+**Matt**: "Surprised at how quietly this news has been received by the tech community. The fact that Google is already working on quantum-resistant encryption indicates that they believe quantum computing by bad actors could reach a threat level sooner than we all think. This is a big deal."
+
+![memo](/assets/images/memo16.png) *[Vector Databases](https://www.opensourceforu.com/2023/08/vector-databases-you-can-choose-from/)*
+
+**Dika**: "The article discusses open-source vector databases, which efficiently manage high-dimensional vector data in fields like NLP. These databases support tasks such as semantic search and document similarity. The mentioned databases include: Weaviate, Pgvector, Chroma DB, Milvus, and QDrant."
+
+![memo](/assets/images/memo16.png) *[Google's improvement to generative AI-powered Search experience (SGE)](https://blog.google/products/search/google-search-generative-ai-learning-features/)*
+
+**Rizqun**: "Google launched the generative AI-powered Search experience (SGE) less than three months ago and will continuously make improvements to enhance the user experience. According to this article, when users attempt to research something new or seek an explanation of a concept, Google will enable users to hover over specific words to preview definitions and view related diagrams or images. This feature will help users understand unfamiliar words without needing to search for their definitions in a new tab. Additionally, Google allows users to generate key points from long and complex articles on web pages. This feature helps users easily understand the context without having to scroll through and read the entire page."
+
+![memo](/assets/images/memo16.png) *[The famous Stanford Smallville is now open-source](https://github.com/joonspk-research/generative_agents)*
+
+**Brain**: "Stanford University's experiment tested the boundaries of LLM as a reasoning tool by placing 25 generative AI agents in a virtual simulation without their awareness of the simulated environment. These AI agents were endowed with distinct personalities, the capability to form memories from experiences, and the ability to devise actions rooted in personality and memory. This breakthrough could transform the gaming industry by introducing dynamic NPCs that adjust based on player interaction, rather than static."
+
+![memo](/assets/images/memo16.png) *[Meta releases open-source AI audio tools, AudioCraft.](https://arstechnica.com/information-technology/2023/08/open-source-audiocraft-can-make-dogs-bark-and-symphonies-soar-from-text-using-ai/)*
+
+**Yoga**: "Meta has open-sourced AudioCraft, a suite of AI tools that generate music and audio from text prompts. It includes AudioGen for audio effects, MusicGen for melodies, and EnCodec for improved audio compression. While not at professional quality yet, Meta hopes it will spur accessible audio experimentation. Other companies have explored similar tools, but AudioCraft's open-source approach may lead to innovative developments."
