@@ -1,0 +1,90 @@
+---
+layout: post
+title:  "Week #35 2023 - Cell-Based Architectured"
+date:   2023-09-01 20:00:00 +0700
+---
+
+## Cell-Based Architectured
+
+Cell-based architecture is a modern software design paradigm built around modular "cells," self-contained units encompassing functionality, data, and dependencies. Systems are divided into independent cells, ensuring failures in one don't affect others. The cells operate autonomously, allowing individual scalability and isolating faults, reducing cascade failures.
+
+While sharing modular principles with Service-Oriented Architecture (SOA), cell-based designs are more granular and autonomously governed. Unlike Kubernetes pods, which are operational units, cells operate at a higher functional abstraction, encapsulating entire functional boundaries.
+
+Adopting cell-based design can introduce complexity in design, development, and governance. Ensuring consistency across cells, managing potential resource redundancy, and addressing the learning curve are pivotal considerations. In essence, while cell-based architecture heralds a new era of resilient, scalable software design, its implementation demands careful planning and understanding of its nuances.
+
+__Cell-Based Architecture in a nutshell__
+
+The world of software development is continuously evolving. From the monolithic applications to today's highly distributed cloud-native solutions. At the heart of these changes lies an imperative to enhance modularity, scalability, and resilience—ensuring they remain maintainable, responsive, and reliable as applications grow.
+
+Enter the concept of cell-based architecture, or cellular architecture, a model that further refines the principles of microservices to encapsulate distinct functionalities into self-contained units, or "cells." In many ways, these cells echo the biological metaphor from which they draw their name, operating autonomously yet communicating seamlessly to form the fabric of a larger, dynamic system.
+
+A cell stands as a bastion of self-sufficiency. It houses all its requisite resources and minimizes the dependencies on external components to ensure a robust and independent operational environment. It translates to isolating failures, ensuring that a disruption in one cell doesn't cascade into neighboring cells.
+
+But, this isolation doesn't render cells as silos. They engage with each other, communicating through well-defined interfaces, usually in the form of APIs. This interconnectedness ensures seamless integrations while maintaining distinct boundaries. Furthermore, the design of these cells allows for horizontal scalability, mirroring the natural cell division in response to increased demands.
+
+This inter-cell communication isn't just about direct service invocations. Modern systems often employ event-driven architectures, where cells operate in real-time synchronicity. In such scenarios, a cell emits events that others are tuned into, enabling dynamic integrations and creating a responsive, adaptive software environment.
+
+__Is it similar to SOA?__
+
+SOA and cell-based architectures both champion the principle of modularity, advocating for systems to be broken down into smaller, coherent units. In SOA, these units are services tailored to distinct business functions, while cell-based architecture divides them into cells. Beyond modularity, a shared emphasis on interoperability is evident. SOA services traditionally communicate using standardized protocols like web services. Similarly, in a cell-based approach, cells engage with each other through well-delineated interfaces, ensuring consistency and predictability in interactions.
+
+The distinction between them becomes more pronounced in the realm of governance. SOA's governance gravitates around standardized service definitions and communication protocols. In contrast, the cell-based approach prioritizes autonomy, allowing each cell its unique governance model.
+
+Traditional SOA often leaned towards monolithic deployment strategies, where services, though logically separate, were bundled together. On the other hand, cell-based architectures emphasize truly independent deployments. Each cell, encapsulating its functional boundary, can be scaled, deployed, or updated without disturbing its peers. This distinction places cell-based architectures as an evolutionary response to the challenges in certain SOA implementations, combining the adaptability required by the modern cloud environment with the modular principles of SOA.
+
+While cell-based architecture can be seen as a natural evolution from SOA, it doesn't render SOA obsolete. Instead, it borrows many principles from SOA while addressing some of its shortcomings, marrying the modularity of SOA with the agility and resilience demanded by modern software ecosystems.    
+
+__What about Kubernetes Pods?__
+
+At a glance, both Kubernetes pods and the cells in a cell-based architecture embody the spirit of modularity and encapsulation, leading many to draw parallels between the two.
+
+Kubernetes pods, foundational units in the Kubernetes ecosystem, represent the smallest and simplest units in the deployment schema. They encapsulate one or more containers that need to work closely together. This encapsulation ensures operational efficiency, allowing closely related containers to share the same network namespace, thereby streamlining communication. Similarly, cells encapsulate multiple components, ensuring they operate as a cohesive, self-sustaining unit. This encapsulation layer lends cells their resilience and independence, traits echoed in how Kubernetes pods function.
+
+Yet, for all their similarities, there are distinct differences. Kubernetes pods, in essence, are about operational deployment. They're designed to ensure that containers, which are tightly coupled, can function seamlessly together. Their lifecycle can be ephemeral, reflecting the dynamic nature of container orchestration, where pods can be swiftly terminated and restarted based on demands and health checks.
+
+Cells, however, function at a higher level of abstraction. They encapsulate operational components and entire functional boundaries, including data, runtime, and potentially several microservices. The lifecycle of a cell is aligned more with the functionality or business capability it represents rather than the operational dynamics of the underlying infrastructure.
+
+Furthermore, while Kubernetes is largely infrastructure-focused, revolving around container orchestration and resource optimization, cell-based architecture is a higher-order architectural paradigm. It's designed to tackle challenges in software design, organization, and deployment in dynamic environments, especially as systems scale.  
+
+__It Elevates Scalability and Resilience__
+
+Achieving scalability and resilience isn't just a luxury – it's an imperative. Cell-based architecture has emerged as a promising solution to these challenges, not by accident but due to its inherent design principles.
+
+The isolated nature of cells means that they operate independently, with each cell being a self-contained unit, inclusive of its dependencies, services, and data. This autonomy ensures that a surge in demand or a heavy load on one cell doesn't negatively impact others. For instance, imagine an e-commerce platform where the payment gateway, inventory management, and user profiles are each isolated within their own cells. If there's a sudden spike in payments due to a flash sale, it can scale its resources without affecting the performance of the inventory management or user profiles cells.
+
+In many traditional architectures, a failure in one component can lead to a domino effect, causing disruptions across the system, often termed 'cascade failures.' With cell-based architectures, this risk is significantly mitigated.
+
+Let's illustrate with an example: In the same e-commerce platform, suppose the payment gateway cell encounters an error, perhaps due to a bug or an external API failure. Since the cells are isolated, this failure is contained within the payment gateway cell. While the development team addresses the issue, the rest of the platform – inventory management, user profiles, and other functionalities – continues to operate seamlessly. Customers can still browse products, check their profiles, or add items to their wishlist, even if they might face temporary issues with the payment process. This containment ensures that an entire platform doesn't grind to a halt due to a localized issue.
+
+Furthermore, recovery from failures is more streamlined in a cell-based architecture. Given the modular nature of cells, they can be individually restarted, scaled, or rolled back without impacting the broader system. It means faster mean time to recovery (MTTR) and less downtime.
+
+__Challenges and Considerations__
+
+Adopting a cell-based architectural paradigm promises enhanced scalability and resilience but also introduces unique challenges. Foremost among these is the complexity of design and development. Determining the right granularity for cells and orchestrating their interactions demands precision and can add layers of intricacy. Coupled with this is the potential overhead in infrastructure management. Each self-contained cell, with its runtime and resources, could lead to redundancy if not astutely managed.
+
+Governance poses another challenge. Different cells risk evolving inconsistently without a clear governance structure, introducing disparities in practices or data models. The need for new skill sets compounds this concern, as transitioning to this architecture can require developers and architects to recalibrate their approach. Moreover, as cells may occasionally depend on one another, ensuring these dependencies don't result in tight coupling becomes crucial.
+
+Finally, with multiple cells functioning in tandem, organizations might need to adopt advanced monitoring and observability tools to maintain a comprehensive view of the system's health. In essence, while cell-based architecture offers many advantages, careful planning, training, and governance are key to navigating its complexities and fully reaping its benefits.
+
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Introducing ChatGPT Enterprise](https://openai.com/blog/introducing-chatgpt-enterprise)*
+
+**Brain**: "OpenAI just launched ChatGPT Enterprise, which offers enterprise-grade security and privacy, unlimited higher-speed GPT-4 access, longer context windows for processing longer inputs, advanced data analysis capabilities (formerly known as Code Interpreter), customization options, and much more. It also has more features, such as securely extending ChatGPT's knowledge with your company data (which I think would likely utilize some embedding technique)."
+
+![memo](/assets/images/memo16.png) *[Mastering Prompt Engineering for ChatGPT](https://medium.com/@karankakwani/mastering-prompt-engineering-for-chatgpt-tips-tricks-and-best-practices-a2d01b703dab)*
+
+**Dika**: "The article discusses expert strategies for crafting effective prompts to unlock the full potential of ChatGPT, an AI language model developed by OpenAI. It emphasizes the importance of clarity, specificity, and providing context in prompts. The article provides real-world examples and best practices for prompt engineering, including using system messages, experimenting with different prompt formats, controlling output length and format, focusing on positive instructions, and utilizing contextual information. It also highlights the iterative nature of prompt engineering and the need for refinement through testing and analysis."
+
+![memo](/assets/images/memo16.png) *[Duet AI for Google Workspace Enterprise add-on is now generally available.](https://workspaceupdates.googleblog.com/2023/08/duet-ai-for-google-workspace-enterprise-add-on.html#:~:text=Duet%20AI%20for%20Google%20Workspace%20Enterprise%20enables%20organizations%20to%20create,go%20from%20your%20mobile%20device)*
+
+**Rizqun**: "The AI-powered tool Duet AI is now available for Google Workspace Enterprise. It offers various features, including refining emails in Gmail and content in Google Docs, generating original images directly from Google Slides presentations, creating plans for projects in Google Sheets using a simple prompt, and enhancing appearances in Google Meet. As part of continuous development, upcoming features like studio lighting and sound for Google Meet will be implemented."
+
+![memo](/assets/images/memo16.png) *[WordPress migration add-on flaws could lead to data breaches](https://www.bleepingcomputer.com/news/security/wordpress-migration-add-on-flaw-could-lead-to-data-breaches/)*
+
+**Yoga**: "The All-in-One WP Migration plugin, used by 5 million WordPress sites, has a vulnerability allowing unauthorized access to sensitive data. Premium extensions like Box, Google Drive, One Drive, and Dropbox are affected, potentially enabling attackers to manipulate migration data or create malicious backups. ServMask, the plugin's vendor, released fixes on July 26, 2023. Users should update affected extensions to patched versions and use the latest base plugin version."
+
+![memo](/assets/images/memo16.png) *[The Myth of 'Open Source' AI](https://www.wired.com/story/the-myth-of-open-source-ai/)*
+
+**Yoga**: "Recent moves to open up AI technology, like Meta's Llama 2 model, are met with caution by researchers from Carnegie Mellon University, the AI Now Institute, and the Signal Foundation. They highlight that supposedly "open" AI models might still have limitations and usage restrictions that benefit the companies behind them. While models like GPT Neo are more fully open due to standard open-source licenses, challenges like proprietary data, controlled software frameworks, high costs, and limited access to expertise hinder broader openness. The researchers argue that unlocking AI's potential and mitigating risks require true accessibility and transparency, suggesting that regulatory efforts should consider the actual impact of openness in the AI landscape."
