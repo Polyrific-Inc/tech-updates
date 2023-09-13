@@ -1,0 +1,112 @@
+---
+layout: post
+title:  "Week #36 2023 - ML Ops"
+date:   2023-09-08 20:00:00 +0700
+---
+
+## ML Ops
+
+MLOps stands at the intersection of Machine Learning (ML) and operations (Ops), focusing on harmonizing and operationalizing ML workflows within production environments. MLOps answers common challenges like model degradation, inefficient pipelines, and deployment delays. It champions rigorous data management, automated training, frictionless deployment, and vigilant monitoring.
+
+Yet, the path is strewn with hurdles, including technical intricacies, organizational silos, and the unique demands of ML projects. Fortunately, the MLOps ecosystem is burgeoning with tools and solutions like MLFlow, Azure ML, Run AI, H2O AI, and Hugging Face. In its essence, MLOps is revolutionizing the way ML models are brought from the lab to real-world applications, ensuring they're scalable, efficient, and consistently high-performing.
+
+__Introduction__
+
+Machine Learning (ML) has shifted from a niche technological field to becoming an integral part of modern businesses across industries. However, with this rapid integration comes complexity. ML isn't just about creating a model and expecting it to work seamlessly. It's a combination of data collection, preprocessing, model training, validation, and finally deployment into real-world systems.
+
+Unlike traditional software development, which has standardized best practices for deployment and maintenance, ML brings many unique challenges. It's akin to trying to fit a square peg into a round hole when attempting to use traditional development methods with ML processes.
+
+Enter MLOps: A discipline aimed at bridging this gap. But what exactly is MLOps? Why has it become so crucial in today's business landscape? This article unravels the tapestry of MLOps, its importance, core principles, and the challenges companies face as they integrate ML into their operational workflows.
+
+__The Landscape Before MLOps__
+
+Machine Learning, though transformative, was initially met with significant operational hurdles. Before MLOps became recognized as a distinct discipline, the integration of ML into businesses encountered various challenges:
+* **Model Deployment Delays**: After the rigorous process of designing and training an ML model, getting it into a production environment was a separate battle. Traditional deployment methods were ill-equipped to handle the unique demands of ML models.
+* **Lack of Consistency**: Two data scientists working on similar projects could end up with drastically different workflows. Without standardization, the efficiency and reproducibility of ML projects suffered.
+* **Scalability Issues**: An ML model that works seamlessly with a small dataset during testing might crumble under the vast amounts of real-world data. Ensuring models scaled efficiently was a common pain point.     
+
+__Why MLOps Matters__
+
+The challenges highlighted the need for a dedicated operational process tailored to ML. MLOps emerged as that crucial bridge, and here's why its adoption has become imperative:
+* **Streamlined Workflows**: With MLOps, businesses can establish a consistent and efficient process from data collection to model deployment. This results in faster time-to-market for ML-driven features and products.
+* **Reproducibility**: As with traditional software development, version control is vital. MLOps introduces the same rigor to ML, ensuring that models and their associated data can be traced, reproduced, and audited.
+* **Operational Excellence**: Just having a trained model isn't enough. Ensuring it's accessible, maintainable, and monitorable in a production environment is equally critical. MLOps provides the tools and methodologies to achieve this operational excellence.
+* **Business Alignment**: With MLOps, ML projects can better align with business goals. It fosters team collaboration, ensuring that ML endeavors are technically sound and drive tangible business value.  
+
+__MLOps in Every Stage__
+
+***Data Management and Preparation***
+
+MLOps places significant emphasis on ensuring data integrity from the outset. It involves instituting automated validation checks to catch any anomalies or inconsistencies that might arise in data sources.
+
+Beyond just data integrity, a hallmark of MLOps is treating data much like code, establishing version control for datasets. This practice ensures that any changes to the data can be meticulously tracked over time, allowing experiments to remain reproducible.
+
+***Model Training***
+
+Model training, often considered the crux of the machine learning process, presents its own complexities. MLOps introduces a paradigm shift by advocating for automated training workflows. This approach eliminates the tedious manual trial-and-error methods previously predominant, allowing models to be swiftly retrained and refined as fresh data streams in.
+
+Alongside this automation, MLOps champions rigorous experiment tracking. With the multitude of models, configurations, and hyperparameters that data scientists experiment with, it becomes crucial to have a robust mechanism in place. It ensures that each training iteration, nuances, and outcomes are systematically logged, making comparisons and refinements more straightforward and informed.
+
+***Model Deployment***
+
+Transitioning a model from its developmental phase to real-world deployment has historically been challenging. MLOps revolutionizes this phase by facilitating seamless deployment pipelines. By reducing the gaps between development and production environments, models can be integrated faster, ensuring that innovations quickly translate to real-world applications.
+
+But MLOps doesn't stop at just deployment; it also focuses on the post-deployment landscape. Ensuring that a model, once live, can efficiently cater to varying demands is crucial. MLOps tools and methodologies come into play here, ensuring models are not only deployed swiftly but also scale gracefully, adjusting resources in response to real-world loads and requirements.
+
+***Testing and Validation***
+
+MLOps underscores the continuous validation of models, ensuring they remain precise and pertinent even as underlying data changes. Such proactive validation is complemented by feedback loops integral to the MLOps approach.
+
+After deployment, the real-world interactions and outcomes serve as invaluable feedback. MLOps systems adeptly gather and process this feedback, creating a closed loop that fosters iterative refinement. While traditional testing focuses on pre-deployment checks, MLOps broadens the horizon, ensuring models are rigorously tested and refined throughout their operational lifespan.
+
+***Monitoring and Analysis***
+
+Once a machine learning model is deployed, the journey is far from over. MLOps accentuates the importance of vigilant monitoring, ensuring that models consistently deliver optimal performance in real-world scenarios. Advanced MLOps tools provide real-time metrics, offering a clear lens into a model's behavior, efficiency, and potential areas of concern.
+
+But monitoring isn't just about the present; it's also about anticipating future challenges. A pivotal aspect of MLOps is detecting model drift, where incoming data patterns shift, causing models to gradually veer away from their intended accuracy. By proactively identifying such drifts, MLOps allows teams to recalibrate and adjust, ensuring models remain both relevant and reliable over time.
+
+__Challenges in MLOps__
+
+While MLOps provides a robust framework for operationalizing machine learning workflows, it's not devoid of challenges. Integrating ML into traditional operational environments presents several hurdles, shaped by technical, organizational, and operational complexities.
+
+**Technical Challenges**: The ML landscape is vast and rapidly evolving, with new tools, platforms, and architectures emerging regularly. Integrating these disparate tools into a cohesive workflow can be daunting. Additionally, managing infrastructure that scales dynamically with the fluctuating computational needs of diverse ML models adds to the technical intricacies.
+
+**Organizational Challenges**: Bridging the gap between ML teams and traditional IT or DevOps teams is often easier said than done. The unique demands of ML projects require a nuanced approach, which may not always align with conventional IT practices. This dichotomy can lead to silos, miscommunication, and misalignment between teams. Moreover, instilling a culture that understands and values both ML and operational excellence is a continuous endeavor.
+
+**Operational Challenges**: The lifecycle of an ML model is markedly different from traditional software. The operational demands are multifaceted, from continuous integration and delivery tailored for ML to managing the intricacies of model versioning, monitoring, and retirement. Ensuring seamless and efficient workflows amidst these complexities is a challenge that MLOps aims to address, but it's an ongoing journey.
+
+__Common Frameworks or Tools__
+
+As MLOps has grown in prominence, so has the ecosystem of tools and frameworks designed to support it. These solutions address the multifaceted challenges of integrating machine learning into operational workflows. Here's a glimpse into some of the most prominent ones:
+
+1. **[MLflow](https://mlflow.org/)**: Developed by Databricks, MLflow offers a platform for the complete machine learning lifecycle. It covers everything from tracking experiments to packaging code into reproducible runs and sharing & deploying models.
+
+2. **[Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning?view=azureml-api-2)**: An end-to-end machine learning platform that can be used for building, training, and deploying machine learning models. It provides a variety of tools and services for managing the ML lifecycle.
+
+3. **[Run AI](https://www.run.ai/)**: A platform for building and deploying machine learning models. It provides various tools and services for managing the ML lifecycle, including experiment tracking, model monitoring, and model deployment.
+
+4. **[H2O AI](https://h2o.ai/)**: An open-source platform for machine learning. It provides a variety of tools and services for building, training, and deploying machine learning models.
+
+5. **[Hugging Face](https://huggingface.co/)**: A company that provides various tools and services for the machine learning community. Its tools and services can automate and streamline many tasks involved in MLOps, such as model training, model deployment, and model monitoring.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Visual Studio for Mac Retirement Announcement](https://devblogs.microsoft.com/visualstudio/visual-studio-for-mac-retirement-announcement/)*
+
+**Frandi**: "Microsoft team finally gave up with their attempt to run Visual Studio on a Mac machine. Instead, they recommended Mac users utilize the VS Code with the C# Dev Kit extension. Or, if the users still want to utilize the IDE's full features, they can run it from a Windows VM on Mac or on the cloud with Microsoft DevBox."
+
+![memo](/assets/images/memo16.png) *[Finally, a good use for AI: Meta reveals bot that can translate almost 100 languages](https://www.techradar.com/computing/artificial-intelligence/finally-a-good-use-for-ai-meta-reveals-bot-that-can-translate-almost-100-languages)*
+
+**Dika**: "Facebook owner Meta has unveiled an AI tool called SeamlessMT4, which can understand nearly 100 different languages. The single large language model improves the efficiency and quality of translation and can read, write, listen, and talk. While text and speech recognition covers almost 100 languages, SeamlessMT4 can currently generate speech in 36 output languages. The technology is part of Meta's push for language-focused AI use and will be made publicly available under a research license for transparency purposes."
+
+![memo](/assets/images/memo16.png) *[Microsoft is testing new features in the Windows Insider Program](https://www.theverge.com/2023/8/31/23854449/windows-11-notepad-autosave-snipping-tool-update)*
+
+**Rizqun**: "Microsoft is testing new features for Windows 11 Snipping Tool, Notepad, and Paint in Windows Insider Program. Notepad will soon automatically save our session state, allowing us to close Notepad without interrupting dialogs. It will automatically restore previously open tabs and unsaved content and edits across those open tabs. Windows Snipping Tool will have a new keyboard shortcut to do a screen record and a new default audio source option so that we can include mic input and computer audio. Paint will introduce a one-click image background remover."
+
+![memo](/assets/images/memo16.png) *[Falcon 180B: A record-breaking open-source model](https://falconllm.tii.ae/)*
+
+**Brain**: "Falcon 180B is the new and largest open-source model, having 180 billion parameters. Falcon 180B not only tops the leaderboard for open-access models but also rivals proprietary ones like PaLM-2 Large. Its performance metrics span a range of NLP tasks, placing it between GPT-3.5 and GPT-4 depending on the evaluation benchmark."
+
+![memo](/assets/images/memo16.png) *["AI took my job, literally"—Gizmodo fires Spanish staff amid switch to AI translator](https://arstechnica.com/information-technology/2023/09/ai-took-my-job-literally-gizmodo-fires-spanish-staff-amid-switch-to-ai-translator/)*
+
+**Frandi**: "G/O Media recently decided to terminate the team behind Gizmodo en Español, opting instead to use AI translations of their English articles. However, many articles now exhibit noticeable errors, with some even abruptly transitioning from Spanish to English because of translation mishaps. This trend is met with skepticism and worries about the quality and reliability of the automatically translated content."
