@@ -1,0 +1,104 @@
+---
+layout: post
+title:  "Week #36 2023 - Privileged Access Management"
+date:   2023-09-15 20:00:00 +0700
+---
+
+## Privileged Access Management
+
+In the digital realm, privilege denotes a user's or process's level of access. This access varies from basic User Privileges to high-level Administrator Privileges, specialized Service Accounts, and emergency-focused Break-Glass Accounts.
+
+Central to privilege management are key philosophies: the 'Least Privilege' principle emphasizes granting only essential access for tasks, and the 'Zero Trust' model dictates every access request should be verified regardless of its origin. Yet, with privileges come risks, such as insider threats, external breaches, and the pitfalls of over-privileged accounts.
+
+Diving into Privileged Access Management (PAM) is about more than just understanding. It demands assessing the existing privilege landscape, choosing the right PAM solution, crafting and upholding clear policies, and continuously refining strategies to stay ahead of emerging threats.
+
+__Privilege in the context of computing__
+
+The term "privilege" holds significant weight. But what exactly does it mean in a computing context? At its core, privilege defines the level of access or control that a user or a system process possesses in a computing environment. It determines what actions can be performed, from viewing files to making systemic changes.
+
+Understanding privilege is not just a matter of semantics; it's crucial for ensuring the right balance between user convenience and data security. With cyber threats lurking at every digital corner, ensuring that only suitable entities can access specific functions or data is paramount. It not only safeguards sensitive information but also maintains the integrity and functionality of the entire system.
+
+__Diving into Privilege: Types and Categories__
+
+Privilege management operates under the expansive umbrella of identity and access management (IAM) and identity security. In tandem, PAM and IAM offer intricate control, ensuring transparency and traceability across all credentials, privileges, and access.
+
+In this universe of access and authorization, distinct types of privileges exist, each with its unique purpose and potential risks.
+
+**User Privileges**
+These rights are granted to regular users, enabling them to perform everyday tasks. Such privileges allow activities like reading files, executing certain applications, and making personal configuration changes. Generally, these privileges are confined to ensuring users can do their jobs without unnecessary restrictions but also undue access to sensitive parts of the system.
+
+**Administrator Privileges**
+Often known as "admin rights," these privileges grant elevated access, allowing individuals to modify system configurations, install or remove software, and manage user accounts. Due to the high level of control provided by these privileges, they're typically reserved for IT professionals who manage and maintain the system.
+
+**Service Accounts**
+These are specialized accounts, distinct from individual user accounts, designed to run applications or services. They're automated and don't require human intervention to operate, yet they can possess high levels of access depending on the application requirements or service they support. Due to their potential access levels and the lack of direct human oversight, they are vital points of focus in privilege management.
+
+**Emergency Accounts**
+Sometimes referred to as "break-glass accounts," these are designed for use in crises. They grant temporary elevated access when critical issues arise that require bypassing standard access controls. These accounts are typically logged meticulously and might require managerial approval.
+
+Understanding these categories underscores the importance of managing and monitoring privilege with care. Each category has its role and relevance, and incorrect or lax management can lead to vulnerabilities.
+
+__The Philosophies Behind Privilege Management__
+
+At the heart of effective privilege management lie fundamental philosophies that shape how organizations approach and implement security. These philosophies aren't just abstract ideas; they form the bedrock for designing robust, resilient systems capable of withstanding various threats.
+
+**Least Privilege**
+
+One of the foundational principles in security, the concept of Least Privilege, revolves around ensuring that users and processes are granted only the permissions they absolutely need to perform their tasks — no more, no less. It minimizes potential damage in the event of a breach or misuse, as malicious actors or unintentional errors are confined to limited access areas. The principle works by starting with zero access and then adding necessary permissions, ensuring that over-privileging is avoided.
+
+**Zero Trust**
+
+Born out of the realization that threats can emerge both outside and inside an organization's boundaries, the 'Zero Trust' model operates on a simple tenet: trust nothing, verify everything. Regardless of whether access requests come from within the organization or outside, they are treated with the same level of scrutiny. This approach minimizes reliance on perimeter defenses and emphasizes verifying identities, validating devices, and monitoring access patterns for anomalies. 
+
+__Risks and Threat Vectors__
+
+Privileges, when managed appropriately, facilitate seamless and efficient system operations. However, improper management or misuse can open the door to a plethora of vulnerabilities and threats. Understanding these risks cannot be overstated, as it shapes an organization's approach to safeguarding its assets.
+
+**Insider Threats**
+
+One of the most potent and often overlooked threats, insider risks arise from within the organization. Whether through malicious intent, negligence, or simple human error, individuals with access to systems can inadvertently or intentionally cause harm. Misused administrator privileges or unsanctioned actions can lead to data breaches, operational disruptions, and more.
+
+**External Breaches**
+
+Attackers from outside an organization constantly seek ways to infiltrate systems, and exploiting privilege misconfigurations can be a golden ticket. Techniques such as privilege escalation, where an attacker gains higher-level permissions than initially granted, can be devastating. Once inside, they can exfiltrate data, deploy malware, or lay the groundwork for future attacks.
+
+**Over-privileged Accounts**
+
+One of the common pitfalls in privilege management is granting more permissions than necessary. These over-privileged accounts become ripe targets for both internal and external threat actors. The more access an account has, the greater the potential damage if compromised.
+
+Awareness of these threat vectors is paramount in crafting an effective defense. Organizations can anticipate potential issues by understanding the dark side of privileges and building safeguards to minimize risks. After all, forewarned is forearmed. 
+
+__Implementing Privileged Access Management (PAM)__
+
+Merely understanding the principles and threats around privileges isn't enough. Organizations must take proactive measures to manage these privileges efficiently. It is where Privileged Access Management (PAM) comes into play, offering a suite of solutions to control, monitor, and audit all privileged operations.
+
+1. **Assessment & Planning**: Before diving into PAM implementation, it's crucial to thoroughly assess your organization's current privilege landscape. Identify all privileged accounts, understand their usage, and pinpoint potential vulnerabilities.
+2. **Choosing the Right PAM Solution**: The market offers a range of PAM solutions, each with unique features. Your choice should align with your organization's size, industry, regulatory requirements, and specific needs. Whether you opt for on-premises, cloud-based, or a hybrid solution, ensure it's scalable and integrates well with your existing infrastructure.
+3. **Policy Creation & Enforcement**: Develop clear, comprehensive policies around privileged access. These policies should outline who gets access, what level of access they receive, when they can access, and for what specific purposes. Once created, these policies must be strictly enforced using the PAM solution.
+4. **Regular Audits & Reviews**: To ensure the continued effectiveness of your PAM strategy, conduct regular audits and reviews. It will help you identify over-privileged accounts, detect misuse, and ensure compliance with organizational and regulatory standards.
+5. **Training & Awareness**: PAM solutions are only as effective as those using them. Regularly train your IT teams and end-users about the importance of privilege management, the threats associated with misuse, and best practices to adhere to.
+6. **Continuous Improvement**: The digital landscape is ever-evolving, and so are the threats. Adopt a continuous improvement mindset, stay updated with the latest privilege management, and adjust your PAM strategies accordingly.
+
+Implementing PAM isn't a one-time event but an ongoing process, demanding vigilance and adaptability. By adhering to these steps and ensuring consistent oversight, organizations can fortify their defenses against the multitude of privilege-related threats lurking in the shadows.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft offers legal protection for AI copyright infringement challenges](https://arstechnica.com/information-technology/2023/09/microsoft-offers-legal-protection-for-ai-copyright-infringement-challenges/)*
+
+**Yoga**: "Microsoft now offers the Copilot Copyright Commitment, providing legal protection to customers facing copyright claims due to content generated by AI systems like GitHub Copilot and Bing Chat. Microsoft covers damages and legal fees if customers use the built-in safeguards, addressing concerns about AI reproducing copyrighted content. This move responds to the growing use of generative AI tools in the tech industry and ongoing legal challenges, like a lawsuit over GitHub Copilot's alleged copyright issues, highlighting the need for clarity in this evolving landscape."
+
+![memo](/assets/images/memo16.png) *[Symbl.ai Introduces Programmable Coaching Experiences for Sales Teams](https://salestechstar.com/predictive-ai-artificial-intelligence/symbl-ai-introduces-programmable-coaching-experiences-for-sales-teams/)*
+
+**Dika**: "Symbl.ai has launched Sales Intelligence, a programmable sales coaching tool that provides context-aware call scores and summaries to sales and revenue operations leaders. The tool is designed to improve sales results by offering real-time guidance during calls and increasing data fidelity in customer relationship management systems. The low-code APIs and user interfaces allow for customization, allowing companies to deliver tailored coaching experiences for sales representatives."
+
+![memo](/assets/images/memo16.png) *[DeepMind and LinkedIn Co-founders Launch Pi Chatbot](https://www.analyticsvidhya.com/blog/2023/05/deepmind-and-linkedin-co-founders-launch-chatgpt-competitor-pi/)*
+
+**Rizqun**: "Pi is a chatbot designed for relaxed, supportive, and informative conversions. It has the demeanor of a sympathetic sounding board rather than seeking to offer knowledge. We can also activate the voice option and choose different voice types to hear the answer from the Pi chatbot. Pi is not only available on the web, but also in WhatsApp, Instagram, Facebook, and other messaging services."
+
+![memo](/assets/images/memo16.png) *[Stability AI debuts Stable Audio, bringing text-to-audio generation to the masses.](https://www.stableaudio.com/)*
+
+**Brain**: "Stability AI just released a new AI plaything. Stable Audio allows you to generate short audio clips using simple text prompts. The technology is based on similar AI techniques to their Stable Diffusion image-creating technology. Stable Audio was trained on over 800,000 pieces of licensed music and can generate music beyond repetitive midi and symbolic generation. It can instead work directly with raw audio samples for higher quality output."
+
+![memo](/assets/images/memo16.png) *[Bun 1.0 is here](https://www.youtube.com/watch?v=BsnCpESUEqM&ab_channel=Bun)*
+
+**Frandi**: "[Bun](https://bun.sh/) has recently emerged in the JavaScript arena, posing a potential challenge to NodeJS's dominance. It's a comprehensive JavaScript runtime and toolkit built for performance, encompassing a bundler, test runner, and package manager compatible with Node.js. Now that it has achieved its stable 1.0 version, it will be fascinating to observe its impact on the evolving JavaScript ecosystem in the coming years."
