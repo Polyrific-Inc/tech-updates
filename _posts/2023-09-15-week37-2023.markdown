@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Week #36 2023 - Privileged Access Management"
+title:  "Week #37 2023 - Privileged Access Management"
 date:   2023-09-15 20:00:00 +0700
 ---
 
