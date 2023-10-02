@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "Week #39 2023 - LLM - Fine-Tuning Optimization"
+date:   2023-09-29 20:00:00 +0700
+---
+
+## LLM - Fine-Tuning Optimization
+
+* LLM Fine-tuning challenge: LLMs (Large Language Models) like Llama 70B are like skyscrapers of the NLP world. They are immense in size and capabilities but pose challenges in fine-tuning due to their vastness.
+  
+* PEFT (Parameter Efficient Fine-Tuning): An efficiency star! Rather than adjusting a massive model's entire architecture, PEFT fine-tunes a select subset, saving computational resources and time. It's about making smart, focused tweaks.
+  
+* LoRA (Low-Rank Adaptation): A PEFT technique that streamlines LLM training. It freezes most of the model, introducing only a tiny set of adjustable parameters or layers. It's like refining a sculpture by chiseling away the unnecessary bits.
+  
+* Int8 Quantization: A memory savior! It reduces the memory required to store model weights by reducing data type precision. Instead of losing information, it smartly rounds data, ensuring performance doesn't take a hit.
+  
+* FSDP (Fully Sharded Data Parallel): Think of a team collaboration on steroids. FSDP divides a model's parameters across different GPUs for efficient training. Plus, it overlaps communication and computation, ensuring optimized performance.
+
+__🎉 The LLM Fiesta!__
+
+**Welcome to the World of Gargantuan Intellectual Power!** Imagine a library, not just any library, but one that stretches far beyond the horizon, filled with humanity's collective knowledge. That's the power of Large Language Models (LLMs) for you. They're not just vast repositories of words; they're monumental in their capacity to understand, generate, and interact.
+
+However, with great power comes the need for fine-tuning. Just as a luxury car, no matter how advanced, needs precise calibration for optimal performance, LLMs, too, need to be fine-tuned to specific tasks, be it writing essays, answering questions, or composing poetry.
+
+But here's the twist: How do you precisely adjust a machine that's exponentially more complex than anything we've ever built? The sheer size of LLMs makes the process of fine-tuning resemble the challenge of tuning a grand orchestra, where each musician (or, in our case, parameter) needs individual attention. The stakes are high, and the challenges are many. But the allure of a perfectly tuned LLM – one that understands nuances, respects context, and brings precision – is just too great to resist. 
+
+__🎢 The Rollercoaster Ride of PEFT (Parameter Efficient Fine-Tuning)__
+
+In the world of LLMs, where adapting massive models to specific tasks is both a challenge and a necessity, various fine-tuning techniques come into play. Among these techniques, PEFT stands out with its unique blend of efficiency and performance.
+
+PEFT, or Parameter Efficient Fine-Tuning, is an innovative approach to Natural Language Processing (NLP). Instead of reinventing the wheel, it builds upon the existing knowledge of pre-trained models. By selectively fine-tuning using smaller, task-specific datasets, PEFT reshapes the model's parameters to cater to specific needs without the excessive computational costs of other methods.
+
+Standard fine-tuning typically involves adjusting a pre-trained model's parameters using a new dataset, essentially retraining it for a different task. While this method is straightforward, it can be computationally intensive, especially for LLMs.
+
+PEFT, on the other hand, is more discerning. Instead of recalibrating the entire model, PEFT identifies and adjusts only the most influential parameters for the new task. It's like a surgeon making precise incisions instead of a complete overhaul. This precision conserves computational resources and often leads to better performance, mainly when the available task-specific dataset is limited in size.
+
+__🧙‍♂️ The Magic of Low-Rank Adaptation (LoRA)__
+
+Navigating the expansive landscape of LLM optimization techniques, Low-Rank Adaptation (LoRA) emerges as a beacon of efficiency. In a world where computational resources are at a premium, every technique that ensures efficiency without sacrificing performance is worth its weight in gold.
+
+Low-Rank Adaptation (LoRA) is a stellar example of Parameter Efficient Fine-Tuning (PEFT). But what sets it apart? Rather than delving deep and adjusting the entire colossal structure of an LLM, LoRA focuses on fine-tuning a select subset of the model. It freezes the larger architecture and introduces a minimal set of adjustable parameters or layers.
+
+To put this into perspective, consider Llama 2 7B with its impressive 7 billion parameters. With LoRA, one could fine-tune less than 1% of these parameters. It's like having a massive engine and realizing that to make it work optimally for a new task, you only need to tweak a few specific gears.
+
+The benefits of such a focused approach are manifold. Firstly, it slashes memory requirements since we only store gradients, optimizer states, and other training-related data for a fraction of the model's parameters. Moreover, the efficiency also translates to faster training times and reduced costs. It's the equivalent of making a car run faster, more smoothly, and more fuel-efficient just by adjusting to a few critical components.
+
+__🔍 Navigating Memory Constraints with Int8 Quantization__
+
+Despite ingenious adaptations and optimizations like LoRA, training colossal models, such as Llama 70B, pose significant challenges due to their overwhelming sizes. It's like having a large ship that can't fit into any port! So, how do we navigate such turbulent waters? Here, Int8 quantization sails to our rescue.
+
+Int8 quantization is a method employed to lessen the memory constraints encountered during the training of extensive models. Quantization, in essence, is about representing data in a more compact form. It reduces the precision of the floating-point data types utilized to store model weights, thus mitigating the memory requirements.
+
+This technique is akin to converting high-resolution images into lower resolutions to save storage space but with a clever twist. Instead of losing details, Int8 quantization ensures the essence is retained. It utilizes only a quarter of the precision of the typical data types but compensates for this reduction by rounding the data rather than truncating it. It ensures minimal loss of information, allowing the models to maintain their performance levels.
+
+🔗 __Fully Sharded Data Parallel (FSDP): Piecing Together Efficient Training__
+
+As we journey through the labyrinth of LLM optimization techniques, there's another intriguing piece of the puzzle: Fully Sharded Data Parallel (FSDP).
+
+FSDP is a data-parallel training algorithm that adds an ingenious twist to the traditional process. Instead of having the model's parameters stationed at one location, FSDP disperses, or "shards," them across multiple data parallel workers, effectively dividing the load. Moreover, it can offload part of the training computation to CPUs, offering even more flexibility and efficiency.
+
+Picture a team collaborating on a vast project. Rather than crowding around a single desk, each team member works on a specific part at their workstation. While the components are spread out, the computation and assembly of each piece happen right at that localized station. Similarly, with FSDP, even though the parameters are sharded across different GPUs, the computation for each micro batch remains local to that GPU worker.
+
+What elevates FSDP is its nuanced approach to parameter distribution. It ensures that the parameters are sharded more uniformly across the GPUs. But there's more. FSDP masterfully overlaps communication and computation during the training phase. This concurrent operation accelerates the process, making training not just feasible but also optimized in terms of performance.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Migrating Stack Overflow Teams to Azure](https://stackoverflow.blog/2023/08/30/journey-to-the-cloud-part-i-migrating-stack-overflow-teams-to-azure/)*
+
+**Frandi**: "This two-part article is full of useful knowledge for me to learn about how enterprise migrate their legacy app into a new technology stack. While they still run stackoverflow.com in an on-premises datacenter, they have taken on the journey of migrating Stack Overflow for Teams to Microsoft Azure."
+
+![memo](/assets/images/memo16.png) *[Windows Subsystem for Linux gets new 'mirrored' network mode](https://www.bleepingcomputer.com/news/microsoft/windows-subsystem-for-linux-gets-new-mirrored-network-mode/)*
+
+**Yoga**: "Microsoft has released WSL 2.0.0 with experimental features, including memory optimization, disk size reduction, mirrored networking, improved DNS resolution, and advanced firewall management. These additions enhance the Windows Subsystem for Linux, making it more efficient and compatible. Some features are available to Windows Insiders in the Release Preview Channel on Windows 11 22H2."
+
+![memo](/assets/images/memo16.png) *[Amazon Invests Up to $4 Billion in AI Firm Anthropic, Challenging OpenAI](https://www.anthropic.com/index/anthropic-amazon)*
+
+**Brain**: "Amazon is venturing deeper into the AI arena with a potential $4 billion investment in Anthropic, positioning itself against tech giants like Microsoft and Google. This partnership allows Anthropic access to advanced Amazon Web Services technology and Amazon to integrate Anthropic's AI models into its projects. Prioritizing safety, both entities reinforce security and support global AI safety initiatives, including those proposed by the White House."
+
+![memo](/assets/images/memo16.png) *[OpenAI released GPT-4V(ision) paper](https://cdn.openai.com/papers/GPTV_System_Card.pdf)*
+
+**Brain**: "It's been a pretty busy week for Chat GPT. They released three major features this week: ChatGPT Voice, ChatGPT Vision, and ChatGPT Browser. Those 3 are all great additions to ChatGPT, but I think the vision feature is fascinating as it opens new ways to interact with the LLM. People have been using it to explain diagrams, generate code from a UI screenshot, or explain a piece of art into a pretty well-rounded essay."
+
+![memo](/assets/images/memo16.png) *[ChatGPT can finally get up-to-date answers from the internet](https://www.techradar.com/computing/artificial-intelligence/chatgpt-can-finally-get-up-to-date-answers-from-the-internet-heres-how)*
+
+**Dika**: "OpenAI's ChatGPT AI chatbot can now browse the internet to provide users with current and authoritative information, complete with direct links to sources. This functionality, which was briefly available earlier this year before being removed, allows ChatGPT to access up-to-date information for tasks such as vacation planning and technical research. Users need to be ChatGPT Plus subscribers to access this feature, and it is currently in beta with potential future refinements and improvements. The bot uses Bing to search the web and is only as reliable as Bing's search results."
