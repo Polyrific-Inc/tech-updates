@@ -1,0 +1,107 @@
+---
+layout: post
+title:  "Week #39 2023 - StreamingLLM"
+date:   2023-09-29 20:00:00 +0700
+---
+
+## StreamingLLM: Open Doors to Endless Contexts
+
+* Deploying Large Language Models (LLMs) in streaming applications, especially in extended interactions, has faced challenges. Traditional LLMs struggle with memory constraints and can't handle text sequences beyond their trained limit.
+  
+* StreamingLLM introduces a framework allowing LLMs to handle theoretically infinite sequence lengths by focusing on the most recent tokens and a phenomenon called "attention sink." This approach ensures coherent text generation without overburdening memory or constantly resetting the cache.
+
+* StreamingLLM doesn't expand the LLM's context window but focuses on recent tokens. It's ideal for applications like multi-round dialogues and offers a performance boost over traditional methods. It can also work in tandem with other context extension methods.
+
+__🚀 Background Challenges__
+
+In the rapidly evolving world of artificial intelligence, Large Language Models (LLMs) have emerged as a revolutionary force, transforming everything from content generation to user assistance. However, as with all technologies, they come with challenges. One of the most pressing concerns is their deployment in streaming applications, particularly in multi-round dialogues or extended interactions.
+
+Imagine a digital assistant who can engage in an ongoing conversation throughout the day, offering insights, reminders, and support without faltering. Such a seamless interaction requires the model to continuously process and generate responses without being bogged down by memory constraints or a limited understanding of long sequences. But herein lies the challenge. 
+
+Most LLMs, as advanced as they might be, struggle in two main areas:
+1. **Memory Demands:** Caching every token's Key and Value states (KV) in extended interactions requires significant memory, often making it unfeasible for real-time applications.
+2. **Handling Extended Texts:** Most LLMs have a training sequence length limit. They falter when faced with text sequences longer than this trained limit, losing coherence or context.
+
+It sets the stage for a pressing question: How can we harness the power of LLMs in real-time, long-duration applications without these constraints? The answer lies in a new framework we'll explore in this article: StreamingLLM.  
+
+__📚 Foundational Concepts__
+
+Before we dive deep into the mechanics of StreamingLLM, it's essential to grasp a couple of foundational concepts that play pivotal roles in its design and functionality.
+
+
+**Window Attention**
+
+At its core, window attention is a mechanism where the model retains only the most recent Key and Value states (KVs) from the input. Think of it as the model having a 'short-term memory' that only remembers the recent bits of information and discards the older ones.
+
+While window attention seems like a natural and straightforward solution to the problems mentioned in the introduction, it's not without issues. Specifically, when the length of a text surpasses the size of this 'memory window', the model's performance degrades. It is akin to remembering a story's climax without recalling its beginning.
+
+**Attention Sink Phenomenon**
+
+While studying window attention, researchers observed an intriguing behavior in LLMs. These models often showed strong attention scores towards the initial tokens in a sequence. These tokens acted as "sinks" for attention, even if they weren't semantically critical to the current context.
+
+This phenomenon, termed "attention sink," suggests that there's an inherent tendency in LLMs to anchor their attention to the beginning of sequences. Harnessing or optimizing this behavior can be the key to improving performance when the text length exceeds the attention window.
+
+__💡 The Breakthrough Solution__
+
+The limitations and challenges associated with LLMs in streaming scenarios have necessitated a groundbreaking solution that's both efficient and scalable. Enter StreamingLLM, a framework designed to tackle these challenges head-on.
+
+At its core, StreamingLLM is a framework that bridges the gap between the finite attention windows of LLMs and the need to handle infinite sequence lengths in real-world applications. It achieves this by maintaining only the most recent tokens and attention sinks, eliminating the need to retain all intermediate tokens. This approach ensures that LLMs can generate coherent and consistent text from recent inputs without the constraints of their original training sequence lengths.
+
+One of StreamingLLM's standout features is its adaptability. It's not just a theoretical construct but has proven compatibility with renowned models in the industry. Models like Llama-2, MPT, Falcon, and Pythia have been successfully incorporated within the StreamingLLM framework. More impressively, they've demonstrated capabilities to handle extensive sequences, scaling up to 4 million tokens and potentially more. This scale represents a monumental leap from traditional LLMs, which often struggled with far shorter sequences.
+
+It's not just about capability; it's also about efficiency. In practical scenarios, especially in streaming applications, StreamingLLM has shown significant advantages over traditional methods. The performance boost is evident, with StreamingLLM achieving up to a whopping 22.2x speedup compared to some baseline methods. This speed is a testament to its optimized design, focusing on the most recent tokens without overburdening the system with extensive cache requirements.
+
+__🔧 Optimizing with Placeholder Tokens__
+
+As with many technological breakthroughs, there's always room for refinement. For StreamingLLM, one such optimization involves the innovative use of placeholder tokens.
+
+At a fundamental level, placeholder tokens act as dedicated attention sinks during the pre-training phase of LLMs. By embedding this specialized token, the model can be guided to form more structured attention patterns, especially in long sequences. The placeholder essentially provides a 'reference point' or 'anchor' for the model, aiding it in maintaining context and coherence as it processes extensive texts.
+
+StreamingLLM with placeholder token optimization exhibits improved performance when deployed in streaming scenarios. This enhancement not only aids in generating more coherent outputs but also bolsters the model's overall efficiency in real-time applications.
+
+It's worth noting that the introduction of placeholder tokens ties back to the previously discussed 'attention sink' phenomenon. By providing a dedicated attention sink, the placeholder token ensures that the model's attention doesn't scatter or degrade, especially when the sequence length surpasses the conventional attention window.
+
+ __❓ FAQ Highlights__
+
+To strengthen your understanding of StreamingLLM, we address some of the most frequently asked questions to clarify its functionalities and implications.
+
+**Working with Infinite-Length Inputs:**
+
+**Question:** What does "working on infinite-length inputs" imply for LLMs?
+**Answer:** StreamingLLM's approach is about efficiency. While it can handle lengthy texts, it focuses on the most recent tokens. So, if an entire book is inputted, StreamingLLM might only address the final sections, not the whole content. Its primary strength is generating fluent text from the latest tokens without needing constant cache resets.
+
+**Ideal Use Cases for StreamingLLM**
+
+**Question:** What is the ideal use case for StreamingLLM?
+**Answer:** StreamingLLM shines in streaming applications, particularly multi-round dialogues. Imagine a digital assistant that bases its responses on the freshest parts of a conversation without memory hiccups or constant cache refreshes. Previous methods either faced memory overflows or had to recompute data, making StreamingLLM a significant step forward in efficiency and consistency.
+
+**StreamingLLM & Context Extension Works**
+
+**Question:** How does StreamingLLM relate to recent works on context extension?
+**Answer:** StreamingLLM and context extension methods serve different, albeit related, purposes. In the context of StreamingLLM, "context extension" pertains to leveraging a larger cache size for more recent tokens. For a tangible example, one can refer to practical implementations like those with models LongChat-7B-v1.5-32K and Llama-2-7B-32K-Instruct, as detailed in the original paper.
+
+__🔍 Learn More__
+
+StreamingLLM results from the collaboration work of MIT, Meta AI, and Carnegie Mellon researchers. The original paper is at [2309.17453](https://arxiv.org/abs/2309.17453) [Efficient Streaming Language Models with Attention Sinks](https://arxiv.org/abs/2309.17453) [(arxiv.org)](https://arxiv.org/abs/2309.17453). You can also check the samples in the [GitHub repository](https://github.com/mit-han-lab/streaming-llm).
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Meta debuts generative AI features for advertisers](https://techcrunch.com/2023/10/04/meta-debuts-generative-ai-features-for-advertisers/)*
+
+**Faris**: "Meta has unveiled its first generative AI tools for advertisers, including features that allow for the customization of backgrounds, image expansion for different aspect ratios, and the generation of multiple text variations based on the original copy. These tools are designed to assist brands and businesses in streamlining their advertising efforts, potentially saving significant time. Additionally, the company is working on enabling AI-driven messaging for businesses on WhatsApp and Messenger for customer engagement and support."
+
+![memo](/assets/images/memo16.png) *[Assistant with Bard: A step toward a more personal assistant](https://blog.google/products/assistant/google-assistant-bard-generative-ai/)*
+
+**Rizqun**: "Google has introduced Assistant with Bard, a generative AI-powered personal assistant that extends beyond voice and can be interacted with through text, voice, or images. It aims to provide a more personalized and integrated experience, helping users manage emails, create social media posts, and more. Assistant with Bard is currently in the early testing phase and will be available to the public in the coming months."
+
+![memo](/assets/images/memo16.png) *[Taiwan highlights powerful AI and cloud products with the Taiwan Excellence Awards](https://www.techradar.com/computing/artificial-intelligence/taiwan-highlights-powerful-ai-and-cloud-products-with-the-taiwan-excellence-awards)*
+
+**Dika**: "The Taiwan Excellence Awards for 2023 have recognized three innovative AI and cloud computing products. The winners include Phison Electronics' PCIe 4.0 Enterprise SSD Controller IC, Planet Technology's LoRa AIoT Network Solution, and TPIsoftware Corporation's SysTalk.Chat. These products have been selected for their technical innovation, real-life impact, and ability to enhance everyday life."
+
+![memo](/assets/images/memo16.png) *[OpenAI competitor Mistral brings open-source language models back to the forefront](https://www.techspot.com/news/100344-openai-competitor-mistral-brings-open-source-language-models.html)*
+
+**Brain**: "Concerned about the state of AI that might be dominated by big private companies, the founder of Mistral creates a new open source LLM that's pretty lightweight (7B parameters) but reported to have comparable performance with the competition. Hopefully, the proliferation of open source LLM model can even out the playing field of AI."
+
+![memo](/assets/images/memo16.png) *[SSH keys are stolen by the stream of malicious PyPI and npm packages](https://www.bleepingcomputer.com/news/security/ssh-keys-stolen-by-stream-of-malicious-pypi-and-npm-packages/)*
+
+**Yoga**: "Since September 12, 2023, a campaign discovered by Sonatype has been targeting software developers with malicious npm and PyPi packages, amassing 45 such packages to date. Some of these packages mimic popular ones to deceive developers. Data stolen from developers includes sensitive machine information and SSH keys, posing a security risk. Users of platforms like PyPI and npm are urged to exercise caution when downloading packages due to the ongoing threat of malware in these ecosystems."
