@@ -1,0 +1,95 @@
+---
+layout: post
+title:  "Week #41 2023 - Generative AI on Edge"
+date:   2023-10-13 20:00:00 +0700
+---
+
+## Generative AI on Edge
+
+Generative AI, known for creating new content like art and music, has typically relied on massive cloud-based resources. However, there's a rising trend of shifting this AI processing to edge devices. Why?
+1. **Confidentiality Concerns:** Processing on edge keeps user data localized, reducing risks of data breaches.
+2. **Performance Issues:** Edge devices are rapidly advancing, offering faster processing without the latency of cloud-based back-and-forths.
+3. **Personalization Potentials:** Edge AI can offer hyper-personalized experiences, tailoring outputs based on individual user nuances and behaviors.
+4. **Economic Advantages:** Shifting to the edge can mean significant savings, avoiding rising cloud service charges.
+5. **Green Advantages:** Edge processing is greener, reducing computational and data transfer energy costs and aligning with global sustainability efforts.
+
+__🚀 Generative AI Meets Edge Computing__
+
+**Generative AI** refers to algorithms and models that can create new content. Whether art, music, or even text, generative AI can produce output often indistinguishable from human-generated content. It's the force behind many deepfake videos and photorealistic images that have astonished and sometimes alarmed, the world.
+
+**Edge computing** is a paradigm shift in the data processing. Instead of sending data all the way to centralized servers or cloud networks, edge computing processes data closer to the location where it's generated — be it a smartphone, IoT device, or any other edge device.
+
+Traditionally, AI, especially the generative type, has been reliant on vast computational resources typically found in large data centers or cloud networks. These powerful engines churn through enormous amounts of data to train AI models, making them more intelligent and efficient. However, this centralization has its drawbacks. Concerns about privacy and security are ever-present. A centralized model isn't always the best for personalization, as decisions made on data from millions might not be apt for an individual. Moreover, the costs associated with such massive infrastructures can be limiting for many.
+
+With these concerns in mind, the tech world is beginning to look at edge computing as a promising avenue for the future of generative AI. By bringing AI's intelligence closer to where data originates, we're on the cusp of redefining the boundaries of intelligent creativity.   
+
+__🔒 Confidentiality Concerns__
+
+Today, a significant amount of our personal information lives in the cloud. But with the convenience of cloud computing comes inherent risks. The continuous movement of data between devices and cloud platforms multiplies the potential for unwanted tracking, manipulation, and even outright theft.
+
+**Generative AI on Edge** presents an attractive solution to many of these concerns. User information can remain confidential by processing and generating data locally on devices rather than sending it to the cloud. The data doesn't leave the device, drastically reducing the chances of interception or unauthorized access. It is a breath of fresh air for the consumer, promising a future where personalized AI suggestions don't come at the cost of their privacy.
+
+This protection isn't just a boon for individual consumers. In sectors like healthcare, enterprise, and government, where the stakes are exponentially higher, keeping data local could mean protecting millions of patient records, securing confidential business strategies, or ensuring national security protocols remain uncompromised. 
+
+__⚡ Performance Issues__
+
+When gauging the effectiveness of AI, performance metrics are paramount. Two key indicators — processing performance and application latency — significantly influence the user experience and the feasibility of AI deployment.
+
+Historically, the might of AI demanded supercomputers or expansive cloud infrastructures. However, with the advent of advanced chipsets and robust hardware, edge devices have seen a meteoric rise in their processing capabilities. Such leaps ensure that, with time, even the most sophisticated generative AI models could find home on edge devices, particularly as these models become more streamlined and optimized.
+
+This shift to edge-based AI processing carries a dual advantage. Firstly, it sidesteps the potential pitfalls of latency that arise from congested networks or overwhelmed cloud servers. A user's request no longer has to travel through the vast digital expanse to a distant server and back. The immediacy of this process enhances user experience, ensuring smoother, more responsive interactions.
+
+Secondly, there's the boon of reliability. With the processing grunt available on the device, AI-powered applications can execute queries anytime, anywhere. Even in situations without network connectivity or remote locations, generative AI can continue to serve, analyze, and create.
+
+__🎨 Personalization Potentials__
+
+In an era where users crave experiences catering to their unique needs and preferences, personalization isn't just a luxury but an expectation. Generative AI, combined with edge computing, is poised to usher in a new epoch of hyper-personalized interactions.
+
+With AI processing happening at the edge — right on the user's device — there's an unparalleled opportunity to weave deeply individualized models. These models can be tailored based on generalized user behavior and intricate specifics like an individual's speech nuances, facial expressions, reactions, and daily usage patterns.
+
+But the personalization doesn't stop there. Imagine your device recognizing changes in your environment, adjusting its responses based on the ambient noise in a room or the lighting conditions. Or consider how external data, such as inputs from a fitness tracker or a medical device, could inform AI-driven advice and insights, creating a holistic understanding of the user's current state.
+
+This comprehensive, real-time personalization not only meets but often exceeds user expectations. When a device or application can predict needs, respond in context, and even anticipate moods, it leads to heightened user engagement.
+
+ __💸 The Economic Advantage__
+
+Amidst the incredible feats of generative AI, there's an underlying economic narrative. As these AI models grow in complexity, the infrastructural demands surge in tandem. Cloud providers, once offering complimentary AI-powered services, now find themselves grappling with escalating equipment and operational costs. The result? An onset of fees for services that consumers once enjoyed freely.
+
+By running generative AI on edge devices, we're not just decentralizing AI; we're also decentralizing costs. Here's how:
+1. **Consumer Savings:** With AI operations happening locally on devices, consumers may no longer have to bear the brunt of rising cloud service charges. The processing occurs on the device, effectively cutting out the middleman – the cloud.
+2. **Provider Cost Efficiency:** For cloud service providers, shifting some AI workload to the edge reduces strain on their centralized infrastructure. It translates to savings in equipment upkeep, energy consumption, and bandwidth demands.
+3. **Network Load Alleviation:** Networking service providers also stand to benefit. By keeping data localized, network bandwidth has less strain, leading to cost savings and more efficient resource allocation.
+4. **Resource Optimization:** Shifting some generative AI tasks to edge devices allows centralized systems to refocus on high-priority, high-value tasks. It's an efficient resource distribution, catering to the immediacy and strategic goals.
+
+
+__🌱 The Green Advantage__
+
+Running generative AI models isn't just computationally intensive; it's power-hungry. When deployed on the cloud, large AI models often demand a suite of AI accelerators – GPUs, TPUs, and sometimes an ensemble of servers. Each of these contributes to a significant energy bill.
+
+Beyond the apparent power requirements of computation, there's another lurking energy cost: data transfer. Transmitting vast amounts of data to and from the cloud across intricate networks isn't free, in terms of monetary cost and energy consumption.
+
+Edge devices offer a more energy-efficient alternative. By processing AI models locally, they save on computational energy and, perhaps more importantly, eliminate the energy costs associated with data transport. When viewed holistically, the energy savings are significant.
+
+Cloud providers today are under increasing scrutiny and pressure to meet environmental and sustainability goals. As they grapple with soaring energy demands, offloading some AI processing to the edge can help mitigate their data center energy consumption. It's a move that aligns with their green ambitions while ensuring service quality.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[How Google Authenticator made one company's network breach much, much worse](https://arstechnica.com/security/2023/09/how-google-authenticator-gave-attackers-one-companys-keys-to-the-kingdom/)*
+
+**Yoga**: "A recent security breach at Retool exposed vulnerabilities in Google Authenticator's cloud sync feature. An attacker tricked an employee into clicking a malicious link, gaining access to their Okta account. Using the sync feature, the attacker added their device, compromising 27 Retool customers in the cryptocurrency industry. It highlights the importance of secure MFA solutions and Google account protection. To enhance security, disable Google Authenticator sync, use more secure MFA apps, enable two-factor authentication for your Google account, and employ a robust password manager."
+
+![memo](/assets/images/memo16.png) *[Supercharge Your Semantic Kernel Experience: Unleashing the Power of Pre and Post Hooks](https://devblogs.microsoft.com/semantic-kernel/supercharge-your-semantic-kernel-experience-unleashing-the-power-of-pre-and-post-hooks/)*
+
+**Brain**: "We have been using Semantic kernel for developing AI apps with a rather complex flow of prompts, like generating code. I think this feature would give more power to the library, as it allows the developer to control the flow of the application more freely. For example, it allows an execution to be retried based on any condition we specify in the post hooks."
+
+![memo](/assets/images/memo16.png) *[The Invention of the SD Card: When Tiny Storage Met Tech Giants](https://blog.westerndigital.com/invention-sd-card/)*
+
+**Frandi**: "I found this article interesting because it told me about some history of the SD card origins, how it was found, the competition, and how it became a standard in the industry."
+
+![memo](/assets/images/memo16.png) *[11 new AI projects announced at Adobe MAX 2023 – here's why they could change everything](https://www.techradar.com/computing/software/11-new-ai-projects-announced-at-adobe-max-2023-heres-what-they-are)*
+
+**Dika**: "Adobe showcased 11 "Projects" at its MAX 2023 event, which could be incorporated into future Adobe products. One of these projects, called Project Stardust, allows users to separate objects in a photograph into individual layers for easy editing, with the ability to move or delete objects and generate AI-created replacements. The other projects include tools for removing reflections in photos, removing or adding objects in videos, increasing video resolution, changing video backgrounds, translating speech while preserving the original voice, turning doodles into polished drawings, and aiding in 3D object creation. While these projects are still in the prototype stage, some promise future integration."
+
+![memo](/assets/images/memo16.png) *[Cloudflare DDoS protections were ironically bypassed using Cloudflare](https://www.bleepingcomputer.com/news/security/cloudflare-ddos-protections-ironically-bypassed-using-cloudflare/)*
+
+**Yoga**: "Researchers found a Cloudflare security vulnerability allowing attackers with free accounts to bypass Firewall and DDoS protections through cross-tenant flaws, needing the target's IP address. Attackers can set up custom domains, turn off protection, and route malicious traffic, reducing effectiveness. Custom certificates are recommended to mitigate the issue, but it remains unresolved after reporting to Cloudflare."
