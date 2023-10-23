@@ -1,0 +1,89 @@
+---
+layout: post
+title:  "Week #42 2023 - GenAI: The Rise of Generative AI on Edge Devices"
+date:   2023-10-20 20:00:00 +0700
+---
+
+## Generative AI on Edge
+
+While Edge AI offers promising benefits, it's not without challenges. Operational complexities arise from its decentralized nature. Deploying AI models on devices with limited power feels like fitting trucks in small garages. Security is crucial, with devices vulnerable to both physical and cyber threats. Reliability demands these systems withstand everything from poor networks to power outages. Lastly, ensuring they all work harmoniously with numerous devices and platforms is like piecing together multiple jigsaw puzzles. However, with strategic approaches, these challenges can be navigated effectively.
+
+__🎭 The Other Side of the Edge AI Coin__
+
+Last week, we dipped our toes into the exciting world of Generative AI on Edge, exploring all the good stuff it brings: better privacy, faster performance, and personalized user experiences, to name a few. It's clearly a game-changer in how we interact with technology and create new digital content. But, like anything, it's not without its challenges.
+
+In this article, we will look at the hurdles we might face when it comes to running Generative AI on Edge. Think of it as peeling back the curtain to see what's happening backstage. We'll talk about keeping our data safe, ensuring the systems run smoothly, managing our AI models, and ensuring everything works well together.
+
+It's all about getting a complete picture. While Edge computing offers some fantastic benefits, there are cases where sticking with cloud solutions still makes sense. So, let's dive in, exploring both the smooth and the rough sides of Generative AI on Edge, and see what it really takes to bring these exciting technologies into our daily lives.   
+
+__🛠 Keeping an Eye on Distributed Systems__
+
+Edge AI introduces a new dimension of complexities in operations and monitoring due to its decentralized setup and confined computational resources. It's not just about ensuring everything runs smoothly but also that the AI models consistently give accurate results, even as real-world situations and data evolve.
+
+To navigate these operational hurdles effectively, we can employ a few invaluable strategies:
+* **Harnessing Remote Logging:** One of the primary tools in our arsenal is the ability to log remotely from edge devices to centralized databases. This method isn't just about collecting data; it's about understanding software behaviors, diagnosing potential issues, and ensuring that even with sporadic connectivity, the system keeps humming.
+* **Keeping a Close Eye on Accuracy:** It's essential to monitor the performance of AI models continuously. By calculating accuracy metrics directly on edge devices, we can get real-time insights into how well the model functions. More importantly, this vigilance allows us to detect any data drift, ensuring that our models stay relevant and timely, reflecting the evolving nature of real-world scenarios.  
+
+__📦 Fitting Powerful AI into Small Packages__
+
+Edge AI brings a unique challenge: deploying and handling AI models on devices that may not have much computing power. Think about fitting a big truck into a small garage – it's like trying to run complex AI models on limited-edge devices. Plus, when these devices are spread out everywhere, updating and managing the models on them feels like trying to herd cats.
+
+However, there are several strategies to navigate these deployment obstacles effectively:
+1. **Optimize Your Models:** Leveraging techniques such as quantization and pruning can significantly reduce model size. While quantization minimizes the bit precision, pruning trims unnecessary parameters, ensuring a more compact yet efficient model.
+2. **Select the Optimal Framework:** There are multiple frameworks, such as TensorFlow Lite, PyTorch Mobile, and Core ML, specifically designed with edge deployment in mind. These tools are optimized to ensure your models run seamlessly on edge devices.
+3. **Adopt Edge-Centric Model Architectures:** There are model architectures crafted for the edge, like MobileNets and SqueezeNets. These are not only efficient but also significantly smaller in size, making them ideally suited for limited-edge devices.
+4. **Harness the Power of Distributed Training:** Federated learning is a game-changer here. It allows for training AI models directly on the edge devices. The beauty of this approach is that it respects data privacy by ensuring that personal data remains localized.
+5. **Smooth Model Updates:** Over-the-air (OTA) updates are a boon for edge AI. This capability ensures that deploying fresh model versions or patches becomes seamless, keeping all devices in sync without manual intervention.
+
+__🔒 Guarding the Gates in the Age of Edge AI__
+
+Using Generative AI on Edge can be a double-edged sword, especially when it comes to keeping data safe. Edge devices are everywhere, often in places that are easy to access, making them a target for physical and cyber-attacks. Plus, they usually handle sensitive data, making security even more crucial.
+
+These are some strategies to fortify these edge devices against potential threats:
+1. **Physical Security:** The first line of defense is ensuring that only authorized individuals can access the edge devices. Physical barriers or secure locations can deter malicious actors from tampering or gaining access to the device.
+2. **Network Security:** Keeping edge devices on dedicated networks, shielded by firewalls and strict access controls, is paramount. It creates an additional layer that hackers would need to penetrate, significantly reducing the risk of unauthorized access.
+3. **Data Security:** In our digital age, the sanctity of data is non-negotiable. End-to-end encryption ensures that data remains unreadable to unauthorized eyes, whether in transit between devices or stored on the device.
+4. **Software Security:** Vigilance is vital. Constantly monitoring edge devices for signs of malware or other software compromises can prevent breaches before they wreak havoc. Staying updated with the latest patches and software defenses is equally vital.
+5. **Incident Response:** Even with the best precautions, breaches can happen. A robust incident response plan ensures rapid action during security events, minimizing potential damage and facilitating quick recovery. Preparedness is half the battle won.
+
+ __🛡 Ensuring Unwavering Performance in Uncertain Environments__
+
+In the Edge AI world, it's not just about being smart; it's about being assertive, too. These systems face all sorts of challenges – from shaky network connections to sudden power cuts. They need to work reliably no matter what the circumstances are.
+
+Several strategies emerge to address these challenges head-on:
+1. **Fail-safe Mechanisms:** Preparedness is the best antidote to unforeseen disruptions. Equipping Edge AI systems with fail-safe shutdown procedures ensures they don't suffer data losses during abrupt stops. Moreover, backup power sources can keep systems running during power interruptions, while redundant devices offer a safety net, ensuring uninterrupted service even if a primary device fails.
+2. **Software Resilience:** Software, the heart of any AI system, must be adept at navigating unexpected situations. Exception handling ensures that Edge AI systems continue functioning even when faced with unexpected situations. Furthermore, graceful degradation allows the system to continue its essential functions even if some of its features face glitches.
+3. **Robust Model Design:** Edge AI systems must be prepared to handle data that might be noisy, incomplete, or outright missing. By incorporating techniques like dropout regularization, AI models can be trained to be more resilient to such uncertainties, ensuring consistent and reliable performance even in less-than-ideal conditions. 
+
+
+__🔗 Making Every Piece of the Puzzle Fit in the Edge AI Era__
+
+Imagine having many puzzle pieces from different sets, and you're trying to make them fit together. That's the challenge with Edge AI: we have so many devices and platforms, all trying to communicate and work together. It can get messy.
+
+Several strategies offer a beacon of clarity to navigate this interoperability labyrinth:
+1. **Cross-platform Frameworks:** Embracing frameworks like TensorFlow Lite, PyTorch Mobile, and Core ML is a smart start. These tools act as the universal language for varied hardware, fostering a sense of unity amidst the diversity.
+2. **Standard APIs:** Tools like OpenVINO and Open Neural Network Exchange (ONNX) are pivotal in enhancing model portability. By offering a standard interface, these APIs ensure models can smoothly transition across different platforms without hitches.
+3. **Hardware-agnostic Model Design:** Flexibility is a virtue in the rapidly evolving Edge AI landscape. Designing models that separate their architecture from hardware-specific optimizations ensures a broader compatibility range. Essentially, this approach promotes adaptability over rigidness, preparing models to function across a spectrum of devices.
+4. **Harnessing Virtualization:** Abstracting the complexities of underlying hardware differences, virtualization emerges as a game-changer. A consistent environment across varied devices paves the way for a smoother and more harmonized Edge AI experience.
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[AI language models can exceed PNG and FLAC in lossless compression, says study](https://arstechnica.com/information-technology/2023/09/ai-language-models-can-exceed-png-and-flac-in-lossless-compression-says-study/)*
+
+**Yoga**: "The DeepMind language model Chinchilla 70B has demonstrated impressive lossless compression capabilities, reducing ImageNet image patches to 43.4% and LibriSpeech audio data to 16.4% of their original sizes, surpassing conventional compression methods. It suggests that language models, initially designed for text, can efficiently compress various data types."
+
+![memo](/assets/images/memo16.png) *[Better Reasoning from ChatGPT](https://www.deeplearning.ai/the-batch/iterative-bootstrapping-a-new-method-to-improve-chain-of-thought-prompting/)*
+
+**Dika**: "Researchers have developed an iterative bootstrapping method in chain-of-thought-prompting to improve the accuracy of large language models, such as ChatGPT, in solving math problems. By prompting the model to "think step by step" and generating correct chains of thought examples, the model can use them as guides to solve other problems more accurately. The method outperformed hand-crafted prompts and auto-CoT in most evaluation datasets. It potentially eliminated the need for human input in the future by allowing the model to fix its own mistakes or validate its outputs using external tools."
+
+![memo](/assets/images/memo16.png) *[Demystifying Retrieval Augmented Generation with .NET](https://blog.westerndigital.com/invention-sd-card/https://devblogs.microsoft.com/dotnet/demystifying-retrieval-augmented-generation-with-dotnet/)*
+
+**Brain**: "RAG is a common technique used in LLM-powered applications to work around the knowledge cutoff limitation of a language model. Several concepts might seem overwhelming when we first learn this since we need to learn new concepts like Embedding and Vector Database. This detailed blog post will show you how it works in .NET."
+
+![memo](/assets/images/memo16.png) *[Adobe previews AI upscaling to make old, fuzzy videos and GIFs look fresh](https://www.theverge.com/2023/10/11/23912480/adobe-max-sneak-project-resup-ai-video-upscaling-preview)*
+
+**Rizqun**: "Adobe's "Project Res-Up" is an experimental AI tool that uses diffusion-based technology to enhance low-resolution videos and GIFs, improving sharpness and adding details like hair strands and wrinkles. Although not yet available for beta testing, its reveal at Adobe Max hints at potential integration into Adobe's editing software."I-created replacements. The other projects include tools for removing reflections in photos, removing or adding objects in videos, increasing video resolution, changing video backgrounds, translating speech while preserving the original voice, turning doodles into polished drawings, and aiding in 3D object creation. While these projects are still in the prototype stage, some promise future integration."
+
+![memo](/assets/images/memo16.png) *[Google will shield AI users from copyright challenges within limits](https://cloud.google.com/blog/products/ai-machine-learning/protecting-customers-with-generative-ai-indemnification)*
+
+**Yoga**: "Google is introducing a comprehensive policy to protect users of its generative AI systems on Google Cloud and Workspace from intellectual property claims. This policy covers copyrighted content used for AI training and the generated output in products like Vertex AI and Duet AI. Google assumes legal responsibility for potential risks, excluding intentional infringement. It mirrors similar commitments by Microsoft and Adobe and addresses the rise in lawsuits related to AI technology."
