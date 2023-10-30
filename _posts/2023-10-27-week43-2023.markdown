@@ -1,0 +1,84 @@
+---
+layout: post
+title:  "Week #43 2023 - Introduction to Retrieval Augmented Generation"
+date:   2023-10-27 20:00:00 +0700
+---
+
+## Introduction to Retrieval Augmented Generation
+
+* Large Language Models (LLMs) are good at creating text based on tons of data they've learned. Still, they sometimes give inconsistent or off-topic answers for knowledge-intensive or domain-specific tasks.
+* Retrieval-augmented generation (RAG) steps in to help by looking up reliable external information to answer questions more accurately, making LLMs more trustworthy, cost-effective, and better at handling specific or challenging queries.
+* RAG has three parts: **a finder** (retrieval model) that looks up information from a big book of facts (external knowledge base), **an explainer** (generative model) that puts together a clear answer from the found information, and **the big book of facts** itself with lots of helpful information.
+* RAG works in four simple steps: understanding your question, looking up valuable information, picking the best pieces of information, and crafting a clear answer.
+* When faced with uncertain or varying information, RAG smartly scores and combines information to pick the most sensible answer, reducing generating inconsistent or misleading responses. 
+
+__🤔 LLM and Its Problems__
+
+Generative Artificial Intelligence (AI) has been making significant strides. The core of this capability lies in the extensive training over a colossal amount of data, enabling the AI to generate responses based on patterns and information it has learned. However, this also marks the boundary of their proficiency.
+
+The crux of the challenge is that the knowledge of these models is confined to the data they were trained on. While it grants them a broad understanding of various topics, it simultaneously curtails their effectiveness in domain-specific tasks.
+
+The shortcomings of LLMs in handling knowledge-intensive and domain-specific tasks beckon for a more refined and adept solution. It is where Retrieval-Augmented Generation (RAG) comes into the limelight as a promising endeavor to bridge this knowledge gap, enhancing the efficacy and reliability of generative AI systems.   
+
+__🚀 RAG and Its Benefits__
+
+Retrieval-Augmented Generation (RAG) emerges as a novel architecture aiming to bolster the capabilities of Large Language Models (LLMs) by adding a mechanism to retrieve external information. Unlike traditional LLMs that solely rely on the data they were trained on, RAG introduces an information retrieval system that can access a vast repository of external knowledge. This additional layer enhances the model's ability to provide accurate, relevant, and detailed responses, especially in knowledge-intensive or domain-specific scenarios.
+
+Here are the manifold benefits of RAG, especially in tackling the challenges posed by traditional LLMs:
+1. **Improved Quality and Accuracy:** By grounding the responses on reliable, current, and specific external sources of knowledge, it significantly refines the internal representation of information, which is a leap beyond the conventional LLMs' capabilities.
+2. **Increased Transparency and Trustworthiness:** One of the standout features of RAG is its ability to provide sources or references for the information used in generating responses. This transparency allows users to verify and evaluate the claims and reasoning of the LLM, fostering a sense of trustworthiness and credibility towards the technology.
+3. **Reduced Data Leakage and Hallucination:** RAG models are designed to access only relevant and appropriate information for the task at hand, which helps minimize the chances of data leakage or hallucination.
+4. **Cost Efficiency:** The need for fine-tuning or retraining on new data is diminished as RAG models can leverage the external knowledge base to adapt to changing contexts or domains, making them more agile and cost-effective solutions.  
+
+__🧩 The Building Blocks__
+
+Retrieval-Augmented Generation (RAG) is a compelling blend of retrieval and generative mechanisms working in tandem to deliver more informed and accurate text responses. The architecture of RAG is bifurcated into these core components:
+1. **The Retrieval Model - The Finder:** Think of the retrieval model as a helper that loves to find things. When you ask a question, this helper rushes to a big book of facts (external knowledge base) to find information that can help answer your question. It's good at picking out valuable pages or facts that match what you're asking about.
+2. **The Generative Model - The Explainer:** Now, meet the explainer, who is good at talking. Once the finder brings back helpful information, the explainer takes that information and your question to come up with a clear answer. It puts everything together in a way that makes sense and answers your question well.
+3. **The External Knowledge Base - The Big Book of Facts:** This is where all the extra information is kept. It's like a big book or a library that the finder can look through to find helpful information. It has many facts and details that can help make the answers more accurate and useful. 
+
+__🔄 Operational Steps__
+
+Let's break down how Retrieval-Augmented Generation (RAG) works into simple steps. Imagine you have a curious friend who helps you find answers to your questions by looking through a big book of facts. Here's how your friend (RAG) goes about it:
+1. **Query Formulation - Understanding Your Question:** First, your friend needs to understand your question. So, if you ask, "Who is the president of Indonesia?", your friend thinks about the key parts of the question like "president" and "Indonesia" to know what to look for in the big book of facts.
+2. **Information Retrieval - Looking Up Facts:** Now, your friend opens the big book of facts to find information that matches your question. If the book is well-organized, your friend can quickly find pages or sections that talk about the president of Indonesia.
+3. **Selection - Picking the Best Facts:** Suppose your friend finds ten pieces of information. Now, they pick the best ones, say the top 5 pieces that directly answer your question. It helps in focusing on the most helpful information.
+4. **Response Generation - Answering Your Question:** Finally, your friend puts together an answer using the information found. For example, if one of the pieces of information says, "Joko Widodo is the president of Indonesia," your friend tells you, "The president of Indonesia is Joko Widodo." If the big book of facts has a page number or a section where this information was found, your friend might also tell you where to find it, like a bit of reference.
+
+ __🎯 How RAG Handles Guesswork__
+
+Imagine you ask your friend a tricky question, and they look through different books to find the answer. But the books have slightly different information. Here's how Retrieval-Augmented Generation (RAG) acts like a smart friend to handle such guesswork or uncertain information:
+1. **Scoring the Finds:** Firstly, when RAG (the retrieval model) looks for information to answer your question, it scores each piece of information based on how closely it matches your query. It's like RAG saying, "This piece of information is 80% matching with the question, while this other one is only 60% matching."
+2. **Scoring the Possible Answers:** Next, RAG (the generative model) considers possible answers using the information it found. For each possible answer, it gives a score based on how well the answer fits with your question and the found information. It's like RAG saying, "Based on the information, this answer seems 90% correct."
+3. **Combining the Scores:** Now, RAG combines the scores from the first and second steps for each possible answer. It's like saying, "The total score for this answer is 80% when considering both how well the information matches the question and how good the answer is."
+4. **Picking the Best Answer:** Finally, RAG picks the answer with the highest total score as the final answer to give you. This way, RAG can balance the trade-off between retrieval accuracy and generation quality and avoid generating inconsistent or misleading responses.  
+
+
+__📚 Learn More__
+
+* https://arxiv.org/abs/2005.11401
+* https://research.ibm.com/blog/retrieval-augmented-generation-RAG
+* https://www.oracle.com/artificial-intelligence/generative-ai/retrieval-augmented-generation-rag/
+* https://blog.langchain.dev/espilla-x-langchain-retrieval-augmented-generation-rag-in-llm-powered-question-answering-pipelines/ 
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[So far, AI hasn't been profitable for Big Tech](https://arstechnica.com/information-technology/2023/10/so-far-ai-hasnt-been-profitable-for-big-tech/)*
+
+**Yoga**: "Big Tech companies like Microsoft and Google are grappling with the profitability of AI products like ChatGPT due to high operational costs. Popular services like Microsoft's GitHub Copilot are operating at a loss. Advances in AI hardware may eventually reduce these costs, but the industry is expected to shift towards a more financially prudent approach focused on actual profitability."
+
+![memo](/assets/images/memo16.png) *[Microsoft overhauls OneDrive with a big new design, AI Copilot integration, and more](https://www.theverge.com/2023/10/3/23901682/microsoft-onedrive-new-design-copilot-offline-features)*
+
+**Rizqun**: "Microsoft launches a revamped OneDrive with AI-driven Copilot, design updates, and improved business document handling. The new web view provides AI-based file suggestions, and a people view for better collaboration. Users can personalize folder colors, access offline files, and integrate with native desktop apps. Further updates are expected in early 2024."
+
+![memo](/assets/images/memo16.png) *[DALL·E 3 in ChatGPT](https://openai.com/blog/dall-e-3-is-now-available-in-chatgpt-plus-and-enterprise)*
+
+**Rizqun**: "ChatGPT is adding a new feature to create unique images from a conversation for ChatGPT Plus and Enterprise customers. The DALL-E 3 model powers this new feature. With this new addition, users can converse with ChatGPT and ask it to generate images for logos, web design, or other related things."
+
+![memo](/assets/images/memo16.png) *[Andrew NG announces his new Generative AI course](https://www.deeplearning.ai/courses/generative-ai-for-everyone/)*
+
+**Brain**: "I have previously taken Andrew NG's course on Generative AI with LLM, which gives a great overview of LLM and details on how to implement it. However, that course might require basic programming knowledge, especially Python. Andrew NG will soon release a similar course but will target a wider audience. This course might be a must-see as we enter an era in which AI is essential to everyday life."
+
+![memo](/assets/images/memo16.png) *[Testing in Python with Pytest](https://www.freecodecamp.org/news/testing-in-python-with-pytest/)*
+
+Dika: "The article announces the release of the PyTest course on the freeCodeCamp.org YouTube channel. The course teaches developers how to write effective and efficient test cases using the PyTest testing framework for Python. It covers topics such as setting up a testing environment, class-based tests, fixtures, marking and parametrization, mocking, and testing with ChatGPT. The course aims to help developers ensure the reliability and functionality of their code."
