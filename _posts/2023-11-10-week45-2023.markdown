@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "Week #45 2023 - Large Language Model Tokens"
+date:   2023-11-10 20:00:00 +0700
+---
+
+## Large Language Model Tokens
+
+* **LLM Tokens Explained**: Tokens are the basic units of text that Large Language Models (LLMs) process, akin to words or parts of words in human language.
+* **Why Tokens Matter**: The number of tokens directly impacts the computational resources needed and the cost of running LLMs—think of tokens as the 'currency' of AI processing.
+* **Calculating Tokens**: Different AI services use various tokenization methods, which can affect the token count and, thus, the cost. To estimate the cost, determine the tokenization method, calculate the token count, review the pricing structure, and multiply the token count by the cost per token.
+* **Best Practices**: Optimize text inputs for efficiency, select the suitable model for your needs, batch tasks to save tokens, monitor usage, and set alerts to keep costs under control.
+* **Considerations**: Plan for unexpected costs, understand the balance between task complexity and token usage and ensure data privacy and security in the tokenization process.   
+
+
+__💸 The invisible currency of AI__
+
+Large Language Models (LLMs) have become a cornerstone of innovation, powering almost everything in the digital world. As these models become more integrated into our daily digital interactions, a new term has entered the lexicon: LLM Tokens. There is a high possibility that we have encountered this term when exploring AI services that exist today.
+
+Despite their prevalence, there's a palpable air of mystery surrounding this term. Yet, for something so widespread, it's surprising how LLM tokens can often be a source of confusion.
+
+At their core, tokens are the lifeblood of language processing in AI, representing the fundamental units of meaning that LLMs use to interpret and generate human language. But their role extends beyond mere linguistics; tokens are also a key factor in the computational effort and cost of running LLMs. In a sense, they are the invisible currency of AI processing power.   
+
+__🔍 Demystifying LLM Tokens__
+
+In the simplest terms, a token is a string of characters that LLMs treat as a single unit of meaning. Think of it like this: in the same way that human language is composed of words, sentences, and paragraphs, machine language is composed of tokens. These tokens can be words, parts of words, or even punctuation marks. For example, the sentence "AI is revolutionary" would typically be broken down into tokens like "AI," "is," and "revolutionary."
+
+LLMs require tokens because they don't 'understand' language as we do. By breaking down text into tokens, LLMs can analyze patterns and structures in the data they're trained on. This tokenization allows them to predict the next most likely token in a sequence, which is how they generate coherent and contextually relevant text.
+
+The tokenization process directly impacts the complexity of tasks that LLMs can perform. Some tokens are straightforward, like the word "revolutionary," which is a single unit. Others are more complex, like the word "revolutionary" in different languages or contexts, which may require multiple tokens to represent different morphological forms or meanings.
+
+The number of tokens also affects the computational resources required to process text, which in turn influences the cost. Services that use LLMs typically charge based on the number of tokens processed, making it a crucial factor for businesses to consider when they utilize these AI services. More tokens mean more processing time and power, leading to higher costs.  
+
+__🧮 LLM Tokens Calculation__
+
+Calculating tokens within LLMs is a nuanced process, with several factors influencing how text is broken down into these essential units. To fully grasp how LLMs operate, it's important to understand the types of tokens and the tools used to manage them.
+
+Tokens can be categorized based on the granularity of the text they represent:
+* **Word-Level Tokens**: These are the most intuitive types of tokens, where spaces typically delineate tokens. For instance, "Artificial Intelligence" would be tokenized into "Artificial" and "Intelligence."
+* **Subword-Level Tokens**: To handle the vastness of language and the limitations of word-level tokens, subword tokenization techniques like Byte Pair Encoding (BPE) or WordPiece are used. They break down words into more frequent subwords or merge rare words into subwords. For example, "Artificial" might be broken down into "Art" and "ificial."
+* **Character-Level Tokens**: These tokens break down text into individual characters. These can be useful for particular languages and tasks but may lead to longer sequences for the model to process.
+* **Byte-Level Tokens**: This approach treats each byte (character) as a token. It can be particularly effective for encoding a wide range of characters and symbols, making it highly versatile for different languages and special characters.
+
+The process of calculating tokens typically involves the following steps:
+1. **Preprocessing**: Text is cleaned and prepared, removing or converting characters as necessary to ensure consistency.
+2. **Tokenization**: The preprocessed text is fed into a tokenizer, which splits the text into the chosen type of tokens.
+3. **Postprocessing**: Tokens may be further processed to fit the input format required by the LLM, such as adding special tokens that signify the beginning or end of a sentence.
+
+__💰 Making Sense of Token-Based Cost Estimation__
+
+Different AI services have distinct ways of handling tokenization, which can affect both the processing requirements and the associated costs. For instance:
+* **OpenAI's GPT models** might use one tokenization method optimized for English text, resulting in fewer tokens for English sentences but more for other languages.
+* **Google's BERT**, on the other hand, might use WordPiece tokenization, which can handle a variety of languages more uniformly but may result in a higher token count for English.
+
+It is crucial to understand the differences because they directly impact the cost of using these services. A sentence that takes 10 tokens in one service might take 15 in another, leading to a 50% increase in the cost of processing the same sentence. Also, it is important to examine the pricing structure of an AI service. Some may charge per token, per thousand tokens, or based on the compute time, often correlated with token count.
+
+To illustrate, let's consider a few hypothetical scenarios:
+* **Scenario 1**: A customer service chatbot processes 1,000 customer interactions daily, averaging 50 tokens per interaction. If the LLM provider charges $0.01 per 1,000 tokens, the daily cost would be $0.50.
+* **Scenario 2**: A content generation tool creates articles with an average of 500 tokens per article. If the provider charges $0.002 per token and you generate 100 articles monthly, the monthly cost would be $100.
+
+It is clear now that understanding the nuances of token-based cost estimation is essential for budgeting and operational planning. 
+
+ __⚙️ Best Practices and Considerations__
+
+When integrating LLMs into your applications, it's not just about understanding the cost—it's also about managing it effectively. Here, we'll outline some best practices and considerations that can help you optimize token usage.
+
+Best Practices for Token Management:
+* **Pre-edit Text**: Simplify and shorten text inputs where possible to reduce token count without losing meaning.
+* **Batch Requests**: Group multiple queries or tasks together to minimize overhead and maximize the utility of each token.
+* **Choose the Right Model**: Select a well-suited model for your specific language and task to avoid unnecessary token usage.
+* **Leverage Model Updates**: Watch for updates or new models that may offer more efficient tokenization or better performance.
+* **Track Token Consumption**: Regularly monitor your token usage to identify trends and potential savings.
+* **Set Alerts**: Implement alerts when token usage approaches or exceeds certain thresholds.
+
+Considerations to Avoid Pitfalls:
+* **Unexpected Costs**: Be aware of how costs may scale with increased usage and what happens if you exceed your planned token allocation.
+* **Complexity vs. Cost**: More complex tasks may require more tokens, so balance the need for complexity against the associated costs.
+* **Data Privacy and Security**: Ensure the tokenization process aligns with data privacy regulations and your security standards.
+
+By following these best practices and keeping these considerations in mind, you can effectively manage the cost of using LLMs while still leveraging their powerful capabilities.   
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[Microsoft Paint is becoming a digital art powerhouse](https://www.techradar.com/computing/artificial-intelligence/microsoft-paint-is-becoming-a-digital-art-powerhouse-thanks-to-this-new-ai-assistant)*
+
+**Dika**: "Microsoft has introduced a new AI bot, Cocreator, to help generate images in the iconic Paint app. Cocreator, powered by Dall-E, allows users to describe the image they want and select an art style, and the bot will attempt to create it. The results have been described as impressive, and the tool is currently being tested before its official release."
+
+![memo](/assets/images/memo16.png) *[xAI announcing new LLM: Grok](https://x.ai/)*
+
+**Brain**: "Elon Musk's company xAI is announcing a new LLM named Grok. You will get access to Grok if you are subscribed to X (formerly known as Twitter) as a Premium Plus user. The benchmark result of Grok seems to match the performance of GPT-3.5, though it proud itself in having a sense of humor and less censorship on the response."
+
+![memo](/assets/images/memo16.png) *[Introducing GPTs](https://openai.com/blog/introducing-gpts)*
+
+**Rizqun**: "OpenAI has introduced GPTs, customized versions of ChatGPT that users can tailor for specific tasks. These GPTs can be shared publicly via the upcoming GPT Store. GPTs also offer the potential for integration with external databases and APIs, enabling real-world interactions. Enterprises can create internal GPTs for their specific needs, promoting organizational efficiency."
+
+![memo](/assets/images/memo16.png) *[GPT new model update](https://openai.com/blog/new-models-and-developer-products-announced-at-devday)*
+
+**Dika**: "OpenAI announced several new additions and improvements to its platform, along with reduced pricing. These include the launch of GPT-4 Turbo, which is more capable, cheaper, and has a 128K context window. They also introduced the Assistants API, enabling developers to build AI apps with specific goals and functions. Additionally, new multimodal capabilities were added, such as vision and text-to-speech. Lower prices and higher rate limits were introduced to benefit developers, and OpenAI will now step in to defend customers facing legal claims of copyright infringement."
+
+![memo](/assets/images/memo16.png) *[OpenAI confirms DDoS attacks behind ongoing ChatGPT outages](https://www.bleepingcomputer.com/news/security/openai-confirms-ddos-attacks-behind-ongoing-chatgpt-outages/)*
+
+**Yoga**: "OpenAI has faced "periodic outages" in its API and ChatGPT services on November 8, with distributed denial-of-service (DDoS) attacks identified as the cause. The company has not disclosed specific details about the attacks but acknowledged ongoing efforts to mitigate the abnormal traffic patterns associated with DDoS. Users affected by the disruptions received error messages, and the issues followed previous outages earlier in the week. While some cybersecurity experts suspect a false flag, OpenAI has yet to comment on the situation."
