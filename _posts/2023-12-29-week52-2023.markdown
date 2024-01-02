@@ -1,0 +1,138 @@
+---
+layout: post
+title:  "Week #52 2023 - AI Highlights 2023"
+date:   2023-12-29 20:00:00 +0700
+---
+
+## AI Highlights 2023
+
+2023 brought a wave of AI innovation like never before. From GPT-4's genius to democratized AI with Llama 2, we explore the year's highlights, their real-world impact, and global regulations shaping the AI landscape.
+
+**The Rise of LLMs:**
+* **GPT-4:** Big brain, scary good at text/code, but ethical concerns linger.
+* **Llama 2:** Open-source LLM for the people, democratizing AI research.
+* **Mistral:** Build your own custom AI helper tailored to your needs with a Mixture of Experts approach.
+* **Gemini:** A multimodal AI model that can reason seamlessly across text, images, video, audio, and code.
+* **Claude 2:** Safety first! Safeguarding against biased and harmful outputs.
+* **Phi-2:** A small language model with on-par capabilities with larger LLMs available for free for research and commercial use.
+
+**LLM Applications:**
+* **Chat with AI:** Bard, ChatGPT, and Claude.ai are here to listen and talk.
+* **AI Art Explosion:** DALL-E 2, Stable Diffusion, and Midjourney paint your wildest dreams.
+* **Coding Assistants:** GitHub Copilot, Code Llama, and Llama Coder become your AI programming partners.
+
+**AI Impact:**
+* **Deepfakes:** Fake news gets even more real, raising trust and misinformation concerns.
+* **AI Malware:** Machines write viruses now, upping the cybercrime game.
+* **Viral AI Memes:** Funny pictures from robots show the playful side of AI.
+* **Bias Bots:** Unequal algorithms create unfair outcomes, demanding fairer AI development.
+* **AI Job Stealer?:** Automation worries rise, but new opportunities emerge.
+
+**AI Regulation:**
+* **EU AI Act:** Europe lays down the law for responsible AI development.
+* **US AI Bill of Rights:** Protecting citizens from AI's dark side.
+* **Global AI Teamwork:** Countries and researchers join forces for ethical AI.
+* **China and Singapore Step Up:** Regional regulations ensure responsible AI practices.
+
+
+__🚀  The Rise of the LLMs: Unleashing the AI Titans__
+
+2023 was a landmark year for large language models (LLMs), with groundbreaking releases pushing linguistic intelligence's boundaries and sparking excitement and cautious discussion. Here's a closer look at some of the major players:
+
+**1. OpenAI's GPT-4:**
+The highly anticipated successor to GPT-3, GPT-4, arrived in March with a staggering 175 billion parameters, quadrupling its predecessor's capacity. This leap in size translated to significantly improved language understanding and generation, excelling in tasks like code completion, creative writing, and even scientific reasoning. GPT-4 is available through OpenAI's paid ChatGPT Plus subscription and Microsoft Bing's AI chatbot.
+
+**2. Meta AI's Llama 2:**
+Released in June, Llama 2 stood out for its commitment to open-source accessibility. The model includes pre-trained and fine-tuned Llama language models ranging from 7 billion to 70 billion parameters, including Llama Chat and Code Llama. The model is available for free for research and commercial use. The release of Llama 2 is part of Meta's push to make AI more accessible to startups, established businesses, and lone operators.
+
+**3. Mistral AI models:**
+Mistral AI, a French startup, made waves in the AI space in 2023 by releasing two new language models: Mistral 7B and Mixtral 8x7B. Mistral 7B is an open-source language model with 7.3 billion parameters, making it the most powerful model for its size. Mixtral 8x7B, on the other hand, is a "mixture of experts" (MoE) model that can process a 32K token context window and works in French, German, Spanish, Italian, and English.
+
+**4. Google AI's Gemini:**
+In November, Google AI unveiled Gemini. Gemini is built from the ground up for multimodality, meaning it can reason seamlessly across text, images, video, audio, and code. It is also the first model to outperform human experts on Massive Multitask Language Understanding (MMLU), one of the most popular methods to test AI models' knowledge and problem-solving abilities.
+
+**5. Anthropic AI's Claude 2:**
+Anthropic AI released the Claude 2 model in July. This model has improved performance, longer responses, and can be accessed via API as well as a new public-facing beta website, claude.ai. The model has improved coding, math, and reasoning skills and can score above the 90th percentile on the GRE reading and writing exams. Claude 2 is generally available in the US and UK, and the Claude 2 API for businesses is offered for the same price as Claude 1.3.
+
+**6. Microsoft's Phi-2:**
+Microsoft released a new small language model (SLM) in December: Phi-2. With only 2.7 billion parameters, Phi-2 outperforms larger models on various benchmarks and demonstrates outstanding reasoning and language understanding capabilities. The model is available for free for research and commercial use. 
+
+__💡 LLM Applications: Transforming Industries with AI Magic__
+
+Beyond their impressive technical prowess, LLMs made their mark on the world in 2023 by integrating them into practical applications that touched our daily lives. Here are some of the most notable LLM applications that emerged:
+
+**1. Conversational AI**
+* **ChatGPT:** OpenAI's ChatGPT is a versatile chatbot that can explain complex topics, translate between languages, and even help you plan a fun day in a city you've never been to. It offers an unprecedented natural conversation experience, but its responses can sometimes be inaccurate or biased.
+* **Bard:** Google's Bard is a helpful AI assistant that aims to provide more natural conversational experiences. Like ChatGPT, Bard is capable of natural language conversations using advanced language models.
+* **Claude.ai:** Claude.ai is a conversational assistant powered by Anthropic AI's Claude-2 model. It can work with larger document sizes and better safety precautions.
+
+**2. AI-Powered Image/Video Creators**
+* **DALL-E 2:** OpenAI's DALL-E 2 is an AI system that can create realistic images and art from a description in natural language. Combining concepts, attributes, and styles can create original, realistic images and art.
+* **Stable Diffusion:** Stable Diffusion is a powerful generative AI model primarily used for generating detailed images from text descriptions or prompts. It converts textual input, such as descriptions or prompts, into photorealistic images.
+* **Midjourney:** Midjourney is an AI-powered image and video generator that can create realistic images and videos from textual descriptions. It can generate images and videos in various styles, including photorealistic, cartoon, and more.
+
+**3. Coding Assistants**
+* **GitHub Copilot:** GitHub Copilot is an AI-powered coding assistant that can help developers write code more efficiently. Copilot can generate code snippets, suggest code completions, and debug code.
+* **Code Llama:** Code Llama is an AI-powered coding assistant from Meta that can generate code and natural language responses to prompts. It supports common programming languages like Python, JavaScript, Java, and C++ and can help with tasks like code completion and debugging.
+* **Llama Coder:** Llama Coder is a self-hosted GitHub Copilot replacement for VS Studio Code. It uses Ollama and Code Llama to provide autocomplete that runs on your hardware.  
+
+__💥 AI Impact: Exploring the Disruptive Forces of AI__
+
+Beyond technical advancements and applications, 2023 was marked by several moments that showcased AI's significant and sometimes controversial impact on our lives. Here are some of the most attention-grabbing examples:
+
+**1. Deepfakes:**
+* **Political Manipulations:** [Deepfakes of politicians delivering fabricated speeches or making misleading statements](https://www.bbc.com/news/62338593) spread online, raising concerns about the potential for AI-powered misinformation campaigns to disrupt elections and sow discord. 
+* **Celebrity Impersonations:** [Deepfakes featuring convincing simulations of celebrities](https://arstechnica.com/information-technology/2023/10/tom-hanks-warns-of-ai-generated-doppelganger-in-instagram-plea/) went viral, blurring the lines between reality and fiction and raising ethical questions about consent and ownership of digital identity.
+
+**2. AI-generated Malware:**
+* **Rise of Malicious AI Agents:** [The emergence of AI-powered tools used to create sophisticated malware programs](https://blog.virustotal.com/2023/11/how-ai-is-shaping-malware-analysis.html) with self-learning and evasion capabilities highlighted the growing risks of cyber threats in the age of advanced AI.
+
+**3. Viral AI Memes:**
+* **Viral AI memes** are [memes that use AI-generated content](https://sea.mashable.com/tech/24312/5-times-ai-fooled-the-internet-in-2023). They have become increasingly popular recently and are often created using large language models (LLMs).
+
+**4. AI Bias and Discrimination:**
+* **Algorithmic Bias Detection:** Increased scrutiny on algorithmic decision-making systems exposed instances of [bias against specific demographics](https://www.bloomberg.com/graphics/2023-generative-ai-bias/) in areas like loan approvals, facial recognition, and criminal justice, sparking efforts to develop fairer and more transparent AI methods.
+
+**5. AI and Employment:**
+* **Job Automation Fears:** Concerns about [AI-driven automation displacing human workers](https://www.weforum.org/agenda/2023/08/ai-artificial-intelligence-changing-the-future-of-work-jobs/) in various industries grew louder, prompting discussions about reskilling opportunities, social safety nets, and the human-AI collaborative future of work.
+
+These examples illustrate the multifaceted impact of AI in 2023, highlighting its potential benefits and challenges. As AI continues to permeate our lives, navigating its effects responsibly and ensuring it serves humanity for the greater good will be crucial.
+
+__🌐 AI Regulation: Shaping the Future of Responsible AI Governance__
+
+2023 brought significant advancement in AI regulation, reflecting growing global recognition of the need for responsible AI development and deployment. Here are some of the key highlights:
+
+**1. The EU AI Act:**
+* **Adoption in June:** The European Union emerged as a frontrunner with the landmark AI Act, establishing the world's first comprehensive legal framework for AI. The act introduces risk-based tiers for AI systems, with stricter requirements for high-risk applications like facial recognition and credit scoring.
+
+**2. US Advances in AI Regulation:**
+* **AI Bill of Rights Proposed in October:** The US unveiled the proposed AI Bill of Rights, aiming to protect individuals from the potential harms of AI systems. It includes rights to be informed about AI use, to access and contest automated decisions, and to be free from discriminatory or biased AI applications.
+* **Focus on Explainability and Transparency:** Efforts were made to promote explainable AI (XAI) within government agencies like the FDA, requiring greater transparency in AI-powered decision-making processes.
+
+**3. Global Initiatives and Collaborations:**
+* **OECD AI Principles Adopted by Over 60 Countries:** The OECD AI Principles, emphasizing human-centered and ethical AI development, were adopted by over 60 countries, promoting international alignment on responsible AI practices.
+* **Partnership on AI (PAI) Continues Progress:** The Partnership on AI, a multi-stakeholder initiative involving governments, researchers, and industry partners, continued its work on developing AI safety and governance frameworks.
+
+**4. Regional Regulatory Progress:**
+* **China Releases AI Ethics Guidelines:** China released AI Ethics Guidelines, highlighting responsible development and governance of AI technologies and specific recommendations for areas like data privacy and bias mitigation.
+* **Singapore Updates Personal Data Protection Act:** Singapore updated its Personal Data Protection Act to include provisions for AI governance, addressing issues like data collection, algorithmic fairness, and accountability.
+
+These are just some of the noteworthy advancements in AI regulation in 2023. While significant progress has been made, challenges remain in harmonizing regulations across regions and ensuring effective enforcement. Nevertheless, 2023 marked a crucial step towards a future where ethical principles and responsible practices guide AI development and deployment.  
+
+## Tech News
+
+![memo](/assets/images/memo16.png) *[VideoPoet: A large language model for zero-shot video generation](https://blog.research.google/2023/12/videopoet-large-language-model-for-zero.html)*
+
+**Brain**: "Google recently launched a new Large Language Model (LLM) for video generation, allowing users to create or edit videos from images or text prompts. This LLM also generates audio for videos without text guidance. Although not yet public, the showcased demo videos on its landing page are highly promising."
+
+![memo](/assets/images/memo16.png) *[ AI gives birth to AI: Scientists say machine intelligence can now replicate without humans](https://www.foxnews.com/science/ai-gives-birth-ai-scientists-say-machine-intelligence-capable-replicating-without-humans)*
+
+**Yoga**: "Artificial intelligence models, including those in ChatGPT, can now autonomously create smaller, specialized AI applications without human intervention, according to a collaboration between Aizip Inc., MIT, and several University of California campuses. This breakthrough enables larger AI models to automatically design smaller ones, fostering a self-evolving AI ecosystem with applications like improving hearing aids and tracking endangered species. The researchers showcased a human activity tracker using AI in a chip smaller than a dime, illustrating the potential for tiny machine learning in compact devices or spaces, crucial for pervasive AI."
+
+![memo](/assets/images/memo16.png) *[Microsoft Copilot is now available as a ChatGPT-like app on Android](https://www.theverge.com/2023/12/26/24015198/microsoft-copilot-mobile-app-android-launch)*
+
+**Frandi**: "Microsoft has quietly launched a dedicated Copilot app for Android, but an iOS version isn't available just yet. It is very similar to ChatGPT, with access to chatbot capabilities, image generation through DALL-E 3, and the ability to draft text for emails and documents."
+
+![memo](/assets/images/memo16.png) *[Stability AI announces paid membership for commercial use of its models](https://www.theverge.com/2023/12/19/24008149/stability-ai-paid-subscription-commercial-rights-safety)*
+
+**Rizqun**: "Stability AI has launched a subscription service for its Stable Diffusion text-to-image model, offering a free tier for personal use and two paid tiers ($20/month and enterprise) allowing commercial usage. The move aims to balance profitability with openness, though details on pricing and commercial use specifics are still being clarified, as users express confusion on the matter."
