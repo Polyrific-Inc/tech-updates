@@ -1,0 +1,108 @@
+---
+layout: post
+title:  "Week #02 2024 - Bridging the Security Gap in AI's New Frontier"
+date:   2024-01-15 20:00:00 +0700
+---
+
+## Bridging the Security Gap in AI's New Frontier
+
+Bridging the Security Gap in AI's New Frontier is not just any update – it's a crucial exploration into the vulnerabilities of Large Language Models (LLMs). From 'prompt injection' to 'training data poisoning', this article sheds light on the unique challenges LLMs face, paralleling traditional web security threats but with a futuristic twist. It's a vital read to understand how we can navigate and secure the evolving landscape of AI technology. Intrigued? Jump into the full article below for an in-depth journey through the world of LLM security. ⬇️⬇️⬇️
+
+
+__Introduction__
+
+Do you know that OWASP, the renowned web security experts, also has [a "most wanted" list for Large Language Models (LLMs)](https://owasp.org/www-project-top-10-for-large-language-model-applications/)? If you're a web developer or security professional, you're likely familiar with [OWASP's Top 10](https://owasp.org/Top10/), the bible of vulnerabilities for web applications. But this new LLM list sheds light on a fascinating reality: while some threats sound eerily familiar, others reveal the unique security challenges these AI-powered machines pose.
+
+
+
+Think of it like a familiar landscape seen through a futuristic lens. Like web apps, LLMs can be vulnerable to malicious inputs, data breaches, and even insecure plugins. The parallels are clear – XSS in the web world finds an echo in "prompt injection" for LLMs, and both lists emphasize the importance of protecting sensitive data.
+
+
+
+But that's where the familiar stops. LLM vulnerabilities like "training data poisoning" and "model denial-of-service" paint a new picture, highlighting the risks specific to these intelligent models. This article serves as a bridge, taking your web security expertise and guiding you through the uncharted territory of LLM security. We'll explore the shared ground, unravel the unique threats, and equip you with the knowledge to navigate this rapidly evolving landscape.
+
+__Familiar Foes in a New Landscape__
+
+If you're a seasoned web security warrior, stepping into the LLM arena might feel like traversing a familiar landscape through a futuristic lens. The same adversaries lurk around every corner, albeit disguised in slightly different costumes.
+
+
+
+Take user input, that age-old nemesis: in the web world, it flexes its muscles through cross-site scripting (XSS), injecting malicious code into unsuspecting websites. In the LLM realm, it transforms into **prompt injection (LLM01)**, manipulating the language the model consumes, potentially triggering biased decisions, or even spitting out malware disguised as text.
+
+
+
+The echoes of data breaches also resonate strongly in the LLM world. **Sensitive information disclosure (LLM06)** echoes the same concerns you've battled with SQL injection and data leaks in traditional systems. Protecting sensitive data remains a fundamental security commandment, no matter the technology we wield.
+
+
+
+And like a pesky thorn in the side of web applications, **insecure plugins (LLM07)** plague LLMs, too. LLMs rely on secure plugin ecosystems to function as you meticulously vet external libraries in your web projects. A vulnerable plugin can expose the entire system to attacks, highlighting the shared responsibility of developers to choose secure components, regardless of the platform.
+
+
+
+Remember flooding a website with requests to crash it? **LLM denial-of-service (LLM04)** takes it a step further. Attackers can bombard the model with crafted inputs designed to overload its processing power, rendering it unavailable for legitimate users. Imagine a chatbot used for crisis communication being crippled during a natural disaster or a language translation service going offline just when it's needed most. Protecting against these attacks requires proactive resource management and implementing safeguards against malicious input patterns.
+
+
+
+These similarities serve as a comforting reminder that your hard-won web security expertise isn't obsolete in the face of LLMs. The core principles of secure coding, validation, and access control translate seamlessly to this new domain. It's like learning a new dance with familiar steps to a different soundtrack. 
+
+__The Unique Threats in LLMs__
+
+Step out of your web security comfort zone because the LLM landscape holds a whole new bestiary of threats. While familiar foes like data breaches and insecure components still hang around, these intelligent models harbor vulnerabilities specific to their AI nature.
+
+
+
+**Training Data Poisoning (LLM03):** Imagine feeding a child biased textbooks, shaping their worldview from the ground up. That's essentially what training data poisoning does to LLMs. Malicious actors can inject biased or incorrect data into the training process, warping the model's logic and leading to discriminatory outputs or inaccurate decisions. Think biased hiring recommendations based on manipulated data or a medical diagnosis system skewed by faulty training information. These threats demand robust data sanitization and careful auditing of training datasets.
+
+
+
+**Model Theft (LLM10):** This isn't just stealing code; it's like snatching the secret recipe for an invaluable invention. LLMs represent the culmination of vast amounts of data and training, making them highly valuable targets for intellectual property theft. Hackers can steal these models and repurpose them for malicious purposes, from generating fake news to creating deep fakes used for fraud. Robust model encryption and access control mechanisms are crucial to prevent this digital heist.
+
+
+
+**Excessive Agency and Over reliance (LLM08 & LLM09):** As LLMs become more sophisticated, the temptation to hand them the reins is growing. But wielding immense power without proper checks and balances is a recipe for disaster. Excessive agency risks the model making critical decisions without human oversight, potentially leading to unfair outcomes or unintended consequences. Over reliance, on the other hand, leaves us vulnerable to the limitations and biases inherent in the model, jeopardizing the accuracy and fairness of its outputs. The key lies in finding a balance: empowering LLMs to assist and augment human decision-making, not replace it.
+
+
+
+These unique threats paint a clear picture: LLM security demands a new frontier of expertise. Adapting traditional security practices alongside cutting-edge AI-specific solutions is critical. We need continuous vigilance, collaboration between diverse fields, and a commitment to responsible AI development to ensure these powerful models become forces for good, not unintended harm.
+
+__Navigating the Future__
+
+The OWASP Top 10 for LLM applications illuminates the evolving AI landscape, reminding us that security doesn't exist in silos. It's a shared responsibility, a continuous dance between adaptation and vigilance.
+
+So, what actionable insights can we glean from this exploration?
+
+* **Bridge the knowledge gap:** Don't let the "AI" label intimidate you. The core principles of secure coding, data protection, and vulnerability management remain fundamental. Leverage your web security expertise but complement it with an understanding of AI-specific vulnerabilities.
+
+* **Embrace proactive defense:** Don't wait for breaches to happen. Prioritize secure model training, implement robust input validation, and choose trusted plugins for your LLM applications. Remember, prevention is always better than cure.
+
+* **Advocate for responsible AI:** Encourage transparency and ethical considerations in LLM development. Be mindful of potential biases and strive for fairness in data selection and model outputs. Collaborate with diverse stakeholders to ensure AI serves humanity, not the other way around.
+
+* **Stay informed and engaged:** This is a rapidly evolving field. Keep up with the latest research, industry trends, and best practices. Embrace lifelong learning and share your knowledge to build a robust ecosystem of LLM security champions.
+
+The road ahead may be long, but it holds immense promise. By acknowledging the familiar and embracing the unique, by collaborating and innovating, we can ensure that LLMs become a force for good, building a future where intelligence and safety dance hand-in-hand. Let's take this knowledge and embark on this exciting journey together, securing the future of LLMs, one vulnerable input, one robust model, and one responsible practice at a time.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+![memo](/assets/images/memo16.png) *[DocLLM: A Layout-aware generative language model for multimodal document understanding](https://arxiv.org/pdf/2401.00908.pdf)*
+
+[Aris](https://www.linkedin.com/in/arispriyantoro/): “JPMorgan AI Research has released a paper on an AI extension called DocLLM that aims to advance a comprehensive collection of complex business documents like invoices, receipts, contracts, orders, and forms. DocLLM is a transformer-based model that incorporates both the text and spatial layout of documents to better capture the rich semantics within enterprise data.”
+
+![memo](/assets/images/memo16.png) *[Google is preparing a paid version of the Bard](https://www.androidpolice.com/google-preparing-paid-version-of-bard)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah/): “Google is reportedly planning to introduce a paid upgrade for its language model, Bard. Code within the Bard website hints at a three-month trial for "Bard Advanced" before potentially transitioning to a paid subscription. While details suggest a link to Google One, it's unclear if Bard Advanced will be available across all tiers or specific plans with more Google Drive storage. Launched in December 2023, Bard is powered by Google's advanced AI model, Gemini. Bard Advanced, driven by Gemini Ultra, is anticipated to launch soon, aligning with the market trend of offering paid tiers for advanced language models.”
+
+![memo](/assets/images/memo16.png) *[Shaping the future of advanced robotics](https://deepmind.google/discover/blog/shaping-the-future-of-advanced-robotics)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): “Google Deepmind's AI research team has unveiled three groundbreaking developments in robotics. Experts believe 2024 could be a pivotal year for robotics, similar to ChatGPT's impact. The innovations include AutoRT, utilizing large language models (LLMs) for robotic training; SaraRT, enhancing the learning speed of robotic transformers; and RT-Trajectory, aiding robots in generalization. These advancements collectively signal a bright future for the field of robotics.”
+
+![memo](/assets/images/memo16.png) *[Perplexity Raises Series B Funding Round](https://blog.perplexity.ai/blog/perplexity-raises-series-b-funding-round)*
+
+[Frandi](https://www.linkedin.com/in/frandi): “Perplexity just announced a new round of Series B funding from trusted VC firms and prominent tech visionaries for around $73.6M. Perplexity launched a kind of AI-powered search engine a year ago, and this new funding will be used to support rapid consumer adoption and expansion plans.”
+
+![memo](/assets/images/memo16.png) *[OpenAI’s app store for GPTs will launch next week](https://techcrunch.com/2024/01/04/openais-app-store-for-gpts-will-launch-next-week/)*
+
+[Rizqun](https://www.linkedin.com/in/rizqun-rizal-ahsani-970268128): “OpenAI plans to launch a store for GPTs and custom apps based on its text-generating AI models (e.g., GPT-4) next week. Developers building GPTs will have to review the updated usage policies and GPT brand guidelines to ensure that their GPTs are compliant before they’re eligible for listing in the store. GPTs themselves don’t require coding experience and can be as simple or complex as a developer wishes. Developers can simply type the capabilities they want their GPT to offer in plain language, and OpenAI’s GPT-building tool, GPT Builder, will attempt to make an AI-powered chatbot to perform those.”
