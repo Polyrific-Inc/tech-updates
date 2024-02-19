@@ -1,0 +1,113 @@
+---
+layout: post
+title:  "Week #07 2024 - Enhancing RAG with Knowledge Graphs"
+date:   2024-02-16 20:00:00 +0700
+---
+
+## Enhancing RAG with Knowledge Graphs
+
+TL;DR:The following article we will explore the limitations of large language models (LLMs), which primarily rely on patterns within training data, hindering deeper understanding and complex reasoning. Retrieval-augmented generation (RAG) has emerged as a solution by integrating external knowledge sources to enhance responses. RAG heavily employs vector embeddings facing challenges in capturing contextual understanding. This article introduces knowledge graphs as a structured solution with nodes as entities and edges as relationships, offering contextual understanding and multi-hop reasoning. A hybrid approach is proposed, combining embeddings and graphs, with workflow involving construction, similarity, graph traversal, and ranking. Integrating knowledge graphs poses challenges like construction, benchmarking, noise handling, and integration strategies, promising advancements in language modeling upon resolution.
+
+Please feel free to continue reading more about Enhancing RAG with Knowledge Graphs below. ⬇️⬇️⬇️
+
+
+__Enhancing RAG with Knowledge Graphs__
+
+Large language models (LLMs) have revolutionized natural language processing but possess an inherent flaw. Their knowledge primarily stems from patterns within their training data, limiting their ability to truly understand the world, ground responses in fact, or perform complex reasoning. 
+
+Retrieval-augmented generation (RAG) addresses this weakness by incorporating external knowledge sources into the language model's process, providing additional context to enhance its responses.
+
+__The Current State of RAG: Vector Embeddings__
+
+Most contemporary RAG implementations rely heavily on vector embeddings for information retrieval. In this context, vector embeddings are numerical representations of words, phrases, or entire documents that capture their semantic meaning within a multidimensional space. RAG systems can identify potentially relevant text chunks or documents from a knowledge source by comparing the similarity between vector embeddings.
+
+
+While effective for capturing surface-level similarity, vector embeddings have limitations for deep contextual understanding:
+
+* **Relevance Beyond Similarity:** Simple vector-based matching may miss conceptually relevant information but expressed differently. For example, the vector for "climate change" may be dissimilar to "global warming" if trained on a limited dataset, even though the concepts are strongly related.
+
+* **Aggregating Diverse Facts:** Vector embeddings alone struggle to connect related but not directly similar pieces of knowledge seamlessly. For example, when someone asks, "How do vaccines work?" vector embeddings might have difficulty in directly bridging the word similarities from distinct domains, such as Biology (immune system responses), Chemistry (components of the vaccine), and History (examples of past pandemics or disease eradication).
+
+* **No Support for Complex Reasoning:** Vector-based retrieval falls short of enabling multi-step reasoning or following logical links between diverse information pieces. For example, if a user asks, "In what island is the capital of the largest archipelago country in the equator located?" vector embeddings are less likely to support multi-step inference unless all these facts are pre-encoded as a single piece of knowledge (which becomes highly inefficient for numerous potential inferences).
+
+
+__Knowledge Graphs: A Structured Solution__
+
+Knowledge graphs offer a way to overcome the limitations of vector embeddings by modeling knowledge in a more structured and interconnected manner. 
+
+At their core, knowledge graphs are built with two key components:
+
+* **Nodes:** Represent entities such as people, places, concepts, or events.
+
+* **Edges:** Represent the relationships between nodes. For example, "Paris" (node) has the relationship "is the capital of" (edge) with "France" (node).
+
+This explicit mapping of relationships enables several key advantages over vector-based retrieval:
+
+* **Contextual Understanding:** Knowledge graphs capture how facts relate to one another, going beyond mere word similarity.
+
+* **Multi-hop Reasoning:** By traversing the graph (following edges from node to node), models can uncover indirect connections and perform logical inferences across diverse sets of information.
+
+With knowledge graphs, RAG systems can reason about knowledge rather than merely find related text fragments.
+
+__Hybrid Power: Integrating Vector Embeddings and Knowledge Graphs__
+
+Vector embeddings and knowledge graphs serve complementary roles within a robust RAG system. Instead of choosing one over the other, their combined use offers significant advantages.
+
+
+
+Here are the simplification of the workflow:
+
+1. **Constructing the Knowledge Graph:**  Establish a knowledge graph representing relevant information. Nodes hold crucial entities, edges describe their relationships, and key node properties may be assigned vector embeddings.
+
+2. **Vector Similarity for Initial Retrieval:**  When presented with a query, vector embeddings allow the RAG system to quickly find potentially relevant starting points (nodes) within the knowledge graph.
+
+3. **Graph Traversal and Contextual Refinement:** The system traverses the knowledge graph, propagating relevance scores based on connections, weighting edges (relationships) by importance, and refining results. It considers not just similarity but structural relevance within the web of knowledge.
+
+4. **Final Ranking and Presentation:** The results are reranked, taking into account both initial embedding-based scores and knowledge graph context. It produces a highly informed output to enhance LLM response generation.
+
+**Key Point:** Vector embeddings serve as an efficient tool for initial identification, while knowledge graphs provide rich, interconnected context to refine and validate relevant information.
+
+__Challenges and Further Research__
+
+While the integration of knowledge graphs into RAG systems holds great promise, ongoing research is needed to address these challenges and maximize the potential of this technology:
+
+* **Knowledge Graph Construction:** Ensuring the quality, comprehensiveness, and continuous updating of knowledge graphs is a significant undertaking. Automated and semi-automated approaches to graph construction are vital.
+
+* **Benchmarking:** Standardized benchmarks are needed to evaluate the performance of knowledge graph-enhanced RAG systems, fostering a clear understanding of progress and areas for improvement.
+
+* **Noise Handling:** Real-world knowledge sources often contain inconsistencies or errors. Robust methods to identify and mitigate the impact of noise within the knowledge graph are crucial.
+
+* **Integration Strategies:** Research into how best to integrate the outputs from knowledge graph reasoning into LLM processing will help ensure optimal utilization of the insights obtained.
+
+Addressing these challenges will lead to even more powerful, reliable, and contextually grounded advancements in language modeling technology.
+
+__Conclusion__
+
+In conclusion, the exploration of enhancing retrieval-augmented generation (RAG) with knowledge graphs unveils a pivotal solution to the inherent limitations of large language models (LLMs). Recognizing that LLMs often lack a profound understanding of the world and struggle with complex reasoning, RAG emerges as a strategic approach by incorporating external knowledge sources. The discussion on the current state of RAG, emphasizing vector embeddings, sheds light on their effectiveness in capturing surface-level similarity but highlights their shortcomings in deep contextual understanding and complex reasoning. The introduction of knowledge graphs as a structured solution signifies a significant leap forward, offering contextual understanding and supporting multi-hop reasoning. The proposed hybrid power, integrating both vector embeddings and knowledge graphs, outlines a comprehensive workflow that leverages the strengths of each component. The acknowledgment of challenges and the call for ongoing research underscore the promise of knowledge graph-enhanced RAG systems, paving the way for more potent, reliable, and contextually grounded advancements in language modeling technology.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Google's AI now goes by a new name: Gemini](https://www.theverge.com/2024/2/8/24065553/google-gemini-ios-android-app-duet-bard)*
+
+[Rizqun](https://www.linkedin.com/in/rizqun-rizal-ahsani-970268128): "Google's AI, previously known as Bard and Duet, has been rebranded as Gemini, encompassing both the model and the product. Google has introduced a dedicated Gemini app for Android and integrated its features into Google Workspace. Additionally, Google has unveiled Gemini Ultra 1.0, its most advanced language model, available through a subscription model alongside other Google One services."
+
+![memo](/assets/images/memo16.png) *[OpenAI's CEO Sam Altman is chasing trillions of dollars as investments to disrupt AI chip industries](https://www.firstpost.com/tech/openai-sam-altman-is-chasing-trillions-of-dollars-as-investments-to-disrupt-ai-chip-industries-13708732.html)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "Sam Altman is on a mission to round up a massive $7 trillion, about 10% of the world's GDP, for a big project. He's planning to create a super-specialized semiconductor just for AI training like ChatGPT. It is all about tackling the chip shortage problem in the AI world. The huge amount he's looking for shows how big of a deal AI is becoming for our future."
+
+![memo](/assets/images/memo16.png) *[Elon Musk's Neuralink has performed its first human brain implant](https://neuralink.com/)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "Elon Musk's brain interface company, Neuralink, has conducted the first human trial of its brain implant technology, which Musk claims can enable telepathy and control of devices with the power of thought. The initial users of the implants will be individuals who have lost the use of their limbs. The implants consist of small disk-like devices connected to the brain with ultra-fine wires, which read neural spikes and interpret them to carry out desired actions. The surgical implantation process and further trial details have not been disclosed."
+
+![memo](/assets/images/memo16.png) *[Mastering GitHub Copilot for AI-Paired Programming](https://github.com/microsoft/Mastering-GitHub-Copilot-for-Paired-Programming)*
+
+[Frandi](https://www.linkedin.com/in/frandi): "Interested in trying GitHub Copilot but unsure where to begin? Check out this tutorial from Microsoft to get started easily! It includes a six-lesson course that guides you through the setup, using Visual Studio Code, and collaborating in real-time with GitHub Copilot Chat."
+
+![memo](/assets/images/memo16.png) *[Google teases a new modern look for sign-in pages, including Gmail](https://dailyai.com/2024/01/google-unveils-lumiere-a-text-to-video-diffusion-model)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah/): "Google plans to revamp its sign-in pages, including Gmail, with a modern look, hinted at by a pop-up message. This update aligns with Google's Material Design principles, known for simplicity and user-friendliness, aiming to improve the login experience. Following recent updates to Chrome, emphasizing visual distinctiveness and color customization, these changes reflect Google's ongoing efforts to enhance design consistency and user engagement across its services."
