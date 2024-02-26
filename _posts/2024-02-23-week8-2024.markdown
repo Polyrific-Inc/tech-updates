@@ -1,0 +1,107 @@
+---
+layout: post
+title:  "Week #07 2024 - Small Language Models"
+date:   2024-02-23 20:00:00 +0700
+---
+
+## Small Language Models
+
+TL;DR:In Generative AI, colossal language models capable of impressive feats like poetic composition and natural conversation often take the spotlight. However, the demand for vast computing power and data poses challenges. Enter Small Language Models (SLMs), the nimble counterparts designed to overcome such obstacles. Notable examples include Microsoft's Phi-2, Google's Gemini Nano, and Orca 2, offering streamlined efficiency for specific tasks and compatibility with resource-limited devices. Despite their smaller scale, SLMs prove prowess in generating text, classifying information, and understanding sentiment. The appeal lies in their speed, adaptability, and privacy advantages, making them ideal for specialized chatbots and industry-specific tools. SLMs carve a niche by providing tailored solutions for quick, localized, and task-specific needs. As researchers push boundaries, the future may see SLMs evolving to handle more complex tasks and adapt dynamically to changing demands.
+
+
+Please feel free to continue reading more about Small Language Models below. ⬇️⬇️⬇️
+
+
+__Small Language Models__
+
+With the advancement of Generative AI, everyone's buzzing about giant AI language models that can write poems, answer questions, and even hold conversations like real people. Recently, Google even released the Gemini 1.5 model, which can take up to 1M tokens in production. Despite the enormous potential benefits of these large models, they also come with a natural drawback: the requirement for vast amounts of computing power and data.
+
+
+Sometimes, smaller is actually better! That's where Small Language Models (SLMs) come in. Think of them as the more focused and efficient cousins of those giant AIs. SLMs, like Microsoft's Phi-2, Google's Gemini Nano, or Orca 2, can streamline tasks and even work on devices where a big language model simply wouldn't fit.
+
+__What SLMs Can Do__
+
+Small Language Models may be smaller than their giant cousins, but they're still incredibly capable in certain use cases. 
+
+These are some use cases where they excel at:
+
+* **Generating Text:**  SLMs can write different things, like summaries, short stories, or even basic marketing copy. Imagine an SLM summarizing lengthy news articles into easy-to-read bullet points or creating quick product descriptions for an online store.
+
+* **Classifying Text:** They can sort information into categories, like labeling customer emails as complaints, suggestions, or general inquiries. It helps businesses quickly understand feedback and direct customer concerns to the right department.
+
+* **Understanding Sentiment:**  SLMs can detect the tone of text, figuring out if a review is positive, negative, or neutral. Think of an SLM analyzing social media posts about a brand to gauge overall customer satisfaction.
+
+
+The example isn't everything, but it gives you a great idea of the kinds of jobs SLMs are perfect for!
+
+
+__Why SLMs are Awesome__
+
+Sometimes, the best things come in small packages. SLMs pack a surprising punch despite their size, offering advantages that can make them the perfect tool for the job.
+
+
+
+Here's why they're worth getting excited about:
+
+* **Fast and Light:** SLMs have a smaller footprint, meaning they need less computing power. It makes them speedy on regular computers and even lets them run on devices like smartphones, smartwatches, or other IoT devices.
+
+* **Customizable:**  While large language models are trained on massive amounts of general data, SLMs can be fine-tuned for specific jobs. Imagine an SLM trained specifically to understand medical terminology or one focused on writing a particular style of poetry.
+
+* **Private:** SLMs don't always need to send your data to the cloud because they can run locally. It is a big plus for situations where privacy is important, like handling sensitive customer information or working offline.
+
+If you're looking for a solution that's fast, adaptable, and respectful of your data, Small Language Models might be the surprisingly powerful answer!
+
+__Where SLMs Shine__
+
+Small Language Models may not be the answer to every AI problem, but there are certain areas where they truly excel. Let's look at a few scenarios where SLMs are the star of the show:
+
+* **Resource-Limited Devices:**  Smartwatches, smart speakers, and other devices with limited processing power often can't handle the demands of a giant language model. SLMs offer a fantastic solution, bringing AI capabilities to even the smallest gadgets.
+
+* **Specialized Chatbots:** Imagine a chatbot designed to answer basic questions about your company's products or troubleshoot common tech issues. An SLM trained in your knowledge base can provide focused, efficient support.
+
+* **Industry-Specific Tools:**  Businesses often deal with highly specialized language. An SLM could be trained to analyze legal documents, understand financial reports, or even interpret scientific papers – tasks where the broader focus of a large language model might be less effective.
+
+
+
+SLMs are proving that sometimes being streamlined and focused is the key to getting the job done right!
+
+__SLMs in a Nutshell__
+
+So, do you find SLM an exciting option for your specific use case? Let's wrap things up and put SLMs into perspective.
+
+Small Language Models aren't out to compete with their giant language model cousins. Instead, they offer a different set of strengths tailored to specific needs. When you need a quick solution, want to keep data local, or have a particular task in mind, SLMs are often the ideal choice.
+
+Researchers are still actively pushing the boundaries of what SLMs can do. We might see them become even more efficient, capable of handling more complex tasks, and potentially even learn and adapt on the fly.
+
+__Conclusion__
+
+In conclusion, Small Language Models (SLMs) present an intriguing and practical option for those seeking specialized solutions in the realm of AI. Rather than competing with their larger counterparts, SLMs carve out a distinct niche by offering a set of strengths finely tuned to specific needs. Their appeal lies in providing quick solutions, keeping data local, and efficiently addressing particular tasks. As researchers continue to explore the capabilities of SLMs, there is a promising horizon of increased efficiency, expanded capacity for handling complex tasks, and the potential for dynamic learning and adaptation. For individuals and businesses looking for tailored, focused, and nimble AI applications, SLMs stand out as a compelling and evolving choice.
+
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Memory and new controls for ChatGPT](https://openai.com/blog/memory-and-new-controls-for-chatgpt)*
+
+[Frandi](https://www.linkedin.com/in/frandi): "OpenAI is testing out a new memory feature in ChatGPT to remember things you discussed in the past so you don't have to repeat the information for future conversations. You're in control of what it should remember or forget through settings. There are no specific dates yet on when this feature will be fully released to all users."
+
+![memo](/assets/images/memo16.png) *[OpenAI introduces Sora, its text-to-video AI model](https://www.theverge.com/2024/2/15/24074151/openai-sora-text-to-video-ai)*
+
+[Rizqun](https://www.linkedin.com/in/rizqun-rizal-ahsani-970268128): "OpenAI has introduced Sora, a new video-generation model capable of producing realistic and imaginative scenes from text instructions that are up to a minute long. It handles complex scenes with multiple characters, precise motions, and detailed backgrounds and can also work with still images, fill missing frames, and extend videos. Currently, Sora is available only to selected individuals for assessment."
+
+![memo](/assets/images/memo16.png) *[Google released Gemini 1.5, an LLM with a 1M context length](https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "Google just released an upgraded version of their most powerful model. Gemini 1.5 shows dramatic improvements across many dimensions, and 1.5 Pro achieves comparable quality to 1.0 Ultra while using less computing. It's a multimodal model that can take up to 1M tokens in production. Their research even mentions that it tested up to 10 million tokens. It opens up possibilities for advanced usage of LLM, such as reading an entire codebase or analyzing an hour-long video."
+
+![memo](/assets/images/memo16.png) *[Google released the Google AI Dart SDK for Gemini API](https://medium.com/flutter/harness-the-gemini-api-in-your-dart-and-flutter-apps-00573e560381)*
+
+[Aris](https://www.linkedin.com/in/arispriyantoro/): "The Google AI Dart SDK allows developers to create generative AI features in Dart and Flutter apps by providing an easy-to-use integration with the Gemini API. It opens up possibilities for building intelligent and performant applications across various platforms with access to Google's advanced AI models."
+
+![memo](/assets/images/memo16.png) *[Docker Desktop 4.27 has been released](https://www.docker.com/blog/docker-desktop-4-27)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "Docker Desktop 4.27 has been released, introducing new features such as synchronized file shares, collaboration enhancements in Docker Build Cloud, a private marketplace for extensions (for Docker Business customers), and the release of Moby 25. Other updates include support for Testcontainers with Enhanced Container Isolation, the general availability of docker init with expanded language support, and the beta release of Docker Debug. These updates aim to improve development workflows, enhance security, and provide advanced customization options for Docker users."
