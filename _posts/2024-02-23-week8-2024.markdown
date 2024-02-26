@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Week #07 2024 - Small Language Models"
+title:  "Week #08 2024 - Small Language Models"
 date:   2024-02-23 20:00:00 +0700
 ---
 
 ## Small Language Models
 
-TL;DR:In Generative AI, colossal language models capable of impressive feats like poetic composition and natural conversation often take the spotlight. However, the demand for vast computing power and data poses challenges. Enter Small Language Models (SLMs), the nimble counterparts designed to overcome such obstacles. Notable examples include Microsoft's Phi-2, Google's Gemini Nano, and Orca 2, offering streamlined efficiency for specific tasks and compatibility with resource-limited devices. Despite their smaller scale, SLMs prove prowess in generating text, classifying information, and understanding sentiment. The appeal lies in their speed, adaptability, and privacy advantages, making them ideal for specialized chatbots and industry-specific tools. SLMs carve a niche by providing tailored solutions for quick, localized, and task-specific needs. As researchers push boundaries, the future may see SLMs evolving to handle more complex tasks and adapt dynamically to changing demands.
+**TL;DR**:In Generative AI, colossal language models capable of impressive feats like poetic composition and natural conversation often take the spotlight. However, the demand for vast computing power and data poses challenges. Enter Small Language Models (SLMs), the nimble counterparts designed to overcome such obstacles. Notable examples include Microsoft's Phi-2, Google's Gemini Nano, and Orca 2, offering streamlined efficiency for specific tasks and compatibility with resource-limited devices. Despite their smaller scale, SLMs prove prowess in generating text, classifying information, and understanding sentiment. The appeal lies in their speed, adaptability, and privacy advantages, making them ideal for specialized chatbots and industry-specific tools. SLMs carve a niche by providing tailored solutions for quick, localized, and task-specific needs. As researchers push boundaries, the future may see SLMs evolving to handle more complex tasks and adapt dynamically to changing demands.
 
 
 Please feel free to continue reading more about Small Language Models below. ⬇️⬇️⬇️
