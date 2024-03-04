@@ -1,0 +1,124 @@
+---
+layout: post
+title:  "Week #09 2024 - Optimizing LLM Costs"
+date:   2024-03-01 20:00:00 +0700
+---
+
+## Optimizing LLM Costs
+
+**TL;DR**: In the era of Large Language Models (LLMs), where communication with machines is undergoing a paradigm shift, the benefits come with a price tag. LLM services operate on a token-based pricing model, and comprehending the intricacies of tokens is paramount for effective cost management. Tokens, fragments of words or units that compose text, play a pivotal role in determining the expense associated with LLM usage. This connection between tokens and cost is multifaceted, influenced by factors such as model size, task complexity, and query volume. This guide delves into understanding and optimizing LLM costs, offering insights into strategies for reducing both the cost per token and the overall number of tokens processed. By striking a balance between cost efficiency and performance, businesses and individuals can harness the power of LLMs while keeping expenses in check.
+
+Please feel free to continue reading more about Optimizing LLM Costs below. ⬇️⬇️⬇️
+
+
+__Understanding LLM Tokens__
+
+Large Language Models (LLMs) are revolutionizing how we interact with machines, but they come at a cost. LLM services are typically priced according to usage, and a central factor in this pricing schema is the concept of "tokens." Understanding tokens and how they impact your costs is crucial for effectively managing your LLM expenses.
+
+
+
+**What are Tokens?**
+
+A token is roughly equivalent to a piece of a word. To process text, LLMs break down sentences into smaller units. These units are not always whole words; they can be parts of words, punctuation, or even spaces. Both your input text (the prompts you give the model) and the model's output (its text responses) are measured in tokens.
+
+
+
+**The Token-Cost Connection**
+
+It's vital to grasp that the cost of using LLM services is directly related to the number of tokens processed. Each word, piece of punctuation, or space in your input or the model's output adds to your overall token count.
+
+
+
+Here's how the size and usage of an LLM contribute to its cost:
+
+* **Model Size:** Larger, more powerful LLMs generally cost more per token. They offer greater capabilities but consume more computational resources.
+
+* **Task Complexity:** Tasks requiring extensive reasoning or specialized knowledge will likely demand more tokens and cost more.
+
+* **Query Volume:** The more you use an LLM service, the more tokens you'll consume, and your costs will rise accordingly.
+
+
+
+By understanding tokens and the factors that influence LLM pricing, you'll be well-equipped to make informed decisions about optimizing your LLM usage and controlling those costs.
+
+
+
+__Reducing Cost Per Token__
+
+Now that you understand the fundamentals of LLM costs let's focus on how to get the most out of each token.
+
+Here are some key strategies to consider:
+
+* **Provider Comparison:** LLM providers offer different pricing models and costs per token. Research thoroughly to find a provider that aligns best with your usage patterns and budget. Sometimes, a slightly less powerful model from a more cost-effective provider could drastically reduce overall costs.
+
+* **Optimize for Efficiency:** If you don't need the absolute cutting-edge LLM capability, consider using smaller, more specialized models tailored to your specific tasks. These often cost significantly less per token while still delivering excellent results.
+
+* **Negotiate Your Deal:** If you have consistent, high-volume LLM usage, don't hesitate to reach out to providers about potential volume discounts or long-term contracts. Many providers might be willing to negotiate more favorable rates for committed customers.
+
+When considering these strategies, be sure to strike a balance between cost reduction and performance. While saving money is essential, drastically downgrading models can also hinder the quality of your results. Thoroughly assess your performance needs alongside your budget restrictions.
+
+
+__Reducing the Number of Tokens__
+
+After you know the cost per token of an LLM of your choice, it's time to analyze if you can reduce the number of tokens. Directly minimizing the number of tokens processed translates to tangible cost savings.
+
+**Shorter Prompts**
+
+The fewer tokens you give the LLM to process, the fewer tokens it will likely generate in response. Optimize your prompts to focus on providing the essential information and remove unnecessary wordiness. Also, use clear and concise language that the model can easily understand without ambiguity.
+
+**Fine-tuning Models**
+
+Fine-tuning a general-purpose LLM on your specific dataset and tasks can significantly improve efficiency. It's because the models become tailored to your domain, understanding its terminology and specific requirements. This specialization means the model needs fewer tokens to grasp your input and produce relevant, concise outputs.
+
+While fine-tuning has an initial cost, the long-term token savings often justify the investment. Consider cost-effective approaches to fine-tuning, such as starting with smaller models or using publicly available datasets similar to your use case.
+
+**Caching Common Queries**
+
+You can consider implementing a caching system if you frequently use the same or similar prompts. Once a query has been processed, the response is stored. If the same query is received again, the cached response is retrieved instead of tasking the LLM again – saving you tokens (and money!).
+
+__Other Strategies__
+
+After finding some ways to reduce both the cost per token and the number of tokens, do not stop there. Sometimes, the most effective cost reductions come from creative approaches. You could find any other techniques that can potentially be used to control your LLM cost, such as:
+
+* **Off-Peak Savings:** Some LLM providers might offer fluctuating rates depending on peak usage times. See if your provider has off-peak hours and schedule non-urgent tasks accordingly to capitalize on lower rates.
+
+* **Batch Processing:** If you have a multitude of tasks that don't require immediate results, group them! Batch processing lets you submit many queries simultaneously, potentially reducing overhead and sometimes earning you discounts compared to processing each independently.
+
+* **Open-Source Exploration:**  While commercial LLM providers tend to offer cutting-edge models, open-source options are constantly improving. Investigate whether a well-tuned, open-source model could meet the needs of some of your less demanding use cases, helping you reduce your reliance on paid services. Understand that open source often requires more demanding technical expertise and ongoing maintenance.
+
+__Choosing Your Battles__
+
+The mentioned strategies above might not suit every workflow. It would be best to constantly experiment to find the right balance between them and other creative techniques for maximum cost-efficiency. It is also important to note that it is crucial to test any changes thoroughly to ensure quality is not significantly sacrificed in the pursuit of cost reduction.
+
+__Conclusion__
+
+In conclusion, navigating the realm of Large Language Models (LLMs) demands a nuanced understanding of tokens and their direct correlation to costs. The intricate relationship between model size, task complexity, and query volume influences the expense of LLM services. To optimize costs, careful consideration of strategies is essential. From comparing providers and negotiating deals to fine-tuning models and implementing caching systems, there are diverse avenues for both reducing the cost per token and minimizing the number of tokens processed. Striking a delicate balance between cost efficiency and performance is crucial, ensuring that while expenses are controlled, the quality of results remains paramount. Moreover, exploring additional strategies such as off-peak savings, batch processing, and open-source alternatives adds layers to the cost optimization journey. It's imperative to continuously experiment and tailor these strategies to individual workflows, keeping in mind the ultimate goal of achieving maximum cost-efficiency without compromising the quality of outcomes.
+
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Sora - The text to video tool by OpenAI](https://openai.com/sora)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "OpenAI has unveiled Sora, an artificial intelligence engine that converts text prompts into video clips. While still in the testing phase, Sora has generated excitement on social media with its ability to create movie-like scenes based on text prompts. The release date and price for Sora are unknown, but it is speculated to follow a similar timeline to previous OpenAI products. Sora has the potential to revolutionize video creation and simulation of virtual worlds, but is currently limited in its ability to accurately depict physics and details. Access to Sora is currently invite-only, with plans to implement safety features to prevent harmful content generation."
+
+![memo](/assets/images/memo16.png) *[Gemma: Introducing new state-of-the-art open models](https://blog.google/technology/developers/gemma-open-models/)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "Google has recently unveiled Gemma, an innovative open-source model, following the release of Gemini 1.5. Developed using the research and technology that powered the Gemini models, Gemma is available in two variants: Gemma 2B and Gemma 7B. Notably, Gemma 7B demonstrates performance on par with or exceeding that of other similarly sized open-source models, including Mistral 7B and Llama2 7B, and it even rivals the larger Llama2 13B in terms of capability."
+
+![memo](/assets/images/memo16.png) *[Chat With RTX Brings Custom Chatbot to NVIDIA RTX AI PCs](https://blogs.nvidia.com/blog/chat-with-rtx-available-now)*
+
+[Frandi](https://www.linkedin.com/in/frandi): "Nvidia released a free to download chatbot called ‘Chat with RTX’ that allows you to dig information from files in your local computer, just like when you chat with your friends. Underneath, it utilizes the retrieval-augmented generation (RAG) technique, accelerated by the power of its RTX 30 series GPU or higher."
+
+![memo](/assets/images/memo16.png) *[AUKUS trial advances AI for military operations](https://www.gov.uk/government/news/aukus-trial-advances-ai-and-autonomy-collaboration)*
+
+[Aris](https://www.linkedin.com/in/arispriyantoro/): "The UK armed forces and Defence Science and Technology Laboratory (Dstl) recently collaborated with the militaries of Australia and the US as part of the AUKUS partnership in a landmark trial focused on AI and autonomous systems. The trial, called Trusted Operation of Robotic Vehicles in Contested Environments (TORVICE), was held in Australia under the AUKUS partnership formed last year between the three countries. It aimed to test robotic vehicles and sensors in situations involving electronic attacks, GPS disruption, and other threats to evaluate the resilience of autonomous systems expected to play a major role in future military operations."
+
+![memo](/assets/images/memo16.png) *[Adobe rolls out new PDF AI chatbot for Reader and Acrobat](https://dailyai.com/2024/02/adobe-rolls-out-new-pdf-ai-chatbot-for-reader-and-acrobat)*
+
+[Rizqun](https://www.linkedin.com/in/rizqun-rizal-ahsani-970268128): "Adobe has introduced a beta release of a generative AI chatbot integrated into Adobe Reader and Acrobat products. This AI tool offers users the ability to interact with documents directly, generating summaries, insights, and answering questions about the content within the document.  Initially compatible with PDFs, Adobe plans to extend AI Assistant's capabilities to other document formats and enhance its functionality to work across multiple documents simultaneously."
