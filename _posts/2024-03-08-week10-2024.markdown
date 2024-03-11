@@ -1,0 +1,142 @@
+---
+layout: post
+title:  "Week #10 2024 - Structure-Aware AI"
+date:   2024-03-08 20:00:00 +0700
+---
+
+## Structure-Aware AI
+
+**TL;DR**: The following article unveils the limitations of traditional AI in handling messy, unstructured data prevalent in the real world, such as news articles or cluttered photos, where grasping underlying relationships and context poses a challenge. To overcome these limitations, the revolutionary paradigm of Structure-Aware AI has emerged, aiming to embed a profound understanding of data structure into AI models. Unlike traditional AI, Structure-Aware AI goes beyond surface-level pattern recognition, analyzing relationships between data elements and delving into the ecosystem rather than just observing individual units. This introduction emphasizes the conceptual shift of Structure-Aware AI, addressing its potential to redefine AI's boundaries by addressing the shortcomings of traditional models in comprehending complex real-world structures. Noteworthy advantages include improved accuracy across diverse tasks, efficient extraction of information from smaller datasets, a comprehensive overview of how Structure-Aware AI functions, incorporating advanced structure representation methods, specialized models, and innovative learning algorithms.
+
+**Please feel free to continue reading more about Structure-Aware AI below.** ⬇️⬇️⬇️
+
+
+__Introduction to Structure-Aware AI__
+
+Traditional AI excels at processing well-structured data, like neatly organized spreadsheets or labeled images. However, much of the real world resides in a messy, unstructured format. Imagine a news article with paragraphs, quotes, and headlines or a photo cluttered with various objects. Here, traditional AI struggles to grasp the underlying relationships and context.
+
+To address these limitations, a new paradigm called Structure-Aware AI has emerged as a promising solution. Structure-aware AI aims to incorporate structured knowledge representations into AI systems, enabling them to understand better and reason about the underlying structure and context of the data they process.
+
+__What is Structure-Aware AI?__
+
+At its core, Structure-Aware AI is about embedding an understanding of the structure into AI models. It means that these systems are designed to recognize patterns not just on the surface level but also in how data elements are connected and interact with one another.
+
+
+To appreciate the novelty of Structure-Aware AI, it's essential to understand how it contrasts with traditional AI approaches:
+
+* **Flat Data Processing:** Traditional AI models often treat data as flat, meaning all inputs are considered independent. For example, in machine learning models like simple neural networks, inputs are processed without regard to any inherent structure or relationship between them. This approach might work well for simple pattern recognition tasks (e.g., classifying images of cats vs. dogs) but falls short when dealing with complex data where the relationships between elements are crucial for understanding.
+
+* **Context Ignorance:** Traditional AI lacks a mechanism to understand the context provided by data structures inherently. For example, when processing a sentence, conventional models might struggle with the same word having different meanings based on its position or usage within the sentence structure.
+
+* **Uniform Approach:** Traditional models often apply a one-size-fits-all approach to data analysis, lacking the flexibility to adapt to the unique characteristics of different data structures. It can lead to inefficiencies or inaccuracies in tasks that involve complex, structured data.
+
+
+Structure-aware AI, on the other hand, goes beyond the individual units. It analyzes their relationships, leveraging the structure to guide its understanding. It does not just see the trees or the forest; it understands the ecosystem. This fundamental shift in how data is interpreted opens up new horizons for artificial intelligence, making it an exciting frontier for research and application.
+
+
+
+__Why Structure-Aware AI is Interesting__
+
+The shift towards Structure-aware AI is not just technical but conceptual, promising to redefine the boundaries of what AI can achieve. Here's why Structure-Aware AI is not just another development in the field but a fascinating evolution that addresses some of the most pressing limitations of traditional AI models.
+
+**Understanding the Real World**
+
+Our daily encounters with data, from engaging in conversations to reading scientific papers, involve complex structures that traditional AI systems often struggle to comprehend fully. These structures contain layers of meaning that are lost when processed through conventional AI methods.
+
+Structure-Aware AI changes the game by diving into the depths of this complexity. It doesn't just skim the surface of data but delves into the underlying structures, enabling a deeper and more nuanced understanding.
+
+**Accuracy and Insight**
+
+One of the most compelling advantages of Structure-Aware AI is its ability to achieve significantly improved accuracy across a wide array of tasks. This improvement stems from the model's capability to leverage the relationships and connections within data.
+
+For example, in the context of medical imaging, traditional AI might identify anomalies based on patterns learned from massive datasets. However, Structure-Aware AI goes a step further by understanding these anomalies in relation to surrounding tissues and the overall structure of the organ or system being examined.
+
+**Unlocking Smaller Datasets**
+
+The reliance on massive datasets has been a double-edged sword for AI development. While it has propelled significant advancements, it has also posed limitations, particularly in fields where large datasets are not readily available or ethical considerations restrict data collection. 
+
+Because Structure-Aware AI can understand the underlying structures and relationships within the data, it can extract more information from each data point, enhancing the learning process. This efficiency opens up new possibilities for AI applications in specialized fields, such as rare diseases in healthcare, where large datasets are not feasible.
+
+
+__How Structure-Aware AI Works__
+
+The power of Structure-Aware AI lies in its ability to combine advanced structure representation methods, specialized models that can interpret these representations, and innovative learning algorithms that train these models using structure-related information.
+
+**Structure Representation**
+
+The first step is figuring out how to represent the structure found within the data. Common methods include:
+
+* **Graphs:** Nodes representing entities and edges representing relationships between them. Ideal for social networks, molecular structures, and knowledge graphs.
+
+* **Trees:** Hierarchically structured data, like a sentence's grammatical structure or a website's layout.
+
+* **Grammars:** Formal rules define valid structures within a domain, particularly useful for natural language processing.
+  
+**Structure-Aware Models**
+
+Once structure is represented, specialized models are needed to process it effectively. Some prominent architectures include:
+
+* **Graph Neural Networks (GNNs):** Process information on graphs, learning from node features and their relationships.
+
+* **Tree-LSTMs:** Extensions of traditional recurrent neural networks designed to handle tree-like structures.
+
+* **Attention Mechanisms:** Allow models to focus on the most relevant parts of a structure, improving efficiency and understanding.
+
+**Learning**
+
+The learning component involves training these models using algorithms that can efficiently leverage structure-related information, such as:
+
+* **Supervised Learning:** Providing labeled data with explicitly marked structures for the models to learn.
+
+* **Self-Supervised Learning:** Generating supervisory signals from the data itself based on the inherent structures (e.g., predicting masked words in a sentence).
+
+* **Reinforcement Learning:** Learning through trial and error, where the model receives rewards for exploiting structural information effectively.
+
+
+
+Understanding how these elements work together is vital to appreciating the complexity and potential of Structure-Aware AI.
+
+__Exciting Potentials for the Future__
+
+Structure-aware AI holds the key to unlocking groundbreaking advancements across various fields. Here's a glimpse into some of its most exciting future potentials:
+
+* **Machines that Think Like Humans:** Structure plays a crucial role in human cognition. By developing AI that mirrors this ability, we could create machines capable of more complex reasoning, problem-solving, and interaction with the world in an intuitive manner.
+
+* **Revolutions in Complex Domains:**  Scientific data, social networks, and biological systems are incredibly complex and interconnected. Structure-aware models could provide the tools to analyze these complex domains with unprecedented depth, leading to breakthroughs in medicine, climate modeling, or social science research.
+
+* **AI-Powered Creativity:** Imagine an AI that doesn't just recognize objects in an image but understands how they relate and could be rearranged into new compositions. It could lead to AI-generated content with control over layout, narrative flow, or even generating 3D models with complex, user-defined structures.
+
+* **Potential Breakthroughs in Artificial General Intelligence (AGI):** The ultimate goal of AI research is to develop Artificial General Intelligence (AGI) - AI systems that can match or surpass human intelligence across a wide range of tasks. While AGI is still a long-term vision, Structure-Aware AI represents a significant step toward realizing this ambitious goal.
+
+__Conclusion__
+
+Structure-aware AI represents a pivotal shift in how we design intelligent systems. By moving beyond raw data and embracing its inherent patterns, these models promise a deeper understanding of the world around us. While research in this field is still ongoing,  the potential for breakthroughs in natural language processing, computer vision, scientific discovery, and even new forms of creative expression is immense. As structure-aware methods mature, we will likely witness AI systems that learn more efficiently, reason more intuitively, and interact with us increasingly meaningfully.
+
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Introducing the next generation of Claude: Claude 3 Family](https://www.anthropic.com/news/claude-3-family)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "Anthropic just released their latest model, Claude 3. It comes in three sizes: Opus, Sonnet, and Haiku. Claude 3 Opus, their most powerful variant, is said to have better performance than GPT-4 based on several benchmarks. It initially offers a 200k context window, but the model itself is capable of accepting inputs exceeding 1 million tokens."
+
+![memo](/assets/images/memo16.png) *[Mistral AI released its flagship model to rival GPT-4](https://mistral.ai/news/mistral-large)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "Mistral AI just released a new large language model, set to compete with others like GPT -4 or Claude 2. It's priced at $8 per million input tokens and $24 per million output tokens, supporting context length up to 32k tokens."
+
+![memo](/assets/images/memo16.png) *[Microsoft tests Windows 11 'Super Resolution' AI-upscaling for gamers](https://www.bleepingcomputer.com/news/microsoft/microsoft-tests-windows-11-super-resolution-ai-upscaling-for-gamers)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah/): "Microsoft is testing an "Automatic Super Resolution" feature in Windows 11, utilizing AI to upscale supported games for improved quality and smoother performance. Hidden in preview builds, users can enable it globally or per game. Like NVIDIA's DLSS, it uses AI to enhance image quality without sacrificing performance. However, since it's in development, enabling it may cause instability and is recommended for testing only."
+
+![memo](/assets/images/memo16.png) *[MindStudio: The Fastest Way To Build AI-Powered Apps](https://youai.ai/)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "MindStudio's platform allows users to easily create custom AI apps in just minutes, with the ability to use multiple models within one app. The free platform has already been used to build over 18,000 apps in its short six-month lifespan. Users can choose from various templates or create their own AI app, with options for customization and coding. Paid tiers offer access to more powerful models and additional features, making it a useful tool for businesses looking to engage customers and enhance their services."
+
+![memo](/assets/images/memo16.png) *[Copilot for OneDrive will fetch your files and summarize them](https://www.theverge.com/2024/3/1/24088026/copilot-for-onedrive-file-find-summary-prompts-natural-language)*
+
+[Rizqun](https://www.linkedin.com/in/rizqun-rizal-ahsani-970268128): "Microsoft's Copilot for OneDrive is set to launch in late April and will act as a research assistant. It will be able to summarize and extract information from various file types like documents, presentations, and spreadsheets. It can even create outlines, tables, and lists based on existing documents. This AI tool aims to enhance file organization and productivity for OneDrive users."
