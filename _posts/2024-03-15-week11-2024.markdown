@@ -1,0 +1,85 @@
+---
+layout: post
+title:  "Week #11 2024 - GPUs: From Gaming Powerhouses to AI Accelerators"
+date:   2024-03-15 20:00:00 +0700
+---
+
+## GPUs: From Gaming Powerhouses to AI Accelerators
+
+**TL;DR**: The evolution of GPUs from gaming powerhouses to essential AI accelerators has been transformative, leveraging their parallel processing prowess to outperform CPUs in handling massive datasets and accelerating training processes. NVIDIA's CUDA platform and AMD's architectures optimize GPU capabilities for AI, while precision computations balance speed and accuracy. Ongoing research into specialized AI chips promises greater efficiency and accessibility, heralding breakthroughs in fields like medicine and art. This symbiotic relationship between GPUs and AI invites us to embrace curiosity as we navigate the ever-evolving landscape of innovation.
+
+**To learn more about GPUs, feel free to continue reading below.** ⬇️⬇️⬇️
+
+
+__Introduction__
+
+It's remarkable to think back to a time when graphics cards were primarily associated with enhancing gaming experiences. Today, GPUs (Graphics Processing Units) have undergone a significant transformation, emerging as crucial components in the realm of artificial intelligence (AI) development. 
+
+Their unique ability to handle a multitude of calculations simultaneously, a characteristic that aligns perfectly with the demands of graphics and AI learning, has catapulted companies like NVIDIA and AMD, renowned for their high-performance graphics cards, to the forefront of AI innovation.
+
+__Why GPUs are a Big Deal__
+
+GPUs truly shine in their capacity to handle parallel tasks, a feature that makes them exceptionally well-suited for the matrix and vector operations that underpin deep learning and AI. 
+
+In contrast to Central Processing Units (CPUs), which are designed to handle a broad spectrum of computing tasks but with a limited number of cores for serial processing, GPUs boast thousands of smaller, more efficient cores that are tailor-made for multitasking. This architectural distinction is the key to why GPUs outperform CPUs in terms of speed and efficiency for AI computations.
+
+
+__GPU Architectures: CUDA, Tensor Cores, and Beyond__
+
+At the heart of NVIDIA's dominance in the AI field is its proprietary CUDA (Compute Unified Device Architecture) platform, which provides a development environment that allows developers to use C++ (and other high-level programming languages) to develop software that can run on NVIDIA GPUs. It has been pivotal in making GPUs accessible for AI research and development. Additionally, NVIDIA introduced Tensor Cores, specialized hardware designed to accelerate deep learning tasks by performing tensor operations, further cementing GPUs' role in AI.
+
+AMD, while taking a different route with its RDNA and CDNA architectures, also focuses on optimizing parallel processing capabilities and includes specialized instructions to accelerate AI-related computations.
+
+
+__Precision Matters: FP8, FP16, FP32, and FP64__
+
+Precision in computations refers to how detailed the calculations can be, with common standards including FP8 (8-bit floating point), FP16 (16-bit), FP32 (32-bit), and FP64 (64-bit).
+
+AI and deep learning models vary in their precision requirements. Less precision means less accuracy but faster processing, while high precision means better accuracy but often slower. Think of it like a sketch vs. a highly detailed photograph; sometimes, the sketch is enough to get the point across.
+
+__Why GPUs and AI are a Perfect Match__
+
+Two key aspects underscore this perfect match: the handling of massive datasets and the acceleration of training processes.
+
+* **Massive Datasets:** AI, particularly deep learning, thrives on enormous amounts of data. GPUs can tear through this data much faster than traditional CPUs.
+
+* **Training Acceleration:** The most computationally expensive part of AI is training the models. GPUs dramatically speed up this process, allowing researchers to experiment and develop state-of-the-art AI faster than ever.
+
+__The Future of Specialized AI Chips__
+
+GPUs have been fantastic for pushing AI forward, but researchers are still ongoing to create a new generation of specialized AI chips. Think of them as custom-built tools for the job. These chips are designed from scratch to be incredible at the specific math that powers AI models. They can be far more efficient than GPUs, meaning they do the same work using less energy and sometimes even faster.
+
+More efficient AI could mean we see powerful models running on our phones or smaller devices. It could also lower the cost of training large AI systems, making AI more accessible for researchers around the world.
+
+__Conclusion__
+
+GPUs opened a whole new world of possibilities in gaming, and they've done the same for AI. This acceleration, coupled with specialized AI hardware, has us on the cusp of breakthroughs in fields from medicine to art. The best part? We're probably just at the beginning of what AI can achieve. Stay curious because the next AI-powered innovation could change how we work, create, or even how we see the world.
+
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Google AI Studio](https://ai.google.dev/tutorials/ai-studio_quickstart)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "Google AI Studio is a browser-based IDE for prototyping with generative models, offering freeform, structured, and chat prompts for experimentation. The tool allows users to adjust model parameters, tune models for specific tasks, and export prompts to code in their preferred programming language. Users can save prompts, export examples, and explore different model behaviors, such as controlling randomness and adjusting safety settings. The platform also guides creating structured prompts for advertising copy generation and chatbots to tailor AI responses for specific use cases and tones."
+
+![memo](/assets/images/memo16.png) *[Groq, a super performant inference engine](https://groq.com/)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "Groq is an interesting product that can be used as an inference engine. It can output nearly 500 tokens per second when using the Mixtral 8X7B model. They also offer some API access, so their services might be something to consider when looking for a speedy inference interaction."
+
+![memo](/assets/images/memo16.png) *[Amazon launched Rufus, an AI shopping Assistant for its mobile app](https://techcrunch.com/2024/02/01/amazon-debuts-rufus-an-ai-shopping-assistant-in-its-mobile-app/)*
+
+[Aris](https://www.linkedin.com/in/arispriyantoro/): "Amazon introduced an AI-powered shopping assistant called Rufus, who was trained on the company's product catalog and web data last month. Initially available in beta to a subset of U.S. customers, Rufus can assist users in finding products, comparing items, and offering recommendations within Amazon's mobile app. The launch follows other AI enhancements on Amazon.com, including tools for size recommendations, summarized product reviews, and features for advertisers and sellers. Rufus is a generative AI trained on diverse data sources to address customers' shopping inquiries at different journey stages."
+
+![memo](/assets/images/memo16.png) *[Introducing Devin, the first AI software engineer](https://www.cognition-labs.com/introducing-devin)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "A new startup called Cognition AI is releasing their flagship coding assistant. Devin can learn how to use unfamiliar technologies, build end-to-end deployment, autonomously find and fix bugs in codebases, train and fine-tune its AI models, and even take some projects on real Upwork jobs. The benchmark performance already shows results far exceeding those of the previous state-of-the-art."
+
+![memo](/assets/images/memo16.png) *[Image-scraping Midjourney bans rival AI firm for scraping images](https://arstechnica.com/information-technology/2024/03/in-ironic-twist-midjourney-bans-rival-ai-firm-employees-for-scraping-its-image-data/)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah/): "Midjourney banned Stability AI employees over suspected bot activity, causing a service outage. Despite criticism, Midjourney enforced the ban, while Stability AI denied intentional scraping. Stability AI emphasized their reliance on permissive data sources and downplayed any rivalry with Midjourney, highlighting past financial support for the company."
