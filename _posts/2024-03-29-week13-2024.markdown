@@ -1,0 +1,110 @@
+---
+layout: post
+title:  "Week #13 2024 - LLM Evaluation Benchmarks"
+date:   2024-03-29 20:00:00 +0700
+---
+
+## LLM Evaluation Benchmarks
+
+**TL;DR**: Benchmarking is essential for evaluating Large Language Models (LLMs) as it goes beyond technical performance to assess their real-world effectiveness and ethics.  A well-rounded evaluation considers factors like accuracy, user-friendliness, fairness, and efficiency, with various benchmarks like GLUE and SQuAD focusing on specific aspects like general NLP abilities or question answering. By using a combination of these benchmarks, we can ensure LLMs are not only powerful but also responsible and user-friendly.
+
+To learn more about LLM Benchmarking, please keep reading below ⬇️⬇️⬇️
+
+
+__The importance of benchmarking__
+
+Benchmarking is essential for evaluating large language models (LLMs). It provides a structured approach to assessing their performance, capabilities, and limitations. Benchmarking enables objective comparisons and helps identify which models perform best under standardized conditions. 
+
+This process is not just vital for tracking progress in the field, but it also serves as a catalyst for innovation. Benchmarks offer clear metrics to measure advancements over time. They also pinpoint areas where models struggle, sparking inspiration for research and development. 
+
+Beyond technical prowess, benchmarking influences ethical considerations and user experience by setting fairness, privacy, and interaction quality standards. In essence, benchmarking is not just about gauging how well LLMs mimic human language abilities; it's about guiding their evolution to be more effective, ethical, and user-friendly.
+
+__Evaluation criteria__
+
+Evaluating LLMs involves a detailed assessment across several crucial dimensions to ensure they meet the highest functionality standards, user interaction, ethical adherence, adaptability, and efficiency.
+
+In **quality assurance**, the focus is on ensuring that LLMs deliver accurate and reliable outputs. This includes their ability to provide correct responses across various tasks, from translation to question answering, and their consistency even with similar or repetitive queries. Additionally, a robust LLM must adeptly handle ambiguous or incomplete information, either by making reasonable assumptions or seeking clarification, thus mirroring humans' intuitive problem-solving approach.
+
+**User experience** is another critical criterion, emphasizing the importance of seamless and engaging interactions between humans and LLMs. It encompasses the model's response speed, which is vital for user satisfaction, especially in applications requiring real-time feedback. Moreover, the naturalness and coherence of the text generated play a pivotal role in making digital interactions more human-like, ensuring the output is fluent and logically structured.
+
+**Ethical compliance** is paramount in the deployment of LLMs, addressing the need for these models to operate within morally acceptable boundaries. It involves scrutinizing LLMs for biases that may unintentionally skew outputs and implementing strategies to counteract them. Protecting user privacy and data integrity, as well as the model's transparency and explainability of its decision-making processes, is also crucial.
+
+LLMs' **adaptability and generalization** are tested through their performance across diverse domains and handling of novel situations. A versatile model proves its efficacy by excelling in tasks beyond its primary training scope, showing proficiency in various subjects, languages, and formats. Its ability to navigate previously unseen scenarios or questions indicates a significant level of general intelligence and learning capability.
+
+Lastly, the **environmental and operational efficiency** of LLMs has emerged as a critical concern, reflecting the growing awareness of the environmental impact of advanced computational technologies. Evaluating LLMs on their energy consumption during training and operation phases encourages the development of models that perform effectively and sustainably. Scalability, or the ability of a model to maintain or enhance its performance while managing larger datasets or more complex inquiries, is also critical for ensuring that advancements in LLM technology are both innovative and responsible.
+
+
+__Sample of evaluation benchmarks__
+
+**GLUE and SuperGLUE**
+
+The General Language Understanding Evaluation ([GLUE](https://gluebenchmark.com/)) and its successor, [SuperGLUE](https://super.gluebenchmark.com/), are benchmarks designed to test the breadth of natural language processing (NLP) models' abilities across various tasks, including question-answering, sentiment analysis, and textual entailment. GLUE's nine tasks offer a foundational assessment, while SuperGLUE introduces more complex challenges, pushing models to achieve new levels of language understanding.
+
+The main strengths of these benchmarks are their comprehensive nature and ability to drive research toward developing models capable of excelling across multiple NLP domains. They encourage the creation of versatile models that can generalize well across different linguistic tasks, making them valuable tools in the progression of NLP research.
+
+However, GLUE and SuperGLUE have limitations, including a focus that may not capture the full complexity of specific linguistic tasks and a scope that doesn't encompass all types of NLP challenges. While they offer a broad measure of models' capabilities, they might miss finer nuances of language and certain task-specific intricacies.
+
+**SQuAD**
+
+The Stanford Question Answering Dataset ([SQuAD](https://rajpurkar.github.io/SQuAD-explorer)) is a widely recognized benchmark that tests question-answering models by presenting them with passages and corresponding questions. This setup evaluates the model's ability to understand the context and accurately extract the information needed to answer questions.
+
+SQuAD's strengths include its emphasis on contextual understanding, which is crucial for any application involving text comprehension and information retrieval. Additionally, the high-quality, carefully curated dataset ensures reliable and consistent evaluation of question-answering performance.
+
+However, SQuAD's primary focus on question-answering limits its applicability to other types of conversational or linguistic tasks. Furthermore, while the dataset challenges models with a range of questions, it might not capture the full spectrum of complexity found in natural, real-world language use, potentially narrowing the scope of its effectiveness in broader applications.
+
+**MMLU**
+
+The Massive Multitask Language Understanding ([MMLU](https://arxiv.org/abs/2009.03300)) benchmark evaluates language models across various languages and domains, such as news, e-commerce, and conversational data. By including languages from various families, it emphasizes multilingual evaluation and cross-domain versatility, promoting linguistic diversity and cross-lingual assessments. MMLU uses standardized metrics for consistent comparisons across different models.
+
+Key strengths of MMLU include its comprehensive approach to assessing models on a global scale, thanks to its multilingual focus, and its ability to evaluate performance across a wide range of contexts and domains. Including diverse language families enhances its scope for cross-lingual evaluation, supported by uniform evaluation metrics that ensure fair model comparisons.
+
+However, MMLU faces limitations such as not encompassing all language tasks, which might overlook specialized tasks or domains needing distinct evaluation approaches. Its reliance on available multilingual data could restrict evaluations for underrepresented language pairs or low-resource languages. Additionally, the potential for dataset biases arising from the sources and methods used to collect data may affect the benchmark's fairness and the generalizability of its evaluation outcomes.
+
+**CoQA**
+
+The Conversational Question Answering ([CoQA](https://stanfordnlp.github.io/coqa/)) benchmark specifically tests models' capacity to answer conversational questions, emphasizing the importance of understanding conversation history to generate coherent responses.
+
+CoQA stands out for its focus on conversation context and the realism of its interactions, which mirror the dynamic and often unpredictable nature of human conversations. This realism introduces additional complexity, pushing models to maintain accuracy throughout an exchange, a crucial capability for applications in chatbots and virtual assistants.
+
+However, CoQA faces limitations, including a potential scarcity of rich conversational datasets, which could limit the scope of evaluation across diverse conversational scenarios. Additionally, accurately modeling the intricacies of conversational context presents a significant challenge. While CoQA aims to assess this aspect, it may not capture the full range of contextual nuances found in natural dialogue, from implicit meanings to shifting topics.
+
+**HELM**
+
+Holistic evaluation of language models ([HELM](https://crfm.stanford.edu/helm/lite/latest)) is a benchmark designed to evaluate language models on their contextual understanding and reasoning through tasks that demand deep comprehension, including understanding linguistic nuances, common sense, and logical reasoning. It aims for inclusivity by incorporating tasks in multiple languages, promoting cross-lingual evaluations, and ensuring linguistic diversity. Additionally, HELM offers an open platform for researchers to test their models against current leading models, fostering an environment of continual improvement and benchmarking.
+
+The strengths of HELM lie in its rigorous focus on evaluating models' abilities to process and reason with contextual information, assess linguistic and commonsense knowledge, and its commitment to linguistic diversity. This approach provides a comprehensive assessment beyond mere language processing, challenging models to demonstrate a deeper level of understanding.
+
+However, HELM's focus on contextual understanding may mean it does not encompass the entire breadth of language tasks, potentially limiting its scope for specific evaluations. The complexity of its evaluation tasks could also present challenges for models not explicitly trained on such nuanced capabilities. Moreover, the benchmark's reliance on human annotations for some tasks introduces the risk of subjectivity and bias, possibly affecting the consistency of evaluation outcomes.
+
+__Conclusion__
+
+In conclusion, LLM evaluation is a multifaceted endeavor that extends beyond technical prowess. By employing a diverse set of benchmarks, we can comprehensively assess a model's capabilities across various dimensions, from accuracy and user experience to ethical considerations and environmental impact. This multifaceted approach ensures that LLMs are not just powerful language processors, but also responsible tools that are effective, ethical, and user-friendly. As the field of LLM development continues to evolve, so too must our evaluation methods, fostering the creation of models that benefit society in meaningful ways.
+
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[SIMA: A Generalist AI Agent for 3D Virtual Environments](https://deepmind.google/discover/blog/sima-generalist-ai-agent-for-3d-virtual-environments/)*
+
+[Rizqun](https://www.linkedin.com/in/rizqun-rizal-ahsani-970268128): "Google DeepMind has developed a new AI agent called SIMA that can understand and follow instructions in various 3D video games. Unlike previous AI designed to excel at specific games, SIMA isn't about achieving high scores. It is trained on a variety of video games to learn how to navigate the world, use menus, and even craft objects."
+
+![memo](/assets/images/memo16.png) *[Nvidia unveils Blackwell B200, the "world's most powerful chip" designed for AI](https://arstechnica.com/information-technology/2024/03/nvidia-unveils-blackwell-b200-the-worlds-most-powerful-chip-designed-for-ai/)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah/): "Nvidia introduced the Blackwell B200 GPU, claiming significant AI cost and energy savings. The GB200 "superchip" combines two B200s and a Grace CPU for enhanced performance. It's aimed at training trillion-parameter AI models and is expected to be adopted by major tech firms. The GB200 NVL72 targets AI tasks with notable performance gains and efficiency. However, real-world performance and competition from Intel and AMD are factors to watch. Blackwell-based products are slated for release later this year."
+
+![memo](/assets/images/memo16.png) *[Anthropic Releases Their Claude Prompt Library](https://docs.anthropic.com/claude/prompt-library)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "Prompt is like the syntax to get the most out of an LLM. Knowing various prompt use cases can improve your understanding of LLMs and how to utilize them in your AI-powered application. Reading through some of the prompts released in the above link may be beneficial to most developers currently working on this new field. For general users, it can give you more ideas during your interaction with a typical AI chat application like Chat GPT or Claude."
+
+![memo](/assets/images/memo16.png) *[Nvidia announces "moonshot" to create embodied human-level AI in robot form](https://arstechnica.com/information-technology/2024/03/nvidia-announces-moonshot-to-create-embodied-human-level-ai-in-robot-form)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah/): "Nvidia is spearheading the development of humanoid robots with Project GR00T, aiming to create versatile models capable of autonomously learning tasks. These robots could revolutionize industries and daily life by emulating human movements and understanding language. Nvidia's focus on humanoid forms stems from the abundance of imitation training data available from human movement, facilitating easier training of AI models. Despite advancements like the Jetson Thor platform and Isaac Sim robotics platform updates, ethical concerns regarding job displacement and societal impact remain prominent."
+
+![memo](/assets/images/memo16.png) *[How to jailbreak ChatGPT](https://www.techradar.com/how-to/how-to-jailbreak-chatgpt)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "The term "jailbreaking" originated in the mid-2000s about Apple's iPhone and referred to bypassing software restrictions. In the context of ChatGPT, jailbreaking involves giving the AI hypothetical scenarios that go against Open AI's guidelines. While some see jailbreaking as a way to test the system and understand its capabilities, it can lead to producing unethical or illegal content, resulting in account shutdowns. Various jailbreaking techniques involve role-playing, ignoring ethical guidelines, and instructing ChatGPT to never refuse a request, with the success of the prompt dependent on factors like the version used and the task assigned. The rise of such practices has led AI producers to tighten security measures to prevent jailbreaking in the future."
