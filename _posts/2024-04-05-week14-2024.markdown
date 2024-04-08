@@ -1,0 +1,132 @@
+---
+layout: post
+title:  "Week #14 2024 - AI Multi-Agent Workflows"
+date:   2024-04-05 20:00:00 +0700
+---
+
+## AI Multi-Agent Workflows
+
+**TL;DR**: AI workflows with a single agent have limitations, especially for complex tasks. Multi-agent workflows address this by using multiple AI agents, each with its own expertise, working together to achieve a common goal. There are different types of multi-agent workflows, including collaborative, sequential, and supervisor-agent workflows, each suited for specific scenarios. This approach unlocks solutions to complex problems and holds promise for the future of AI.
+
+To learn more about AI Multi-Agent Workflows please read below. ⬇️⬇️⬇️
+
+
+__The challenges with single-agent workflow__
+
+In our exploration of AI-powered workflows, we've seen how AI agents bring remarkable capabilities to the table. They can converse with us, generate creative text formats, and even streamline various tasks by interacting with digital tools.
+
+However, even the most sophisticated AI agents can face certain limitations when pushed to their limits:
+
+While a single agent might excel in a specific domain, it can struggle when confronted with tasks that demand a broader range of knowledge or specialized skills. 
+
+A process involving multiple intricate steps, coordination, or diverse problem-solving approaches can overwhelm a single agent.
+
+Interacting with dynamic, real-world systems and tools might require adaptability and flexibility that go beyond the capabilities of a single agent.
+
+To address these challenges, we turn our focus to the exciting world of multi-agent workflows. Here, multiple intelligent agents, potentially powered by LLMs, collaborate and share their expertise. It opens the door to tackling far more complex and nuanced problems than a single agent ever could.
+
+__The power of collaboration__
+
+Imagine a team of experts working together to achieve a complex goal. It is the essence of a multi-agent workflow in AI. Instead of relying on a single agent, we leverage multiple specialized agents, each with its own strengths and capabilities.
+
+**Here's how it works:**
+
+* Each agent focuses on a specific area of expertise. It could involve information retrieval, creative writing, data analysis, or any other relevant skill set required for the task at hand.
+
+* The agents communicate and share information with each other. It allows them to understand the overall goal, delegate tasks, and ensure their individual contributions work seamlessly together.
+
+* Through a coordinated effort, the agents achieve a result far more significant than any single agent could accomplish alone.
+
+Let's look at a real-world scenario involving research and writing a comprehensive report. A single LLM agent might struggle to gather in-depth research, analyze data, and generate a well-structured report because each requires a different set of skills. But, if we use a multi-agent workflow, we can hand over each function to a different agent specifically built for the specific skill. Each agent contributes its expertise, resulting in a high-quality, informative report.
+
+The same principle applies in different scenarios, like travel planning with personalized recommendations. An agent might be very skilled at booking flights and hotels but struggle to consider individual preferences or curate unique experiences. In the multi-agent workflow, A "supervisor" agent coordinates with sub-agents specializing in flight booking, hotel reservations, and activity recommendations tailored to user interests (e.g., historical sites for history buffs, Michelin-starred restaurants for foodies). This collaboration creates a personalized and enriching travel itinerary.
+
+These are just a few examples, but multi-agent workflows have potential applications across various industries and tasks. They offer a robust framework for tackling complex challenges that require diverse skill sets, real-time adaptation, and seamless collaboration.
+
+
+__Different plays for different tasks__
+
+We've established that multi-agent workflows leverage collaboration to achieve complex goals. But how do these agents actually work together? Here, we explore three common types of multi-agent workflows, each suited for specific scenarios:
+
+
+1. Collaborative Workflows
+
+Imagine a team of experts brainstorming ideas for a project. This collaborative approach also applies to multi-agent workflows with complementary skills. They work on different aspects of the same task, contributing their specialized knowledge and outputs to a central pool.
+
+
+This workflow is ideal for complex tasks requiring diverse expertise. For example, a multi-agent workflow for writing a marketing blog post might involve the following:
+
+* **Agent 1:** Generates creative headlines and outlines.
+
+* **Agent 2:** Conducts online research and gathers relevant statistics. 
+
+* **Agent 3:** Writes the blog post, incorporating the gathered information and headlines.
+
+
+2. **Sequential Workflows (Pipelines)**
+
+Think of a factory assembly line, where each step builds upon the previous one. This scenario is the essence of sequential workflows. Agents are arranged in a sequence, with the output from one agent feeding into the next. It's like a chain reaction of tasks.
+
+
+This workflow defines linear tasks with a clear progression of steps. It ensures each step is completed before moving on to the next. For example, translating a product description might involve:
+
+* **Agent 1:** Receives the original English description.
+
+* **Agent 2:** Translates the description into French.
+
+* **Agent 3 (optional):** Translate the description into Spanish (and so on) for additional languages.
+
+3. **Supervisor-Agent Workflows**
+
+Imagine an orchestra conductor leading and coordinating the various sections. It is similar to a supervisor-agent workflow. A supervisor agent acts as the central coordinator, managing a team of sub-agents with specialized skills. It delegates tasks, monitors progress, and ensures everything runs smoothly.
+
+This workflow is ideal for complex tasks requiring multiple sub-tasks and overall management. Supervisor agents can adapt and re-delegate tasks as needed. In the previous section, we discussed the example of this supervisor-agent workflow in the case of travel planning with personalized recommendations.
+
+__Choosing the right workflow__
+
+The best multi-agent workflow type depends on the specific task at hand. By understanding these different workflows and their strengths, you can start planning to leverage multi-agent systems to tackle complex tasks within your projects and applications.
+
+**Consider factors like:**
+
+* **Task Complexity:** Collaborative workflows shine for complex tasks, while sequential ones excel in linear processes. Supervisor workflows provide a good balance for managing intricate sub-tasks.
+
+* **Real-Time vs. Batch Processing:** Collaborative workflows can be used for real-time tasks where agents must adapt and interact dynamically. Sequential workflows are well-suited for batch processing of data or tasks.
+
+* **Agent Capabilities:** Consider the strengths and limitations of the individual agents involved. It will influence how you structure the workflow and assign tasks.
+
+
+
+__Conclusion__
+
+Multi-agent workflows represent a significant leap forward in the capabilities of artificial intelligence systems. By breaking down complex tasks, fostering collaboration between specialized agents, and providing different workflow structures, we unlock solutions to problems that couldn't be tackled by a single agent in isolation.
+
+As AI technologies continue to advance, we can expect even more sophisticated multi-agent workflows to emerge. Businesses and industries will harness these workflows to streamline processes, drive innovation, and create personalized user experiences. The future lies in the strategic design of these agent systems, where their combined knowledge and expertise become greater than the sum of their parts.
+
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Navigating the Challenges and Opportunities of Synthetic Voices](https://openai.com/blog/navigating-the-challenges-and-opportunities-of-synthetic-voices)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "OpenAI has developed a new artificial intelligence tool called Voice Engine, which can create synthetic voices from just 15 seconds of audio. It is currently being used in the ChatGPT app's Read Aloud feature, but concerns about misuse, such as spreading misinformation and copying voices without consent, have limited its availability. OpenAI is researching how to responsibly deploy this technology to avoid potential issues with voice authentication and scams."
+
+![memo](/assets/images/memo16.png) *[Claude 3 overtakes GPT-4 in the LLM Chatbot Arena](https://www.zdnet.com/article/claude-3-overtakes-gpt-4-in-the-duel-of-the-ai-bots-heres-how-to-get-in-on-the-action/)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "The Chatbot Arena Leaderboard is a Hugging Face page listing the best large language models (LLMs) available. GPT-4 has always been at the top of the ranking list. However, Claude 3 Opus, Anthropic's most powerful model, has recently surpassed GPT-4 to become the number one LLM on the list. Competition is always beneficial, and considering how young the AI industry is, there will be a long journey ahead to determine the ultimate winner in this space."
+
+![memo](/assets/images/memo16.png) *[Adobe Substance 3D's AI features can turn text into backgrounds and textures](https://www.theverge.com/2024/3/18/24104718/adobe-firefly-substance-sampler-stager-3d-tools-beta)*
+
+[Rizqun](https://www.linkedin.com/in/rizqun-rizal-ahsani-970268128): "Adobe has unveiled two new features, Text to Texture and Generative Background, in its Substance 3D design software suite, powered by its Firefly AI model. These features utilize text descriptions to generate photorealistic textures and background images for 3D models, streamlining the creative process for designers. They are currently available in beta versions of Substance 3D Sampler 4.4 and Stager 3.0 and have been trained on Adobe-owned assets, including reference materials from the company and licensed Adobe stock."
+
+![memo](/assets/images/memo16.png) *[Webinar: Fix Hallucinations in RAG Systems with Pinecone and Galileo ](https://www.youtube.com/watch?v=Onf1UqKPMR4&ab_channel=Galileo)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "In this webinar, the speaker discusses solutions for building trust in Retrieval-Augmented Generation (RAG) systems by effectively managing context data, evaluating applications with Galileo, and optimizing chunk utilization. Pinecone and Galileo are introduced as tools for monitoring and improving system performance, providing benefits in accuracy, response times, scalability, and cost savings for large language models. Attendees are encouraged to experiment with larger chunk sizes, visualization, and retrieval logic to optimize system performance and address production issues in their RAG systems."
+
+![memo](/assets/images/memo16.png) *[A password manager LastPass calls "fraudulent" booted from the App Store](https://arstechnica.com/security/2024/02/a-password-manager-lastpass-calls-fraudulent-booted-from-app-store/)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah/): "Apple faced criticism after a fraudulent app mimicking LastPass, called LassPass, slipped through its App Store vetting process but was later removed. LastPass alerted users to the impostor, which closely resembled the original. Despite the swift action, questions arose about Apple's oversight. The incident underscores concerns about app security on the platform, prompting Apple to remove the app and the developer's access for violating guidelines against copycat apps."
