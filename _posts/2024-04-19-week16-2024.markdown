@@ -1,0 +1,116 @@
+---
+layout: post
+title:  "Week #16 2024 - What is Mixture of Depths, and what can it do for AI?"
+date:   2024-04-19 20:00:00 +0700
+---
+
+## What is Mixture of Depths, and what can it do for AI?
+
+**TL;DR**: Powerful AI models called transformers are great for tasks like translation and chatbots, but they're expensive to run because they require a lot of computing power. This limits their use on things like phones and wearables. A new technique called Mixture of Depths (MoD) is helping by making transformers more efficient. MoD figures out which parts of a task are most important and focuses on those, saving computing power without hurting accuracy. This could make transformers cheaper to use, bring AI features to phones and wearables, and even make AI development more accessible to everyone!
+
+
+__The Rise and Challenge of Transformers__
+
+Transformer models, like GPT-4, Llama 2, or Gemini, have become modern natural language processing (NLP) workhorses. They power a wide range of applications, from enabling real-time language translation to assisting chatbots in understanding your requests. However, their remarkable capabilities Are marred by a significant drawback—their immense computational complexity.
+
+
+Training and running these models require vast processing power, making them expensive and limiting their application in resource-constrained environments. This is where **[Mixture of Depths (MoD)](https://arxiv.org/abs/2404.02258)** comes in. The researchers from Google DeepMind show-cased MoD as a novel technique that aims to address these efficiency concerns, paving the way for a future where Transformers can be more widely deployed and accessible.
+
+__Why MoD Matters__
+
+At its core, Mixture of Depths (MoD) aims to make Transformers smarter using their computational power. By selectively focusing on the most important parts of a task, MoD reduces the overall amount of computation needed.
+
+
+
+**This enhanced efficiency has far-reaching implications:**
+
+* **Lower Costs, Wider Access:** Reducing computational requirements can make training and running Transformer models significantly cheaper, which in turn lowers costs for researchers and businesses. This, in turn, expands the range of viable AI applications.
+
+* **Empowering Devices with Limited Resources:** Transformers are often too demanding for mobile devices, wearables, or other low-power environments. MoD's efficiency gains open the door for AI capabilities directly on these devices, offering enhanced user experiences without relying solely on remote cloud processing.
+
+* **Scaling Without Limits:** MoD's efficiency makes creating even larger and more sophisticated Transformer models possible without ballooning costs. This is essential for developing AI systems that can truly understand the nuances of complex language and handle highly specialized tasks.
+
+Democratizing AI: High costs can be a barrier to entry for smaller organizations or individual researchers wanting to utilize AI. MoD's potential to lower costs could level the playing field, making AI technology more widely available.
+
+
+__How MoD Works (High Level)__
+
+Picture a Transformer model as a student facing a large pile of homework. MoD helps the student (the model) strategize, focusing time and effort where it truly matters.
+
+**Here's a breakdown of how it works:**
+
+1. **Breaking Down the Task:** Just as a student splits homework into smaller pieces, MoD starts by breaking down the input text into individual pieces called tokens. Depending on the model's design, these could be words or parts of words.
+
+2. **Assigning Importance:** MoD examines each token and assigns it a score (a "weight"), indicating its importance for the task at hand. Think of this like a student quickly skimming homework and highlighting the key questions that need the most attention.
+
+3. **Selective Focus:** Based on the weights, MoD decides which tokens deserve deeper processing (think of these as the crucial questions the student tackles thoroughly), while the less important ones might receive a simpler analysis or be bypassed entirely.
+
+4. **Saving Resources:** By focusing its energy on the most critical tokens, MoD helps the Transformer model achieve its goal more efficiently, saving valuable computational resources in the process.
+
+__Balancing Efficiency and Performance__
+
+MoD isn't simply about cutting corners to save computational power. It's about making intelligent choices to maintain the Transformer model's accuracy while optimizing efficiency.
+
+
+
+**Here's how it strikes this balance:**
+
+* **Learning What Matters:** During the training process, the MoD model learns to identify tokens crucial to understanding the text and completing the task. It allows MoD to focus its power strategically rather than blindly processing everything similarly.
+
+* **Sparsity for Speed:** MoD introduces sparsity into the computations by selecting only the most critical tokens for full processing. Essentially, this means it works on fewer items at a time, significantly speeding up processing.
+
+* **Flexibility is Key:** The importance level of tokens isn't fixed. MoD can adapt depending on what a specific piece of text needs and its position within the model's layers, ensuring resources are used where they'll have the most impact.
+
+* **Calculated Trade-Off:** In some cases, prioritizing absolute efficiency might come with a very slight cost in maximum performance. However, MoD aims to achieve an excellent balance, offering significant efficiency gains with minimal impact on the overall accuracy of the Transformer model.
+
+__A Potential Extension to MoE__
+
+Mixture of Depths (MoD) shares exciting similarities with another technique used to improve Transformer efficiency, known as Mixture of Experts (MoE). In MoE, multiple "expert" models are trained to specialize in different aspects of a task. Only the most relevant experts are activated for a given input, saving computation compared to a massive single model. MoD's focus on selectively processing the most critical tokens aligns perfectly with the MoE approach. Consider the tokens identified by MoD as the most crucial – these could be the areas where the right "expert" within an MoE system truly excels.
+
+These two techniques could be used in tandem. Imagine MoD smartly identifying important input regions and MoE routing these regions to the most appropriate expert models. This combination can potentially push the boundaries of Transformer efficiency even further.
+
+
+__Conclusion__
+
+The Mixture of Depths (MoD) offers a promising solution to the challenge of computationally expensive Transformer models. By cleverly focusing resources on the most important parts of a task, MoD has the potential to make Transformers faster and less expensive to train and deploy. 
+
+
+
+**This efficiency paves the way for:**
+
+* bringing Transformers on a broader range of devices with limited resources, bringing AI capabilities closer to users without relying heavily on the cloud,
+
+* creating even larger and more sophisticated Transformer models to tackle complex language-based tasks,
+
+* realizing the more accessible AI development environments, allowing organizations of all sizes to benefit from this powerful technology.
+
+MoD is an active area of research, and its potential synergy with techniques like Mixture of Experts (MoE) makes it even more exciting for the future of AI. As these methods evolve, we can expect Transformers to become more powerful and widely accessible, enabling innovative new applications that were previously impractical.
+
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[OpenAI Release an update for "GPT-4 Turbo" Reclaiming the No. 1 Spot in the LLM Chatbot Arena](https://twitter.com/OpenAIDevs/status/1777769463258988634)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "Two weeks ago, we saw the news that Claud 3 Opus overtook GPT as the top LLM Chatbot. OpenAI swiftly responded by releasing a new update to their flagship LLM, GPT-4 Turbo. It retakes the number one position in the LLM Chatbot Arena, with 1260 ELO points. GPT-4 Turbo allows 64k input tokens, which has improved from 26k in the previous version. It also improved in the Coding Tasks, and now have a more direct response, less verbose, and more conversational language."
+
+![memo](/assets/images/memo16.png) *[Humane AI Pin review roundup: an undercooked flop that's way ahead of its time](https://www.techradar.com/computing/artificial-intelligence/humane-ai-pin-review-roundup)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "The Humane AI Pin is a wearable device with an AI assistant, camera, and projector that has received scathing reviews for being slow, unreliable, and lacking integration with smartphones. Despite praise for its hardware design, the device is deemed impractical or functional, with critics concluding that it is too ambitious for its current technology. The consensus is that the Ray-Ban Meta Smart Glasses and Rabbit R1 may offer more promising AI gadgets. Despite this, Humane plans to introduce new features in future updates to enhance the AI Pin's functionality."
+
+![memo](/assets/images/memo16.png) *[Baidu says AI chatbot' Ernie Bot' has attracted 200 million users](https://www.reuters.com/technology/baidu-says-ai-chatbot-ernie-bot-has-amassed-200-million-users-2024-04-16)*
+
+[Frandi](https://www.linkedin.com/in/frandi): "Baidu said that their chatbot - Ernie - has reached 200 million users, which has doubled since the last update in December last year. They also claimed that 85k enterprise clients have utilized this chatbot for various AI-powered applications. This growth has increased their confidence in competing with their domestic rival, like Alibaba's Kimi."
+
+![memo](/assets/images/memo16.png) *[Fake Facebook MidJourney AI page promoted malware to 1.2 million people](https://www.bleepingcomputer.com/news/security/fake-facebook-midjourney-ai-page-promoted-malware-to-12-million-people)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah): "Hackers use Facebook ads and hijacked pages to promote fake AI services, infecting users with password-stealing malware. They impersonate legitimate AI platforms and entice users to join fake Facebook communities, offering sneak previews of new features. These communities post AI-related content, tricking users into downloading malware disguised as software updates. The malware steals browser data sold or used for further scams. Despite takedowns, these campaigns persist due to social media's reach and insufficient moderation, highlighting the need for caution with online ads."
+
+![memo](/assets/images/memo16.png) *[Adobe Premiere Pro is getting generative AI video tools — and hopefully OpenAI's Sora](https://www.theverge.com/2024/4/15/24130804/adobe-premiere-pro-firefly-video-generative-ai-openai-sora)*
+
+[Frandi](https://www.linkedin.com/in/frandi): "Adobe is upgrading Premiere Pro by adding AI video tools for tasks like video generation and object modification and considering a partnership with OpenAI to integrate the Sora model. These enhancements aim to expand user options and include Content Credentials for identifying the AI used, although the scope of user control over these features is not fully defined."
