@@ -1,0 +1,83 @@
+---
+layout: post
+title:  "Week #17 2024 - Understanding State-of-the-Art (SOTA) in Large Language Models"
+date:   2024-04-29 20:00:00 +0700
+---
+
+## Understanding State-of-the-Art (SOTA) in Large Language Models
+
+**TL;DR**: State-of-the-art (SOTA) in large language models (LLMs) is a fast-changing field where the "best" model is constantly being surpassed by newer ones. Benchmarks and metrics help assess LLMs, but they don't tell the whole story. Safety, explainability, and fairness are equally important factors to consider when choosing an LLM for a specific task. The rapid advancement of LLMs is a positive sign, but it's more about finding the right tool for your needs than just following the latest headlines.
+
+
+__Introduction__
+
+It seems like every week brings a new headline about an AI breakthrough. Just days ago, Meta AI released Llama 3, proudly claiming it was the next generation in state-of-the-art language models. Initial tests even showed it outperforming some top competitors! Yet, the celebration was short-lived. Almost immediately, Microsoft unveiled Phi-3, claiming to have surpassed Llama 3 on the very same tests (Phi-3 7b vs Llama-3 8b). So, which one really holds the "best" title? This recent shuffle perfectly highlights the fascinating and sometimes frustrating quest to understand the state-of-the-art (SOTA) in large language models (LLMs).
+
+In the world of AI, SOTA represents the highest known performance on a given task. But as the Llama 3 and Phi-3 saga shows, it's incredibly fleeting. Understanding SOTA is essential for appreciating the potential of LLMs, but as we'll explore, it's far trickier than a simple leaderboard ranking.
+
+__How Do We Measure "the Best" LLM?__
+
+As in all competitions, we need objective ways to make things tangible. Researchers usually rely on several tools to observe what LLMs are currently considered "best" in the class:
+
+* **Benchmarks:** Think of these like standardized tests for LLMs. They involve tasks like summarizing text, translating languages, writing different creative text formats, or even coding.
+
+* **Metrics:** These are the scores on the tests. Common ones include accuracy (did it get the answer right?), perplexity (how surprised the model is by real language, revealing fluency), and efficiency (how much computing power is needed?).
+
+* **Leaderboards:** Websites like Papers With Code or Huggingface gather results, making it easy to see who's currently "winning."
+
+
+
+**The Important Caveat: Numbers Don't Tell the Whole Story**
+
+While these measurements help us compare models, there's a big problem: they don't always reflect what matters most – can the LLM actually solve our real-world problems? A model might ace a translation benchmark but still stumble on the subtle nuances needed for sensitive diplomatic communications. Or, it might write beautiful poems but completely fail when tasked with technical documentation. The uniqueness of our needs means "best overall" is often meaningless; we need the best tool for our specific job.
+
+
+
+**What Else Matters**
+
+Focusing solely on benchmark scores is like judging a chef only on how quickly they can chop vegetables. It misses the crucial aspects that genuinely elevate a dish. Similarly, there are vital factors that determine an LLM's worth beyond leaderboard standings:
+
+* **Safety:** Can we trust the model not to generate harmful or offensive content? With LLMs being used in increasingly sensitive settings, minimizing potential harm is non-negotiable.
+
+* **Explainability:** Can we understand why the model makes its decisions? It is crucial to not only catch errors but build trust in the system and prevent misuse.
+
+* **Fairness:** Many datasets LLMs train on containing hidden biases. Does the model perpetuate these biases, or can it work equally well for everyone, regardless of background?
+
+These aren't simple to measure, unlike accuracy on a quiz. Yet, they're arguably just as, if not more, important in determining a model's true value in the real world.
+
+
+__The Race to Advance: A Positive Sign__
+
+While seemingly chaotic, the case of rapid dethroning of Llama 3 by Phi-3, as told at the start of this article, actually holds a silver lining. It reflects the breakneck pace of LLM development! It isn't just about a single model claiming the "best" title; it's about the constant push towards more powerful tools becoming readily available.
+
+
+For businesses, this rapid advancement landscape can be overwhelming. However, it shouldn't be viewed as a race to adopt the latest and greatest model. Instead, it presents an exciting opportunity to explore how LLMs can enhance efficiency and effectiveness. The key lies in **identifying the right tool for your specific needs**. Don't get caught up in the hype – find the LLM that best fits your tasks, invest time learning its capabilities, and iterate to maximize its impact within your company.
+
+
+__Conclusion__
+
+The ever-shifting landscape of state-of-the-art LLMs reflects the astounding speed of progress in artificial intelligence. While headlines about benchmark battles grab attention, it's important to remember that the "best" is both temporary and subjective. True advancement lies not only in raw performance but also in factors like safety, fairness, and accessibility.
+
+Perhaps the most empowering aspect of the SOTA conversation is the reminder that what matters most is how we harness these increasingly sophisticated tools. Whether you're an individual curious about AI's potential or a business leader seeking innovative solutions, the focus shouldn't solely be on the latest model. Instead, prioritize understanding your specific needs and embracing the evolving LLM landscape as an opportunity to create something truly meaningful. 
+
+
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Introducing Meta Llama 3: The most capable openly available LLM to date](https://ai.meta.com/blog/meta-llama-3)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "Meta introduced their new Open Source LLM: Llama 3. It comes in two sizes: 8B and 70B. They have another model with 400B parameters, but it is still undergoing training, though the result is trending in an exciting direction. They also promised to release another version of Llama 3 with a longer context length and multi-modality. In terms of performance, it outperforms some private models like Claude Sonnet and GPT-3.5, though the report doesn't compare it with their top variety, like GPT-4 or Claude Opus. You can try chatting with Llama 3 with Meta's chat interface: https://www.meta.ai"
+
+![memo](/assets/images/memo16.png) *[Microsoft's Phi-3 shows the surprising power of small, locally run AI language models](https://arstechnica.com/information-technology/2024/04/microsofts-phi-3-shows-the-surprising-power-of-small-locally-run-ai-language-models)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah): "Microsoft launched Phi-3-mini, a lightweight AI language model with 3.8 billion parameters, designed for consumer-grade GPUs in smartphones and laptops. It competes with larger models like the GPT-4 Turbo, offering similar performance while consuming less energy. Phi-3-mini is available on Azure and through partnerships with Hugging Face and Ollama."
+
+![memo](/assets/images/memo16.png) *[Google Maps will use AI to help us find out-of-the-way EV chargers](https://www.theverge.com/2024/4/17/24132254/google-maps-ev-charging-directions-ai-summaries)*
+
+[Rizqun](https://www.linkedin.com/in/rizqun-rizal-ahsani-970268128): "Google Maps is rolling out some new updates designed to make locating an electric vehicle charging station less stressful. Google says it will use AI to summarize customer reviews of EV chargers to display more specific directions to certain chargers, such as parking garages or more hard-to-find places. The app will also include more prompts to encourage users to submit their feedback after using an EV charger, which will then be fed into the algorithm for future AI-powered summaries."
