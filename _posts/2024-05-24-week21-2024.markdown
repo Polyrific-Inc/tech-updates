@@ -1,0 +1,139 @@
+---
+layout: post
+title:  "Week #21 2024 - What is NER or Name Entity Recognition?"
+date:   2024-05-24 20:00:00 +0700
+---
+
+## What is NER or Name Entity Recognition?
+
+**TL;DR:** 
+
+This article explores Named Entity Recognition (NER), a subtask of Natural Language Processing (NLP) crucial for understanding unstructured text data. NER identifies and classifies named entities like people, organizations, locations etc. This extracted information helps analyze text for tasks like information retrieval, sentiment analysis and personalization. The article also details how NER works, the challenges it faces, and its overall importance in the age of ever-growing text data.
+
+
+__Introduction__
+
+We are surrounded by an ever-growing amount of unstructured text data, from news articles and social media posts to customer reviews and medical records. This wealth of information holds immense potential for businesses, researchers, and individuals looking to gain valuable insights and make data-driven decisions. However, making sense of this unstructured data poses a significant challenge as computers struggle to understand the nuances of human language.
+
+This is where Natural Language Processing (NLP) comes into play. NLP is a field of artificial intelligence that focuses on enabling computers to understand, interpret, and generate human language. One of the key tasks within NLP is Named Entity Recognition (NER), which involves identifying and classifying named entities mentioned in a text.
+
+__What is Named Entity Recognition?__
+
+Named Entity Recognition (NER) is a subtask of NLP that focuses on identifying and categorizing named entities in unstructured text data. Named entities are specific, real-world objects that can be denoted with a proper name, such as persons, organizations, locations, dates, quantities, and more.
+
+NER aims to locate and classify these named entities into predefined categories, effectively extracting structured information from unstructured text. By recognizing and labeling these entities, NER helps computers understand the key elements mentioned in the text, enabling further analysis and processing.
+
+For example, consider the following sentence: "At a virtual event this morning, Apple introduced its long-awaited iPad Pro updates with prices starting at $999."
+
+In this sentence, an NER system would identify the following named entities:
+
+* "Apple":  **Organization**
+
+* "iPad Pro":   **Product**
+
+* "this morning":   **Time**
+
+* "$999":   **Money**
+
+
+__Why is NER important?__
+
+Let's consider the previous example above. By extracting named entities from it, we can gain valuable insights and enable various applications. For instance, identifying "Apple" as an organization and "iPad Pro" as a product allows us to track mentions of these entities across different sources that can be used to monitor brand sentiment, analyze market trends, and inform product development strategies. Additionally, recognizing the price point of "$999" can help in understanding pricing trends and comparing the cost of similar products in the market.
+
+
+Here are some other key reasons why Named Entity Recognition (NER) is important:
+
+* **Information Extraction:** NER helps convert unstructured text into structured data, enabling knowledge discovery and advanced analytics.
+
+* **Text Understanding:** By identifying key entities, NER provides a high-level understanding of a text's content, aiding in tasks like summarization.
+
+* **Personalization:** NER can help understand user preferences based on the entities they interact with, enabling personalized recommendations and targeted advertising.
+
+* **Sentiment Analysis:** NER allows associating sentiments and opinions with specific entities, which is valuable for monitoring brands and improving products.
+
+* **Multilingual Applications:** NER can be applied to various languages, facilitating the development of multilingual and cross-lingual applications.
+
+As the volume of text data continues to grow, NER will remain an essential tool for making sense of this data and unlocking its potential.
+
+__How does NER work?__
+
+Now that we understand the importance of Named Entity Recognition (NER) let's explore how it works at a high level. NER systems typically involve two main steps: entity boundary identification and entity classification.
+
+
+**Entity Boundary Identification**
+
+
+The first step in NER is to identify the boundaries of named entities in the text. It involves determining where each named entity begins and ends. For example, in the sentence "Apple introduced its long-awaited iPad Pro," the entity boundaries would be:
+
+* **[Apple]**
+
+* **[iPad Pro]**
+
+
+
+NER systems use various techniques to identify entity boundaries, such as:
+
+
+* **Rule-based approaches:** These methods rely on predefined patterns and rules to identify entity boundaries based on textual cues, such as capitalization, punctuation, and specific keywords.
+
+* **Machine learning approaches:** These methods leverage statistical models, such as Conditional Random Fields (CRFs) or Recurrent Neural Networks (RNNs), to learn patterns and features associated with entity boundaries from labeled training data.
+
+
+**Entity Classification**
+
+Once the entity boundaries are identified, the next step is to classify each entity into predefined categories, such as person, organization, location, date, or product. This step involves assigning the appropriate entity label to each identified entity.
+
+
+Entity classification is typically performed using machine learning algorithms trained on labeled data. Some common approaches include:
+
+* **Feature-based methods:** These methods extract relevant features from the text, such as word representations, part-of-speech tags, and contextual information, and use them as input to machine learning models like Support Vector Machines (SVMs) or Logistic Regression.
+
+* **Deep learning methods:** These methods employ neural network architectures, such as Recurrent Neural Networks (RNNs) or Transformer-based models like BERT, to learn complex patterns and representations from the text data. Deep learning approaches have shown significant success in NER tasks, particularly when large amounts of labeled data are available.
+
+
+It's worth noting that NER systems can be domain-specific or general-purpose. Domain-specific NER models are trained on data from a particular domain, such as medical texts or financial news, and are tailored to recognize entities relevant to that domain. On the other hand, general-purpose NER models are trained on diverse datasets and can handle a wide range of entity types across different domains.
+
+__Challenges in NER__
+
+While Named Entity Recognition (NER) has made significant progress in recent years, there are still several challenges that researchers and practitioners face when working with NER systems. Let's discuss some of the key challenges:
+
+* **Ambiguous and Context-Dependent Entities:** NER systems struggle with entities with multiple meanings or depend on context for accurate classification. Incorporating contextual information is crucial to disambiguate such entities.
+
+* **Domain-Specific Entities and Specialized Vocabularies:** Recognizing domain-specific entities and terminologies is challenging due to limited labeled data. Transfer learning techniques can help adapt general-purpose models to specific domains.
+
+* **Multilingual NER and Resource Availability:** Developing NER systems for low-resource languages is complex due to limited labeled data and linguistic differences. Cross-lingual transfer learning and multilingual embeddings are promising approaches.
+
+* **Handling Informal and Noisy Text:** Informal text, such as social media posts, poses challenges due to misspellings, slang, and non-standard grammar. Text normalization and character-level models can help improve NER performance on noisy text.
+
+* **Dealing with Emerging and Evolving Entities:** NER systems must keep up with new and evolving entities. Regular model updates, active learning, and incremental learning techniques can help adapt to emerging entities.
+
+* **Evaluation and Benchmark Datasets:** Creating high-quality benchmark datasets for NER evaluation is labor-intensive. Standardized evaluation metrics and protocols are necessary for fair comparisons of NER approaches.
+
+
+Despite these challenges, researchers are developing innovative solutions to improve NER systems' accuracy, efficiency, and adaptability across various domains and languages.
+
+
+__Conclusion__
+
+Named Entity Recognition (NER) is a crucial task in Natural Language Processing that involves identifying and classifying named entities in unstructured text data. NER enables a wide range of applications by converting unstructured text into structured data.
+
+NER systems typically work by performing entity boundary identification and entity classification using machine learning algorithms. However, NER faces challenges such as ambiguous entities, domain-specific vocabularies, multilingual resources, informal text, and emerging entities.
+
+Despite these challenges, researchers are actively developing innovative solutions to improve the accuracy, efficiency, and adaptability of NER systems across various domains and languages. As the volume of unstructured text data grows, NER will remain an indispensable tool for unlocking its potential.
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+
+![memo](/assets/images/memo16.png) *[Retrace your steps with Recall](https://polyrific.us8.list-manage.com/track/click?u=5697bc8040af8b2c7800d3186&id=e121e105c3&e=c8cf957e56)*
+
+[Brain](https://www.linkedin.com/in/brain-balaka/): "Microsoft announced an intriguing enhancement to their Copilot+ product: a photographic memory feature. This new capability allows Copilot+ to remember all interactions with your PC, capturing screen snapshots every five seconds. Users can easily search and retrieve past content, like photos, links, or messages, through natural language queries. This makes it effortless to revisit specific moments and manage digital history with customizable privacy settings, ensuring a seamless and personalized user experience."
+
+![memo](/assets/images/memo16.png) *[Discovering the future of AI – Introducing AI Parabellum (an AI tools directory)](https://www.artificialintelligence-news.com/2024/05/20/discovering-the-tuture-of-ai-introducing-ai-parabellum-an-aai-tools-directory)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "AI Parabellum is a platform that functions as a directory of AI tools. By offering easy browsing and reviews, it simplifies the process of finding suitable AI solutions for specific needs. This is particularly helpful as AI becomes increasingly widespread across various industries. AI Parabellum not only helps users discover innovative AI tools, but also allows creators to gain recognition for their work on a global scale. Overall, the platform serves as a valuable resource for anyone interested in staying informed about the latest advancements in AI."
