@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "Week #23 2024 - Understanding Open-Weight AI Models"
+date:   2024-06-07 20:00:00 +0700
+---
+
+## Many-Shot Learning what to know
+
+**TL;DR:** 
+
+Mistral AI recently released several open-weight generative AI models, including Codestral for code generation tasks and models like Mistral 7B, Mixtral 8x7B, and Mixtral 8x22B for other applications. Open-weight models are AI models where the trained weights are publicly available for download and use, enabling researchers and developers to analyze, reproduce, and fine-tune the models without access to the original training data or architecture. While open-weight models differ from open-source models in their focus on sharing the learned representations rather than the underlying code, both approaches contribute to transparency, collaboration, and accessibility in the AI community, fostering a more inclusive environment for research and development.
+
+
+__Introduction__
+
+Open-weight models are AI models in which the trained model weights are publicly available for download and use. This contrasts with closed models, where only the creators can access the underlying weights.
+
+It's important to note that while the weights are open, the training data, algorithm, and architecture used to train the model may not be public. Moreover, the computational resources required to run large AI models can still pose a barrier, even with access to the weights.
+
+In the context of artificial neural networks, including large language models (LLMs), "weights" refer to the learnable parameters that define the strength of connections between neurons in the network. These weights are adjusted during training to minimize the difference between the model's predictions and expected outputs, allowing the model to learn patterns and representations from the training data.
+
+
+__The Significance of Releasing Open-Weight Models__
+
+Releasing open-weight models has several significant implications for the AI research community and the broader field of machine learning:
+
+1. **Enhanced Understanding:** Researchers can analyze the learned representations to better understand how the model works and what it has learned.
+
+2. **Reproducibility:** Open weights enable other researchers to reproduce the model's results, verify claims, and build upon the work.
+
+3. **Fine-Tuning:** Developers can fine-tune the model for specific tasks or domains without starting from scratch, leveraging the pre-trained weights.
+
+
+__Comparing Open-Weight and Open-Source Models__
+
+Open-weight and open-source models are related but have distinct concepts in AI and machine learning contexts. Here's a comparison:
+
+* **Definition:** Open-source models make the source code, architecture, and training scripts publicly available under an open-source license. Open-weight models focus on sharing the pre-trained weights of an AI model.
+
+* **Philosophy:** Open-source models promote transparency, collaboration, and community-driven development in AI research. Open-weight models emphasize sharing the model's knowledge, allowing users to fine-tune and adapt the models for specific tasks without necessarily understanding the training process.
+
+* **Use Cases:** Open-source models are suitable for scenarios where transparency and detailed control over the model are essential. Open-weight models are often used where the primary goal is to utilize the model's learned representations rather than modifying the underlying architecture.
+
+
+__Conclusion__
+
+Open-weight AI models represent a significant shift towards transparency and accessibility in the AI community. By making the model weights publicly available, researchers and developers can build on existing work, fine-tune models for specific applications, and foster a deeper understanding of AI systems. While they differ from open-source models in their focus and use cases, both approaches contribute to a collaborative and innovative AI landscape. As more organizations adopt open-weight models, we can expect accelerated advancements and a more inclusive environment for AI research and development. The release of models like Codestral by Mistral AI marks an exciting step forward in this ongoing evolution.
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+![memo](/assets/images/memo16.png) *[Zoom CEO envisions AI deepfakes attending meetings in your place](https://arstechnica.com/information-technology/2024/06/zoom-ceo-envisions-ai-deepfakes-attending-meetings-in-your-place)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah/): "Zoom CEO Eric Yuan envisions using AI-powered digital twins to attend meetings and make decisions on behalf of users, aiming to make Zoom an "AI-first company." While Yuan believes custom large language models (LLMs) will eventually enable this, current technology has limitations and critics argue it’s impractical and risky. Yuan remains optimistic about AI's potential to reduce work hours and increase time for in-person interactions, despite concerns about AI inaccuracies and security issues."
+
+![memo](/assets/images/memo16.png) *[Gemini 1.5 Pro and 1.5 Flash GA, 1.5 Flash tuning support, higher rate limits, and more API updates](https://developers.googleblog.com/en/gemini-15-pro-and-15-flash-now-available/)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "The article announces updates to the Gemini API and Google AI Studio, including the release of Gemini 1.5 Flash and 1.5 Pro, higher rate limits, tuning support, billing options, JSON schema mode, and mobile support. These updates aim to improve the developer experience and provide more customizable options for AI models. Developers can access these new features for free in Google AI Studio and provide feedback on the developer forum."
+
+![memo](/assets/images/memo16.png) *[Codestral: Hello, World!](https://mistral.ai/news/codestral/)*
+
+[Firman](https://www.linkedin.com/in/firman-adetia-putra-1a34b2b8/): "Codestral is an open-weight generative AI model explicitly designed for code generation tasks. It helps developers write and interact with code through a shared instruction and completion API endpoint. As it masters code and English, it can be used to design advanced AI applications for software developers."
