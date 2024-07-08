@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Week #27 2024 - Understanding Open-Weight AI Models"
+title:  "Week #27 2024 - Encoder and Decoder Models"
 date:   2024-07-05 20:00:00 +0700
 ---
 
