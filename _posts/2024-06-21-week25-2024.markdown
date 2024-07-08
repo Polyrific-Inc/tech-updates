@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Week #25 2024 - Understanding Open-Weight AI Models"
+title:  "Week #25 2024 - Chain of Verification"
 date:   2024-06-21 20:00:00 +0700
 ---
 
