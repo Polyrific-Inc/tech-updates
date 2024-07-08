@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "Week #27 2024 - Understanding Open-Weight AI Models"
+date:   2024-07-05 20:00:00 +0700
+---
+
+## Encoder and Decoder Models
+
+**TL;DR:** 
+
+This article explains three main types of language model architectures: decoder-only (like GPT), encoder-only (like BERT), and encoder-decoder (like T5 and BART). Decoder-only models excel at text generation and process text unidirectionally, while encoder-only models are best for text analysis and understanding, processing text bidirectionally. Encoder-decoder models combine strengths of both, offering versatility for various tasks. Each architecture has its unique strengths and is suited for different NLP applications. Understanding these differences is crucial for professionals and researchers to select the most appropriate model for their specific needs in AI and natural language processing.
+
+
+__Introduction__
+
+Today's AI ecosystem is teeming with various language models, each designed to excel at specific tasks. While these models may seem similar on the surface, they often differ significantly in their underlying architectures and capabilities. One of the key distinctions lies in their encoder-decoder structures, which fundamentally shape how these models process and generate language.
+
+Understanding these architectural differences is crucial for professionals and researchers working with AI and natural language processing. The choice of model architecture can significantly impact performance, efficiency, and suitability for specific tasks.
+
+
+__Decoder-Only Models__
+
+Decoder-only models, with the GPT (Generative Pre-trained Transformer) series being the most prominent examples, are designed primarily for text generation tasks. These models are architectured to predict the next token in a sequence based on the preceding tokens. It makes them particularly adept at generating coherent and contextually relevant text.
+
+Decoder-only models use a stack of transformer decoder layers. They process text unidirectionally, typically from left to right, predicting each subsequent token based on the previous ones. This approach is known as autoregressive generation. It allows them to generate text efficiently, one token at a time, but it also means they can't consider future context during the generation process.
+
+These models are often trained on vast amounts of text data using a next-token prediction task. During training, they learn to predict the next word in a sequence given all the previous words, allowing them to capture patterns and structures in language.
+
+
+__Encoder-Only Models__
+
+Encoder-only models, exemplified by BERT (Bidirectional Encoder Representations from Transformers) and its variants, are designed primarily for understanding and analyzing input text. These models focus on creating rich, contextual representations of input text. They process entire text sequences simultaneously, allowing them to capture complex relationships between words and phrases.
+
+Encoder-only models use a stack of transformer encoder layers. During pre-training, they often employ a technique called Masked Language Modeling (MLM). In MLM, random words in the input are masked, and the model learns to predict these masked words based on the surrounding context. This approach enables the model to develop a deep, bidirectional language understanding.
+
+Unlike models that process text from left to right, encoder-only models can "see" the entire input sequence simultaneously. It allows them to consider both preceding and following words when interpreting any given word, leading to more accurate contextual representations.
+
+
+__Encoder-Decoder Models__
+
+Encoder-decoder models, also known as sequence-to-sequence (seq2seq) models, aim to combine the strengths of both encoder and decoder architectures. Examples include T5 (Text-to-Text Transfer Transformer) and BART (Bidirectional and Auto-Regressive Transformers).
+
+These models are designed to transform one sequence into another, making them highly versatile for a wide range of language tasks. They consist of two main components: an encoder that processes the input and a decoder that generates the output.
+
+While they may not consistently outperform specialized models in specific tasks, their versatility and adaptability make them popular for many real-world applications, especially when dealing with multiple types of language processing tasks within a single system. But as you may predict, these models can be more complex and resource-intensive than pure encoder or decoder models.
+
+__Conclusion__
+
+The world of language models is diverse and rapidly evolving. Encoder-only, decoder-only, and encoder-decoder architectures each have their strengths:
+
+* Decoder-only models excel in text generation
+
+* Encoder-only models are best for input analysis and understanding
+
+* Encoder-decoder models offer versatility for tasks requiring both comprehension and generation
+
+When selecting a model, consider your specific task requirements, available resources, and the trade-offs between specialization and versatility. We'll likely see new innovations and hybrid approaches as the field advances.
+
+Understanding these architectures is crucial to effectively leveraging language models. By matching the suitable model to your needs, you can unlock the full potential of these powerful AI tools in various natural language processing applications.
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+![memo](/assets/images/memo16.png) *[Researchers upend AI status quo by eliminating matrix multiplication in LLMs](https://arxiv.org/abs/2406.02528)*
+
+[Yoga](https://www.linkedin.com/in/yogafaodiansyah/): "Researchers from UC Santa Cruz, UC Davis, LuxiTech, and Soochow University have developed a method to run AI language models without matrix multiplication, significantly improving efficiency and reducing costs. Their 2.7 billion parameter model uses ternary values and a new Linear Gated Recurrent Unit, maintaining competitive performance while cutting energy use and memory consumption. This approach could make AI more accessible and efficient, particularly on limited hardware. Although not peer-reviewed, it has the potential to surpass traditional models at larger scales."
+
+![memo](/assets/images/memo16.png) *[Gemma 2 is now available to researchers and developers](https://blog.google/technology/developers/google-gemma-2)*
+
+[Dika](https://www.linkedin.com/in/dika-arta-karunia/): "Gemma 2 is a high-performance, efficient AI model that integrates easily with other tools and offers cost savings in deployment. It is available in 9 billion and 27 billion parameter sizes, providing top-tier performance and inference. Gemma 2 is open and accessible, compatible with major AI frameworks, and designed to be easily deployed and managed. Google is committed to responsible AI development and provides resources for developers to build and deploy AI models responsibly. Gemma 2 is available for free to researchers and developers through various platforms, with options for access and support."
