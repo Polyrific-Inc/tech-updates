@@ -1,0 +1,75 @@
+---
+layout: post
+title:  "Week #36 2024 - All About Privacy-Enhancing Technologies (PETs)"
+date:   2024-09-13 20:00:00 +0700
+---
+
+## All About Privacy-Enhancing Technologies (PETs)
+
+**TL;DR:** 
+
+Privacy-Enhancing Technologies (PETs) are tools and methods designed to protect personal and sensitive data while enabling data usage for artificial intelligence and machine learning. These technologies include techniques like homomorphic encryption, secure multi-party computation, and federated learning, which allow organizations to collaborate and analyze data without compromising privacy. As data regulations become stricter and privacy concerns grow, PETs are increasingly vital across various sectors such as healthcare, finance, and marketing. However, challenges related to implementation complexity and performance trade-offs must be addressed for widespread adoption.
+
+
+__Introduction:__
+
+In an era where data is both an asset and a liability, the importance of protecting personal information has never been greater. As organizations leverage artificial intelligence to extract insights from data, concerns regarding privacy and regulation have emerged. Privacy-Enhancing Technologies (PETs) have surfaced as a solution that allows for the use of data while ensuring that individual privacy is respected. These technologies enable organizations to share and analyze data safely, making them essential tools for responsible AI development.
+
+
+**The Power of PETs:**
+
+Traditional data-sharing methods often expose personal information, leading to privacy risks and regulatory challenges. PETs address these issues by providing secure ways to collaborate on data analysis without revealing sensitive information. Here are some of the key benefits:
+
+* **Privacy Protection:** PETs enable organizations to utilize data in compliance with privacy regulations, reducing the risk of data breaches and misuse.
+
+* **Collaboration without Compromise:** Organizations can work together on joint projects without needing to share raw data, promoting innovation while respecting privacy.
+
+* **Enhanced Data Utility:** By allowing for secure data analysis, PETs unlock valuable insights from data that would otherwise remain isolated due to privacy concerns.
+
+
+__Techniques in Privacy-Enhancing Technologies__
+
+**Homomorphic Encryption:** This technique enables computations on encrypted data without the need to decrypt it, allowing sensitive data to remain private during processing.
+
+**Secure Multi-Party Computation (SMPC):** SMPC allows multiple parties to collaboratively compute functions over their inputs while keeping those inputs private from each other.
+
+**Federated Learning:** This approach trains machine learning models across decentralized devices, enabling data to remain on local devices while still contributing to a collective model. (See Week 32s AI Concept for more.)
+
+**AI-Generated Synthetic Data:** By creating datasets that replicate the statistical properties of real data without revealing personal information, organizations can share insights without compromising privacy. (See Week 35s AI Concept for more.)
+
+__Benefits of PET’s__
+
+**Enhanced Privacy and Security:** PETs help mitigate risks associated with data sharing by protecting sensitive information, ensuring compliance with regulations like GDPR and HIPAA.
+
+**Facilitated Collaboration:** Organizations can benefit from shared insights without exposing individual data, fostering partnerships while maintaining confidentiality.
+
+**Increased Innovation:** With secure data sharing, companies can explore new opportunities and insights that were previously off-limits due to privacy constraints.
+
+__Challenges and Considerations__
+
+**Implementation Complexity:** Integrating PETs into existing systems can be challenging and may require significant resources to develop and maintain.
+
+**Performance Trade-offs:** Some PETs may introduce computational overhead, potentially impacting the speed and efficiency of model training and data analysis.
+
+**Regulatory Compliance:** Organizations must navigate various regulations and standards to ensure that their use of PETs aligns with legal requirements.
+
+__Conclusion__
+
+Privacy-Enhancing Technologies are essential in the modern data landscape, providing a pathway to harness the power of data while respecting individual privacy. As the demand for responsible AI grows, PETs will play a crucial role in enabling secure data collaboration across industries. Addressing the challenges of implementation complexity and performance will be vital for realizing the full potential of PETs in shaping the future of data privacy and AI.
+
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[New AI can ID brain patterns related to specific behavior | ScienceDaily](https://www.sciencedaily.com/releases/2024/09/240909175239.htm)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Scientists at the University of Southern California, led by Maryam Shanechi, a prominent professor in Electrical and Computer Engineering and the founding director of the USC Center for Neurotechnology, have developed a new AI algorithm called DPAD (Dissociative Prioritized Analysis of Dynamics) that can effectively separate brain patterns related to specific behaviors, such as arm movements, from other simultaneous brain activities. This advancement enhances brain-computer interfaces, which are crucial for helping paralyzed patients communicate their intended movements to external devices. The algorithm prioritizes learning behavior-related patterns during training, allowing for more accurate decoding of movements and the potential to identify new brain patterns. Moreover, DPAD could eventually be used to decode mental states, such as pain or depression, leading to more tailored therapies for mental health conditions in the future."
+
+![memo](/assets/images/memo16.png) *[US proposes requiring reporting for advanced AI, cloud providers | Reuters](https://www.reuters.com/technology/us-proposes-requiring-reporting-advanced-ai-cloud-providers-2024-09-09)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The U.S. Commerce Department has proposed mandatory reporting requirements for developers of advanced artificial intelligence and cloud computing providers to enhance safety and cybersecurity measures. The proposal, issued by the Bureau of Industry and Security, aims to ensure that "frontier" AI models and computing clusters comply with stringent safety standards and can withstand cyberattacks. Companies will be required to report on their development activities, cybersecurity measures, and results from red-teaming efforts that test for potential dangers, such as aiding cyberattacks or enabling the development of weapons by non-experts. This regulatory push follows an executive order from President Biden mandating that AI developers share safety test results with the government for systems posing risks to national security, public health, or safety, amid stalled legislative efforts on AI regulation in Congress."
+
