@@ -1,0 +1,77 @@
+---
+layout: post
+title:  "Week #41 2024 - Neurosymbolic AI"
+date:   2024-10-18 20:00:00 +0700
+---
+
+## Neurosymbolic AI
+
+**TL;DR:** 
+
+Neurosymbolic AI merges the strengths of neural networks and symbolic reasoning, combining the data-driven learning of modern AI with logical rules and structured knowledge. This hybrid approach aims to create more intelligent and explainable AI systems capable of reasoning and understanding in ways that go beyond traditional deep learning methods.
+
+
+__Introduction:__
+
+Neurosymbolic AI is a growing field that seeks to combine two major strands of artificial intelligence: neural networks and symbolic reasoning. By blending these two approaches, neurosymbolic AI aims to create systems that can learn from large amounts of data (like neural networks) while also reasoning logically and applying knowledge (like symbolic AI). This hybrid approach can enhance AI’s ability to reason, generalize, and provide more explainable outcomes.
+
+
+**What is Neurosymbolic AI?**
+
+Neurosymbolic AI brings together two key elements of artificial intelligence:
+
+1. **Neural Networks:** These are powerful for recognizing patterns, handling large amounts of unstructured data (like images or text), and learning from experience. However, neural networks often lack explainability and struggle with tasks that require structured reasoning.
+
+2. **Symbolic AI:** This focuses on reasoning through the manipulation of symbols and logical rules. Symbolic AI excels in structured domains where explicit knowledge and rules are needed, such as solving puzzles or planning tasks.
+
+
+By combining these approaches, neurosymbolic AI aims to bridge the gap between low-level pattern recognition and high-level reasoning, leading to more intelligent and adaptable AI systems.
+
+
+__Key Features of Neurosymbolic AI:__
+
+* **Combining Learning and Reasoning:** Traditional AI systems are typically either good at learning (neural networks) or reasoning (symbolic AI), but rarely both. Neurosymbolic AI allows systems to learn from data while also applying rules, giving them a deeper understanding of complex tasks.
+
+* **Improved Explainability:** One of the main challenges of neural networks is the "black box" nature of their decision-making process. By incorporating symbolic reasoning, neurosymbolic AI can provide more transparent and interpretable results.
+
+* **Better Generalization:** Symbolic reasoning allows neurosymbolic systems to apply learned knowledge to new situations more effectively. This helps AI models generalize beyond specific examples they were trained on.
+
+* **Handling Complex Tasks:** Neurosymbolic AI is particularly well-suited for tasks that require both pattern recognition and logical reasoning, such as solving mathematical problems, interpreting scientific data, or understanding complex narratives.
+
+
+
+__Applications of Neurosymbolic AI:__
+
+* **Robotics:** Neurosymbolic AI enables robots to better understand and interact with their environments by combining sensor data (handled by neural networks) with logical decision-making (powered by symbolic AI).
+
+* **Natural Language Understanding:** It can enhance the ability of AI to understand language at a deeper, more conceptual level by integrating logical structures with language models.
+
+* **Healthcare:** In medical diagnosis, neurosymbolic AI can analyze complex patient data while applying medical knowledge and rules, improving both accuracy and explainability in diagnoses.
+
+__Challenges and Considerations__
+
+* **Integration Complexity:** Merging neural networks and symbolic reasoning poses significant technical challenges, as the two approaches rely on very different architectures and methodologies.
+
+* **Scalability:** While neurosymbolic AI has great potential, making these systems scale effectively to handle large datasets and complex real-world tasks remains an ongoing challenge.
+
+
+
+__Conclusion__
+
+Neurosymbolic AI represents an exciting frontier in artificial intelligence, combining the best of both worlds—learning from data and logical reasoning. This hybrid approach holds the potential to create more intelligent, adaptable, and explainable AI systems that can handle a broader range of tasks than traditional methods. While there are challenges in scaling and integration, neurosymbolic AI is likely to play a key role in the future of AI development.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Clunker to Cash: How ChatGPT Sold My Car for Way More Than It's Worth](https://www.pcmag.com/articles/clunker-to-cash-how-chatgpt-sold-my-car-for-more-than-its-worth)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The article from PCMag discusses how the author used ChatGPT to craft a compelling car advertisement, resulting in the sale of their old car for a price higher than expected. ChatGPT helped generate a well-written, engaging, and persuasive ad, emphasizing the car's positive attributes while downplaying its issues. The AI-assisted approach attracted more attention and potential buyers, showcasing how AI tools like ChatGPT can be leveraged to improve sales and communication, even for something as personal as selling a car."
+
+![memo](/assets/images/memo16.png) *[Google will help build seven nuclear reactors to power its AI systems](https://www.msn.com/en-us/money/other/google-will-help-build-seven-nuclear-reactors-to-power-its-ai-systems/ar-AA1sjpyi?ocid=BingNewsBrowse)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The article discusses how Google is partnering to build seven nuclear reactors to power its AI systems. As AI operations require vast amounts of energy, Google is looking to nuclear power as a sustainable and efficient solution. The new reactors, developed in collaboration with advanced energy companies, will support the growing energy demands of Google’s data centers and AI infrastructure, ensuring both environmental sustainability and long-term energy reliability. This initiative highlights the tech industry’s increasing shift toward cleaner energy sources for supporting high-demand technologies like AI."
+
