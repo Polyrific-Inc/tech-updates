@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "AI Insider #62 2025 - AI in NeRFs (Neural Radiance Fields)"
+date:   2025-04-18 20:00:00 +0700
+---
+
+## AI in NeRFs (Neural Radiance Fields)
+
+**TL:DR:**
+
+Neural Radiance Fields (NeRFs) leverage deep neural networks to reconstruct detailed 3D scenes from sets of 2D images. By learning how light behaves at every point in a scene, they can generate realistic novel viewpoints, transforming how we capture, process, and visualize 3D environments in games, film, robotics, and beyond.
+
+__Introduction:__
+
+NeRFs are a cutting-edge technique in the realm of AI-powered 3D reconstruction and rendering. Rather than painstakingly modeling every vertex or using manual photogrammetry, NeRFs learn a continuous representation of the scene directly from images. The result is a dynamic, neural “blueprint” of how light travels in that space—capable of producing photorealistic renderings from angles the system has never explicitly seen. This approach has the potential to significantly streamline 3D asset creation, enhance virtual and augmented reality experiences, and power new forms of visual content.
+
+__Key Features:__
+
+* **Neural Scene Representation:** NeRFs encode the geometry and appearance of a scene in a deep neural network, capturing how light radiates from each point in 3D space.
+* **Photorealistic View Synthesis:** By inferring how light would look from unobserved camera angles, NeRFs deliver impressively lifelike images when viewing the scene from new perspectives.
+* **Implicit 3D Modeling:** Unlike explicit 3D meshes or voxel grids, NeRFs store scene information in network parameters, leading to high-resolution detail without massive storage.
+* **Efficient Learning from 2D Images:** NeRFs typically train on multiple 2D photos of a scene taken from various angles. The model “learns” depth and appearance without needing specialized depth scans.
+* **Continuous Detail:** By representing the scene as a continuous function, NeRFs can render at arbitrary resolutions and capture fine details not easily represented by traditional 3D pipelines.
+
+__Applications:__
+
+* **Virtual & Augmented Reality:** Rapidly generate realistic 3D assets or environments for immersive experiences, reducing the cost and time involved in manual 3D modeling.
+* **Movie & Game Production:** Capture real-world sets or props from a handful of images and insert them into CGI, enabling faster, more realistic scene creation and special effects.
+* **Robotics & Navigation:** Autonomous systems can use NeRF-based reconstructions to better understand and navigate their environments, improving path planning and obstacle avoidance.
+* **Cultural Heritage Preservation:** Preserve historical sites or artifacts by photographing them from multiple angles; NeRFs then create highly detailed digital archives.
+* **Medical Imaging:** Advanced 3D reconstructions from 2D scans (e.g., MRI, CT) could offer clinicians deeper insights without requiring multiple complex procedures.
+
+__Challenges and Considerations:__
+
+* **Computational Demands:** Training NeRFs can be computationally expensive, requiring GPU acceleration and optimization techniques to handle large, complex scenes efficiently.
+* **Data Quality & Coverage:** The quality of the resulting 3D model depends on image resolution and coverage. Missing viewpoints or poor lighting can produce artifacts in less-photographed areas.
+* **Scalability to Large Scenes:** Applying NeRFs to large outdoor scenes or dynamic environments (with moving objects) remains an active research challenge.
+* **Real-Time Rendering:** Although newer techniques offer faster rendering, achieving real-time performance for interactive applications still requires specialized optimizations.
+* **Generalization:** Each NeRF is typically trained on a single scene. Transferring a learned NeRF model to a completely new environment is not straightforward, demanding additional training steps.
+
+__Conclusion__
+
+Neural Radiance Fields represent a major breakthrough in 3D reconstruction and rendering, harnessing AI to generate lifelike views of complex scenes from simple 2D images. As research and hardware continue to evolve, expect NeRFs to play an increasingly central role across creative industries, immersive technologies, and scientific visualization—redefining how we capture, understand, and experience the three-dimensional world.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[AI system restores speech for paralyzed patients using own voice](https://www.msn.com/en-us/health/other/ai-system-restores-speech-for-paralyzed-patients-using-own-voice/ar-AA1D1ng0)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Researchers have developed an AI-powered system that can help individuals who are paralyzed regain their ability to communicate using a voice that resembles their own. By interpreting and decoding the unique brain signals associated with speech or vocalization, the technology translates those signals into audible language, effectively restoring a patient’s “spoken” voice. This approach significantly improves upon previous methods by producing more natural-sounding speech, rather than relying on generic computer-generated voices. By training on samples of each person’s actual vocal patterns, the system personalizes the output, providing a sense of familiarity and identity that is crucial for both communication and emotional well-being."
+
+![memo](/assets/images/memo16.png) *[AI-powered surgery is improving patient care](https://www.fastcompany.com/91317091/ai-powered-surgery-is-improving-patient-care)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "AI-powered surgical tools are transforming patient care by providing surgeons with real-time insights and precision guidance in the operating room. These systems analyze vast amounts of data—such as preoperative scans, patient records, and live imagery—to identify critical structures or potential complications, enabling more accurate incisions and reducing the risk of errors. Additionally, robotic platforms guided by AI can assist with intricate movements or repetitive tasks, minimizing surgeon fatigue. Overall, these advancements result in shorter procedure times, fewer complications, and faster recoveries, enhancing both patient outcomes and the efficiency of healthcare systems."
