@@ -1,0 +1,107 @@
+---
+layout: post
+title:  "AI Insider #63 2025 - Generative Biology"
+date:   2025-04-25 20:00:00 +0700
+---
+
+## Generative Biology
+
+**TL:DR:**
+
+Generative biology is an emerging field where artificial intelligence is used to design entirely new biological structures—like proteins, enzymes, or genetic sequences—from scratch. By learning patterns from natural evolution and biological datasets, generative models can propose novel solutions for medicine, agriculture, and synthetic biology, pushing the boundaries of what’s possible in life sciences.
+
+__Introduction:__
+
+Generative biology is transforming how we think about life’s building blocks. Traditionally, discovering a new drug or engineering a protein was a long, trial-and-error process. Today, AI models—especially those inspired by deep learning and generative techniques—are creating novel biological molecules with specific functions, properties, and behaviors. These models don’t just replicate what already exists in nature—they imagine new possibilities that nature hasn’t yet produced.
+
+__Key Features:__
+
+* **Protein Design from Scratch**
+
+    AI can generate entirely new protein sequences that fold into stable 3D structures, with custom-designed functions such as binding to a virus or catalyzing a specific chemical reaction.
+
+
+* **Generative Models Meet Biology**
+
+    Diffusion models, GANs, and language models adapted to amino acid sequences and gene structures are used to generate, optimize, and evaluate novel biomolecules.
+
+
+* **In Silico First, Wet Lab Second**
+
+    Instead of conducting every experiment in a physical lab, researchers now test thousands of AI-generated molecules virtually, filtering only the most promising ones for real-world synthesis.
+
+
+* **Learning from Nature**
+
+    These systems are trained on massive datasets of biological information—from DNA sequences to protein structures—allowing them to model the evolutionary “rules” of life.
+
+
+* **Rapid Iteration**
+
+    Generative biology accelerates research timelines dramatically. What once took years of lab work can now begin with days of computational modeling.
+
+__Applications:__
+
+* **Drug Discovery & Design**
+
+    Generative models can create new drug candidates designed to target specific pathogens, including those resistant to traditional treatments.
+
+
+* **Vaccine Development**
+
+    AI can suggest optimized antigens that trigger strong immune responses, speeding up the development of next-generation vaccines.
+
+
+* **Enzyme Engineering**
+
+    Design custom enzymes to break down pollutants, improve industrial processes, or convert biomass into fuel.
+
+
+* **Synthetic Biology**
+
+    Engineer organisms to produce rare compounds, replace fossil fuels, or perform targeted medical therapies inside the body.
+
+
+* **Agricultural Innovation**
+
+    Create climate-resilient crops, pest-resistant plant proteins, or microbial solutions for soil health and nutrient efficiency.
+
+__Challenges and Considerations:__
+
+* **Biological Validation**
+
+    While in silico designs are promising, biological systems are complex—AI suggestions must still be thoroughly tested in wet labs to ensure safety and effectiveness.
+
+
+* **Ethical Implications**
+
+    Designing new life forms raises questions about ownership, misuse, and unintended consequences. Regulatory frameworks are still catching up.
+
+
+* **Data Gaps**
+
+    AI performance is limited by the diversity and quality of biological datasets. Underrepresented species or systems may lead to biased or incomplete models.
+
+
+* **Interdisciplinary Demands**
+
+    Success in generative biology requires collaboration between AI experts, biologists, chemists, and regulatory professionals—a cross-disciplinary effort still in development.
+
+__Conclusion__
+
+Generative biology represents a profound leap in how we design and interact with living systems. With the help of AI, scientists can now dream up biological solutions to some of humanity’s biggest challenges—from curing diseases to protecting the planet. As tools mature and wet-lab integration improves, generative biology may become a core pillar of how we innovate in medicine, agriculture, and environmental science.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Can AI solve crime?](https://www.bbc.co.uk/learningenglish/english/features/6-minute-english_2025/250417)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "In this week's episode of 6 Minute English from BBC Learning English, presenters Beth and Neil delve into the increasingly prominent role of artificial intelligence in modern crime-solving. As a professional observing these developments, I found the discussion particularly insightful—AI’s ability to rapidly analyze complex patterns like footprints or fingerprints could significantly reduce investigative delays and ease the burden on forensic teams. Professor Ruth Morgan offers a compelling perspective on how this technology is prompting a resurgence in the use of pattern-based evidence, which had previously fallen out of favor with the rise of DNA analysis. However, the episode does wisely raise a cautionary flag regarding privacy, as AI systems thrive on large datasets, often involving sensitive personal information. Overall, the segment balances technical promise with ethical prudence, offering a useful vocabulary toolkit for learners and professionals alike."
+
+![memo](/assets/images/memo16.png) *[How to Make and 3D Print a Personalized AI Action Figure of Yourself](https://www.msn.com/en-us/news/technology/how-to-make-and-3d-print-your-ai-action-figure/ar-AA1CZo9s?ocid=BingNewsVerp)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "In a fascinating blend of AI creativity and hands-on fabrication, MSN's recent feature explores how users can design, and 3D print their own custom action figures using artificial intelligence. From a professional standpoint, it's an exciting demonstration of how generative tools are reshaping creative workflows. The article outlines a step-by-step process where users input prompts into AI art generators to develop unique characters, then refine these into 3D models suitable for printing. This intersection of digital design and physical production not only expands opportunities for artists and hobbyists, but also hints at future shifts in personalized manufacturing. While some technical know-how is still required, the tools are becoming increasingly accessible, making this an area worth watching closely."
