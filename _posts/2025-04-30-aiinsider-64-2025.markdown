@@ -1,0 +1,96 @@
+---
+layout: post
+title:  "AI Insider #64 2025 - Few-Shot and Zero-Shot Learning"
+date:   2025-04-30 20:00:00 +0700
+---
+
+## Few-Shot and Zero-Shot Learning
+
+**TL:DR:**
+
+Few-shot and zero-shot learning are advanced AI techniques that allow models to solve new tasks with little to no training data. Instead of requiring thousands of labeled examples, these models rely on contextual understanding and generalized reasoning to perform well with just a few — or even zero — examples. This capability is pushing AI into new frontiers where labeled data is scarce, expensive, or unavailable.
+
+__Introduction:__
+
+Traditional machine learning thrives on large datasets — but in many domains, collecting that much data isn’t practical. Few-shot and zero-shot learning flip the script: they let AI models make accurate predictions or perform new tasks with minimal or no prior examples. These methods leverage transfer learning, large-scale pretraining, and natural language understanding to generalize knowledge across domains, languages, and problem types. It’s one of the key reasons modern AI systems can adapt so quickly to novel situations.
+
+__Key Features:__
+
+* **Few-Shot Learning**
+
+    With just a few labeled examples (sometimes as few as 5–10), models can adapt to new tasks — like classifying a new type of object or understanding a new customer intent.
+
+* **Zero-Shot Learning**
+
+    The model performs a task it has never seen before by interpreting the task description itself. For example, it can translate a new language or answer domain-specific questions using only context and its pretrained knowledge.
+
+* **Prompt Engineering as Programming**
+
+    In large language models (LLMs), users can guide the model’s behavior by providing well-structured prompts — a new form of lightweight “instruction-based” learning.
+
+* **Transfer of Knowledge**
+
+    Few-shot and zero-shot learning rely on pretraining on massive datasets. The model then uses this general knowledge to perform well on unseen tasks by analogy or reasoning.
+
+* **Minimal Labeling Required**
+
+    Industries that lack labeled data — such as law, rare disease research, or low-resource languages — benefit immensely from these techniques.
+
+__Applications:__
+
+* **Customer Support Automation**
+
+    Zero-shot models can handle inquiries across new product lines or languages without retraining, using only a description of the task.
+
+* **Medical Imaging Interpretation**
+
+    Few-shot learning allows AI to detect rare conditions where annotated data is limited, by learning from just a few expert-verified examples.
+
+* **Legal Document Analysis**
+
+    AI can classify or summarize complex legal texts in niche categories, even if the model was never directly trained on that task.
+
+* **Language Translation for Low-Resource Languages**
+
+    Zero-shot models can translate languages with limited parallel corpora, expanding global communication access.
+
+* **Robotics and Human-AI Interaction**
+
+    Few-shot learning enables robots to follow new instructions or recognize objects in new environments with minimal retraining.
+
+__Challenges and Considerations:__
+
+* **Accuracy vs. Data Volume**
+
+    While few-shot and zero-shot models are flexible, they often underperform compared to fully supervised models when high precision is required.
+
+* **Prompt Sensitivity**
+
+    In zero-shot settings, the model’s behavior can vary significantly based on prompt wording, making reliability a challenge in critical applications.
+
+* **Bias Propagation**
+
+    If a model has learned biased associations in its pretraining data, it may apply them to new tasks without proper checks.
+
+* **Task Ambiguity**
+
+    Without examples, zero-shot models may misinterpret vague or underspecified tasks — requiring careful design of task prompts or interfaces.
+
+__Conclusion__
+
+Few-shot and zero-shot learning represent a major leap in AI’s adaptability. By allowing models to perform useful tasks with little to no labeled training data, these techniques open up countless possibilities — especially in fields where data is rare, costly, or private. As AI systems grow more general and context-aware, few-shot and zero-shot learning will be a core enabler of faster, cheaper, and more accessible intelligent systems across industries.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Farewell, Straight Lines: In The AI Era, Success Depends On Nonlinear Thinking](https://www.forbes.com/councils/forbesagencycouncil/2025/04/29/farewell-straight-lines-in-the-ai-era-success-depends-on-nonlinear-thinking)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Traditional step-by-step thinking no longer meets the demands of a world shaped by AI and constant disruption. Success now depends on nonlinear thinking, an approach that embraces uncertainty, adapts quickly, and navigates complexity without relying on predictable paths. To stay competitive, businesses must move beyond rigid strategies and foster flexible, innovation-driven mindsets that match the pace and unpredictability of the AI era."
+
+![memo](/assets/images/memo16.png) *[Kentucky Derby predictions: AI picks winner, results for 2025 Triple Crown race](https://www.msn.com/en-us/sports/other/kentucky-derby-predictions-ai-picks-winner-results-for-2025-triple-crown-race/ar-AA1DMLEf?ocid=BingNewsVerp)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "In the lead-up to the 2025 Kentucky Derby, both oddsmakers and AI simulations, including Microsoft Copilot, have identified Journalism as the top contender, citing the horse's undefeated record and favorable No. 8 post position. The AI's predictions also highlight Sandman and Sovereignty as strong competitors, while suggesting that Rodriguez and Burnham Square could outperform their odds. The Derby, scheduled for May 3 at Churchill Downs, features a diverse field of 20 horses, with trainers like Bob Baffert returning after suspension and aiming for record-breaking victories. The race will be broadcast on NBC and USA Network, with streaming options available on Fubo and Peacock."
