@@ -1,0 +1,113 @@
+---
+layout: post
+title:  "AI Insider #65 2025 - AI-Native Operating Systems and Platforms"
+date:   2025-05-09 20:00:00 +0700
+---
+
+## AI-Native Operating Systems and Platforms
+
+**TL:DR:**
+
+AI-native operating systems and platforms represent a new computing paradigm where artificial intelligence isn’t just an app—it’s the core interface. These systems are designed from the ground up to let users interact through voice, gestures, and context-aware commands, enabling AI agents to handle daily tasks, access cloud services, and adapt dynamically to user needs. They mark the beginning of a post-smartphone era.
+
+__Introduction:__
+
+AI-native operating systems reimagine our relationship with computers and devices. Instead of navigating through menus, typing commands, or tapping apps, users interact with intelligent agents that understand intent, learn habits, and proactively offer help. Devices like the Rabbit R1 and Humane AI Pin hint at this future, where hardware and software are fused into a seamless AI experience. These platforms shift the focus from screen-based computing to intuitive, conversation-driven engagement.
+
+__Key Features:__
+
+* **Agent-First Interfaces**
+
+    Rather than launching apps, users interact with a central AI agent that can understand requests, take initiative, and access multiple services on your behalf.
+
+
+
+* **Contextual Awareness**
+
+    AI-native systems are designed to understand location, time, biometric signals, and past behavior to tailor responses without being explicitly told what to do.
+
+
+
+* **Multimodal Interaction**
+
+    These platforms support voice, vision, and gesture inputs—allowing users to speak, point, or even glance to communicate with their devices.
+
+
+
+* **Real-Time Reasoning**
+
+    Powered by foundation models like GPT-4o or Gemini, these systems perform real-time reasoning, enabling on-the-fly translations, summarizations, bookings, and more.
+
+
+* **Cloud-Native Integration**
+
+    AI-native platforms rely heavily on the cloud, pulling in capabilities from various APIs, search engines, databases, and model endpoints to stay lightweight yet powerful.
+
+__Applications:__
+
+* **Personal Assistants, Reimagined**
+
+    Think beyond Siri or Alexa. AI-native assistants can schedule meetings, generate content, answer complex questions, or coordinate tasks across multiple platforms.
+
+
+
+* **AI Wearables**
+
+    Devices like Humane AI Pin or Rabbit R1 are examples of portable AI systems replacing smartphones with always-on, privacy-conscious interfaces.
+
+
+
+* **Enterprise Dashboards**
+
+    AI-native interfaces can abstract away complex business tools (e.g., CRM, ERP) into natural conversations with agents that handle queries, reports, and workflows.
+
+
+* **Accessibility and Inclusion**
+
+    By removing the need to navigate screens or keyboards, AI-native systems open computing to those with disabilities or limited tech literacy.
+
+
+* **Ambient Computing**
+
+    In smart homes, vehicles, or even city infrastructure, AI-native OSes enable seamless, voice-driven control and automation of environments.
+
+__Challenges and Considerations:__
+
+* **Latency and Connectivity**
+
+    Real-time performance depends on fast internet and responsive cloud infrastructure. Offline support remains limited in many current models.
+
+* **Privacy and Data Ownership**
+
+    These systems gather sensitive data to personalize experiences—raising concerns about who owns that data and how it’s used or monetized.
+
+* **Lack of Standardization**
+
+    There is no dominant OS yet. Competing platforms, models, and devices may lead to fragmentation and poor interoperability.
+
+* **Adoption Curve**
+
+    Users may resist abandoning touchscreens and app-based ecosystems they’re used to. Clear benefits and intuitive UX will be key to mass adoption.
+
+* **Security Risks**
+
+    Deep integration with personal accounts, apps, and habits makes AI-native platforms attractive targets for abuse or exploitation.
+
+__Conclusion__
+
+AI-native operating systems are still in their infancy, but they signal a shift in how we interact with technology. As agents become smarter, interfaces more intuitive, and hardware more specialized, these platforms could redefine what it means to “use a computer.” Whether through a pin on your shirt, a voice in your ear, or a companion on your desk, the future of computing may not be about screens at all—but about conversations, context, and collaboration with intelligent systems.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[NBC will use AI voice of Jim Fagan, who died in 2017, when NBA returns to network](https://www.usatoday.com/story/sports/media/2025/05/07/nba-on-nbc-ai-voice-narrator-jim-fagan/83496485007)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "NBC Sports is set to reintroduce the iconic voice of the late Jim Fagan—renowned for narrating NBA games during the 1990s—by employing AI voice synthesis technology in its upcoming NBA broadcasts starting October 2025. With the blessing of Fagan's family, his AI-generated voice will feature in promotional materials, title sequences, and show openings, aiming to evoke nostalgia among longtime fans. While some applaud this homage to a broadcasting legend, others express unease over the ethical implications of using AI to recreate voices of deceased individuals, sparking broader discussions about the role of artificial intelligence in media and entertainment."
+
+![memo](/assets/images/memo16.png) *[LinkedIn’s new AI search tool lets you describe your ideal job](https://www.msn.com/en-us/careers/job-search/linkedin-s-new-ai-search-tool-lets-you-describe-your-ideal-job/ar-AA1EkQds?ocid=BingNewsVerp)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "LinkedIn has introduced a new AI-powered job search tool that allows users to find job listings by describing their ideal role in natural language. Instead of relying solely on traditional search filters like location, industry, and specific roles, users can now input queries such as “find me entry-level brand manager roles in fashion” or “jobs for analysts who love sustainability challenges.” This innovative approach aims to align job seekers' skills, interests, and aspirations with suitable opportunities more intuitively. The AI-powered search is available in English to all LinkedIn Premium subscribers starting today and is expected to roll out for all members with the Global English language setting by the end of the week."
