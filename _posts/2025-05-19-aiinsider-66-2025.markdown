@@ -1,0 +1,96 @@
+---
+layout: post
+title:  "AI Insider #66 2025 - Answer Engine Optimization (AEO)"
+date:   2025-05-19 20:00:00 +0700
+---
+
+## Answer Engine Optimization (AEO)
+
+**TL:DR:**
+
+Answer Engine Optimization (AEO) is the evolution of SEO for an AI-driven world. Instead of optimizing for search engines that return links, AEO focuses on how content gets surfaced in AI-generated answers. As people increasingly ask chatbots like ChatGPT or search via AI assistants, AEO helps ensure your information is the one AI selects to respond.
+
+__Introduction:__
+
+Traditional Search Engine Optimization (SEO) aimed to rank web pages higher in Google’s search results. But with AI chatbots, voice assistants, and smart devices answering questions directly, users often never see a list of links. Instead, they get a single, conversational answer.
+
+Answer Engine Optimization (AEO) is the strategy of structuring content so that AI-powered systems (like ChatGPT, Perplexity, Google's SGE, or Alexa) can easily extract, trust, and present it as authoritative responses. This marks a paradigm shift in digital visibility, moving from ranking in search to being the answer itself.
+
+__Key Features:__
+
+* **Structured Content for AI**
+
+    Optimizing for structured data (schemas, rich snippets, FAQs) so AI models can parse and pull clean, context-rich information.
+
+* **Conversational Relevance**
+
+    Content needs to sound natural in AI responses. Writing in question-answer formats, using clear headings, and anticipating user intent is crucial.
+
+* **Topical Authority Over Keywords**
+
+    Instead of chasing isolated keywords, AEO focuses on being a trusted source for entire topics, improving AI's confidence in citing your content.
+
+* **Multimodal Visibility**
+
+    Preparing content for AI-driven platforms beyond text—like voice search, visual search, and generative answers in AR/VR interfaces.
+
+__Applications:__
+
+* **Business and Brand Visibility**
+
+    Companies can ensure their official info (product details, support guides, how-tos) appears in AI assistant responses, boosting trust and conversions.
+
+
+
+* **Content Marketing 2.0**
+
+    Publishers can reformat articles into AI-friendly snippets, increasing chances of being cited in chatbot answers rather than buried in search results.
+
+* **Local Services and Directories**
+
+    For restaurants, clinics, and local businesses, optimizing for AI “near me” queries becomes essential for discovery in voice and assistant searches.
+
+* **E-commerce**
+
+    Product specs, comparisons, and FAQs optimized for AI can place brands in AI recommendations and shopping assistant responses.
+
+__Challenges and Considerations:__
+
+* **Opaque AI Ranking Factors**
+
+    Unlike Google’s search algorithms, how AI models select answers isn’t transparent, making optimization experimental and ongoing.
+
+
+
+* **Content Ownership and Attribution**
+
+    AI responses often summarize without clear attribution, raising concerns over content creators' visibility and recognition.
+
+
+
+* **Evolving Standards**
+
+    Best practices for AEO are still emerging. Techniques that work today might change as AI search interfaces evolve.
+
+* **Overcoming Misinformation**
+
+    Ensuring that AI prioritizes authoritative, accurate sources is a challenge, especially in industries prone to misinformation (health, finance, etc.).
+
+__Conclusion__
+
+As AI-powered interfaces become the first point of contact for information, Answer Engine Optimization is poised to become a cornerstone of digital strategy. Businesses, content creators, and marketers need to adapt their practices to remain visible in an era where being the answer matters more than being in the search results. Those who master AEO early will have a competitive edge in the AI-native web of tomorrow.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[FBI warns of AI scam impersonating top US officials: "malicious"](https://www.msn.com/en-us/news/technology/fbi-warns-of-ai-scam-impersonating-top-us-officials-malicious/ar-AA1EUdQJ?ocid=BingNewsVerp)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The FBI has issued a warning about a sophisticated scam where cybercriminals use artificial intelligence to impersonate senior U.S. officials through AI-generated voice messages and texts, aiming to deceive individuals into revealing personal information or credentials. These attackers often establish initial contact to build trust before directing victims to malicious platforms designed to harvest sensitive data. The FBI advises the public to verify the identity of unexpected communications, be cautious of unsolicited messages, and avoid clicking on suspicious links or sharing personal information without confirmation."
+
+![memo](/assets/images/memo16.png) *[Fortnite players can speak with Darth Vader through a James Earl Jones-voiced AI](https://www.msn.com/en-us/news/other/fortnite-players-can-speak-with-darth-vader-through-a-james-earl-jones-voiced-ai/ar-AA1EUJkU?ocid=BingNewsVerp)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "In Fortnite's latest Star Wars event, players can now interact with an AI-powered Darth Vader that responds using a digitally recreated voice of the late James Earl Jones. This feature, developed with the approval of Jones' estate, utilizes Google's Gemini 2.0 Flash and ElevenLabs' Flash v2.5 models to generate real-time, voice-based conversations with players. After defeating Vader in-game, players can recruit him and engage in voice chats, receiving responses that mimic Jones' iconic portrayal. While Epic Games has implemented safeguards to prevent inappropriate content, some players have managed to prompt the AI to produce unintended responses, leading to quick patches and the introduction of parental controls to manage AI interactions."
