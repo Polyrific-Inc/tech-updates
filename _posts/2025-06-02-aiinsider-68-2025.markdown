@@ -1,0 +1,78 @@
+---
+layout: post
+title:  "AI Insider #68 2025 - Emergent Tool Discovery"
+date:   2025-06-02 20:00:00 +0700
+---
+
+## Emergent Tool Discovery
+
+**TL:DR:**
+
+Emergent tool discovery is an advanced capability where AI agents autonomously identify, learn, and integrate new tools or APIs they were not explicitly trained on. Instead of relying on pre-coded instructions, these agents read documentation, test interfaces, and self-learn how to use unfamiliar tools to achieve their goals. This concept unlocks unprecedented flexibility and adaptability for AI systems operating in dynamic environments.
+
+__Introduction:__
+
+Traditional AI agents rely on a fixed set of tools and plugins defined at design time. They can only operate within the boundaries of what developers explicitly enable. But as real-world use cases grow more complex, rigid tooling becomes a bottleneck. Emergent tool discovery allows AI to not only use tools, but also figure them out independently.
+
+These agents read documentation, explore functions, and perform trial-and-error interactions to understand new tools in context. Whether it’s a new API, web service, or software application, the agent develops internal models of how the tool works and integrates it into its workflow without hardcoded dependencies. In short, they become self-sufficient problem solvers.
+
+__Key Features:__
+
+* **Autonomous API Learning**
+Agents can read OpenAPI specs, natural-language documentation, or in-app tooltips to build working knowledge of a tool’s functions.
+
+* **Interactive Experimentation**
+By attempting calls or simulated clicks, agents test tool behaviors, analyze outputs, and refine their internal usage patterns in real time.
+
+* **On-the-Fly Integration**
+Once a new tool is understood, the AI can incorporate it into task plans, chaining it with other capabilities for seamless operation.
+
+* **Generalization Across Tools**
+Thanks to large-scale pretraining, these agents can recognize functional similarities between tools and transfer strategies across domains.
+
+__Applications:__
+
+* **Enterprise Automation**
+AI agents can integrate with new internal software tools as they’re released, eliminating the need for constant reprogramming or IT intervention.
+
+* **Customer Support and Troubleshooting**
+Support bots can dynamically learn how to use third-party systems on behalf of customers, such as configuring settings, fetching usage stats, or filing tickets.
+
+* **DevOps and Engineering Assistants**
+AI coders can read unfamiliar library docs or internal APIs and begin using them accurately, speeding up development cycles and reducing onboarding time.
+
+* **Multi-Platform Agents**
+Personal or professional AI agents can plug into new productivity apps or services without developer guidance, making them truly platform agnostic.
+
+__Challenges and Considerations:__
+
+* **Trust and Safety**
+Autonomous tool use can create security and compliance risks if agents access sensitive systems without proper permissions or guardrails.
+
+* **Verification of Understanding**
+Agents may misunderstand tools or misuse them subtly. Monitoring and feedback loops are essential to prevent cascading errors.
+
+* **Interface Variability**
+Not all tools are documented well. Poorly structured user interfaces or nonstandard APIs make self-discovery harder for even advanced agents.
+
+* **Cognitive Load and Latency**
+Exploring and learning tools on the fly can introduce delays and increase compute load. Balancing speed with exploration is key.
+
+__Conclusion__
+
+Emergent tool discovery represents a leap forward in agent autonomy. No longer limited to pre-defined toolkits, AI can now adapt to unfamiliar environments by learning the tools available, much like a human employee figuring out a new software platform on their first day. This capability makes AI agents more resilient, useful, and scalable across fast-changing workflows. In the near future, the best AI will not just know how to use tools, it will teach itself how to use any tool you give it.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Arizona Supreme Court turns to AI-generated 'reporters' to deliver news](https://www.msn.com/en-us/news/other/arizona-supreme-court-turns-to-ai-generated-reporters-to-deliver-news/ar-AA1FJpYD)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The Arizona Supreme Court has introduced two AI-generated avatars, Victoria and Daniel, to deliver news about court rulings in an effort to enhance public understanding and trust in the judicial system. These avatars, created using the Creatify program, transform court news releases into videos that explain complex legal decisions in a more accessible manner. The initiative was partly inspired by public backlash following a controversial abortion law ruling, highlighting the need for clearer communication from the court. While the avatars aim to make legal information more digestible, some experts have raised concerns about their realism and the potential for viewers to mistake them for real reporters, suggesting that disclaimers should be more prominent to avoid confusion."
+
+![memo](/assets/images/memo16.png) *[What will power AI’s growth?](https://www.technologyreview.com/2025/05/29/1117500/ai-energy-growth-nuclear-natural-gas/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The rapid expansion of artificial intelligence is significantly increasing global energy consumption, prompting major tech companies to seek more sustainable power sources. To meet the escalating energy demands of AI data centers, firms like Microsoft and Google are turning to nuclear energy. Microsoft has entered a 20-year agreement to purchase power from the soon-to-be-reopened Three Mile Island Unit 1, aiming to support its AI infrastructure . Similarly, Google has partnered with Kairos Power to deploy small modular reactors (SMRs) for its data centers, with the first expected to be operational by 2030 . These initiatives reflect a broader trend of integrating advanced nuclear technologies to sustainably power the growing AI industry."
