@@ -1,0 +1,86 @@
+---
+layout: post
+title:  "AI Insider #69 2025 - Active Inference"
+date:   2025-06-09 20:00:00 +0700
+---
+
+## Active Inference
+
+**TL:DR:**
+
+Active inference is a powerful framework where AI systems continuously update their internal models to reduce uncertainty about their environment. Inspired by how biological brains operate, active inference agents do not passively react to inputs. They proactively seek out information, act to fulfill internal expectations, and minimize "surprise." This makes them better at adaptation, prediction, and planning in dynamic and uncertain environments.
+
+__Introduction:__
+
+Traditional AI systems operate based on static models or reactive rulesets. They respond to stimuli but do not necessarily question or refine their assumptions about the world. This limits their ability to adapt to change, handle ambiguity, or operate in complex real-world environments.
+
+Active inference flips the paradigm. Borrowed from neuroscience, especially Karl Friston’s Free Energy Principle, active inference treats agents as entities that maintain and update beliefs about the world. These agents act not merely to achieve immediate goals but to minimize the difference between their predictions and actual experiences, a concept known as prediction error or surprise.
+
+In simple terms, an active inference AI is constantly asking:
+
+"What do I expect to happen? What am I seeing instead? What can I do to close that gap?"
+
+The result is a much more robust and adaptive AI system that can operate in open-ended, uncertain environments.
+
+__Key Features:__
+
+* **Belief Updating:**
+Agents continuously refine their internal models based on incoming sensory data, using Bayesian inference to adjust expectations.
+
+* **Action as Inference:**
+Actions are not just outputs. They are selected to bring the world in line with internal beliefs or to test hypotheses about how the world works.
+
+* **Exploration for Uncertainty Reduction:**
+Rather than just seeking rewards as in reinforcement learning, active inference agents are driven to reduce uncertainty, promoting natural exploration behaviors.
+
+* **Predictive Modeling:**
+The system builds generative models to anticipate future states, enabling proactive rather than reactive behavior.
+
+__Applications:__
+
+* **Robotics:**
+Active inference can create robots that adapt to unexpected environments, self-correct when damaged, or learn new tasks without explicit retraining.
+
+* **Healthcare AI:**
+In diagnosis or patient monitoring, AI systems can actively seek out missing information or uncertainties to suggest tests or treatments.
+
+* **Autonomous Vehicles:**
+Vehicles operating in uncertain, dynamic conditions can use active inference to better predict traffic patterns or road hazards, improving decision-making under uncertainty.
+
+* **Adaptive User Interfaces:**
+Systems that tailor themselves to individual users' behaviors and needs can use active inference to anticipate user preferences and adapt interfaces proactively.
+
+__Challenges and Considerations:__
+
+* **Model Complexity:**
+Building accurate generative models is computationally expensive and may not scale easily to very high-dimensional or chaotic environments.
+
+* **Inference Speed:**
+Rapid belief updates and planning can introduce computational delays, which is critical in real-time systems like robotics or finance.
+
+* **Reward Alignment:**
+Unlike traditional reinforcement learning, where rewards guide learning, active inference systems must carefully design priors and models to align agent behavior with human values and safety requirements.
+
+* **Interpretability:**
+Active inference models can be harder to interpret, as their behavior stems from complex probabilistic reasoning rather than simple if-then rules or reward maximization.
+
+__Conclusion__
+
+Active inference marks a shift from reactive, reward-driven AI toward systems that behave more like biological organisms, constantly learning, predicting, and acting to reduce uncertainty. By focusing on minimizing surprise rather than maximizing reward, active inference-based AI can achieve a deeper, more flexible understanding of complex environments.
+
+As AI moves into increasingly uncertain and dynamic real-world settings, active inference could become a cornerstone of truly autonomous, adaptable, and resilient intelligent systems. In the future, the most capable AIs will not just react. They will anticipate, hypothesize, and act with the same sophisticated intuition we see in living beings.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[The Download: AI's role in math, and calculating its energy footprint | MIT Technology Review](https://www.technologyreview.com/2025/06/04/1117829/the-download-ai-math-energy/)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The June 4, 2025, edition of MIT Technology Review's "The Download" highlights the growing energy demands of artificial intelligence, particularly in training large neural networks. As AI models become more complex, their computational requirements and carbon footprints increase significantly. Researchers emphasize the need to measure and mitigate these environmental impacts. Strategies being explored include developing more energy-efficient model architectures, optimizing training locations based on available energy sources, and improving the efficiency of data centers. The article calls for greater transparency in reporting AI energy consumption and recommends integrating energy usage metrics into standard AI performance evaluations."
+
+![memo](/assets/images/memo16.png) *[The Washington Post is planning to let amateur writers submit columns — with the help of AI | The Verge](https://www.theverge.com/news/679332/washington-post-opinion-pieces-ai-tool-ember)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The Washington Post is developing a project called "Ripple" that will allow non-professional writers to submit opinion columns with assistance from an AI tool named Ember. Ember is designed to guide writers through the editorial process by automating tasks typically handled by human editors. Features include a "story strength" tracker, a sidebar outlining essential story components such as the thesis, supporting points, and conclusion, and an AI assistant offering prompts and developmental questions. While Ember aids in the writing process, human editors will review submissions before publication. These articles will be hosted outside the traditional opinion section and accessible without a subscription. The Post aims to secure its first partnerships this summer, with testing of the AI component set for the fall."
