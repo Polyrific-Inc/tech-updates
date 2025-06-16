@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "AI Insider #70 2025 - Greening AI Systems"
+date:   2025-06-16 20:00:00 +0700
+---
+
+## Greening AI Systems
+
+**TL:DR:**
+
+Greening AI systems refers to designing, developing, and deploying artificial intelligence in ways that reduce environmental impact. From minimizing the carbon footprint of training massive models to optimizing inference for energy efficiency, this movement focuses on making AI more sustainable. Techniques include model compression, green data centers, carbon accounting, and regulatory frameworks that balance innovation with climate responsibility.
+
+__Introduction:__
+
+AI is transforming every sector, but at a cost. Training large-scale models such as GPT or image generators can consume megawatt-hours of electricity and emit as much carbon as hundreds of cross-country flights. As AI systems become more powerful and widespread, their environmental footprint is growing. Greening AI is the effort to make these systems more energy-efficient, carbon-aware, and environmentally responsible at every stage of their lifecycle.
+
+__Key Features:__
+
+* **Model Efficiency:**
+Techniques like pruning, quantization, and knowledge distillation reduce model size and computational demand without sacrificing core performance. Researchers are beginning to prioritize compute-efficient benchmarks instead of focusing purely on scale.
+
+* **Energy-Aware Training:**
+Training can be scheduled during times when renewable energy is available or conducted in regions powered by cleaner grids. Tools such as CarbonTracker and CodeCarbon help developers measure and reduce emissions.
+
+* **Eco-Friendly Infrastructure:**
+Green data centers use clean energy sources, advanced cooling systems, and real-time optimization. Some AI providers are pursuing carbon-neutral or even carbon-negative infrastructure goals.
+
+* **Low-Power Inference:**
+Inference, or the real-time use of models, accounts for much of AI's total energy cost. Running models efficiently on edge devices and mobile platforms is a key sustainability strategy. Neural architecture search helps identify the most efficient designs.
+
+* **Lifecycle Carbon Auditing:**
+Forward-thinking organizations are beginning to report the full lifecycle emissions of their AI systems. This includes everything from data preprocessing to training, deployment, and use. Carbon auditing enables data-driven trade-offs between accuracy and environmental cost.
+
+__Applications:__
+
+* **Enterprise AI:**
+Companies are adopting sustainable practices in AI development to meet environmental, social, and governance goals while reducing operational costs.
+
+* **Consumer Devices:**
+AI used in phones, wearables, and smart home devices is being optimized for low power consumption and long-term energy efficiency.
+
+* **AI for Sustainability:**
+Green AI can support climate goals through better energy grid management, precision agriculture, supply chain optimization, and emissions forecasting. However, the environmental cost of deploying such AI systems must be considered.
+
+* **Government and Policy:**
+Public agencies are starting to require energy reporting and sustainability disclosures for AI projects. The EU AI Act includes early steps in this direction.
+
+__Challenges and Considerations:__
+
+* **Trade-offs with Performance:**
+Smaller or more efficient models may deliver slightly lower performance. Deciding when these trade-offs are acceptable is a practical and ethical question.
+
+* **Lack of Standards:**
+There is no universally accepted method for measuring and comparing the energy use or emissions of AI systems.
+
+* **Cloud Opacity:**
+Developers using cloud services often lack access to detailed information about the energy mix or carbon footprint of their workloads.
+
+* **Greenwashing:**
+Some companies may exaggerate their sustainability claims. Genuine progress requires transparent reporting and consistent action.
+
+__Conclusion__
+
+AI is poised to influence every part of our lives, but its environmental impact cannot be ignored. Greening AI systems means building technology that is both intelligent and responsible. By improving model efficiency, using clean infrastructure, and embracing carbon accountability, the AI community can lead the way toward sustainable innovation.
+
+In the years ahead, the most impressive AI systems will not just be the fastest or the smartest. They will be the cleanest, the most efficient, and the most aligned with the health of our planet.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[The Download: AI's role in math, and calculating its energy footprint | MIT Technology Review](https://www.technologyreview.com/2025/06/04/1117829/the-download-ai-math-energy/)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The June 4, 2025, edition of MIT Technology Review's "The Download" highlights the growing energy demands of artificial intelligence, particularly in training large neural networks. As AI models become more complex, their computational requirements and carbon footprints increase significantly. Researchers emphasize the need to measure and mitigate these environmental impacts. Strategies being explored include developing more energy-efficient model architectures, optimizing training locations based on available energy sources, and improving the efficiency of data centers. The article calls for greater transparency in reporting AI energy consumption and recommends integrating energy usage metrics into standard AI performance evaluations."
+
+![memo](/assets/images/memo16.png) *[The Washington Post is planning to let amateur writers submit columns — with the help of AI | The Verge](https://www.msn.com/en-us/news/technology/wikipedia-pauses-ai-generated-summaries-pilot-after-editors-protest/ar-AA1GwJbM)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "Wikipedia has decided to pause its pilot program for AI-generated article summaries after a wave of protests from volunteer editors, who quickly voiced concerns that these automated summaries could undermine Wikipedia’s credibility and accuracy. Editors argued that while AI tools can expedite summary creation, they may also introduce errors, misrepresent nuanced information, and diminish community trust—issues critical to the encyclopedia’s reliability. In response, the Wikimedia Foundation has halted the trial to allow for further community feedback, signaling the platform’s cautious and collaborative approach to integrating AI in a way that maintains rigorous quality standards."
