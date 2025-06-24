@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "AI Insider #71 2025 - World Models"
+date:   2025-06-23 20:00:00 +0700
+---
+
+## World Models
+
+**TL:DR:**
+
+World models are AI systems that learn internal representations of how the real world works, including physics, spatial relationships, causality, and object permanence. This allows them to predict and plan beyond the next token. Inspired by how humans build mental models to navigate the environment, world models are the foundation for physically grounded, decision-making AI. They support advances in robotics, simulation, and agent-based reasoning by giving AI a working understanding of reality itself.
+
+__Introduction:__
+
+Traditional AI systems like GPT-4 are powerful language predictors, but they lack a sense of physical reality. They can describe a ball rolling down a hill, but they don't truly know what that physically entails. World models are changing that.
+
+These models go beyond language and into multimodal simulation by learning from images, videos, text, and even 3D environments to build an internal map of cause and effect. World models let AI agents imagine outcomes, simulate future states, and act accordingly, just like we do when playing chess or planning a route.
+
+In simple terms, world models let AI ask:
+
+"What will happen if I do this?" and answer with foresight.
+
+__Key Strategies for Greening AI Systems:__
+
+* **Learned Simulators:**
+Rather than hard-coded physics engines, world models learn the dynamics of the world from data, including how objects move, collide, or disappear. These learned simulators can model environments like video game worlds, traffic scenes, or home layouts.
+
+* **Latent Representations:**
+Instead of storing pixel-perfect detail, world models compress reality into latent states, which are abstract summaries of what’s happening. This makes it possible to simulate and reason without massive compute.
+
+* **Action and Planning:***
+World models can be used by AI agents to plan actions. For example, an AI in a robot vacuum might simulate multiple cleaning paths before choosing the most efficient one.
+
+* **Multimodal Inputs:**
+Modern world models integrate vision, language, audio, and movement to develop more robust understanding, helping AI navigate the messiness of the real world.
+
+__Applications:__
+
+* **Embodied AI:**
+Robots and drones need a sense of space, motion, and timing. World models give them the intuition to move safely, grasp objects, and recover from errors.
+
+* **Simulated Environments:**
+In gaming, training, and education, world models can generate realistic, interactive worlds that evolve over time.
+
+* **Self-Driving Vehicles:**
+Autonomous systems use world models to predict pedestrian movement, vehicle behavior, and traffic scenarios before acting.
+
+* **Scientific Discovery:**
+AI with world models can test hypotheses in silico, such as predicting how a molecule folds or how climate patterns evolve.
+
+__Challenges and Considerations:__
+
+* **Data Hunger:**
+Building accurate world models requires vast and diverse data, from motion capture to LIDAR scans. Bias or gaps in data can lead to unrealistic simulations.
+
+* **Stability and Drift:**
+If a world model's predictions diverge too far from reality, for example hallucinated physics, agent behavior can become unpredictable or dangerous.
+
+* **Interpretability:**
+Understanding what the AI believes about the world remains difficult. As models get more abstract, it becomes harder to debug failures.
+
+__Conclusion__
+
+World models mark a leap from reactive AI to anticipatory AI. These are systems that don’t just respond but simulate and plan. Whether powering warehouse robots or virtual assistants that understand your physical surroundings, world models bring us closer to truly embodied intelligence.
+
+In the future, the most powerful AI systems won’t just read and write. They will imagine, simulate, and act with a grounded sense of reality.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[AI For Delivery Drivers Is Not What You Think](https://www.forbes.com/councils/forbestechcouncil/2025/06/18/ai-for-delivery-drivers-is-not-what-you-think/)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The Forbes article explains that AI for delivery drivers is evolving beyond simple route optimization. Instead of just telling drivers where to go, modern AI systems are now providing real-time, context-rich audio alerts that include helpful information like gate codes, parking tips, and delivery-specific instructions. These insights are drawn from past driver experiences, customer feedback, and location data, and are delivered as voice notes within drivers' apps. This approach helps drivers save time, avoid common pitfalls, and improve overall efficiency and job satisfaction. The article emphasizes that AI's value in this space lies not in replacing drivers but in supporting them with smarter, situational knowledge."
+
+![memo](/assets/images/memo16.png) *[AI 'provides early diagnosis' of heart problems](https://www.bbc.com/news/articles/cvgn38rggj7o)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The BBC reports that a team led by Dr. Simon Rudland at the University of Suffolk has piloted an AI-powered test called Cardisio to detect cardiovascular disease in asymptomatic adults. Using just five electrodes on the chest and back, the system captures three-dimensional electrical signals and uses AI to analyze heart rhythm, structure, and perfusion, returning risk scores (green, amber, red). In a study involving 628 tests, the system achieved about 80% positive predictive accuracy and 90.4% negative predictive accuracy, with fewer than 2% of readings failing. The test shows promise for early detection in primary care settings, potentially reducing hospital referrals and wait times, though researchers emphasize the need for larger-scale trials before implementation"
