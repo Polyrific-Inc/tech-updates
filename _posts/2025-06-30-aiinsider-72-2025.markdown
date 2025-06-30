@@ -1,0 +1,81 @@
+---
+layout: post
+title:  "AI Insider #72 2025 - The Agentic Web"
+date:   2025-06-30 20:00:00 +0700
+---
+
+## The Agentic Web
+
+**TL:DR:**
+
+The Agentic Web marks a shift from passive browsing to active digital autonomy. Instead of users clicking through pages or apps, autonomous AI agents navigate the web, complete tasks, and make decisions on your behalf. These agents operate across platforms, APIs, and interfaces to handle complex workflows like booking travel, sending emails, researching products, and more. The Agentic Web introduces a world where software does not just assist users, but acts for them based on goals and context.
+
+__Introduction:__
+
+The modern web has been shaped around user input. We search, scroll, and manually complete tasks. Even with smart assistants or recommendation engines, the responsibility still falls on us. The Agentic Web changes that model.
+
+Thanks to advancements in large language models, decision-making frameworks, and tool integrations, AI agents are now able to understand high-level goals and take meaningful actions across digital systems. Whether coordinating a business trip or managing your inbox, these agents do the work directly, reducing friction and saving time.
+
+Instead of asking “Where can I find a hotel?” a user can now say “Book me a hotel near the convention center under $200 a night,” and the agent will complete the entire task.
+
+__Key Components of the Agentic Web:__
+
+* **Autonomous Task Execution:**
+Agents can take actions like filling forms, comparing prices, and confirming appointments without requiring step-by-step supervision.
+
+* **Cross-Platform Integration:**
+These agents work across websites, APIs, file systems, and email clients. They connect disparate tools to carry out workflows that span multiple platforms.
+
+* **Goal-Based Reasoning:**
+Rather than just following static instructions, agents interpret intent and adapt as conditions change. For example, if a product is out of stock, they can search for alternatives automatically.
+
+* **Tool Use and Web Interaction:**
+Agentic systems leverage plug-ins, APIs, and browser interfaces to simulate how a human might interact with web-based tools. Frameworks like OpenAgents and AutoGPT enable this behavior.
+
+__Applications:__
+
+* **Personal Productivity:**
+Agents manage calendars, email, reminders, and even meeting scheduling. They can reschedule flights, draft summaries, and keep your day on track with minimal input.
+
+* **E-Commerce:**
+Shopping agents can browse product catalogs, evaluate reviews, apply discounts, and place orders based on constraints like budget or shipping speed.
+
+* **Enterprise Operations:**
+AI agents can assist in sales outreach, HR screening, finance reporting, and other business functions that involve repetitive but important digital tasks.
+
+* **Research Assistance:**
+Instead of opening a dozen tabs, agents can synthesize information from across the web and deliver concise, well-structured answers to complex queries.
+
+__Challenges and Considerations:__
+
+* **Security and Privacy:**
+Allowing AI to act on your behalf requires safeguards. Systems must protect sensitive data and enforce permission structures to avoid misuse.
+
+* **Website Stability and Access:**
+Without standard interfaces, agents may break when website layouts or flows change. Standardization or tool-specific integrations are necessary for reliable operation.
+
+* **Responsible Autonomy:**
+Too much autonomy can lead to unexpected or harmful actions. Having human review steps or constraints in place helps ensure that agents act in line with user intent.
+
+__Conclusion__
+
+The Agentic Web represents a fundamental transformation in how we use the internet. Rather than relying on manual control, users will soon delegate digital tasks to capable agents that operate continuously and intelligently on their behalf.
+
+This shift will redefine productivity, reshape business workflows, and enable a future where AI can pursue goals, solve problems, and deliver outcomes. The internet will no longer be a space we explore manually, but a terrain where our agents move with speed and precision to get things done.
+
+In the age of the Agentic Web, you will not just browse websites. You will send your agent to complete the job.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[AI companies are throwing big money at newly minted PhDs, sparking fears of an academic ‘brain drain’](https://www.msn.com/en-us/money/careersandeducation/ai-companies-are-throwing-big-money-at-newly-mgted-phds-sparking-fears-of-an-academic-brain-drain/ar-AA1HpnpH)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The Forbes article explains that AI for delivery drivers is evolving beyond simple route optimization. Instead of just telling drivers where to go, modern AI systems are now providing real-time, context-rich audio alerts that include helpful information like gate codes, parking tips, and delivery-specific instructions. These insights are drawn from past driver experiences, customer feedback, and location data, and are delivered as voice notes within drivers' apps. This approach helps drivers save time, avoid common pitfalls, and improve overall efficiency and job satisfaction. The article emphasizes that AI's value in this space lies not in replacing drivers but in supporting them with smarter, situational knowledge."
+
+![memo](/assets/images/memo16.png) *[Google’s new AI will help researchers understand how our genes work | MIT Technology Review](https://www.technologyreview.com/2025/06/25/1119345/google-deepmind-alphagenome-ai/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The BBC reports that a team led by Dr. Simon Rudland at the University of Suffolk has piloted an AI-powered test called Cardisio to detect cardiovascular disease in asymptomatic adults. Using just five electrodes on the chest and back, the system captures three-dimensional electrical signals and uses AI to analyze heart rhythm, structure, and perfusion, returning risk scores (green, amber, red). In a study involving 628 tests, the system achieved about 80% positive predictive accuracy and 90.4% negative predictive accuracy, with fewer than 2% of readings failing. The test shows promise for early detection in primary care settings, potentially reducing hospital referrals and wait times, though researchers emphasize the need for larger-scale trials before implementation"
