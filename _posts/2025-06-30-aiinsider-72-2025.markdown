@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AI Insider #72 2025 - The Agentic Web"
-date:   2025-06-30 20:00:00 +0700
+date:   2025-06-30 21:00:00 +0700
 ---
 
 ## The Agentic Web
