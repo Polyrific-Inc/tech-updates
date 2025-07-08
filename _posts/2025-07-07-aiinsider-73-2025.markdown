@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AI Insider #73 2025 - State-Level AI Education Initiatives"
-date:   2025-07-07 21:00:00 +0700
+date:   2025-07-07 20:00:00 +0700
 ---
 
 ## The Agentic Web
