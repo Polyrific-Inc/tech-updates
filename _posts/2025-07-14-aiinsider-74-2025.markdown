@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "AI Insider #74 2025 - Specialized AI Applications"
-date:   2025-07-14 20:00:00 +0700
+date:   2025-07-14 21:00:00 +0700
 ---
 
 ## Specialized AI Applications
