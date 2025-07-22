@@ -1,0 +1,68 @@
+---
+layout: post
+title:  "AI Insider #75 2025 - AI at the Edge"
+date:   2025-07-18 20:00:00 +0700
+---
+
+## AI at the Edge
+
+**TL:DR:**
+
+AI is breaking free from the cloud and moving directly onto your devices. Edge AI processes data where it's created on smartphones, IoT sensors, cars, and industrial equipment, eliminating the need to send information to distant servers. This shift promises millisecond response times, ironclad privacy, and AI capabilities that work anywhere, even without internet.
+
+__Introduction:__
+
+For years, AI meant sending your data on a round trip to the cloud. But what if your device could think for itself? Edge AI is embedding intelligence directly into devices, transforming how artificial intelligence operates in the real world. It's not just about speed or privacy; it's about fundamentally reimagining where intelligence should live.
+
+__Key Applications:__
+
+* **Autonomous Vehicles:** Self-driving cars can't afford cloud latency when deciding whether to brake. Edge AI processes sensor data in real-time, making split-second decisions without any external connectivity.
+
+* **Smart Manufacturing:** Factory equipment monitors its own health, detecting anomalies that signal impending failure. Quality control cameras identify defects instantly on the production line.
+
+* **Personal Devices:** Your smartphone's edge AI powers face unlock, real-time translation, and soon, full language models running locally. Wearables monitor health metrics and provide analysis privately on-device.
+
+* **Healthcare:** Portable diagnostic devices bring specialist-level medical analysis to remote locations. An ultrasound probe with embedded AI can guide non-experts through examinations.
+
+__Impact and Benefits__
+
+* **Ultra-Low Latency:** Edge AI responds in microseconds, not seconds, critical for AR, autonomous systems, and real-time control.
+
+* **Privacy by Design:** Your data never leaves your device. Face recognition, voice processing, and health data remain completely private.
+
+* **Always Available:** Works everywhere: underground, rural areas, airplanes. No internet required.
+
+* **Cost Revolution:** Eliminates cloud compute costs for inference. Once deployed, devices operate indefinitely without ongoing expenses.
+
+__Challenges__
+
+* **Hardware Constraints:** Limited processing power and battery life require innovative model compression and optimization.
+
+* **Model Management:** Updating AI across millions of devices is vastly more complex than updating cloud services.
+
+* **Security:** Edge devices need hardware-based protection against physical tampering and model theft.
+
+* **Development Complexity:** Creating AI that works across diverse hardware requires multiple optimized variants.
+
+__Conclusion__
+
+AI at the edge represents a fundamental shift in how artificial intelligence exists in our world. By moving intelligence to where data is born, we're creating AI systems that are faster, more private, and more accessible than ever before.
+
+As specialized AI chips become more powerful (Apple's Neural Engine, Google's Tensor, Qualcomm's AI Engine), every device will become inherently intelligent. We're approaching a future where edge AI won't be a special feature but an expected capability, like wireless connectivity today.
+
+The edge isn't just where AI is going; it's where AI will live.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[It’s not just chips — Taiwan’s role in the AI supply chain is massive](https://www.msn.com/en-us/news/world/it-s-not-just-chips-taiwan-s-role-in-the-ai-supply-chain-is-massive/vi-AA1IHmIS)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Recent reporting underscores that Taiwan's importance to AI extends well beyond cutting edge chip fabrication at TSMC: the island hosts a dense ecosystem of contract manufacturers and component specialists that build and integrate the servers, GPU modules, power and thermal systems and advanced packaging that turn chips into usable AI compute infrastructure, with firms such as Foxconn, Quanta, Delta and others seeing surging demand as cloud giants scale data centers. Ongoing investment by Taiwanese companies in AI server production and packaging technologies, highlighted by Siliconware Precision Industries' new plant in Taichung attended by Nvidia CEO Jensen Huang, shows how rapidly the supply base is evolving to handle larger and more complex AI components. Taiwan's government and industry are also deepening partnerships with the United States through major capital commitments in fabs, AI infrastructure and server manufacturing that aim to diversify production while reinforcing cross border supply security. Because so much of the AI stack depends on this broader Taiwanese hardware network, any disruption in Taiwan would ripple across global technology markets, which is why policymakers are prioritizing closer cooperation and resilience planning."
+
+![memo](/assets/images/memo16.png) *[The supply chain's last mile is complex and expensive. AI has the potential to fix its woes.](https://www.msn.com/en-us/autos/news/the-supply-chains-last-mile-is-complex-and-expensive-ai-has-the-potential-to-fix-its-woes/ar-AA1IFagT)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "Last mile delivery, the handoff from warehouse to customer that can consume roughly 41 percent of total logistics costs, remains messy and expensive as traffic, weather, apartment access, and human error create frequent failures; a surge in e commerce volumes is amplifying the pain. Companies are leaning on AI to make this segment more predictable and efficient: real time routing and re routing (UPS’s ORION upgrade, Dispatch), generative AI that guides drivers to the right entrance and parking spot (Amazon’s Wellspring), and machine learning quality checks that flag likely delivery defects or process bottlenecks (Veho). Better data sharing is also cutting customer service load, with automated chat and accurate ETAs reducing calls, while AI risk scoring tools such as UPS Delivery Defense aim to deter porch piracy. Venture investment signals rapid innovation ahead."
