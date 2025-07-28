@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "AI Insider #76 2025 - Neural Radiance Fields (NeRFs) for 3-D and 4-D"
+date:   2025-07-25 20:00:00 +0700
+---
+
+## Neural Radiance Fields (NeRFs) for 3-D and 4-D
+
+**TL:DR:**
+
+NeRFs are a breakthrough technique for turning 2-D images into detailed 3-D or even dynamic 4-D scenes. By learning how light interacts with objects, NeRFs generate photorealistic renderings from any angle, enabling revolutionary advancements in virtual production, AR/VR, robotics, and digital twins. With new real-time and streaming NeRF variants, high-quality 3-D reconstructions are now achievable on consumer-grade hardware.
+
+__Introduction:__
+
+Traditional 3-D modeling requires painstaking manual creation of assets or expensive scanning equipment. NeRFs change this by learning a volumetric scene representation directly from a handful of photos, synthesizing new viewpoints as if a camera moved freely through the environment. The latest generation of NeRFs pushes this further into 4-D, capturing both the geometry and motion of dynamic scenes. This is not just a new rendering technique but a complete rethinking of how we digitize and experience the real world.
+
+__Key Applications:__
+
+* **Virtual Production:** Film and gaming studios create photorealistic 3-D sets from just a few camera shots, reducing production costs and allowing directors to explore scenes virtually.
+
+* **AR/VR Experiences:** NeRFs enable users to move naturally through immersive 3-D environments generated from simple smartphone captures.
+
+* **Robotics and Drones:** Robots can construct real-time 3-D maps of their surroundings for precise navigation and manipulation.
+
+* **E-commerce and Real Estate:** Products and properties can be shown from every angle with minimal capture effort, improving online visualization.
+
+* **Cultural Heritage and Museums:** Artifacts and historical sites are scanned and preserved digitally, allowing remote exploration without physical deterioration.
+
+__Impact and Benefits__
+
+* **Photorealism:** NeRF-generated scenes capture lighting, texture, and reflections with an accuracy traditional 3-D pipelines struggle to match.
+
+* **Rapid Scene Capture:** A few dozen photos can produce a complete 3-D model, significantly reducing time and cost compared to manual modeling.
+
+* **Dynamic Scenes (4-D):** Advanced NeRFs capture motion, enabling time-based scene playback for sports analysis or animated content.
+
+* **Real-Time Rendering:** Optimized models now allow NeRFs to run at interactive frame rates, making them practical for consumer devices and AR glasses.
+
+__Challenges__
+
+* **High Compute Requirements:** Training NeRFs can be GPU-intensive, though new algorithms like Instant-NGP are reducing the bottleneck.
+
+* **Data Quality:** Poor lighting or low-resolution input images can degrade the final model.
+
+* **Editing Complexity:** Unlike traditional 3-D meshes, modifying a NeRF requires retraining or additional optimization.
+
+* **Scalability:** Large outdoor or multi-room scenes remain challenging due to memory and storage limitations.
+
+__Conclusion__
+
+NeRFs are redefining the boundaries between the physical and digital worlds. By using neural networks to model how light radiates through a scene, we can create rich and accurate 3-D and 4-D representations from minimal input. As techniques for faster training and real-time rendering continue to evolve, NeRFs will become the backbone of 3-D content creation across industries. Just as edge AI is becoming standard in devices, NeRF technology is poised to make 3-D digitization as simple and routine as taking a photo.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[The Ethical Crossroads Of AI: A Call For Human-Centered Solutions](https://www.forbes.com/councils/forbesbusinesscouncil/2025/07/23/the-ethical-crossroads-of-ai-a-call-for-human-centered-solutions/)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Communications strategist Maria Trochimezuk writes that AI development has hit a crucial ethical crossroads and must shift toward a human‑centered model. She cautions that racing to deploy systems for profit can entrench bias, weaken privacy and erode public trust, especially for marginalized users, and she urges companies to build transparent, explainable algorithms, involve diverse stakeholders and support clear regulation. Trochimezuk contends that organizations which embed empathy, accountability and inclusion into their technology will not only reduce risk but also gain sustainable competitive advantage."
+
+![memo](/assets/images/memo16.png) *[Welcome to your job interview. Your interviewer is AI](https://www.seattletimes.com/explore/careers/welcome-to-your-job-interview-your-interviewer-is-ai/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The story explains that employers are beginning to replace first‑round human recruiters with fully autonomous interview bots that speak, ask follow‑up questions and score responses, letting companies like Ribbon AI and Apriora screen far more applicants in less time. Candidates describe the experience as efficient but often impersonal, noting the bots cannot clarify details or give feedback and sometimes simulate awkward verbal tics that feel unsettling. While a few job seekers appreciate the lower pressure of talking to software, many worry about hidden bias, data privacy and the loss of genuine human connection in hiring. The article concludes that schools and career advisers must teach people how to present themselves to AI systems and push for transparency so final decisions still involve human judgment."
