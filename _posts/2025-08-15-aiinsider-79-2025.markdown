@@ -1,0 +1,72 @@
+---
+layout: post
+title:  "AI Insider #79 2025 - Reciprocal Human–Machine Learning (RHML)"
+date:   2025-08-22 20:00:00 +0700
+---
+
+## Reciprocal Human–Machine Learning (RHML)
+
+**TL:DR:**
+
+Model Context Protocol (MCP) is an open standard that revolutionizes how AI agents share context and collaborate by providing a universal "language" for multi-agent systems. By standardizing context sharing between AI tools and data sources, MCP eliminates fragmented integrations and enables seamless, secure connections that allow AI systems to maintain consistent understanding across complex workflows and diverse data environments.
+
+__Introduction:__
+
+For years, AI development has relied heavily on human in the loop (HITL) approaches, where people train, validate, and correct machine outputs. While this has been crucial for building accurate systems, the flow of learning has largely been one directional. AI improves, but humans rarely gain insight from the process.
+
+Reciprocal Human–Machine Learning (RHML) represents a paradigm shift. In RHML, AI systems do not just absorb corrections. They actively teach, guide, and reveal patterns back to human users. This reciprocal exchange transforms AI into a collaborative partner rather than just a tool. It enables humans to refine their own decision making, understanding, and creativity while AI continuously improves.
+
+__Key Applications:__
+
+* **Education and Training:** RHML can act as a teaching assistant where students correct an AI’s mistakes, while the AI highlights reasoning shortcuts or conceptual gaps in the student’s thinking.
+
+* **Medical Decision Support:** Doctors provide diagnostic feedback to an AI, while the AI points out overlooked correlations or alternative treatment paths, improving both algorithm accuracy and clinical expertise.
+
+* **Creative Collaboration:** Writers, artists, and designers exchange feedback with AI systems that adapt to user preferences while exposing creators to new techniques, styles, and interpretations.
+
+* **Business Strategy:** Executives refine AI driven forecasts with domain expertise, while the AI highlights unseen trends and challenges human assumptions, sharpening overall strategic thinking.
+
+* **Robotics and Human–AI Teams:** In manufacturing or defense, operators fine tune robotic actions while learning from the AI’s adaptive problem solving approaches in real time.
+
+__Impact and Benefits__
+
+* **Mutual Growth:** Both humans and AI continually improve, creating smarter systems and more skilled professionals.
+
+* **Deeper Trust:** By exposing reasoning and teaching back to humans, AI becomes more transparent and explainable, building trust in its decisions.
+
+* **Accelerated Innovation:** Human creativity and machine efficiency reinforce each other, pushing past the limits of traditional one way training models.
+
+* **Adaptive Systems:** RHML fosters agents that evolve in partnership with their users, tailoring themselves to specific workflows, industries, or even individual preferences.
+
+__Challenges__
+
+* **Cognitive Overload:** Too much feedback or machine insight can overwhelm users, reducing rather than improving learning.
+
+* **Bias Reinforcement:** Reciprocal learning could amplify human biases if not carefully managed, as AI may adopt and reflect flawed assumptions back to its human partners.
+
+* **Ethical Boundaries:** Determining how much influence AI should have over human learning, behavior, or decision making raises significant ethical considerations.
+
+* **Evaluation Complexity:** Measuring success in a system where both sides are constantly adapting is far more complex than traditional accuracy metrics.
+
+__Conclusion__
+
+Reciprocal Human–Machine Learning (RHML) marks a new chapter in human–AI collaboration. By enabling a genuine exchange of knowledge, RHML transforms AI from a passive tool into an active partner in growth and discovery.
+
+Just as human teachers evolve by teaching students, RHML allows AI to evolve alongside its users, forming dynamic partnerships where both sides learn, adapt, and improve together. In an era defined by human–AI collaboration, RHML offers a path toward mutual intelligence amplification rather than one sided improvement.
+
+This is more than an incremental shift. It is a vision of co-learning ecosystems where humans and machines grow smarter together.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[AI Isn’t Coming for Hollywood. It's Already Arrived](https://www.wired.com/story/artificial-intelligence-hollywood-stability/)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Stability AI, the company behind the popular Stable Diffusion image generator, nearly collapsed before being rescued in early 2024 by new leadership under Prem Akkaraju and Sean Parker, who redirected its focus toward creating AI tools specifically for Hollywood’s needs; the company now provides solutions for previsualization and visual effects. Meanwhile the broader film and television industry, facing rising production costs and labor disruptions, is beginning to adopt generative AI tools like those from startups such as Runway and Moonvalley, and platforms like Netflix have even used AI-generated footage in their series raising important questions around job safety and tool reliability even as the technology promises to bring efficiency gains and reshape how content is created."
+
+![memo](/assets/images/memo16.png) *[NASA’s new AI model can predict when a solar storm may strike](https://www.technologyreview.com/2025/08/20/1122163/nasa-ibm-ai-predict-solar-storm/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "In collaboration with IBM, NASA has introduced Surya, a new AI foundation model designed to enhance prediction of solar activity using nine years of high‑resolution data from the Solar Dynamics Observatory; this model improves solar flare classification accuracy by 16 percent, enables visual forecasting of flares up to two hours in advance, and is openly available on platforms like Hugging Face and GitHub to encourage broader scientific use and innovation."
