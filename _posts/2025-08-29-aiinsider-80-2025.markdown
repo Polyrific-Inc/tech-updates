@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "AI Insider #80 2025 - Hierarchical Reasoning Model (HRM)"
+date:   2025-08-29 20:00:00 +0700
+---
+
+## Hierarchical Reasoning Model (HRM)
+
+**TL:DR:**
+
+The Hierarchical Reasoning Model (HRM) is a new AI architecture inspired by the human brain’s multi-scale processing. Unlike traditional large language models that excel at surface pattern recognition, HRM integrates information at different levels of abstraction, enabling stronger logical reasoning and problem solving. Early benchmarks show HRM outperforming state-of-the-art LLMs in tasks that require multi-step reasoning, suggesting a breakthrough in building AI that thinks more like humans.
+
+__Introduction:__
+
+Most current AI systems, including large language models, are good at generating fluent language and identifying statistical patterns in data. However, they often struggle when asked to reason through multi-step problems or reconcile information across different contexts.
+
+The Hierarchical Reasoning Model (HRM) addresses this gap by adopting a structure modeled after how the human brain processes information at multiple levels simultaneously. Instead of treating every prompt as a flat sequence of tokens, HRM builds layers of reasoning from fine-grained details to abstract concepts and integrates them into a solution.
+
+This approach brings AI closer to genuine cognitive flexibility, where reasoning is not just memorized patterns but a structured layered process.
+
+__Key Applications:__
+
+* **Scientific Research:** HRM could accelerate discovery in fields like physics, chemistry, and biology by connecting low-level experimental data with high-level theoretical frameworks.
+
+* **Healthcare Diagnostics:** By reasoning across lab results, patient history, and medical literature, HRM can support doctors in forming more accurate and holistic diagnoses.
+
+* **Complex Decision Support:** Businesses and governments can use HRM to evaluate strategies that require balancing short-term details with long-term consequences such as economic policy or climate planning.
+
+* **Education and Tutoring:** HRM-powered tutors could break down problems into multiple reasoning layers, mirroring how good teachers scaffold understanding for students.
+
+* **AI Alignment and Safety:** A more transparent layered reasoning process could make it easier to audit why AI systems reach certain conclusions, improving accountability and trustworthiness.
+
+__Impact and Benefits__
+
+* **Enhanced Problem Solving:** By integrating multiple levels of abstraction, HRM can handle reasoning tasks that traditional LLMs cannot manage effectively.
+
+* **Closer Brain Inspired Intelligence:** HRM represents a step toward architectures that model not just language, but human cognition itself.
+
+* **Greater Transparency:** The layered reasoning process allows humans to trace how an answer was constructed, improving explainability.
+
+* **Cross Domain Power:** HRM’s flexible reasoning makes it effective in domains ranging from STEM research to policy analysis to creative ideation.
+
+__Challenges__
+
+* **Computational Cost:** The multi-layer reasoning architecture requires more processing power than standard LLMs, which may limit scalability.
+
+* **Evaluation Metrics:** Traditional benchmarks may fail to capture HRM’s strengths. Developing new metrics for reasoning depth and abstraction is essential.
+
+* **Alignment Risks:** A system with advanced reasoning power could more effectively pursue unintended goals if not carefully aligned.
+
+* **Complex Training Data:** Teaching AI to reason hierarchically requires curated datasets that balance detail with abstraction, which is a difficult challenge.
+
+__Conclusion__
+
+The Hierarchical Reasoning Model is more than just another incremental advance in AI. It represents a structural rethinking of how machines can approach problems, not as sequences of tokens but as hierarchies of concepts, details, and abstractions.
+
+By mirroring the brain’s ability to connect granular inputs with big picture reasoning, HRM paves the way for AI systems that are both more capable and more understandable. While challenges remain in cost, evaluation, and alignment, the early performance gains suggest HRM could mark the beginning of a new era of reasoning-centric AI architectures.
+
+In short, HRM offers a path toward AI that does not just generate, it thinks.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[This AI model simulates 1,000 years of the current climate in just one day](https://www.msn.com/en-us/weather/extreme-weather-events/this-ai-model-simulates-1-000-years-of-the-current-climate-in-just-one-day/ar-AA1LbvV4)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Researchers at the University of Washington have created an AI model called the Deep Learning Earth System Model (DLESyM) that can simulate 1,000 years of Earth's current climate in just 12 hours on a single processor. This task would normally require about 90 days on a supercomputer. The model matches or even surpasses traditional CMIP6 climate models in capturing events such as tropical cyclones, Indian summer monsoons, and atmospheric blocking patterns, though it is less effective at representing Atlantic hurricane climate and medium-range forecasts. Importantly, DLESyM is more energy efficient, requires less computational power, and makes advanced climate modeling accessible to researchers without supercomputer access."
+
+![memo](/assets/images/memo16.png) *[Fix damaged art in hours with AI](https://www.technologyreview.com/2025/08/26/1121006/fix-damaged-art-in-hours-with-ai/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "Researchers at MIT have developed an AI-based restoration technique that can repair damaged oil paintings in just a few hours by scanning a cleaned painting, using AI to identify damaged areas and digitally reconstruct missing details, and then printing the digital reconstruction onto a thin transparent polymer “mask” that is aligned and adhered over the original artwork. The process automatically filled in over 5,600 damaged regions using more than 57,000 precise colors in one test on a 15th-century painting, taking just 3.5 hours compared to the roughly 200 hours required by traditional conservation methods."
