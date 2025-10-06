@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "AI Insider #85 2025 - Quantum-Enhanced Social Modeling (QESM)"
+date:   2025-10-03 20:00:00 +0700
+---
+
+## Quantum-Enhanced Social Modeling (QESM)
+
+**TL:DR:**
+
+Quantum-Enhanced Social Modeling (QESM) is an emerging approach that combines quantum-inspired computation with generative and agent-based AI to simulate how social norms, collective behaviors, and rules emerge within societies. By leveraging principles such as superposition, entanglement, and probabilistic reasoning, QESM aims to capture the uncertainty, interdependence, and complexity inherent in human social dynamics. Early research suggests that applying quantum frameworks to social simulations could provide richer insights into cooperation, conflict, and cultural evolution, offering new tools for policy design, economics, and organizational strategy.
+
+__Introduction:__
+
+Modeling social systems has long been one of the hardest challenges in computational science. Traditional models often rely on rigid equations or simplified agent-based simulations that struggle to capture the unpredictability and interconnectedness of real societies. Meanwhile, large-scale AI agents can simulate behavior but risk oversimplifying human decision-making.
+
+QESM introduces a new lens by borrowing from quantum theory, where entities can exist in overlapping states, influence one another nonlocally, and evolve through probabilistic transitions. When applied to social modeling, this perspective allows researchers to represent human behavior not as fixed or binary but as fluid, context dependent, and dynamically entangled with group outcomes.
+
+__Key Applications:__
+
+* **Policy and Governance:** QESM could help policymakers test how new rules or incentives ripple through societies, predicting not just direct effects but emergent norms and unintended consequences.
+
+* **Organizational Strategy:** Companies can use quantum-inspired social simulations to model how teams adopt new technologies, adapt to cultural change, or respond to shifting market conditions.
+
+* **Conflict Resolution and Diplomacy:** By capturing the probabilistic dynamics of negotiation and trust, QESM may provide new insights into peacebuilding, resource sharing, and coalition formation.
+
+* **Cultural and Behavioral Research:** Social scientists can experiment with models that reflect the uncertainty and interdependence of cultural diffusion, moral norms, or viral trends.
+
+__Impact and Benefits__
+
+* **Richer Representations of Human Behavior:** Moves beyond deterministic if-then modeling to probabilistic and context sensitive frameworks.
+
+* **Capturing Emergent Phenomena:** Models entire systems of interaction where new behaviors or rules arise from the collective, not just the individual level.
+
+* **Better Scenario Planning:** Enables decision makers to explore multiple futures simultaneously, reflecting real world uncertainty.
+
+* **Cross-Disciplinary Synergy:** Bridges quantum computing, AI, sociology, political science, and economics into a shared experimental platform.
+
+__Challenges__
+
+* **Interpretability:** Quantum-inspired models can be mathematically complex, making it difficult for policymakers or social scientists to understand outcomes.
+
+* **Data Limitations:** Simulating social systems requires high quality, context aware data that is often incomplete or biased.
+
+* **Computational Demands:** Quantum simulation, even when approximated on classical hardware, can be resource intensive.
+
+* **Validation:** Testing predictions against messy, real world human behavior remains a major hurdle.
+
+__Conclusion__
+Quantum-Enhanced Social Modeling is at the frontier of rethinking how we simulate societies, rules, and collective behavior. Instead of assuming individuals act in isolation or that outcomes are linear and predictable, QESM embraces complexity, uncertainty, and interconnectedness. While still highly experimental, the concept points toward a future where AI does not just analyze static data but helps us understand the living, evolving systems of human cooperation and conflict.
+
+In short, QESM suggests that to model society, we may need to think less like engineers and more like physicists, treating human behavior not as fixed but as dynamic, probabilistic, and entangled.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Cancer researchers find a way around AI's biggest bottleneck: data sharing](https://www.msn.com/en-us/health/other/cancer-researchers-find-a-way-around-ais-biggest-bottleneck-data-sharing/ar-AA1NFFHr)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Researchers at leading U.S. cancer centers have created a federated AI platform that lets machine learning models train across distributed patient datasets without moving or sharing raw data. Each institution keeps its information behind its own firewall, runs local model updates, and contributes only adjusted parameters to a central system. This approach protects privacy, maintains regulatory compliance, and still allows AI systems to benefit from multi-institutional data, which could accelerate cancer research and improve treatment outcomes."
+
+![memo](/assets/images/memo16.png) *[Wikimedia Is Making Its Data AI-Friendly](https://gizmodo.com/wikimedia-is-making-its-data-ai-friendly-2000666150)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "Wikimedia is launching the Wikidata Embedding Project, which will convert its 120 million structured data points into vector form so large language models can more easily use them. Although Wikidata is already machine readable, generative AI systems work better with vector embeddings that cluster semantically related items together, such as “dog” and “puppy.” This project is designed to make Wikimedia’s data more useful for AI development, giving smaller developers easier access to high quality information and helping reduce reliance on large tech firms."
