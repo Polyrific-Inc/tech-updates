@@ -1,0 +1,69 @@
+---
+layout: post
+title:  "AI Insider #86 2025 - Browser-Level Agentic AI (BLAAI)"
+date:   2025-10-10 20:00:00 +0700
+---
+
+## Browser-Level Agentic AI (BLAAI)
+
+**TL:DR:**
+
+Browser-Level Agentic AI (BLAAI) is an emerging concept where AI models can directly interact with digital interfaces such as browsers, web apps, and online tools in the same way a human user would. Instead of relying on APIs or back-end integrations, these systems can click, type, navigate, and make decisions inside real software environments. By combining reasoning with visual understanding and action, BLAAI bridges the gap between limited automation and full digital autonomy. This technology could transform software testing, customer service, data collection, research, and online operations by allowing AI agents to work anywhere a browser can.
+
+__Introduction:__
+
+For years, AI systems have been limited to interacting with digital platforms through structured APIs or scripted integrations. This meant automation was possible only when developers built special connections. Browser-Level Agentic AI changes this by giving models the ability to perceive and interact with interfaces visually and contextually.
+
+BLAAI enables agents to perform real on-screen actions such as scrolling, filling forms, or navigating menus, allowing them to complete workflows across nearly any website or application. Models like Google’s Gemini 2.5 Computer Use and OpenAI’s Agent Kit demonstrate this new frontier, where reasoning, perception, and control come together in one system.
+
+__Key Applications:__
+
+* **Automation Without Integration:** AI agents can carry out end-to-end workflows on existing web tools like CRMs or HR systems without the need for direct software integration.
+
+* **Customer Support and Research:** Agents can search knowledge bases, complete online forms, and retrieve live information to assist users in real time.
+
+* **Quality Assurance and Software Testing:** BLAAI can test user journeys, verify interface functionality, and find bugs by performing real interactions instead of relying on test scripts.
+
+* **E-Commerce and Procurement:** Agents can compare products, confirm stock availability, and even complete purchases across multiple vendor platforms.
+
+* **Digital Operations Management:** Companies can deploy browser agents to handle repetitive online tasks, monitor dashboards, and trigger actions automatically.
+
+__Impact and Benefits__
+
+* **Universal Compatibility:** Because BLAAI operates at the browser level, it can work with almost any online system without custom development.
+
+* **Human-Like Flexibility:** Agents can interpret layouts, pop-ups, and context just as a person would, making automation more reliable.
+
+* **Accelerated Digital Transformation:** Organizations can automate outdated web processes without needing to rebuild their systems.
+
+* **Enhanced Productivity:** Workers gain AI collaborators that handle tedious online workflows, allowing people to focus on decision-making and creativity.
+
+__Challenges__
+
+* **Security and Access Control:** Giving AI agents access to browsers raises questions about credentials, permissions, and data privacy.
+
+* **Reliability:** Web interfaces change frequently, and even small updates can confuse an automated agent if it cannot adapt.
+
+* **Ethical and Legal Considerations:** Autonomous browsing may lead to issues involving scraping policies, user consent, and website terms of service.
+
+* **Computational Cost:** Running real-time reasoning alongside browser control can be resource intensive and slower than using direct data connections.
+
+__Conclusion__
+Browser-Level Agentic AI represents a major step toward true digital autonomy. It allows AI to use computers and the web the same way humans do, opening opportunities for automation across virtually any system. While challenges around governance, ethics, and reliability must be addressed, the potential impact is enormous.
+
+In short, BLAAI turns browsers from static interfaces into dynamic environments where intelligent agents can work, learn, and act just like people.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Minnesota getting new tool to fight wildfires: AI-powered cameras](https://www.msn.com/en-us/news/technology/minnesota-getting-new-tool-to-fight-wildfires-ai-powered-cameras/ar-AA1OadWN)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Minnesota is rolling out AI-powered cameras designed to detect wildfires by scanning a ten-mile radius every minute for signs of smoke, then alerting humans to validate any detections. Two cameras are already active in Mankato and Clear Lake, and by 2026 over 30 more will be deployed statewide. The system is intended to help first responders and utility companies catch fires early, protecting life and infrastructure when every second counts."
+
+![memo](/assets/images/memo16.png) *[Figure AI's New Humanoid Robot Can Fold Your Clothes, Do the Dishes](https://www.pcmag.com/news/figure-ais-new-humanoid-robot-can-fold-your-clothes-do-the-dishes)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "Figure AI has unveiled a new humanoid robot that can perform household chores like folding laundry and doing the dishes. The robot combines advanced manipulation, vision, and control capabilities to operate in home environments, showing progress in robots that can help with daily tasks."
