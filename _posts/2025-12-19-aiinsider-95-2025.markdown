@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "AI Insider #95 2025 - The Rebranding of AGI"
+date:   2025-12-19 20:00:00 +0700
+---
+
+## The Rebranding of AGI
+
+**TL:DR:**
+
+Over the past few weeks, leading AI labs and technology companies have begun moving away from the term Artificial General Intelligence (AGI) and replacing it with more specific, human centered concepts such as Personal Superintelligence, Useful General Intelligence, and Human Aligned Intelligence. This shift reflects a broader change in how the industry frames advanced AI goals. Instead of emphasizing abstract human level intelligence, organizations are focusing on systems that are practical, assistive, controllable, and integrated into real workflows. The rebranding signals a transition from speculative future intelligence toward measurable, deployable capability.
+
+__Introduction:__
+
+For years, AGI has been used as a catch all term to describe an AI system capable of performing any intellectual task a human can. While powerful as a vision, the term has become increasingly vague, controversial, and misaligned with how modern AI systems are actually being built and deployed. Over the past few weeks, several prominent AI companies, researchers, and policy discussions have begun intentionally stepping away from the AGI label.
+
+This shift is not just semantic. It reflects growing recognition that intelligence is not a single finish line and that real world value comes from systems that are specialized, reliable, and aligned with human goals. New terminology emphasizes usefulness, collaboration, and safety rather than abstract benchmarks of human equivalence. As AI capabilities rapidly improve, this reframing helps reset expectations for regulators, businesses, and the public.
+
+__Key Applications:__
+
+* **Enterprise AI Positioning:** Companies are increasingly describing their models as productivity multipliers or decision support systems rather than general intelligence. This helps enterprises adopt AI without fear of uncontrolled autonomy.
+
+* **Product and Platform Design:** New labels like Personal Superintelligence focus attention on AI that adapts to individual users, workflows, and preferences rather than replacing human judgment.
+
+* **Policy and Regulation Alignment:** Moving away from AGI reduces regulatory alarmism and allows policymakers to focus on concrete risks such as data misuse, bias, and accountability.
+
+* **Investor and Market Communication:** Clearer language helps investors understand what systems can actually do today versus speculative future capabilities.
+
+* **Human AI Collaboration Models:** The rebranding emphasizes AI as a collaborator, assistant, or amplifier rather than an independent intelligence competing with humans.
+
+__Impact and Benefits__
+
+* **Clearer Expectations:** More precise terminology reduces confusion about what AI systems are capable of and what they are not.
+
+* **Reduced Fear and Hype:** By avoiding the loaded AGI term, companies can lower public anxiety and unrealistic expectations.
+
+* **Focus on Measurable Value:** The conversation shifts from philosophical debates to real outcomes like efficiency, accuracy, and usability.
+
+* **Improved Trust and Adoption:** Organizations are more willing to deploy AI framed as assistive and controllable rather than autonomous and general.
+
+* **Better Alignment with Current Technology:** Modern AI excels at pattern recognition, reasoning assistance, and tool use. The new language reflects this reality more accurately.
+
+__Challenges__
+
+* **Fragmentation of Terminology:** With many new labels emerging, the ecosystem risks confusion without shared definitions.
+
+* **Marketing Versus Substance:** Some rebranding efforts may be cosmetic rather than tied to meaningful architectural or safety changes.
+
+* **Public Understanding Gap:** The public may struggle to keep up with shifting language, especially if older terms remain in media use.
+
+* **Long Term Vision Tension:** Researchers still pursuing broadly capable systems must balance honest long term goals with near term framing.
+
+* **Regulatory Consistency:** Laws and policies written around AGI may lag behind the evolving language used by industry.
+
+__Conclusion__
+The rebranding of AGI marks a meaningful shift in how advanced AI is discussed, developed, and deployed. Rather than chasing a single abstract definition of general intelligence, the industry is moving toward language that emphasizes usefulness, alignment, and human partnership. This change reflects both technological reality and growing maturity in how AI systems are positioned within society.
+
+As this new framing continues to evolve over the coming weeks, it will likely shape product design, regulation, investment, and public perception. The move away from AGI does not signal reduced ambition. Instead, it signals a focus on building powerful systems that are understandable, controllable, and valuable in the real world.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Data shows that companies of 500 and fewer workers mostly avoided the AI layoffs. They’re making AI work for them](https://www.msn.com/en-ca/money/companies/our-data-shows-that-companies-of-500-and-fewer-workers-mostly-avoided-the-ai-layoffs-they-re-making-ai-work-for-them/ar-AA1SBqHi2)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "New data from the Upwork Research Institute shows that smaller companies with 500 or fewer employees largely avoided the wave of AI-related layoffs that hit larger firms, largely by using AI to augment work rather than replace jobs; these small and mid-sized businesses reported adopting AI tools to improve productivity and innovate without cutting headcount, putting them in a stronger position for growth and competition compared with larger enterprises that have leaned more heavily on automation and layoffs."
+
+![memo](/assets/images/memo16.png) *[Report: AI Is Absolutely Last On The Smart Home Priority List](https://www.forbes.com/sites/johnkoetsier/2025/12/18/report-ai-is-absolutely-last-on-the-smart-home-priority-list/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "A new consumer report finds that when people rank smart home technology priorities, artificial intelligence features consistently place at the bottom, with most homeowners caring far more about ease of use, reliable alerts and notifications, and basic device functionality than AI-driven capabilities; this suggests that while smart devices are widely adopted, users still want simplicity and practical benefits from their connected tech and are not yet prioritizing complex AI enhancements in their everyday homes."
