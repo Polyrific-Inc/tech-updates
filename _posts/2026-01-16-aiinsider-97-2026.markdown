@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "AI Insider #97 2026 - AI Developed by AI Tools (Agentic Coding and AI-Built Software)"
+date:   2026-01-16 20:00:00 +0700
+---
+
+## AI Developed by AI Tools (Agentic Coding and AI-Built Software)
+
+**TL:DR:**
+
+AI is moving from “help me write code” to “help me build the product.” Teams are increasingly using AI coding agents to plan changes, generate and edit files across a repository, run tests, fix errors, and iterate quickly. The result is a new development pattern where AI is not just assisting, but doing a meaningful portion of the implementation work, which compresses build timelines and changes what humans spend time on.
+
+__Introduction:__
+
+For years, AI in software development mostly meant autocomplete, code suggestions, or answering technical questions. Now the workflow is shifting toward agentic building: you describe the goal and constraints, and the AI can navigate a codebase, propose a plan, implement changes, and refine based on feedback. This makes it easier to go from idea to working prototype, and it also allows teams to ship internal tools and experiments much faster than before.
+
+__Key Applications:__
+
+* **Agentic product development:** AI agents can scaffold new features, refactor existing code, generate tests, wire integrations, and handle repetitive development tasks. Instead of one prompt producing one snippet, the agent can do a multi-step sequence and revise until it works.
+
+* **Natural-language-driven building (“vibe coding”):** A growing workflow is building software by describing what you want in plain English and letting the AI generate most of the code. This is especially common for prototypes, quick demos, and internal tools, and it lowers the barrier for non-engineers to create functional software.
+
+* **Spec-driven automation:** Teams are leaning on structured specs and checklists so the AI has a clear target. The AI can then apply that spec across multiple files consistently, which is useful for large changes like renaming patterns, migrating formats, adding logging, or applying consistent validation.
+
+__Impact and Benefits__
+
+* **Faster iteration loops:** When AI can implement and revise quickly, teams can test more ideas per week. This helps with prototyping, product discovery, and shipping improvements without the same manual effort.
+
+* **More people can build useful software:** As agentic tools get easier to use, more roles can create lightweight tools and automations, especially for internal workflows where speed matters more than perfect engineering.
+
+* **Humans shift toward oversight and product judgment:** Developers spend more time on architecture, constraints, review, and testing discipline, and less time typing boilerplate. The “work” becomes directing, verifying, and integrating rather than writing every line.
+
+__Challenges__
+
+* **Quality and maintainability risk:** AI-generated code can be inconsistent, overly complex, or hard to maintain if it is not guided by strong patterns. Fast shipping can create long-term technical debt.
+
+* **Security and correctness:** AI can introduce subtle vulnerabilities or logic errors. The risk is higher when people trust outputs too quickly or skip review and testing.
+
+* **Overconfidence and tool limits:** Agents can sound certain while being wrong, and they still struggle with ambiguous requirements, edge cases, and messy real-world constraints. They are powerful, but not fully autonomous.
+
+__Conclusion__
+AI developed by AI tools” is the next phase of AI in software: the AI is not just a helper, it is a builder that can meaningfully accelerate implementation. The teams that benefit most will pair agentic speed with strong guardrails: clear specs, automated tests, security checks, and human review focused on correctness and architecture.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Wikipedia owner signs on Microsoft, Meta in AI content training deals](https://www.msn.com/en-ca/money/topstories/wikipedia-owner-signs-on-microsoft-meta-in-ai-content-training-deals/ar-AA1Ug3z8)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Wikipedia’s nonprofit operator, the Wikimedia Foundation, has announced new paid partnerships with major tech companies including Microsoft, Meta, Amazon, and several AI startups to give them enterprise-grade access to its vast database of articles for training large AI models. These deals mark a move away from unpaid scraping of free Wikipedia content toward a commercial model that helps cover rising server and infrastructure costs, while recognizing that the platform’s human-curated knowledge remains a foundational data source for generative AI systems. The initiative also coincides with leadership changes at Wikimedia as it seeks sustainable funding to support its mission."
+
+![memo](/assets/images/memo16.png) *[AI is moving beyond chatbots. Claude Cowork shows what comes next](https://www.msn.com/en-us/news/other/ai-is-moving-beyond-chatbots-claude-cowork-shows-what-comes-next/ar-AA1UhSw1)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The latest evolution in AI is shifting beyond simple conversational tools toward systems that can perform real work on users’ behalf, and Claude Cowork exemplifies this shift. Unlike standard chatbots that only respond to prompts, Claude Cowork is designed as an agentic AI partner that can plan multi-step tasks, interact with files and workflows, and execute actions autonomously rather than just generate text. Built on the capabilities of Claude Code but packaged with a more user-friendly interface, Cowork aims to embed AI deeper into everyday productivity and knowledge work, signaling a broader trend where AI transitions from reactive assistants to proactive collaborators capable of doing substantive work rather than just chatting."
