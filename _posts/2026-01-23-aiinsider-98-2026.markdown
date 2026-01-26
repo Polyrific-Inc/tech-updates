@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "AI Insider #98 2026 - AI in Consumer and Automotive Tech"
+date:   2026-01-23 20:00:00 +0700
+---
+
+## AI in Consumer and Automotive Tech
+
+**TL:DR:**
+
+AI in consumer devices and vehicles is moving from isolated features to always-on, context-aware systems that continuously adapt to users, environments, and preferences. Cars and personal devices are becoming software platforms where AI coordinates interfaces, safety, entertainment, and decision-making in real time, rather than just responding to commands.
+
+__Introduction:__
+
+For years, AI in consumer tech and automobiles showed up as narrow features like voice assistants, lane-keeping, or recommendation systems. Over the past year, and especially recently, the shift has been toward integrated AI layers that sit at the center of the product experience. These systems combine perception, personalization, and decision logic to make devices feel more responsive, proactive, and adaptive. In vehicles, this means AI acting as a co-pilot that understands context, not just a tool you talk to.
+
+__Key Applications:__
+
+* **Context-aware in-car assistants:** Modern automotive AI assistants are evolving beyond simple voice commands. They can understand driving context, user habits, location, and vehicle state to suggest routes, adjust cabin settings, manage notifications, and surface information at the right moment without explicit prompts.
+
+* **Software-defined vehicles:** Cars are increasingly treated as updatable software platforms. AI helps manage over-the-air updates, optimize vehicle performance, personalize interfaces for different drivers, and coordinate multiple onboard systems like navigation, entertainment, and driver assistance under one intelligence layer.
+
+* **AI-driven personalization in consumer devices:** In phones, wearables, and home devices, AI models learn individual usage patterns to tailor interfaces, notifications, battery usage, and content. The goal is to reduce friction by anticipating needs instead of requiring constant manual input.
+
+* **Multimodal interaction:** Consumer and automotive AI systems are combining voice, touch, gesture, camera, and sensor data into a single interaction model. This allows more natural control, such as speaking while driving, glancing at a display for confirmation, or having the system infer intent from behavior rather than commands.
+
+__Impact and Benefits__
+
+* **More intuitive user experiences:** By understanding context and intent, AI reduces the need for menus, settings, and manual adjustments. Devices and vehicles feel easier to use because they adapt automatically instead of asking users to configure everything.
+
+* **Continuous improvement after purchase:** Software-defined, AI-driven products can improve over time through updates. New features, better performance, and refined behavior can be delivered without replacing hardware, extending product lifespan and value.
+
+* **Safer and less distracting interactions:** In vehicles especially, AI can reduce cognitive load by surfacing only relevant information and handling tasks automatically. This supports safer driving by minimizing distractions and unnecessary interactions.
+
+__Challenges__
+
+* **Trust and transparency:** As AI systems make more decisions on behalf of users, it becomes harder to understand why something happened. Poor transparency can reduce trust, especially in safety-critical environments like vehicles.
+
+* **Data privacy and ownership:** Consumer and automotive AI relies heavily on personal and behavioral data. Managing consent, storage, and usage responsibly is critical to avoid misuse and regulatory issues.
+
+* **Reliability in real-world conditions:** AI systems must handle edge cases like unusual environments, conflicting signals, or unexpected user behavior. Failures in consumer devices are annoying, but failures in vehicles can be dangerous, raising the bar for testing and validation.
+
+__Conclusion__
+AI in consumer and automotive tech is shifting from feature-level intelligence to system-level intelligence. Devices and vehicles are becoming adaptive platforms that learn, anticipate, and coordinate across multiple functions. The biggest gains will come from balancing intelligence with reliability, privacy, and clarity, ensuring that AI enhances everyday experiences without becoming unpredictable or intrusive.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Real-time AI tracks sustainable seafood as High Seas Treaty kicks in](https://www.reuters.com/sustainability/real-time-ai-tracks-sustainable-seafood-high-seas-treaty-kicks--ecmii-2026-01-20/)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "A landmark global High Seas Treaty came into effect on January 17, 2026, giving nations a legally binding framework to protect biodiversity in international waters and work toward a goal of safeguarding 30% of the ocean by 2030. At the same time, new artificial intelligence technology is being used to improve sustainable seafood monitoring by analyzing fishing vessel footage in real time, cutting review times from months to minutes and helping detect illegal, unreported and unsustainable fishing. The Edge AI system being trialed on tuna long-line vessels can identify species caught, flag under-reporting by comparing AI results with electronic logs, and assign risk scores using location and by-catch data, supporting better transparency and supply-chain verification. The technology has won support from initiatives like the Bezos Earth Fund and is part of broader efforts, including the Tuna Transparency Pledge, to achieve comprehensive monitoring of industrial fishing fleets."
+
+![memo](/assets/images/memo16.png) *[AI and nuclear energy feature strongly in agenda-setting technologies for 2026](https://www.nature.com/articles/d41586-026-00185-9)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The editorial highlights Nature’s annual list of emerging technologies to watch in 2026, noting that artificial intelligence and nuclear energy are particularly prominent among innovations likely to shape science and society in the year ahead. It frames the list as a way to both celebrate technological progress and stimulate further research into opportunities and risks as these technologies mature and potentially scale into broader use. The piece underscores that such technologies, when sufficiently developed, can have significant practical impact across fields and influence future research agendas."
