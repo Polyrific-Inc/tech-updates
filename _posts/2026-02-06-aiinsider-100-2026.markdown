@@ -1,0 +1,59 @@
+---
+layout: post
+title:  "AI Insider #100 2026 - AI Autonomy in Space Exploration"
+date:   2026-02-06 20:00:00 +0700
+---
+
+## AI Autonomy in Space Exploration
+
+**TL:DR:**
+
+Space missions are beginning to hand real operational decisions to AI, not just data analysis. A recent milestone was NASA’s Perseverance rover completing drives on Mars using routes planned by an AI system, showing how autonomous systems can plan, validate, and execute actions with far less human micromanagement.
+
+__Introduction:__
+
+For decades, space robotics relied on careful human-in-the-loop control because mistakes are expensive and communication delays make real-time steering impossible. What is changing now is the quality of onboard perception combined with intelligent planning. Instead of humans manually plotting every safe waypoint, AI systems can interpret imagery and terrain models, propose routes, and help missions move faster between science targets. Perseverance’s recent AI-planned drives illustrate the shift from autonomy as simple assistance to autonomy as a core part of mission operations.
+
+__Key Developments:__
+
+* **AI-generated route planning:** The rover has long been able to avoid obstacles while driving, but the new step is AI planning the route itself by analyzing terrain and selecting waypoints, reducing dependence on human route planners.
+
+* **Vision-based understanding of terrain:** Modern models can interpret rocks, slopes, ripples, and shadows and translate those visual cues into navigation decisions rather than relying only on pre-labeled maps.
+
+* **Simulation before execution:** AI-produced plans are tested in virtual rover environments before being used in the real world, helping catch unsafe paths and reduce risk.
+
+* **Longer autonomous traverses:** With better planning, rovers can travel farther per sol and reach more science targets without waiting for step-by-step instructions from Earth.
+
+__Real-World Impact__
+
+* **Faster exploration under communication delays:** Better autonomy allows rovers to make meaningful progress even when contact with Earth is limited or delayed.
+
+* **A foundation for future missions:** Techniques proven on Mars can be applied to lunar surface operations, asteroid missions, and eventually deep-space exploration where constant human oversight is impossible.
+
+* **Spillover to Earth industries:** Advances in autonomous navigation for space often translate into improvements for robotics, logistics, and safety-critical automation on Earth.
+
+__Challenges__
+
+* **Trust and interpretability:** Teams must understand why an AI chose a particular route and what risks it evaluated, especially in unfamiliar terrain.
+
+* **Verification overhead:** Testing and validating AI plans can become a bottleneck if simulation and review processes are too slow.
+
+* **Human accountability:** Even when AI proposes actions, humans remain responsible for mission outcomes, requiring conservative deployment and clear operational boundaries.
+
+__Conclusion__
+AI autonomy in space is shifting from simply executing instructions to helping decide what to do and how to do it safely. Perseverance’s AI-planned drives show how perception, planning, and simulation-backed validation can work together to enable faster, more adaptive exploration. This pattern is likely to define the next generation of robotic missions beyond Earth.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Why Generative AI Is Becoming The Most Deployed AI Tool In The Workplace](https://www.forbes.com/councils/forbesbusinesscouncil/2026/02/05/why-generative-ai-is-becoming-the-most-deployed-ai-tool-in-the-workplace/)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The article basically argues that generative AI is becoming the most widely deployed form of AI at work because it solves a very simple problem: it helps a lot of people do a lot of different tasks faster without requiring deep technical setup. Instead of being a narrow, specialized system, generative AI can write, summarize, brainstorm, analyze, and automate everyday knowledge work across departments, which makes it immediately useful to marketing, operations, finance, HR, and engineering alike. Because it plugs easily into existing tools and workflows, companies are adopting it as a general productivity layer rather than a standalone experiment, and that ease of use plus broad applicability is what’s driving its rapid spread across the workplace."
+
+![memo](/assets/images/memo16.png) *[Man who videotaped himself BASE jumping in Yosemite arrested, federal officials say. He says it was AI](https://www.msn.com/en-us/news/crime/man-who-videotaped-himself-base-jumping-in-yosemite-arrested-federal-officials-say-he-says-it-was-ai/ar-AA1VLHfI)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "A California man named Jack Propeck has been federally charged for allegedly BASE jumping off Glacier Point in Yosemite National Park during the government shutdown last year, an activity that is illegal in national parks. Investigators tied him to the jump after someone reported an Instagram video showing the act, and vehicle tracking data placed his car in the park at the same time. When questioned by a ranger, Propeck denied being the person in the footage and claimed he had used artificial intelligence to superimpose his face onto the video. He is expected to appear in federal court and could face fines or up to six months in jail if convicted. The case highlights how increasingly realistic AI manipulation tools are now being invoked in real-world legal situations, complicating how authorities evaluate video evidence and claims of authenticity."
