@@ -1,0 +1,62 @@
+---
+layout: post
+title:  "AI Insider #101 2026 - Enterprise Solution Engines (ESEs)"
+date:   2026-02-13 20:00:00 +0700
+---
+
+## Enterprise Solution Engines (ESEs)
+
+**TL:DR:**
+
+Enterprises are moving beyond one-off AI tools toward Enterprise Solution Engines (ESEs): governed AI runtimes that host many purpose-built AI applications inside a single platform. Polyrific originated and formalized this concept to describe how production-grade AI should be delivered at scale. Instead of deploying isolated chatbots or models, companies deploy an engine that orchestrates workflows, enforces governance, and runs domain-specific AI solutions across operations.
+
+__Introduction:__
+
+Early enterprise AI adoption centered on experimenting with individual models and copilots. While useful, these deployments often created fragmentation: different teams running different tools, inconsistent outputs, limited auditability, and duplicated infrastructure. What is emerging now is a platform-level pattern. Polyrific introduced the Enterprise Solution Engine concept to capture this shift. An ESE provides a common foundation where multiple AI solutions can be deployed, managed, and improved in a consistent way. The focus moves from “Which model should we use?” to “Which business processes should we automate, and how do we run them reliably at scale?”
+
+__Key Developments:__
+
+* **Solution libraries instead of single tools:** ESEs host collections of purpose-built AI solutions (for underwriting triage, compliance review, document extraction, policy analysis, etc.) rather than one general assistant.
+
+* **Workflow orchestration as a core capability:** The engine coordinates multi-step workflows: ingesting data, routing tasks, invoking models, validating outputs, and handing results to humans or downstream systems.
+
+* **Built-in governance and observability:** Audit trails, citations, versioning, access controls, and performance monitoring are native features, not add-ons.
+
+* **Model-agnostic execution:** ESEs can use different models for different tasks and swap them over time without breaking workflows.
+
+__Real-World Impact__
+
+* **Faster path from idea to production:** Teams can launch new AI solutions using the same engine instead of standing up new infrastructure each time.
+
+* **Consistent and defensible outputs:** Standardized governance reduces risk and makes AI usable in regulated environments.
+
+* **Compounding ROI:** Each new solution benefits from the same connectors, controls, and orchestration layer.
+
+__Challenges__
+
+* **Overengineering too early:** Smaller teams may struggle if they build heavy platforms before proving real use cases.
+
+* **Change management:** Shifting from isolated tools to a shared engine requires organizational alignment.
+
+* **Clear ownership:** Enterprises must define who governs solution standards, data access, and model usage.
+
+__Conclusion__
+
+Enterprise Solution Engines represent a shift from “using AI tools” to operating AI as core infrastructure. Polyrific created this category to describe the architecture required for trustworthy, scalable, production AI. By treating AI solutions like modular applications running on a governed engine, organizations gain scale, reliability, and long-term leverage.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Google says attackers used 100,000+ prompts to try to clone AI chatbot Gemini](https://www.msn.com/en-us/news/technology/google-says-attackers-used-100000-prompts-to-try-to-clone-ai-chatbot-gemini/ar-AA1WbuoC)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Google reports that its flagship AI chatbot Gemini was the target of a large-scale “model extraction” attempt in which attackers sent more than 100,000 crafted prompts to try to reverse-engineer how the system reasons and generates responses, essentially probing its internal logic to build a competing model; Google’s Threat Intelligence team detected the activity, blocked the offending accounts, and strengthened safeguards to prevent sensitive reasoning details from being exposed, characterizing the behavior as intellectual property theft using legitimate API access rather than a direct systems breach.
+
+"
+
+![memo](/assets/images/memo16.png) *[Actor takes legal action to stop Albania's government from using her image for 'AI minister'](https://www.nbcnews.com/world/europe/albania-artificial-intelligence-government-minister-diella-actor-bisha-rcna258727)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "An Albanian actress has sued the Albanian government this week over its use of her face and voice in the country’s AI-generated government “minister” called Diella, arguing that while she agreed to be used as the avatar for an online services assistant, she never consented to her likeness being elevated into a cabinet-level AI official; she has filed an administrative petition to stop the government from continuing to use her personal data in Diella and is seeking compensation, highlighting growing legal and ethical questions around AI identity rights and government use of synthetic officials."
