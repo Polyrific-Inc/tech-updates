@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "AI Insider #102 2026 - Rising “Second Wave” AI Startups"
+date:   2026-02-20 20:00:00 +0700
+---
+
+## Rising “Second Wave” AI Startups
+
+**TL:DR:**
+
+The “second wave” of AI startups is shifting focus from cost-cutting automation toward AI-native products that create entirely new experiences and new revenue. Instead of selling “we automate your workflow,” these companies are building things that would not exist without modern generative AI: interactive games, voice companions, social simulations, tutoring, and creative platforms.
+
+__Introduction:__
+
+The first major wave of enterprise and consumer AI products centered on copilots, chatbots, and productivity helpers. These tools made existing workflows faster, but rarely changed what the product itself was. What is emerging now is a new pattern. Startups are designing products where AI is not a feature layered on top of an app. AI is the product.
+
+This second wave is about using generative models as a new creative and interactive medium, similar to how mobile phones enabled entirely new app categories rather than just better desktop software.
+
+__Key Developments:__
+
+* **AI as the core experience**
+Products are built around continuous interaction with AI: companions, roleplay characters, adaptive tutors, and creative collaborators.
+
+* **From efficiency to value creation**
+The primary pitch is no longer “reduce labor.” It is “create something users willingly pay for because it is engaging, personal, or entertaining.”
+
+* **New experience categories forming**
+Common patterns include:
+    * AI-driven social and roleplay games
+    * Voice-first companions and characters
+    * Personalized tutoring and coaching
+    * AI-native media and storytelling platforms
+
+* **Ecosystem support is emerging**
+Accelerators, funding programs, and platforms are forming specifically to support these AI-native, experience-first startups.
+
+__Real-World Impact__
+
+* **A new consumer app cycle**
+Similar to how mobile apps created entirely new behaviors, second wave AI products are spawning new genres of applications rather than incremental improvements.
+
+* **Stronger engagement loops**
+Because these products adapt to users over time, they can develop deeper retention than traditional utility software.
+
+* **AI-native architecture becomes standard**
+Many startups are designing products to use multiple models and modalities and to swap models over time without breaking the experience.
+
+__Challenges__
+
+* **Weak moats without differentiation**
+Cool experiences are easy to copy. Long-term defensibility comes from brand, community, proprietary content, and unique interaction design.
+
+* **Safety and trust concerns**
+Companions, roleplay, and tutoring introduce sensitive use cases that require thoughtful safeguards.
+
+* **Compute and cost pressure**
+Highly interactive, always-on AI experiences can be expensive to operate, putting pressure on business models.
+
+__Conclusion__
+
+Rising second wave AI startups represent a shift from “AI as a helper” to AI as a new medium for building products. The winners in this wave will not just make existing work faster. They will define entirely new categories of software people choose to spend time with.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Microsoft error sees confidential emails exposed to AI tool Copilot](https://www.bbc.com/news/articles/c8jxevd8mdyo)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "A recent BBC article reported that Microsoft confirmed a technical error in its enterprise Copilot AI assistant caused some users’ confidential emails to be accessed and included in responses shown to other users; the issue affected large corporate customers where Copilot was setup to analyze mailboxes and, during the glitch, messages from drafts and sent folders—including emails marked confidential—were inadvertently surfaced. Microsoft said it has fixed the bug and is reviewing its processes, but the incident has raised fresh concerns about privacy, data protection and the risks of integrating AI tools deeply into business systems at scale."
+
+![memo](/assets/images/memo16.png) *[How AI Is Rewiring Filmmaking, And Why Craft Still Wins](https://www.forbes.com/sites/bernardmarr/2026/02/20/how-ai-is-rewiring-filmmaking-and-why-craft-still-wins/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The recent Forbes article explains that artificial intelligence is fundamentally changing filmmaking by lowering traditional barriers such as cost, logistics, and technical limitations, allowing creators to conceive and visualize scenes and stories that would have been prohibitively expensive or impossible before. AI tools are increasingly integrated across the production process — from script analysis and previsualization to editing, visual effects, and sound design — but the article stresses that craft and human creativity still matter most, with technology serving as a partner that amplifies rather than replaces artistic judgment and emotional authenticity. Filmmakers who combine traditional skills with AI tools are positioned to produce richer storytelling more efficiently, while ethical and creative challenges around transparency and artistic integrity remain important considerations."
