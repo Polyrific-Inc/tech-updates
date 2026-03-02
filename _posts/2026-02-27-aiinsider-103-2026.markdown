@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "AI Insider #103 2026 - Agentic Vision"
+date:   2026-02-27 20:00:00 +0700
+---
+
+## Agentic Vision
+
+**TL:DR:**
+
+Agentic Vision reframes computer vision from passive image interpretation to active investigation. Instead of producing a single answer from a single glance, the model can zoom, crop, measure, run code, and iteratively inspect visual inputs to ground its conclusions. Vision becomes a multi-step reasoning process rather than a one-shot prediction.
+
+__Introduction:__
+
+Traditional computer vision systems analyze an image once and output labels, detections, or captions. Even multimodal large models typically generate answers based on a single forward pass.
+
+Agentic Vision introduces a different pattern. The model behaves more like an analyst than a classifier. It can decide to zoom into regions, isolate objects, measure distances, inspect text, or perform calculations using code execution. The system treats an image as something to explore rather than something to summarize.
+
+This shifts vision from pattern recognition to structured visual reasoning.
+
+__Key Developments:__
+
+* **Vision as an investigation loop:** Instead of answering immediately, the system can take intermediate steps: crop specific areas, enhance contrast, count elements, or extract text before forming a final answer.
+
+* **Code execution inside the visual workflow:** The model can call tools to measure dimensions, compute angles, calculate ratios, or verify counts. Visual understanding becomes tied to verifiable operations rather than guesswork.
+
+* **Reduced hallucination in visual tasks:** Because the model can inspect specific regions and validate intermediate steps, answers are grounded in observable evidence rather than general visual priors.
+
+* **Improved long-tail handling:** Edge cases in documents, diagrams, maps, charts, and technical imagery can be handled more reliably because the system can focus on relevant areas instead of relying on generalized training patterns.
+
+__Real-World Impact__
+
+* **Technical document analysis:** Engineering diagrams, medical scans, architectural plans, and financial charts can be examined step by step instead of summarized broadly.
+
+* **Safer automation systems:** Robotics, manufacturing inspection, and autonomous systems can benefit from reasoning-based perception rather than purely statistical detection.
+
+* **Better enterprise workflows:** Insurance claim review, compliance checks, and QA processes often rely on image evidence. Agentic Vision enables structured, auditable inspection rather than opaque classification.
+
+* **Education and research:** Students and researchers can use AI to analyze graphs, handwritten notes, or experimental setups with clearer intermediate reasoning.
+
+__Challenges__
+
+* **Latency trade-offs:** Multi-step investigation takes longer than a single inference pass. Systems must balance accuracy with responsiveness.
+
+* **Compute cost:** Zooming, reprocessing, and running code increases operational cost compared to static vision models.
+
+* **Tool reliability:** The quality of results depends on the robustness of integrated tools such as OCR, measurement modules, and image processing pipelines.
+
+* **Security considerations:** Allowing models to execute code inside a reasoning loop introduces governance and sandboxing requirements.
+
+__Conclusion__
+
+Agentic Vision represents a shift from vision models that see once and answer once to systems that look, inspect, verify, and then conclude.
+
+Just as reasoning-focused language models changed expectations around text-based AI, Agentic Vision may redefine how machines interpret and act on visual information. It is not simply better image recognition. It is vision as a structured reasoning process.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Hegseth demands full military access to Anthropic's AI model, sets deadline](https://www.msn.com/en-us/news/us/hegseth-demands-full-military-access-to-anthropics-ai-model-sets-deadline/ar-AA1WZF7o)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "U.S. Defense Secretary Pete Hegseth has issued an ultimatum to AI company Anthropic, giving its CEO until the end of the week to grant the U.S. military unrestricted access to its flagship AI model, Claude, or face consequences including losing a roughly $200 million Pentagon contract, being labeled a “supply chain risk,” or potential action under the Defense Production Act; the standoff stems from Anthropic’s ethical guardrails that limit military use in areas like autonomous weapons and domestic surveillance, and underscores broader tensions between national security demands for AI tools and corporate safety policies as other firms such as xAI have agreed to more permissive military access."
+
+![memo](/assets/images/memo16.png) *[Cursor announces major update to AI agents as coding tool battle heats up](https://www.cnbc.com/2026/02/24/cursor-announces-major-update-as-ai-coding-agent-battle-heats-up.html)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "AI coding platform Cursor has rolled out a major update to its AI coding agents to stay competitive as the market heats up, adding more autonomous capabilities so the agents can test their own code changes, document their work with logs, screenshots, and videos, and operate across multiple environments and interfaces such as web, desktop, mobile, Slack, and GitHub; the improvements come as rivals including Anthropic, OpenAI, and Microsoft push their own developer AI tools and as Cursor’s valuation has climbed into the tens of billions while it works to maintain momentum in a crowded and fast-evolving field."
