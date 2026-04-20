@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "AI Insider #107 2026 - Protocol-Driven AI"
+date:   2026-04-17 20:00:00 +0700
+---
+
+## Protocol-Driven AI
+
+**TL:DR:**
+
+Protocol-driven AI is the shift toward building AI systems that operate through standardized ways of connecting to tools, data, services, and other agents. Instead of relying on custom integrations for every use case, protocols create a common structure for how models access capabilities, exchange information, and take action. The result is AI that is easier to connect, scale, and govern across real business environments.
+
+__Introduction:__
+
+As AI systems become more capable, the challenge is no longer just generating strong responses. The bigger challenge is helping those systems work reliably with the rest of the digital world. Most organizations run on a mix of software, databases, workflows, APIs, internal tools, and third-party platforms. For AI to become truly useful in those environments, it needs a dependable way to interact with them.
+
+That is where protocol-driven AI comes in. Instead of wiring every model to every tool through custom logic, protocol-driven approaches create shared rules for how AI systems communicate with external capabilities. These protocols define how an agent can access a tool, request data, pass context, and receive structured outputs.
+
+This shifts AI from being just a standalone interface into being part of a broader system of work. The model is no longer the whole product. It becomes one component inside a larger architecture that includes tool access, permissions, orchestration, and communication standards. In practice, this makes AI more practical for enterprise use because it can plug into real systems in a more repeatable and governed way.
+
+__Key Developments:__
+
+* **Standardized tool connectivity:** One of the biggest changes is the rise of common ways for AI systems to connect to tools and data sources. Rather than building a separate integration for every use case, teams are increasingly looking for shared connection standards that let models interact with many services in a more uniform way.
+
+* **Structured inputs and outputs:** Protocol-driven systems emphasize predictable formats for requests and responses. This makes it easier for AI systems to call tools, interpret results, and move information through a workflow.
+
+* **Interoperable agent ecosystems:** As more organizations experiment with multiple agents or modular AI systems, interoperability becomes more important. Protocols make it easier for different agents, services, and components to work together without every connection being manually built from scratch.
+
+* **Governed access to capabilities:** Protocols also support clearer rules around permissions, authentication, auditing, and usage boundaries. That matters because as agents gain the ability to act in systems, companies need more control over what they can access and what they are allowed to do.
+
+__Real-World Impact__
+
+* **Faster enterprise integration:** Businesses can connect AI to their existing tools more efficiently when interactions follow shared standards instead of one-off builds for every workflow.
+
+* **More scalable AI deployments:** Protocol-driven systems are easier to expand across teams, departments, and use cases because the underlying connection method is more repeatable and less fragile.
+
+* **Better coordination across systems:** AI becomes more useful when it can move between data sources, business tools, and operational platforms in a consistent way. Protocols help make that coordination possible.
+
+* **Improved reliability and control:** Standardized communication makes AI behavior easier to monitor, validate, and manage. That becomes more important as organizations move from experimentation into production use.
+
+__Challenges and Risks__
+
+* **Competing standards:** The market is still evolving, which means different protocols and frameworks may compete for adoption. That can create fragmentation before the industry settles around more common approaches.
+
+* **Complexity under the surface:** Protocols make systems more scalable, but they do not eliminate technical complexity. Teams still need to decide how tools are exposed, how permissions are handled, and how failures are managed.
+
+* **Security exposure:** The more connected an AI system becomes, the more important it is to secure those connections. If protocols are not governed carefully, agents may gain access to tools or data in risky ways.
+
+* **Governance and accountability:** When AI systems can act across multiple tools and services, organizations need clear oversight around what actions were taken, why they happened, and who is responsible for them.
+
+__Conclusion__
+
+Protocol-driven AI represents an important shift in how AI systems are being built and deployed. It reflects the understanding that real AI value does not come from the model alone. It comes from the model’s ability to work effectively inside a larger ecosystem of tools, data, workflows, and services.
+
+As AI moves deeper into enterprise operations, protocols will become a foundational part of the stack. The next generation of AI systems will not just answer questions well. They will connect, coordinate, and act through shared structures that make them more scalable, governable, and useful in the real world.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Val Kilmer's AI-generated likeness leads as Deep as the Grave trailer](https://www.msn.com/en-us/entertainment/news/val-kilmers-ai-generated-likeness-leads-as-deep-as-the-grave-trailer/ar-AA20Yl71)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The article says the new trailer for As Deep as the Grave has sparked attention because it features an AI-generated version of Val Kilmer in a major role nearly a year after his death. Kilmer had originally been cast as Father Fintan, but because his health declined before filming, the filmmakers later rebuilt his performance using archival footage, voice material, and other past recordings with the approval and involvement of his children and estate. The project was unveiled at CinemaCon and has triggered debate online, with some viewers calling it unsettling while the filmmakers argue it was done respectfully, followed union guidelines, and reflects Kilmer’s own interest in using AI as a storytelling tool."
+
+![memo](/assets/images/memo16.png) *[Why so many Americans are using AI for health guidance](https://www.pbs.org/newshour/health/why-so-americans-are-using-ai-for-health-guidance)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The piece explains that more Americans are turning to AI for health guidance because it offers fast, easy, and low-cost answers in a healthcare system that can be expensive, slow, and hard to navigate. It says many people use AI to help decide whether symptoms are serious, prepare for doctor visits, understand diagnoses, or get a second layer of information after appointments, with younger adults and people facing access barriers especially likely to try it. At the same time, the article stresses that trust remains limited, privacy concerns are significant, and medical experts warn that AI can be useful for support but should not replace a doctor because it can still give incomplete or inaccurate advice."
