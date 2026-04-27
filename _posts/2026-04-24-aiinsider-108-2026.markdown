@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "AI Insider #108 2026 - Deep-Reporter"
+date:   2026-04-24 20:00:00 +0700
+---
+
+## Deep-Reporter
+
+**TL:DR:**
+
+Deep-Reporter is an emerging AI concept focused on helping research agents produce long-form reports that are grounded not just in text, but also in real visual evidence such as charts, diagrams, tables, and infographics. Instead of treating images as optional add-ons, it makes multimodal evidence part of the research and writing process itself, aiming to create reports that are more factual, coherent, and useful.
+
+__Introduction:__
+
+As AI research tools become more capable, the next challenge is not just finding information, but turning it into complete, trustworthy reports. Most deep research systems today still work primarily through text. They search the web, retrieve passages, and synthesize written answers. But in real-world analysis, some of the most important evidence is visual. Charts show trends, diagrams explain systems, tables compare options, and infographics compress complex information into something faster to understand. The Deep-Reporter concept emerges from the idea that truly useful AI research should be able to find, filter, and incorporate those visual elements alongside written sources. In that sense, it pushes deep research from being text-centric into being genuinely multimodal.
+
+__Key Developments:__
+
+* **Multimodal agentic search:** Deep-Reporter introduces a framework where the system does not just retrieve text passages. It also searches for visual evidence such as charts, infographics, and diagrams, then filters those items for relevance and usefulness within a report.
+
+* **Checklist-guided incremental synthesis:** A major part of the concept is how the report gets written. Rather than generating everything in one pass, the system uses a structured checklist and section-by-section writing process to keep the report coherent while deciding where visual elements should appear and how they should support the written narrative.
+
+* **Recurrent context management:** Long reports often break down because the model loses track of earlier sections or becomes repetitive. Deep-Reporter introduces recurrent context handling to balance full-report coherence with local section quality, helping the model stay organized over longer outputs.
+
+* **New benchmark for evaluation:** The concept also includes a benchmark called M2 LongBench, which is designed to evaluate whether an AI system can actually retrieve and integrate both text and visual information effectively across long-form research tasks.
+
+* **Training with curated research traces:** The system was developed using a large set of high-quality research traces that show how an AI agent can plan, retrieve multimodal evidence, and assemble grounded reports. That matters because one of the biggest barriers to better research agents is the lack of strong examples of what good multimodal research behavior looks like.
+
+__Real-World Impact__
+
+* **Stronger research reporting:** If this concept matures, AI research tools could move beyond text summaries and produce reports that feel more like analyst deliverables, with visuals placed where they actually strengthen the explanation.
+
+* **Better factual grounding:** By using real retrieved visual evidence instead of generating visuals from scratch, Deep-Reporter aims to improve factual grounding and reduce the risk of polished but misleading outputs.
+
+* **More useful enterprise research workflows:** In business settings, stakeholders often need more than an answer. They need a structured report with supporting material they can quickly scan, share, and present. A system built on the Deep-Reporter idea could make AI-generated research more practical for strategy, market analysis, competitive intelligence, and internal reporting.
+
+* **Improved multimodal reasoning:** The concept also points toward a broader future where AI does not just understand text and images separately, but uses them together as part of one continuous reasoning and communication process.
+
+__Challenges and Risks__
+
+* **Difficulty of multimodal selection:** Finding relevant visuals is harder than finding relevant text. A system may retrieve images that look impressive but do not actually support the report’s argument.
+
+* **Context complexity:** Working with long reports is already difficult. Adding images, tables, and visual references makes context management even harder, especially when the system must preserve coherence across multiple sections.
+
+* **Static evaluation limits:** The benchmark associated with the concept uses a controlled multimodal environment rather than the live web. That improves fairness and reproducibility, but it also means the framework is not yet the same as a live production research system working in constantly changing real-world environments.
+
+* **English-only scope:** The current work is focused on English. Expanding multimodal deep research systems across languages and regions is still an open challenge.
+
+__Conclusion__
+
+Deep-Reporter represents an important new direction in AI research systems. It reflects a shift away from the idea that deep research is mainly about retrieving text and writing summaries. Instead, it suggests that the next generation of research agents should be able to gather, filter, and integrate visual evidence as a core part of long-form generation. That makes the concept especially important because real-world analysis is rarely text only. As AI moves further into enterprise knowledge work, systems like Deep-Reporter point toward a future where AI-generated reports become more grounded, more structured, and more aligned with how people actually consume serious information.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Watch Sony’s AI Robot Compete With—and Beat—Elite Table Tennis Players](https://gizmodo.com/watch-sonys-ai-robot-compete-with-and-beat-elite-table-tennis-players-20007493461)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Sony AI’s new table tennis robot, Ace, shows how far physical AI has advanced by using real-time perception, control, and agility to rally with and sometimes beat elite human players under official table tennis rules; in tests it won three of five matches against highly experienced elite players and later improved enough to beat some professionals, though it still lost full matches to top pros overall, making the bigger story less about sports domination and more about what this kind of fast, precise human-robot interaction could mean for future applications in areas that require safe, responsive physical coordination."
+
+![memo](/assets/images/memo16.png) *[US government ramps up mass surveillance with help of AI tech, your apps](https://www.salon.com/2026/04/23/us-government-ramps-up-mass-surveillance-with-help-of-partner/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The article argues that the U.S. government is rapidly expanding mass surveillance by combining AI with huge amounts of commercial and government data, including information collected through phones, cars, apps, cameras, wearables, and data brokers. It says agencies like DHS, ICE, and the FBI are using AI-powered analytics, biometric tools, predictive systems, and purchased consumer data to monitor people more efficiently, while legal protections and oversight have not kept pace. The piece’s broader point is that AI is making surveillance faster, broader, and more actionable, especially as the line between private-sector data collection and government use becomes more blurred."
