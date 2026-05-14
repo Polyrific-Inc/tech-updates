@@ -1,0 +1,74 @@
+---
+layout: post
+title:  "AI Insider #109 2026 - Agent Wallets"
+date:   2026-05-08 20:00:00 +0700
+---
+
+## Agent Wallets
+
+**TL:DR:**
+
+Agent wallets are an emerging AI infrastructure concept that gives autonomous AI agents a safe, controlled way to make payments on behalf of users or businesses. Instead of handing an AI agent raw credit card details, users can authorize limited payment access through virtual cards, tokens, approval flows, spending controls, and transaction visibility. The larger idea is that as AI agents move from answering questions to completing real tasks, they will need secure financial rails that let them book, buy, renew, subscribe, and transact without creating major fraud, privacy, or control risks.
+
+__Introduction:__
+
+As AI agents become more capable, one of the biggest practical barriers is payment. An agent can search for flights, compare hotels, find software tools, manage subscriptions, or reorder supplies, but it still needs a safe way to complete the transaction. Until recently, that meant either stopping and asking the human to pay manually or giving the agent access to sensitive payment credentials. Agent wallets are emerging as a middle layer between those two extremes. They give agents the ability to pay, but only within specific rules set by the user or organization.
+
+The concept became especially relevant after Stripe launched Link’s wallet for agents, which lets AI agents access Link programmatically and generate one-time-use cards or Shared Payment Tokens backed by a user’s existing cards or bank accounts. Stripe says the agent does not receive raw payment credentials, which is the central idea behind this new infrastructure layer.
+
+__Key Developments:__
+
+* **Virtual cards for AI agents:** A major development is the use of virtual cards specifically designed for agent transactions. Instead of giving an AI agent a real card number, the system can generate a limited-use card for a specific purchase or task. Stripe’s agent wallet is built on Issuing for agents, which supports virtual cards, real-time authorization, spending controls, and transaction visibility.
+
+* **Shared Payment Tokens:** Another important development is token-based access. Stripe’s Link wallet for agents supports Shared Payment Tokens, which allow an agent to complete payments using credentials backed by the user’s existing wallet without exposing the actual card or bank account information. This makes the payment credential more controlled and less risky than giving an agent direct access to sensitive financial details.
+
+* **Human approval flows:** Agent wallets do not necessarily mean fully autonomous spending. In many cases, the agent can prepare the transaction, then loop back to the user for approval before the payment is completed. Stripe describes agentic commerce as beginning with human instructions, followed by agent execution, and then user approval before final payment.
+
+* **Enterprise agentic commerce infrastructure:** Agent wallets are also becoming part of broader agentic commerce systems. Stripe’s Agentic Commerce Suite lets businesses sell through AI agents by uploading product catalogs and managing agent access through the Stripe Dashboard. The point is not just that agents can buy things, but that merchants can become discoverable, payable, and fraud-protected inside AI-driven shopping experiences.
+
+* **Payment network involvement:** Major payment networks are also moving into this space. Visa has introduced Visa Intelligent Commerce, which is designed to help AI partners build secure agentic shopping and payment experiences. Mastercard has also launched Agent Suite to help organizations integrate agentic AI into operations, including commerce and payment-related workflows.
+
+__Real-World Impact__
+
+* **AI agents can complete more useful tasks:** Agent wallets make AI agents more practical because they remove a major stopping point. An agent that can only recommend a hotel is helpful, but an agent that can compare options, confirm availability, request approval, and book the room is much more useful. This shifts AI from advice into execution.
+
+* **Safer spending without exposing credentials:** The biggest value is control. Users can allow agents to spend without giving away raw payment details. Virtual cards, tokenized credentials, one-time-use cards, and approval steps reduce the risk of an agent accidentally leaking or misusing sensitive financial information.
+
+* **More automation for business operations:** In enterprise settings, agent wallets could support tasks like renewing software subscriptions, ordering supplies, paying vendors, purchasing data access, booking travel, or managing recurring operational expenses. The agent does the work, but the organization keeps visibility and policy control over what is being purchased.
+
+* **New commerce channel for merchants:** For merchants, AI agents could become a new kind of buyer interface. Instead of optimizing only for human shoppers browsing websites, companies may need to make their products discoverable, understandable, and purchasable by agents. This could create a new layer of commerce where agents compare products and initiate payments based on user preferences.
+
+* **Foundation for agentic commerce:** Agent wallets are not just a payment feature. They are part of a larger shift toward agentic commerce, where AI systems search, compare, negotiate, purchase, and manage transactions. Payments are the infrastructure that turns an agent from a recommendation engine into an action engine.
+
+__Challenges and Risks__
+
+* **Fraud and unauthorized spending:** The biggest risk is that agents may make purchases users did not intend, misunderstand instructions, or be manipulated by malicious websites. Without strong permissions, spending limits, and transaction review, agent wallets could create new fraud and abuse pathways.
+
+* **Agent identity and authentication:** Merchants and payment networks need to know when a transaction is coming from a human, an AI agent acting for a human, or a fully automated business process. Visa’s Intelligent Commerce and related agent payment efforts point toward the need for trusted identity, authentication, and permissioning standards for agent-initiated transactions.
+
+* **Merchant control and dependency risk:** Agentic commerce could create new platform gatekeepers. If a few AI platforms control product discovery, payment routing, and customer interaction, merchants may become dependent on those platforms. Payment orchestration providers have already raised concerns that merchants need to stay in control of fraud, routing, chargebacks, and customer experience as agentic payments grow.
+
+* **User trust:** Even if the payment system is technically secure, people may hesitate to let AI agents spend money for them. Trust will depend on clear approvals, easy-to-understand limits, real-time alerts, receipts, and the ability to stop or reverse agent activity quickly.
+
+* **Complex compliance requirements:** Payments already involve identity, fraud prevention, dispute management, privacy, and financial regulation. Adding AI agents introduces new questions about liability. If an agent buys the wrong item, falls for a scam, or violates company purchasing rules, it may not be immediately clear who is responsible.
+
+__Conclusion__
+
+Agent wallets represent a major step in the evolution of AI agents. They show that the next phase of AI is not just about smarter models, but about the infrastructure required for agents to safely act in the real world. Payments are one of the clearest examples of this shift. An agent that can research something is useful. An agent that can safely complete a transaction, while staying inside user-defined limits, is much closer to becoming a real digital assistant.
+
+The concept matters because it connects AI autonomy with financial control. As agent wallets mature, they could become one of the core building blocks of agentic commerce, enterprise automation, and personal AI assistance. But the space will only work if trust, identity, permissioning, fraud prevention, and user control are treated as central features rather than afterthoughts.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Spencer Pratt AI video in LA mayor’s race goes viral](https://thehill.com/homenews/campaign/5867936-spencer-pratt-ai-ad-la-mayor-race/)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The article covers a viral AI-generated political ad that Los Angeles mayoral candidate Spencer Pratt reposted on X, where the city is portrayed as a dystopian disaster under current Democratic leadership. The video, reportedly created by filmmaker Charlie Curran, uses dramatic AI imagery like the Hollywood sign on fire, socialist militias in the streets, and political figures such as Karen Bass, Gavin Newsom, and Kamala Harris depicted like detached elites, before showing a Batman-like version of Pratt as the city’s savior. The ad quickly gained millions of views and praise from some political figures, but experts quoted in the coverage warned that viral attention does not necessarily translate into votes, especially in a heavily Democratic city like Los Angeles and in a local economy where many entertainment workers are concerned about AI replacing creative labor. The bigger takeaway is that AI-generated campaign content is becoming cheap, fast, and attention-grabbing, but it also raises questions about credibility, voter persuasion, and how much shock-value political media can actually help a candidate."
+
+![memo](/assets/images/memo16.png) *[Unsolved AI Mystery Is Solved Along With Lessons Learned On Why ChatGPT Became Oddly Obsessed With Gremlins And Goblins](https://www.forbes.com/sites/lanceeliot/2026/05/07/unsolved-ai-mystery-is-solved-along-with-lessons-learned-on-why-chatgpt-became-oddly-obsessed-with-gremlins-and-goblins/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The article explains that ChatGPT’s weird habit of mentioning goblins, gremlins, raccoons, trolls, ogres, pigeons, and other creatures was not random internet folklore or some hidden conspiracy, but an unintended side effect of model training. According to reports on OpenAI’s explanation, the pattern increased after GPT-5.1 and was especially tied to a “Nerdy” personality style, where reward signals accidentally encouraged playful fantasy-style metaphors. OpenAI reportedly investigated the issue, found that those creature references had become unusually frequent, and added direct instructions telling the model not to bring them up unless they were clearly relevant. The bigger lesson is that even harmless-sounding personality tuning can create strange, repeated behaviors in AI systems, which shows why model behavior needs monitoring, testing, and human oversight after release."
