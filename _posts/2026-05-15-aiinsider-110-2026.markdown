@@ -1,0 +1,66 @@
+---
+layout: post
+title:  "AI Insider #110 2026 - Self-Generating Worlds for Robot Training"
+date:   2026-05-15 20:00:00 +0700
+---
+
+## Self-Generating Worlds for Robot Training
+
+**TL:DR:**
+
+Self-generating worlds are AI-created 3D simulation environments where robots can train before entering the real world. Instead of engineers manually building every practice scenario, AI can generate realistic spaces, adjust them, and create new challenges for robots to learn from.
+
+__Introduction:__
+
+Training robots in the real world is slow, expensive, and risky. A robot may need thousands of attempts before it can reliably navigate a warehouse, road, home, or factory. Simulations help, but many are limited or manually built.
+
+Self-generating worlds change that. New systems like SimWorld Studio use AI to create interactive 3D environments from prompts, images, and editing requests. The goal is to give robots more realistic practice without needing humans to design every scenario.
+
+__Key Developments:__
+
+* **AI-built training environments:** AI can now help create the simulated worlds robots train in, not just control the robots inside them.
+
+* **Language-based world generation:** Researchers can describe a scene in plain language, such as a warehouse aisle or busy street, and the system can generate a usable 3D environment.
+
+* **Adaptive difficulty:** These worlds can be changed over time, making scenarios easier, harder, or more varied based on how the robot performs.
+
+* **Physics-aware simulation:** For robot training, the world needs to behave realistically, not just look realistic. These systems aim to create environments where objects, movement, and navigation follow physical rules.
+
+__Real-World Impact__
+
+* **Faster robot development:** Companies could generate many practice scenarios quickly instead of building each one by hand.
+
+* **Safer testing:** Robots can make mistakes in simulation before being tested around people, vehicles, or expensive equipment.
+
+* **Better edge-case training:** AI-generated worlds can create unusual situations, like blocked paths, cluttered rooms, or confusing road layouts, so robots can practice rare but important scenarios.
+
+* **Lower training costs:** More testing can happen virtually before companies invest in expensive real-world trials.
+
+__Challenges and Risks__
+
+* **Simulations are not reality:** Even realistic digital worlds may miss real-world details like lighting, friction, sensor issues, or unpredictable human behavior.
+
+* **Generated worlds need review:** If the AI creates unrealistic or broken environments, robots may learn the wrong lessons.
+
+* **Real-world testing is still required:** Simulation can reduce risk, but robots still need careful physical testing before deployment.
+
+__Conclusion__
+
+Self-generating worlds could become an important foundation for the future of robotics. They allow AI systems to create realistic practice environments where robots can train safely, fail repeatedly, and improve before entering the real world.
+
+The bigger shift is that AI is no longer just learning inside simulations. It is beginning to build the simulations itself.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[How the NFL uses AI to help solve its schedule-making puzzle](https://www.nytimes.com/athletic/7272688/2026/05/13/nfl-schedule-release-ai-recentive-analytics/)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The article explains how the NFL is using AI and predictive analytics to help build its schedule, especially as the league adds more international games, streaming windows, holiday games, and prime-time broadcasts. Recentive Analytics helps the NFL forecast viewership by looking beyond football itself, including factors like weather, travel, competing events, fan behavior, streaming habits, ticketing, betting, and broader market conditions. The goal is not just to place good matchups in obvious slots, but to understand which games will draw the biggest audience in each window and how moving one game affects the value of the rest of the schedule. In short, the NFL is using AI as a scheduling intelligence layer to balance fan interest, travel demands, broadcast value, and competitive fairness across the season."
+
+![memo](/assets/images/memo16.png) *[She spent a year using AI to do almost everything. Here's what she learned](https://www.npr.org/2026/05/12/nx-s1-5816163/she-spent-a-year-using-ai-to-do-almost-everything-heres-what-she-learned)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "Tech writer Joanna Stern spent a year using AI for nearly everything she could, including reading medical results, responding to texts, and even acting as a kind of therapist. Her main takeaway was that AI can be genuinely useful for everyday tasks, but the emotional attachment it creates can feel unsettling. The experiment showed how quickly AI can move from being a productivity tool to something people rely on for advice, reassurance, and personal decisions. The bigger concern is that while AI can make life easier, users still need boundaries, because the technology can feel more human, capable, and trustworthy than it actually is."
