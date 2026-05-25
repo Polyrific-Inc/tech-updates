@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "AI Insider #111 2026 - Agentic Legacy Modernization"
+date:   2026-05-22 20:00:00 +0700
+---
+
+## Agentic Legacy Modernization
+
+**TL:DR:**
+
+Agentic legacy modernization is the use of AI agents to help update old software systems, databases, and business applications. Instead of relying only on developers to manually review outdated code and rebuild systems piece by piece, AI agents can analyze legacy systems, suggest changes, generate new code, map dependencies, and help move older technology into more modern environments.
+
+__Introduction:__
+
+Many businesses still depend on outdated software that is difficult to change, expensive to maintain, and risky to replace. These systems often run important operations, but they may be built on old code, disconnected databases, or platforms that no longer fit how the company works today.
+
+Modernizing these systems has traditionally been slow and expensive. Developers need to understand the old system, document how it works, rewrite or refactor code, test the new version, and make sure nothing breaks.
+
+Agentic legacy modernization changes the process by using AI agents to help with parts of the modernization work. These agents can inspect older systems, understand business logic, identify dependencies, and assist developers in rebuilding or improving the system faster.
+
+__Key Developments:__
+
+* **AI-assisted code analysis:** AI agents can review large amounts of old code and explain what different parts of the system do. This helps teams understand systems that may have limited documentation or were built by developers who are no longer with the company.
+
+* **Dependency mapping:** Legacy systems often have hidden connections between applications, databases, reports, and workflows. AI can help map these relationships so teams know what will be affected before making changes.
+
+* **Automated code conversion:** AI can help translate older programming languages, scripts, or system logic into more modern code. This does not remove the need for developers, but it can speed up the first draft of modernization work.
+
+* **Business logic extraction:** Many old systems contain years of business rules buried inside the code. AI agents can help identify those rules and turn them into clearer documentation, workflows, or modern application logic.
+
+* **Testing and validation support:** AI agents can help create test cases, compare old and new system behavior, and flag areas where the modernized version may not match the original system.
+
+__Real-World Impact__
+
+* **Faster modernization projects:** Companies could reduce the time needed to understand, document, and rebuild older systems.
+
+* **Lower technical debt:** AI can help teams identify outdated, duplicated, or unnecessary parts of the system that are slowing development down.
+
+* **Reduced risk during upgrades:** By mapping dependencies and generating tests, AI can help teams avoid breaking important business processes during modernization.
+
+* **Better use of institutional knowledge:** AI can help recover knowledge from old systems, especially when the original developers are gone or documentation is incomplete.
+
+* **More flexible operations:** Once legacy systems are modernized, companies can connect them more easily to cloud tools, analytics platforms, automation workflows, and newer AI applications.
+
+__Challenges and Risks__
+
+* **AI can misunderstand old systems:** Legacy systems are often messy, customized, and poorly documented. If the AI misunderstands the code, it may suggest changes that create problems.
+
+* **Human review is still required:** AI can speed up modernization, but developers still need to review the code, validate the logic, and confirm that business-critical systems work correctly.
+
+* **Old systems may contain hidden rules:** Some legacy systems include undocumented workarounds or special cases that are easy to miss during modernization.
+
+* **Security and compliance matter:** Modernizing old systems can expose sensitive data, access controls, or compliance requirements that need careful handling.
+
+__Conclusion__
+
+Agentic legacy modernization could become a major shift in enterprise technology. Many companies want to modernize their systems, but the process has been too slow, too expensive, and too risky.
+
+AI agents can help by analyzing old code, mapping dependencies, extracting business logic, generating updated code, and supporting testing. The goal is not to replace developers, but to give them a faster and clearer path through complex modernization work.
+
+The bigger shift is that AI is moving beyond helping people use existing software. It is starting to help rebuild the software businesses depend on.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+![memo](/assets/images/memo16.png) *[Water company using AI technology to spot leaks](https://www.bbc.com/news/articles/cr5pzmyr5jeo)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The BBC article is about how AI and satellite imagery are being used to detect hidden underground water leaks before they become obvious at street level. The system looks for subtle signs from space, such as changes in soil moisture or vegetation, then uses AI to identify areas where treated water may be escaping from pipes. The article focuses on Swindon and raises the bigger question of why this kind of technology is not already used everywhere, since water leaks waste huge amounts of treated water and cost utilities money. The main point is that AI-powered leak detection could help water companies find problems faster, save water, reduce repair costs, and improve infrastructure maintenance, but adoption is still limited by cost, accuracy, operational complexity, and the need to connect satellite insights with on-the-ground repair crews."
+
+![memo](/assets/images/memo16.png) *[The Internet can’t stop watching Figure AI’s humanoid robots handling packages](https://arstechnica.com/ai/2026/05/the-internet-cant-stop-watching-figure-ais-humanoid-robots-handling-packages/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The Ars Technica article is about the internet becoming unexpectedly obsessed with a Figure AI livestream showing humanoid robots sorting packages on a conveyor line. The robots, nicknamed Bob, Frank, and Gary by viewers, are shown inspecting barcodes, picking up boxes and soft mailers, and placing them onto a conveyor, with Figure claiming the work is fully autonomous and running on its Helix-02 system. The article frames the livestream as both a robotics milestone and a strange new form of tech entertainment: people are watching the robots do repetitive warehouse-style work for hours because it makes the future of humanoid labor feel more real. At the same time, the piece notes that the task is still narrow, the robots can make awkward movements or mistakes, and experts remain cautious about how close this is to broad real-world deployment. The bigger point is that humanoid robots are moving from flashy demos toward boring, practical warehouse tasks, which may be exactly where commercial robotics starts to become useful."
