@@ -1,0 +1,70 @@
+---
+layout: post
+title:  "AI Insider #114 2026 - Agent Cost Governance"
+date:   2026-06-12 20:00:00 +0700
+---
+
+## Agent Cost Governance
+
+**TL:DR:**
+
+Agent cost governance is the practice of monitoring and controlling how much AI agents cost to run. As agents handle multi-step workflows, use tools, read documents, call APIs, and retry tasks, companies need a way to keep AI spending visible, predictable, and tied to business value.
+
+__Introduction:__
+
+AI agents are becoming more useful, but they can also become expensive if not managed carefully. A basic chatbot usually responds to one request at a time. An AI agent may plan a task, search for information, use tools, review documents, generate drafts, revise answers, and check its own work before producing a final result.
+
+Each step can create cost. The agent may use tokens, model calls, API calls, retrieval systems, workflow tools, cloud compute, and human review time. In a small pilot, these costs may seem minor. But when agents are used across sales, customer service, claims, finance, legal, HR, software development, or operations, the spending can grow quickly.
+
+Agent cost governance helps organizations understand this layer of AI expense. It answers basic questions: Which agents are being used? Which workflows cost the most? Are agents calling too many tools? Are they retrying too often?
+The main shift is that AI cost is no longer only about paying for a model. It is about governing the full cost of agentic work.
+
+__Key Developments:__
+
+* **Token-level cost tracking:** Companies are beginning to track how many tokens agents use across each workflow. This includes user instructions, retrieved content, tool outputs, conversation history, and final responses. Token tracking helps teams see whether an agent is efficient or wasteful.
+* **Tool-call monitoring:** AI agents often use outside tools such as search systems, CRMs, databases, document libraries, email platforms, analytics tools, and workflow software. Each tool call can add cost, latency, and risk. Cost governance tracks which tools are used, how often they are used, and whether they are necessary.
+* **Model routing:** Not every task requires the most powerful or expensive AI model. Some steps can be handled by smaller, cheaper, or faster models. Model routing sends simple tasks to lower-cost models while reserving stronger models for complex reasoning or final review.
+* **Budget limits for agents:** Organizations are starting to set cost limits for agents. An agent may have a daily budget, a per-task budget, or a limit on how many times it can retry a task. These limits prevent one poorly designed workflow from creating unexpected costs.
+* **Cost-aware orchestration:** Agent orchestration systems are beginning to consider cost when deciding how work should be completed. Companies are asking what the most reliable and cost-effective path should be.
+
+__Real-World Impact__
+
+* **More predictable AI spending:** Agent cost governance helps companies avoid surprise bills. Instead of letting agents run freely across systems, organizations can monitor usage, set limits, and understand which workflows are driving costs.
+* **Better return on AI investment:** Many companies are experimenting with AI agents, but not every use case creates enough value to justify the cost. Cost governance helps teams compare workflow cost against time saved, revenue generated, errors reduced, or manual work eliminated.
+* **Smarter model usage:** Without governance, teams may use expensive models for every task. With governance, companies can match the model to the job. A simple classification task may not need the same model as a complex legal review or financial analysis.
+* **Reduced waste from retries:** Agents can sometimes get stuck retrying a task, searching too much, calling the same tool repeatedly, or adding unnecessary steps. Cost governance helps identify these loops before they become expensive.
+* **More scalable adoption:** AI pilots can look successful when usage is limited. Cost governance gives companies the controls they need to scale without losing financial visibility.
+
+__Challenges and Risks__
+
+* **Agent costs can be hard to predict:** A traditional software workflow usually follows a predictable path. An AI agent may take different steps depending on the task, the content, the tools available, and the quality of the first answer. This makes costs harder to estimate in advance.
+* **More autonomy can mean more spending:** The more freedom an agent has, the more opportunities it has to spend money. It may search more sources, use more tools, call more models, or retry more steps. Autonomy needs financial boundaries.
+* **Cheap outputs are not always better:** Cost governance should not only push teams toward the lowest-cost model. A cheaper model that produces weak outputs, creates rework, or misses important details may cost more in the long run.
+* **Shadow AI can hide costs:** Employees may use unauthorized AI tools or agents outside approved systems. This can create hidden spending, security risks, and duplicate work. Cost governance depends on visibility across AI usage.
+* **Measuring value is difficult:** It is easier to measure the cost of an agent than the value it creates. A claims agent, for example, may save time, reduce errors, improve compliance, and speed up customer response. Companies need clear ways to compare agent cost against business impact.
+
+__Conclusion__
+
+Agent cost governance is becoming more important as AI agents move from demos into real business operations. A chatbot may have simple usage costs, but an agentic workflow can involve many models, tools, documents, retries, approvals, and system actions. Without governance, those costs can become unpredictable.
+
+The biggest shift is that companies now need to treat AI agents like operational systems, not just software features. They need budgets, dashboards, usage limits, model routing, cost tracking, and performance metrics.
+
+This will matter most for organizations deploying AI agents across document-heavy, workflow-heavy, or customer-facing processes. In these environments, even small inefficiencies can become expensive at scale.
+
+Agent cost governance does not mean spending less on AI at all times. It means spending more intelligently. Companies need to know which agents are worth funding, which workflows need redesign, which models are being overused, and where automation is creating measurable value.
+
+Agent cost governance matters because the future of enterprise AI will not only depend on what agents can do. It will depend on whether companies can afford to run them reliably and at scale.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+![memo](/assets/images/memo16.png) *[The AI bill is coming due. Businesses are learning tokens aren’t free](https://www.fastcompany.com/91556417/ai-bill-is-coming-due)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "The article explains that many businesses rushed to give employees access to AI tools, but are now realizing that AI usage can create unpredictable and expensive bills. The main issue is that AI is often priced by tokens, which are small units of text, code, or data processed by a model, and those costs can quickly add up across employees, tools, agents, and cloud systems. Fast Company notes that only about one in four companies have a comprehensive view of their AI costs, while some companies only discover the problem when the bill arrives. The article argues that businesses need better AI cost governance, including usage tracking, budget limits, model routing, and ROI measurement, so they are not using the most expensive AI systems for simple tasks. The larger point is that AI may still be a major business revolution, but companies now need to manage it like any other serious operating cost."
+
+![memo](/assets/images/memo16.png) *[To discover new physics, AI may need to 'unlearn' the old one](https://phys.org/news/2026-06-physics-ai-unlearn.html)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The article explains that researchers are testing whether transfer learning can help AI discover new physics beyond the standard cosmological model. Instead of training an AI only on expensive, complex simulations, the researchers first trained it on simpler simulations based on the standard $\Lambda$CDM model, then adapted it to models involving possible new physics like massive neutrinos or modified gravity. This shortcut worked well in some cases, reducing the number of expensive simulations needed by more than tenfold. But the study also found a risk called negative transfer, where the AI becomes too attached to patterns it learned from the old model and struggles to recognize genuinely new effects. In simple terms, AI can help physicists search for new discoveries faster, but it may also need to “unlearn” old assumptions so it does not mistake new physics for something it already knows."
