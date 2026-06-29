@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "AI Insider #116 2026 - AI-Accelerated Cyber Risk Preparedness"
+date:   2026-06-26 20:00:00 +0700
+---
+
+## AI-Accelerated Cyber Risk Preparedness
+
+**TL:DR:**
+
+AI-accelerated cyber risk preparedness is the need for organizations to harden their systems before advanced AI makes cyberattacks faster, cheaper, and easier to scale. As frontier models improve, security agencies are warning that vulnerability discovery, exploitation, and attack execution could move much faster. Cybersecurity can no longer be treated as a reactive IT function. It has to become part of business resilience.
+
+__Introduction:__
+
+A year ago, most AI cybersecurity conversations focused on defense. Companies looked at AI as a way to detect threats, summarize alerts, and help analysts respond faster. That still matters, but the risk picture has expanded.
+
+Advanced AI can also help attackers with reconnaissance, phishing, vulnerability research, exploit adaptation, and post-breach decision-making. This does not mean every attacker becomes highly skilled, but it does mean more parts of the attack process can be automated or accelerated.
+
+The main shift is urgency. Cyber agencies are warning that AI could increase the speed and severity of cyber threats within months, not years. For businesses, the question is whether their defenses, governance, and recovery plans are ready for AI-speed attacks.
+
+__Key Developments:__
+
+* **Frontier AI changes the threat timeline:** Advanced models may compress the attack lifecycle. Vulnerabilities could be discovered, tested, and exploited faster than traditional patching cycles can handle.
+* **Cyber risk becomes a leadership issue:** AI-driven cyber risk is increasingly framed as a business resilience issue, not just an IT problem. Boards and executives are being pushed to understand exposure, fund modernization, and prepare for disruption.
+* **Agentic AI expands the attack surface:** AI agents can use tools, access data, and act across workflows. If poorly governed, an agent with too much access can create new paths for data leakage, unauthorized action, or system compromise.
+* **Defensive AI becomes more important:** The same capabilities that help attackers can also help defenders. AI can support continuous monitoring, vulnerability prioritization, anomaly detection, phishing analysis, and incident triage.
+* **Basic cyber hygiene matters more:** Fast patching, reduced internet exposure, retired legacy systems, limited privileges, stronger identity security, and breach preparation all become more urgent when attackers can move faster.
+
+__Real-World Impact__
+
+* **Faster vulnerability management:** Companies will need continuous vulnerability discovery and prioritization instead of occasional scans and slow patch cycles. The key question becomes what must be fixed first.
+* **Greater pressure on legacy systems:** Outdated systems become bigger liabilities. Infrastructure that is hard to patch or monitor may become unacceptable as attackers gain better tools for finding weak points.
+* **More demand for AI-enabled security operations:** Security teams will look for tools that summarize alerts, connect signals, recommend actions, and help analysts respond quickly. AI copilots and autonomous security workflows will become more common inside SOCs.
+* **Stronger governance for internal AI agents:** Organizations deploying agents need clearer rules around identity, permissions, logging, approvals, and human oversight. An agent that can touch email, code, cloud systems, or customer data should be treated like a privileged digital worker.
+* **Preparedness over prediction:** The exact form of future AI-enabled attacks is uncertain, but the direction is clear. Companies that strengthen identity, patching, monitoring, backup, and recovery now will be better positioned.
+
+__Challenges and Risks__
+
+* **Attackers adopt quickly:** Criminal groups and nation-state actors do not need perfect AI systems to benefit. Even partial automation can make phishing, scanning, exploit research, and intrusion support more efficient.
+* **Defenders are already overloaded:** Many organizations still struggle with basic security backlogs. Adding AI risk on top of staffing shortages, legacy systems, and existing vulnerabilities makes preparedness harder.
+* **AI tools can create false confidence:** Security teams may assume AI detection or automation solves more than it does. Poorly configured systems can miss threats or recommend bad actions.
+* **Agent permissions are difficult to control:** As AI agents gain access to tools and systems, organizations need precise controls over what they can see, change, approve, and execute. Broad permissions increase blast radius.
+* **Governance may lag deployment:** Business teams may adopt AI tools faster than security teams can evaluate them, creating shadow AI risk and unclear accountability.
+
+__Conclusion__
+
+AI-accelerated cyber risk preparedness marks a shift from defending against human-speed attacks to preparing for machine-assisted operations. The threat is not only that AI will create new attacks. It is that AI can make existing attacks faster, cheaper, and easier to repeat.
+
+The most important change is strategic. Organizations need to reduce exposure, improve identity controls, speed up patching, monitor continuously, and prepare for recovery before AI-enabled threats become routine.
+
+AI will be used on both sides of cybersecurity. Attackers will use it to scale and accelerate. Defenders will use it to detect, prioritize, and respond. The organizations that benefit most will treat AI cyber risk as an operational readiness problem, not a future research concern.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+![memo](/assets/images/memo16.png) *[An AI-generated Michael Caine is narrating Homer’s 'Odyssey' now](https://www.msn.com/en-us/movies/news/an-ai-generated-michael-caine-is-narrating-homer-s-odyssey-now/ar-AA26nKR3?ocid=BingNewsVerp)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "ElevenLabs has released a free, roughly 13-hour AI-generated audiobook of Homer’s The Odyssey on its ElevenReader platform, using a licensed AI clone of 93-year-old Michael Caine’s voice as narrator. Caine, who retired from acting three years ago, previously licensed his voice through ElevenLabs’ “Iconic Marketplace,” allowing producers to create AI voice performances with permission. The production uses a public-domain William Cullen Bryant translation and includes about 20 AI-generated character voices, showing how AI voice tools could make large-scale audiobook production faster and cheaper. The release also raises familiar concerns about consent, creative labor, and whether AI-generated celebrity performances could reshape narration, acting, and publishing."
+
+![memo](/assets/images/memo16.png) *[America’s data-centre backlash puts the AI boom at risk](https://www.economist.com/business/2026/06/23/americas-data-centre-backlash-puts-the-ai-boom-at-risk)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "The article argues that America’s AI boom is running into a growing local backlash against the data centers needed to power it. These facilities require huge amounts of electricity, land, water, and grid infrastructure, but often create relatively few long-term jobs, which has made communities more skeptical of the benefits. Opposition is spreading across political lines, with residents and officials worried about higher power bills, environmental strain, tax incentives, and the speed at which projects are being approved. The risk is that if enough data-center projects are delayed, blocked, or made more expensive, the physical infrastructure behind AI may not scale fast enough to support the industry’s massive investment plans."
