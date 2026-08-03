@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "AI Insider #117 2026 - Agent Identity and Authorization"
+date:   2026-07-31 20:00:00 +0700
+---
+
+## Agent Identity and Authorization
+
+**TL:DR:**
+
+Agent identity and authorization is the emerging discipline of giving AI agents their own verifiable identities, scoped permissions, and audit trails instead of letting them borrow the credentials of the humans who launch them. As agents move from chat assistants to systems that touch email, code, cloud infrastructure, and customer data, the question of who the agent is and what it is allowed to do is becoming a foundational security requirement.
+
+__Introduction:__
+
+For most of the past two years, AI agents have operated as digital ghosts. When an agent sends an email, queries a database, or updates a record, it typically does so using a session token inherited from the user who invoked it. To every downstream system, the agent looks exactly like that person.
+
+That shortcut worked when agents were demos. It breaks down when agents run unattended, act across multiple systems, and outnumber the humans who deployed them. An agent operating under a borrowed identity has all of its user's permissions, none of its own accountability, and no chain of custody when something goes wrong.
+
+The industry response has been rapid. In the first half of 2026, standards bodies, identity vendors, and platform providers converged on a shared idea: agents should be authenticated as themselves, with their own credentials, their own scoped access, and their own logs.
+
+__Key Developments:__
+
+* **Standards bodies move fast:** NIST launched its AI Agent Standards Initiative in February, the first US government program dedicated to secure and interoperable agentic AI, alongside a concept paper focused on agent authentication, zero-trust authorization, non-repudiation, and prompt injection controls. The IETF followed in March with a draft framework that assigns each agent a cryptographic workload identity backed by certificates and short-lived scoped tokens, composed with OAuth for delegated authorization.
+* **Authentication reaches the hardware layer:** The FIDO Alliance formed an Agentic Authentication working group in April to standardize how agents authenticate and transact on behalf of users, drawing on contributions from Google and Mastercard. Yubico extended physical security keys beyond user login, letting a hardware key sign off on specific agent actions rather than just identities.
+* **Least privilege becomes the default posture:** New research benchmarks stress-test agents with underspecified authorization scenarios across dozens of SaaS integrations, and deployable guards have shown they can cut authorization attack success rates dramatically. The direction is clear: agents should get the minimum access needed for the task at hand, granted just in time and revoked when the task ends.
+
+__Real-World Impact__
+
+* **Agents become auditable workers:** When each agent carries its own identity, every action it takes is attributable. Security teams can answer basic questions that were previously impossible: which agent touched this record, under whose delegation, and with what approval.
+* **Governance stops being an afterthought:** At Polyrific, this principle is built into Catalyst, our managed intelligence platform. Every agent operating inside Catalyst runs under governed identity and scoped permissions, with its actions logged and reviewable through the admin portal, and approvals routed to humans for sensitive operations. The result is that clients can deploy agents against real business systems knowing exactly what each one can see and do.
+* **Blast radius shrinks:** Scoped, short-lived credentials mean a compromised or misbehaving agent can only damage what it was explicitly granted. The difference between an agent with a user's full session and an agent with task-scoped access is the difference between an incident and a catastrophe.
+
+__Challenges and Risks__
+
+* **Identity sprawl is already here:** Practitioner research suggests ungoverned agent identities now outnumber governed ones inside many enterprises. Shadow agents provisioned outside IT oversight create exposure that no standard can retroactively fix.
+* **Delegation chains get complicated:** When an agent spawns sub-agents, permissions must narrow at each hop, never widen. Getting this right across multi-agent systems is an unsolved engineering problem, and confused-deputy failures remain a real risk.
+* **Standards are still drafts:** The NIST and IETF work is early, and competing specifications are still being reconciled. Organizations building today must make architectural bets before the standards settle.
+
+__Conclusion__
+
+Agent identity and authorization marks the moment agentic AI grows up. The industry spent 2025 proving agents could do useful work; 2026 is about proving they can do it accountably. Treating every agent as a privileged digital worker with its own identity, minimum necessary access, and a complete audit trail is quickly shifting from best practice to baseline expectation. The organizations that build on governed agent platforms now will be the ones ready when auditors, regulators, and customers start asking who exactly is acting on their systems.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+
+
+![memo](/assets/images/memo16.png) *[We thought we were buying Welsh jewellery but the shop was an AI scam](https://www.msn.com/en-us/technology/artificial-intelligence/we-thought-we-were-buying-welsh-jewellery-but-the-shop-was-an-ai-scam/ar-AA28TN5i?ocid=BingNewsVerp)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Shoppers who believed they were buying handmade jewellery from a small local Welsh shop discovered the business was entirely fabricated — part of a growing wave of scams in which foreign firms use AI-generated images and invented backstories to pose as family-run UK businesses, delivering cheap clothes and jewellery mass-shipped from warehouses in East Asia. These sites feature AI-generated "owners" with heartwarming stories — like "Eileen and Patrick," a couple supposedly running a Birmingham shop for 29 years, whose returns address is actually in China, or a retiring jeweller offering "one last collection" before saying goodbye to her workshop, actually operated by a Hong Kong company. Consumer group Which? says AI tools are letting fraudsters mislead the public at an "unprecedented" scale, victims are typically targeted through Facebook ads, and experts note the giveaway is often that the images look "literally too perfect" — while fake five-star reviews attributed to AI-generated customers round out the illusion"
+
+![memo](/assets/images/memo16.png) *[A new medical AI study found the same flaw in OpenEvidence, OpenAI, Anthropic, and Doximity](https://www.msn.com/en-us/health/general/a-new-medical-ai-study-found-the-same-flaw-in-openevidence-openai-anthropic-and-doximity/ar-AA28YldZ?ocid=BingNewsVerp)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "In mid-July, an independent benchmark called NOHARM — built by researchers at Stanford, Harvard, and the ARISE network — tested the medical AI tools from Doximity and OpenEvidence alongside OpenAI's GPT-5.6 Sol and Anthropic's Claude Fable 5, running 1,100 real clinical cases through each model and collecting roughly 13,000 physician annotations to score responses for patient harm. Doximity Ask scored highest, though OpenEvidence disputed the result, with CEO Daniel Nadler arguing the methodology allowed "re-tests" and noting the study isn't peer-reviewed. But the article's real takeaway is the shared flaw in the headline: regardless of who "won," even the best-performing models still miss things — meaning every tool tested, whether a specialized clinical product or a frontier general model, still produced answers with the potential for patient harm, and none can be treated as safe to use without physician oversight. It lands amid a broader benchmark war in clinical AI, following a June Nature Medicine study finding general-purpose models outperformed specialized clinical tools — which OpenEvidence has asked the journal to retract."
