@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "AI Insider #122 2026 - Evolutionary Multi-Agent Hypothesis Generation (HypoEvolve)"
+date:   2026-09-25 20:00:00 +0700
+---
+
+## Evolutionary Multi-Agent Hypothesis Generation (HypoEvolve)
+
+**TL:DR:**
+
+HypoEvolve applies genetic algorithms to specialized LLM agents, allowing hypotheses to evolve through selection, crossover, and mutation rather than being generated in a single pass. Published in September 2026, it treats scientific hypothesis generation as a search problem and makes agent collaboration structure a core design variable.
+
+__Introduction:__
+
+Most AI hypothesis-generation systems produce ideas once, then critique or rank them. HypoEvolve, released by Liu et al. on September 14, 2026, instead maintains a population of hypotheses that evolves across generations. Specialized agents reconsider assumptions, combine ideas, evaluate evidence, and improve testability.
+
+__Key Developments:__
+
+* **Genetics meets multi-agent LLMs:** HypoEvolve uses a genetic algorithm to control hypothesis selection, crossover, mutation, and replacement. On the shared DepMap panel, selectivity reaches 0.171 compared with 0.039 for single-pass generation, while crossover or mutation contributes to 87 of the 94 final hypotheses.
+* **A growing ecosystem of AI co-scientists:** HypoEvolve joins systems such as Google’s Co-Scientist and Robin, which also use agents to generate and refine scientific ideas. Its main distinction is treating the structure of collaboration itself as something that can be systematically optimized.
+* **Benchmarking the ideation gap:** AI science has advanced quickly in experiment design, coding, and analysis, but scientific ideation still depends heavily on humans. New 2026 benchmarks increasingly focus on whether models can generate novel, plausible, and testable research hypotheses.
+
+__Real-World Impact__
+
+* **Drug repurposing:** HypoEvolve was tested on drug-repurposing hypotheses across 34 cancer types using DepMap and Open Targets. It outperformed six baselines, reaching DepMap selectivity of 0.171 versus 0.115 for the strongest baseline, with improvements extending to held-out cancer types.
+* **Auditability:** The system records rationales and parent-offspring relationships, allowing researchers to see how hypotheses were combined or revised. This makes the reasoning process easier to inspect and supports human review before experimental follow-up.
+* **Scalable research:** Specialized agent teams can explore larger hypothesis spaces without requiring research headcount to grow at the same rate. HypoEvolve points toward AI research systems capable of continuously generating and refining scientific ideas.
+
+__Challenges and Risks__
+
+* **LLM-as-judge risk:** HypoEvolve relies partly on LLM pairwise comparisons for fitness evaluation. If those judgments favor persuasive but weakly supported ideas, errors can propagate across generations.
+* **Limits to novelty:** Models are less reliable when evaluating hypotheses far outside their training distribution. Post-training alignment may also favor familiar, consensus-driven answers, which can work against genuinely novel scientific discovery.
+* **Evaluation may reward recall:** Database-based evaluation can blur the line between discovery and retrieval. In one metric, a single frozen drug outperformed the evolutionary system, suggesting some measures may reward existing popularity rather than true novelty.
+
+__Conclusion__
+
+HypoEvolve shifts scientific AI from generating hypotheses to evolving them. Its results suggest that the structure of agent collaboration can materially improve hypothesis quality. The major unresolved question is whether these systems are producing genuinely new discoveries or sophisticated recombinations of existing knowledge. Auditability, human review, and external experimental validation remain essential.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+![memo](/assets/images/memo16.png) *[DeepMind’s new genome ‘atlas’ charts effects of all nine billion human gene mutations](https://www.nature.com/articles/d41586-026-02835-4)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Google DeepMind has launched AlphaGenome Atlas, a free database predicting the effects of all 9 billion possible single-letter DNA changes in the human genome — explorable via any browser, no coding needed. The 1-petabyte dataset covers both protein-coding and non-coding DNA, and includes a Variant Impact score to help researchers prioritize mutations. It's already delivering results: at the Broad Institute, the tool helped crack a previously unsolved rare disease case by pinpointing a critical gene variant."
+
+![memo](/assets/images/memo16.png) *[Access in the Age of Artificial Intelligence](https://wileyswalk.com/2026/09/14/access-in-the-age-of-artificial-intelligence/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "A wave of AI-powered tools is helping blind and low-vision people navigate daily life more independently. Apps like Microsoft's Seeing AI and Be My Eyes use real-time computer vision to describe scenes, read labels, and identify objects through a smartphone camera. Android's new Guided Vision feature adds to a growing ecosystem of options. Research from the American Foundation for the Blind confirms people with disabilities are increasingly turning to AI to access information in formats that work for them."
