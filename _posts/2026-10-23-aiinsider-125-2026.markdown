@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "AI Insider #126 2026 - Next-Concept Modeling (NCM)"
+date:   2026-10-23 20:00:00 +0700
+---
+
+## Next-Concept Modeling (NCM)
+
+**TL:DR:**
+
+Next-Concept Modeling is a new language generation architecture from Stanford's Hazy Research lab that replaces left-to-right token prediction with a coarse-to-fine hierarchy of parallel steps. Published in October 2026, it reports 10–31× faster inference than diffusion language models at comparable quality and trains on roughly 4–5× fewer tokens — raising serious questions about whether the next generation of AI infrastructure should be built around a fundamentally different generation paradigm.
+
+__Introduction:__
+
+Every language model deployed today shares the same basic rhythm: predict the next token, then the next, then the next. A 1,000-token answer requires about 1,000 sequential forward passes. As inference grows into the dominant cost of running AI, that is a bottleneck.
+
+Diffusion language models tried to fix this by refining all tokens at once over many denoising steps, but quality degrades sharply when denoising steps are reduced.
+
+NCM proposes a third path. Rather than generating one token at a time or repeatedly refining the entire sequence, NCM predicts increasingly detailed representations of text in parallel — from coarse concepts to fine details.
+
+__Key Developments:__
+
+* **The Architecture:** NCM is a two-stage framework. A multiscale residual VQ-VAE encodes text into K levels of discrete codes, from short coarse representations to longer fine ones. A transformer then predicts the hierarchy level by level, generating all codes within each level in parallel. The result: generating a long sequence takes a small, fixed number of passes rather than one pass per token.
+* **Speed and Efficiency:** NCM matches or beats strong diffusion language models while running 10–31× faster and training on 4–5× fewer tokens. On LM1B, it achieves up to 31× faster generation on tasks like summarization. These gains come with approximately 4.9× and 4× fewer training tokens than diffusion baselines on LM1B and OpenWebText respectively, even accounting for both tokenizer and generator training.
+* **Reasoning, Not Just Fluency:** On Sudoku, NCM outperforms autoregressive and diffusion baselines across all difficulty levels using fewer function evaluations. The paper's principal claim is architectural: parallel generation becomes more efficient when the model learns the order in which information should be revealed.
+
+__Real-World Impact__
+
+* **Inference Economics:** Inference cost shapes API prices and how many agent steps you can afford. If NCM's gains hold at production scale, the economics of serving AI agents — which may issue thousands of generation calls per workflow — change materially. Platforms orchestrating fleets of agents against real business systems stand to benefit directly from any architectural advance that reduces per-generation cost.
+* **Test-Time Scaling Gets Cheaper:** NCM's fast sampling enables test-time scaling: minimum Bayes risk decoding over multiple candidates improves BLEU on WMT14 and ROUGE on XSum. NCM generates more candidates within the same time budget, enabling it to outperform diffusion baselines.
+* **An Infrastructure Design Question:** If coarse-to-fine decoding scales, it offers another path to cut inference cost beyond speculative decoding and diffusion approaches. Organizations building AI infrastructure today must decide how much architectural flexibility to preserve as non-autoregressive alternatives mature.
+
+__Challenges and Risks__
+
+* **Scale Remains Unproven:** NCM is tested mostly at roughly 100M-parameter scale — not a replacement for larger language models. Whether reported benefits persist at substantially larger scales remains undemonstrated.
+* **The Tokenizer Is a Separate System:** NCM fixes both hierarchy depth and per-level lengths, so even short continuations traverse the full hierarchy. Its reliance on a separately trained VQ-VAE tokenizer decouples representation learning from the generative objective — end-to-end training could improve alignment between these two stages.
+* **Benchmarks Don't Cover Production:** Key open questions include function calling, enterprise RAG, structured output, multilingual support, safety, and hallucination resistance — none addressed by published results.
+
+__Conclusion__
+
+NCM challenges the assumption that sequential token prediction is the only viable path to quality text generation. Reducing inference cost requires changing not only the sampler but also the representation and generation schedule — and NCM is the clearest demonstration yet that such a change is technically feasible. The open questions around scale, end-to-end training, and production coverage are real, but the direction is set. Teams evaluating AI infrastructure should be tracking it.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+![memo](/assets/images/memo16.png) *[Colossal Biosciences announces new AI platform to help accelerate de-extinction efforts](https://techcrunch.com/2026/10/14/colossal-biosciences-announces-new-ai-platform-to-help-accelerate-de-extinction-efforts/)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Colossal Biosciences has unveiled GenoMorph, an AI platform that analyzed 3D skull data from over 70 bird species to pinpoint ~2,300 genetic targets linked to the dodo's distinctive beak and face. The tool helps researchers work around a major obstacle: only one complete dodo genome exists, since the tropical climate of its native Mauritius degrades ancient DNA quickly. With the dodo genome now 95% complete, GenoMorph marks a meaningful leap forward in de-extinction science."
+
+![memo](/assets/images/memo16.png) *[17 organizations using AI to accelerate scientific breakthroughs](https://blog.google/company-news/outreach-and-initiatives/google-org/impact-challenge-ai-science-recipients/)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "Google.org has awarded $36 million to 17 organizations selected from over 3,000 applicants across 30 countries through its Impact Challenge: AI for Science. Recipients — including MIT, Cambridge, and UC Berkeley — are tackling climate resilience, fusion energy, disease treatment, and drug discovery using AI. Teams also gain access to a six-month Google accelerator offering engineering support and technical mentorship."
