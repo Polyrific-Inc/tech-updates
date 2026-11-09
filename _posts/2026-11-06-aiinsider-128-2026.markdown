@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "AI Insider #128 2026 - Decoupled Retrieval-Augmented Generation via Continuous Soft Tokens"
+date:   2026-11-06 20:00:00 +0700
+---
+
+## Decoupled Retrieval-Augmented Generation via Continuous Soft Tokens
+
+**TL:DR:**
+
+ShiftRAG, accepted to NeurIPS 2026, is a new RAG framework that separates retrieval learning from text generation and connects them through continuous soft tokens. By passing richer retrieval signals to the generator, it improves complex reasoning and reduces hallucinations with negligible added latency.
+
+__Introduction:__
+
+Traditional RAG retrieves relevant text and inserts it into a prompt, discarding valuable internal retrieval signals such as confidence scores and semantic alignments.
+
+Attempts to unify retrieval and generation within one LLM have introduced conflicting training objectives and rank collapse, weakening both capabilities.
+
+ShiftRAG, developed by Youmin Ko, Jihong Jeong, and Hyunjoon Kim, offers an alternative: separating retrieval and generation objectives while connecting them through learned representations.
+
+__Key Developments:__
+
+* **Decoupled Learning on a Shared Backbone:** ShiftRAG uses one LLM backbone while separating discriminative retrieval learning from autoregressive generation. Retrieval alignments are projected into continuous soft tokens, allowing the generator to access richer evidence signals without requiring separate models.
+* **Soft Knowledge Tokens:** Five learned continuous vectors per question-document pair transfer retrieval information directly into the generation context. Creating these tokens takes just 0.0007 seconds, making their computational overhead negligible.
+* **Mitigating Rank Collapse:** A soft orthogonality objective reduces rank collapse, while layer-wise relevance dynamics preserve the fine-grained representations needed to distinguish relevant evidence.
+
+__Real-World Impact__
+
+* **Improving Retrieval-Augmented Reasoning:** ShiftRAG narrows the gap between finding relevant information and generating accurate answers. This is particularly valuable for complex, multi-step reasoning in legal analysis, financial research, and technical support.
+* **Enterprise AI Applications:** At Polyrific, Catalyst already separates retrieval against client knowledge bases from answer generation, with independent logging and quality controls. ShiftRAG-style architectures could extend this separation into the model itself, enabling richer information transfer between retrieval and generation.
+* **Practical Latency:** ShiftRAG's reported processing times demonstrate minimal overhead: question encoding takes 0.13 seconds, Faiss retrieval takes 0.02 seconds, soft token generation takes 0.0007 seconds, and answer generation takes 2.64 seconds. Generation remains the primary latency contributor, making the additional soft token processing practically insignificant.
+
+__Challenges and Risks__
+
+* **Interpretability:** Soft tokens are continuous representations that humans cannot directly interpret. When an answer is incorrect, identifying whether retrieval, token projection, or generation caused the problem becomes more difficult. Regulated industries will require additional monitoring and debugging capabilities.
+* **Training Complexity:** Separating learning objectives within a shared backbone requires specialized training techniques. Soft orthogonality constraints and layer-wise relevance modeling introduce complexity beyond conventional RAG implementations.
+* **Lack of Evaluation Standards:** Industry-wide benchmarks for comparing textual and soft-token RAG architectures remain limited. Existing evaluations may overlook advantages in complex reasoning or fail to capture interpretability trade-offs.
+
+__Conclusion__
+
+ShiftRAG demonstrates that retrieval and generation do not need to communicate exclusively through text. Its continuous soft token interface preserves richer retrieval signals while maintaining practical inference speeds.
+
+For enterprises investing in RAG, the research highlights a promising direction: improving answer quality through better communication between retrieval and generation rather than simply expanding context windows or model sizes.
+
+## Tech News
+
+__Current Tech Pulse: Our Team's Take:__
+
+*In 'Current Tech Pulse: Our Team's Take', our AI experts dissect the latest tech news, offering deep insights into the industry's evolving landscape. Their seasoned perspectives provide an invaluable lens on how these developments shape the world of technology and our approach to innovation.*
+
+![memo](/assets/images/memo16.png) *[AI helps Stanford scientists discover a “natural Ozempic” with a surprising advantage](https://www.sciencedaily.com/releases/2026/11/261104004909.htm)*
+
+[Jackson](https://www.linkedin.com/in/jackson-cates-315a0b1ab/): "Stanford Medicine researchers used an AI tool called Peptide Predictor to scan all 20,000 human protein-coding genes, uncovering BRP — a naturally occurring 12-amino-acid peptide the body already produces. In animal studies, BRP cut food intake by up to 50%, matching Ozempic's appetite-suppressing power, while avoiding common side effects like nausea, constipation, and muscle loss. Human clinical trials are planned."
+
+![memo](/assets/images/memo16.png) *[Study shows AI may improve patient discharge summaries](https://medicalxpress.com/news/2026-11-ai-patient-discharge-summaries.html#google_vignette)*
+
+[Jason](https://www.linkedin.com/in/jason-bengtson-b8a9a83b): "A Stony Brook University study published in npj Digital Medicine found that physician reviewers preferred AI-generated hospital discharge summaries over human-authored ones in 95% of cases. The research compared LLM-drafted and human-written summaries for 60 internal medicine stays lasting 7–21 days, with AI versions scoring higher for overall quality (4.71 vs. 3.16 out of 5), completeness, and usefulness for follow-up care. Stony Brook Medicine is now considering a real-world pilot of the tool in everyday clinical practice."
